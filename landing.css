@@ -298,6 +298,14 @@ body {
 .card-shabda::before { background: #a0b0c8; }
 .card-shabda .card-enter { color: #a0b0c8; }
 
+.card-stuti:hover { border-color: #c8a048; }
+.card-stuti::before { background: #c8a048; }
+.card-stuti .card-enter { color: #c8a048; }
+
+.card-parampara:hover { border-color: #b89060; }
+.card-parampara::before { background: #b89060; }
+.card-parampara .card-enter { color: #b89060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

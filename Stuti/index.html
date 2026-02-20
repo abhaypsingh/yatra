@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a08">
+  <title>Stuti &mdash; praise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2381;&#2340;&#2369;&#2340;&#2367;</div>
+      <h1>Stuti</h1>
+      <p class="opening-sub">praise</p>
+      <div class="opening-text">
+        <p>Gratitude is not about pretending everything is fine.
+           It is about seeing clearly enough to notice what is still good
+           even when much is broken.</p>
+        <p>Each day, name three things: <em>one person</em> who matters,
+           <em>one moment</em> that was real, and <em>one ordinary thing</em>
+           you would miss if it vanished.</p>
+        <p>Write why. Not just what &mdash; why. The why is where the feeling lives.</p>
+        <p class="opening-accent">What you pay attention to grows. Pay attention to what is good.</p>
+      </div>
+      <button class="btn-stuti" id="beginBtn">begin today</button>
+    </div>
+  </div>
+
+  <!-- ========== DAILY CHECK-IN ========== -->
+  <div id="checkin" class="checkin hidden">
+    <div class="checkin-header">
+      <h2 class="checkin-date" id="checkinDate"></h2>
+    </div>
+
+    <div class="gratitude-cards" id="gratitudeCards">
+      <div class="g-card" data-type="person">
+        <div class="g-card-icon">&#x2726;</div>
+        <label class="g-card-label">One person</label>
+        <input type="text" class="g-card-name" id="personName" placeholder="who?" maxlength="60">
+        <textarea class="g-card-why" id="personWhy" placeholder="why do they matter today?"></textarea>
+      </div>
+
+      <div class="g-card" data-type="moment">
+        <div class="g-card-icon">&#x25CB;</div>
+        <label class="g-card-label">One moment</label>
+        <input type="text" class="g-card-name" id="momentName" placeholder="what happened?" maxlength="80">
+        <textarea class="g-card-why" id="momentWhy" placeholder="why was it real?"></textarea>
+      </div>
+
+      <div class="g-card" data-type="thing">
+        <div class="g-card-icon">&#x2022;</div>
+        <label class="g-card-label">One ordinary thing</label>
+        <input type="text" class="g-card-name" id="thingName" placeholder="what would you miss?" maxlength="60">
+        <textarea class="g-card-why" id="thingWhy" placeholder="why does it matter?"></textarea>
+      </div>
+    </div>
+
+    <div class="checkin-actions">
+      <button class="btn-stuti btn-seal" id="sealBtn">weave into tapestry</button>
+    </div>
+  </div>
+
+  <!-- ========== TAPESTRY ========== -->
+  <div id="tapestry" class="tapestry hidden">
+    <div class="tapestry-header">
+      <h2>Your Tapestry</h2>
+      <p class="tapestry-sub" id="tapestrySub"></p>
+    </div>
+    <div class="tapestry-grid" id="tapestryGrid"></div>
+    <div class="tapestry-actions">
+      <button class="btn-stuti btn-today" id="todayBtn">today</button>
+      <button class="btn-ghost" id="journalBtn">read journal</button>
+    </div>
+  </div>
+
+  <!-- ========== JOURNAL ========== -->
+  <div id="journal" class="journal hidden">
+    <div class="journal-header">
+      <h2>Journal</h2>
+      <button class="btn-ghost" id="journalBack">&larr; back</button>
+    </div>
+    <div class="journal-entries" id="journalEntries"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navTapestry" title="tapestry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about stuti">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Stuti <span class="about-deva">&#2360;&#2381;&#2340;&#2369;&#2340;&#2367;</span></h2>
+      <p>
+        <strong>Stuti</strong> (Sanskrit: praise, hymn of gratitude) is the act of naming
+        what is good. Not to ignore what is painful, but to ensure that pain does not
+        become the only thing you see.
+      </p>
+      <p>
+        Three threads each day &mdash; a person, a moment, an ordinary thing &mdash;
+        woven into a tapestry that grows. When you look back at weeks and months of
+        gratitude, you will see something you could not see one day at a time:
+        that your life was richer than you knew.
+      </p>
+      <p>
+        All entries are stored on this device alone. They belong to no one but you.
+      </p>
+    </div>
+  </div>
+
+  <script src="stuti.js"></script>
+</body>
+</html>

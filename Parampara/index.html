@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0808">
+  <title>Parampar&#x101; &mdash; the unbroken chain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2352;&#2350;&#2381;&#2346;&#2352;&#2366;</div>
+      <h1>Parampar&#x101;</h1>
+      <p class="opening-sub">the unbroken chain</p>
+      <div class="opening-text">
+        <p>You did not begin with yourself.</p>
+        <p>Behind you stands a chain of people who sacrificed, survived, and loved
+           so that you could exist. Most of them you will never know. But everything
+           they endured is alive in you right now.</p>
+        <p>This is the story of a chain. Each link is a generation. Each generation
+           gave up something so the next could have something more.</p>
+        <p class="opening-accent">You are not just yourself. You are the summit of a mountain of love you have never seen.</p>
+      </div>
+      <button class="btn-parampara" id="beginBtn">look back</button>
+    </div>
+  </div>
+
+  <!-- ========== CHAIN ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <div class="chain-container" id="chainContainer">
+      <!-- Links added dynamically -->
+    </div>
+
+    <div class="generation-card" id="generationCard">
+      <div class="gen-depth" id="genDepth"></div>
+      <div class="gen-story" id="genStory"></div>
+      <div class="gen-sacrifice hidden" id="genSacrifice">
+        <div class="sacrifice-label">what they gave up</div>
+        <p class="sacrifice-text" id="sacrificeText"></p>
+      </div>
+      <div class="gen-gift hidden" id="genGift">
+        <div class="gift-label">what it made possible</div>
+        <p class="gift-text" id="giftText"></p>
+      </div>
+      <div class="gen-nav">
+        <button class="btn-parampara btn-next" id="nextBtn">reveal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SUMMIT ========== -->
+  <div id="summit" class="summit hidden">
+    <div class="summit-content">
+      <div class="summit-chain" id="summitChain"></div>
+      <h2>You</h2>
+      <p class="summit-text">
+        Seven generations. Seven sacrifices. Each one invisible to the next,
+        each one essential to the one that followed.
+      </p>
+      <p class="summit-text">
+        You are reading these words on a device that would have seemed like
+        magic to the woman who carried water five miles. You are making choices
+        that the man who worked the fields could not have imagined. You are
+        living the life they dreamed of without knowing what it would look like.
+      </p>
+      <p class="summit-text summit-accent">
+        The chain did not break. It held. And now it holds you.
+      </p>
+
+      <div class="summit-prompt">
+        <label class="prompt-label">What will you add to the chain?</label>
+        <textarea class="prompt-input" id="summitInput" placeholder="write to your future descendants..."></textarea>
+      </div>
+
+      <div class="summit-actions">
+        <button class="btn-parampara" id="restartBtn">walk the chain again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about parampara">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Parampar&#x101; <span class="about-deva">&#2346;&#2352;&#2350;&#2381;&#2346;&#2352;&#2366;</span></h2>
+      <p>
+        <strong>Parampar&#x101;</strong> (Sanskrit: succession, lineage, unbroken chain) is the
+        concept that knowledge, culture, and love are passed from generation to generation
+        in an unbroken stream. In Indian tradition, you are not a solitary individual &mdash;
+        you are a link in a chain that stretches back beyond memory.
+      </p>
+      <p>
+        The generations described here are not one specific family. They are every family.
+        Every person alive today stands at the top of a mountain of sacrifice they did not
+        choose and cannot repay. The only thing they can do is add their own link.
+      </p>
+      <p>
+        What will yours be?
+      </p>
+    </div>
+  </div>
+
+  <script src="parampara.js"></script>
+</body>
+</html>
