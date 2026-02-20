@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080810">
+  <title>L&#x12B;l&#x101; &mdash; divine play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Art canvas -->
+  <canvas id="artCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2354;&#2368;&#2354;&#2366;</div>
+      <h1>L&#x12B;l&#x101;</h1>
+      <p class="opening-sub">divine play</p>
+      <div class="opening-text">
+        <p>Not everything needs to be heavy.</p>
+        <p>In the Hindu tradition, the creation of the universe is called <em>l&#x12B;l&#x101;</em> &mdash;
+           divine play. The cosmos exists not because it must, but because creation is joyful.</p>
+        <p>Touch the screen. Move your finger. Draw light into being.<br>
+           There is no goal. There is no score. There is only creation.</p>
+        <p class="opening-accent">Play is sacred. Beauty is reason enough.</p>
+      </div>
+      <button class="btn-leela" id="beginBtn">begin playing</button>
+    </div>
+  </div>
+
+  <!-- ========== PLAY CONTROLS ========== -->
+  <div id="controls" class="controls hidden">
+    <!-- Mood selector -->
+    <div class="mood-bar" id="moodBar">
+      <button class="mood-btn active" data-mood="joy" title="joy">
+        <span class="mood-dot joy-dot"></span>
+      </button>
+      <button class="mood-btn" data-mood="calm" title="calm">
+        <span class="mood-dot calm-dot"></span>
+      </button>
+      <button class="mood-btn" data-mood="fire" title="fire">
+        <span class="mood-dot fire-dot"></span>
+      </button>
+      <button class="mood-btn" data-mood="ocean" title="ocean">
+        <span class="mood-dot ocean-dot"></span>
+      </button>
+      <button class="mood-btn" data-mood="forest" title="forest">
+        <span class="mood-dot forest-dot"></span>
+      </button>
+      <button class="mood-btn" data-mood="cosmos" title="cosmos">
+        <span class="mood-dot cosmos-dot"></span>
+      </button>
+    </div>
+
+    <!-- Actions -->
+    <div class="action-bar">
+      <button class="action-btn" id="clearCanvas" title="new canvas">&#x25CB;</button>
+      <button class="action-btn" id="toggleTrails" title="toggle trails">&#x2248;</button>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about leela">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>L&#x12B;l&#x101; <span class="about-deva">&#2354;&#2368;&#2354;&#2366;</span></h2>
+      <p>
+        <strong>L&#x12B;l&#x101;</strong> (Sanskrit: play, sport, divine activity) is the concept that
+        the universe was created as an act of joyful play by the divine. Not out of necessity,
+        not out of obligation, but out of the sheer delight of creation.
+      </p>
+      <p>
+        This experience has no purpose beyond beauty. Touch the screen. Watch light unfold.
+        Choose a mood and let the colors respond. There is nothing to achieve, nothing to complete.
+      </p>
+      <p>
+        In a world that constantly asks you to produce, to perform, to achieve &mdash;
+        this is a space where you are allowed to simply create. Because creation is its own reward.
+        Because play is how the universe began.
+      </p>
+    </div>
+  </div>
+
+  <script src="leela.js"></script>
+</body>
+</html>

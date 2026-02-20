@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a12">
+  <title>Pratibimba &mdash; the reflection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2381;&#2352;&#2340;&#2367;&#2348;&#2367;&#2350;&#2381;&#2348;</div>
+      <h1>Pratibimba</h1>
+      <p class="opening-sub">the reflection</p>
+      <div class="opening-text">
+        <p>You know what you look like on the outside. But do you know what you look like on the inside?</p>
+        <p>You will answer twelve questions. Not quizzes &mdash; mirrors.<br>
+           There are no right answers. Only honest ones.</p>
+        <p>Your answers are saved. Come back in a month, a year, five years.<br>
+           Watch who you were become who you are.</p>
+        <p class="opening-accent">The person you are today is worth knowing. Even the parts you have not looked at yet.</p>
+      </div>
+      <button class="btn-mirror" id="beginBtn">look inward</button>
+    </div>
+  </div>
+
+  <!-- ========== REFLECTION ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+
+    <!-- Progress -->
+    <div class="progress-row">
+      <div class="progress-dots" id="progressDots"></div>
+      <span class="progress-label" id="progressLabel">1 / 12</span>
+    </div>
+
+    <!-- Question card -->
+    <div class="question-card" id="questionCard">
+      <div class="question-number" id="questionNumber"></div>
+      <div class="question-text" id="questionText"></div>
+      <textarea class="answer-input" id="answerInput" placeholder="write honestly..."></textarea>
+      <button class="btn-mirror btn-next" id="nextQuestion" disabled>next &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ========== PORTRAIT ========== -->
+  <div id="portrait" class="portrait hidden">
+    <div class="portrait-content">
+      <h2>Your Portrait</h2>
+      <p class="portrait-date" id="portraitDate"></p>
+      <div class="portrait-answers" id="portraitAnswers"></div>
+      <div class="portrait-past" id="portraitPast"></div>
+      <div class="portrait-actions">
+        <button class="btn-mirror" id="savePortrait">seal this portrait</button>
+        <button class="btn-ghost" id="restartBtn">reflect again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAST PORTRAITS ========== -->
+  <div id="pastOverlay" class="past-overlay hidden">
+    <div class="past-card">
+      <button class="past-close" id="pastClose">&times;</button>
+      <h2>Past Portraits</h2>
+      <div class="past-entries" id="pastEntries"></div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navPast" title="past portraits">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about pratibimba">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pratibimba <span class="about-deva">&#2346;&#2381;&#2352;&#2340;&#2367;&#2348;&#2367;&#2350;&#2381;&#2348;</span></h2>
+      <p>
+        <strong>Pratibimba</strong> (Sanskrit: reflection, mirror image) is the image that appears
+        when consciousness turns inward. Not the face you show the world, but the one that exists
+        when you are honest with yourself.
+      </p>
+      <p>
+        These twelve questions are not a personality test. They are mirrors. Your answers today
+        will be different from your answers in a year. That is the point. Growth is invisible
+        while it is happening. But if you leave a mark, your future self can see the distance traveled.
+      </p>
+      <p>
+        All portraits are stored on this device alone. They belong to no one but you.
+      </p>
+    </div>
+  </div>
+
+  <script src="pratibimba.js"></script>
+</body>
+</html>
