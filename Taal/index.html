@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0808">
+  <title>T&#x101;l &mdash; rhythm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2340;&#2366;&#2354;</div>
+      <h1>T&#x101;l</h1>
+      <p class="opening-sub">rhythm</p>
+      <div class="opening-text">
+        <p>Before language, there was rhythm. A heartbeat. A footstep. A hand on a drum.</p>
+        <p>Tap anywhere on the screen. <em>Listen.</em> The screen will answer you. Build a pattern together. Find the rhythm that is yours.</p>
+        <p>There is no wrong beat. Only your beat.</p>
+      </div>
+      <button id="beginBtn" class="btn-taal">tap to begin</button>
+    </div>
+  </div>
+
+  <!-- ========== ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="taalCanvas"></canvas>
+    <div class="engine-overlay">
+      <div class="beat-counter" id="beatCounter">0</div>
+      <p class="engine-hint" id="engineHint">tap anywhere</p>
+    </div>
+    <div class="tempo-bar">
+      <button class="tempo-btn" id="tempoSlow">slow</button>
+      <button class="tempo-btn active" id="tempoMed">medium</button>
+      <button class="tempo-btn" id="tempoFast">fast</button>
+      <button class="tempo-btn clear-btn" id="clearBtn">clear</button>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>T&#x101;l <span class="about-deva">&#2340;&#2366;&#2354;</span></h2>
+      <p><strong>T&#x101;l</strong> (also <em>t&#x101;la</em>) means rhythm, beat, clap. In Indian classical music, t&#x101;l is the rhythmic framework &mdash; the heartbeat beneath the melody. It is measured in claps, waves, and silence.</p>
+      <p>Tap the screen. Each tap creates a sound and a ripple. The rhythm you build is echoed back to you. There is no score, no right pattern. Just you and the beat.</p>
+      <p>Everything runs locally. Nothing is tracked or sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="taal.js"></script>
+</body>
+</html>

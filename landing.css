@@ -322,6 +322,14 @@ body {
 .card-samay::before { background: #c8a050; }
 .card-samay .card-enter { color: #c8a050; }
 
+.card-taal:hover { border-color: #c87848; }
+.card-taal::before { background: #c87848; }
+.card-taal .card-enter { color: #c87848; }
+
+.card-anitya:hover { border-color: #8090b8; }
+.card-anitya::before { background: #8090b8; }
+.card-anitya .card-enter { color: #8090b8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

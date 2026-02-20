@@ -1,0 +1,162 @@
+/* ============================================================
+   TAAL — rhythm
+   Warm terracotta, concentric ripples
+   ============================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --void: #0a0808;
+  --deep: #141010;
+  --surface: #201818;
+  --text: #c8b8a8;
+  --text-dim: #786858;
+  --accent: #c87848;
+  --accent-glow: rgba(200, 120, 72, 0.15);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%; height: 100%;
+  background: var(--void); color: var(--text);
+  font-family: var(--font-body); line-height: 1.7;
+  overflow: hidden; -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+  -webkit-user-select: none; user-select: none;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void); z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.opening.fade-out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.opening-content { text-align: center; padding: 2rem; max-width: 520px; }
+
+.devanagari {
+  font-size: 2.6rem; color: var(--accent); margin-bottom: 0.3rem;
+  opacity: 0; animation: fadeUp 1s 0.3s ease forwards;
+}
+.opening h1 {
+  font-size: 2.2rem; font-weight: 400; letter-spacing: 0.12em; color: var(--text);
+  margin-bottom: 0.2rem; opacity: 0; animation: fadeUp 1s 0.6s ease forwards;
+}
+.opening-sub {
+  font-size: 1rem; color: var(--text-dim); letter-spacing: 0.1em; font-style: italic;
+  margin-bottom: 2rem; opacity: 0; animation: fadeUp 1s 0.9s ease forwards;
+}
+.opening-text { text-align: left; margin-bottom: 2.5rem; }
+.opening-text p {
+  font-size: 0.92rem; color: var(--text-dim); margin-bottom: 0.8rem;
+  opacity: 0; animation: fadeUp 0.8s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text em { color: var(--text); }
+
+/* ==================== BUTTONS ==================== */
+.btn-taal {
+  background: transparent; border: 1px solid var(--accent); color: var(--accent);
+  padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 0.95rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease;
+  opacity: 0; animation: fadeUp 0.8s 2.7s ease forwards;
+}
+.btn-taal:hover { background: var(--accent); color: var(--void); }
+
+/* ==================== ENGINE ==================== */
+.engine {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+#taalCanvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 1; cursor: pointer;
+}
+
+.engine-overlay {
+  position: relative; z-index: 2;
+  text-align: center; pointer-events: none;
+}
+
+.beat-counter {
+  font-size: 4rem; font-weight: 300; color: var(--accent);
+  opacity: 0.25; letter-spacing: 0.1em;
+  font-family: var(--font-ui);
+}
+
+.engine-hint {
+  font-size: 0.82rem; color: var(--text-dim); font-style: italic;
+  letter-spacing: 0.08em; opacity: 0.6;
+  transition: opacity 1s ease;
+}
+
+/* ==================== TEMPO BAR ==================== */
+.tempo-bar {
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  z-index: 10; display: flex; gap: 0.4rem;
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 20px;
+  padding: 0.3rem;
+}
+.tempo-btn {
+  background: transparent; border: none; color: var(--text-dim);
+  font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 0.06em;
+  padding: 0.4rem 0.8rem; border-radius: 14px; cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tempo-btn:hover { color: var(--text); }
+.tempo-btn.active { background: var(--surface); color: var(--accent); }
+.clear-btn { color: var(--text-dim); opacity: 0.5; }
+.clear-btn:hover { opacity: 1; color: var(--accent); }
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50;
+  display: flex; gap: 0.5rem; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+}
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--deep);
+  border: 1px solid var(--surface); color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0; background: rgba(6, 4, 4, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem; opacity: 0;
+  transition: opacity 0.4s ease; pointer-events: none;
+}
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2.5rem; max-width: 480px; width: 100%; position: relative;
+}
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+.about-close {
+  position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+  color: var(--text-dim); font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; transition: color 0.3s ease;
+}
+.about-close:hover { color: var(--text); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.8rem; }
+  .beat-counter { font-size: 3rem; }
+}

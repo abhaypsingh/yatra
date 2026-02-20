@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080c">
+  <title>Anitya &mdash; impermanence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2309;&#2344;&#2367;&#2340;&#2381;&#2351;</div>
+      <h1>Anitya</h1>
+      <p class="opening-sub">impermanence</p>
+      <div class="opening-text">
+        <p>Everything you love will change. This is not a tragedy. It is what makes love <em>real</em>.</p>
+        <p>Six meditations on things that do not last. A sandcastle. A sunset. A friendship. A season. A memory. A face you love.</p>
+        <p>Read slowly. Let each one fade. What remains is not the thing itself &mdash; but what it taught you about being alive.</p>
+      </div>
+      <button id="beginBtn" class="btn-anitya">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="fadeCanvas"></canvas>
+
+    <div class="meditation-card" id="medCard">
+      <div class="med-number" id="medNumber"></div>
+      <h2 class="med-title" id="medTitle"></h2>
+      <div class="med-body" id="medBody"></div>
+      <div class="med-fade-msg hidden" id="medFadeMsg">
+        <p class="fade-wisdom" id="fadeWisdom"></p>
+      </div>
+      <button class="btn-anitya btn-small" id="nextBtn"></button>
+    </div>
+  </div>
+
+  <!-- ========== CLOSING ========== -->
+  <div id="closing" class="closing hidden">
+    <div class="closing-content">
+      <h2 class="closing-title">Everything fades.</h2>
+      <p class="closing-text">The sandcastle. The sunset. The friendship. The season. The memory. The face.</p>
+      <p class="closing-accent">But the love that made you build, watch, hold, wait, remember, and look &mdash; that does not fade. That is yours.</p>
+      <p class="closing-dim">Impermanence is not the enemy of love. It is the reason love matters.</p>
+      <button class="btn-anitya btn-small" id="restartBtn">begin again</button>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Anitya <span class="about-deva">&#2309;&#2344;&#2367;&#2340;&#2381;&#2351;</span></h2>
+      <p><strong>Anitya</strong> (Pali: <em>anicca</em>) means impermanence &mdash; the truth that all conditioned things arise, exist, and pass away. In Buddhist and Hindu philosophy, this is not pessimism but liberation: when you stop clinging to permanence, you learn to love what is here <em>now</em>.</p>
+      <p>These six meditations are invitations to sit with impermanence &mdash; not as loss, but as the quality that makes everything precious.</p>
+      <p>Nothing is tracked. Nothing is sent. This is yours alone.</p>
+    </div>
+  </div>
+
+  <script src="anitya.js"></script>
+</body>
+</html>
