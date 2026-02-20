@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a08">
+  <title>S&#x101;hasa &mdash; courage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2366;&#2361;&#2360;</div>
+      <h1>S&#x101;hasa</h1>
+      <p class="opening-sub">courage</p>
+      <div class="opening-text">
+        <p>Courage is not the absence of fear. It is the decision that something else matters more.</p>
+        <p>Name what frightens you. Look at it directly. Walk through it slowly: <em>what is the worst that could happen? What would you do? What would surviving it teach you?</em></p>
+        <p>A fear examined is a fear halved.</p>
+      </div>
+      <button id="beginBtn" class="btn-sahasa">face it</button>
+    </div>
+  </div>
+
+  <!-- ========== ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="emberCanvas"></canvas>
+
+    <!-- Name the fear -->
+    <div id="namePhase" class="phase-card">
+      <div class="phase-label">step one</div>
+      <h2 class="phase-title">Name it</h2>
+      <p class="phase-hint">What are you afraid of right now? It can be big or small. Say it plainly.</p>
+      <textarea id="fearInput" class="text-area" rows="3" placeholder="I am afraid that&hellip;"></textarea>
+      <button id="nameBtn" class="btn-sahasa btn-small">I said it &rarr;</button>
+    </div>
+
+    <!-- Worst case -->
+    <div id="worstPhase" class="phase-card hidden">
+      <div class="phase-label">step two</div>
+      <h2 class="phase-title">The worst that could happen</h2>
+      <p class="phase-hint">If this fear came true &mdash; the absolute worst version &mdash; what would that look like? Write it down. Let it be real for a moment.</p>
+      <textarea id="worstInput" class="text-area" rows="3" placeholder="the worst would be&hellip;"></textarea>
+      <button id="worstBtn" class="btn-sahasa btn-small">I see it &rarr;</button>
+    </div>
+
+    <!-- What would you do -->
+    <div id="doPhase" class="phase-card hidden">
+      <div class="phase-label">step three</div>
+      <h2 class="phase-title">What would you do?</h2>
+      <p class="phase-hint">Even in that worst case &mdash; you would still be here. What would you actually do? Who would you turn to? What is your first step?</p>
+      <textarea id="doInput" class="text-area" rows="3" placeholder="I would&hellip;"></textarea>
+      <button id="doBtn" class="btn-sahasa btn-small">I have a plan &rarr;</button>
+    </div>
+
+    <!-- What it teaches -->
+    <div id="learnPhase" class="phase-card hidden">
+      <div class="phase-label">step four</div>
+      <h2 class="phase-title">What surviving it would teach you</h2>
+      <p class="phase-hint">If you went through it and came out the other side &mdash; what would you know about yourself that you do not know now?</p>
+      <textarea id="learnInput" class="text-area" rows="3" placeholder="I would learn that&hellip;"></textarea>
+      <button id="learnBtn" class="btn-sahasa btn-small">seal this courage &rarr;</button>
+    </div>
+
+    <!-- Complete -->
+    <div id="completePhase" class="phase-card hidden">
+      <div class="complete-ember">&#x2726;</div>
+      <h2 class="phase-title">You looked at it.</h2>
+      <p class="complete-text">You named your fear. You imagined the worst. You made a plan. You found what it would teach you.</p>
+      <p class="complete-accent">That is courage. Not the absence of fear &mdash; but the willingness to face it.</p>
+      <div class="complete-summary" id="completeSummary"></div>
+      <div class="complete-actions">
+        <button id="anotherBtn" class="btn-sahasa btn-small">face another</button>
+        <button id="viewLogBtn" class="btn-sahasa btn-small btn-dim">past courage</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== LOG ========== -->
+  <div id="log" class="log hidden">
+    <h2 class="log-title">Past Courage</h2>
+    <p id="logSub" class="log-sub"></p>
+    <div id="logEntries" class="log-entries"></div>
+    <button id="logBack" class="btn-sahasa btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>S&#x101;hasa <span class="about-deva">&#2360;&#2366;&#2361;&#2360;</span></h2>
+      <p><strong>S&#x101;hasa</strong> means courage, daring, boldness. In Sanskrit literature, it is one of the essential virtues &mdash; not recklessness, but the willingness to face what is difficult.</p>
+      <p>This practice comes from a simple truth: fear grows in the dark. When you look at it directly &mdash; name it, imagine the worst, make a plan, find the lesson &mdash; it shrinks. Not to nothing. But to something you can carry.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="sahasa.js"></script>
+</body>
+</html>

@@ -314,6 +314,14 @@ body {
 .card-maitri::before { background: #c07898; }
 .card-maitri .card-enter { color: #c07898; }
 
+.card-sahasa:hover { border-color: #d08840; }
+.card-sahasa::before { background: #d08840; }
+.card-sahasa .card-enter { color: #d08840; }
+
+.card-samay:hover { border-color: #c8a050; }
+.card-samay::before { background: #c8a050; }
+.card-samay .card-enter { color: #c8a050; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

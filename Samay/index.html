@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a06">
+  <title>Samay &mdash; time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2350;&#2351;</div>
+      <h1>Samay</h1>
+      <p class="opening-sub">time</p>
+      <div class="opening-text">
+        <p>Today will never happen again. The song in your head, the weather outside, what you ate for lunch, who made you laugh &mdash; all of it is vanishing.</p>
+        <p>A time capsule catches a single day in amber. <em>Every detail you think is ordinary will become precious.</em></p>
+        <p>Seal today. Open it in a year. You will meet a stranger who is you.</p>
+      </div>
+      <button id="beginBtn" class="btn-samay">capture today</button>
+    </div>
+  </div>
+
+  <!-- ========== CAPTURE ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <div id="captureCard" class="capture-card">
+      <div class="capture-date" id="captureDate"></div>
+      <h2 class="capture-title">This day, in detail</h2>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What did you eat today?</label>
+        <input type="text" id="q1" class="prompt-input" placeholder="breakfast, lunch, a snack&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What song is stuck in your head?</label>
+        <input type="text" id="q2" class="prompt-input" placeholder="or the last song you heard&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">Who did you talk to today?</label>
+        <input type="text" id="q3" class="prompt-input" placeholder="a friend, a parent, a teacher&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What were you worried about?</label>
+        <input type="text" id="q4" class="prompt-input" placeholder="something big or small&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What made you laugh or smile?</label>
+        <input type="text" id="q5" class="prompt-input" placeholder="even the smallest thing&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What were you wearing?</label>
+        <input type="text" id="q6" class="prompt-input" placeholder="describe your outfit&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">What was the weather like?</label>
+        <input type="text" id="q7" class="prompt-input" placeholder="sunny, rainy, cold, perfect&hellip;">
+      </div>
+
+      <div class="prompt-group">
+        <label class="prompt-label">One thing you want to remember about today</label>
+        <textarea id="q8" class="prompt-textarea" rows="3" placeholder="anything at all&hellip;"></textarea>
+      </div>
+
+      <button id="sealBtn" class="btn-samay btn-small">seal this day</button>
+    </div>
+
+    <!-- Sealed -->
+    <div id="sealedCard" class="sealed-card hidden">
+      <div class="sealed-icon">&#x23F3;</div>
+      <h2 class="sealed-title">Sealed.</h2>
+      <p class="sealed-text">This day is preserved. When you open it again, every detail you think is ordinary now will feel like a gift.</p>
+      <p class="sealed-accent">Time makes the mundane precious.</p>
+      <div class="sealed-actions">
+        <button id="viewCapsulesBtn" class="btn-samay btn-small btn-dim">past capsules</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CAPSULES ========== -->
+  <div id="capsules" class="capsules hidden">
+    <h2 class="capsules-title">Time Capsules</h2>
+    <p id="capsulesSub" class="capsules-sub"></p>
+    <div id="capsulesGrid" class="capsules-grid"></div>
+    <button id="capsulesBack" class="btn-samay btn-small">back</button>
+  </div>
+
+  <!-- ========== CAPSULE DETAIL ========== -->
+  <div id="detail" class="detail hidden">
+    <div class="detail-card" id="detailCard"></div>
+    <button id="detailBack" class="btn-samay btn-small">back to capsules</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Samay <span class="about-deva">&#2360;&#2350;&#2351;</span></h2>
+      <p><strong>Samay</strong> means time. In Indian philosophy, time is not a line but a river &mdash; always flowing, never the same water twice.</p>
+      <p>This is a time capsule for a single day. Not the big events &mdash; the small ones. What you ate. What you wore. What the weather was. The things that seem forgettable are the ones that, a year from now, will bring you to tears with their ordinariness.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="samay.js"></script>
+</body>
+</html>
