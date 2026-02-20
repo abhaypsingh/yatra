@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#060610">
+  <title>&#x100;k&#x101;sha &mdash; the sky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Star canvas -->
+  <canvas id="skyCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2310;&#2325;&#2366;&#2358;</div>
+      <h1>&#x100;k&#x101;sha</h1>
+      <p class="opening-sub">the sky</p>
+      <div class="opening-text">
+        <p>You are not alone. Even when it feels like it.</p>
+        <p>There are people who shaped you &mdash; who taught you something, protected you,
+           made you laugh, or simply stayed. Some are still here. Some have gone.
+           All of them left light inside you.</p>
+        <p>Name them. One by one. Each person becomes a star. Over time, you will
+           build a sky full of everyone who matters &mdash; a constellation of belonging.</p>
+        <p class="opening-accent">Even in the darkest night, you carry an entire sky of people who loved you.</p>
+      </div>
+      <button class="btn-akasha" id="beginBtn">look up</button>
+    </div>
+  </div>
+
+  <!-- ========== ADD STAR ========== -->
+  <div id="addStar" class="add-star hidden">
+    <div class="add-card">
+      <h2 class="add-title">Add a star</h2>
+      <div class="add-field">
+        <label class="add-label">Who is this person?</label>
+        <input type="text" class="add-input" id="starName" placeholder="a name, a title, a role..." maxlength="40">
+      </div>
+      <div class="add-field">
+        <label class="add-label">What did they give you?</label>
+        <select class="add-select" id="starGift">
+          <option value="safety">safety</option>
+          <option value="wisdom">wisdom</option>
+          <option value="joy">joy</option>
+          <option value="courage">courage</option>
+          <option value="patience">patience</option>
+          <option value="love">love</option>
+        </select>
+      </div>
+      <div class="add-field">
+        <label class="add-label">One line about them</label>
+        <textarea class="add-textarea" id="starNote" placeholder="what you remember, what they meant..." maxlength="200"></textarea>
+      </div>
+      <div class="add-actions">
+        <button class="btn-akasha btn-place" id="placeBtn" disabled>place in the sky</button>
+        <button class="btn-ghost" id="cancelAdd">back to sky</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== STAR DETAIL ========== -->
+  <div id="starDetail" class="star-detail hidden">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-glow" id="detailGlow"></div>
+      <h2 class="detail-name" id="detailName"></h2>
+      <p class="detail-gift" id="detailGift"></p>
+      <p class="detail-note" id="detailNote"></p>
+    </div>
+  </div>
+
+  <!-- ========== CONTROLS ========== -->
+  <div class="sky-controls hidden" id="skyControls">
+    <button class="btn-akasha btn-add" id="addBtn">+ add a star</button>
+    <div class="star-count" id="starCount"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about akasha">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x100;k&#x101;sha <span class="about-deva">&#2310;&#2325;&#2366;&#2358;</span></h2>
+      <p>
+        <strong>&#x100;k&#x101;sha</strong> (Sanskrit: sky, space, ether) is the fifth element
+        in Hindu philosophy &mdash; the vast, unchanging space that holds everything.
+        It is the container within which all of creation exists.
+      </p>
+      <p>
+        Your sky is not empty. It is filled with everyone who shaped you. Some you see
+        every day. Some you have not spoken to in years. Some are gone. But their light
+        is still in you, still shining, still part of the sky you carry.
+      </p>
+      <p>
+        All stars are stored on this device alone. This sky belongs to no one but you.
+      </p>
+    </div>
+  </div>
+
+  <script src="akasha.js"></script>
+</body>
+</html>

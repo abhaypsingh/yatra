@@ -282,6 +282,14 @@ body {
 .card-katha::before { background: #c8a060; }
 .card-katha .card-enter { color: #c8a060; }
 
+.card-sangam:hover { border-color: #88a880; }
+.card-sangam::before { background: linear-gradient(to right, #5098b8, #88a880, #c89050); }
+.card-sangam .card-enter { color: #88a880; }
+
+.card-akasha:hover { border-color: #88a8e0; }
+.card-akasha::before { background: #88a8e0; }
+.card-akasha .card-enter { color: #88a8e0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

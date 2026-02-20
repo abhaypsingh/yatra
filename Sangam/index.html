@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0c10">
+  <title>Sangam &mdash; the confluence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2306;&#2327;&#2350;</div>
+      <h1>Sangam</h1>
+      <p class="opening-sub">the confluence</p>
+      <div class="opening-text">
+        <p>In India, the place where two rivers meet is called a <em>sangam</em>.
+           The waters do not fight. They do not ask which river is right.
+           They simply flow into one.</p>
+        <p>The hardest thing about growing up &mdash; especially when a family breaks apart &mdash;
+           is learning that two opposite things can both be true at the same time.</p>
+        <p>You can love someone and be angry at them. You can miss someone and not want to see them.
+           You can need someone and push them away.</p>
+        <p class="opening-accent">This is not confusion. This is being human. Let both rivers flow.</p>
+      </div>
+      <button class="btn-sangam" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== RIVER ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="riverCanvas"></canvas>
+
+    <div class="paradox-card" id="paradoxCard">
+      <div class="paradox-number" id="paradoxNumber"></div>
+
+      <div class="river-row">
+        <div class="river-side river-left hidden" id="riverLeft">
+          <div class="river-label">one truth</div>
+          <p class="river-text" id="leftText"></p>
+        </div>
+        <div class="river-merge hidden" id="riverMerge">&amp;</div>
+        <div class="river-side river-right hidden" id="riverRight">
+          <div class="river-label">another truth</div>
+          <p class="river-text" id="rightText"></p>
+        </div>
+      </div>
+
+      <div class="confluence hidden" id="confluence">
+        <div class="confluence-line"></div>
+        <p class="confluence-text" id="confluenceText"></p>
+      </div>
+
+      <div class="paradox-nav">
+        <button class="btn-sangam btn-next" id="nextBtn">reveal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETION ========== -->
+  <div id="completion" class="completion hidden">
+    <div class="completion-content">
+      <h2>Both rivers are yours</h2>
+      <p class="completion-text">
+        You do not have to choose between what you feel and what is true.
+        You do not have to pick a side within yourself. The place where
+        contradictions meet is not weakness. It is depth.
+      </p>
+      <p class="completion-text">
+        Every person you love is both wonderful and flawed. Every feeling
+        you have is both valid and incomplete. The sangam &mdash; the
+        meeting &mdash; is where wisdom begins.
+      </p>
+      <div class="completion-actions">
+        <button class="btn-sangam" id="restartBtn">flow again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about sangam">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sangam <span class="about-deva">&#2360;&#2306;&#2327;&#2350;</span></h2>
+      <p>
+        <strong>Sangam</strong> (Sanskrit: confluence, meeting place) is the sacred point
+        where two rivers merge into one. The most famous is the Triveni Sangam at Prayagraj,
+        where the Ganga, Yamuna, and the invisible Sarasvati meet. Pilgrims travel there
+        to witness the union of separate waters.
+      </p>
+      <p>
+        This experience is about a different confluence &mdash; the place inside you where
+        contradictory truths meet. Not to resolve them, but to let them coexist. Growth
+        begins when you stop trying to choose between feelings that are both real.
+      </p>
+      <p>
+        There are no wrong answers here. There are only rivers, flowing as they must.
+      </p>
+    </div>
+  </div>
+
+  <script src="sangam.js"></script>
+</body>
+</html>
