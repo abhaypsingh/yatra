@@ -306,6 +306,14 @@ body {
 .card-parampara::before { background: #b89060; }
 .card-parampara .card-enter { color: #b89060; }
 
+.card-nidra:hover { border-color: #7888c8; }
+.card-nidra::before { background: #7888c8; }
+.card-nidra .card-enter { color: #7888c8; }
+
+.card-maitri:hover { border-color: #c07898; }
+.card-maitri::before { background: #c07898; }
+.card-maitri .card-enter { color: #c07898; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

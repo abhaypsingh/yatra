@@ -1,0 +1,274 @@
+/* ============================================================
+   NIDRA — the letting go
+   Deep indigo night, dissolving particles
+   ============================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --void: #08080e;
+  --deep: #0e0e18;
+  --surface: #181828;
+  --text: #b8b8d0;
+  --text-dim: #606080;
+  --accent: #7888c8;
+  --glow: rgba(120, 136, 200, 0.15);
+  --star: #a8b8e8;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%; min-height: 100vh;
+  background: var(--void); color: var(--text);
+  font-family: var(--font-body); line-height: 1.7;
+  overflow-x: hidden; -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void); z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.opening.fade-out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.opening-content { text-align: center; padding: 2rem; max-width: 520px; }
+
+.devanagari {
+  font-size: 2.6rem; color: var(--accent); margin-bottom: 0.3rem;
+  opacity: 0; animation: fadeUp 1s 0.3s ease forwards;
+}
+.opening h1 {
+  font-size: 2.2rem; font-weight: 400; letter-spacing: 0.12em; color: var(--text);
+  margin-bottom: 0.2rem; opacity: 0; animation: fadeUp 1s 0.6s ease forwards;
+}
+.opening-sub {
+  font-size: 1rem; color: var(--text-dim); letter-spacing: 0.1em; font-style: italic;
+  margin-bottom: 2rem; opacity: 0; animation: fadeUp 1s 0.9s ease forwards;
+}
+.opening-text { text-align: left; margin-bottom: 2.5rem; }
+.opening-text p {
+  font-size: 0.92rem; color: var(--text-dim); margin-bottom: 0.8rem;
+  opacity: 0; animation: fadeUp 0.8s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text em { color: var(--text); }
+
+/* ==================== BUTTONS ==================== */
+.btn-nidra {
+  background: transparent; border: 1px solid var(--accent); color: var(--accent);
+  padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 0.95rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease;
+  opacity: 0; animation: fadeUp 0.8s 2.7s ease forwards;
+}
+.btn-nidra:hover { background: var(--accent); color: var(--void); }
+.btn-small { opacity: 1; animation: none; padding: 0.6rem 1.5rem; font-size: 0.85rem; }
+.btn-release { margin-top: 1.5rem; }
+.btn-dim { border-color: var(--surface); color: var(--text-dim); }
+.btn-dim:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
+
+/* ==================== ENGINE ==================== */
+.engine {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; padding: 2rem 1.5rem;
+}
+
+#releaseCanvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+.release-phase, .dissolving-phase, .seed-phase, .rest-phase {
+  position: relative; z-index: 1;
+  max-width: 480px; width: 100%; text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.phase-title {
+  font-size: 1.4rem; font-weight: 400; color: var(--text);
+  margin-bottom: 0.5rem; letter-spacing: 0.06em;
+}
+.phase-hint {
+  font-size: 0.85rem; color: var(--text-dim); font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* ==================== WORRY INPUT ==================== */
+.input-row {
+  display: flex; gap: 0.5rem; margin-bottom: 1rem;
+}
+.worry-input {
+  flex: 1; background: var(--deep); border: 1px solid var(--surface);
+  border-radius: 8px; color: var(--text); font-family: var(--font-body);
+  font-size: 0.9rem; padding: 0.7rem 1rem; transition: border-color 0.3s ease;
+}
+.worry-input:focus { outline: none; border-color: var(--accent); }
+.worry-input::placeholder { color: var(--text-dim); font-style: italic; }
+
+/* ==================== STONE LIST ==================== */
+.stone-list {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.stone {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 8px;
+  padding: 0.7rem 1rem; display: flex; align-items: center; gap: 0.8rem;
+  animation: fadeUp 0.3s ease;
+}
+.stone-icon {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--surface); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; color: var(--text-dim);
+}
+.stone-text {
+  font-size: 0.88rem; color: var(--text-dim); text-align: left; flex: 1;
+}
+
+/* ==================== DISSOLVE ==================== */
+.dissolve-card {
+  background: var(--glow); border-radius: 12px; padding: 2rem;
+  animation: fadeIn 0.6s ease;
+}
+.dissolve-label {
+  font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+}
+.dissolve-text {
+  font-size: 1.1rem; color: var(--text); margin-bottom: 1.2rem;
+  font-style: italic; line-height: 1.6;
+  transition: opacity 2s ease;
+}
+.dissolve-text.fading { opacity: 0; }
+.dissolve-guidance {
+  font-size: 0.82rem; color: var(--text-dim); font-style: italic;
+}
+
+/* ==================== SEED ==================== */
+.seed-input {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 8px;
+  color: var(--accent); font-family: var(--font-body); font-size: 1.4rem;
+  padding: 0.8rem 1.2rem; text-align: center; width: 100%; max-width: 240px;
+  letter-spacing: 0.1em; margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+.seed-input:focus { outline: none; border-color: var(--accent); }
+.seed-input::placeholder { color: var(--text-dim); font-style: italic; font-size: 1rem; }
+
+/* ==================== REST ==================== */
+.rest-content { animation: fadeIn 2s ease; }
+.rest-seed-word {
+  font-size: 2.4rem; color: var(--accent); letter-spacing: 0.15em;
+  margin-bottom: 1.5rem; opacity: 0.8;
+}
+.rest-message {
+  font-size: 0.92rem; color: var(--text-dim); line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.rest-goodnight {
+  font-size: 1.6rem; color: var(--text); font-style: italic;
+  letter-spacing: 0.1em; margin-bottom: 2rem; opacity: 0.7;
+}
+
+/* ==================== LOG ==================== */
+.log {
+  min-height: 100vh; padding: 2rem 1.5rem 4rem;
+  max-width: 520px; margin: 0 auto;
+  animation: fadeIn 0.6s ease;
+}
+.log-title {
+  font-size: 1.4rem; font-weight: 400; color: var(--text);
+  text-align: center; margin-bottom: 0.3rem;
+}
+.log-sub {
+  font-size: 0.82rem; color: var(--text-dim); text-align: center;
+  margin-bottom: 2rem;
+}
+.log-entries { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2rem; }
+
+.log-entry {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 10px;
+  padding: 1.2rem;
+}
+.log-entry-date {
+  font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+}
+.log-released {
+  margin-bottom: 0.8rem;
+}
+.log-released-label {
+  font-family: var(--font-ui); font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.3rem;
+}
+.log-released-item {
+  font-size: 0.85rem; color: var(--text-dim); font-style: italic;
+  padding: 0.2rem 0;
+}
+.log-seed {
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.log-seed-label {
+  font-family: var(--font-ui); font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-dim);
+}
+.log-seed-word {
+  font-size: 1rem; color: var(--accent); letter-spacing: 0.08em;
+}
+.log-empty {
+  text-align: center; color: var(--text-dim); font-style: italic;
+  padding: 3rem 0;
+}
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50;
+  display: flex; gap: 0.5rem; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+}
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--deep);
+  border: 1px solid var(--surface); color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0; background: rgba(4, 4, 8, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem; opacity: 0;
+  transition: opacity 0.4s ease; pointer-events: none;
+}
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2.5rem; max-width: 480px; width: 100%; position: relative;
+}
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+.about-close {
+  position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+  color: var(--text-dim); font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; transition: color 0.3s ease;
+}
+.about-close:hover { color: var(--text); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.8rem; }
+  .phase-title { font-size: 1.2rem; }
+  .rest-seed-word { font-size: 2rem; }
+}

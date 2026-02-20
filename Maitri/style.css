@@ -1,0 +1,234 @@
+/* ============================================================
+   MAITRI — loving-kindness
+   Warm rose and soft gold, expanding circles
+   ============================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --void: #0a080c;
+  --deep: #12101a;
+  --surface: #1e1a28;
+  --text: #c8c0d0;
+  --text-dim: #706880;
+  --accent: #c07898;
+  --accent-warm: #d0a070;
+  --glow: rgba(192, 120, 152, 0.12);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%; min-height: 100vh;
+  background: var(--void); color: var(--text);
+  font-family: var(--font-body); line-height: 1.7;
+  overflow-x: hidden; -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void); z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.opening.fade-out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.opening-content { text-align: center; padding: 2rem; max-width: 520px; }
+
+.devanagari {
+  font-size: 2.6rem; color: var(--accent); margin-bottom: 0.3rem;
+  opacity: 0; animation: fadeUp 1s 0.3s ease forwards;
+}
+.opening h1 {
+  font-size: 2.2rem; font-weight: 400; letter-spacing: 0.12em; color: var(--text);
+  margin-bottom: 0.2rem; opacity: 0; animation: fadeUp 1s 0.6s ease forwards;
+}
+.opening-sub {
+  font-size: 1rem; color: var(--text-dim); letter-spacing: 0.1em; font-style: italic;
+  margin-bottom: 2rem; opacity: 0; animation: fadeUp 1s 0.9s ease forwards;
+}
+.opening-text { text-align: left; margin-bottom: 2.5rem; }
+.opening-text p {
+  font-size: 0.92rem; color: var(--text-dim); margin-bottom: 0.8rem;
+  opacity: 0; animation: fadeUp 0.8s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text em { color: var(--text); }
+
+/* ==================== BUTTONS ==================== */
+.btn-maitri {
+  background: transparent; border: 1px solid var(--accent); color: var(--accent);
+  padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 0.95rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease;
+  opacity: 0; animation: fadeUp 0.8s 2.7s ease forwards;
+}
+.btn-maitri:hover { background: var(--accent); color: var(--void); }
+.btn-small { opacity: 1; animation: none; padding: 0.6rem 1.5rem; font-size: 0.85rem; }
+.btn-dim { border-color: var(--surface); color: var(--text-dim); }
+.btn-dim:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
+
+/* ==================== ENGINE ==================== */
+.engine {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; padding: 2rem 1.5rem;
+}
+
+#ringCanvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+/* ==================== CIRCLE CARD ==================== */
+.circle-card, .complete-card {
+  position: relative; z-index: 1;
+  max-width: 440px; width: 100%;
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2rem; text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.circle-label {
+  font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem;
+}
+.circle-title {
+  font-size: 1.4rem; font-weight: 400; color: var(--text);
+  margin-bottom: 0.4rem; letter-spacing: 0.06em;
+}
+.circle-prompt {
+  font-size: 0.85rem; color: var(--text-dim); font-style: italic;
+  margin-bottom: 1.5rem; line-height: 1.6;
+}
+
+.field-group { margin-bottom: 1rem; text-align: left; }
+.field-label {
+  display: block; font-family: var(--font-ui); font-size: 0.7rem;
+  letter-spacing: 0.08em; color: var(--text-dim); margin-bottom: 0.4rem;
+}
+
+.text-input, .text-area {
+  width: 100%; background: var(--void); border: 1px solid var(--surface);
+  border-radius: 8px; color: var(--text); font-family: var(--font-body);
+  font-size: 0.9rem; padding: 0.7rem 1rem; transition: border-color 0.3s ease;
+}
+.text-input:focus, .text-area:focus { outline: none; border-color: var(--accent); }
+.text-area { resize: vertical; min-height: 70px; line-height: 1.6; }
+.text-input::placeholder, .text-area::placeholder {
+  color: var(--text-dim); font-style: italic;
+}
+
+/* ==================== COMPLETE ==================== */
+.complete-card { background: var(--glow); border-color: var(--accent); }
+.complete-glow {
+  position: absolute; inset: -30px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(192, 120, 152, 0.08) 0%, transparent 70%);
+  pointer-events: none; z-index: -1;
+}
+.complete-title {
+  font-size: 1.3rem; font-weight: 400; color: var(--accent);
+  margin-bottom: 1rem; letter-spacing: 0.06em;
+}
+.complete-text {
+  font-size: 0.9rem; color: var(--text-dim); line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.complete-accent {
+  font-size: 0.95rem; color: var(--accent); font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.complete-actions { display: flex; justify-content: center; gap: 0.8rem; }
+
+/* ==================== HISTORY ==================== */
+.history {
+  min-height: 100vh; padding: 2rem 1.5rem 4rem;
+  max-width: 520px; margin: 0 auto;
+  animation: fadeIn 0.6s ease;
+}
+.history-title {
+  font-size: 1.4rem; font-weight: 400; color: var(--text);
+  text-align: center; margin-bottom: 0.3rem;
+}
+.history-sub {
+  font-size: 0.82rem; color: var(--text-dim); text-align: center;
+  margin-bottom: 2rem;
+}
+.history-entries { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2rem; }
+
+.history-entry {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 10px;
+  padding: 1.2rem;
+}
+.history-date {
+  font-family: var(--font-ui); font-size: 0.7rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+}
+.history-circle {
+  margin-bottom: 0.6rem; padding-left: 0.5rem;
+  border-left: 2px solid var(--surface);
+}
+.history-circle-label {
+  font-family: var(--font-ui); font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.15rem;
+}
+.history-circle-name {
+  font-size: 0.9rem; color: var(--text); margin-bottom: 0.1rem;
+}
+.history-circle-thought {
+  font-size: 0.82rem; color: var(--text-dim); font-style: italic;
+}
+.history-empty {
+  text-align: center; color: var(--text-dim); font-style: italic;
+  padding: 3rem 0;
+}
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50;
+  display: flex; gap: 0.5rem; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+}
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--deep);
+  border: 1px solid var(--surface); color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0; background: rgba(6, 4, 8, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem; opacity: 0;
+  transition: opacity 0.4s ease; pointer-events: none;
+}
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2.5rem; max-width: 480px; width: 100%; position: relative;
+}
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+.about-close {
+  position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+  color: var(--text-dim); font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; transition: color 0.3s ease;
+}
+.about-close:hover { color: var(--text); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.8rem; }
+  .circle-card, .complete-card { padding: 1.5rem; }
+  .circle-title { font-size: 1.2rem; }
+}

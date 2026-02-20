@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080e">
+  <title>Nidr&#x101; &mdash; the letting go</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2344;&#2367;&#2342;&#2381;&#2352;&#2366;</div>
+      <h1>Nidr&#x101;</h1>
+      <p class="opening-sub">the letting go</p>
+      <div class="opening-text">
+        <p>Before you sleep, the mind replays. Worries circle. Tomorrow presses in.</p>
+        <p>This is a place to <em>set things down</em>.</p>
+        <p>Name what weighs on you. Watch it dissolve. Plant one seed of intention. Then rest.</p>
+      </div>
+      <button id="beginBtn" class="btn-nidra">begin tonight&rsquo;s release</button>
+    </div>
+  </div>
+
+  <!-- ========== RELEASE ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="releaseCanvas"></canvas>
+
+    <div id="releasePhase" class="release-phase">
+      <h2 class="phase-title">What weighs on you tonight?</h2>
+      <p class="phase-hint">Name a worry, a regret, a tension &mdash; anything you are carrying.</p>
+      <div class="input-row">
+        <input type="text" id="worryInput" class="worry-input" placeholder="type what weighs on you&hellip;" maxlength="120">
+        <button id="addWorryBtn" class="btn-nidra btn-small">add</button>
+      </div>
+      <div id="stoneList" class="stone-list"></div>
+      <button id="releaseAllBtn" class="btn-nidra btn-release hidden">release all &rarr;</button>
+    </div>
+
+    <div id="dissolvingPhase" class="dissolving-phase hidden">
+      <div class="dissolve-card">
+        <div class="dissolve-label">releasing</div>
+        <div id="dissolveText" class="dissolve-text"></div>
+        <p class="dissolve-guidance">Watch it dissolve. You do not need to carry this into sleep.</p>
+      </div>
+    </div>
+
+    <div id="seedPhase" class="seed-phase hidden">
+      <h2 class="phase-title">Plant a dream seed</h2>
+      <p class="phase-hint">One word. An intention to carry into sleep. What do you want to wake up with?</p>
+      <input type="text" id="seedInput" class="seed-input" placeholder="one word&hellip;" maxlength="30">
+      <button id="plantSeedBtn" class="btn-nidra btn-small">plant</button>
+    </div>
+
+    <div id="restPhase" class="rest-phase hidden">
+      <div class="rest-content">
+        <div class="rest-seed-word" id="restSeedWord"></div>
+        <p class="rest-message">Everything you set down is dissolving into light.<br>Your seed is planted. Sleep will tend it.</p>
+        <p class="rest-goodnight">Good night.</p>
+        <button id="viewLogBtn" class="btn-nidra btn-small btn-dim">past nights</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== LOG ========== -->
+  <div id="log" class="log hidden">
+    <h2 class="log-title">Past Nights</h2>
+    <p id="logSub" class="log-sub"></p>
+    <div id="logEntries" class="log-entries"></div>
+    <button id="logBack" class="btn-nidra btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Nidr&#x101; <span class="about-deva">&#2344;&#2367;&#2342;&#2381;&#2352;&#2366;</span></h2>
+      <p><strong>Nidr&#x101;</strong> means sleep, rest, the dissolution of waking consciousness. In yoga philosophy, <em>yoga nidr&#x101;</em> is the practice of conscious release &mdash; letting go of what the day accumulated so the deeper self can breathe.</p>
+      <p>This is not meditation. This is simpler. Name what you carry. Watch it leave. Plant one intention. Sleep.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere. This is yours alone.</p>
+    </div>
+  </div>
+
+  <script src="nidra.js"></script>
+</body>
+</html>

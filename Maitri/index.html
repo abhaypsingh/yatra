@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a080c">
+  <title>Maitr&#x12B; &mdash; loving-kindness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2350;&#2376;&#2340;&#2381;&#2352;&#2368;</div>
+      <h1>Maitr&#x12B;</h1>
+      <p class="opening-sub">loving-kindness</p>
+      <div class="opening-text">
+        <p>In every tradition, there is a practice of expanding the circle of care &mdash; starting with yourself and reaching outward.</p>
+        <p>Five rings. Five people. For each one, <em>name them</em> and <em>send a kind thought</em>.</p>
+        <p>Start with yourself. End with the hardest person to love. Watch the circles glow.</p>
+      </div>
+      <button id="beginBtn" class="btn-maitri">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="ringCanvas"></canvas>
+
+    <div id="circleCard" class="circle-card">
+      <div id="circleLabel" class="circle-label"></div>
+      <h2 id="circleTitle" class="circle-title"></h2>
+      <p id="circlePrompt" class="circle-prompt"></p>
+
+      <div class="field-group">
+        <label class="field-label" id="nameLabel">their name</label>
+        <input type="text" id="nameInput" class="text-input" maxlength="60">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">your kind thought for them</label>
+        <textarea id="thoughtInput" class="text-area" rows="3" placeholder="may you be&hellip;"></textarea>
+      </div>
+
+      <button id="sendBtn" class="btn-maitri btn-small">send &rarr;</button>
+    </div>
+
+    <div id="completeCard" class="complete-card hidden">
+      <div class="complete-glow"></div>
+      <h2 class="complete-title">All five circles are glowing.</h2>
+      <p class="complete-text">You sent kindness to yourself, to someone you love, to a friend, to someone you barely know, and to someone who is difficult. That is the full circle of compassion.</p>
+      <p class="complete-accent">The kindness you send out does not leave you. It multiplies.</p>
+      <div class="complete-actions">
+        <button id="viewHistoryBtn" class="btn-maitri btn-small btn-dim">past practices</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HISTORY ========== -->
+  <div id="history" class="history hidden">
+    <h2 class="history-title">Past Practices</h2>
+    <p id="historySub" class="history-sub"></p>
+    <div id="historyEntries" class="history-entries"></div>
+    <button id="historyBack" class="btn-maitri btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Maitr&#x12B; <span class="about-deva">&#2350;&#2376;&#2340;&#2381;&#2352;&#2368;</span></h2>
+      <p><strong>Maitr&#x12B;</strong> (Pali: <em>mett&#x101;</em>) means loving-kindness &mdash; the unconditional wish for the well-being of all beings. In Buddhist practice, it begins with the self and expands outward in concentric circles.</p>
+      <p>The five circles are traditional: yourself, a loved one, a friend, a neutral person, and a difficult person. The practice is not about forcing feelings. It is about <em>intending</em> kindness, even when it is hard.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="maitri.js"></script>
+</body>
+</html>
