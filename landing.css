@@ -330,6 +330,14 @@ body {
 .card-anitya::before { background: #8090b8; }
 .card-anitya .card-enter { color: #8090b8; }
 
+.card-dhairya:hover { border-color: #6090a8; }
+.card-dhairya::before { background: #6090a8; }
+.card-dhairya .card-enter { color: #6090a8; }
+
+.card-prana:hover { border-color: #68a878; }
+.card-prana::before { background: #68a878; }
+.card-prana .card-enter { color: #68a878; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

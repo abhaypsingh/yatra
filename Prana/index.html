@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a08">
+  <title>Pr&#x101;&#x1E47;a &mdash; breath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2381;&#2352;&#2366;&#2339;</div>
+      <h1>Pr&#x101;&#x1E47;a</h1>
+      <p class="opening-sub">breath</p>
+      <div class="opening-text">
+        <p>When everything is loud, your breath is still yours.</p>
+        <p>Four patterns. One circle. <em>Breathe in, the circle grows. Breathe out, it shrinks.</em> That is all.</p>
+        <p>This is the simplest and most powerful tool you will ever have.</p>
+      </div>
+      <button id="beginBtn" class="btn-prana">breathe</button>
+    </div>
+  </div>
+
+  <!-- ========== PATTERN SELECT ========== -->
+  <div id="patternSelect" class="pattern-select hidden">
+    <h2 class="select-title">Choose a pattern</h2>
+    <div class="pattern-grid">
+      <button class="pattern-card" data-pattern="box">
+        <div class="pattern-name">Box</div>
+        <div class="pattern-desc">4 in &middot; 4 hold &middot; 4 out &middot; 4 hold</div>
+        <div class="pattern-use">grounding &amp; focus</div>
+      </button>
+      <button class="pattern-card" data-pattern="calm">
+        <div class="pattern-name">Calm</div>
+        <div class="pattern-desc">4 in &middot; 7 hold &middot; 8 out</div>
+        <div class="pattern-use">anxiety &amp; sleep</div>
+      </button>
+      <button class="pattern-card" data-pattern="natural">
+        <div class="pattern-name">Natural</div>
+        <div class="pattern-desc">4 in &middot; 6 out</div>
+        <div class="pattern-use">everyday calm</div>
+      </button>
+      <button class="pattern-card" data-pattern="energy">
+        <div class="pattern-name">Energy</div>
+        <div class="pattern-desc">2 in &middot; 1 hold &middot; 4 out</div>
+        <div class="pattern-use">waking up &amp; alertness</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== BREATHING ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="breathCanvas"></canvas>
+    <div class="breath-overlay">
+      <div class="breath-instruction" id="breathInstruction">breathe in</div>
+      <div class="breath-timer" id="breathTimer">0:00</div>
+      <div class="breath-count" id="breathCount"></div>
+    </div>
+    <div class="engine-controls">
+      <button class="ctrl-btn" id="stopBtn">done</button>
+      <button class="ctrl-btn" id="changeBtn">change pattern</button>
+    </div>
+  </div>
+
+  <!-- ========== DONE ========== -->
+  <div id="done" class="done hidden">
+    <div class="done-content">
+      <h2 class="done-title">You breathed.</h2>
+      <p class="done-stat" id="doneStat"></p>
+      <p class="done-text">That is enough. Whenever the world feels too fast, too loud, or too heavy &mdash; you can always come back here.</p>
+      <div class="done-actions">
+        <button class="btn-prana btn-small" id="againBtn">breathe again</button>
+        <button class="btn-prana btn-small btn-dim" id="historyBtn">past sessions</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HISTORY ========== -->
+  <div id="history" class="history hidden">
+    <h2 class="history-title">Past Sessions</h2>
+    <p id="historySub" class="history-sub"></p>
+    <div id="historyEntries" class="history-entries"></div>
+    <button class="btn-prana btn-small" id="historyBack">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Pr&#x101;&#x1E47;a <span class="about-deva">&#2346;&#2381;&#2352;&#2366;&#2339;</span></h2>
+      <p><strong>Pr&#x101;&#x1E47;a</strong> means breath, life force, vital energy. In yoga, <em>pr&#x101;&#x1E47;&#x101;y&#x101;ma</em> &mdash; the regulation of breath &mdash; is considered the bridge between body and mind.</p>
+      <p>The four patterns here are drawn from clinical and contemplative traditions. Box breathing is used by the military and first responders. The 4-7-8 pattern was developed for anxiety and sleep. All of them work by activating your parasympathetic nervous system &mdash; your body&rsquo;s built-in calm.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="prana.js"></script>
+</body>
+</html>

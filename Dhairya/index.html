@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a0c">
+  <title>Dhairya &mdash; patience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2343;&#2376;&#2352;&#2381;&#2351;</div>
+      <h1>Dhairya</h1>
+      <p class="opening-sub">patience</p>
+      <div class="opening-text">
+        <p>Patience is not passive. It is the hardest kind of strength &mdash; the decision to hold steady when everything in you wants to react.</p>
+        <p>Six moments where you will feel the urge to act. In each one, <em>choose to wait</em>. Watch the water settle.</p>
+        <p>Over time, a garden of still stones emerges. Each one is a moment you chose not to break.</p>
+      </div>
+      <button id="beginBtn" class="btn-dhairya">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <canvas id="waterCanvas"></canvas>
+
+    <div class="scenario-card" id="scenarioCard">
+      <div class="scenario-number" id="scenarioNumber"></div>
+      <h2 class="scenario-title" id="scenarioTitle"></h2>
+      <p class="scenario-body" id="scenarioBody"></p>
+
+      <div class="urge-box" id="urgeBox">
+        <div class="urge-label">the urge</div>
+        <p class="urge-text" id="urgeText"></p>
+      </div>
+
+      <div class="patience-box hidden" id="patienceBox">
+        <div class="patience-label">the patience</div>
+        <p class="patience-text" id="patienceText"></p>
+      </div>
+
+      <div class="wisdom-box hidden" id="wisdomBox">
+        <p class="wisdom-text" id="wisdomText"></p>
+      </div>
+
+      <button class="btn-dhairya btn-small" id="nextBtn">I choose to wait</button>
+    </div>
+  </div>
+
+  <!-- ========== CLOSING ========== -->
+  <div id="closing" class="closing hidden">
+    <canvas id="gardenCanvas"></canvas>
+    <div class="closing-content">
+      <h2 class="closing-title">Six stones in still water.</h2>
+      <p class="closing-text">You felt the urge to react &mdash; to defend, to demand, to run, to fix. And six times, you chose to hold steady.</p>
+      <p class="closing-accent">Patience is not weakness. It is the deepest kind of power &mdash; the power to let the water settle, and see clearly what is beneath.</p>
+      <button class="btn-dhairya btn-small" id="restartBtn">begin again</button>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Dhairya <span class="about-deva">&#2343;&#2376;&#2352;&#2381;&#2351;</span></h2>
+      <p><strong>Dhairya</strong> means patience, steadfastness, fortitude. In the Bhagavad Gita, it is listed among the divine qualities &mdash; not as passive waiting, but as the active strength to remain composed when the world pushes you to break.</p>
+      <p>These six scenarios are drawn from the real tensions of growing up. The urge to react is natural. The choice to wait is extraordinary.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="dhairya.js"></script>
+</body>
+</html>
