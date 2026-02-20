@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a0e">
+  <title>Kath&#x101; &mdash; the story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2325;&#2341;&#2366;</div>
+      <h1>Kath&#x101;</h1>
+      <p class="opening-sub">the story</p>
+      <div class="opening-text">
+        <p>The objects in your life have been watching you longer than you know.</p>
+        <p>The kitchen table heard every argument and every apology.
+           The front door felt every leaving and every return.
+           The old photograph remembers what you have forgotten.</p>
+        <p>What if they could speak? What would they tell you about the family
+           they have witnessed &mdash; and the love they saw, even when you could not?</p>
+        <p class="opening-accent">Everything around you has a story. Most of them are about you.</p>
+      </div>
+      <button class="btn-katha" id="beginBtn">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== STORY ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <div class="story-header">
+      <div class="story-icon" id="storyIcon"></div>
+      <h2 class="story-title" id="storyTitle"></h2>
+      <p class="story-voice" id="storyVoice"></p>
+    </div>
+
+    <div class="story-body" id="storyBody"></div>
+
+    <div class="story-reflection hidden" id="storyReflection">
+      <div class="reflection-line"></div>
+      <p class="reflection-text" id="reflectionText"></p>
+      <textarea class="reflection-input" id="reflectionInput" placeholder="write what this stirred in you..."></textarea>
+    </div>
+
+    <div class="story-nav" id="storyNav">
+      <button class="btn-katha btn-next" id="nextPara">continue</button>
+    </div>
+  </div>
+
+  <!-- ========== COLLECTION ========== -->
+  <div id="collection" class="collection hidden">
+    <h2 class="collection-title">The Silent Witnesses</h2>
+    <p class="collection-sub">Choose an object. Hear its story.</p>
+    <div class="object-grid" id="objectGrid"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navCollection" title="all stories">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about katha">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kath&#x101; <span class="about-deva">&#2325;&#2341;&#2366;</span></h2>
+      <p>
+        <strong>Kath&#x101;</strong> (Sanskrit: story, narrative) is the ancient art of
+        storytelling. In Indian tradition, stories are not entertainment &mdash; they are
+        mirrors held at unexpected angles, showing us what we could not see head-on.
+      </p>
+      <p>
+        These stories are told by the objects that have witnessed family life in silence.
+        They saw the love, the leaving, the trying, and the returning. They remember
+        what we have forgotten, and they forgive what we cannot.
+      </p>
+      <p>
+        Read slowly. The objects have been patient. They can wait a little longer for you to hear them.
+      </p>
+    </div>
+  </div>
+
+  <script src="katha.js"></script>
+</body>
+</html>

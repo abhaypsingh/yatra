@@ -274,6 +274,14 @@ body {
 .card-leela::before { background: #f7dc6f; }
 .card-leela .card-enter { color: #f7dc6f; }
 
+.card-rasa:hover { border-color: #c89868; }
+.card-rasa::before { background: #c89868; }
+.card-rasa .card-enter { color: #c89868; }
+
+.card-katha:hover { border-color: #c8a060; }
+.card-katha::before { background: #c8a060; }
+.card-katha .card-enter { color: #c8a060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

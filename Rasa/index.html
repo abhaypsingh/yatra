@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0e0a10">
+  <title>Rasa &mdash; the nine emotions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2352;&#2360;</div>
+      <h1>Rasa</h1>
+      <p class="opening-sub">the nine emotions</p>
+      <div class="opening-text">
+        <p>Two thousand years ago, the Indian sage Bharata wrote that all of human feeling
+           flows from nine essences &mdash; the <em>Navarasa</em>.</p>
+        <p>Love, joy, compassion, anger, courage, fear, aversion, wonder, peace.
+           Every day, some of these are alive in you. Most go unnamed.</p>
+        <p>Name them. Write one line for each. Over time, a mandala of your inner life
+           will emerge &mdash; a map of who you are beneath the surface.</p>
+        <p class="opening-accent">What you can name, you can understand. What you understand, you can hold gently.</p>
+      </div>
+      <button class="btn-rasa" id="beginBtn">feel inward</button>
+    </div>
+  </div>
+
+  <!-- ========== CHECK-IN ========== -->
+  <div id="checkin" class="checkin hidden">
+    <div class="checkin-header">
+      <h2 class="checkin-date" id="checkinDate"></h2>
+      <p class="checkin-prompt">Which emotions are alive in you today? Tap to select, then write a line for each.</p>
+    </div>
+
+    <div class="rasa-grid" id="rasaGrid"></div>
+
+    <div class="writing-area hidden" id="writingArea">
+      <div class="writing-cards" id="writingCards"></div>
+      <button class="btn-rasa btn-seal" id="sealBtn">seal today</button>
+    </div>
+  </div>
+
+  <!-- ========== MANDALA ========== -->
+  <div id="mandala" class="mandala hidden">
+    <div class="mandala-header">
+      <h2>Your Emotional Mandala</h2>
+      <p class="mandala-sub" id="mandalaSub"></p>
+    </div>
+    <div class="mandala-canvas" id="mandalaCanvas"></div>
+    <div class="mandala-legend" id="mandalaLegend"></div>
+    <div class="mandala-actions">
+      <button class="btn-rasa" id="todayBtn">today&rsquo;s check-in</button>
+      <button class="btn-ghost" id="journalBtn">view journal</button>
+    </div>
+  </div>
+
+  <!-- ========== JOURNAL ========== -->
+  <div id="journal" class="journal hidden">
+    <div class="journal-header">
+      <h2>Journal</h2>
+      <button class="btn-ghost" id="journalBack">&larr; back</button>
+    </div>
+    <div class="journal-entries" id="journalEntries"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navMandala" title="mandala">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about rasa">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rasa <span class="about-deva">&#2352;&#2360;</span></h2>
+      <p>
+        <strong>Rasa</strong> (Sanskrit: essence, flavor, emotion) is the aesthetic theory
+        that all human emotional experience flows from nine fundamental essences. First
+        articulated in the <em>Natyashastra</em> around the 2nd century BCE, the Navarasa
+        remain one of the most elegant maps of the inner life ever created.
+      </p>
+      <p>
+        This is not a mood tracker. It is a practice of emotional literacy &mdash; the act
+        of noticing what is alive in you, naming it honestly, and watching it change over time.
+      </p>
+      <p>
+        All entries are stored on this device alone. They belong to no one but you.
+      </p>
+    </div>
+  </div>
+
+  <script src="rasa.js"></script>
+</body>
+</html>

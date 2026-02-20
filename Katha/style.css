@@ -1,0 +1,199 @@
+/* ============================================================
+   KATHA — the story
+   Warm amber/parchment palette — storytelling aesthetic
+   ============================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --void: #0c0a0e;
+  --deep: #141018;
+  --surface: #1e1a24;
+  --text: #d0c8b8;
+  --text-dim: #807868;
+  --accent: #c8a060;
+  --accent-glow: rgba(200, 160, 96, 0.15);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%; min-height: 100vh;
+  background: var(--void); color: var(--text);
+  font-family: var(--font-body); line-height: 1.7;
+  overflow-x: hidden; -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void); z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.opening.fade-out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+
+.opening-content { text-align: center; padding: 2rem; max-width: 520px; }
+
+.devanagari {
+  font-size: 3rem; color: var(--accent); margin-bottom: 0.3rem;
+  opacity: 0; animation: fadeUp 1s 0.3s ease forwards;
+}
+.opening h1 {
+  font-size: 2.4rem; font-weight: 400; letter-spacing: 0.15em; color: var(--text);
+  margin-bottom: 0.2rem; opacity: 0; animation: fadeUp 1s 0.6s ease forwards;
+}
+.opening-sub {
+  font-size: 1rem; color: var(--text-dim); letter-spacing: 0.1em; font-style: italic;
+  margin-bottom: 2rem; opacity: 0; animation: fadeUp 1s 0.9s ease forwards;
+}
+.opening-text { text-align: left; margin-bottom: 2.5rem; }
+.opening-text p {
+  font-size: 0.92rem; color: var(--text-dim); margin-bottom: 0.8rem;
+  opacity: 0; animation: fadeUp 0.8s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text p:nth-child(4) { animation-delay: 2.7s; }
+.opening-text em { color: var(--text); }
+.opening-accent { color: var(--accent) !important; font-style: italic; }
+
+/* ==================== BUTTONS ==================== */
+.btn-katha {
+  background: transparent; border: 1px solid var(--accent); color: var(--accent);
+  padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 0.95rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease;
+  opacity: 0; animation: fadeUp 0.8s 3.2s ease forwards;
+}
+.btn-katha:hover { background: var(--accent); color: var(--void); }
+.btn-next { opacity: 1; animation: none; }
+
+.btn-ghost {
+  background: transparent; border: 1px solid var(--text-dim); color: var(--text-dim);
+  padding: 0.6rem 1.5rem; font-family: var(--font-body); font-size: 0.85rem;
+  cursor: pointer; transition: all 0.3s ease;
+}
+.btn-ghost:hover { border-color: var(--text); color: var(--text); }
+
+/* ==================== ENGINE ==================== */
+.engine {
+  min-height: 100vh; padding: 2rem 1.5rem 4rem;
+  max-width: 620px; margin: 0 auto; animation: fadeIn 0.8s ease;
+}
+
+.story-header { text-align: center; margin-bottom: 2rem; padding-top: 1rem; }
+.story-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.story-title {
+  font-size: 1.5rem; font-weight: 400; color: var(--accent);
+  letter-spacing: 0.08em; margin-bottom: 0.2rem;
+}
+.story-voice { font-size: 0.85rem; color: var(--text-dim); font-style: italic; }
+
+.story-body { margin-bottom: 2rem; }
+.story-para {
+  font-size: 1rem; color: var(--text); line-height: 1.8; margin-bottom: 1.2rem;
+  opacity: 0; animation: fadeUp 0.6s ease forwards;
+}
+.story-para.voice { color: var(--accent); font-style: italic; }
+
+.story-reflection { margin-bottom: 2rem; animation: fadeIn 0.8s ease; }
+.reflection-line {
+  width: 60px; height: 1px; background: var(--accent); margin: 2rem auto 1.5rem;
+  opacity: 0.4;
+}
+.reflection-text {
+  font-size: 0.95rem; color: var(--text-dim); font-style: italic;
+  text-align: center; margin-bottom: 1.5rem; line-height: 1.7;
+}
+.reflection-input {
+  width: 100%; min-height: 80px; background: var(--void); border: 1px solid var(--surface);
+  border-radius: 8px; color: var(--text); font-family: var(--font-body); font-size: 0.9rem;
+  padding: 1rem; resize: vertical; line-height: 1.6; transition: border-color 0.3s ease;
+}
+.reflection-input:focus { outline: none; border-color: var(--accent); }
+.reflection-input::placeholder { color: var(--text-dim); font-style: italic; }
+
+.story-nav { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ==================== COLLECTION ==================== */
+.collection {
+  min-height: 100vh; padding: 2rem 1.5rem 4rem;
+  max-width: 600px; margin: 0 auto; animation: fadeIn 0.8s ease;
+}
+.collection-title {
+  font-size: 1.5rem; font-weight: 400; color: var(--text);
+  text-align: center; margin-bottom: 0.3rem; padding-top: 1rem;
+}
+.collection-sub {
+  font-size: 0.88rem; color: var(--text-dim); text-align: center;
+  font-style: italic; margin-bottom: 2rem;
+}
+
+.object-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+.object-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 10px;
+  padding: 1.5rem; text-align: center; cursor: pointer;
+  transition: all 0.3s ease;
+}
+.object-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.object-card.read { opacity: 0.6; }
+.object-card.read:hover { opacity: 0.8; }
+.object-card-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.object-card-name { font-size: 0.95rem; color: var(--text); margin-bottom: 0.2rem; }
+.object-card-hint { font-size: 0.75rem; color: var(--text-dim); font-style: italic; }
+.object-card-check { font-size: 0.7rem; color: var(--accent); margin-top: 0.4rem; }
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50;
+  display: flex; gap: 0.5rem; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+}
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--deep);
+  border: 1px solid var(--surface); color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0; background: rgba(8, 6, 10, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem; opacity: 0;
+  transition: opacity 0.4s ease; pointer-events: none;
+}
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2.5rem; max-width: 480px; width: 100%; position: relative;
+}
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+.about-close {
+  position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+  color: var(--text-dim); font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; transition: color 0.3s ease;
+}
+.about-close:hover { color: var(--text); }
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.4rem; }
+  .opening h1 { font-size: 1.8rem; }
+  .engine { padding: 1.5rem 1rem 3rem; }
+  .object-grid { grid-template-columns: 1fr; }
+  .story-nav { flex-direction: column; align-items: stretch; }
+}
