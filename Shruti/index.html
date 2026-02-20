@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0c14">
+  <title>&#x15A;ruti &mdash; that which is heard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2358;&#2381;&#2352;&#2369;&#2340;&#2367;</div>
+      <h1>Shruti</h1>
+      <p class="opening-sub">that which is heard</p>
+      <div class="opening-text">
+        <p>Most people listen to respond. Very few listen to understand.</p>
+        <p>Words have layers. What someone <em>says</em> is only the surface.<br>
+           Beneath it is what they <em>mean</em>. And beneath that &mdash;<br>
+           what they <em>need</em>.</p>
+        <p>You will read six conversations. Each has three layers.</p>
+        <p class="opening-accent">Slow down. Look closer. Hear what was never said out loud.</p>
+      </div>
+      <button class="btn-shruti" id="beginBtn">begin listening</button>
+    </div>
+  </div>
+
+  <!-- ========== LISTENING ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+
+    <!-- Progress -->
+    <div class="progress-row">
+      <div class="progress-dots" id="progressDots"></div>
+      <span class="progress-label" id="progressLabel">1 / 6</span>
+    </div>
+
+    <!-- Scene context -->
+    <div class="scene-context" id="sceneContext"></div>
+
+    <!-- Layer 1: Surface (what they say) -->
+    <div id="layerSurface" class="layer layer-surface">
+      <div class="layer-tag">
+        <span class="layer-icon">&#x25CB;</span>
+        <span class="layer-label">surface &mdash; what they say</span>
+      </div>
+      <div class="dialogue-box" id="dialogueSurface"></div>
+      <button class="btn-shruti btn-layer" id="goDeeper1">listen deeper &darr;</button>
+    </div>
+
+    <!-- Layer 2: Meaning (what they mean) -->
+    <div id="layerMeaning" class="layer layer-meaning hidden">
+      <div class="layer-tag">
+        <span class="layer-icon">&#x25D4;</span>
+        <span class="layer-label">meaning &mdash; what they actually mean</span>
+      </div>
+      <div class="meaning-box" id="dialogueMeaning"></div>
+      <button class="btn-shruti btn-layer" id="goDeeper2">listen deeper still &darr;</button>
+    </div>
+
+    <!-- Layer 3: Need (what they need) -->
+    <div id="layerNeed" class="layer layer-need hidden">
+      <div class="layer-tag">
+        <span class="layer-icon">&#x25CF;</span>
+        <span class="layer-label">need &mdash; what they are really asking for</span>
+      </div>
+      <div class="need-box" id="dialogueNeed"></div>
+      <div class="layer-reflection" id="layerReflection"></div>
+      <button class="btn-shruti" id="nextScene">next conversation &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ========== CLOSING ========== -->
+  <div id="closing" class="closing hidden">
+    <div class="closing-content">
+      <h2>The Unheard</h2>
+      <p class="closing-text">
+        Six conversations. Eighteen layers. Every time, the surface words felt complete &mdash;
+        until you listened deeper and found the real message underneath.
+      </p>
+      <p class="closing-text">
+        Most arguments are not about what they seem to be about. Most silence is not empty.
+        Most anger is not really anger.
+      </p>
+      <div class="closing-question">
+        <p>Think of someone who says things that frustrate you.</p>
+        <p class="closing-accent">What might they be trying to say that the words can't carry?</p>
+      </div>
+      <textarea class="closing-input" id="closingInput" placeholder="write what you hear now..."></textarea>
+      <div class="closing-actions">
+        <button class="btn-shruti" id="sealBtn">seal this hearing</button>
+        <button class="btn-ghost" id="restartBtn">listen again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about shruti">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Shruti <span class="about-deva">&#2358;&#2381;&#2352;&#2369;&#2340;&#2367;</span></h2>
+      <p>
+        <strong>Shruti</strong> (Sanskrit: that which is heard) refers in the Vedic tradition to
+        sacred knowledge received through deep listening &mdash; not learned, not invented, but
+        <em>heard</em> by those who had cultivated the capacity to receive it.
+      </p>
+      <p>
+        In human relationships, the deepest truths are rarely spoken directly. We say &ldquo;I'm fine&rdquo;
+        when we're breaking. We say &ldquo;It doesn't matter&rdquo; when it matters more than anything.
+        We say &ldquo;Leave me alone&rdquo; when what we mean is &ldquo;Please stay.&rdquo;
+      </p>
+      <p>
+        This experience teaches the art of listening beneath the surface &mdash; to hear not just words,
+        but the meaning they carry and the need they are trying to express.
+      </p>
+      <p>
+        The people who are hardest to understand are usually the ones who need to be heard the most.
+      </p>
+    </div>
+  </div>
+
+  <script src="shruti.js"></script>
+</body>
+</html>

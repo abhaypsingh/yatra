@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2D2B55">
+  <title>Growing Up Strong - A Guide for Amazing Young Women</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== SPLASH / LOADING ========== -->
+  <div id="splash" class="splash">
+    <div class="splash-content">
+      <div class="splash-icon">
+        <svg viewBox="0 0 120 120" class="splash-svg">
+          <circle cx="60" cy="60" r="55" fill="none" stroke="#6C63FF" stroke-width="3" opacity="0.3"/>
+          <circle cx="60" cy="60" r="55" fill="none" stroke="#6C63FF" stroke-width="3" class="splash-circle"/>
+          <text x="60" y="68" text-anchor="middle" font-size="40" fill="#6C63FF">&#9734;</text>
+        </svg>
+      </div>
+      <h1 class="splash-title">Growing Up Strong</h1>
+      <p class="splash-sub">Your Guide to Being Unstoppable</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="navbar hidden">
+    <div class="nav-brand" data-page="home">
+      <span class="nav-logo">&#9734;</span>
+      <span class="nav-title">Growing Up Strong</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+      <li><a href="#" data-page="bond" class="nav-link">The Bond</a></li>
+      <li><a href="#" data-page="safety" class="nav-link">Safety Smart</a></li>
+      <li><a href="#" data-page="voices" class="nav-link">Strong Voices</a></li>
+      <li><a href="#" data-page="respect" class="nav-link">Respect</a></li>
+      <li><a href="#" data-page="scenarios" class="nav-link">Real Talk</a></li>
+      <li><a href="#" data-page="socratic" class="nav-link">Think Deeper</a></li>
+      <li><a href="#" data-page="journal" class="nav-link">My Journal</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== PROGRESS BAR ========== -->
+  <div id="progressBar" class="progress-bar hidden">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="mainContent" class="main-content hidden">
+
+    <!-- ===================== HOME PAGE ===================== -->
+    <section id="page-home" class="page active">
+      <div class="hero">
+        <div class="hero-bg-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">Hey, Amazing Girl <span class="wave">&#128075;</span></h1>
+          <p class="hero-subtitle">
+            You're growing up, becoming your own person, figuring out the world.
+            That takes courage. This little guide is here to walk beside you &mdash;
+            not to tell you what to think, but to help you <em>think bigger</em>.
+          </p>
+          <button class="btn btn-primary btn-lg" data-page="bond">Start Exploring &rarr;</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="section-heading">What's Inside</h2>
+        <div class="card-grid">
+
+          <div class="nav-card" data-page="bond">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #6C63FF, #8B83FF);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>The Bond</h3>
+            <p>Why the father-daughter connection is one of the most powerful relationships in your life.</p>
+          </div>
+
+          <div class="nav-card" data-page="safety">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #FF6584, #FF8FA3);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Safety Smart</h3>
+            <p>Real-world street smarts that empower you to navigate any situation with confidence.</p>
+          </div>
+
+          <div class="nav-card" data-page="voices">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #43E97B, #38F9D7);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3>Strong Voices</h3>
+            <p>Incredible women share how their fathers shaped who they became.</p>
+          </div>
+
+          <div class="nav-card" data-page="respect">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #F7DC6F, #F0B429);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>The Respect Exchange</h3>
+            <p>How giving and receiving respect makes you stronger, not weaker.</p>
+          </div>
+
+          <div class="nav-card" data-page="scenarios">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #A18CD1, #FBC2EB);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Real Talk</h3>
+            <p>Interactive scenarios where YOU choose &mdash; and see what happens next.</p>
+          </div>
+
+          <div class="nav-card" data-page="socratic">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #E07C4F, #D4553B);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3>Think Deeper</h3>
+            <p>Socratic questions that let YOU discover what history books leave out about fathers and men.</p>
+          </div>
+
+          <div class="nav-card" data-page="journal">
+            <div class="nav-card-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>My Journal</h3>
+            <p>A private space just for you to write, reflect, and grow.</p>
+          </div>
+
+        </div>
+
+        <div class="quote-banner">
+          <blockquote>
+            "The strongest women in the world are not those who never needed guidance &mdash;
+            they're the ones who were smart enough to accept it and make it their own."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE BOND PAGE ===================== -->
+    <section id="page-bond" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #6C63FF 0%, #8B83FF 100%);">
+        <h1>The Father-Daughter Bond</h1>
+        <p>Science, stories, and surprising facts about one of life's most important relationships.</p>
+      </div>
+
+      <div class="container">
+
+        <!-- Intro -->
+        <div class="content-block">
+          <h2>Why Does This Matter?</h2>
+          <p>
+            Here's something most people don't realize: the relationship between a father and daughter
+            is one of the <strong>single biggest predictors</strong> of how a young woman does in
+            life &mdash; in school, in friendships, in her career, and in her own happiness.
+          </p>
+          <p>
+            This isn't about anyone being "the boss." It's about having someone in your corner who's
+            already walked the road you're about to travel and can point out the potholes.
+          </p>
+        </div>
+
+        <!-- Stats Cards -->
+        <h2 class="section-heading">What the Research Shows</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="72">0</div>
+            <div class="stat-unit">%</div>
+            <p>of young women with strong father relationships report higher self-esteem and confidence</p>
+            <cite>Journal of Family Psychology</cite>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-unit">x</div>
+            <p>more likely to graduate college when fathers are actively involved in their education</p>
+            <cite>U.S. Department of Education</cite>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="85">0</div>
+            <div class="stat-unit">%</div>
+            <p>of top female CEOs credit their father's mentoring as a key factor in their success</p>
+            <cite>Harvard Business Review</cite>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="40">0</div>
+            <div class="stat-unit">%</div>
+            <p>lower risk of anxiety and depression in teens with positive paternal relationships</p>
+            <cite>American Psychological Association</cite>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <h2 class="section-heading">How the Bond Grows Over Time</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ages 0-5: The Foundation</h3>
+              <p>A father's presence creates the first sense of safety and security. Little girls learn that men can be gentle, kind, and protective. This becomes the blueprint for every future relationship.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ages 6-9: The Explorer</h3>
+              <p>Fathers encourage risk-taking and adventure. Research shows dads are more likely to let kids climb higher, try harder, and push boundaries &mdash; which builds resilience and courage.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ages 10-13: The Questioner <span class="badge">You Are Here</span></h3>
+              <p>This is where things get interesting. You're developing your own ideas, questioning everything, forming your identity. This is <em>healthy and good</em>. But here's the key insight: the girls who thrive are the ones who question AND listen. They push back AND absorb. They challenge AND respect. It's not either/or.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ages 14-17: The Navigator</h3>
+              <p>Teens with strong father bonds make better decisions about friends, school, and safety. They have an internal compass &mdash; not because they were forced to listen, but because they chose to let trusted guidance become their own wisdom.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ages 18+: The Partner</h3>
+              <p>Adult women with positive father relationships report greater career success, healthier romantic partnerships, and stronger self-worth. The foundation built in childhood becomes the launchpad for everything.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Insight -->
+        <div class="insight-box">
+          <div class="insight-icon">&#128161;</div>
+          <h3>The Big Insight</h3>
+          <p>
+            When a father shares life experience, he's not trying to control you &mdash; he's trying
+            to <strong>transfer years of hard-earned knowledge</strong> so you don't have to learn
+            everything the painful way. Think of it like this: if someone who already beat a video game
+            offered to show you where the hidden traps are, would you say "no thanks, I'd rather
+            fall into every single one"?
+          </p>
+          <p>
+            Smart players accept the guide. They still play their own way &mdash; but they play smarter.
+          </p>
+        </div>
+
+        <!-- What Fathers Provide -->
+        <h2 class="section-heading">What Fathers Uniquely Provide</h2>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-icon">&#127919;</div>
+            <h3>Challenge & Growth</h3>
+            <p>Fathers tend to push their daughters outside their comfort zones, which builds resilience. Research from Cambridge University shows this "challenge parenting" produces more confident, adaptable adults.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#128736;</div>
+            <h3>Problem-Solving</h3>
+            <p>Fathers often approach problems differently &mdash; more analytical, more direct. Having access to this perspective alongside your own gives you a bigger toolkit for life's challenges.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#127758;</div>
+            <h3>Real-World Navigation</h3>
+            <p>Fathers bring the male perspective on the world &mdash; including awareness of dangers that come from other men. This isn't about fear. It's about <em>informed confidence</em>.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">&#128170;</div>
+            <h3>Self-Worth Standards</h3>
+            <p>Girls who have strong relationships with their fathers develop higher standards for how they expect to be treated. They know their worth because someone showed them their value every day.</p>
+          </div>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="home">&larr; Home</button>
+          <button class="btn btn-primary" data-page="safety">Safety Smart &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SAFETY SMART PAGE ===================== -->
+    <section id="page-safety" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #FF6584 0%, #FF8FA3 100%);">
+        <h1>Safety Smart</h1>
+        <p>Being independent doesn't mean being unaware. The smartest people are the most prepared.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Knowledge Is Power</h2>
+          <p>
+            Here's the thing about safety: it's not about being scared. It's about being <strong>smart</strong>.
+            Navy SEALs, astronauts, surgeons &mdash; the most capable people on Earth &mdash; are also
+            the most safety-conscious. Why? Because they know that <em>awareness is what keeps you free</em>.
+          </p>
+          <p>
+            When your dad talks about safety, he's not trying to clip your wings. He's trying to make sure
+            your wings are strong enough for the real world.
+          </p>
+        </div>
+
+        <!-- Why Dads Worry - Reframed -->
+        <div class="insight-box" style="border-left-color: #FF6584;">
+          <div class="insight-icon">&#129300;</div>
+          <h3>Why Does Dad Worry?</h3>
+          <p>
+            It's not because he thinks you're weak. It's the opposite. He knows you're brave enough to go
+            anywhere &mdash; and that's exactly what concerns him, because <strong>he knows what's out there</strong>.
+          </p>
+          <p>
+            As a man, your father has seen the world from the other side. He knows how some men think,
+            what some people are capable of, and which situations can turn dangerous. He's not imagining
+            things &mdash; he's drawing from real experience.
+          </p>
+          <p>
+            Would you ignore a weather forecast just because the sky looks clear? Probably not. You'd
+            bring an umbrella, just in case. That's all safety awareness is &mdash; <strong>bringing
+            your umbrella</strong>.
+          </p>
+        </div>
+
+        <!-- Safety Stats -->
+        <h2 class="section-heading">The Reality Check</h2>
+        <div class="stats-grid">
+          <div class="stat-card warn">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-unit">in 5</div>
+            <p>girls between ages 11-17 report being approached by a stranger in a way that made them uncomfortable</p>
+            <cite>National Center for Missing & Exploited Children</cite>
+          </div>
+          <div class="stat-card warn">
+            <div class="stat-number" data-target="67">0</div>
+            <div class="stat-unit">%</div>
+            <p>of teens who were targeted online said they initially thought the person was trustworthy</p>
+            <cite>Internet Watch Foundation</cite>
+          </div>
+          <div class="stat-card safe">
+            <div class="stat-number" data-target="93">0</div>
+            <div class="stat-unit">%</div>
+            <p>of dangerous situations are avoidable with basic awareness and preparation</p>
+            <cite>National Crime Prevention Council</cite>
+          </div>
+          <div class="stat-card safe">
+            <div class="stat-number" data-target="89">0</div>
+            <div class="stat-unit">%</div>
+            <p>of teens who share location with a parent say it made them feel MORE free, not less</p>
+            <cite>Pew Research Center</cite>
+          </div>
+        </div>
+
+        <!-- Safety Scenarios - Accordion -->
+        <h2 class="section-heading">Street Smart Situations</h2>
+        <p class="section-intro">Click each situation to learn the smart move.</p>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-icon">&#128694;</span>
+              <span>Walking alone &mdash; day or night</span>
+              <span class="accordion-arrow">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="do-dont">
+                <div class="do-col">
+                  <h4>&#9989; Smart Moves</h4>
+                  <ul>
+                    <li>Stay aware &mdash; headphones off or volume low</li>
+                    <li>Walk confidently and with purpose</li>
+                    <li>Stick to well-lit, populated routes</li>
+                    <li>Share your location with dad or a trusted adult</li>
+                    <li>Trust your gut &mdash; if something feels off, change your route</li>
+                    <li>Keep your phone charged and accessible</li>
+                  </ul>
+                </div>
+                <div class="dont-col">
+                  <h4>&#10060; Risky Moves</h4>
+                  <ul>
+                    <li>Walking with headphones at full volume (blocks awareness)</li>
+                    <li>Taking shortcuts through isolated areas</li>
+                    <li>Being absorbed in your phone while walking</li>
+                    <li>Assuming "it won't happen to me"</li>
+                    <li>Ignoring that uneasy feeling in your stomach</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="smart-note"><strong>Why this matters:</strong> Criminals look for easy targets &mdash; people who are distracted and unaware. Simply looking alert and purposeful makes you 70% less likely to be approached.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-icon">&#128241;</span>
+              <span>Online &amp; social media</span>
+              <span class="accordion-arrow">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="do-dont">
+                <div class="do-col">
+                  <h4>&#9989; Smart Moves</h4>
+                  <ul>
+                    <li>Keep profiles private</li>
+                    <li>Never share your location, school, or daily routine publicly</li>
+                    <li>If someone online makes you uncomfortable, block and tell a parent</li>
+                    <li>Remember: people online are NOT always who they say they are</li>
+                    <li>Never meet someone you only know online without a parent present</li>
+                    <li>Think before you post &mdash; the internet never forgets</li>
+                  </ul>
+                </div>
+                <div class="dont-col">
+                  <h4>&#10060; Risky Moves</h4>
+                  <ul>
+                    <li>Accepting friend requests from strangers</li>
+                    <li>Sharing personal photos with people you haven't met</li>
+                    <li>Believing someone's online identity without verification</li>
+                    <li>Keeping scary interactions a secret from parents</li>
+                    <li>Posting your location in real-time</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="smart-note"><strong>Real talk:</strong> Predators spend an average of 8 months building trust online before attempting to meet a young person. They are patient and skilled at seeming trustworthy. The only defense is having adults who can spot the red flags you might miss.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-icon">&#128663;</span>
+              <span>Getting rides &amp; transportation</span>
+              <span class="accordion-arrow">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="do-dont">
+                <div class="do-col">
+                  <h4>&#9989; Smart Moves</h4>
+                  <ul>
+                    <li>Always tell a parent where you're going and with whom</li>
+                    <li>Never get in a car with someone you don't know well</li>
+                    <li>If using rideshare (when older), verify the driver, car, and license plate</li>
+                    <li>Share your trip details with dad</li>
+                    <li>Sit in the back seat, near the door</li>
+                    <li>Have a code word with your dad for emergencies</li>
+                  </ul>
+                </div>
+                <div class="dont-col">
+                  <h4>&#10060; Risky Moves</h4>
+                  <ul>
+                    <li>Accepting rides from acquaintances you barely know</li>
+                    <li>Not telling anyone where you're headed</li>
+                    <li>Getting in a car just because someone seems nice</li>
+                    <li>Being in a vehicle where the driver has been drinking</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="smart-note"><strong>Pro tip:</strong> Establish a "no questions asked" policy with your dad. If you're ever in an uncomfortable situation and need a ride, call him. No lecture, no punishment &mdash; just safety first. This one agreement could save your life.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-icon">&#127970;</span>
+              <span>At friend's houses &amp; social events</span>
+              <span class="accordion-arrow">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="do-dont">
+                <div class="do-col">
+                  <h4>&#9989; Smart Moves</h4>
+                  <ul>
+                    <li>Always let a parent know the address and who's there</li>
+                    <li>Have a check-in schedule (even a quick text)</li>
+                    <li>Know at least two ways to contact your parents</li>
+                    <li>Have a bail-out plan if things get uncomfortable</li>
+                    <li>Trust your instincts about people and situations</li>
+                  </ul>
+                </div>
+                <div class="dont-col">
+                  <h4>&#10060; Risky Moves</h4>
+                  <ul>
+                    <li>Going to places where no trusted adults are present</li>
+                    <li>Lying about where you are</li>
+                    <li>Staying somewhere because of peer pressure</li>
+                    <li>Ignoring your gut feeling that something's wrong</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="smart-note"><strong>The freedom equation:</strong> Here's a secret adults don't always explain well &mdash; the more you check in and communicate, the <em>more</em> freedom you earn. Parents worry most when they don't know what's happening. Keep them informed, and watch your independence grow.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="accordion-icon">&#128274;</span>
+              <span>Why location sharing = MORE freedom</span>
+              <span class="accordion-arrow">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>This one surprises most people your age, so read carefully:</p>
+              <div class="comparison-box">
+                <div class="comparison-a">
+                  <h4>&#128683; Without Location Sharing</h4>
+                  <ul>
+                    <li>Dad doesn't know where you are</li>
+                    <li>He worries more</li>
+                    <li>He calls and texts more (annoying!)</li>
+                    <li>He says "no" to more things</li>
+                    <li>Less trust = less freedom</li>
+                  </ul>
+                </div>
+                <div class="comparison-b">
+                  <h4>&#9989; With Location Sharing</h4>
+                  <ul>
+                    <li>Dad can see you're safe with one glance</li>
+                    <li>He worries less</li>
+                    <li>Fewer check-in calls (more peace!)</li>
+                    <li>He's comfortable saying "yes" more</li>
+                    <li>More trust = more freedom</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="smart-note"><strong>Think about it this way:</strong> CEOs, astronauts, and military teams ALL track each other's locations. Not because they don't trust each other &mdash; but because knowing where your team is keeps everyone safer. Your family is your team.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Section -->
+        <div class="emergency-box">
+          <h2>&#128680; Emergency Quick Reference</h2>
+          <div class="emergency-grid">
+            <div class="emergency-card">
+              <h4>If You Feel Unsafe</h4>
+              <ol>
+                <li>Get to a public, well-lit area with other people</li>
+                <li>Call 911 (or your local emergency number)</li>
+                <li>Call your dad</li>
+                <li>Make noise &mdash; yell "FIRE" (people respond faster than to "help")</li>
+              </ol>
+            </div>
+            <div class="emergency-card">
+              <h4>If Someone Follows You</h4>
+              <ol>
+                <li>Do NOT go home (they'll learn where you live)</li>
+                <li>Go to the nearest store, restaurant, or public building</li>
+                <li>Tell an employee you're being followed</li>
+                <li>Call a parent immediately</li>
+              </ol>
+            </div>
+            <div class="emergency-card">
+              <h4>If Someone Grabs You</h4>
+              <ol>
+                <li>Yell, scream, make as much noise as possible</li>
+                <li>Fight &mdash; kick, scratch, bite, go for the eyes</li>
+                <li>NEVER let them take you to a second location</li>
+                <li>Drop to the ground &mdash; you're harder to carry</li>
+              </ol>
+            </div>
+            <div class="emergency-card">
+              <h4>Online Emergency</h4>
+              <ol>
+                <li>Screenshot everything before blocking</li>
+                <li>Tell your dad or a trusted adult IMMEDIATELY</li>
+                <li>Never try to handle it alone</li>
+                <li>Report to the platform and to CyberTipline.org</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="bond">&larr; The Bond</button>
+          <button class="btn btn-primary" data-page="voices">Strong Voices &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VOICES OF STRENGTH ===================== -->
+    <section id="page-voices" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #43E97B 0%, #38F9D7 100%);">
+        <h1>Strong Voices</h1>
+        <p>The world's most powerful women on the fathers who helped shape them.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <h2>They Listened. Then They Led.</h2>
+          <p>
+            These women changed the world. They're fierce, independent, brilliant, and unstoppable.
+            And almost every single one of them will tell you: <strong>my father's guidance was a
+            gift I'm grateful I accepted.</strong>
+          </p>
+        </div>
+
+        <!-- Quote Carousel -->
+        <div class="quotes-carousel" id="quotesCarousel">
+          <div class="carousel-track">
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #FF6584;">MO</div>
+              <blockquote>"My father made me believe I was the smartest, prettiest, most creative girl in the world. And by the time I realized he was biased, it was too late &mdash; I already believed it."</blockquote>
+              <div class="quote-author">
+                <strong>Michelle Obama</strong>
+                <span>Former First Lady, Lawyer, Author</span>
+              </div>
+              <p class="quote-context">Michelle's father, Fraser Robinson, worked as a city pump operator despite having multiple sclerosis. He never missed a day of work and taught Michelle that hard work and integrity matter more than circumstances. She credits him as the most important influence in her life.</p>
+            </div>
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #6C63FF;">BG</div>
+              <blockquote>"My dad believed that his daughters could do or be anything we set our minds to, in a time when that was revolutionary. He pushed us because he believed in us."</blockquote>
+              <div class="quote-author">
+                <strong>Ruth Bader Ginsburg</strong>
+                <span>Supreme Court Justice</span>
+              </div>
+              <p class="quote-context">Justice Ginsburg's mother died the day before her high school graduation. It was her father's earlier lessons about independence and the value of education that carried her through law school and all the way to the Supreme Court.</p>
+            </div>
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #43E97B;">OP</div>
+              <blockquote>"I grew up with a father who gave me unconditional love. And that, I think, gave me the ability to create my own empire."</blockquote>
+              <div class="quote-author">
+                <strong>Oprah Winfrey</strong>
+                <span>Media Mogul, Philanthropist</span>
+              </div>
+              <p class="quote-context">When Oprah went to live with her father Vernon as a troubled teen, he set strict rules: read a book every week, write reports, learn new vocabulary daily. She initially resisted. Later, she said those expectations saved her life.</p>
+            </div>
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #F0B429;">SW</div>
+              <blockquote>"My father was an immigrant who came to this country with nothing. He taught me that nobody was going to hand me anything &mdash; and that was the greatest gift he could have given me."</blockquote>
+              <div class="quote-author">
+                <strong>Serena Williams</strong>
+                <span>Tennis Champion, Entrepreneur</span>
+              </div>
+              <p class="quote-context">Richard Williams had a 78-page plan for his daughters' tennis careers before they were born. His daughters sometimes questioned his strict methods. Today, Serena is the greatest female tennis player in history and says her father's coaching made it all possible.</p>
+            </div>
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #A18CD1;">MQ</div>
+              <blockquote>"My father taught me to face the world head-on. He didn't shield me from reality &mdash; he prepared me for it. That's true love."</blockquote>
+              <div class="quote-author">
+                <strong>Malala Yousafzai</strong>
+                <span>Nobel Peace Prize Laureate</span>
+              </div>
+              <p class="quote-context">Malala's father, Ziauddin, defied cultural norms by insisting his daughter receive an education. When the Taliban threatened them, he didn't hide from her what was happening &mdash; he prepared her. His guidance made her the youngest Nobel Prize winner in history.</p>
+            </div>
+
+            <div class="quote-card">
+              <div class="quote-avatar" style="background: #FF8FA3;">IW</div>
+              <blockquote>"My father taught me not just to stand up for myself, but to stand up for everyone. His coaching was tough sometimes, but it made me unbreakable."</blockquote>
+              <div class="quote-author">
+                <strong>Indra Nooyi</strong>
+                <span>Former CEO of PepsiCo</span>
+              </div>
+              <p class="quote-context">Born in Chennai, India, Indra's father encouraged her to dream big in a culture that often limited women's ambitions. He would challenge her at the dinner table to think like a leader. She became one of the most powerful women in business.</p>
+            </div>
+
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carouselPrev">&#8592;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn" id="carouselNext">&#8594;</button>
+          </div>
+        </div>
+
+        <!-- Pattern Recognition -->
+        <div class="insight-box" style="border-left-color: #43E97B;">
+          <div class="insight-icon">&#128269;</div>
+          <h3>See the Pattern?</h3>
+          <p>Every single one of these women:</p>
+          <ul class="pattern-list">
+            <li>Had a father who pushed them beyond their comfort zone</li>
+            <li>Initially resisted or questioned their father's guidance</li>
+            <li>Eventually realized the guidance was an act of love</li>
+            <li>Credits their father as essential to their success</li>
+            <li>Became MORE independent because of (not despite) their father's involvement</li>
+          </ul>
+          <p>
+            <strong>The fathers didn't make these women dependent.</strong> They made them unstoppable.
+            Guidance and independence aren't opposites &mdash; they're partners.
+          </p>
+        </div>
+
+        <!-- Immigrant Fathers -->
+        <h2 class="section-heading">The Immigrant Father's Extra Mile</h2>
+        <div class="content-block highlight-block">
+          <p>
+            When a father leaves everything he knows &mdash; his country, his language, his culture,
+            his support system &mdash; and starts over in a new land, he does it for one reason:
+            <strong>to give his children a better life.</strong>
+          </p>
+          <p>
+            Immigrant fathers carry a special wisdom. They've navigated two worlds, overcome barriers
+            most people never face, and survived things most people never see. When they share that
+            knowledge, they're not being overprotective. They're giving you a <em>superpower</em>
+            that most people don't have access to: <strong>dual-world perspective</strong>.
+          </p>
+          <p>
+            Women like Indra Nooyi, Sunita Williams (astronaut), and Kamala Harris all had
+            immigrant fathers. Each one says that their father's unique perspective &mdash; shaped by
+            the struggles of immigration &mdash; gave them tools and resilience that set them apart.
+          </p>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="safety">&larr; Safety Smart</button>
+          <button class="btn btn-primary" data-page="respect">Respect &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE RESPECT EXCHANGE ===================== -->
+    <section id="page-respect" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #F7DC6F 0%, #F0B429 100%);">
+        <h1>The Respect Exchange</h1>
+        <p>Respect isn't about power. It's about unlocking your full potential.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Let's Get Real About Respect</h2>
+          <p>
+            The word "respect" can feel loaded. Maybe it makes you think of someone demanding
+            obedience. But that's not what real respect is. <strong>Real respect is the foundation
+            of every meaningful relationship in your life</strong> &mdash; with friends, with
+            teachers, with future bosses, with future partners, and yes, with your father.
+          </p>
+        </div>
+
+        <!-- What Respect Is / Isn't -->
+        <h2 class="section-heading">What Respect Actually Looks Like</h2>
+        <div class="comparison-grid">
+          <div class="comparison-card yes">
+            <h3>&#9989; Respect IS</h3>
+            <ul>
+              <li>Listening even when you disagree</li>
+              <li>Considering someone's advice before dismissing it</li>
+              <li>Valuing someone's experience and knowledge</li>
+              <li>Being honest without being cruel</li>
+              <li>Disagreeing respectfully with real arguments</li>
+              <li>Saying "I hear you" before saying "but I think..."</li>
+              <li>Giving someone your attention when they're speaking</li>
+              <li>Recognizing that someone's concern comes from love</li>
+            </ul>
+          </div>
+          <div class="comparison-card no">
+            <h3>&#10060; Respect is NOT</h3>
+            <ul>
+              <li>Blindly obeying without thinking</li>
+              <li>Never questioning or challenging ideas</li>
+              <li>Pretending to agree when you don't</li>
+              <li>Being silent when you have a valid point</li>
+              <li>Letting someone control your every move</li>
+              <li>Losing your own identity</li>
+              <li>Fear-based compliance</li>
+              <li>Giving up your right to think for yourself</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- The Respect Equation -->
+        <div class="equation-box">
+          <h2>The Respect Equation</h2>
+          <div class="equation">
+            <div class="equation-part">
+              <div class="equation-circle" style="background: #6C63FF;">Your Ideas</div>
+            </div>
+            <div class="equation-symbol">+</div>
+            <div class="equation-part">
+              <div class="equation-circle" style="background: #FF6584;">Open Ears</div>
+            </div>
+            <div class="equation-symbol">+</div>
+            <div class="equation-part">
+              <div class="equation-circle" style="background: #43E97B;">Dad's Experience</div>
+            </div>
+            <div class="equation-symbol">=</div>
+            <div class="equation-part">
+              <div class="equation-circle lg" style="background: linear-gradient(135deg, #F7DC6F, #F0B429);">Your Best Decisions</div>
+            </div>
+          </div>
+          <p class="equation-note">
+            You don't lose yourself by listening to your father. You <em>gain</em> an extra source of intelligence.
+            The strongest decisions come from combining YOUR thoughts with the wisdom of people who care about you.
+          </p>
+        </div>
+
+        <!-- Freedom vs Disrespect -->
+        <h2 class="section-heading">The Freedom Paradox</h2>
+        <div class="content-block">
+          <p>Here's something that might surprise you:</p>
+        </div>
+
+        <div class="paradox-cards">
+          <div class="paradox-card">
+            <div class="paradox-header bad">&#128308; What Feels Like Freedom</div>
+            <div class="paradox-body">
+              <ul>
+                <li>Ignoring dad's safety advice</li>
+                <li>Refusing to share your location</li>
+                <li>Dismissing his life experience</li>
+                <li>Walking away when he's speaking</li>
+                <li>Rolling your eyes at his concerns</li>
+              </ul>
+              <div class="paradox-result bad">
+                <strong>Result:</strong> Dad worries more &rarr; more restrictions &rarr; more conflict
+                &rarr; LESS actual freedom
+              </div>
+            </div>
+          </div>
+          <div class="paradox-card">
+            <div class="paradox-header good">&#128994; What Actually Creates Freedom</div>
+            <div class="paradox-body">
+              <ul>
+                <li>Hearing dad out, then sharing your view</li>
+                <li>Sharing location willingly (it takes 2 seconds)</li>
+                <li>Asking "why do you think that?" instead of dismissing</li>
+                <li>Engaging in real conversation, even when you disagree</li>
+                <li>Showing you take his concerns seriously</li>
+              </ul>
+              <div class="paradox-result good">
+                <strong>Result:</strong> Dad trusts more &rarr; fewer restrictions &rarr; genuine respect
+                &rarr; MORE actual freedom
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive: Respect-O-Meter -->
+        <h2 class="section-heading">The Respect-O-Meter Challenge</h2>
+        <p class="section-intro">Rate each situation: Is it respectful or disrespectful?</p>
+
+        <div class="respect-quiz" id="respectQuiz">
+          <div class="quiz-scenario active" data-correct="respectful">
+            <p class="quiz-question">"Dad, I hear what you're saying about that neighborhood. Can you tell me more about why you're concerned? I still want to go to my friend's house there, but maybe we can figure out a safe plan."</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-scenario" data-correct="disrespectful">
+            <p class="quiz-question">"Ugh, you ALWAYS do this! You don't know anything about my life! Stop trying to control me!" *walks away and slams door*</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-scenario" data-correct="respectful">
+            <p class="quiz-question">"I don't agree with your opinion on this, Dad, and here's why... But I appreciate you caring enough to share your thoughts with me."</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-scenario" data-correct="disrespectful">
+            <p class="quiz-question">*Dad is explaining something important about staying safe*<br>"Yeah yeah yeah, I know, I know" *scrolls through phone without looking up*</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-scenario" data-correct="respectful">
+            <p class="quiz-question">"Dad, I want to make my own decision about this, but I'd like to hear your experience first. What happened when you were in a similar situation?"</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-scenario" data-correct="disrespectful">
+            <p class="quiz-question">"You don't understand because you're from a different generation and a different country. Things are different now. Your advice doesn't apply."</p>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-answer="respectful">&#128154; Respectful</button>
+              <button class="quiz-btn" data-answer="disrespectful">&#128308; Disrespectful</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+
+          <div class="quiz-progress">
+            <span id="quizCurrent">1</span> / <span id="quizTotal">6</span>
+          </div>
+          <div class="quiz-score hidden" id="quizScore">
+            <h3>Your Score</h3>
+            <div class="score-display">
+              <span id="scoreValue">0</span> / <span id="scoreTotal">6</span>
+            </div>
+            <p id="scoreMessage"></p>
+            <button class="btn btn-primary" id="resetQuiz">Try Again</button>
+          </div>
+        </div>
+
+        <!-- The Deeper Truth -->
+        <div class="insight-box" style="border-left-color: #F0B429;">
+          <div class="insight-icon">&#128150;</div>
+          <h3>The Deeper Truth</h3>
+          <p>
+            Here's what took many successful women years to understand: when your dad corrects you,
+            coaches you, or warns you about something &mdash; <strong>that IS love in action</strong>.
+          </p>
+          <p>
+            Indifference is the opposite of love, not discipline. A father who doesn't care won't
+            bother to teach you anything. He won't lose sleep worrying about your safety. He won't
+            spend his time trying to prepare you for the world.
+          </p>
+          <p>
+            The fact that your dad puts in the effort means <strong>you matter more than anything
+            in the world to him</strong>. Even when it feels annoying. Especially when it feels annoying.
+          </p>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="voices">&larr; Strong Voices</button>
+          <button class="btn btn-primary" data-page="scenarios">Real Talk &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REAL TALK SCENARIOS ===================== -->
+    <section id="page-scenarios" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #A18CD1 0%, #FBC2EB 100%);">
+        <h1>Real Talk Scenarios</h1>
+        <p>Your choices shape your story. What would YOU do?</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Choose Your Path</h2>
+          <p>
+            These are real-life situations that girls your age face. There's no "test" here &mdash;
+            just a chance to think through decisions before you face them for real.
+            See what happens with each choice.
+          </p>
+        </div>
+
+        <!-- Scenario Engine -->
+        <div class="scenario-engine" id="scenarioEngine">
+
+          <!-- Scenario 1 -->
+          <div class="scenario-card active" id="scenario-1">
+            <div class="scenario-badge">Scenario 1 of 5</div>
+            <div class="scenario-header">
+              <h3>The Party Invitation</h3>
+            </div>
+            <div class="scenario-body">
+              <p>
+                Your friend invites you to a party at a house you've never been to.
+                She says there'll be older kids there and no parents. She tells you
+                "Don't tell your dad, he'll say no."
+              </p>
+              <div class="scenario-choices" data-scenario="1">
+                <button class="scenario-choice" data-choice="a">
+                  <span class="choice-label">A</span>
+                  <span>Go without telling dad. You don't want to miss out and he'll probably say no anyway.</span>
+                </button>
+                <button class="scenario-choice" data-choice="b">
+                  <span class="choice-label">B</span>
+                  <span>Tell your dad about the party and ask if you can go, sharing all the details.</span>
+                </button>
+                <button class="scenario-choice" data-choice="c">
+                  <span class="choice-label">C</span>
+                  <span>Tell your friend you'll think about it, then talk to your dad about it honestly.</span>
+                </button>
+              </div>
+              <div class="scenario-results hidden">
+                <div class="result" data-result="a">
+                  <div class="result-header bad">&#9888; The Risky Path</div>
+                  <p>You go to the party. The older kids are drinking. Someone you don't know keeps trying to talk to you. Your phone dies. You don't know the address to call for help. No one knows where you are.</p>
+                  <p><strong>The reality:</strong> This is exactly how dangerous situations develop. When no one knows where you are, you have no safety net. And the friend who said "don't tell your dad"? She wasn't looking out for your safety &mdash; she was looking out for her own fun.</p>
+                </div>
+                <div class="result" data-result="b">
+                  <div class="result-header good">&#11088; The Strong Move</div>
+                  <p>You tell your dad everything. He appreciates your honesty. He says the party sounds risky without parents there, but he suggests you invite your friend to your house instead, or he'll drive you both to a movie.</p>
+                  <p><strong>The reality:</strong> Your dad said "no" to the unsafe party but said "yes" to an alternative. That's not control &mdash; that's creative problem-solving. And you showed maturity by being upfront, which builds trust for future asks.</p>
+                </div>
+                <div class="result" data-result="c">
+                  <div class="result-header great">&#127942; The Wisest Move</div>
+                  <p>You take time to think instead of reacting to peer pressure. You talk to your dad, who explains why no-parent parties with older kids can be risky. Together, you come up with a plan &mdash; maybe you can go if a parent will be there, or you find a different hangout.</p>
+                  <p><strong>The reality:</strong> You demonstrated critical thinking AND respect. You didn't just obey or rebel &mdash; you engaged. This is what maturity looks like: gathering information before making decisions. This is leadership.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario 2 -->
+          <div class="scenario-card" id="scenario-2">
+            <div class="scenario-badge">Scenario 2 of 5</div>
+            <div class="scenario-header">
+              <h3>The Online "Friend"</h3>
+            </div>
+            <div class="scenario-body">
+              <p>
+                Someone you met in an online game has been chatting with you for a few weeks.
+                They seem really cool &mdash; same age, same interests. They want to video call
+                and maybe meet up at the mall. They say "Don't tell your parents, they wouldn't understand our friendship."
+              </p>
+              <div class="scenario-choices" data-scenario="2">
+                <button class="scenario-choice" data-choice="a">
+                  <span class="choice-label">A</span>
+                  <span>Agree to the video call and meetup. They seem trustworthy and you don't want to lose the friendship.</span>
+                </button>
+                <button class="scenario-choice" data-choice="b">
+                  <span class="choice-label">B</span>
+                  <span>Tell your dad about this person and ask his opinion.</span>
+                </button>
+                <button class="scenario-choice" data-choice="c">
+                  <span class="choice-label">C</span>
+                  <span>Block the person immediately. Anyone who says "don't tell your parents" is a red flag.</span>
+                </button>
+              </div>
+              <div class="scenario-results hidden">
+                <div class="result" data-result="a">
+                  <div class="result-header bad">&#9888; Danger Zone</div>
+                  <p>This is the most dangerous option. Statistics show that 1 in 5 online predators pose as someone your age. The phrase "don't tell your parents" is literally in the predator playbook &mdash; it's the #1 grooming technique used to isolate young people.</p>
+                  <p><strong>The reality:</strong> Real friends never ask you to keep secrets from your parents. Ever. This is the biggest red flag there is.</p>
+                </div>
+                <div class="result" data-result="b">
+                  <div class="result-header great">&#127942; Smart and Safe</div>
+                  <p>Your dad helps you think through the red flags. The "don't tell your parents" line immediately concerns him &mdash; and now you understand why. Together, you might report the account and you learn to spot grooming patterns.</p>
+                  <p><strong>The reality:</strong> This is exactly why father guidance matters. Your dad, as a man, may recognize predatory behavior patterns that you might not. His perspective isn't paranoia &mdash; it's pattern recognition.</p>
+                </div>
+                <div class="result" data-result="c">
+                  <div class="result-header good">&#11088; Good Instincts</div>
+                  <p>Blocking is a solid move. But the even better move is to tell your dad too, because this person might target others, and your dad can help you report it properly.</p>
+                  <p><strong>The reality:</strong> Your instinct was right. But handling it alone means missing the chance to learn more about how to spot these situations, and to potentially protect other kids too.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario 3 -->
+          <div class="scenario-card" id="scenario-3">
+            <div class="scenario-badge">Scenario 3 of 5</div>
+            <div class="scenario-header">
+              <h3>The Life Advice Moment</h3>
+            </div>
+            <div class="scenario-body">
+              <p>
+                You're at dinner with your dad. He starts telling you about his experience
+                growing up and the mistakes he made, trying to help you avoid the same ones.
+                You've heard similar talks before and you're getting frustrated.
+              </p>
+              <div class="scenario-choices" data-scenario="3">
+                <button class="scenario-choice" data-choice="a">
+                  <span class="choice-label">A</span>
+                  <span>"Dad, I've heard this before. Can we talk about something else?" and put in your earbuds.</span>
+                </button>
+                <button class="scenario-choice" data-choice="b">
+                  <span class="choice-label">B</span>
+                  <span>Listen quietly, nod, but zone out mentally. Just wait for it to be over.</span>
+                </button>
+                <button class="scenario-choice" data-choice="c">
+                  <span class="choice-label">C</span>
+                  <span>"Dad, I know this is important to you. Can you tell me the specific part that you think applies to what I'm going through right now?"</span>
+                </button>
+              </div>
+              <div class="scenario-results hidden">
+                <div class="result" data-result="a">
+                  <div class="result-header bad">&#128148; Missed Opportunity</div>
+                  <p>Your dad feels dismissed and hurt, though he might not show it. He's sharing because he loves you and wants to protect you from pain he experienced. Over time, if he feels shut down enough, he may stop trying &mdash; and one day you might really need that guidance and it won't be there.</p>
+                  <p><strong>Think about it:</strong> Would you treat a friend this way if they were sharing something personal? Your dad deserves at least the same courtesy.</p>
+                </div>
+                <div class="result" data-result="b">
+                  <div class="result-header mid">&#128310; Better, But...</div>
+                  <p>At least you're not being openly rude, but you're missing the actual content. Your dad might sense you're checked out, which feels almost worse than being told to stop. And you miss potentially life-changing wisdom.</p>
+                  <p><strong>The reality:</strong> Many adults say their biggest regret is not listening to their parents' stories when they had the chance. Those stories often contain exactly the insight you need &mdash; just maybe not today.</p>
+                </div>
+                <div class="result" data-result="c">
+                  <div class="result-header great">&#127942; Brilliant Response</div>
+                  <p>This response is incredibly mature. You've acknowledged his effort, shown respect, AND redirected the conversation to be more useful for YOU. Your dad feels heard. You get more targeted advice. And you've modeled the exact kind of communication that builds trust and earns more freedom.</p>
+                  <p><strong>The reality:</strong> This is what emotionally intelligent adults do. You just showed your dad that you're becoming one. Watch how much more he trusts your judgment after responses like this.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario 4 -->
+          <div class="scenario-card" id="scenario-4">
+            <div class="scenario-badge">Scenario 4 of 5</div>
+            <div class="scenario-header">
+              <h3>The Location Sharing Debate</h3>
+            </div>
+            <div class="scenario-body">
+              <p>
+                Your dad asks you to turn on location sharing on your phone.
+                Your friends don't share their location with their parents and
+                they tease you about it.
+              </p>
+              <div class="scenario-choices" data-scenario="4">
+                <button class="scenario-choice" data-choice="a">
+                  <span class="choice-label">A</span>
+                  <span>Refuse. Tell dad that none of your friends do it and it's embarrassing.</span>
+                </button>
+                <button class="scenario-choice" data-choice="b">
+                  <span class="choice-label">B</span>
+                  <span>Turn it on but then turn it off when you're with friends.</span>
+                </button>
+                <button class="scenario-choice" data-choice="c">
+                  <span class="choice-label">C</span>
+                  <span>Turn it on and explain to friends that it's actually smart, not embarrassing. Or just don't mention it.</span>
+                </button>
+              </div>
+              <div class="scenario-results hidden">
+                <div class="result" data-result="a">
+                  <div class="result-header bad">&#128148; Peer Pressure Wins</div>
+                  <p>You've let your friends' opinions override your safety. Your dad worries more, not less. And here's the irony: if something happened and no one could find you, those same friends wouldn't be able to help.</p>
+                  <p><strong>Real talk:</strong> Peer pressure to be LESS safe isn't something to follow. The Secret Service, military teams, and emergency workers ALL use location sharing. It's not embarrassing &mdash; it's professional-level safety.</p>
+                </div>
+                <div class="result" data-result="b">
+                  <div class="result-header bad">&#9888; The Worst Option</div>
+                  <p>This actually combines the worst of both worlds: your dad thinks you're safe (false security), and you're actually untracked in moments that might matter most (real danger). If something happens, rescue efforts are delayed because your last known location is wrong.</p>
+                  <p><strong>Plus:</strong> You've broken your dad's trust. When he discovers it (and he will), you'll lose much more freedom than location sharing ever cost you.</p>
+                </div>
+                <div class="result" data-result="c">
+                  <div class="result-header great">&#127942; Confidence Move</div>
+                  <p>Leaders don't follow the crowd &mdash; they do what's smart. Sharing your location costs you nothing but gives your dad peace of mind and you more freedom. If friends tease you, that says more about their maturity than yours.</p>
+                  <p><strong>The truth:</strong> 89% of teens who share location with parents report it made them feel more free because their parents stopped calling to check in constantly. Smart is the new cool.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario 5 -->
+          <div class="scenario-card" id="scenario-5">
+            <div class="scenario-badge">Scenario 5 of 5</div>
+            <div class="scenario-header">
+              <h3>The Crossroads</h3>
+            </div>
+            <div class="scenario-body">
+              <p>
+                You're walking home from a friend's house. It's getting dark. There's a shortcut
+                through a poorly-lit area that saves 10 minutes, or the longer, well-lit main road.
+                Your dad has specifically told you never to take the shortcut.
+              </p>
+              <div class="scenario-choices" data-scenario="5">
+                <button class="scenario-choice" data-choice="a">
+                  <span class="choice-label">A</span>
+                  <span>Take the shortcut. It's fine, you've done it before in daylight. 10 minutes is 10 minutes.</span>
+                </button>
+                <button class="scenario-choice" data-choice="b">
+                  <span class="choice-label">B</span>
+                  <span>Take the long way. Dad's advice rings in your head. Better safe than sorry.</span>
+                </button>
+                <button class="scenario-choice" data-choice="c">
+                  <span class="choice-label">C</span>
+                  <span>Call your dad to pick you up or stay on the phone while walking the long route.</span>
+                </button>
+              </div>
+              <div class="scenario-results hidden">
+                <div class="result" data-result="a">
+                  <div class="result-header bad">&#9888; The Gamble</div>
+                  <p>Most of the time, nothing happens. But "most of the time" isn't the same as "always." Criminals specifically target poorly-lit shortcuts because they know people take them. The 10 minutes you save isn't worth the risk you take.</p>
+                  <p><strong>Your dad knows this because:</strong> As a man, he understands exactly what kind of people hang around dark, isolated areas and what they're looking for. His warning isn't based on imagination &mdash; it's based on knowledge of how the world works.</p>
+                </div>
+                <div class="result" data-result="b">
+                  <div class="result-header great">&#127942; Wisdom in Action</div>
+                  <p>This is your father's experience becoming YOUR instinct. You didn't take the long way because he forced you &mdash; you took it because his guidance became your own smart judgment. This is what happens when respect for advice turns into personal wisdom.</p>
+                  <p><strong>The beautiful part:</strong> You made a safe decision on your own. That's independence AND wisdom working together. That's growth.</p>
+                </div>
+                <div class="result" data-result="c">
+                  <div class="result-header great">&#127942; The Best Move</div>
+                  <p>You're safe, your dad knows where you are, and you've turned a potentially risky walk into a chance to connect. Having someone on the phone also makes you a much harder target &mdash; criminals avoid people who are actively communicating with someone.</p>
+                  <p><strong>Bonus:</strong> Your dad won't see this as weakness. He'll see it as incredible maturity &mdash; recognizing a situation and proactively making it safer. This builds massive trust.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario Navigation -->
+          <div class="scenario-nav">
+            <button class="btn btn-outline" id="prevScenario" disabled>&larr; Previous</button>
+            <span class="scenario-counter" id="scenarioCounter">1 / 5</span>
+            <button class="btn btn-primary" id="nextScenario">Next &rarr;</button>
+          </div>
+
+          <!-- Final Score -->
+          <div class="scenario-final hidden" id="scenarioFinal">
+            <h2>Scenarios Complete!</h2>
+            <p>
+              There are no wrong answers here &mdash; only opportunities to think.
+              The fact that you went through these scenarios means you're already
+              thinking ahead, and that's exactly what smart, strong young women do.
+            </p>
+            <button class="btn btn-primary" data-page="socratic">Think Deeper &rarr;</button>
+          </div>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="respect">&larr; Respect</button>
+          <button class="btn btn-primary" data-page="socratic">Think Deeper &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THINK DEEPER (SOCRATIC) ===================== -->
+    <section id="page-socratic" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #E07C4F 0%, #D4553B 100%);">
+        <h1>Think Deeper</h1>
+        <p>No lectures. Just questions. You're smart enough to find the answers yourself.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <h2>The Socratic Method</h2>
+          <p>
+            2,400 years ago, a philosopher named Socrates discovered something powerful: people don't
+            learn best from being <em>told</em> things. They learn best from being asked the right
+            <em>questions</em> &mdash; and discovering the answers themselves.
+          </p>
+          <p>
+            That's what this section is. No one is going to tell you what to think. Instead, you'll
+            explore a series of questions. Take your time with each one. <strong>Think before you
+            click ahead.</strong> The insights you discover on your own will stick with you far longer
+            than anything anyone could lecture you about.
+          </p>
+        </div>
+
+        <div class="socratic-intro-note">
+          <span class="socratic-intro-icon">&#9201;</span>
+          <p>Each question has a short pause before you can continue &mdash; not to slow you down, but to give your brain time to actually think. The best answers come after a moment of real thought.</p>
+        </div>
+
+        <!-- ===== THREAD 1: Who Builds the World? ===== -->
+        <div class="socratic-thread" id="thread-1">
+          <div class="thread-header">
+            <span class="thread-number">I</span>
+            <h2>Who Builds the World?</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>Look around the room you're in right now. The walls, the roof, the plumbing, the electrical wiring, the roads outside, the bridges you cross, the tunnels underground. <strong>Who physically built all of it?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Take a moment to really think about this...</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="1" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">Fact</div>
+              <p>97% of construction workers are men. 98% of electrical power line installers are men. 95% of firefighters are men. 99% of underwater welders &mdash; one of the deadliest jobs on Earth &mdash; are men.</p>
+              <cite>U.S. Bureau of Labor Statistics</cite>
+            </div>
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Deeper Question</div>
+              <p>These jobs are dangerous. People fall from buildings. Get electrocuted. Suffer crushed bones. Die. <strong>Why do you think men do these jobs?</strong> Is it because they enjoy danger? Because they're being "privileged"? Or is there another reason?</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>What do you think drives someone to risk their body every day?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="1" data-next="3">Continue &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Go Further</div>
+              <p>Every year, over <strong>5,000 workers</strong> die on the job in the United States alone. Men account for 92% of those deaths. They leave behind families, children, daughters.</p>
+              <p>Here's the question most people never ask: <strong>If these men had "all the power," why would they choose the jobs that kill them?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Sit with that question. There's no rush.</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="1" data-next="4">Show me the insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="4">
+            <div class="thought-bubble insight-bubble">
+              <div class="bubble-label">Your Discovery</div>
+              <p>Throughout history, men have built and maintained the physical world &mdash; not because of privilege, but because of <strong>obligation</strong>. Society expected them to provide, protect, and build, regardless of the cost to their own bodies and lives.</p>
+              <p>The building you're sitting in right now exists because generations of men woke up every morning, went to dangerous jobs, and came home broken and exhausted &mdash; so their families could have shelter, warmth, and safety.</p>
+              <p><strong>That's not power. That's sacrifice wearing work boots.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== THREAD 2: Who Goes to War? ===== -->
+        <div class="socratic-thread" id="thread-2">
+          <div class="thread-header">
+            <span class="thread-number">II</span>
+            <h2>The Question Nobody Asks About War</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>In every major war in human history &mdash; World War I, World War II, Vietnam, Korea, every conflict going back thousands of years &mdash; <strong>who was forced to fight?</strong></p>
+              <p>And what happened to them if they refused?</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Think about this: was it a choice?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="2" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">Facts</div>
+              <p>In World War I, 9 million soldiers died. In World War II, 25 million soldiers died. In virtually every case, <strong>only men were drafted</strong>. Boys as young as 17 were sent to trenches, beaches, and jungles to fight.</p>
+              <p>If they refused? Prison. Execution. Social shame. Their families shunned. They didn't have a choice.</p>
+            </div>
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">The Real Question</div>
+              <p>If "power" means having the ability to choose your own destiny, <strong>did those 18-year-old boys drafted into war have power?</strong></p>
+              <p>They couldn't vote on the war. They couldn't choose to stay home. They had to go, fight, and very possibly die &mdash; not for themselves, but for the people back home.</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Who really had less choice in that situation?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="2" data-next="3">Continue &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">One More Layer</div>
+              <p>Today, in the United States, every 18-year-old man is <em>still</em> required by law to register for the Selective Service (the draft). Women are not.</p>
+              <p>If a man doesn't register, he can be denied student loans, government jobs, and citizenship.</p>
+              <p><strong>If men truly controlled everything and designed the system for their own benefit, why would they design a system where only they can be forced to die?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Does "power" look the way you thought it did?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="2" data-next="4">Show me the insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="4">
+            <div class="thought-bubble insight-bubble">
+              <div class="bubble-label">Your Discovery</div>
+              <p>The story of men and power is far more complicated than "men had it all." Men had <strong>obligations</strong> that came at an enormous cost. They were expected to be the ones who die so others could live.</p>
+              <p>Fathers, brothers, and sons were sent to wars they didn't start, to protect families they might never see again. The ones who survived carried that weight forever &mdash; often in silence, because they were also told that real men don't talk about pain.</p>
+              <p><strong>What men carried wasn't just power. It was duty so heavy it broke millions of them. And it can't be erased by pretending it was privilege.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== THREAD 3: The Provider Trap ===== -->
+        <div class="socratic-thread" id="thread-3">
+          <div class="thread-header">
+            <span class="thread-number">III</span>
+            <h2>The Provider Trap</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>For almost all of human history, if a man stopped working, his family starved. There was no social safety net. No government assistance. No backup plan.</p>
+              <p><strong>If a man's family depended entirely on his labor for survival, was he free? Or was he trapped?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>What does "freedom" really mean?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="3" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">Consider This</div>
+              <p>Millions of men throughout history worked in coal mines, on fishing boats in freezing seas, in factories with no safety equipment, in fields under brutal sun &mdash; not because they chose to, but because <strong>their children needed to eat</strong>.</p>
+              <p>The average coal miner in the 1800s had a life expectancy of 40 years. They knew the work would kill them. They did it anyway.</p>
+            </div>
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Deeper Question</div>
+              <p>When someone sacrifices their health, their dreams, and sometimes their life so their family can survive &mdash; <strong>is that what "having power" looks like to you?</strong></p>
+              <p>Or is that what <em>love disguised as labor</em> looks like?</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Think about the men in your own family...</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="3" data-next="3">Continue &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Bring It Home</div>
+              <p>Your father left his country &mdash; his language, his food, his friends, his family, everything familiar &mdash; and came to a place where he had to start from zero.</p>
+              <p><strong>Why do you think he did that?</strong></p>
+              <p>He didn't do it for adventure. He didn't do it because it was easy. He did it because he carries the same weight that men have carried for thousands of years: <em>the drive to give his children a better life than he had, no matter what it costs him personally.</em></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>What would you leave behind for someone you love?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="3" data-next="4">Show me the insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="4">
+            <div class="thought-bubble insight-bubble">
+              <div class="bubble-label">Your Discovery</div>
+              <p>The "provider role" was never a privilege. It was a trap made of love and duty. Men couldn't quit, couldn't rest, couldn't say "I don't want to do this anymore" &mdash; because people they loved were depending on them.</p>
+              <p>When your father works hard, worries about money, stresses about the future &mdash; he's not doing it for himself. He's doing it because for thousands of years, the message burned into every man's soul has been: <strong>"If you stop, the people you love will suffer."</strong></p>
+              <p>That weight doesn't just disappear because someone declares it "privilege." It's still there. Your father carries it every day. And he carries it for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== THREAD 4: The Emotional Prison ===== -->
+        <div class="socratic-thread" id="thread-4">
+          <div class="thread-header">
+            <span class="thread-number">IV</span>
+            <h2>The Longest Silence in History</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>You've probably heard someone say "boys don't cry" at some point. Maybe you've even thought it yourself.</p>
+              <p><strong>What happens to a person &mdash; any person &mdash; who is told from childhood that they are not allowed to express sadness, fear, or pain?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Imagine being told you could never cry, starting at age 5...</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="4" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">The Data</div>
+              <p>Men are <strong>4 times</strong> more likely to die by suicide than women. Yet they are diagnosed with depression at half the rate.</p>
+              <p>Why? Not because men suffer less. Because men have been trained for <em>generations</em> to hide it. To "man up." To push through. To never, ever show vulnerability.</p>
+              <cite>American Foundation for Suicide Prevention</cite>
+            </div>
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Think About This</div>
+              <p>When emotions have no outlet for years &mdash; for a lifetime &mdash; for <em>generations</em> &mdash; they don't disappear. They transform.</p>
+              <p><strong>Could what sometimes looks like "anger" in men actually be grief, sadness, and fear that had nowhere to go?</strong></p>
+              <p>If you were forced to bottle every emotion since age 5, what would eventually come out?</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Could you survive 30 years without being allowed to cry?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="4" data-next="3">Continue &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">The Uncomfortable Question</div>
+              <p>Society tells men they must be:</p>
+              <ul>
+                <li>Strong (never show weakness)</li>
+                <li>Providers (never stop earning)</li>
+                <li>Protectors (never be afraid)</li>
+                <li>Silent (never complain about any of this)</li>
+              </ul>
+              <p>And when some men crack under that weight &mdash; when they show frustration, when they seem "angry," when they withdraw &mdash; <strong>do we ask what they're carrying? Or do we just label them "the problem"?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>What if "angry men" are actually drowning men who were never taught to swim?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="4" data-next="4">Show me the insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="4">
+            <div class="thought-bubble insight-bubble">
+              <div class="bubble-label">Your Discovery</div>
+              <p>For centuries, men have lived inside an emotional prison. They were told their feelings didn't matter, that expressing pain was weakness, that their role was to carry everything and say nothing.</p>
+              <p>This wasn't "power." It was a different kind of suffering &mdash; invisible, unspoken, and passed from father to son like an inheritance nobody wanted.</p>
+              <p>When your father tries to connect with you &mdash; even imperfectly, even clumsily, even in ways that feel like "too much" &mdash; <strong>he's trying to break that chain</strong>. He's trying to be more open with you than his father was allowed to be with him.</p>
+              <p>That's not a man wielding power. <strong>That's a man fighting history to reach his daughter.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== THREAD 5: The Disposable Sex ===== -->
+        <div class="socratic-thread" id="thread-5">
+          <div class="thread-header">
+            <span class="thread-number">V</span>
+            <h2>"Women and Children First"</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>You've heard the phrase "women and children first." It's the rule on sinking ships, during evacuations, in disasters.</p>
+              <p><strong>If men truly had all the power and designed every system for their own benefit &mdash; why would they design a rule where they die last, or not at all?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Who benefits from this rule, and who pays the price?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="5" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">A Story</div>
+              <p>When the Titanic sank in 1912, the survival rates tell a story no one discusses:</p>
+              <ul>
+                <li><strong>Women &amp; children:</strong> 75% survived</li>
+                <li><strong>Men:</strong> 20% survived</li>
+              </ul>
+              <p>Men &mdash; including fathers, husbands, and sons &mdash; stepped back from the lifeboats so women and children could live. They stood on a sinking ship in freezing darkness and <em>chose to die</em>.</p>
+            </div>
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Now Ask Yourself</div>
+              <p>In what other areas of life have men been expected to be "expendable"?</p>
+              <ul>
+                <li>Who runs into burning buildings? (96% male firefighters)</li>
+                <li>Who confronts active shooters? (88% male police officers)</li>
+                <li>Who defuses bombs, enters war zones, rescues hostages?</li>
+              </ul>
+              <p><strong>Does it make sense to call an entire group "powerful" when that same group is expected to sacrifice their lives first?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Power and sacrifice &mdash; can they coexist?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="5" data-next="3">Show me the insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble insight-bubble">
+              <div class="bubble-label">Your Discovery</div>
+              <p>The story of men in history isn't one-dimensional. It was never just about power. It was about a complex, often painful deal: men were given certain roles in exchange for an expectation that they would <strong>sacrifice themselves when needed</strong> &mdash; their time, their health, their safety, their lives.</p>
+              <p>That deal was never written down. Men never signed a contract. But every boy absorbed it: <em>your life is less important than the people you protect.</em></p>
+              <p>When your father puts himself between you and danger &mdash; whether it's a physical threat, a financial hardship, or a difficult world he's trying to prepare you for &mdash; <strong>he's fulfilling a promise that was put on his shoulders before he could even understand it.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== THREAD 6: Can You Undo History? ===== -->
+        <div class="socratic-thread" id="thread-6">
+          <div class="thread-header">
+            <span class="thread-number">VI</span>
+            <h2>Can You Just... Undo All of This?</h2>
+          </div>
+
+          <div class="socratic-step active" data-step="1">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Question</div>
+              <p>Imagine someone told you: "Stop being affected by your childhood. Just undo it. Forget every experience that shaped you and start fresh right now."</p>
+              <p><strong>Could you do that?</strong></p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Be honest with yourself...</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="6" data-next="2">I've thought about it &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="2">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">Scale It Up</div>
+              <p>Now scale that up. Thousands of years of human civilization have shaped how men and women relate to each other, what's expected of each, and how they carry themselves.</p>
+              <p><strong>Can all of that be undone in a single generation?</strong> In a single conversation? By a single declaration?</p>
+            </div>
+            <div class="thought-bubble fact-bubble">
+              <div class="bubble-label">Consider This</div>
+              <p>The men alive today didn't create the systems of the past. Your father didn't build ancient Rome. He didn't write the laws of medieval England. He didn't start any wars.</p>
+              <p>He was <em>born into</em> a world with inherited expectations &mdash; just like you were. And he's doing his best to navigate them &mdash; just like you are.</p>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Is it fair to blame someone for a world they didn't create?</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="6" data-next="3">Continue &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="3">
+            <div class="thought-bubble question-bubble">
+              <div class="bubble-label">The Final Questions</div>
+              <p>When someone tells you that men are the problem &mdash; that they've always had power and used it selfishly &mdash; ask yourself these three questions:</p>
+              <ol class="socratic-final-questions">
+                <li><strong>Who built the world I live in?</strong> And at what cost to themselves?</li>
+                <li><strong>Who was expected to die</strong> in wars, in dangerous jobs, in emergencies &mdash; so that others could live?</li>
+                <li><strong>Is the man in front of me</strong> &mdash; my father &mdash; responsible for all of human history? Or is he just a person trying to love his daughter the best way he knows how?</li>
+              </ol>
+            </div>
+            <div class="think-prompt">
+              <span class="think-icon">&#129504;</span>
+              <span>Take as long as you need with these...</span>
+            </div>
+            <button class="btn btn-socratic reveal-btn" data-thread="6" data-next="4">Show me the final insight &rarr;</button>
+          </div>
+
+          <div class="socratic-step" data-step="4">
+            <div class="thought-bubble insight-bubble final-insight">
+              <div class="bubble-label">The Deepest Discovery</div>
+              <p>History is complicated. Men had certain advantages. They also carried crushing burdens &mdash; burdens of labor, sacrifice, silence, and expendability that are rarely acknowledged.</p>
+              <p>None of this can be simply "undone." These patterns are woven into cultures, families, and individual men over thousands of years. Saying "just stop being like that" is like telling a river to stop flowing &mdash; the current has been moving too long.</p>
+              <p>But here's what <em>can</em> be done:</p>
+              <ul>
+                <li><strong>Understanding</strong> can replace blame.</li>
+                <li><strong>Compassion</strong> can replace resentment.</li>
+                <li><strong>Gratitude</strong> can replace entitlement.</li>
+                <li><strong>Dialogue</strong> can replace dismissal.</li>
+              </ul>
+              <p>Your father isn't your opponent. He isn't the representative of "all men throughout history." He's one person &mdash; an immigrant, a father, a man carrying weights you may not yet see &mdash; who is trying, every single day, to reach you.</p>
+              <p><strong>The greatest act of strength isn't fighting against the people who love you. It's having the courage to try to understand them.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thread Navigation -->
+        <div class="thread-nav" id="threadNav">
+          <h3>Exploration Progress</h3>
+          <div class="thread-progress">
+            <button class="thread-dot active" data-thread-nav="1" title="Who Builds the World?">I</button>
+            <button class="thread-dot" data-thread-nav="2" title="The Question Nobody Asks About War">II</button>
+            <button class="thread-dot" data-thread-nav="3" title="The Provider Trap">III</button>
+            <button class="thread-dot" data-thread-nav="4" title="The Longest Silence in History">IV</button>
+            <button class="thread-dot" data-thread-nav="5" title="Women and Children First">V</button>
+            <button class="thread-dot" data-thread-nav="6" title="Can You Just Undo All of This?">VI</button>
+          </div>
+          <p class="thread-nav-hint">Click a numeral to jump to that thread</p>
+        </div>
+
+        <!-- Section Closing -->
+        <div class="socratic-closing">
+          <h2>You Did the Hard Work</h2>
+          <p>
+            Nobody told you what to think in this section. You read questions. You sat with them.
+            You discovered your own answers. <strong>That's what real independent thinking looks
+            like</strong> &mdash; not rejecting everything you hear, but genuinely engaging with ideas
+            and reaching your own conclusions.
+          </p>
+          <p>
+            If any of these threads made you see things differently, write about it in your journal.
+            And if you have questions, bring them to your dad. Not with a wall up. But with
+            genuine curiosity. You might be amazed at what he has to share when you're ready to hear it.
+          </p>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="scenarios">&larr; Real Talk</button>
+          <button class="btn btn-primary" data-page="journal">My Journal &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MY JOURNAL ===================== -->
+    <section id="page-journal" class="page">
+      <div class="page-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <h1>My Journal</h1>
+        <p>Your private space to think, feel, and grow. Only you can see what you write here.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="content-block">
+          <div class="privacy-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>100% Private &mdash; saved only on this device, never sent anywhere</span>
+          </div>
+        </div>
+
+        <!-- Guided Prompts -->
+        <h2 class="section-heading">Guided Reflections</h2>
+        <p class="section-intro">Pick a prompt that speaks to you, or write freely below.</p>
+
+        <div class="journal-prompts">
+          <button class="journal-prompt-btn" data-prompt="What's one thing my dad has taught me that I'm actually grateful for?">
+            What's one thing my dad has taught me that I'm actually grateful for?
+          </button>
+          <button class="journal-prompt-btn" data-prompt="When was the last time I felt really safe, and who was responsible for that feeling?">
+            When was the last time I felt really safe, and who was responsible for that feeling?
+          </button>
+          <button class="journal-prompt-btn" data-prompt="If I could ask my dad anything without judgment, what would I ask?">
+            If I could ask my dad anything without judgment, what would I ask?
+          </button>
+          <button class="journal-prompt-btn" data-prompt="What kind of woman do I want to become, and what kind of guidance would help me get there?">
+            What kind of woman do I want to become, and what kind of guidance would help me get there?
+          </button>
+          <button class="journal-prompt-btn" data-prompt="When I disagree with my dad, how do I usually react? How could I react differently?">
+            When I disagree with my dad, how do I usually react? How could I react differently?
+          </button>
+          <button class="journal-prompt-btn" data-prompt="What are three things I appreciate about my dad that I've never told him?">
+            What are three things I appreciate about my dad that I've never told him?
+          </button>
+        </div>
+
+        <!-- Journal Entry Area -->
+        <div class="journal-editor">
+          <div class="journal-header">
+            <input type="text" class="journal-title-input" id="journalTitle" placeholder="Give this entry a title...">
+            <span class="journal-date" id="journalDate"></span>
+          </div>
+          <textarea class="journal-textarea" id="journalText" placeholder="Start writing... This is your private space. Be honest with yourself."></textarea>
+          <div class="journal-actions">
+            <button class="btn btn-primary" id="saveEntry">Save Entry</button>
+            <button class="btn btn-outline" id="clearEntry">Clear</button>
+          </div>
+        </div>
+
+        <!-- Past Entries -->
+        <h2 class="section-heading">My Past Entries</h2>
+        <div class="journal-entries" id="journalEntries">
+          <p class="empty-state" id="emptyJournal">No entries yet. Start writing above to create your first one!</p>
+        </div>
+
+        <div class="page-nav">
+          <button class="btn btn-outline" data-page="socratic">&larr; Think Deeper</button>
+          <button class="btn btn-primary" data-page="home">Back to Home &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="appFooter" class="footer hidden">
+    <div class="container">
+      <p>Made with love for an amazing girl who's going to change the world.</p>
+      <p class="footer-small">Growing Up Strong &mdash; Your guide to being unstoppable.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

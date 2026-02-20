@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#101018">
+  <title>D&#x1E5B;&#x1E63;&#x1E6D;i &mdash; the eyes of others</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2342;&#2371;&#2359;&#2381;&#2335;&#2367;</div>
+      <h1>Drishti</h1>
+      <p class="opening-sub">the eyes of others</p>
+      <div class="opening-text">
+        <p>You will read six moments from one person's eyes.</p>
+        <p>You will feel certain about what you see.</p>
+        <p>Then the same moment will open from the other side.</p>
+        <p class="opening-accent">What felt obvious will become complicated.<br>What felt simple will become human.</p>
+      </div>
+      <button class="btn-eye" id="beginBtn">open your eyes</button>
+    </div>
+  </div>
+
+  <!-- ========== SCENARIO ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+
+    <!-- Progress -->
+    <div class="progress-row">
+      <div class="progress-dots" id="progressDots"></div>
+      <span class="progress-label" id="progressLabel">1 / 6</span>
+    </div>
+
+    <!-- Perspective A (first view) -->
+    <div id="sideA" class="perspective-panel side-a">
+      <div class="perspective-tag">
+        <span class="tag-eye">&#9673;</span>
+        <span class="tag-label" id="tagA"></span>
+      </div>
+      <div class="perspective-body" id="bodyA"></div>
+      <button class="btn-eye" id="showOtherSide">now see the other side &rarr;</button>
+    </div>
+
+    <!-- Perspective B (the reveal) -->
+    <div id="sideB" class="perspective-panel side-b hidden">
+      <div class="perspective-tag tag-b">
+        <span class="tag-eye">&#9673;</span>
+        <span class="tag-label" id="tagB"></span>
+      </div>
+      <div class="perspective-body" id="bodyB"></div>
+      <div class="shatter-line"></div>
+      <div class="reflection-prompt" id="reflectionPrompt"></div>
+      <button class="btn-eye" id="nextScenario">next moment &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ========== MIRROR (Final) ========== -->
+  <div id="mirror" class="mirror hidden">
+    <div class="mirror-content">
+      <h2>The Mirror</h2>
+      <p class="mirror-text">
+        Six moments. Twelve perspectives. Every time, the story you saw first felt complete &mdash;
+        until the other side revealed what you couldn't see.
+      </p>
+      <p class="mirror-text">
+        Now turn the lens on your own life.
+      </p>
+      <div class="mirror-question">
+        <p>Think of someone you've judged, dismissed, or stopped listening to.</p>
+        <p class="mirror-accent">What is the side of their story you have never let yourself see?</p>
+      </div>
+      <textarea class="mirror-input" id="mirrorInput" placeholder="write what you see now..."></textarea>
+      <div class="mirror-actions">
+        <button class="btn-eye" id="saveMirror">seal this seeing</button>
+        <button class="btn-ghost" id="restartBtn">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about drishti">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Drishti <span class="about-deva">&#2342;&#2371;&#2359;&#2381;&#2335;&#2367;</span></h2>
+      <p>
+        <strong>Drishti</strong> (Sanskrit: sight, vision, perspective) refers in yogic tradition
+        to the focused gaze &mdash; the deliberate direction of one's seeing. In a broader sense,
+        it is the capacity to see beyond the surface of things.
+      </p>
+      <p>
+        We all carry a single perspective. It feels like the whole truth. It never is. The person
+        you find hardest to understand is the one whose drishti you have never tried to enter.
+      </p>
+      <p>
+        These six moments are composites drawn from real patterns in human relationships. None
+        are fictional in the way that matters &mdash; every one of them is happening right now,
+        somewhere, between two people who love each other and cannot see each other clearly.
+      </p>
+    </div>
+  </div>
+
+  <script src="drishti.js"></script>
+</body>
+</html>

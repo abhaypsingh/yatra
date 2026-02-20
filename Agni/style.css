@@ -1,0 +1,579 @@
+/* ============================================================
+   AGNI — the sacred fire of release
+   ============================================================ */
+
+:root {
+  --dark: #0f0806;
+  --dark-warm: #1a0e08;
+  --coal: #2a1810;
+  --ember-dark: #4a2010;
+  --ember: #c85020;
+  --flame: #e8842c;
+  --flame-bright: #f8b840;
+  --flame-white: #fff0c0;
+  --ash: #3a3530;
+  --ash-light: #5a5550;
+  --ash-pale: #8a8580;
+  --smoke: #6a6058;
+  --paper: #f0e8d0;
+  --paper-dark: #d8d0b8;
+  --ink: #2a2420;
+  --white: #f5f0e8;
+  --font: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 1s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--dark);
+  color: var(--ash-pale);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==================== CANVASES ==================== */
+#fireCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#emberCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1.2s ease, visibility 1.2s ease;
+}
+.opening.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+.opening-content {
+  text-align: center;
+  max-width: 460px;
+  padding: 2rem;
+}
+.opening-devanagari {
+  font-size: 2.5rem;
+  color: var(--ember);
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+.opening-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 6px;
+  text-transform: lowercase;
+  margin-bottom: 0.25rem;
+}
+.opening-sub {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: var(--smoke);
+  text-transform: lowercase;
+  margin-bottom: 2.5rem;
+}
+.opening-text p {
+  font-size: 0.92rem;
+  line-height: 2;
+  color: var(--ash-pale);
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 0.3s; }
+.opening-text p:nth-child(2) { animation-delay: 0.9s; }
+.opening-text p:nth-child(3) { animation-delay: 1.5s; }
+.opening-text p:nth-child(4) { animation-delay: 2.1s; }
+.opening-text p:nth-child(5) { animation-delay: 2.7s; }
+.opening-last {
+  color: var(--flame) !important;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-ember {
+  padding: 0.65rem 2rem;
+  background: transparent;
+  border: 1px solid var(--ember);
+  border-radius: 2px;
+  color: var(--flame);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: var(--transition);
+  opacity: 0;
+  animation: fadeUp 0.6s 3.3s ease forwards;
+}
+.btn-ember:hover {
+  background: rgba(200, 80, 32, 0.15);
+  box-shadow: 0 0 20px rgba(200, 80, 32, 0.1);
+}
+.btn-ember:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.btn-ember:disabled:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-ash {
+  padding: 0.65rem 2rem;
+  background: transparent;
+  border: 1px solid var(--ash);
+  border-radius: 2px;
+  color: var(--ash-light);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-ash:hover {
+  border-color: var(--ash-light);
+  color: var(--ash-pale);
+}
+
+/* ==================== WRITING PHASE ==================== */
+.writing-phase {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: opacity var(--transition-slow);
+}
+.writing-phase.hidden { display: none; }
+.writing-phase.visible { display: flex; animation: fadeUp 0.8s ease; }
+
+.letter-container {
+  width: 100%;
+  max-width: 560px;
+  background: var(--paper);
+  border-radius: 2px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 120px rgba(200, 80, 32, 0.05);
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.letter-header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem 0.75rem;
+  border-bottom: 1px solid var(--paper-dark);
+  gap: 0.5rem;
+}
+.letter-to {
+  font-size: 0.85rem;
+  color: var(--smoke);
+  font-style: italic;
+}
+.letter-to-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--ink);
+}
+.letter-to-input::placeholder { color: #b0a890; }
+
+.letter-body {
+  flex: 1;
+  min-height: 220px;
+  padding: 1.25rem 1.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--ink);
+  resize: none;
+}
+.letter-body::placeholder {
+  color: #b0a890;
+  font-style: italic;
+}
+
+.letter-footer {
+  padding: 0.75rem 1.5rem 1.25rem;
+  border-top: 1px solid var(--paper-dark);
+  background: rgba(0,0,0,0.02);
+}
+.letter-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.prompt-chip {
+  padding: 0.3rem 0.7rem;
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 20px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--smoke);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.prompt-chip:hover {
+  background: rgba(0,0,0,0.08);
+  color: var(--ink);
+}
+
+.letter-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.word-count {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: #b0a890;
+  letter-spacing: 1px;
+}
+.letter-actions .btn-ember {
+  opacity: 1;
+  animation: none;
+}
+
+/* ==================== BURNING PHASE ==================== */
+.burning-phase {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity var(--transition-slow);
+}
+.burning-phase.hidden { display: none; }
+.burning-phase.visible { display: flex; }
+
+.burning-letter {
+  width: 90%;
+  max-width: 480px;
+  max-height: 60vh;
+  overflow: hidden;
+  background: var(--paper);
+  padding: 2rem;
+  border-radius: 2px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--ink);
+  position: relative;
+  transition: opacity 3s ease, transform 3s ease;
+}
+.burning-letter.burning {
+  mask-image: linear-gradient(to top, transparent, black 30%);
+  -webkit-mask-image: linear-gradient(to top, transparent, black 30%);
+  animation: burnAway 6s ease forwards;
+}
+@keyframes burnAway {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: brightness(1);
+  }
+  30% {
+    filter: brightness(1.1) sepia(0.3);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateY(-20px);
+    filter: brightness(0.8) sepia(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px);
+    filter: brightness(0.3) sepia(1);
+  }
+}
+.burning-edge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to top, var(--ember), var(--flame), transparent);
+  animation: edgeBurn 6s ease forwards;
+}
+@keyframes edgeBurn {
+  0% { height: 4px; }
+  100% { height: 100%; }
+}
+
+.burning-status {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--ember);
+  opacity: 0.7;
+  animation: fadeUp 0.5s 0.5s ease both;
+}
+
+/* ==================== ASHES PHASE ==================== */
+.ashes-phase {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity var(--transition-slow);
+}
+.ashes-phase.hidden { display: none; }
+.ashes-phase.visible { display: flex; animation: fadeUp 1s ease; }
+
+.ashes-content {
+  text-align: center;
+  max-width: 480px;
+}
+.ashes-wisdom {
+  margin-bottom: 2rem;
+}
+.ashes-wisdom blockquote {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.ashes-wisdom cite {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  color: var(--flame);
+  font-style: normal;
+}
+.ashes-note {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--ash-light);
+  margin-bottom: 2rem;
+}
+.ashes-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ashes-actions .btn-ember,
+.ashes-actions .btn-ash {
+  opacity: 1;
+  animation: none;
+}
+
+/* ==================== ASHES GARDEN ==================== */
+.ashes-garden {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(15, 8, 6, 0.96);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 3rem 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ashes-garden.hidden { display: none; }
+.ashes-garden.visible { display: flex; animation: fadeUp 0.5s ease; }
+.garden-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--ash-pale);
+  text-transform: lowercase;
+  margin-bottom: 0.5rem;
+}
+.garden-sub {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--ash);
+  margin-bottom: 2.5rem;
+}
+.garden-entries {
+  width: 100%;
+  max-width: 460px;
+  margin-bottom: 2rem;
+}
+.garden-entry {
+  padding: 1.25rem;
+  border-left: 2px solid var(--coal);
+  margin-bottom: 1.5rem;
+  transition: border-color var(--transition);
+}
+.garden-entry:hover { border-color: var(--ember-dark); }
+.garden-entry-to {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: var(--ember);
+  opacity: 0.6;
+  text-transform: lowercase;
+  margin-bottom: 0.5rem;
+}
+.garden-entry-date {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  color: var(--ash);
+  letter-spacing: 1px;
+}
+.garden-entry-words {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  color: var(--ash);
+  margin-left: 0.5rem;
+}
+.garden-empty {
+  text-align: center;
+  color: var(--ash);
+  font-style: italic;
+  font-size: 0.85rem;
+  padding: 3rem 0;
+}
+
+/* ==================== NAV ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 40;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.nav-float.visible { opacity: 1; }
+.nav-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--coal);
+  background: rgba(15, 8, 6, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ash-light);
+  transition: var(--transition);
+}
+.nav-btn:hover { border-color: var(--ember); color: var(--ember); }
+.nav-btn svg { width: 14px; height: 14px; }
+
+/* ==================== ABOUT ==================== */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(15, 8, 6, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity var(--transition);
+}
+.about-overlay.hidden { opacity: 0; pointer-events: none; }
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+}
+.about-close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--ash-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.about-close:hover { color: var(--ash-pale); }
+.about-card h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+.about-devanagari {
+  color: var(--ember);
+  opacity: 0.5;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+.about-card p {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--ash-pale);
+  margin-bottom: 1rem;
+}
+.about-card hr {
+  border: none;
+  border-top: 1px solid var(--coal);
+  margin: 1.5rem 0;
+}
+.about-small {
+  font-size: 0.78rem !important;
+  color: var(--ash-light) !important;
+  font-style: italic;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-title { font-size: 1.8rem; letter-spacing: 4px; }
+  .letter-container { max-height: 85vh; }
+  .letter-body { min-height: 160px; }
+  .letter-prompts { gap: 0.3rem; }
+  .prompt-chip { font-size: 0.65rem; padding: 0.25rem 0.5rem; }
+  .burning-letter { padding: 1.5rem; font-size: 0.85rem; }
+}

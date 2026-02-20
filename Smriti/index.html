@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0e0c14">
+  <title>Sm&#x1E5B;ti &mdash; that which is remembered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2381;&#2350;&#2371;&#2340;&#2367;</div>
+      <h1>Smriti</h1>
+      <p class="opening-sub">that which is remembered</p>
+      <div class="opening-text">
+        <p>You are becoming someone. Right now, today, in ways you can't see yet.</p>
+        <p>The person you'll be at fifteen will think differently.<br>
+           At eighteen, you'll carry questions you haven't imagined.<br>
+           At twenty-five, you'll understand things that feel impossible now.</p>
+        <p>Write to those future versions of yourself.<br>
+           Seal the words. When the time comes, open them.</p>
+        <p class="opening-accent">Your present self has something to say to your future self. Don't let the words disappear.</p>
+      </div>
+      <button class="btn-smriti" id="beginBtn">open the vault</button>
+    </div>
+  </div>
+
+  <!-- ========== VAULT (main view) ========== -->
+  <div id="vault" class="vault hidden">
+    <div class="vault-header">
+      <h2 class="vault-title">Your Time Vault</h2>
+      <p class="vault-sub">letters sealed in time, waiting for you</p>
+    </div>
+
+    <!-- Capsule slots -->
+    <div class="capsules" id="capsules"></div>
+
+    <!-- Write new -->
+    <button class="btn-smriti btn-new" id="writeNewBtn">write a new letter</button>
+  </div>
+
+  <!-- ========== WRITE PHASE ========== -->
+  <div id="writePhase" class="write-phase hidden">
+    <div class="write-container">
+      <button class="write-back" id="writeBack">&larr; back to vault</button>
+
+      <h2 class="write-title">Write to your future self</h2>
+
+      <div class="write-field">
+        <label class="write-label">Open this letter when I turn:</label>
+        <div class="age-choices" id="ageChoices">
+          <button class="age-btn" data-age="13">13</button>
+          <button class="age-btn" data-age="14">14</button>
+          <button class="age-btn" data-age="15">15</button>
+          <button class="age-btn" data-age="16">16</button>
+          <button class="age-btn" data-age="18">18</button>
+          <button class="age-btn" data-age="21">21</button>
+          <button class="age-btn" data-age="25">25</button>
+          <button class="age-btn" data-age="30">30</button>
+        </div>
+      </div>
+
+      <div class="write-field">
+        <label class="write-label">Your current age:</label>
+        <input type="number" class="write-input-small" id="currentAge" min="8" max="80" value="12" autocomplete="off">
+      </div>
+
+      <div class="write-prompts">
+        <p class="write-prompt-label">Need a spark?</p>
+        <div class="prompt-chips">
+          <button class="prompt-chip" data-prompt="Right now, the thing I care about most is...">what I care about...</button>
+          <button class="prompt-chip" data-prompt="I want you to remember that...">remember that...</button>
+          <button class="prompt-chip" data-prompt="The hardest thing I'm going through is...">the hardest thing...</button>
+          <button class="prompt-chip" data-prompt="I hope that by the time you read this...">I hope...</button>
+          <button class="prompt-chip" data-prompt="Don't forget how it felt when...">don't forget...</button>
+          <button class="prompt-chip" data-prompt="The person I want to become is someone who...">who I want to become...</button>
+        </div>
+      </div>
+
+      <textarea class="write-body" id="writeBody" placeholder="Dear future me..."></textarea>
+
+      <div class="write-footer">
+        <span class="write-date" id="writeDate"></span>
+        <button class="btn-smriti" id="sealBtn" disabled>seal this letter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== READ PHASE (for opened capsules) ========== -->
+  <div id="readPhase" class="read-phase hidden">
+    <div class="read-container">
+      <button class="write-back" id="readBack">&larr; back to vault</button>
+      <div class="read-header">
+        <div class="read-meta" id="readMeta"></div>
+      </div>
+      <div class="read-body" id="readBody"></div>
+      <div class="read-footer">
+        <p class="read-note">this letter was written by a younger you. hold it gently.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about smriti">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Smriti <span class="about-deva">&#2360;&#2381;&#2350;&#2371;&#2340;&#2367;</span></h2>
+      <p>
+        <strong>Smriti</strong> (Sanskrit: memory, remembrance) refers to knowledge carried forward
+        through time &mdash; the wisdom that is remembered and passed from one generation to the next,
+        from one version of yourself to the next.
+      </p>
+      <p>
+        You are not the same person you were a year ago. You will not be the same person a year from now.
+        Growth is invisible while it's happening. But if you leave a mark &mdash; a letter, a thought,
+        a feeling &mdash; your future self can look back and see how far they've come.
+      </p>
+      <p>
+        These letters are stored only on this device. They cannot be read by anyone else.
+        They are sealed until the date you choose. They are yours alone &mdash; a conversation
+        between who you are and who you will become.
+      </p>
+    </div>
+  </div>
+
+  <script src="smriti.js"></script>
+</body>
+</html>

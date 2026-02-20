@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0e14">
+  <title>Setu &mdash; the bridge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bridge canvas -->
+  <canvas id="bridgeCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2375;&#2340;&#2369;</div>
+      <h1>Setu</h1>
+      <p class="opening-sub">the bridge</p>
+      <div class="opening-text">
+        <p>Between any two people who love each other, there is a bridge.</p>
+        <p>It is built plank by plank &mdash; from listening, from patience,<br>
+           from showing up, from apologizing, from trying again.</p>
+        <p>Some planks are yours to lay. Some belong to the other person.<br>
+           You cannot build the whole bridge alone.</p>
+        <p class="opening-accent">But you can always lay your half. That is where it begins.</p>
+      </div>
+      <button class="btn-setu" id="beginBtn">begin building</button>
+    </div>
+  </div>
+
+  <!-- ========== BRIDGE BUILDER ========== -->
+  <div id="builder" class="builder hidden">
+
+    <!-- Who is this bridge to? -->
+    <div id="setupPhase" class="setup-phase">
+      <h2 class="setup-title">Who are you building this bridge to?</h2>
+      <input type="text" class="setup-input" id="bridgeTo" placeholder="a name, a role, a relationship..." autocomplete="off">
+      <button class="btn-setu btn-start" id="startBridge" disabled>begin</button>
+    </div>
+
+    <!-- Active building -->
+    <div id="buildPhase" class="build-phase hidden">
+      <div class="bridge-status">
+        <span class="bridge-to-label">bridge to: <strong id="bridgeToLabel"></strong></span>
+        <span class="plank-count" id="plankCount">0 / 12 planks</span>
+      </div>
+
+      <!-- Current plank -->
+      <div class="plank-card" id="plankCard">
+        <div class="plank-owner" id="plankOwner"></div>
+        <div class="plank-action" id="plankAction"></div>
+        <div class="plank-desc" id="plankDesc"></div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="plank-actions" id="plankActions">
+        <button class="btn-setu btn-lay" id="layPlank">lay this plank</button>
+      </div>
+
+      <p class="build-hint" id="buildHint"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETION ========== -->
+  <div id="completion" class="completion hidden">
+    <div class="completion-content">
+      <h2>The Bridge Stands</h2>
+      <p class="completion-sub" id="completionSub"></p>
+
+      <div class="bridge-summary" id="bridgeSummary"></div>
+
+      <div class="completion-truth">
+        <p>Some planks were yours. Some were not.</p>
+        <p>In every relationship, you will never control the whole bridge. But the planks you lay &mdash;
+           the listening, the patience, the showing up &mdash; those are yours.</p>
+        <p class="completion-accent">You cannot make someone walk across. But you can make sure your side is built.</p>
+      </div>
+
+      <div class="completion-reflection">
+        <p>Think of the person you named.</p>
+        <p class="completion-accent">What is one plank you can lay this week?</p>
+        <textarea class="completion-input" id="completionInput" placeholder="one real thing you can do..."></textarea>
+      </div>
+
+      <div class="completion-actions">
+        <button class="btn-setu" id="sealBtn">seal this bridge</button>
+        <button class="btn-ghost" id="restartBtn">build another</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about setu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Setu <span class="about-deva">&#2360;&#2375;&#2340;&#2369;</span></h2>
+      <p>
+        <strong>Setu</strong> (Sanskrit: bridge, connection) appears in the ancient epic Ramayana
+        as the bridge built by an army to cross the ocean &mdash; each stone laid with devotion,
+        each piece essential. It took a million hands. No single one could do it alone.
+      </p>
+      <p>
+        In relationships, the bridge between two people is built the same way: plank by plank,
+        through small acts of connection. Some days you lay a plank. Some days the other person
+        does. Some days neither of you can. The bridge waits.
+      </p>
+      <p>
+        You will never be able to build the whole bridge yourself. But the half you build
+        is a declaration: <em>I am here. I am not leaving. I am doing my part.</em>
+      </p>
+    </div>
+  </div>
+
+  <script src="setu.js"></script>
+</body>
+</html>

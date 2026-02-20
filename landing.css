@@ -1,0 +1,334 @@
+/* ============================================================
+   YATRA — the journey
+   Landing page / dashboard for the full collection
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #0a0a10;
+  --deep: #111118;
+  --surface: #1a1a24;
+  --border: #24242e;
+  --text: #c8c4d4;
+  --text-dim: #6e6a80;
+  --accent: #c9a84c;
+  --accent-glow: rgba(201, 168, 76, 0.15);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--void));
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 580px;
+}
+
+.hero-devanagari {
+  font-size: 4rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.12em;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeUp 1s 1.3s ease forwards;
+}
+
+/* ==================== COLLECTION ==================== */
+.collection {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+/* Section groups */
+.section-group {
+  margin-bottom: 4rem;
+}
+
+.group-title {
+  font-size: 0.8rem;
+  font-family: var(--font-ui);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.card-grid.single {
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+/* Cards */
+.card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card-sanskrit {
+  font-size: 1.6rem;
+  color: var(--accent);
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.card-icon {
+  font-size: 1.4rem;
+  color: var(--accent);
+  opacity: 0.7;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: 0.05em;
+}
+
+.card-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-style: italic;
+  letter-spacing: 0.06em;
+  margin-top: -0.3rem;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.card-enter {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-enter {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==================== CARD ACCENT COLORS ==================== */
+.card-core:hover { border-color: #6C63FF; }
+.card-core::before { background: #6C63FF; }
+.card-core .card-icon { color: #6C63FF; }
+.card-core .card-enter { color: #6C63FF; }
+
+.card-sati:hover { border-color: #c9a84c; }
+
+.card-mala:hover { border-color: #c9a84c; }
+
+.card-dharma:hover { border-color: #a078c0; }
+.card-dharma::before { background: #a078c0; }
+.card-dharma .card-enter { color: #a078c0; }
+
+.card-drishti:hover { border-color: #6888c8; }
+.card-drishti::before { background: #6888c8; }
+.card-drishti .card-enter { color: #6888c8; }
+
+.card-shruti:hover { border-color: #a888c0; }
+.card-shruti::before { background: #a888c0; }
+.card-shruti .card-enter { color: #a888c0; }
+
+.card-karma:hover { border-color: #68b8a0; }
+.card-karma::before { background: #68b8a0; }
+.card-karma .card-enter { color: #68b8a0; }
+
+.card-kintsugi:hover { border-color: #c9a84c; }
+
+.card-agni:hover { border-color: #c85020; }
+.card-agni::before { background: #c85020; }
+.card-agni .card-enter { color: #e8842c; }
+
+.card-setu:hover { border-color: #68a8c8; }
+.card-setu::before { background: #68a8c8; }
+.card-setu .card-enter { color: #68a8c8; }
+
+.card-smriti:hover { border-color: #8878b0; }
+.card-smriti::before { background: #8878b0; }
+.card-smriti .card-enter { color: #8878b0; }
+
+.card-vana:hover { border-color: #68b888; }
+.card-vana::before { background: #68b888; }
+.card-vana .card-enter { color: #68b888; }
+
+/* ==================== FOOTER ==================== */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem 4rem;
+  max-width: 560px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+
+.footer-text {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.footer-note {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  opacity: 0.6;
+  font-family: var(--font-ui);
+  letter-spacing: 0.04em;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .hero-devanagari { font-size: 3rem; }
+  .hero-title { font-size: 2.4rem; }
+  .collection { padding: 1.5rem 1.2rem 3rem; }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 2rem 1.5rem; }
+  .hero-devanagari { font-size: 2.5rem; }
+  .hero-title { font-size: 2rem; letter-spacing: 0.15em; }
+  .hero-desc { font-size: 0.9rem; }
+
+  .card { padding: 1.4rem; }
+  .card-name { font-size: 1.1rem; }
+
+  .section-group { margin-bottom: 3rem; }
+}
+
+/* ==================== PRINT ==================== */
+@media print {
+  .hero { min-height: auto; page-break-after: always; }
+  .card { break-inside: avoid; border: 1px solid #ccc; }
+  .card-enter { display: none; }
+}

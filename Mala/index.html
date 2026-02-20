@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1a1008">
+  <title>M&#x101;l&#x101; &mdash; 108 beads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2350;&#2366;&#2354;&#2366;</div>
+      <h1>M&#x101;l&#x101;</h1>
+      <p class="opening-sub">108 beads</p>
+      <div class="opening-text">
+        <p>A m&#x101;l&#x101; is a garland of 108 beads, used for centuries to anchor the wandering mind.</p>
+        <p>Each bead is a moment: a breath, a question, a fragment of wisdom, a silence, a gratitude.</p>
+        <p>Today's garland is unique to today. Tomorrow's will be different.</p>
+        <p class="opening-accent">Move through each bead. Do not rush. The practice is the point.</p>
+      </div>
+      <button class="btn-bead" id="beginBtn">begin today's practice</button>
+    </div>
+  </div>
+
+  <!-- ========== PRACTICE ========== -->
+  <div id="practice" class="practice hidden">
+
+    <!-- Mala ring (SVG) -->
+    <div class="mala-ring-wrap">
+      <svg id="malaRing" class="mala-ring" viewBox="0 0 400 400"></svg>
+      <div class="mala-center">
+        <div class="mala-count" id="malaCount">0</div>
+        <div class="mala-of">of 108</div>
+      </div>
+    </div>
+
+    <!-- Current bead -->
+    <div class="bead-card" id="beadCard">
+      <div class="bead-type" id="beadType"></div>
+      <div class="bead-content" id="beadContent"></div>
+      <div class="bead-instruction" id="beadInstruction"></div>
+    </div>
+
+    <!-- Touch to advance -->
+    <button class="btn-bead btn-next" id="nextBead">touch the next bead</button>
+
+    <!-- Progress hint -->
+    <div class="practice-hint" id="practiceHint">tap each bead mindfully</div>
+  </div>
+
+  <!-- ========== COMPLETION ========== -->
+  <div id="completion" class="completion hidden">
+    <div class="completion-content">
+      <div class="completion-symbol">&#x25CB;</div>
+      <h2>The circle is complete.</h2>
+      <p class="completion-text">
+        108 beads. 108 moments of presence. You held each one.
+      </p>
+      <div class="completion-stats">
+        <div class="stat">
+          <span class="stat-num" id="statBreaths">0</span>
+          <span class="stat-label">breaths</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="statWisdom">0</span>
+          <span class="stat-label">wisdoms</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="statQuestions">0</span>
+          <span class="stat-label">questions</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="statGratitude">0</span>
+          <span class="stat-label">gratitudes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="statSilence">0</span>
+          <span class="stat-label">silences</span>
+        </div>
+      </div>
+      <div class="dedication">
+        <p class="dedication-prompt">Dedicate this practice to someone:</p>
+        <input type="text" class="dedication-input" id="dedicationInput" placeholder="a name, a wish, a prayer..." autocomplete="off">
+      </div>
+      <div class="streak-display" id="streakDisplay"></div>
+      <div class="completion-actions">
+        <button class="btn-bead" id="sealBtn">seal this day</button>
+        <button class="btn-ghost" id="restartBtn">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navHistory" title="practice history">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about m&#x101;l&#x101;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== HISTORY ========== -->
+  <div id="historyOverlay" class="history-overlay hidden">
+    <div class="history-card">
+      <button class="history-close" id="historyClose">&times;</button>
+      <h2>Practice History</h2>
+      <div class="history-entries" id="historyEntries"></div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>M&#x101;l&#x101; <span class="about-deva">&#2350;&#2366;&#2354;&#2366;</span></h2>
+      <p>
+        <strong>M&#x101;l&#x101;</strong> (Sanskrit: garland) is a string of 108 beads used across
+        Hindu, Buddhist, and Jain traditions for meditation and prayer. The number 108 is considered
+        sacred &mdash; there are said to be 108 feelings (36 past, 36 present, 36 future), 108
+        energy lines converging at the heart chakra, and 108 earthly temptations to overcome.
+      </p>
+      <p>
+        In practice, each bead is touched with intention. The fingers move, the mind stills.
+        The repetition creates a rhythm that carries you below thought, into presence.
+      </p>
+      <p>
+        This digital m&#x101;l&#x101; generates a unique sequence each day using the date as a seed.
+        No two days are the same. Completing all 108 beads is a small act of devotion &mdash;
+        to stillness, to attention, to the day itself.
+      </p>
+    </div>
+  </div>
+
+  <script src="mala.js"></script>
+</body>
+</html>

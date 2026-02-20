@@ -1,0 +1,665 @@
+/* ============================================================
+   MALA — 108 beads
+   Warm sandalwood aesthetic, circular meditation
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #1a1008;
+  --deep: #211a0e;
+  --surface: #2e2418;
+  --wood: #6b5238;
+  --gold: #c9a84c;
+  --gold-glow: rgba(201, 168, 76, 0.2);
+  --text: #d4c8b0;
+  --text-dim: #8a7e6a;
+  --breath: #6ba89c;
+  --wisdom: #c9a84c;
+  --question: #9888c8;
+  --gratitude: #8ab868;
+  --silence: #7888a0;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.opening.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.opening-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 480px;
+}
+
+.devanagari {
+  font-size: 3.2rem;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.opening h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.opening-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.opening-text {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.opening-text p {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.6s; }
+.opening-text p:nth-child(3) { animation-delay: 2.0s; }
+.opening-text p:nth-child(4) { animation-delay: 2.4s; }
+
+.opening-accent {
+  color: var(--gold) !important;
+  font-style: italic;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-bead {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s 3s ease forwards;
+}
+
+.btn-bead:hover {
+  background: var(--gold);
+  color: var(--void);
+}
+
+.btn-next {
+  opacity: 1;
+  animation: none;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease, transform 0.15s ease;
+}
+
+.btn-next:active {
+  transform: scale(0.96);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ==================== PRACTICE ==================== */
+.practice {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Mala ring */
+.mala-ring-wrap {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.mala-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.mala-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mala-count {
+  font-size: 2.4rem;
+  color: var(--gold);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.mala-of {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* SVG bead styles */
+.bead-dot {
+  transition: fill 0.3s ease, r 0.3s ease;
+}
+
+.bead-dot.untouched {
+  fill: var(--surface);
+  stroke: var(--wood);
+  stroke-width: 0.5;
+}
+
+.bead-dot.current {
+  fill: var(--gold);
+  stroke: var(--gold);
+  stroke-width: 1;
+  filter: drop-shadow(0 0 4px var(--gold-glow));
+}
+
+.bead-dot.touched {
+  stroke-width: 0;
+}
+
+.bead-dot.touched.type-breath    { fill: var(--breath); }
+.bead-dot.touched.type-wisdom    { fill: var(--wisdom); }
+.bead-dot.touched.type-question  { fill: var(--question); }
+.bead-dot.touched.type-gratitude { fill: var(--gratitude); }
+.bead-dot.touched.type-silence   { fill: var(--silence); }
+
+/* Bead card */
+.bead-card {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 12px;
+  padding: 1.8rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: border-color 0.4s ease;
+}
+
+.bead-card.type-breath    { border-color: var(--breath); }
+.bead-card.type-wisdom    { border-color: var(--wisdom); }
+.bead-card.type-question  { border-color: var(--question); }
+.bead-card.type-gratitude { border-color: var(--gratitude); }
+.bead-card.type-silence   { border-color: var(--silence); }
+
+.bead-type {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.bead-card.type-breath    .bead-type { color: var(--breath); }
+.bead-card.type-wisdom    .bead-type { color: var(--wisdom); }
+.bead-card.type-question  .bead-type { color: var(--question); }
+.bead-card.type-gratitude .bead-type { color: var(--gratitude); }
+.bead-card.type-silence   .bead-type { color: var(--silence); }
+
+.bead-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  animation: fadeIn 0.5s ease;
+}
+
+.bead-instruction {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.practice-hint {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+/* ==================== COMPLETION ==================== */
+.completion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  animation: fadeIn 1s ease;
+}
+
+.completion-content {
+  max-width: 480px;
+  text-align: center;
+}
+
+.completion-symbol {
+  font-size: 4rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.completion h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.6s ease forwards;
+}
+
+.completion-text {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.9s ease forwards;
+}
+
+.completion-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.2s ease forwards;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.stat-num {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.stat:nth-child(1) .stat-num { color: var(--breath); }
+.stat:nth-child(2) .stat-num { color: var(--wisdom); }
+.stat:nth-child(3) .stat-num { color: var(--question); }
+.stat:nth-child(4) .stat-num { color: var(--gratitude); }
+.stat:nth-child(5) .stat-num { color: var(--silence); }
+
+.stat-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Dedication */
+.dedication {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.5s ease forwards;
+}
+
+.dedication-prompt {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.dedication-input {
+  width: 100%;
+  max-width: 320px;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.dedication-input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.dedication-input::placeholder {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+/* Streak */
+.streak-display {
+  font-size: 0.85rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 1.8s ease forwards;
+}
+
+.completion-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 2.1s ease forwards;
+}
+
+.completion-actions .btn-bead {
+  opacity: 1;
+  animation: none;
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.nav-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ==================== OVERLAYS ==================== */
+.about-overlay,
+.history-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 10, 4, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.about-overlay.visible,
+.history-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.about-card,
+.history-card {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.about-card h2,
+.history-card h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.about-deva {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-card strong {
+  color: var(--text);
+}
+
+.about-close,
+.history-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.about-close:hover,
+.history-close:hover {
+  color: var(--text);
+}
+
+/* History entries */
+.history-entry {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.history-entry:last-child {
+  border-bottom: none;
+}
+
+.history-date {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.history-dedication {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-style: italic;
+}
+
+.history-empty {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px var(--gold-glow)); }
+  50% { filter: drop-shadow(0 0 10px var(--gold-glow)); }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-content {
+    padding: 1.5rem;
+  }
+
+  .devanagari {
+    font-size: 2.6rem;
+  }
+
+  .opening h1 {
+    font-size: 2rem;
+  }
+
+  .mala-ring-wrap {
+    width: 240px;
+    height: 240px;
+  }
+
+  .bead-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .completion-stats {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .devanagari {
+    font-size: 2.2rem;
+  }
+
+  .opening h1 {
+    font-size: 1.7rem;
+  }
+
+  .mala-ring-wrap {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mala-count {
+    font-size: 2rem;
+  }
+
+  .bead-content {
+    font-size: 0.95rem;
+  }
+}

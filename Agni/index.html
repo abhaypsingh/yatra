@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0f0806">
+  <title>Agni &mdash; the sacred fire of release</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fire canvas (background) -->
+  <canvas id="fireCanvas"></canvas>
+
+  <!-- Ember canvas (floating word embers) -->
+  <canvas id="emberCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="opening-devanagari">&#2309;&#2327;&#2381;&#2344;&#2367;</div>
+      <h1 class="opening-title">Agni</h1>
+      <p class="opening-sub">the sacred fire of release</p>
+      <div class="opening-text">
+        <p>Some words cannot be spoken.</p>
+        <p>Some letters cannot be sent.</p>
+        <p>But they can be written. And they can be released.</p>
+        <p>Write to someone you cannot reach &mdash; a parent,<br>a child, a friend, a former self. Say what has been<br>unsayable. Then give it to the fire.</p>
+        <p class="opening-last">The writing is the healing. The burning is the letting go.</p>
+      </div>
+      <button class="btn-ember" id="beginBtn">light the fire</button>
+    </div>
+  </div>
+
+  <!-- ========== WRITING PHASE ========== -->
+  <div id="writingPhase" class="writing-phase hidden">
+    <div class="letter-container">
+      <div class="letter-header">
+        <span class="letter-to">to:</span>
+        <input type="text" id="letterTo" class="letter-to-input" placeholder="who is this letter for?" autocomplete="off">
+      </div>
+      <textarea id="letterBody" class="letter-body" placeholder="write what you have never been able to say..."></textarea>
+      <div class="letter-footer">
+        <div class="letter-prompts">
+          <button class="prompt-chip" data-prompt="The thing I never told you is...">I never told you...</button>
+          <button class="prompt-chip" data-prompt="I wish you understood that...">I wish you understood...</button>
+          <button class="prompt-chip" data-prompt="What I needed from you was...">What I needed...</button>
+          <button class="prompt-chip" data-prompt="I forgive you for...">I forgive you for...</button>
+          <button class="prompt-chip" data-prompt="I'm sorry that I...">I'm sorry that...</button>
+          <button class="prompt-chip" data-prompt="If I could go back, I would...">If I could go back...</button>
+        </div>
+        <div class="letter-actions">
+          <span class="word-count" id="wordCount">0 words</span>
+          <button class="btn-ember" id="releaseBtn" disabled>release to fire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BURNING PHASE ========== -->
+  <div id="burningPhase" class="burning-phase hidden">
+    <div class="burning-letter" id="burningLetter"></div>
+    <p class="burning-status" id="burningStatus">releasing...</p>
+  </div>
+
+  <!-- ========== ASHES PHASE ========== -->
+  <div id="ashesPhase" class="ashes-phase hidden">
+    <div class="ashes-content">
+      <div class="ashes-wisdom">
+        <blockquote id="ashesQuote"></blockquote>
+        <cite id="ashesSource"></cite>
+      </div>
+      <p class="ashes-note">your words have become light. what they carried has been released.</p>
+      <div class="ashes-actions">
+        <button class="btn-ember" id="writeAgainBtn">write another letter</button>
+        <button class="btn-ash" id="viewAshesBtn">the ashes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ASHES GARDEN ========== -->
+  <div id="ashesGarden" class="ashes-garden hidden">
+    <h2 class="garden-title">the ashes</h2>
+    <p class="garden-sub">traces of what you have released</p>
+    <div class="garden-entries" id="gardenEntries"></div>
+    <button class="btn-ash" id="closeGardenBtn">return</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAshes" title="the ashes">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-4 8-8 8-13a8 8 0 1 0-16 0c0 5 4 9 8 13z"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about agni">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Agni <span class="about-devanagari">&#2309;&#2327;&#2381;&#2344;&#2367;</span></h2>
+      <p>
+        <strong>Agni</strong> (Sanskrit: fire) is among the most important Vedic deities &mdash;
+        the god of fire, the messenger between humans and the divine. In Vedic ritual, offerings
+        are placed into fire not to destroy them, but to <em>transform</em> them &mdash; to carry
+        them from the material world into something beyond.
+      </p>
+      <p>
+        This experience applies that principle to the words we carry. The letters we write here
+        are not destroyed. They are <strong>released</strong>. The act of writing makes the
+        invisible visible. The act of burning transforms weight into light.
+      </p>
+      <p>
+        Your letters are never stored or transmitted. Only a trace remains in the ashes &mdash;
+        the name of the recipient, the date, and a single line you choose to keep. Everything
+        else is given to the fire.
+      </p>
+      <hr>
+      <p class="about-small">
+        The fire is rendered in real-time with particle physics. Each ember that rises was once
+        a word. Every session is unique. Nothing is permanent. That is the point.
+      </p>
+    </div>
+  </div>
+
+  <script src="agni.js"></script>
+</body>
+</html>

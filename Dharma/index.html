@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0a10">
+  <title>Dharma &mdash; the compass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2343;&#2352;&#2381;&#2350;</div>
+      <h1>Dharma</h1>
+      <p class="opening-sub">the compass</p>
+      <div class="opening-text">
+        <p>Everyone says they know what they believe. But belief is easy when nothing is at stake.</p>
+        <p>You will face eight dilemmas. Not simple ones.<br>
+           Each will cost you something no matter what you choose.</p>
+        <p>There are no right answers. Only honest ones.</p>
+        <p class="opening-accent">When you are done, you will see what you truly stand for &mdash;<br>not what you say, but what you do when it is hard.</p>
+      </div>
+      <button class="btn-dharma" id="beginBtn">find your compass</button>
+    </div>
+  </div>
+
+  <!-- ========== DILEMMA ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+
+    <!-- Progress -->
+    <div class="progress-row">
+      <div class="progress-dots" id="progressDots"></div>
+      <span class="progress-label" id="progressLabel">1 / 8</span>
+    </div>
+
+    <!-- Dilemma -->
+    <div class="dilemma-card" id="dilemmaCard">
+      <div class="dilemma-context" id="dilemmaContext"></div>
+      <div class="dilemma-question" id="dilemmaQuestion"></div>
+      <div class="dilemma-choices" id="dilemmaChoices"></div>
+    </div>
+
+    <!-- After choice: reflection -->
+    <div id="choiceResult" class="choice-result hidden">
+      <div class="result-text" id="resultText"></div>
+      <div class="result-value" id="resultValue"></div>
+      <button class="btn-dharma btn-next" id="nextDilemma">next dilemma &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ========== COMPASS (Final) ========== -->
+  <div id="compass" class="compass-view hidden">
+    <div class="compass-content">
+      <h2>Your Compass</h2>
+      <p class="compass-sub">what you chose when it was hard</p>
+
+      <!-- SVG compass visualization -->
+      <div class="compass-visual">
+        <svg id="compassSvg" viewBox="0 0 400 400" class="compass-svg"></svg>
+      </div>
+
+      <div class="compass-values" id="compassValues"></div>
+
+      <div class="compass-reflection">
+        <p>This is not a test. It is a mirror.</p>
+        <p class="compass-accent">Your dharma is not what you believe. It is what you do when every option costs something.</p>
+      </div>
+
+      <div class="compass-actions">
+        <button class="btn-dharma" id="saveCompass">keep this compass</button>
+        <button class="btn-ghost" id="restartBtn">face them again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about dharma">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dharma <span class="about-deva">&#2343;&#2352;&#2381;&#2350;</span></h2>
+      <p>
+        <strong>Dharma</strong> (Sanskrit: duty, righteousness, the way) is one of the most important
+        concepts in Indian philosophy. It is not a fixed set of rules but a living compass &mdash;
+        the inner sense of what is right, true, and necessary in each moment.
+      </p>
+      <p>
+        Your dharma reveals itself not in what you believe, but in what you choose when every option
+        has a cost. It is easy to be brave when nothing is at stake. It is easy to be honest when
+        the truth is convenient. Dharma is what remains when the easy path disappears.
+      </p>
+      <p>
+        This experience presents dilemmas with no clean answers. Your choices will reveal the values
+        you carry deepest &mdash; the ones that guide you when the compass needle spins.
+      </p>
+    </div>
+  </div>
+
+  <script src="dharma.js"></script>
+</body>
+</html>

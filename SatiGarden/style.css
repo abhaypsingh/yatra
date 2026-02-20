@@ -1,0 +1,711 @@
+/* ============================================================
+   SATI — still point in a turning world
+   A contemplative, generative mindfulness experience
+   ============================================================ */
+
+/* ==================== VARIABLES ==================== */
+:root {
+  --void: #0a0a0f;
+  --void-soft: #12121a;
+  --ink: #1a1a28;
+  --ash: #2a2a3a;
+  --smoke: #4a4a5a;
+  --mist: #7a7a8a;
+  --cloud: #a0a0b0;
+  --snow: #d0d0dd;
+  --light: #e8e8f0;
+  --white: #f5f5fa;
+  --gold: #c9a84c;
+  --gold-soft: rgba(201, 168, 76, 0.15);
+  --gold-glow: rgba(201, 168, 76, 0.08);
+  --ember: #b86840;
+  --water: #4a6fa5;
+  --water-soft: rgba(74, 111, 165, 0.15);
+  --sage: #5a8a6a;
+  --sage-soft: rgba(90, 138, 106, 0.12);
+  --lotus: #8a5a7a;
+  --font: 'Georgia', 'Times New Roman', 'Noto Serif', serif;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==================== RESET ==================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--void);
+  color: var(--cloud);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ==================== CANVAS ==================== */
+#field {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* ==================== NOISE LAYER (Distractions) ==================== */
+.noise-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 2s ease;
+}
+.noise-fragment {
+  position: absolute;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--smoke);
+  opacity: 0;
+  white-space: nowrap;
+  animation: noiseDrift linear infinite;
+  letter-spacing: 0.5px;
+}
+@keyframes noiseDrift {
+  0% {
+    transform: translateX(var(--start-x)) translateY(var(--start-y));
+    opacity: 0;
+  }
+  10% { opacity: var(--max-opacity); }
+  90% { opacity: var(--max-opacity); }
+  100% {
+    transform: translateX(var(--end-x)) translateY(var(--end-y));
+    opacity: 0;
+  }
+}
+
+/* ==================== CALM METER ==================== */
+.calm-meter {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.calm-meter.visible { opacity: 1; }
+.calm-bar {
+  width: 120px;
+  height: 3px;
+  background: var(--ash);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.calm-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--smoke), var(--gold));
+  border-radius: 2px;
+  transition: width 0.8s ease;
+}
+.calm-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--smoke);
+  transition: color var(--transition-slow);
+  min-width: 70px;
+}
+
+/* ==================== STILL POINT ==================== */
+.still-point {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity var(--transition-slow);
+}
+.still-point.hidden { opacity: 0; pointer-events: none; }
+
+.still-rings {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0.15;
+}
+.ring-1 { animation: ringPulse 4s ease-in-out infinite; }
+.ring-2 { animation: ringPulse 4s 1.3s ease-in-out infinite; }
+.ring-3 { animation: ringPulse 4s 2.6s ease-in-out infinite; }
+@keyframes ringPulse {
+  0%, 100% {
+    transform: scale(0.85);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.05;
+  }
+}
+
+.still-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-soft) 0%, transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.still-core:hover {
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.25) 0%, transparent 70%);
+}
+.still-text {
+  font-size: 1.8rem;
+  color: var(--gold);
+  opacity: 0.7;
+  transition: opacity var(--transition);
+}
+.still-core:hover .still-text {
+  opacity: 1;
+}
+
+.still-invite {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  color: var(--smoke);
+  opacity: 0;
+  animation: fadeInSlow 2s 1.5s ease forwards;
+}
+@keyframes fadeInSlow {
+  to { opacity: 0.6; }
+}
+
+/* ==================== BREATHING GUIDE ==================== */
+.breath-guide {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity var(--transition-slow);
+}
+.breath-guide.hidden { opacity: 0; pointer-events: none; }
+.breath-guide.visible { opacity: 1; }
+
+.breath-circle-wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.breath-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.breath-track {
+  fill: none;
+  stroke: var(--ash);
+  stroke-width: 1.5;
+}
+.breath-progress {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 565.48;
+  transition: stroke-dashoffset 0.1s linear;
+  opacity: 0.6;
+}
+
+.breath-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.breath-instruction {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--cloud);
+  transition: color var(--transition);
+}
+.breath-timer {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-top: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.breath-sub {
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--smoke);
+  transition: opacity var(--transition);
+}
+.breath-count {
+  margin-top: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: var(--ash);
+}
+
+/* ==================== WISDOM POOL ==================== */
+.wisdom-pool {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 25;
+  width: 90%;
+  max-width: 560px;
+  transition: opacity var(--transition-slow);
+}
+.wisdom-pool.hidden { opacity: 0; pointer-events: none; }
+.wisdom-pool.visible { opacity: 1; }
+
+.wisdom-card {
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid var(--ash);
+  border-radius: 4px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  position: relative;
+}
+.wisdom-mark {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.2;
+  margin-bottom: -1rem;
+  font-family: var(--font);
+}
+.wisdom-card blockquote {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: var(--snow);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+.wisdom-card cite {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  color: var(--gold);
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+.wisdom-tradition {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--smoke);
+}
+
+/* ==================== REFLECTION SPACE ==================== */
+.reflection-space {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transform: translateY(100%);
+}
+.reflection-space.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.reflection-space.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reflection-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 2.5rem;
+}
+.reflection-title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--mist);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.reflection-input {
+  width: 100%;
+  min-height: 80px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--ash);
+  border-radius: 4px;
+  color: var(--snow);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  resize: none;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.reflection-input::placeholder {
+  color: var(--smoke);
+  font-style: italic;
+}
+.reflection-input:focus {
+  border-color: var(--gold);
+}
+.reflection-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* ==================== BUTTONS ==================== */
+.sati-btn {
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  color: var(--gold);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.sati-btn:hover {
+  background: var(--gold-soft);
+}
+.sati-btn.ghost {
+  border-color: var(--ash);
+  color: var(--smoke);
+}
+.sati-btn.ghost:hover {
+  border-color: var(--smoke);
+  color: var(--cloud);
+}
+
+/* ==================== GARDEN VIEW ==================== */
+.garden-view {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  overflow-y: auto;
+  transition: opacity var(--transition-slow);
+}
+.garden-view.hidden { opacity: 0; pointer-events: none; }
+.garden-view.visible { opacity: 1; }
+
+.garden-title {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  color: var(--mist);
+  margin-bottom: 2.5rem;
+}
+.garden-thoughts {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+.garden-thought {
+  padding: 1.5rem;
+  border-left: 2px solid var(--ash);
+  margin-bottom: 1.5rem;
+  transition: border-color var(--transition);
+  animation: gardenFadeIn 0.8s ease;
+}
+@keyframes gardenFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.garden-thought:hover {
+  border-color: var(--gold);
+}
+.garden-thought-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--cloud);
+  margin-bottom: 0.5rem;
+}
+.garden-thought-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.garden-thought-date {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: var(--smoke);
+}
+.garden-thought-wisdom {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: var(--gold);
+  opacity: 0.5;
+  font-style: italic;
+}
+.garden-empty {
+  text-align: center;
+  color: var(--smoke);
+  font-size: 0.85rem;
+  font-style: italic;
+  padding: 3rem 0;
+  letter-spacing: 1px;
+}
+.garden-thought-delete {
+  background: none;
+  border: none;
+  color: var(--ash);
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  transition: color var(--transition);
+  font-family: var(--font-sans);
+}
+.garden-thought-delete:hover {
+  color: var(--ember);
+}
+
+/* ==================== NAVIGATION WHISPER ==================== */
+.nav-whisper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 40;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.nav-whisper.visible { opacity: 1; }
+
+.whisper-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--ash);
+  background: rgba(10, 10, 15, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  color: var(--smoke);
+}
+.whisper-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.whisper-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10, 10, 15, 0.92);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity var(--transition);
+}
+.about-overlay.hidden { opacity: 0; pointer-events: none; }
+.about-overlay.visible { opacity: 1; }
+
+.about-card {
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+}
+.about-close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--smoke);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+.about-close:hover { color: var(--cloud); }
+
+.about-card h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--snow);
+  margin-bottom: 0.25rem;
+  letter-spacing: 2px;
+}
+.about-sanskrit {
+  font-size: 1.2rem;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+.about-body {
+  margin-top: 1.5rem;
+}
+.about-body p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--cloud);
+  margin-bottom: 1rem;
+}
+.about-body hr {
+  border: none;
+  border-top: 1px solid var(--ash);
+  margin: 1.5rem 0;
+}
+.about-instructions {
+  color: var(--mist) !important;
+  font-size: 0.85rem !important;
+}
+.about-technical {
+  font-size: 0.75rem !important;
+  color: var(--smoke) !important;
+  font-style: italic;
+}
+
+/* ==================== SESSION SEED ==================== */
+.session-seed {
+  position: fixed;
+  bottom: 8px;
+  left: 12px;
+  z-index: 5;
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  color: var(--ash);
+  opacity: 0.4;
+}
+
+/* ==================== UTILITY ==================== */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .breath-circle-wrap {
+    width: 160px;
+    height: 160px;
+  }
+  .wisdom-card {
+    padding: 2rem 1.5rem;
+  }
+  .wisdom-card blockquote {
+    font-size: 1rem;
+  }
+  .still-rings {
+    width: 110px;
+    height: 110px;
+  }
+  .still-core {
+    width: 50px;
+    height: 50px;
+  }
+  .still-text {
+    font-size: 1.5rem;
+  }
+  .nav-whisper {
+    bottom: 12px;
+    right: 12px;
+  }
+  .whisper-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .whisper-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+  .reflection-container {
+    padding: 1.5rem 1rem 2rem;
+  }
+  .garden-view {
+    padding: 2rem 1rem;
+  }
+}
+
+/* ==================== SUBTLE ANIMATIONS ==================== */
+@keyframes gentleBreathe {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+/* Screen flicker for initial chaos */
+.chaos-flicker {
+  animation: chaosFlicker 0.15s ease infinite alternate;
+}
+@keyframes chaosFlicker {
+  0% { opacity: 0.97; }
+  100% { opacity: 1; }
+}

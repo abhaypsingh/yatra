@@ -1,0 +1,615 @@
+/* ============================================================
+   DRISHTI — the eyes of others
+   Deep indigo aesthetic, perspective-shift transitions
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #101018;
+  --deep: #161624;
+  --surface: #1e1e30;
+  --text: #d4d0e0;
+  --text-dim: #8a86a0;
+  --accent: #c9a84c;
+  --accent-glow: rgba(201, 168, 76, 0.25);
+  --eye-a: #6888c8;
+  --eye-b: #c87868;
+  --shatter: #c9a84c;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==================== UTILITY ==================== */
+.hidden {
+  display: none !important;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.opening.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.opening-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 520px;
+}
+
+.devanagari {
+  font-size: 3.2rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.opening h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.opening-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.opening-text {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.opening-text p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.6s; }
+.opening-text p:nth-child(3) { animation-delay: 2.0s; }
+.opening-text p:nth-child(4) { animation-delay: 2.6s; }
+
+.opening-accent {
+  color: var(--accent) !important;
+  font-style: italic;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-eye {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s 3.2s ease forwards;
+}
+
+.btn-eye:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ==================== ENGINE ==================== */
+.engine {
+  min-height: 100vh;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 640px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Progress */
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--text-dim);
+  transition: all 0.4s ease;
+}
+
+.progress-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+.progress-dot.done {
+  background: var(--text-dim);
+  border-color: var(--text-dim);
+}
+
+.progress-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* ==================== PERSPECTIVE PANELS ==================== */
+.perspective-panel {
+  animation: panelEnter 0.6s ease;
+}
+
+.perspective-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag-eye {
+  font-size: 1.3rem;
+}
+
+.side-a .tag-eye {
+  color: var(--eye-a);
+}
+
+.tag-b .tag-eye {
+  color: var(--eye-b);
+}
+
+.tag-label {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.side-a .tag-label {
+  color: var(--eye-a);
+}
+
+.tag-b .tag-label {
+  color: var(--eye-b);
+}
+
+.perspective-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+
+.perspective-body p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.perspective-body .inner-thought {
+  color: var(--text-dim);
+  font-style: italic;
+  padding-left: 1rem;
+  border-left: 2px solid var(--surface);
+  margin: 1.2rem 0;
+}
+
+/* ==================== SIDE B — THE REVEAL ==================== */
+.side-b {
+  animation: revealEnter 0.8s ease;
+}
+
+.shatter-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--shatter) 20%,
+    var(--shatter) 50%,
+    var(--shatter) 80%,
+    transparent 100%
+  );
+  margin: 2rem 0;
+  position: relative;
+}
+
+.shatter-line::before {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--void);
+  color: var(--shatter);
+  padding: 0 0.5rem;
+  font-size: 0.6rem;
+}
+
+.reflection-prompt {
+  font-size: 1rem;
+  color: var(--accent);
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+/* ==================== MIRROR (Final) ==================== */
+.mirror {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  animation: fadeIn 1s ease;
+}
+
+.mirror-content {
+  max-width: 560px;
+  text-align: center;
+}
+
+.mirror h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.mirror-text {
+  font-size: 1rem;
+  color: var(--text-dim);
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+.mirror-question {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.mirror-question p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.mirror-accent {
+  color: var(--accent) !important;
+  font-size: 1.05rem !important;
+  font-style: italic;
+}
+
+.mirror-input {
+  width: 100%;
+  min-height: 120px;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 1rem;
+  resize: vertical;
+  line-height: 1.7;
+  transition: border-color 0.3s ease;
+}
+
+.mirror-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.mirror-input::placeholder {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.mirror-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mirror-actions .btn-eye {
+  opacity: 1;
+  animation: none;
+}
+
+.mirror-actions .btn-ghost {
+  opacity: 1;
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.nav-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 18, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.about-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.about-card {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+}
+
+.about-card h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.about-deva {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-card em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.about-card strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.about-close:hover {
+  color: var(--text);
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes panelEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealEnter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-content {
+    padding: 1.5rem;
+  }
+
+  .devanagari {
+    font-size: 2.6rem;
+  }
+
+  .opening h1 {
+    font-size: 2rem;
+  }
+
+  .opening-text p {
+    font-size: 0.88rem;
+  }
+
+  .engine {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .perspective-body {
+    font-size: 0.95rem;
+  }
+
+  .mirror-content {
+    text-align: left;
+  }
+
+  .mirror h2 {
+    text-align: center;
+  }
+
+  .mirror-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 400px) {
+  .devanagari {
+    font-size: 2.2rem;
+  }
+
+  .opening h1 {
+    font-size: 1.7rem;
+  }
+
+  .btn-eye {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.88rem;
+  }
+
+  .progress-dot {
+    width: 8px;
+    height: 8px;
+  }
+}

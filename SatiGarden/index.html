@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>Sati &mdash; still point in a turning world</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== THE CANVAS (Entropy / Order Field) ========== -->
+  <canvas id="field"></canvas>
+
+  <!-- ========== NOISE LAYER (Floating Modern Distractions) ========== -->
+  <div id="noiseLayer" class="noise-layer"></div>
+
+  <!-- ========== CALM METER ========== -->
+  <div id="calmMeter" class="calm-meter">
+    <div class="calm-bar">
+      <div class="calm-fill" id="calmFill"></div>
+    </div>
+    <div class="calm-label" id="calmLabel">scattered</div>
+  </div>
+
+  <!-- ========== THE STILL POINT (Entry) ========== -->
+  <div id="stillPoint" class="still-point">
+    <div class="still-rings">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+    <div class="still-core">
+      <span class="still-text">&#2384;</span>
+    </div>
+    <p class="still-invite">touch the stillness</p>
+  </div>
+
+  <!-- ========== BREATHING GUIDE ========== -->
+  <div id="breathGuide" class="breath-guide hidden">
+    <div class="breath-circle-wrap">
+      <svg class="breath-svg" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="90" class="breath-track"/>
+        <circle cx="100" cy="100" r="90" class="breath-progress" id="breathProgress"/>
+      </svg>
+      <div class="breath-inner">
+        <div class="breath-instruction" id="breathInstruction">breathe in</div>
+        <div class="breath-timer" id="breathTimer">4</div>
+      </div>
+    </div>
+    <p class="breath-sub" id="breathSub">follow the circle</p>
+    <div class="breath-count">
+      breath <span id="breathCount">1</span>
+    </div>
+  </div>
+
+  <!-- ========== WISDOM POOL ========== -->
+  <div id="wisdomPool" class="wisdom-pool hidden">
+    <div class="wisdom-card" id="wisdomCard">
+      <div class="wisdom-mark">&ldquo;</div>
+      <blockquote id="wisdomText"></blockquote>
+      <cite id="wisdomSource"></cite>
+      <div class="wisdom-tradition" id="wisdomTradition"></div>
+    </div>
+  </div>
+
+  <!-- ========== REFLECTION SPACE ========== -->
+  <div id="reflectionSpace" class="reflection-space hidden">
+    <div class="reflection-container">
+      <h2 class="reflection-title">what arose in the stillness?</h2>
+      <textarea class="reflection-input" id="reflectionInput" placeholder="write what you noticed..."></textarea>
+      <div class="reflection-actions">
+        <button class="sati-btn" id="saveReflection">plant this thought</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PLANTED THOUGHTS (Past Reflections) ========== -->
+  <div id="gardenView" class="garden-view hidden">
+    <h2 class="garden-title">your garden of awareness</h2>
+    <div class="garden-thoughts" id="gardenThoughts"></div>
+    <button class="sati-btn ghost" id="returnToStill">return to stillness</button>
+  </div>
+
+  <!-- ========== NAVIGATION WHISPER ========== -->
+  <div class="nav-whisper" id="navWhisper">
+    <button class="whisper-btn" id="btnStillness" title="stillness">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/></svg>
+    </button>
+    <button class="whisper-btn" id="btnGarden" title="garden">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4-4 8-7 8-12a8 8 0 1 0-16 0c0 5 4 8 8 12z"/><path d="M12 12V8"/><path d="M9 11l3-3 3 3"/></svg>
+    </button>
+    <button class="whisper-btn" id="btnAbout" title="about sati">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT OVERLAY ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sati <span class="about-sanskrit">&#2360;&#2340;&#2367;</span></h2>
+      <div class="about-body">
+        <p>
+          <strong>Sati</strong> (Pali: <em>sati</em>, Sanskrit: <em>sm&#x1E5B;ti</em>) is the Buddhist
+          concept of mindfulness &mdash; bare attention to the present moment, free from
+          reactivity, grasping, or aversion.
+        </p>
+        <p>
+          In a world of increasing entropy &mdash; where information multiplies, attention
+          fractures, and the signal drowns in noise &mdash; Sati is the ancient technology
+          of return. Not escape. <em>Return.</em> To what is here. To what is real. To what
+          is yours to tend.
+        </p>
+        <p>
+          This experience draws wisdom from contemplative traditions across cultures:
+          Buddhist mindfulness, Stoic presence, Vedic awareness, Taoist naturalness, Sufi
+          remembrance, and modern neuroscience. Different rivers. Same ocean.
+        </p>
+        <hr>
+        <p class="about-instructions">
+          <strong>How it works:</strong> The particles represent the mind's natural state &mdash;
+          scattered, reactive, pulled in every direction. Your stillness calms them.
+          Breathe with the guide. Be patient. As calm deepens, wisdom surfaces from the
+          traditions of those who walked this path before you. The garden stores your
+          reflections across visits.
+        </p>
+        <p class="about-technical">
+          Each session is stochastically unique &mdash; different particles, different
+          wisdom, different garden. Like consciousness itself: the same river,
+          never the same water.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SESSION SEED (bottom corner) ========== -->
+  <div class="session-seed" id="sessionSeed"></div>
+
+  <script src="sati.js"></script>
+</body>
+</html>

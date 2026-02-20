@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a100a">
+  <title>Vana &mdash; the forest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Forest canvas -->
+  <canvas id="forestCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2357;&#2344;</div>
+      <h1>Vana</h1>
+      <p class="opening-sub">the forest</p>
+      <div class="opening-text">
+        <p>A forest does not grow in a day. It grows one act at a time.</p>
+        <p>Each day, you plant something: a kindness, a truth,<br>
+           a patience, a courage, a gratitude.</p>
+        <p>Over weeks and months, your forest grows.<br>
+           Each tree is different. Each one is something real you did.</p>
+        <p class="opening-accent">You are already planting. This makes it visible.</p>
+      </div>
+      <button class="btn-vana" id="beginBtn">enter the forest</button>
+    </div>
+  </div>
+
+  <!-- ========== FOREST VIEW ========== -->
+  <div id="forestView" class="forest-view hidden">
+
+    <!-- Forest stats -->
+    <div class="forest-header">
+      <div class="forest-count" id="forestCount">0 trees</div>
+      <div class="forest-streak" id="forestStreak"></div>
+    </div>
+
+    <!-- Plant new -->
+    <div class="plant-card" id="plantCard">
+      <h3 class="plant-title">Plant something today</h3>
+      <div class="plant-types" id="plantTypes">
+        <button class="type-btn" data-type="kindness">
+          <span class="type-icon kindness-icon">&#x1F331;</span>
+          <span class="type-label">kindness</span>
+        </button>
+        <button class="type-btn" data-type="truth">
+          <span class="type-icon truth-icon">&#x1F332;</span>
+          <span class="type-label">truth</span>
+        </button>
+        <button class="type-btn" data-type="patience">
+          <span class="type-icon patience-icon">&#x1F333;</span>
+          <span class="type-label">patience</span>
+        </button>
+        <button class="type-btn" data-type="courage">
+          <span class="type-icon courage-icon">&#x1F334;</span>
+          <span class="type-label">courage</span>
+        </button>
+        <button class="type-btn" data-type="gratitude">
+          <span class="type-icon gratitude-icon">&#x1F335;</span>
+          <span class="type-label">gratitude</span>
+        </button>
+      </div>
+      <textarea class="plant-desc" id="plantDesc" placeholder="what did you do? (a sentence is enough)"></textarea>
+      <button class="btn-vana btn-plant" id="plantBtn" disabled>plant this</button>
+    </div>
+
+    <!-- Today's plants -->
+    <div class="today-section" id="todaySection"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about vana">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Vana <span class="about-deva">&#2357;&#2344;</span></h2>
+      <p>
+        <strong>Vana</strong> (Sanskrit: forest, grove) represents the wild, living, growing
+        part of nature. In the Indian tradition, the forest is not wilderness to be conquered
+        but a sacred space of growth, reflection, and transformation.
+      </p>
+      <p>
+        Your forest grows from real actions. Each tree is something you actually did &mdash;
+        a kindness shown, a truth spoken, a patience held, a courage found, a gratitude felt.
+        Over time, these small acts become a living forest.
+      </p>
+      <p>
+        You cannot see yourself growing. But your forest can show you. Come back each day.
+        Plant something real. Watch what grows.
+      </p>
+    </div>
+  </div>
+
+  <script src="vana.js"></script>
+</body>
+</html>

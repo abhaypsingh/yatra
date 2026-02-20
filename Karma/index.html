@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0a10">
+  <title>Karma &mdash; the ripple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ripple canvas -->
+  <canvas id="rippleCanvas"></canvas>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2325;&#2352;&#2381;&#2350;</div>
+      <h1>Karma</h1>
+      <p class="opening-sub">the ripple</p>
+      <div class="opening-text">
+        <p>Every action creates a wave. Every wave touches lives you will never see.</p>
+        <p>A kind word becomes courage in someone else's mouth.<br>
+           A cruel one becomes a wound that gets passed on.</p>
+        <p>You will be given moments. You will choose how to act.<br>
+           Then you will watch the ripple move through a web of lives.</p>
+        <p class="opening-accent">Nothing you do touches only one person. Nothing.</p>
+      </div>
+      <button class="btn-karma" id="beginBtn">set the first ripple</button>
+    </div>
+  </div>
+
+  <!-- ========== SCENARIO ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+
+    <!-- Progress -->
+    <div class="progress-row">
+      <div class="progress-dots" id="progressDots"></div>
+      <span class="progress-label" id="progressLabel">1 / 5</span>
+    </div>
+
+    <!-- Scenario -->
+    <div class="scenario-card" id="scenarioCard">
+      <div class="scenario-context" id="scenarioContext"></div>
+      <div class="scenario-moment" id="scenarioMoment"></div>
+
+      <!-- Choices -->
+      <div class="choices" id="choices"></div>
+    </div>
+
+    <!-- Ripple result (appears after choice) -->
+    <div id="rippleResult" class="ripple-result hidden">
+      <div class="ripple-chain" id="rippleChain"></div>
+      <div class="ripple-insight" id="rippleInsight"></div>
+      <button class="btn-karma" id="nextScenario">next moment &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ========== REFLECTION ========== -->
+  <div id="reflection" class="reflection hidden">
+    <div class="reflection-content">
+      <h2>The Web</h2>
+      <div class="reflection-summary" id="reflectionSummary"></div>
+      <p class="reflection-text">
+        Five moments. Five choices. Each one rippled further than you could see.
+        Every action you take in your real life does the same.
+      </p>
+      <div class="reflection-question">
+        <p>Think of something you did recently &mdash; a word, a gesture, a silence.</p>
+        <p class="reflection-accent">Who might it have reached that you don't know about?</p>
+      </div>
+      <textarea class="reflection-input" id="reflectionInput" placeholder="trace the ripple..."></textarea>
+      <div class="reflection-actions">
+        <button class="btn-karma" id="sealBtn">seal this seeing</button>
+        <button class="btn-ghost" id="restartBtn">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about karma">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Karma <span class="about-deva">&#2325;&#2352;&#2381;&#2350;</span></h2>
+      <p>
+        <strong>Karma</strong> (Sanskrit: action, deed) is the principle that every action has
+        consequences &mdash; not as punishment or reward, but as the natural unfolding of cause and
+        effect. A stone dropped in water creates ripples that reach shores the stone never intended.
+      </p>
+      <p>
+        In relationships, karma is immediate and intimate. How you speak to your parent becomes how
+        you speak to yourself. How your teacher treats you becomes how you treat those younger than you.
+        How you handle hurt becomes someone else's model for handling hurt.
+      </p>
+      <p>
+        This experience makes the invisible visible: the cascading effect of your smallest actions on
+        the people around you, and on people you will never meet.
+      </p>
+    </div>
+  </div>
+
+  <script src="karma.js"></script>
+</body>
+</html>

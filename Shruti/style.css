@@ -1,0 +1,610 @@
+/* ============================================================
+   SHRUTI — that which is heard
+   Deep listening aesthetic — layered depths
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #0c0c14;
+  --deep: #141420;
+  --surface: #1c1c2e;
+  --text: #ccc8d8;
+  --text-dim: #7a7690;
+  --layer1: #7a98c8;    /* surface — cool blue */
+  --layer2: #a888c0;    /* meaning — soft violet */
+  --layer3: #c89868;    /* need — warm amber */
+  --accent: #c9a84c;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.opening.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.opening-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 520px;
+}
+
+.devanagari {
+  font-size: 3.2rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.opening h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.opening-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.opening-text {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.opening-text p {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text p:nth-child(4) { animation-delay: 2.7s; }
+
+.opening-text em {
+  color: var(--text);
+  font-style: italic;
+}
+
+.opening-accent {
+  color: var(--accent) !important;
+  font-style: italic;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-shruti {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s 3.2s ease forwards;
+}
+
+.btn-shruti:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+.btn-layer {
+  opacity: 1;
+  animation: none;
+  margin-top: 1.5rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ==================== ENGINE ==================== */
+.engine {
+  min-height: 100vh;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 640px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Progress */
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--text-dim);
+  transition: all 0.4s ease;
+}
+
+.progress-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.progress-dot.done {
+  background: var(--text-dim);
+  border-color: var(--text-dim);
+}
+
+.progress-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* Scene context */
+.scene-context {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 2px solid var(--surface);
+}
+
+/* ==================== LAYERS ==================== */
+.layer {
+  margin-bottom: 1rem;
+  animation: layerEnter 0.6s ease;
+}
+
+.layer-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.layer-icon {
+  font-size: 1rem;
+}
+
+.layer-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Layer 1: Surface */
+.layer-surface .layer-icon,
+.layer-surface .layer-label { color: var(--layer1); }
+
+/* Layer 2: Meaning */
+.layer-meaning .layer-icon,
+.layer-meaning .layer-label { color: var(--layer2); }
+
+/* Layer 3: Need */
+.layer-need .layer-icon,
+.layer-need .layer-label { color: var(--layer3); }
+
+/* Dialogue boxes */
+.dialogue-box {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-left: 3px solid var(--layer1);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+}
+
+.dialogue-line {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.dialogue-line:last-child {
+  margin-bottom: 0;
+}
+
+.speaker {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.dialogue-text {
+  color: var(--text);
+}
+
+/* Meaning box */
+.meaning-box {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-left: 3px solid var(--layer2);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+}
+
+.meaning-line {
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.meaning-line:last-child {
+  margin-bottom: 0;
+}
+
+.meaning-speaker {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--layer2);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.meaning-said {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  text-decoration: line-through;
+  margin-bottom: 0.3rem;
+}
+
+.meaning-meant {
+  font-size: 0.95rem;
+  color: var(--layer2);
+  font-style: italic;
+}
+
+/* Need box */
+.need-box {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-left: 3px solid var(--layer3);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+}
+
+.need-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--layer3);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.need-text p {
+  margin-bottom: 0.8rem;
+}
+
+/* Layer reflection */
+.layer-reflection {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+/* ==================== CLOSING ==================== */
+.closing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  animation: fadeIn 1s ease;
+}
+
+.closing-content {
+  max-width: 560px;
+  text-align: center;
+}
+
+.closing h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.closing-text {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+.closing-question {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.closing-question p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.closing-accent {
+  color: var(--accent) !important;
+  font-size: 1.05rem !important;
+  font-style: italic;
+}
+
+.closing-input {
+  width: 100%;
+  min-height: 120px;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 1rem;
+  resize: vertical;
+  line-height: 1.7;
+  transition: border-color 0.3s ease;
+}
+
+.closing-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.closing-input::placeholder {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.closing-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.closing-actions .btn-shruti {
+  opacity: 1;
+  animation: none;
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.nav-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 14, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.about-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.about-card {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+}
+
+.about-card h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.about-deva {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.about-card p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-card em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.about-card strong {
+  color: var(--text);
+}
+
+.about-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.about-close:hover {
+  color: var(--text);
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes layerEnter {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.6rem; }
+  .opening h1 { font-size: 2rem; }
+  .engine { padding: 1.5rem 1rem 3rem; }
+  .dialogue-box, .meaning-box, .need-box { padding: 1.2rem; }
+
+  .closing-content { text-align: left; }
+  .closing h2 { text-align: center; }
+  .closing-actions { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 400px) {
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.7rem; }
+  .btn-shruti { padding: 0.65rem 1.5rem; font-size: 0.88rem; }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1a1410">
+  <title>Kintsugi &mdash; the art of golden repair</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="opening-kanji">&#37329;&#32153;&#12366;</div>
+      <h1 class="opening-title">Kintsugi</h1>
+      <p class="opening-sub">the art of golden repair</p>
+      <div class="opening-philosophy">
+        <p>In Japan, when a bowl breaks, it is not thrown away.</p>
+        <p>It is repaired with lacquer mixed with powdered gold.</p>
+        <p>The cracks become luminous seams &mdash; proof that breakage<br>is not the end of a thing's story, but part of its beauty.</p>
+      </div>
+      <button class="btn-gold" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN CANVAS ========== -->
+  <canvas id="vessel"></canvas>
+
+  <!-- ========== UI OVERLAY ========== -->
+  <div id="ui" class="ui hidden">
+
+    <!-- Progress -->
+    <div class="repair-progress">
+      <div class="repair-bar">
+        <div class="repair-fill" id="repairFill"></div>
+      </div>
+      <span class="repair-label" id="repairLabel">0% healed</span>
+    </div>
+
+    <!-- Story Panel -->
+    <div class="story-panel" id="storyPanel">
+      <div class="story-content" id="storyContent">
+        <p class="story-instruction">trace the golden cracks to begin the repair</p>
+      </div>
+    </div>
+
+    <!-- Completion -->
+    <div class="completion hidden" id="completion">
+      <div class="completion-glow"></div>
+      <h2>&#10024; Complete</h2>
+      <p class="completion-text">Every crack you mended holds a truth: that the broken place, healed with care, becomes the strongest and most beautiful part of the whole.</p>
+      <p class="completion-meta" id="completionMeta"></p>
+      <div class="completion-actions">
+        <button class="btn-gold" id="newVesselBtn">new vessel</button>
+        <button class="btn-ghost" id="reflectBtn">reflect</button>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="reflection hidden" id="reflection">
+      <h3>what in your life is asking to be repaired with gold?</h3>
+      <textarea id="reflectionInput" placeholder="write here..."></textarea>
+      <div class="reflection-actions">
+        <button class="btn-gold" id="saveReflectionBtn">seal with gold</button>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery hidden" id="gallery">
+      <h3>vessels repaired</h3>
+      <div class="gallery-items" id="galleryItems"></div>
+      <button class="btn-ghost" id="closeGalleryBtn">return</button>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navGallery" title="gallery">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about kintsugi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="about" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kintsugi <span class="about-jp">&#37329;&#32153;&#12366;</span></h2>
+      <p>
+        <strong>Kintsugi</strong> (literally "golden joinery") is the Japanese art of repairing
+        broken ceramics with lacquer dusted with gold. Rather than disguising the damage, it
+        illuminates the history of the object &mdash; celebrating its imperfections as part of
+        a richer story.
+      </p>
+      <p>
+        The philosophy holds that breakage and repair are events in the life of an object,
+        not reasons to discard it. A bowl repaired with gold is considered more beautiful
+        &mdash; not less &mdash; than before it broke.
+      </p>
+      <p>
+        This principle extends to people, to families, to the space between a parent and child.
+        The fracture is not the end. It is the beginning of something that could be luminous.
+      </p>
+      <hr>
+      <p class="about-small">
+        Each vessel is stochastically generated &mdash; unique crack patterns, unique stories.
+        Trace the cracks with your finger or mouse to fill them with gold. The vessel heals.
+        So might you.
+      </p>
+    </div>
+  </div>
+
+  <script src="kintsugi.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+/* ============================================================
+   DHARMA — the compass
+   Deep indigo/gold, moral weight aesthetic
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #0c0a10;
+  --deep: #14121c;
+  --surface: #1e1c28;
+  --text: #c8c0d8;
+  --text-dim: #7a7290;
+  --accent: #c9a84c;
+  --accent-glow: rgba(201, 168, 76, 0.2);
+  --courage: #c87060;
+  --compassion: #60a8c0;
+  --honesty: #c9a84c;
+  --loyalty: #a078c0;
+  --justice: #70b088;
+  --selfless: #c08878;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.opening.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.opening-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 520px;
+}
+
+.devanagari {
+  font-size: 3.2rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.opening h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.opening-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.opening-text {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.opening-text p {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text p:nth-child(4) { animation-delay: 2.7s; }
+
+.opening-accent {
+  color: var(--accent) !important;
+  font-style: italic;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-dharma {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s 3.2s ease forwards;
+}
+
+.btn-dharma:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+.btn-next {
+  opacity: 1;
+  animation: none;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ==================== ENGINE ==================== */
+.engine {
+  min-height: 100vh;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 640px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease;
+}
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.progress-dots { display: flex; gap: 8px; }
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--text-dim);
+  transition: all 0.4s ease;
+}
+
+.progress-dot.active { background: var(--accent); border-color: var(--accent); }
+.progress-dot.done { background: var(--text-dim); border-color: var(--text-dim); }
+
+.progress-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* Dilemma card */
+.dilemma-card {
+  animation: fadeIn 0.6s ease;
+}
+
+.dilemma-context {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 2px solid var(--surface);
+  line-height: 1.7;
+}
+
+.dilemma-question {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.dilemma-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.dilemma-btn {
+  background: var(--deep);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  line-height: 1.6;
+}
+
+.dilemma-btn:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.dilemma-btn.chosen {
+  border-color: var(--accent);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.dilemma-btn.not-chosen {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Choice result */
+.choice-result {
+  margin-top: 1.5rem;
+  animation: fadeIn 0.6s ease;
+}
+
+.result-text {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 2px solid var(--accent);
+}
+
+.result-value {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* ==================== COMPASS VIEW ==================== */
+.compass-view {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  animation: fadeIn 1s ease;
+}
+
+.compass-content {
+  max-width: 560px;
+  text-align: center;
+}
+
+.compass-content h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.1em;
+}
+
+.compass-sub {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.compass-visual {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 2rem;
+}
+
+.compass-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.compass-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.value-tag {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+.value-tag.courage { color: var(--courage); border-color: var(--courage); }
+.value-tag.compassion { color: var(--compassion); border-color: var(--compassion); }
+.value-tag.honesty { color: var(--honesty); border-color: var(--honesty); }
+.value-tag.loyalty { color: var(--loyalty); border-color: var(--loyalty); }
+.value-tag.justice { color: var(--justice); border-color: var(--justice); }
+.value-tag.selflessness { color: var(--selfless); border-color: var(--selfless); }
+
+.compass-reflection {
+  margin-bottom: 2rem;
+}
+
+.compass-reflection p {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.compass-accent {
+  color: var(--accent) !important;
+  font-style: italic;
+}
+
+.compass-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.compass-actions .btn-dharma {
+  opacity: 1;
+  animation: none;
+}
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--deep); border: 1px solid var(--surface);
+  color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0;
+  background: rgba(6, 4, 10, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem;
+  opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
+}
+
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface);
+  border-radius: 12px; padding: 2.5rem;
+  max-width: 480px; width: 100%; position: relative;
+}
+
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+
+.about-close {
+  position: absolute; top: 1rem; right: 1rem;
+  background: none; border: none; color: var(--text-dim);
+  font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.about-close:hover { color: var(--text); }
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.6rem; }
+  .opening h1 { font-size: 2rem; }
+  .engine { padding: 1.5rem 1rem 3rem; }
+  .compass-visual { width: 240px; height: 240px; }
+  .compass-content { text-align: left; }
+  .compass-content h2 { text-align: center; }
+  .compass-actions { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 400px) {
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.7rem; }
+  .btn-dharma { padding: 0.65rem 1.5rem; font-size: 0.88rem; }
+  .compass-visual { width: 200px; height: 200px; }
+}
