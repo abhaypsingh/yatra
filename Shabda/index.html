@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0a10">
+  <title>Shabda &mdash; the weight of words</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2358;&#2348;&#2381;&#2342;</div>
+      <h1>Shabda</h1>
+      <p class="opening-sub">the weight of words</p>
+      <div class="opening-text">
+        <p>Words are not equal. The same sentence can be a feather or a stone,
+           depending on who says it, when, and what they are carrying.</p>
+        <p><em>&ldquo;I&rsquo;m fine.&rdquo;</em> From a stranger, it means nothing.
+           From your father after you cancel dinner, it is a door closing.</p>
+        <p>You will see ordinary sentences placed in different lives.
+           The words stay the same. Everything else changes.
+           This is about learning to feel the weight before you speak &mdash;
+           and after you listen.</p>
+        <p class="opening-accent">Every word you say lands somewhere. Know where it lands before you let it go.</p>
+      </div>
+      <button class="btn-shabda" id="beginBtn">listen closely</button>
+    </div>
+  </div>
+
+  <!-- ========== WORD ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <div class="word-card" id="wordCard">
+      <div class="word-number" id="wordNumber"></div>
+      <div class="the-word" id="theWord"></div>
+
+      <div class="contexts" id="contexts"></div>
+
+      <div class="word-reflection hidden" id="wordReflection">
+        <div class="reflection-line"></div>
+        <p class="reflection-text" id="reflectionText"></p>
+      </div>
+
+      <div class="word-nav">
+        <button class="btn-shabda btn-next" id="nextBtn">reveal context</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETION ========== -->
+  <div id="completion" class="completion hidden">
+    <div class="completion-content">
+      <h2>Words remember</h2>
+      <p class="completion-text">
+        Every sentence you have ever said is still living somewhere &mdash;
+        in someone&rsquo;s memory, shaping how they see you, shaping how they see themselves.
+      </p>
+      <p class="completion-text">
+        You cannot take words back. But you can learn to feel their weight
+        before you let them go. That is not silence. That is care.
+      </p>
+      <div class="completion-actions">
+        <button class="btn-shabda" id="restartBtn">listen again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about shabda">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Shabda <span class="about-deva">&#2358;&#2348;&#2381;&#2342;</span></h2>
+      <p>
+        <strong>Shabda</strong> (Sanskrit: word, sound, testimony) is one of the valid means
+        of knowledge in Indian philosophy. Words are not mere sounds &mdash; they carry
+        truth, intention, and consequence. In the Vedic tradition, the universe itself
+        was spoken into being.
+      </p>
+      <p>
+        This experience is about the invisible weight that sentences carry. The same
+        words become different things in different mouths, at different moments, between
+        different people. Learning to feel that weight is the beginning of speaking
+        with care.
+      </p>
+      <p>
+        No words you read here are recorded or stored. They pass through, as all words do.
+      </p>
+    </div>
+  </div>
+
+  <script src="shabda.js"></script>
+</body>
+</html>

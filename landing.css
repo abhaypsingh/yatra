@@ -290,6 +290,14 @@ body {
 .card-akasha::before { background: #88a8e0; }
 .card-akasha .card-enter { color: #88a8e0; }
 
+.card-sparsha:hover { border-color: #c07890; }
+.card-sparsha::before { background: #c07890; }
+.card-sparsha .card-enter { color: #c07890; }
+
+.card-shabda:hover { border-color: #a0b0c8; }
+.card-shabda::before { background: #a0b0c8; }
+.card-shabda .card-enter { color: #a0b0c8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

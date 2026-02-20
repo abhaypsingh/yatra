@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0c0810">
+  <title>Sparsha &mdash; where feelings live</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2381;&#2346;&#2352;&#2381;&#2358;</div>
+      <h1>Sparsha</h1>
+      <p class="opening-sub">where feelings live</p>
+      <div class="opening-text">
+        <p>Emotions are not just thoughts. They are physical. They live in your body.</p>
+        <p>Anger tightens your jaw. Sadness sits heavy in your chest.
+           Fear knots your stomach. Joy opens your hands.
+           Most people never notice where their feelings actually are.</p>
+        <p>Tap the body where you feel something today. Name it.
+           Over time, you will begin to know yourself not just in your mind
+           but in your bones.</p>
+        <p class="opening-accent">The body keeps the score. Learn to read it.</p>
+      </div>
+      <button class="btn-sparsha" id="beginBtn">feel inward</button>
+    </div>
+  </div>
+
+  <!-- ========== BODY MAP ========== -->
+  <div id="bodyMap" class="body-map hidden">
+    <div class="map-header">
+      <h2 class="map-date" id="mapDate"></h2>
+      <p class="map-prompt">Tap a region of the body. Then choose the feeling that lives there today.</p>
+    </div>
+
+    <div class="map-container">
+      <svg id="bodySvg" class="body-svg" viewBox="0 0 200 440" xmlns="http://www.w3.org/2000/svg">
+        <!-- Head -->
+        <ellipse class="body-region" data-region="head" cx="100" cy="40" rx="28" ry="32"/>
+        <!-- Throat -->
+        <rect class="body-region" data-region="throat" x="88" y="72" width="24" height="20" rx="6"/>
+        <!-- Chest -->
+        <ellipse class="body-region" data-region="chest" cx="100" cy="120" rx="42" ry="32"/>
+        <!-- Stomach -->
+        <ellipse class="body-region" data-region="stomach" cx="100" cy="175" rx="36" ry="28"/>
+        <!-- Left hand -->
+        <ellipse class="body-region" data-region="hands" cx="38" cy="220" rx="16" ry="22"/>
+        <!-- Right hand -->
+        <ellipse class="body-region" data-region="hands-r" cx="162" cy="220" rx="16" ry="22"/>
+        <!-- Hips -->
+        <ellipse class="body-region" data-region="hips" cx="100" cy="225" rx="40" ry="22"/>
+        <!-- Left leg -->
+        <ellipse class="body-region" data-region="legs" cx="80" cy="320" rx="18" ry="60"/>
+        <!-- Right leg -->
+        <ellipse class="body-region" data-region="legs-r" cx="120" cy="320" rx="18" ry="60"/>
+        <!-- Left shoulder -->
+        <ellipse class="body-region" data-region="shoulders" cx="55" cy="105" rx="18" ry="14"/>
+        <!-- Right shoulder -->
+        <ellipse class="body-region" data-region="shoulders-r" cx="145" cy="105" rx="18" ry="14"/>
+      </svg>
+
+      <!-- Emotion picker (shown after tapping a region) -->
+      <div class="emotion-picker hidden" id="emotionPicker">
+        <p class="picker-label" id="pickerLabel"></p>
+        <div class="picker-grid" id="pickerGrid"></div>
+      </div>
+    </div>
+
+    <div class="map-placed" id="mapPlaced"></div>
+
+    <div class="map-actions">
+      <button class="btn-sparsha btn-seal" id="sealBtn">seal today</button>
+    </div>
+  </div>
+
+  <!-- ========== HISTORY ========== -->
+  <div id="history" class="history hidden">
+    <div class="history-header">
+      <h2>Body Memory</h2>
+      <button class="btn-ghost" id="historyBack">&larr; back</button>
+    </div>
+    <div class="history-entries" id="historyEntries"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navHistory" title="past maps">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </button>
+    <button class="nav-btn" id="navAbout" title="about sparsha">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sparsha <span class="about-deva">&#2360;&#2381;&#2346;&#2352;&#2381;&#2358;</span></h2>
+      <p>
+        <strong>Sparsha</strong> (Sanskrit: touch, sensation, contact) is the act of feeling
+        through the body. In yogic tradition, the body is not separate from the mind &mdash;
+        it is the mind made visible. Every emotion has a physical address.
+      </p>
+      <p>
+        This practice is rooted in somatic awareness &mdash; the idea that by noticing
+        where feelings live in your body, you gain power over them. Not to suppress,
+        but to understand. The tightness in your chest has a name. The knot in your
+        stomach has a story.
+      </p>
+      <p>
+        All maps are stored on this device alone. They belong to no one but you.
+      </p>
+    </div>
+  </div>
+
+  <script src="sparsha.js"></script>
+</body>
+</html>
