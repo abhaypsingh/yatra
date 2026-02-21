@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0810">
+  <title>Kshama &mdash; forgiveness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2325;&#2381;&#2359;&#2350;&#2366;</div>
+      <h1>Kshama</h1>
+      <p class="opening-sub">forgiveness</p>
+      <div class="opening-text">
+        <p>Forgiveness is not saying what happened was okay.</p>
+        <p>It is deciding that <em>you</em> no longer want to carry the weight of it.</p>
+        <p>You are not doing this for them. You are doing this for you.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== PHASE 1: NAME THE HURT ========== -->
+  <div id="namePhase" class="phase hidden">
+    <div class="phase-inner">
+      <h2 class="phase-title">What happened?</h2>
+      <p class="phase-desc">Write what hurt you. Not to relive it, but to look at it clearly &mdash; one last time.</p>
+      <textarea id="hurtText" class="phase-textarea" rows="5" placeholder="Write it here. No one else will see this."></textarea>
+      <button id="nameNext" class="btn-primary btn-small">I wrote it</button>
+    </div>
+  </div>
+
+  <!-- ========== PHASE 2: FEEL THE WEIGHT ========== -->
+  <div id="weightPhase" class="phase hidden">
+    <div class="phase-inner">
+      <h2 class="phase-title">Feel the weight</h2>
+      <p class="phase-desc">How heavy does this feel right now?</p>
+      <div class="weight-stones" id="weightStones">
+        <button class="weight-btn" data-weight="1">
+          <span class="weight-icon">&#9679;</span>
+          <span class="weight-label">a pebble</span>
+        </button>
+        <button class="weight-btn" data-weight="2">
+          <span class="weight-icon">&#9679;&#9679;</span>
+          <span class="weight-label">a stone</span>
+        </button>
+        <button class="weight-btn" data-weight="3">
+          <span class="weight-icon">&#9679;&#9679;&#9679;</span>
+          <span class="weight-label">a boulder</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PHASE 3: WHAT YOU WISH ========== -->
+  <div id="wishPhase" class="phase hidden">
+    <div class="phase-inner">
+      <h2 class="phase-title">What do you wish had happened instead?</h2>
+      <p class="phase-desc">Not what you think you should say. What you actually wish.</p>
+      <textarea id="wishText" class="phase-textarea" rows="4" placeholder="I wish..."></textarea>
+      <button id="wishNext" class="btn-primary btn-small">I said it</button>
+    </div>
+  </div>
+
+  <!-- ========== PHASE 4: THE CHOICE ========== -->
+  <div id="choicePhase" class="phase hidden">
+    <div class="phase-inner">
+      <h2 class="phase-title">The choice</h2>
+      <p class="phase-desc" id="choiceDesc"></p>
+      <div class="choice-text" id="choiceText"></div>
+      <p class="phase-desc">You can keep carrying this. Or you can set it down &mdash; not because it did not matter, but because <em>you</em> matter more than the weight.</p>
+      <div class="choice-actions">
+        <button id="releaseBtn" class="btn-primary btn-small">set it down</button>
+        <button id="keepBtn" class="btn-dim btn-small">not yet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PHASE 5: RELEASE ANIMATION ========== -->
+  <div id="releasePhase" class="phase hidden">
+    <div class="phase-inner">
+      <p class="release-word" id="releaseWord"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="phase hidden">
+    <div class="phase-inner">
+      <h2 class="complete-title" id="completeTitle"></h2>
+      <p class="complete-text" id="completeText"></p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+        <button id="journalBtn" class="btn-dim btn-small">past entries</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== JOURNAL ========== -->
+  <div id="journal" class="journal hidden">
+    <h2 class="journal-title">Past Entries</h2>
+    <p id="journalSub" class="journal-sub"></p>
+    <div id="journalEntries" class="journal-entries"></div>
+    <button id="journalBack" class="btn-primary btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Kshama <span class="about-deva">&#2325;&#2381;&#2359;&#2350;&#2366;</span></h2>
+      <p><strong>Kshama</strong> means forgiveness, patience, endurance. It appears in ancient texts as one of the highest virtues &mdash; not weakness, but a form of strength that comes from choosing freedom over resentment.</p>
+      <p>Forgiveness research in psychology shows that the act of forgiving primarily benefits the person who forgives. It reduces anxiety, lowers blood pressure, and restores a sense of personal power.</p>
+      <p>You do not have to forgive today. You do not have to forgive ever. But if you choose to, it is a gift you give yourself.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="kshama.js"></script>
+</body>
+</html>

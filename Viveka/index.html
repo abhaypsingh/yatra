@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a0e">
+  <title>Viveka &mdash; discernment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2357;&#2367;&#2357;&#2375;&#2325;</div>
+      <h1>Viveka</h1>
+      <p class="opening-sub">discernment</p>
+      <div class="opening-text">
+        <p>Not everything heavy belongs to you.</p>
+        <p>Some weights were placed on your shoulders by others. <em>You are allowed to set them down.</em></p>
+        <p>This is about learning to tell the difference.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SORTING ENGINE ========== -->
+  <div id="engine" class="engine hidden">
+    <div class="engine-inner">
+      <p class="engine-progress" id="progress"></p>
+      <div class="burden-card" id="burdenCard">
+        <h2 class="burden-title" id="burdenTitle"></h2>
+        <p class="burden-desc" id="burdenDesc"></p>
+      </div>
+      <div class="sort-actions">
+        <button class="sort-btn sort-mine" id="mineBtn">
+          <span class="sort-label">mine to carry</span>
+          <span class="sort-hint">this is my responsibility</span>
+        </button>
+        <button class="sort-btn sort-not" id="notBtn">
+          <span class="sort-label">not mine</span>
+          <span class="sort-hint">I can set this down</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== REFLECT ========== -->
+  <div id="reflect" class="reflect hidden">
+    <div class="reflect-inner">
+      <h2 class="reflect-title" id="reflectTitle"></h2>
+      <p class="reflect-text" id="reflectText"></p>
+      <p class="reflect-wisdom" id="reflectWisdom"></p>
+      <button id="reflectNext" class="btn-primary btn-small">continue</button>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">Your shoulders</h2>
+      <div class="complete-columns">
+        <div class="complete-col">
+          <h3 class="col-heading col-mine">carrying</h3>
+          <div id="mineList" class="col-list"></div>
+        </div>
+        <div class="complete-col">
+          <h3 class="col-heading col-not">set down</h3>
+          <div id="notList" class="col-list"></div>
+        </div>
+      </div>
+      <p class="complete-closing">Discernment is not selfishness. It is knowing that you can only carry what is truly yours &mdash; and that setting down what is not makes you stronger, not weaker.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+        <button id="historyBtn" class="btn-dim btn-small">past sessions</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HISTORY ========== -->
+  <div id="history" class="history hidden">
+    <h2 class="history-title">Past Sessions</h2>
+    <p id="historySub" class="history-sub"></p>
+    <div id="historyEntries" class="history-entries"></div>
+    <button id="historyBack" class="btn-primary btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Viveka <span class="about-deva">&#2357;&#2367;&#2357;&#2375;&#2325;</span></h2>
+      <p><strong>Viveka</strong> means discernment, discrimination between the real and unreal. In Vedantic philosophy, it is the first and most essential quality on the path to freedom.</p>
+      <p>In everyday life, viveka is the ability to distinguish between what is truly your responsibility and what has been placed on you by others. Children often carry burdens that were never theirs &mdash; a parent's sadness, another person's anger, situations they could not control.</p>
+      <p>Learning to set those down is not abandonment. It is wisdom.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="viveka.js"></script>
+</body>
+</html>

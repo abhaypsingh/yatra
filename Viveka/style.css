@@ -1,0 +1,258 @@
+/* ============================================================
+   VIVEKA — discernment
+   Cool steel-blue, balanced scales
+   ============================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --void: #080a0e;
+  --deep: #0e1218;
+  --surface: #181e28;
+  --text: #a8b8c8;
+  --text-dim: #586878;
+  --accent: #5888b0;
+  --accent-warm: #b89868;
+  --accent-glow: rgba(88, 136, 176, 0.15);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%; min-height: 100vh;
+  background: var(--void); color: var(--text);
+  font-family: var(--font-body); line-height: 1.7;
+  overflow-x: hidden; -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+#bgCanvas {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void); z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.opening.fade-out { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.opening-content { text-align: center; padding: 2rem; max-width: 520px; }
+
+.devanagari {
+  font-size: 2.6rem; color: var(--accent); margin-bottom: 0.3rem;
+  opacity: 0; animation: fadeUp 1s 0.3s ease forwards;
+}
+.opening h1 {
+  font-size: 2.2rem; font-weight: 400; letter-spacing: 0.12em; color: var(--text);
+  margin-bottom: 0.2rem; opacity: 0; animation: fadeUp 1s 0.6s ease forwards;
+}
+.opening-sub {
+  font-size: 1rem; color: var(--text-dim); letter-spacing: 0.1em; font-style: italic;
+  margin-bottom: 2rem; opacity: 0; animation: fadeUp 1s 0.9s ease forwards;
+}
+.opening-text { text-align: left; margin-bottom: 2.5rem; }
+.opening-text p {
+  font-size: 0.92rem; color: var(--text-dim); margin-bottom: 0.8rem;
+  opacity: 0; animation: fadeUp 0.8s ease forwards;
+}
+.opening-text p:nth-child(1) { animation-delay: 1.2s; }
+.opening-text p:nth-child(2) { animation-delay: 1.7s; }
+.opening-text p:nth-child(3) { animation-delay: 2.2s; }
+.opening-text em { color: var(--text); }
+
+/* ==================== BUTTONS ==================== */
+.btn-primary {
+  background: transparent; border: 1px solid var(--accent); color: var(--accent);
+  padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 0.95rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease;
+  opacity: 0; animation: fadeUp 0.8s 2.7s ease forwards;
+}
+.btn-primary:hover { background: var(--accent); color: var(--void); }
+.btn-small { opacity: 1; animation: none; padding: 0.6rem 1.5rem; font-size: 0.85rem; }
+.btn-dim { background: transparent; border: 1px solid var(--surface); color: var(--text-dim);
+  padding: 0.6rem 1.5rem; font-family: var(--font-body); font-size: 0.85rem;
+  letter-spacing: 0.08em; cursor: pointer; transition: all 0.4s ease; }
+.btn-dim:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ==================== ENGINE ==================== */
+.engine {
+  position: relative; z-index: 10;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 2rem 1.5rem; animation: fadeIn 0.8s ease;
+}
+.engine-inner { max-width: 480px; width: 100%; text-align: center; }
+.engine-progress {
+  font-family: var(--font-ui); font-size: 0.72rem; color: var(--text-dim);
+  letter-spacing: 0.08em; margin-bottom: 1.5rem;
+}
+
+.burden-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2rem; margin-bottom: 1.5rem; text-align: left;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.burden-card.exiting {
+  opacity: 0; transform: translateY(-20px);
+}
+.burden-title {
+  font-size: 1.2rem; font-weight: 400; color: var(--text);
+  margin-bottom: 0.6rem; letter-spacing: 0.04em;
+}
+.burden-desc {
+  font-size: 0.88rem; color: var(--text-dim); line-height: 1.8;
+}
+
+.sort-actions { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+.sort-btn {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 10px;
+  padding: 1rem 1.5rem; text-align: center; cursor: pointer;
+  transition: all 0.3s ease; font-family: var(--font-body); min-width: 140px;
+}
+.sort-btn:hover { transform: translateY(-2px); }
+.sort-mine:hover { border-color: var(--accent-warm); }
+.sort-not:hover { border-color: var(--accent); }
+.sort-label { display: block; font-size: 0.95rem; color: var(--text); margin-bottom: 0.3rem; }
+.sort-hint {
+  display: block; font-family: var(--font-ui); font-size: 0.68rem;
+  color: var(--text-dim); letter-spacing: 0.03em;
+}
+
+/* ==================== REFLECT ==================== */
+.reflect {
+  position: relative; z-index: 10;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 2rem 1.5rem; animation: fadeIn 0.6s ease;
+}
+.reflect-inner { max-width: 480px; width: 100%; text-align: center; }
+.reflect-title {
+  font-size: 1.2rem; font-weight: 400; color: var(--text);
+  margin-bottom: 0.8rem; letter-spacing: 0.04em;
+}
+.reflect-text {
+  font-size: 0.9rem; color: var(--text-dim); line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.reflect-wisdom {
+  font-size: 0.88rem; color: var(--accent); font-style: italic;
+  margin-bottom: 1.5rem; line-height: 1.7;
+}
+
+/* ==================== COMPLETE ==================== */
+.complete {
+  position: relative; z-index: 10;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 2rem 1.5rem; animation: fadeIn 0.8s ease;
+}
+.complete-inner { max-width: 560px; width: 100%; text-align: center; }
+.complete-title {
+  font-size: 1.5rem; font-weight: 400; color: var(--text);
+  margin-bottom: 1.5rem; letter-spacing: 0.06em;
+}
+
+.complete-columns {
+  display: flex; gap: 1.2rem; margin-bottom: 2rem; text-align: left;
+}
+.complete-col { flex: 1; }
+.col-heading {
+  font-family: var(--font-ui); font-size: 0.72rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem; border-bottom: 1px solid var(--surface);
+}
+.col-mine { color: var(--accent-warm); }
+.col-not { color: var(--accent); }
+.col-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.col-item {
+  font-size: 0.82rem; color: var(--text-dim); line-height: 1.5;
+  padding: 0.5rem 0.6rem; background: var(--deep); border-radius: 6px;
+  border-left: 2px solid transparent;
+}
+.col-item.mine { border-left-color: var(--accent-warm); }
+.col-item.not { border-left-color: var(--accent); }
+
+.complete-closing {
+  font-size: 0.9rem; color: var(--text-dim); line-height: 1.8;
+  margin-bottom: 2rem; font-style: italic;
+}
+.complete-actions { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+
+/* ==================== HISTORY ==================== */
+.history {
+  position: relative; z-index: 10;
+  min-height: 100vh; padding: 2rem 1.5rem 4rem;
+  max-width: 480px; margin: 0 auto; animation: fadeIn 0.6s ease;
+}
+.history-title {
+  font-size: 1.3rem; font-weight: 400; color: var(--text);
+  text-align: center; margin-bottom: 0.3rem;
+}
+.history-sub {
+  font-size: 0.82rem; color: var(--text-dim); text-align: center; margin-bottom: 2rem;
+}
+.history-entries { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem; }
+.history-entry {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 8px;
+  padding: 0.8rem 1rem;
+}
+.history-entry-date {
+  font-family: var(--font-ui); font-size: 0.72rem; color: var(--text-dim);
+  margin-bottom: 0.3rem;
+}
+.history-entry-detail {
+  font-family: var(--font-ui); font-size: 0.7rem; color: var(--accent);
+  letter-spacing: 0.04em;
+}
+.history-empty {
+  text-align: center; color: var(--text-dim); font-style: italic; padding: 3rem 0;
+}
+
+/* ==================== NAV, ABOUT ==================== */
+.nav-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50;
+  display: flex; gap: 0.5rem; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+}
+.nav-float.visible { opacity: 1; pointer-events: auto; }
+.nav-btn {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--deep);
+  border: 1px solid var(--surface); color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-btn svg { width: 18px; height: 18px; }
+
+.about-overlay {
+  position: fixed; inset: 0; background: rgba(4, 6, 8, 0.92);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200; padding: 1.5rem; opacity: 0;
+  transition: opacity 0.4s ease; pointer-events: none;
+}
+.about-overlay.visible { opacity: 1; pointer-events: auto; }
+.about-card {
+  background: var(--deep); border: 1px solid var(--surface); border-radius: 12px;
+  padding: 2.5rem; max-width: 480px; width: 100%; position: relative;
+}
+.about-card h2 { font-size: 1.4rem; font-weight: 400; color: var(--text); margin-bottom: 1.2rem; }
+.about-deva { color: var(--accent); font-size: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.about-card strong { color: var(--text); }
+.about-close {
+  position: absolute; top: 1rem; right: 1rem; background: none; border: none;
+  color: var(--text-dim); font-size: 1.5rem; cursor: pointer; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; transition: color 0.3s ease;
+}
+.about-close:hover { color: var(--text); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 600px) {
+  .opening-content { padding: 1.5rem; }
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.8rem; }
+  .sort-actions { flex-direction: column; align-items: center; }
+  .sort-btn { width: 100%; max-width: 280px; }
+  .complete-columns { flex-direction: column; }
+}

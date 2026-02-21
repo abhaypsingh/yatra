@@ -338,6 +338,14 @@ body {
 .card-prana::before { background: #68a878; }
 .card-prana .card-enter { color: #68a878; }
 
+.card-kshama:hover { border-color: #9878b0; }
+.card-kshama::before { background: #9878b0; }
+.card-kshama .card-enter { color: #9878b0; }
+
+.card-viveka:hover { border-color: #5888b0; }
+.card-viveka::before { background: #5888b0; }
+.card-viveka .card-enter { color: #5888b0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
