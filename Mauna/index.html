@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080c">
+  <title>Mauna &mdash; silence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2350;&#2380;&#2344;</div>
+      <h1>Mauna</h1>
+      <p class="opening-sub">silence</p>
+      <div class="opening-text">
+        <p>Silence is not one thing. It has colors, temperatures, weights.</p>
+        <p>Some silences press down on you. Others <em>lift you up</em>.</p>
+        <p>Six kinds of silence. Learn which ones are yours to keep and which ones to walk away from.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SILENCE ========== -->
+  <div id="silenceView" class="silence-view hidden">
+    <div class="silence-inner">
+      <h2 class="silence-title" id="silenceTitle"></h2>
+      <div class="silence-body" id="silenceBody"></div>
+      <div class="silence-question hidden" id="silenceQuestion">
+        <p class="question-text" id="questionText"></p>
+        <textarea id="reflectInput" class="silence-textarea" rows="3" placeholder="What does this silence feel like to you?"></textarea>
+      </div>
+      <div class="silence-truth hidden" id="silenceTruth">
+        <p class="truth-text" id="truthText"></p>
+      </div>
+      <div class="silence-actions">
+        <button id="feelBtn" class="btn-primary btn-small">sit with it</button>
+        <button id="reflectBtn" class="btn-primary btn-small hidden">reflect</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next silence</button>
+      </div>
+      <p class="silence-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You listened.</h2>
+      <p class="complete-text">Being alone is not the same as being lonely. Loneliness is the feeling that no one is choosing you. Solitude is the act of choosing yourself. They sound the same from the outside. From the inside, they are different worlds.</p>
+      <p class="complete-closing">You are allowed to enjoy your own company. You are allowed to need other people. You are allowed to sit in silence and not call it sadness. The world is very loud. Knowing how to be quiet is a superpower.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Mauna <span class="about-deva">&#2350;&#2380;&#2344;</span></h2>
+      <p><strong>Mauna</strong> means silence, the practice of intentional quietness. In many contemplative traditions, mauna is not the absence of something &mdash; it is the presence of awareness.</p>
+      <p>Research on solitude shows that the ability to be comfortable alone is one of the strongest predictors of emotional health. But not all aloneness is equal &mdash; chosen solitude nourishes, while forced isolation wounds.</p>
+      <p>Learning to tell the difference is one of the most important skills you can develop.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="mauna.js"></script>
+</body>
+</html>

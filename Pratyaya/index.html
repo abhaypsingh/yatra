@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0808">
+  <title>Pratyaya &mdash; trust</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2381;&#2352;&#2340;&#2381;&#2351;&#2351;</div>
+      <h1>Pratyaya</h1>
+      <p class="opening-sub">trust</p>
+      <div class="opening-text">
+        <p>Trust is invisible. You cannot point to it or hold it. But the moment it breaks, you feel it like a bone.</p>
+        <p>And like a bone, it can heal. <em>Sometimes stronger than before.</em></p>
+        <p>Six stories about trust &mdash; broken, rebuilt, misplaced, earned, given too fast, and withheld too long.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== STORY ========== -->
+  <div id="storyView" class="story-view hidden">
+    <div class="story-inner">
+      <h2 class="story-title" id="storyTitle"></h2>
+      <p class="story-kind" id="storyKind"></p>
+      <div class="story-body" id="storyBody"></div>
+      <div class="story-layer hidden" id="storyLayer">
+        <h3 class="layer-heading" id="layerHeading"></h3>
+        <p class="layer-text" id="layerText"></p>
+      </div>
+      <div class="story-wisdom hidden" id="storyWisdom">
+        <p class="wisdom-text" id="wisdomText"></p>
+      </div>
+      <div class="story-actions">
+        <button id="deeperBtn" class="btn-primary btn-small">go deeper</button>
+        <button id="wisdomBtn" class="btn-primary btn-small hidden">the lesson</button>
+        <button id="storyNext" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="story-progress" id="storyProgress"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">Trust is a choice.</h2>
+      <p class="complete-text">It is not a feeling that arrives on its own. It is a decision you make, again and again, to believe that the risk of being hurt is worth the reward of being close to someone.</p>
+      <p class="complete-mid">Every person you love will disappoint you at some point. Not because they are bad, but because they are human. The question is never whether trust will be tested. It always will. The question is: <em>what do you do after?</em></p>
+      <p class="complete-closing">You rebuild. Plank by plank. Not because it is easy, but because the alternative &mdash; a life without trust &mdash; is a life without depth, without closeness, without the thing that makes being human worth it.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Pratyaya <span class="about-deva">&#2346;&#2381;&#2352;&#2340;&#2381;&#2351;&#2351;</span></h2>
+      <p><strong>Pratyaya</strong> means trust, confidence, firm conviction. In yoga philosophy, it is the content of consciousness &mdash; the beliefs that shape how you see the world.</p>
+      <p>Research on trust shows it is built in small moments, not grand gestures. A kept promise. A phone call returned. Showing up when you said you would. Trust is the accumulation of a thousand tiny choices to be reliable.</p>
+      <p>When trust breaks, it can be rebuilt. But the repair requires honesty about what happened, accountability for the damage, and time. Always time.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="pratyaya.js"></script>
+</body>
+</html>

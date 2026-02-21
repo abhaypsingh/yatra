@@ -354,6 +354,14 @@ body {
 .card-prithvi::before { background: #78a060; }
 .card-prithvi .card-enter { color: #78a060; }
 
+.card-mauna:hover { border-color: #6878a0; }
+.card-mauna::before { background: #6878a0; }
+.card-mauna .card-enter { color: #6878a0; }
+
+.card-pratyaya:hover { border-color: #b08060; }
+.card-pratyaya::before { background: #b08060; }
+.card-pratyaya .card-enter { color: #b08060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
