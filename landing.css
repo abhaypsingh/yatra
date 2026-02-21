@@ -346,6 +346,14 @@ body {
 .card-viveka::before { background: #5888b0; }
 .card-viveka .card-enter { color: #5888b0; }
 
+.card-swabhava:hover { border-color: #b89848; }
+.card-swabhava::before { background: #b89848; }
+.card-swabhava .card-enter { color: #b89848; }
+
+.card-prithvi:hover { border-color: #78a060; }
+.card-prithvi::before { background: #78a060; }
+.card-prithvi .card-enter { color: #78a060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

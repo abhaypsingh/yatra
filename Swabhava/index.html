@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0a08">
+  <title>Svabh&#x101;va &mdash; true nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2381;&#2357;&#2349;&#2366;&#2357;</div>
+      <h1>Svabh&#x101;va</h1>
+      <p class="opening-sub">true nature</p>
+      <div class="opening-text">
+        <p>People will tell you who you are. Some will be right. Many will be wrong.</p>
+        <p>The only voice that gets the final word is <em>yours</em>.</p>
+        <p>This is a place to write down what you know to be true about yourself &mdash; things no one can give you and no one can take away.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== CORE BUILDER ========== -->
+  <div id="builder" class="builder hidden">
+    <div class="builder-inner">
+      <h2 class="builder-title" id="promptTitle"></h2>
+      <p class="builder-desc" id="promptDesc"></p>
+      <textarea id="answerInput" class="builder-textarea" rows="3" placeholder="Write your truth here."></textarea>
+      <div class="builder-actions">
+        <button id="saveAnswer" class="btn-primary btn-small">this is true</button>
+        <button id="skipPrompt" class="btn-dim btn-small">skip</button>
+      </div>
+      <p class="builder-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== CORE DOCUMENT ========== -->
+  <div id="coreDoc" class="core-doc hidden">
+    <div class="core-inner">
+      <h2 class="core-title">This is who I am.</h2>
+      <p class="core-sub">Things I know to be true about myself.</p>
+      <div id="coreEntries" class="core-entries"></div>
+      <p class="core-closing">No one gave you these truths. No one can take them. They are yours &mdash; written in your own hand, in your own words. Come back whenever you need to remember.</p>
+      <div class="core-actions">
+        <button id="addMore" class="btn-primary btn-small">add more</button>
+        <button id="viewTimeline" class="btn-dim btn-small">timeline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TIMELINE ========== -->
+  <div id="timeline" class="timeline hidden">
+    <h2 class="timeline-title">Timeline</h2>
+    <p id="timelineSub" class="timeline-sub"></p>
+    <div id="timelineEntries" class="timeline-entries"></div>
+    <button id="timelineBack" class="btn-primary btn-small">back</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navCore" class="nav-btn" aria-label="my core">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/>
+      </svg>
+    </button>
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Svabh&#x101;va <span class="about-deva">&#2360;&#2381;&#2357;&#2349;&#2366;&#2357;</span></h2>
+      <p><strong>Svabh&#x101;va</strong> means one&rsquo;s own nature, innate disposition, the essence of who you are before the world shapes you. In Indian philosophy, knowing your svabh&#x101;va is the foundation of all authentic action.</p>
+      <p>When you grow up hearing different stories about who you are from different people, it can be hard to know which voice to trust. This practice helps you listen to the one voice that matters most &mdash; your own.</p>
+      <p>Your core document grows over time. Each truth you write is a stone in the foundation of who you are becoming.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="swabhava.js"></script>
+</body>
+</html>

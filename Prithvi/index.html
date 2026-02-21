@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a06">
+  <title>P&#x1E5B;thiv&#x12B; &mdash; earth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2371;&#2341;&#2381;&#2357;&#2368;</div>
+      <h1>P&#x1E5B;thiv&#x12B;</h1>
+      <p class="opening-sub">earth</p>
+      <div class="opening-text">
+        <p>Long before humans had words for resilience, nature was already teaching it.</p>
+        <p>The river does not fight the rock. <em>It flows around it.</em></p>
+        <p>Six scenes from the natural world. Each one holds a lesson that took the earth billions of years to learn.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="scene" class="scene hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+      <div class="scene-lesson hidden" id="sceneLesson">
+        <p class="lesson-text" id="lessonText"></p>
+      </div>
+      <div class="scene-actions">
+        <button id="revealBtn" class="btn-primary btn-small">what does it teach?</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="sceneProgress"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">The earth remembers.</h2>
+      <p class="complete-text">Every storm passes. Every river finds the sea. Every seed that waits in darkness eventually reaches the light. You are made of the same elements as the mountains, the oceans, and the stars. Whatever you are going through, the earth has gone through it too &mdash; and it is still here. So are you.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>P&#x1E5B;thiv&#x12B; <span class="about-deva">&#2346;&#2371;&#2341;&#2381;&#2357;&#2368;</span></h2>
+      <p><strong>P&#x1E5B;thiv&#x12B;</strong> means earth, the ground beneath your feet. In Indian cosmology, it is one of the five great elements &mdash; solid, patient, enduring. It holds everything without complaint.</p>
+      <p>Every natural phenomenon contains a lesson about how to live. Storms teach about emotional turbulence. Rivers teach about persistence. Seeds teach about faith in darkness. These are not metaphors imposed on nature &mdash; they are wisdom nature has been demonstrating for eons.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="prithvi.js"></script>
+</body>
+</html>
