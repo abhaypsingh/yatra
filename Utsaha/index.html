@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080a">
+  <title>Uts&#x101;ha &mdash; hope</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2313;&#2340;&#2381;&#2360;&#2366;&#2361;</div>
+      <h1>Uts&#x101;ha</h1>
+      <p class="opening-sub">hope</p>
+      <div class="opening-text">
+        <p>Hope is not optimism. Optimism says everything will be fine. Hope says: <em>I do not know if it will be fine, but I will keep going anyway.</em></p>
+        <p>That is braver.</p>
+        <p>Six dark rooms. In each one, a thread of light. Your job is not to make the room bright. Just find the thread.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-dark" id="sceneDark"></div>
+
+      <div class="scene-search hidden" id="sceneSearch">
+        <p class="search-prompt" id="searchPrompt"></p>
+        <textarea id="searchInput" class="search-textarea" rows="2" placeholder="Where is the thread?"></textarea>
+        <button id="searchSend" class="btn-primary btn-small">pull the thread</button>
+      </div>
+
+      <div class="scene-light hidden" id="sceneLight">
+        <p class="light-text" id="lightText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="lookBtn" class="btn-primary btn-small">look for light</button>
+        <button id="nextScene" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You found the light.</h2>
+      <p class="complete-text">Not because the rooms were not dark. They were. Not because you pretended they were bright. You did not. But because you looked anyway.</p>
+      <p class="complete-mid">Hope is not the belief that suffering will end. It is the decision that suffering is not all there is. That somewhere, in every dark room, there is a crack where the light gets in. And that <em>you</em> are the kind of person who looks for it.</p>
+      <p class="complete-closing">That is not naive. That is the bravest thing a human being can do.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Uts&#x101;ha <span class="about-deva">&#2313;&#2340;&#2381;&#2360;&#2366;&#2361;</span></h2>
+      <p><strong>Uts&#x101;ha</strong> means enthusiasm, vigor, hope, perseverance. In the Bhagavad G&#x12B;t&#x101;, it is listed as one of the divine qualities &mdash; the energy that keeps you moving when the path is unclear.</p>
+      <p>Psychologist Charles Snyder defined hope as having three parts: a goal (something you want), pathways (ways to get there), and agency (the belief that you can take those paths). Hope is not passive wishing. It is active problem-solving combined with the refusal to give up.</p>
+      <p>You do not need to see the whole staircase. Just the next step.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="utsaha.js"></script>
+</body>
+</html>

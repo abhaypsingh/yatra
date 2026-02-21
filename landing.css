@@ -362,6 +362,14 @@ body {
 .card-pratyaya::before { background: #b08060; }
 .card-pratyaya .card-enter { color: #b08060; }
 
+.card-daya:hover { border-color: #b07890; }
+.card-daya::before { background: #b07890; }
+.card-daya .card-enter { color: #b07890; }
+
+.card-utsaha:hover { border-color: #c8a040; }
+.card-utsaha::before { background: #c8a040; }
+.card-utsaha .card-enter { color: #c8a040; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

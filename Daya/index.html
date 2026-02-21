@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a080a">
+  <title>Day&#x101; &mdash; self-compassion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2342;&#2351;&#2366;</div>
+      <h1>Day&#x101;</h1>
+      <p class="opening-sub">self-compassion</p>
+      <div class="opening-text">
+        <p>You would never talk to a friend the way you talk to yourself.</p>
+        <p>The voice inside that says <em>you are not enough</em> &mdash; it learned those words somewhere. They are not the truth.</p>
+        <p>Six moments where the inner critic is loudest. Learn to answer it &mdash; not with silence, but with kindness.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== MOMENT ========== -->
+  <div id="momentView" class="moment-view hidden">
+    <div class="moment-inner">
+      <h2 class="moment-title" id="momentTitle"></h2>
+      <div class="moment-scene" id="momentScene"></div>
+
+      <div class="critic-box hidden" id="criticBox">
+        <p class="critic-label">the inner critic says:</p>
+        <p class="critic-text" id="criticText"></p>
+      </div>
+
+      <div class="friend-box hidden" id="friendBox">
+        <p class="friend-label">but if a friend told you this, you would say:</p>
+        <textarea id="friendInput" class="friend-textarea" rows="3" placeholder="What would you say to them?"></textarea>
+        <button id="friendSend" class="btn-primary btn-small">say it to yourself</button>
+      </div>
+
+      <div class="truth-box hidden" id="truthBox">
+        <p class="truth-text" id="truthText"></p>
+      </div>
+
+      <div class="moment-actions">
+        <button id="hearCritic" class="btn-primary btn-small">hear the critic</button>
+        <button id="nextMoment" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="moment-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You were kind to yourself.</h2>
+      <p class="complete-text">The voice that criticizes you is loud. But it is not the only voice you have. Somewhere inside, there is a quieter voice &mdash; the one that speaks to your friends with gentleness, that forgives others easily, that knows mistakes are not the end of the world.</p>
+      <p class="complete-mid">That voice belongs to you too. It always has. You just forgot to aim it inward.</p>
+      <p class="complete-closing">The next time the critic speaks, pause. Ask yourself: <em>would I say this to someone I love?</em> If the answer is no, then you do not deserve to hear it either.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Day&#x101; <span class="about-deva">&#2342;&#2351;&#2366;</span></h2>
+      <p><strong>Day&#x101;</strong> means compassion, mercy, tenderness. In Indian tradition, day&#x101; is considered the highest form of dharma &mdash; and it begins with how you treat yourself.</p>
+      <p>Dr. Kristin Neff&rsquo;s research on self-compassion shows three components: self-kindness instead of self-judgment, common humanity instead of isolation, and mindfulness instead of over-identification with thoughts. People who practice self-compassion are not weaker &mdash; they are more resilient.</p>
+      <p>You deserve the same kindness you give to others.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="daya.js"></script>
+</body>
+</html>
