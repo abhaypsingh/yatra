@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0a08">
+  <title>Vinoda &mdash; lightness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2357;&#2367;&#2344;&#2379;&#2342;</div>
+      <h1>Vinoda</h1>
+      <p class="opening-sub">lightness</p>
+      <div class="opening-text">
+        <p>Life is heavy. You already know that.</p>
+        <p>But the people who survive the heaviest things are not always the toughest. They are often the ones who can still <em>laugh</em>.</p>
+        <p>Six strange questions. No right answers. Just the permission to be absurd, playful, and light &mdash; even when the world is not.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">play</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== QUESTION ========== -->
+  <div id="questionView" class="question-view hidden">
+    <div class="question-inner">
+      <div class="question-card" id="questionCard">
+        <p class="question-number" id="questionNum"></p>
+        <h2 class="question-text" id="questionText"></h2>
+      </div>
+      <textarea id="answerInput" class="answer-textarea" rows="3" placeholder="There is no wrong answer. Seriously."></textarea>
+      <div class="question-actions">
+        <button id="answerBtn" class="btn-primary btn-small">that is my answer</button>
+        <button id="skipBtn" class="btn-dim btn-small">skip</button>
+      </div>
+
+      <div class="reframe hidden" id="reframe">
+        <p class="reframe-text" id="reframeText"></p>
+      </div>
+
+      <div class="question-actions hidden" id="nextActions">
+        <button id="nextBtn" class="btn-primary btn-small">next</button>
+      </div>
+
+      <p class="question-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You laughed.</h2>
+      <p class="complete-text">Or at least you smiled. Or at least you thought about something that was not heavy for a few minutes. And that matters more than you think.</p>
+      <p class="complete-mid">Humor is not the opposite of seriousness. The funniest people are often the ones who have felt the most pain. They learned that laughter does not erase the hurt &mdash; it gives you a break from it. A rest stop on a long road.</p>
+      <p class="complete-closing">You are allowed to be deep <em>and</em> silly. Sad <em>and</em> funny. Broken <em>and</em> full of joy. Those are not contradictions. That is what it means to be fully alive.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">play again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Vinoda <span class="about-deva">&#2357;&#2367;&#2344;&#2379;&#2342;</span></h2>
+      <p><strong>Vinoda</strong> means amusement, humor, playfulness, delight. In Sanskrit literature, vinoda is considered a vital rasa &mdash; an essential emotional flavor of a complete life.</p>
+      <p>Laughter reduces cortisol (the stress hormone), increases endorphins, and activates the same reward centers as music and chocolate. Humor also improves creative problem-solving &mdash; when you are loose enough to be silly, you are loose enough to see new solutions.</p>
+      <p>This experience exists because heaviness is not the only teacher. Lightness teaches too.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="vinoda.js"></script>
+</body>
+</html>

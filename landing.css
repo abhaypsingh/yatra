@@ -370,6 +370,14 @@ body {
 .card-utsaha::before { background: #c8a040; }
 .card-utsaha .card-enter { color: #c8a040; }
 
+.card-vinoda:hover { border-color: #d0a830; }
+.card-vinoda::before { background: #d0a830; }
+.card-vinoda .card-enter { color: #d0a830; }
+
+.card-sahaya:hover { border-color: #58a890; }
+.card-sahaya::before { background: #58a890; }
+.card-sahaya .card-enter { color: #58a890; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
