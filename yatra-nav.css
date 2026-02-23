@@ -1,0 +1,231 @@
+/* ============================================================
+   YATRA NAVIGATION — shared cross-experience navigation
+   Uses host page CSS custom properties for automatic theming
+   ============================================================ */
+
+/* ---------- Trigger Button ---------- */
+.yatra-nav-trigger {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--deep, #111118);
+  border: 1px solid var(--surface, #1a1a24);
+  color: var(--text-dim, #6e6a80);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.yatra-nav-trigger:hover {
+  border-color: var(--accent, #c9a84c);
+  color: var(--accent, #c9a84c);
+}
+.yatra-nav-trigger svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Landing page standalone float */
+.yatra-nav-landing-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+}
+
+/* ---------- Overlay ---------- */
+.yatra-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 4, 10, 0.94);
+  z-index: 9000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.yatra-nav-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- Card ---------- */
+.yatra-nav-card {
+  background: var(--deep, #111118);
+  border: 1px solid var(--surface, #1a1a24);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Close ---------- */
+.yatra-nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-dim, #6e6a80);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+.yatra-nav-close:hover {
+  color: var(--text, #c8c4d4);
+}
+
+/* ---------- Header ---------- */
+.yatra-nav-header {
+  margin-bottom: 1.5rem;
+}
+.yatra-nav-title {
+  font-family: var(--font-body, Georgia, serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--accent, #c9a84c);
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+.yatra-nav-sub {
+  font-family: var(--font-ui, -apple-system, sans-serif);
+  font-size: 0.75rem;
+  color: var(--text-dim, #6e6a80);
+  letter-spacing: 0.08em;
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+/* ---------- Home Link ---------- */
+.yatra-nav-home {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--surface, #1a1a24);
+  text-decoration: none;
+  color: var(--text, #c8c4d4);
+  font-family: var(--font-ui, -apple-system, sans-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
+}
+.yatra-nav-home:hover {
+  border-color: var(--accent, #c9a84c);
+  color: var(--accent, #c9a84c);
+}
+.yatra-nav-home.current {
+  border-color: var(--accent, #c9a84c);
+  color: var(--accent, #c9a84c);
+  pointer-events: none;
+}
+.yatra-nav-home svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ---------- Sections ---------- */
+.yatra-nav-section {
+  margin-bottom: 1.2rem;
+}
+.yatra-nav-section-title {
+  font-family: var(--font-ui, -apple-system, sans-serif);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim, #6e6a80);
+  margin-bottom: 0.4rem;
+  padding-left: 0.3rem;
+}
+
+/* ---------- Links ---------- */
+.yatra-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+}
+.yatra-nav-item {
+  margin: 0;
+  padding: 0;
+}
+.yatra-nav-link {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-dim, #6e6a80);
+  font-family: var(--font-ui, -apple-system, sans-serif);
+  font-size: 0.78rem;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.yatra-nav-link:hover {
+  color: var(--text, #c8c4d4);
+  background: var(--surface, #1a1a24);
+  border-color: var(--surface, #1a1a24);
+}
+.yatra-nav-link.current {
+  color: var(--accent, #c9a84c);
+  border-color: var(--accent, #c9a84c);
+  pointer-events: none;
+}
+.yatra-nav-link-name {
+  display: block;
+  font-size: 0.8rem;
+}
+.yatra-nav-link-sub {
+  display: block;
+  font-size: 0.65rem;
+  opacity: 0.6;
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .yatra-nav-overlay {
+    padding: 1rem 0.5rem;
+  }
+  .yatra-nav-card {
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .yatra-nav-list {
+    grid-template-columns: 1fr;
+  }
+  .yatra-nav-link {
+    padding: 0.65rem 0.7rem;
+    font-size: 0.85rem;
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
