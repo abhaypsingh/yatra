@@ -50,6 +50,7 @@
         ['Shabda', 'Shabda', 'the weight of words'],
         ['Maitri', 'Maitr\u012B', 'loving-kindness'],
         ['Ahimsa', 'Ahi\u1E43s\u0101', 'non-harm'],
+        ['Sakhi', 'Sakh\u012B', 'friendship'],
         ['Seva', 'Sev\u0101', 'selfless service']
       ]
     },
@@ -79,7 +80,8 @@
         ['Utsaha', 'Uts\u0101ha', 'hope'],
         ['Vinoda', 'Vinoda', 'lightness'],
         ['Santosha', 'Santo\u1E63a', 'contentment'],
-        ['Sthairya', 'Sthairya', 'steadiness']
+        ['Sthairya', 'Sthairya', 'steadiness'],
+        ['Sankalpa', 'Sa\u1E45kalpa', 'sacred resolve']
       ]
     }
   ];
@@ -141,7 +143,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 48 experiences';
+    sub.textContent = 'the journey \u2014 50 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 
