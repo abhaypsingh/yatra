@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a080e">
+  <title>&#x15A;raddh&#x101; &mdash; faith in yourself</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2358;&#2381;&#2352;&#2342;&#2381;&#2343;&#2366;</div>
+      <h1>&#x15A;raddh&#x101;</h1>
+      <p class="opening-sub">faith in yourself</p>
+      <div class="opening-text">
+        <p>Not religious faith. Not blind confidence. Something quieter.</p>
+        <p><em>The deep trust that you will be okay. That you have survived everything so far. That the person you are becoming is someone you can count on.</em></p>
+        <p>Six pieces of evidence. Because faith in yourself is not a feeling. It is a case you build, one proof at a time.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="evidence-box hidden" id="evidenceBox">
+        <p class="evidence-label">the evidence:</p>
+        <p class="evidence-text" id="evidenceText"></p>
+      </div>
+
+      <div class="ask-box hidden" id="askBox">
+        <p class="ask-prompt" id="askPrompt"></p>
+        <textarea id="askInput" class="ask-textarea" rows="2" placeholder="Write here..."></textarea>
+        <button id="askBtn" class="btn-primary btn-small">add to the case</button>
+      </div>
+
+      <div class="verdict-box hidden" id="verdictBox">
+        <p class="verdict-text" id="verdictText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="seeBtn" class="btn-primary btn-small">see the evidence</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">The case is strong.</h2>
+      <p class="complete-text">Six pieces of evidence. Six proofs that you are more capable, more resilient, more worthy of your own trust than you knew. And this is only what you found in a few minutes. The full file is a lifetime long.</p>
+      <p class="complete-mid">Shraddha is not arrogance. It is not pretending you are invincible. It is the quiet, earned knowledge that says: <em>I do not know what is coming. But I know who is meeting it. And that person has a perfect record of surviving hard things.</em></p>
+      <p class="complete-closing">You have never once failed to make it to today. That is your evidence. That is your faith.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>&#x15A;raddh&#x101; <span class="about-deva">&#2358;&#2381;&#2352;&#2342;&#2381;&#2343;&#2366;</span></h2>
+      <p><strong>&#x15A;raddh&#x101;</strong> means faith, trust, confidence. In the Bhagavad Gita, it is described as the essence of a person &mdash; &ldquo;a person is what their shraddha is.&rdquo;</p>
+      <p>Self-efficacy &mdash; the psychological term for faith in yourself &mdash; is one of the strongest predictors of success, resilience, and well-being. It is not built by positive affirmations. It is built by evidence: remembering what you have already survived and accomplished.</p>
+      <p>This experience helps you build that evidence file. Not with flattery. With facts.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="shraddha.js"></script>
+</body>
+</html>

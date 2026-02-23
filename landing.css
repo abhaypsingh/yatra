@@ -402,6 +402,14 @@ body {
 .card-ahimsa::before { background: #90b888; }
 .card-ahimsa .card-enter { color: #90b888; }
 
+.card-shraddha:hover { border-color: #a890c8; }
+.card-shraddha::before { background: #a890c8; }
+.card-shraddha .card-enter { color: #a890c8; }
+
+.card-seva:hover { border-color: #70a880; }
+.card-seva::before { background: #70a880; }
+.card-seva .card-enter { color: #70a880; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
