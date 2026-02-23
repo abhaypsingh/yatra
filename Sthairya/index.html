@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0908">
+  <title>Sthairya &mdash; steadiness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2381;&#2341;&#2376;&#2352;&#2381;&#2351;</div>
+      <h1>Sthairya</h1>
+      <p class="opening-sub">steadiness</p>
+      <div class="opening-text">
+        <p>When the ground shakes, the first instinct is to grab onto something.</p>
+        <p><em>But what if the something you grab onto is yourself?</em></p>
+        <p>Six moments when everything around you is moving. The practice of finding your center &mdash; not by stopping the chaos, but by becoming the still point inside it.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="shaking-box hidden" id="shakingBox">
+        <p class="shaking-label">the shaking feels like:</p>
+        <p class="shaking-text" id="shakingText"></p>
+      </div>
+
+      <div class="ground-box hidden" id="groundBox">
+        <p class="ground-prompt">Find your center. Name one thing that is true right now &mdash; not tomorrow, not yesterday. Right now.</p>
+        <textarea id="groundInput" class="ground-textarea" rows="2" placeholder="Right now, I am..."></textarea>
+        <button id="groundBtn" class="btn-primary btn-small">plant your feet</button>
+      </div>
+
+      <div class="still-box hidden" id="stillBox">
+        <p class="still-text" id="stillText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="feelBtn" class="btn-primary btn-small">feel the shaking</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You are the still point.</h2>
+      <p class="complete-text">Not because nothing moves around you. Everything moves. Parents, friendships, your own body, the world. The shaking will never fully stop.</p>
+      <p class="complete-mid">But you found it six times just now &mdash; <em>that place inside where you can plant your feet and say: I am here. I am still here.</em> That is not stubbornness. That is steadiness. And it is one of the rarest strengths a human being can develop.</p>
+      <p class="complete-closing">The oak breaks in the storm. The reed bends and survives. Steadiness is not rigidity. It is knowing when to hold and when to sway.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Sthairya <span class="about-deva">&#2360;&#2381;&#2341;&#2376;&#2352;&#2381;&#2351;</span></h2>
+      <p><strong>Sthairya</strong> comes from the Sanskrit root <em>stha</em>, meaning to stand or to be established. It refers to steadiness, firmness, and composure &mdash; the quality of remaining centered when external circumstances are turbulent.</p>
+      <p>In yoga philosophy, sthairya is the companion of sukha (ease). Together they describe the ideal posture: steady but not rigid, stable but not stiff.</p>
+      <p>Research on resilience consistently shows that the children who cope best with upheaval are not the ones who avoid feeling it. They are the ones who develop internal anchors &mdash; routines, relationships, values, and self-knowledge that hold steady when the outside shakes.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="sthairya.js"></script>
+</body>
+</html>

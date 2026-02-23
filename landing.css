@@ -386,6 +386,14 @@ body {
 .card-abhaya::before { background: #c8b068; }
 .card-abhaya .card-enter { color: #c8b068; }
 
+.card-santosha:hover { border-color: #88a870; }
+.card-santosha::before { background: #88a870; }
+.card-santosha .card-enter { color: #88a870; }
+
+.card-sthairya:hover { border-color: #908068; }
+.card-sthairya::before { background: #908068; }
+.card-sthairya .card-enter { color: #908068; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

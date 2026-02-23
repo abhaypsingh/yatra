@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a06">
+  <title>Santo&#x1E63;a &mdash; contentment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2360;&#2344;&#2381;&#2340;&#2379;&#2359;</div>
+      <h1>Santo&#x1E63;a</h1>
+      <p class="opening-sub">contentment</p>
+      <div class="opening-text">
+        <p>The world will spend your entire life telling you that you are not enough.</p>
+        <p><em>Not smart enough. Not pretty enough. Not popular enough. Not normal enough.</em></p>
+        <p>Six moments of wanting. And in each one, the quiet discovery that you already have more than you think.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="wanting-box hidden" id="wantingBox">
+        <p class="wanting-label">the wanting says:</p>
+        <p class="wanting-text" id="wantingText"></p>
+      </div>
+
+      <div class="ask-box hidden" id="askBox">
+        <p class="ask-prompt" id="askPrompt"></p>
+        <textarea id="askInput" class="ask-textarea" rows="2" placeholder="Write here if you want to..."></textarea>
+        <button id="askBtn" class="btn-primary btn-small">continue</button>
+      </div>
+
+      <div class="fullness-box hidden" id="fullnessBox">
+        <p class="fullness-label">what contentment sees:</p>
+        <p class="fullness-text" id="fullnessText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="wantBtn" class="btn-primary btn-small">hear the wanting</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You are already full.</h2>
+      <p class="complete-text">Not because wanting is wrong. It is human and beautiful to want things. But the belief that you cannot be happy until you get them &mdash; that is the lie.</p>
+      <p class="complete-mid">Contentment is not settling. It is not giving up. It is the radical act of looking at your life &mdash; <em>this life, today, with all its cracks and gaps and imperfections</em> &mdash; and saying: there is enough here to build on. There is enough here to be grateful for. There is enough here to begin.</p>
+      <p class="complete-closing">The wanting will never stop. But you can learn to hold it gently, like a guest, instead of letting it run the house.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Santo&#x1E63;a <span class="about-deva">&#2360;&#2344;&#2381;&#2340;&#2379;&#2359;</span></h2>
+      <p><strong>Santo&#x1E63;a</strong> is one of the five niyamas in Patanjali&rsquo;s Yoga Sutras. It means contentment &mdash; not as passive acceptance, but as an active practice of recognizing what is already present.</p>
+      <p>Research on the &ldquo;hedonic treadmill&rdquo; shows that humans quickly adapt to improvements in their circumstances and return to a baseline level of happiness. The practice of contentment is the only known way to raise that baseline.</p>
+      <p>Gratitude and contentment are not the same thing. Gratitude says &ldquo;thank you for this.&rdquo; Contentment says &ldquo;this is enough.&rdquo;</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="santosha.js"></script>
+</body>
+</html>
