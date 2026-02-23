@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0a06">
+  <title>Abhaya &mdash; fearlessness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2309;&#2349;&#2351;</div>
+      <h1>Abhaya</h1>
+      <p class="opening-sub">fearlessness</p>
+      <div class="opening-text">
+        <p>Fearlessness is not the absence of fear. It is the presence of safety.</p>
+        <p><em>Do you know what it feels like to be safe?</em></p>
+        <p>Six definitions. Not the safety of locks and alarms &mdash; the deeper kind. The kind that lets you breathe all the way out. The kind every child deserves and not every child has.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="absence-box hidden" id="absenceBox">
+        <p class="absence-label">when it is missing:</p>
+        <p class="absence-text" id="absenceText"></p>
+      </div>
+
+      <div class="reflect-box hidden" id="reflectBox">
+        <p class="reflect-prompt" id="reflectPrompt"></p>
+        <textarea id="reflectInput" class="reflect-textarea" rows="2" placeholder="Write here if you want to..."></textarea>
+      </div>
+
+      <div class="truth-box hidden" id="truthBox">
+        <p class="truth-text" id="truthText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="absenceBtn" class="btn-primary btn-small">what happens without it</button>
+        <button id="reflectBtn" class="btn-primary btn-small hidden">sit with this</button>
+        <button id="truthBtn" class="btn-primary btn-small hidden">the truth</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You deserve every one of these.</h2>
+      <p class="complete-text">Safe in your body. Safe to feel. Safe to be exactly who you are. Safe to say no. Safe to fail. Safe to be alone. These are not luxuries. They are rights.</p>
+      <p class="complete-mid">If you have all six, protect them fiercely. If some are missing, <em>that is not your fault, and it is not forever.</em> You can build safety from the inside even when the outside is uncertain. And you can let people in to help you build it.</p>
+      <p class="complete-closing">The Sanskrit word abhaya appears in every major tradition of India. It means: do not be afraid. Not because nothing can hurt you. But because you are more than anything that can.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Abhaya <span class="about-deva">&#2309;&#2349;&#2351;</span></h2>
+      <p><strong>Abhaya</strong> means freedom from fear. In Hindu and Buddhist iconography, the abhaya mudra &mdash; the open palm raised outward &mdash; is the gesture of protection and reassurance. It says: <em>you are safe here.</em></p>
+      <p>Psychological safety is the single strongest predictor of healthy development in children. It is not about removing all danger. It is about knowing that when danger comes, you will not face it alone.</p>
+      <p>Every child deserves to feel safe in these six ways. If any are missing, it is never too late to rebuild them.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="abhaya.js"></script>
+</body>
+</html>

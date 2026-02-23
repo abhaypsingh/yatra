@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080e">
+  <title>Upek&#x1E63;&#x101; &mdash; equanimity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2313;&#2346;&#2375;&#2325;&#2381;&#2359;&#2366;</div>
+      <h1>Upek&#x1E63;&#x101;</h1>
+      <p class="opening-sub">equanimity</p>
+      <div class="opening-text">
+        <p>Between what happens to you and what you do next, there is a space.</p>
+        <p><em>That space is yours. No one can take it from you.</em></p>
+        <p>Six moments where the impulse is loud and fast. Practice the pause. Not to suppress what you feel &mdash; but to choose what you do with it.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="impulse-box hidden" id="impulseBox">
+        <p class="impulse-label">the impulse says:</p>
+        <p class="impulse-text" id="impulseText"></p>
+      </div>
+
+      <div class="pause-box hidden" id="pauseBox">
+        <p class="pause-prompt">Take three breaths. Watch the pendulum settle.</p>
+        <div class="breath-counter" id="breathCounter">breathe in&hellip;</div>
+        <div class="breath-bar"><div class="breath-fill" id="breathFill"></div></div>
+      </div>
+
+      <div class="clarity-box hidden" id="clarityBox">
+        <p class="clarity-text" id="clarityText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="feelBtn" class="btn-primary btn-small">feel the impulse</button>
+        <button id="pauseBtn" class="btn-primary btn-small hidden">take the pause</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">The space is yours.</h2>
+      <p class="complete-text">You practiced the hardest skill any human can learn: the pause between feeling and action. Not suppression. Not numbness. Choice.</p>
+      <p class="complete-mid">Viktor Frankl, who survived the worst thing humans have ever done to each other, said this: <em>&ldquo;Between stimulus and response there is a space. In that space is our freedom and our power to choose our response. In our response lies our growth and our freedom.&rdquo;</em></p>
+      <p class="complete-closing">You do not have to be calm. You have to be conscious. That is enough.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Upek&#x1E63;&#x101; <span class="about-deva">&#2313;&#2346;&#2375;&#2325;&#2381;&#2359;&#2366;</span></h2>
+      <p><strong>Upek&#x1E63;&#x101;</strong> is one of the four sublime states in Buddhist philosophy. It means equanimity &mdash; the ability to observe what arises without being swept away by it.</p>
+      <p>It is not indifference. It is not detachment. It is the deepest form of engagement: seeing clearly because you are not blinded by your first reaction.</p>
+      <p>Research in neuroscience shows that the pause between stimulus and response can be trained. Each time you practice it, the neural pathways for impulse control literally grow stronger.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="upeksha.js"></script>
+</body>
+</html>
