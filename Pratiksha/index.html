@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080e">
+  <title>Prat&#x12B;k&#x1E63;&#x101; &mdash; waiting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2346;&#2381;&#2352;&#2340;&#2368;&#2325;&#2381;&#2359;&#2366;</div>
+      <h1>Prat&#x12B;k&#x1E63;&#x101;</h1>
+      <p class="opening-sub">waiting</p>
+      <div class="opening-text">
+        <p>Some of the heaviest things you carry are not memories or feelings.</p>
+        <p><em>They are the things that have not happened yet.</em></p>
+        <p>Six kinds of waiting. Each one a different weight. And the slow, difficult discovery that your life does not begin when the waiting ends.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="weight-box hidden" id="weightBox">
+        <p class="weight-label">the weight of waiting:</p>
+        <p class="weight-text" id="weightText"></p>
+      </div>
+
+      <div class="ask-box hidden" id="askBox">
+        <p class="ask-prompt" id="askPrompt"></p>
+        <textarea id="askInput" class="ask-textarea" rows="2" placeholder="Write here if you want to..."></textarea>
+        <button id="askBtn" class="btn-primary btn-small">continue</button>
+      </div>
+
+      <div class="wisdom-box hidden" id="wisdomBox">
+        <p class="wisdom-text" id="wisdomText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="feelBtn" class="btn-primary btn-small">feel the weight</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You have been waiting a long time.</h2>
+      <p class="complete-text">For things to change. For people to change. For life to start being the version you were promised. Some of those things may come. Some may not. And that uncertainty is one of the hardest things a person can hold.</p>
+      <p class="complete-mid">But here is what the waiting does not want you to know: <em>you are not paused.</em> Even in the limbo. Even in the in-between. You are growing, learning, becoming. The waiting is not wasted time. It is the time when the deepest roots grow.</p>
+      <p class="complete-closing">Your life is not on the other side of the waiting. It is happening right now. In the middle of it. In spite of it.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Prat&#x12B;k&#x1E63;&#x101; <span class="about-deva">&#2346;&#2381;&#2352;&#2340;&#2368;&#2325;&#2381;&#2359;&#2366;</span></h2>
+      <p><strong>Prat&#x12B;k&#x1E63;&#x101;</strong> means waiting, expectation, looking forward to. In Sanskrit, it carries a sense of directed attention &mdash; the mind oriented toward something that has not yet arrived.</p>
+      <p>Psychology distinguishes between &ldquo;active waiting&rdquo; and &ldquo;passive waiting.&rdquo; Passive waiting puts your life on hold. Active waiting &mdash; the kind practiced here &mdash; means living fully in the present while holding space for what may come.</p>
+      <p>Many of life&rsquo;s most important transformations happen not during the events themselves, but during the waiting that precedes them.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="pratiksha.js"></script>
+</body>
+</html>

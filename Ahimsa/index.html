@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#080a08">
+  <title>Ahi&#x1E43;s&#x101; &mdash; non-harm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2309;&#2361;&#2367;&#2306;&#2360;&#2366;</div>
+      <h1>Ahi&#x1E43;s&#x101;</h1>
+      <p class="opening-sub">non-harm</p>
+      <div class="opening-text">
+        <p>Violence is not always loud. It is not always a fist or a shout.</p>
+        <p><em>Sometimes it is a whisper. A silence. A look. A choice made so quickly you barely notice you made it.</em></p>
+        <p>Six moments where harm is easy and kindness is a door you have to choose to open. Toward others. And toward yourself.</p>
+      </div>
+      <button id="beginBtn" class="btn-primary">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== SCENE ========== -->
+  <div id="sceneView" class="scene-view hidden">
+    <div class="scene-inner">
+      <h2 class="scene-title" id="sceneTitle"></h2>
+      <div class="scene-body" id="sceneBody"></div>
+
+      <div class="harm-box hidden" id="harmBox">
+        <p class="harm-label">the harm:</p>
+        <p class="harm-text" id="harmText"></p>
+      </div>
+
+      <div class="cost-box hidden" id="costBox">
+        <p class="cost-label">the cost:</p>
+        <p class="cost-text" id="costText"></p>
+      </div>
+
+      <div class="choice-box hidden" id="choiceBox">
+        <p class="choice-text" id="choiceText"></p>
+      </div>
+
+      <div class="scene-actions">
+        <button id="harmBtn" class="btn-primary btn-small">see the harm</button>
+        <button id="costBtn" class="btn-primary btn-small hidden">see the cost</button>
+        <button id="choiceBtn" class="btn-primary btn-small hidden">see the choice</button>
+        <button id="nextBtn" class="btn-primary btn-small hidden">next</button>
+      </div>
+      <p class="scene-progress" id="progressText"></p>
+    </div>
+  </div>
+
+  <!-- ========== COMPLETE ========== -->
+  <div id="complete" class="complete hidden">
+    <div class="complete-inner">
+      <h2 class="complete-title">You chose six times.</h2>
+      <p class="complete-text">Six moments where the easy path was cruelty and you looked at it clearly &mdash; the harm, the cost, and the alternative. That is not passivity. That is the most active form of strength there is.</p>
+      <p class="complete-mid">Gandhi called ahimsa the greatest force at the disposal of humanity. <em>Greater than the most powerful weapon of destruction devised by human ingenuity.</em> He was not talking about armies. He was talking about this: the daily, ordinary, unglamorous choice not to add pain to a world that already has enough.</p>
+      <p class="complete-closing">Be gentle. With others. And fiercely, relentlessly, unapologetically &mdash; with yourself.</p>
+      <div class="complete-actions">
+        <button id="againBtn" class="btn-primary btn-small">begin again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close">&times;</button>
+      <h2>Ahi&#x1E43;s&#x101; <span class="about-deva">&#2309;&#2361;&#2367;&#2306;&#2360;&#2366;</span></h2>
+      <p><strong>Ahi&#x1E43;s&#x101;</strong> is the first and highest ethical principle in Jainism, Hinduism, and Buddhism. It means non-harm, non-violence &mdash; not just the absence of physical violence, but the absence of harm in thought, word, and deed.</p>
+      <p>Modern psychology confirms what ancient traditions knew: harm ripples outward. A single act of cruelty can cascade through a community. But so can a single act of kindness. Both are contagious.</p>
+      <p>Ahimsa toward yourself is equally important. The way you speak to yourself in your own mind is the foundation of how you treat others.</p>
+      <p>Everything stays on your device. Nothing is sent anywhere.</p>
+    </div>
+  </div>
+
+  <script src="ahimsa.js"></script>
+</body>
+</html>
