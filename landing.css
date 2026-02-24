@@ -418,6 +418,14 @@ body {
 .card-sankalpa::before { background: #c89040; }
 .card-sankalpa .card-enter { color: #c89040; }
 
+.card-taara:hover { border-color: #88a8d8; }
+.card-taara::before { background: #88a8d8; }
+.card-taara .card-enter { color: #88a8d8; }
+
+.card-akshara:hover { border-color: #c8a060; }
+.card-akshara::before { background: #c8a060; }
+.card-akshara .card-enter { color: #c8a060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

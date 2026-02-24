@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#060610">
+  <title>T&#x101;r&#x101; &mdash; your sky</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2340;&#2366;&#2352;&#2366;</div>
+      <h1>T&#x101;r&#x101;</h1>
+      <p class="opening-sub">your sky</p>
+      <div class="opening-text">
+        <p>Every experience you enter becomes a star in your sky. Some skies are full. Some have just begun. Both are beautiful.</p>
+        <p><em>Your sky is not a test. It is a map of where you have been and where you might go.</em></p>
+        <p>Come back whenever you want to see how far you have traveled.</p>
+      </div>
+      <button class="btn-begin" id="beginBtn">see your sky</button>
+    </div>
+  </div>
+
+  <!-- ========== SKY VIEW ========== -->
+  <div id="skyView" class="sky-view hidden">
+    <canvas id="bgCanvas"></canvas>
+    <svg id="linesSvg" class="lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+    <div id="starField" class="star-field"></div>
+    <div id="tooltip" class="star-tooltip"></div>
+    <div id="stats" class="stats"></div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about t&#x101;r&#x101;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>T&#x101;r&#x101; <span class="about-deva">&#2340;&#2366;&#2352;&#2366;</span></h2>
+      <p>
+        <strong>T&#x101;r&#x101;</strong> (Sanskrit: star) means both &ldquo;star&rdquo; and &ldquo;she who carries across.&rdquo;
+        In Hindu mythology, Tara is the goddess who guides travelers through the darkness.
+      </p>
+      <p>
+        Your sky tracks every experience you visit. Each lit star is a step in your journey.
+        The constellations form around the themes of your exploration &mdash; inner work, healing,
+        growing, seeing others.
+      </p>
+      <p>
+        There is no goal. There is no order. Your sky fills at its own pace, in its own pattern.
+        That pattern is yours alone.
+      </p>
+    </div>
+  </div>
+
+  <script src="taara.js"></script>
+</body>
+</html>

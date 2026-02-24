@@ -83,6 +83,13 @@
         ['Sthairya', 'Sthairya', 'steadiness'],
         ['Sankalpa', 'Sa\u1E45kalpa', 'sacred resolve']
       ]
+    },
+    {
+      title: 'Your Space',
+      items: [
+        ['Taara', 'T\u0101r\u0101', 'your sky'],
+        ['Akshara', 'Akshara', 'the unsent letter']
+      ]
     }
   ];
 
@@ -105,6 +112,11 @@
   var isLanding = allDirs.indexOf(lastDir) === -1;
   var currentDir = isLanding ? '' : lastDir;
   var basePath = isLanding ? '' : '../';
+
+  /* track visit for Taara journey map */
+  if (currentDir) {
+    try { localStorage.setItem('yatra-visited-' + currentDir, '' + Date.now()); } catch (e) {}
+  }
 
   /* ==================== SVG ICONS ==================== */
   var GRID_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
@@ -143,7 +155,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 50 experiences';
+    sub.textContent = 'the journey \u2014 52 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

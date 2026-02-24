@@ -1,0 +1,448 @@
+/* ============================================================
+   TAARA — your sky
+   Deep night sky, silver-blue dim stars, warm gold lit stars
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #060610;
+  --deep: #0c0c1a;
+  --surface: #161628;
+  --text: #c0c4d8;
+  --text-dim: #6a6e88;
+  --accent: #c9a84c;
+  --accent-glow: rgba(201, 168, 76, 0.25);
+  --star-dim: rgba(140, 150, 185, 0.45);
+  --star-lit: #c9a84c;
+  --star-lit-glow: rgba(201, 168, 76, 0.35);
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden { display: none !important; }
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.opening.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.opening-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 520px;
+}
+
+.devanagari {
+  font-size: 3.2rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.opening h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.opening-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  letter-spacing: 0.12em;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s ease forwards;
+}
+
+.opening-text {
+  max-width: 440px;
+  margin: 0 auto 2.5rem;
+  opacity: 0;
+  animation: fadeUp 1s 1.2s ease forwards;
+}
+
+.opening-text p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  line-height: 1.8;
+}
+
+.opening-text em {
+  color: var(--text);
+}
+
+.btn-begin {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 30px;
+  padding: 0.8rem 2.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeUp 1s 1.6s ease forwards;
+}
+
+.btn-begin:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+/* ==================== SKY VIEW ==================== */
+.sky-view {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+#bgCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lines-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.lines-svg line {
+  stroke: rgba(140, 150, 185, 0.08);
+  stroke-width: 0.15;
+}
+
+.star-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* ==================== STARS ==================== */
+.star {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--star-dim);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.star::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(140, 150, 185, 0.08), transparent);
+  pointer-events: none;
+}
+
+.star.visited {
+  background: var(--star-lit);
+  width: 9px;
+  height: 9px;
+  box-shadow: 0 0 6px var(--star-lit-glow), 0 0 16px var(--star-lit-glow);
+  animation: starPulse 4s ease-in-out infinite;
+}
+
+.star.visited::after {
+  width: 28px;
+  height: 28px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.15), transparent);
+}
+
+.star:hover {
+  background: #fff;
+  width: 11px;
+  height: 11px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 25px rgba(255, 255, 255, 0.2);
+  animation: none;
+}
+
+.star:hover::after {
+  width: 36px;
+  height: 36px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent);
+}
+
+/* ==================== SECTION LABELS ==================== */
+.section-label {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(140, 150, 185, 0.25);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==================== TOOLTIP ==================== */
+.star-tooltip {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  margin-top: -14px;
+  background: rgba(12, 12, 26, 0.92);
+  border: 1px solid rgba(140, 150, 185, 0.15);
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.star-tooltip.visible {
+  opacity: 1;
+}
+
+.star-tooltip strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.star-tooltip .tt-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+/* ==================== STATS ==================== */
+.stats {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-align: center;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 1s 0.5s ease forwards;
+}
+
+.stats.complete {
+  color: var(--accent);
+}
+
+.stats em {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.nav-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(140, 150, 185, 0.18);
+  background: rgba(12, 12, 26, 0.7);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 6, 16, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.about-overlay.visible {
+  opacity: 1;
+}
+
+.about-card {
+  background: var(--deep);
+  border: 1px solid rgba(140, 150, 185, 0.12);
+  border-radius: 14px;
+  max-width: 480px;
+  width: 90%;
+  padding: 2.2rem;
+  position: relative;
+}
+
+.about-card h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+}
+
+.about-deva {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-left: 0.4rem;
+}
+
+.about-card p {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.about-card strong {
+  color: var(--text);
+}
+
+.about-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.about-close:hover {
+  color: var(--text);
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes starPulse {
+  0%, 100% { box-shadow: 0 0 6px var(--star-lit-glow), 0 0 16px var(--star-lit-glow); }
+  50% { box-shadow: 0 0 10px var(--star-lit-glow), 0 0 24px var(--star-lit-glow); }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .devanagari { font-size: 2.6rem; }
+  .opening h1 { font-size: 2rem; }
+  .section-label { font-size: 0.55rem; }
+  .star { width: 8px; height: 8px; }
+  .star.visited { width: 10px; height: 10px; }
+}
+
+@media (max-width: 480px) {
+  .opening { padding: 2rem 1.5rem; }
+  .devanagari { font-size: 2.2rem; }
+  .opening h1 { font-size: 1.8rem; letter-spacing: 0.1em; }
+  .opening-text p { font-size: 0.88rem; }
+  .star-tooltip { font-size: 0.78rem; padding: 0.4rem 0.6rem; }
+  .section-label { display: none; }
+}

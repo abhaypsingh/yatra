@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0a0806">
+  <title>Akshara &mdash; the unsent letter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2309;&#2325;&#2381;&#2359;&#2352;</div>
+      <h1>Akshara</h1>
+      <p class="opening-sub">the unsent letter</p>
+      <div class="opening-text">
+        <p>Some words need to be written even though they can never be sent. To the person who left. To the person you were. To the person you are becoming.</p>
+        <p><em>Writing is not about sending. It is about saying what is true.</em></p>
+        <p>Your letters live here, safe and private. No one will ever see them unless you choose.</p>
+      </div>
+      <button class="btn-begin" id="beginBtn">begin writing</button>
+    </div>
+  </div>
+
+  <!-- ========== CANVAS (for release animation) ========== -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ========== TYPE SELECTION ========== -->
+  <div id="typeView" class="type-view hidden">
+    <h2 class="view-title">Who is this letter for?</h2>
+    <div class="type-cards" id="typeCards"></div>
+    <div id="lettersLink" class="letters-link hidden">
+      <button class="btn-ghost" id="viewLettersBtn">read your sealed letters</button>
+    </div>
+  </div>
+
+  <!-- ========== WRITING VIEW ========== -->
+  <div id="writeView" class="write-view hidden">
+    <div class="write-header">
+      <button class="btn-back" id="writeBack">&larr; back</button>
+      <span class="write-type" id="writeType"></span>
+    </div>
+    <p class="write-prompt" id="writePrompt"></p>
+    <div class="write-date" id="writeDate"></div>
+    <textarea class="write-area" id="writeArea" placeholder="Write here. Take your time." rows="10"></textarea>
+    <button class="btn-seal" id="sealBtn" disabled>seal this letter</button>
+  </div>
+
+  <!-- ========== SEALED CONFIRMATION ========== -->
+  <div id="sealedView" class="sealed-view hidden">
+    <div class="sealed-icon">&#9679;</div>
+    <p class="sealed-text">Your letter has been sealed.</p>
+    <p class="sealed-sub">It will be here whenever you need it.</p>
+    <div class="sealed-actions">
+      <button class="btn-begin" id="writeAnotherBtn">write another</button>
+      <button class="btn-ghost" id="readLettersBtn">read your letters</button>
+    </div>
+  </div>
+
+  <!-- ========== LETTERS LIST ========== -->
+  <div id="lettersView" class="letters-view hidden">
+    <div class="letters-header">
+      <button class="btn-back" id="lettersBack">&larr; back</button>
+      <h2 class="view-title">Your Letters</h2>
+    </div>
+    <div id="lettersList" class="letters-list"></div>
+    <p id="noLetters" class="no-letters hidden">No letters yet. Your first words are waiting.</p>
+  </div>
+
+  <!-- ========== READ VIEW ========== -->
+  <div id="readView" class="read-view hidden">
+    <div class="read-header">
+      <button class="btn-back" id="readBack">&larr; back</button>
+    </div>
+    <div class="read-card" id="readCard">
+      <div class="read-type" id="readType"></div>
+      <div class="read-date" id="readDate"></div>
+      <div class="read-body" id="readBody"></div>
+    </div>
+    <button class="btn-release" id="releaseBtn">release this letter</button>
+    <p class="release-hint">When you release a letter, the words dissolve into light. They have served their purpose.</p>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about akshara">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Akshara <span class="about-deva">&#2309;&#2325;&#2381;&#2359;&#2352;</span></h2>
+      <p>
+        <strong>Akshara</strong> (Sanskrit: imperishable letter) means that which cannot be destroyed.
+        In Indian philosophy, akshara represents the eternal, unchanging essence beneath all that changes.
+      </p>
+      <p>
+        Some letters are meant to be sent. These are the other kind &mdash; the ones that exist
+        because they needed to be written. Letters to people you cannot reach. Words you have
+        carried too long.
+      </p>
+      <p>
+        Everything you write here stays on your device. Nothing is sent anywhere. When you are
+        ready to let go of a letter, you can release it. The words dissolve into light. What they
+        carried is set free.
+      </p>
+    </div>
+  </div>
+
+  <script src="akshara.js"></script>
+</body>
+</html>
