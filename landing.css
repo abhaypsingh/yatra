@@ -426,6 +426,14 @@ body {
 .card-akshara::before { background: #c8a060; }
 .card-akshara .card-enter { color: #c8a060; }
 
+.card-dhvani:hover { border-color: #4898a8; }
+.card-dhvani::before { background: #4898a8; }
+.card-dhvani .card-enter { color: #4898a8; }
+
+.card-darpan:hover { border-color: #a0a8c8; }
+.card-darpan::before { background: #a0a8c8; }
+.card-darpan .card-enter { color: #a0a8c8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

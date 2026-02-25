@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#060a0e">
+  <title>Dhvani &mdash; sound sanctuary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2343;&#2381;&#2357;&#2344;&#2367;</div>
+      <h1>Dhvani</h1>
+      <p class="opening-sub">sound sanctuary</p>
+      <div class="opening-text">
+        <p>When everything is too loud &mdash; the world, your thoughts, the silence itself &mdash; sometimes you need to build your own quiet.</p>
+        <p><em>This is your sanctuary. No words. No lessons. Just sound.</em></p>
+        <p>Choose what calms you. Layer it. Let it become the room around you.</p>
+      </div>
+      <button class="btn-begin" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MIXER ========== -->
+  <div id="mixer" class="mixer hidden">
+    <div class="mixer-title">your sounds</div>
+    <div id="soundGrid" class="sound-grid"></div>
+    <div class="timer-row">
+      <span class="timer-label">timer</span>
+      <div class="timer-btns" id="timerBtns"></div>
+      <span class="timer-display hidden" id="timerDisplay"></span>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about dhvani">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhvani <span class="about-deva">&#2343;&#2381;&#2357;&#2344;&#2367;</span></h2>
+      <p>
+        <strong>Dhvani</strong> (Sanskrit: sound, resonance) is the principle that every sound
+        carries meaning beyond its literal content. In Indian aesthetics, dhvani is the
+        suggested, resonant quality of music &mdash; the feeling between the notes.
+      </p>
+      <p>
+        These sounds are generated live in your browser. No recordings, no downloads,
+        no data sent anywhere. Layer them to create the atmosphere you need &mdash;
+        for studying, sleeping, thinking, or simply being.
+      </p>
+      <p>
+        Your browser becomes your sanctuary.
+      </p>
+    </div>
+  </div>
+
+  <script src="dhvani.js"></script>
+</body>
+</html>

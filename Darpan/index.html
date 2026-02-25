@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#08080e">
+  <title>Darpa&#x1E47; &mdash; the mirror</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="devanagari">&#2342;&#2352;&#2381;&#2346;&#2339;</div>
+      <h1>Darpa&#x1E47;</h1>
+      <p class="opening-sub">the mirror</p>
+      <div class="opening-text">
+        <p>Every day leaves a mark, whether you notice it or not. A color, a feeling, a single sentence.</p>
+        <p><em>This is a mirror that remembers.</em></p>
+        <p>Check in each day. Choose how you feel. Write one line if you want. Over time, you will see patterns you could not see from inside them.</p>
+      </div>
+      <button class="btn-begin" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== CHECK-IN VIEW ========== -->
+  <div id="checkinView" class="checkin-view hidden">
+    <div id="todayBanner" class="today-banner hidden"></div>
+    <h2 class="view-prompt">How are you today?</h2>
+    <div id="emotionGrid" class="emotion-grid"></div>
+  </div>
+
+  <!-- ========== WRITE VIEW ========== -->
+  <div id="writeView" class="write-view hidden">
+    <div class="write-emotion" id="writeEmotion"></div>
+    <p class="write-hint">One sentence about today. Or nothing at all.</p>
+    <textarea class="write-area" id="writeArea" placeholder="Today felt like..." rows="3"></textarea>
+    <button class="btn-save" id="saveBtn">save</button>
+  </div>
+
+  <!-- ========== SAVED VIEW ========== -->
+  <div id="savedView" class="saved-view hidden">
+    <div class="saved-dot" id="savedDot"></div>
+    <p class="saved-text">Noted.</p>
+    <div class="saved-actions">
+      <button class="btn-begin btn-static" id="calendarBtn">see your days</button>
+      <button class="btn-ghost" id="redoBtn">change today</button>
+    </div>
+  </div>
+
+  <!-- ========== CALENDAR VIEW ========== -->
+  <div id="calendarView" class="calendar-view hidden">
+    <div class="cal-nav">
+      <button class="cal-arrow" id="calPrev">&larr;</button>
+      <span class="cal-month" id="calMonth"></span>
+      <button class="cal-arrow" id="calNext">&rarr;</button>
+    </div>
+    <div class="cal-weekdays">
+      <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="cal-stats" id="calStats"></div>
+    <div class="cal-detail hidden" id="calDetail">
+      <div class="detail-date" id="detailDate"></div>
+      <div class="detail-emotion" id="detailEmotion"></div>
+      <div class="detail-text" id="detailText"></div>
+    </div>
+    <button class="btn-ghost cal-back" id="calBack">&larr; check in</button>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" title="about darpan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Darpa&#x1E47; <span class="about-deva">&#2342;&#2352;&#2381;&#2346;&#2339;</span></h2>
+      <p>
+        <strong>Darpa&#x1E47;</strong> (Sanskrit: mirror) is not just a surface that reflects &mdash;
+        it is the act of seeing yourself clearly. In Indian philosophy, true seeing requires
+        both honesty and compassion.
+      </p>
+      <p>
+        Each day you check in, you add a mark to your mirror. Over weeks and months, patterns
+        emerge that you cannot see from inside a single day. The sad weeks pass. The peaceful
+        days cluster. The anxious stretches teach you what triggers them.
+      </p>
+      <p>
+        Your entries stay on your device. This mirror belongs to you alone.
+      </p>
+    </div>
+  </div>
+
+  <script src="darpan.js"></script>
+</body>
+</html>

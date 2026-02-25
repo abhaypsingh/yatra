@@ -87,7 +87,9 @@
       title: 'Your Space', cx: 50, cy: 92,
       items: [
         ['Taara', 'T\u0101r\u0101', 'your sky'],
-        ['Akshara', 'Akshara', 'the unsent letter']
+        ['Akshara', 'Akshara', 'the unsent letter'],
+        ['Dhvani', 'Dhvani', 'sound sanctuary'],
+        ['Darpan', 'Darpa\u1E47', 'the mirror']
       ]
     }
   ];
