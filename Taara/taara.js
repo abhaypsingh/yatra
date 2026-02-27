@@ -89,7 +89,9 @@
         ['Taara', 'T\u0101r\u0101', 'your sky'],
         ['Akshara', 'Akshara', 'the unsent letter'],
         ['Dhvani', 'Dhvani', 'sound sanctuary'],
-        ['Darpan', 'Darpa\u1E47', 'the mirror']
+        ['Darpan', 'Darpa\u1E47', 'the mirror'],
+        ['Kavya', 'K\u0101vya', 'the poem within'],
+        ['Rangoli', 'Rangoli', 'sacred patterns']
       ]
     }
   ];

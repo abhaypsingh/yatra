@@ -1,0 +1,307 @@
+/* ============================================================
+   RANGOLI — sacred patterns
+   ============================================================ */
+
+/* ==================== RESET ==================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ==================== TOKENS ==================== */
+:root {
+  --void:     #0a0808;
+  --deep:     #141010;
+  --surface:  #1e1818;
+  --text:     #c8b8a8;
+  --text-dim: #706058;
+  --accent:   #c87850;
+  --accent2:  #a06040;
+  --glow:     rgba(200, 120, 80, 0.15);
+}
+
+/* ==================== BASE ==================== */
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s;
+}
+.opening.fade-out { opacity: 0; pointer-events: none; }
+.opening.hidden   { display: none; }
+
+.opening-content { text-align: center; padding: 2rem; }
+
+.sanskrit {
+  font-size: 2.4rem;
+  color: var(--accent);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--text);
+}
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+.desc {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+.begin-btn {
+  margin-top: 2.5rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.6rem 2.4rem;
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.3s, color 0.3s;
+}
+.begin-btn:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+/* ==================== SCREEN ==================== */
+.screen { position: relative; }
+.hidden { display: none !important; }
+
+#drawView {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#drawCanvas {
+  flex: 1;
+  display: block;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+/* ==================== TOOLBAR ==================== */
+.toolbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(10, 8, 8, 0.92);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(200, 120, 80, 0.1);
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  overflow-x: auto;
+  z-index: 60;
+}
+
+.tool-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+.tool-label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-align: center;
+}
+.btn-row {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.tool-btn {
+  min-width: 36px;
+  height: 32px;
+  background: var(--deep);
+  border: 1px solid rgba(200, 120, 80, 0.12);
+  border-radius: 4px;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  padding: 0 0.4rem;
+}
+.tool-btn:hover {
+  border-color: var(--accent2);
+  color: var(--text);
+}
+.tool-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(200, 120, 80, 0.08);
+}
+
+/* brush dots */
+.dot {
+  display: block;
+  border-radius: 50%;
+  background: currentColor;
+}
+.dot-sm { width: 4px; height: 4px; }
+.dot-md { width: 8px; height: 8px; }
+.dot-lg { width: 14px; height: 14px; }
+
+/* colour swatches */
+.colour-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.colour-swatch:hover {
+  transform: scale(1.15);
+}
+.colour-swatch.active {
+  border-color: #fff;
+}
+
+/* palette button */
+.palette-btn {
+  min-width: 36px;
+  height: 32px;
+  background: var(--deep);
+  border: 1px solid rgba(200, 120, 80, 0.12);
+  border-radius: 4px;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+  padding: 0 0.5rem;
+}
+.palette-btn:hover {
+  border-color: var(--accent2);
+  color: var(--text);
+}
+.palette-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tool-actions {
+  flex-direction: row;
+  gap: 0.3rem;
+  margin-left: auto;
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+  z-index: 50;
+}
+.nav-float.visible { opacity: 1; }
+
+.nav-btn {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(10, 8, 8, 0.8);
+  border: 1px solid rgba(200, 120, 80, 0.12);
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, color 0.3s;
+}
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.about-overlay.visible { opacity: 1; }
+.about-overlay.hidden  { display: none; }
+
+.about-card {
+  background: var(--deep);
+  border: 1px solid rgba(200, 120, 80, 0.08);
+  border-radius: 10px;
+  max-width: 440px;
+  width: 90%;
+  padding: 2rem;
+  position: relative;
+}
+.about-card h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.about-card p {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+.about-note {
+  margin-top: 1.2rem;
+  font-size: 0.8rem !important;
+  opacity: 0.6;
+}
+.about-close {
+  position: absolute;
+  top: 0.8rem; right: 1rem;
+  background: none; border: none;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.about-close:hover { color: var(--text); }
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 480px) {
+  .toolbar { padding: 0.5rem 0.6rem; gap: 0.8rem; }
+  .tool-btn { min-width: 32px; height: 28px; }
+  .sanskrit { font-size: 2rem; }
+  h1 { font-size: 2rem; }
+}

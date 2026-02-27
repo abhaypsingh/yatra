@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya — the poem within</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ OPENING ============ -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <p class="sanskrit">काव्य</p>
+      <h1>Kavya</h1>
+      <p class="subtitle">the poem within</p>
+      <p class="desc">
+        You don't have to be a poet.<br>
+        You just have to be honest.
+      </p>
+      <button id="beginBtn" class="begin-btn">begin</button>
+    </div>
+  </div>
+
+  <!-- ============ HOME VIEW ============ -->
+  <div id="homeView" class="screen hidden">
+    <h2 class="screen-title">What wants to be written?</h2>
+    <p class="screen-hint">Choose a prompt — or write freely</p>
+
+    <div id="promptGrid" class="prompt-grid"></div>
+
+    <button id="freeWriteBtn" class="free-write-btn">write freely</button>
+
+    <div id="anthologyLink" class="anthology-link hidden">
+      <button id="showAnthology" class="link-btn">read your poems</button>
+    </div>
+  </div>
+
+  <!-- ============ WRITE VIEW ============ -->
+  <div id="writeView" class="screen hidden">
+    <p id="writePrompt" class="write-prompt"></p>
+    <textarea id="writeArea" class="write-area" placeholder="Let the words come…" rows="12"></textarea>
+    <div class="write-actions">
+      <button id="saveBtn" class="save-btn">keep this poem</button>
+      <button id="discardBtn" class="discard-btn">let it go</button>
+    </div>
+  </div>
+
+  <!-- ============ SAVED VIEW ============ -->
+  <div id="savedView" class="screen hidden">
+    <div class="saved-glow"></div>
+    <p class="saved-msg">Your words are kept.</p>
+    <div class="saved-actions">
+      <button id="writeAnother" class="link-btn">write another</button>
+      <button id="readPoems" class="link-btn">read your poems</button>
+    </div>
+  </div>
+
+  <!-- ============ ANTHOLOGY VIEW ============ -->
+  <div id="anthologyView" class="screen hidden">
+    <h2 class="screen-title">Your Poems</h2>
+    <p id="anthologyCount" class="screen-hint"></p>
+    <div id="anthologyList" class="anthology-list"></div>
+    <button id="anthologyBack" class="link-btn back-btn">write more</button>
+  </div>
+
+  <!-- ============ NAV FLOAT ============ -->
+  <div id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about this experience">?</button>
+  </div>
+
+  <!-- ============ ABOUT OVERLAY ============ -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close" aria-label="close">&times;</button>
+      <h2>About Kavya</h2>
+      <p>
+        Poetry isn't about perfect rhymes or fancy words. It's about
+        catching a feeling before it flies away. A few honest lines can hold
+        more truth than a whole essay.
+      </p>
+      <p>
+        Your poems are saved only on this device. They belong to you alone.
+        Write as many as you like — or release them into nothing.
+      </p>
+      <p class="about-note">
+        Part of <strong>Yatra</strong> — a journey of 56 experiences.
+      </p>
+    </div>
+  </div>
+
+  <script src="kavya.js"></script>
+</body>
+</html>

@@ -434,6 +434,14 @@ body {
 .card-darpan::before { background: #a0a8c8; }
 .card-darpan .card-enter { color: #a0a8c8; }
 
+.card-kavya:hover { border-color: #d0c8a0; }
+.card-kavya::before { background: #d0c8a0; }
+.card-kavya .card-enter { color: #d0c8a0; }
+
+.card-rangoli:hover { border-color: #c87850; }
+.card-rangoli::before { background: #c87850; }
+.card-rangoli .card-enter { color: #c87850; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

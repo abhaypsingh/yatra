@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rangoli — sacred patterns</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ OPENING ============ -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <p class="sanskrit">रंगोली</p>
+      <h1>Rangoli</h1>
+      <p class="subtitle">sacred patterns</p>
+      <p class="desc">
+        Draw one line and watch it<br>
+        become many. Symmetry is<br>
+        the world's quiet kindness.
+      </p>
+      <button id="beginBtn" class="begin-btn">begin</button>
+    </div>
+  </div>
+
+  <!-- ============ DRAW VIEW ============ -->
+  <div id="drawView" class="screen hidden">
+    <canvas id="drawCanvas"></canvas>
+
+    <!-- toolbar -->
+    <div id="toolbar" class="toolbar">
+      <div class="tool-group">
+        <label class="tool-label">symmetry</label>
+        <div class="btn-row" id="symmetryRow">
+          <button class="tool-btn active" data-fold="6">6</button>
+          <button class="tool-btn" data-fold="8">8</button>
+          <button class="tool-btn" data-fold="12">12</button>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <label class="tool-label">brush</label>
+        <div class="btn-row" id="brushRow">
+          <button class="tool-btn" data-size="2"><span class="dot dot-sm"></span></button>
+          <button class="tool-btn active" data-size="4"><span class="dot dot-md"></span></button>
+          <button class="tool-btn" data-size="8"><span class="dot dot-lg"></span></button>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <label class="tool-label">palette</label>
+        <div class="btn-row" id="paletteRow"></div>
+      </div>
+
+      <div class="tool-group">
+        <label class="tool-label">colour</label>
+        <div class="btn-row" id="colourRow"></div>
+      </div>
+
+      <div class="tool-group tool-actions">
+        <button id="guidesBtn" class="tool-btn active" title="toggle guides">◎</button>
+        <button id="clearBtn" class="tool-btn" title="clear canvas">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ NAV FLOAT ============ -->
+  <div id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about this experience">?</button>
+  </div>
+
+  <!-- ============ ABOUT OVERLAY ============ -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close" aria-label="close">&times;</button>
+      <h2>About Rangoli</h2>
+      <p>
+        Rangoli is the ancient art of drawing symmetric patterns at the
+        threshold of a home — a way of welcoming beauty into everyday life.
+      </p>
+      <p>
+        Here, every stroke you make is mirrored into a mandala.
+        There is no wrong line. Just draw, and let the pattern emerge.
+      </p>
+      <p class="about-note">
+        Part of <strong>Yatra</strong> — a journey of 56 experiences.
+      </p>
+    </div>
+  </div>
+
+  <script src="rangoli.js"></script>
+</body>
+</html>
