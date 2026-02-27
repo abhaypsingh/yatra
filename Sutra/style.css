@@ -1,0 +1,454 @@
+/* ============================================================
+   SUTRA — the thread
+   ============================================================ */
+
+/* ==================== RESET ==================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ==================== TOKENS ==================== */
+:root {
+  --void:     #0a0808;
+  --deep:     #12100e;
+  --surface:  #1c1814;
+  --text:     #c8b8a0;
+  --text-dim: #706050;
+  --accent:   #b88850;
+  --accent2:  #906838;
+  --thread:   #b88850;
+  --bead:     #906838;
+  --bead-glow: rgba(184, 136, 80, 0.12);
+}
+
+/* ==================== BASE ==================== */
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ==================== OPENING ==================== */
+.opening {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void);
+  z-index: 100;
+  transition: opacity 1.2s;
+}
+.opening.fade-out { opacity: 0; pointer-events: none; }
+.opening.hidden   { display: none; }
+
+.opening-content { text-align: center; padding: 2rem; }
+
+.sanskrit {
+  font-size: 2.4rem;
+  color: var(--accent);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--text);
+}
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+.desc {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+.begin-btn {
+  margin-top: 2.5rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.6rem 2.4rem;
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.3s, color 0.3s;
+}
+.begin-btn:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+/* ==================== SCREENS ==================== */
+.screen {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+.hidden { display: none !important; }
+
+.screen-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.screen-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+}
+
+/* ==================== THREAD ==================== */
+.thread-line {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 2rem;
+  min-height: 60px;
+}
+
+/* the vertical thread */
+.thread-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--thread), rgba(184, 136, 80, 0.15));
+}
+
+.thread-empty {
+  text-align: center;
+  color: var(--text-dim);
+  font-style: italic;
+  padding: 3rem 0 3rem 0;
+  opacity: 0.6;
+}
+
+/* bead */
+.bead {
+  position: relative;
+  padding: 1rem 1.2rem 1rem 1.4rem;
+  margin-bottom: 1.2rem;
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.1);
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.bead:hover {
+  border-color: rgba(184, 136, 80, 0.25);
+  box-shadow: 0 0 15px var(--bead-glow);
+}
+
+/* bead dot on the thread */
+.bead::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 1.2rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bead);
+  border: 2px solid var(--void);
+}
+
+.bead-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.bead-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.bead-source-tag {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  opacity: 0.6;
+  background: rgba(184, 136, 80, 0.08);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+.bead-source-note {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  opacity: 0.7;
+}
+
+.bead-date {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  opacity: 0.4;
+  margin-left: auto;
+}
+
+.bead-delete {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  cursor: pointer;
+  opacity: 0;
+  padding: 0.2rem 0.4rem;
+  transition: opacity 0.3s, color 0.3s;
+}
+.bead:hover .bead-delete { opacity: 0.4; }
+.bead-delete:hover { opacity: 1 !important; color: #c06050; }
+
+/* ==================== ADD BUTTON ==================== */
+.add-btn {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid rgba(184, 136, 80, 0.2);
+  color: var(--text-dim);
+  padding: 0.6rem 2rem;
+  font: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-color 0.3s, color 0.3s;
+}
+.add-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==================== ADD VIEW ==================== */
+.bead-input {
+  display: block;
+  width: 100%;
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.12);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 1rem;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s;
+  margin-bottom: 1.5rem;
+}
+.bead-input:focus {
+  border-color: var(--accent2);
+}
+.bead-input::placeholder {
+  color: var(--text-dim);
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.source-label {
+  display: block;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.source-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.source-btn {
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.12);
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, background 0.3s;
+}
+.source-btn:hover {
+  border-color: var(--accent2);
+  color: var(--text);
+}
+.source-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(184, 136, 80, 0.08);
+}
+
+.source-note {
+  display: block;
+  width: 100%;
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.1);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.7rem 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+  margin-bottom: 1.5rem;
+}
+.source-note:focus {
+  border-color: var(--accent2);
+}
+.source-note::placeholder {
+  color: var(--text-dim);
+  opacity: 0.5;
+}
+
+.write-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.save-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5rem 1.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.3s, color 0.3s;
+}
+.save-btn:hover {
+  background: var(--accent);
+  color: var(--void);
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid rgba(184, 136, 80, 0.15);
+  color: var(--text-dim);
+  padding: 0.5rem 1.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: border-color 0.3s, color 0.3s;
+}
+.cancel-btn:hover {
+  border-color: var(--accent2);
+  color: var(--text);
+}
+
+/* ==================== NAV FLOAT ==================== */
+.nav-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.8s;
+  z-index: 50;
+}
+.nav-float.visible { opacity: 1; }
+
+.nav-btn {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.12);
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, color 0.3s;
+}
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==================== ABOUT OVERLAY ==================== */
+.about-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.about-overlay.visible { opacity: 1; }
+.about-overlay.hidden  { display: none; }
+
+.about-card {
+  background: var(--deep);
+  border: 1px solid rgba(184, 136, 80, 0.1);
+  border-radius: 10px;
+  max-width: 440px;
+  width: 90%;
+  padding: 2rem;
+  position: relative;
+}
+.about-card h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.about-card p {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+.about-note {
+  margin-top: 1.2rem;
+  font-size: 0.8rem !important;
+  opacity: 0.6;
+}
+.about-close {
+  position: absolute;
+  top: 0.8rem; right: 1rem;
+  background: none; border: none;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.about-close:hover { color: var(--text); }
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 480px) {
+  .screen { padding: 2rem 1rem 5rem; }
+  .sanskrit { font-size: 2rem; }
+  h1 { font-size: 2rem; }
+  .write-actions { flex-direction: column; align-items: center; }
+  .thread-line { padding-left: 24px; }
+}

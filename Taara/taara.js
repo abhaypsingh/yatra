@@ -91,7 +91,9 @@
         ['Dhvani', 'Dhvani', 'sound sanctuary'],
         ['Darpan', 'Darpa\u1E47', 'the mirror'],
         ['Kavya', 'K\u0101vya', 'the poem within'],
-        ['Rangoli', 'Rangoli', 'sacred patterns']
+        ['Rangoli', 'Rangoli', 'sacred patterns'],
+        ['Chaaya', 'Ch\u0101y\u0101', 'the shadow'],
+        ['Sutra', 'S\u016Btra', 'the thread']
       ]
     }
   ];

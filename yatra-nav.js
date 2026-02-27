@@ -92,7 +92,9 @@
         ['Dhvani', 'Dhvani', 'sound sanctuary'],
         ['Darpan', 'Darpa\u1E47', 'the mirror'],
         ['Kavya', 'K\u0101vya', 'the poem within'],
-        ['Rangoli', 'Rangoli', 'sacred patterns']
+        ['Rangoli', 'Rangoli', 'sacred patterns'],
+        ['Chaaya', 'Ch\u0101y\u0101', 'the shadow'],
+        ['Sutra', 'S\u016Btra', 'the thread']
       ]
     }
   ];
@@ -159,7 +161,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 56 experiences';
+    sub.textContent = 'the journey \u2014 58 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

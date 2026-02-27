@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaaya — the shadow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ OPENING ============ -->
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <p class="sanskrit">छाया</p>
+      <h1>Chaaya</h1>
+      <p class="subtitle">the shadow</p>
+      <p class="desc">
+        Everyone has parts of themselves<br>
+        they hide from the world.<br>
+        What if you looked at them<br>
+        and said: you belong to me too?
+      </p>
+      <button id="beginBtn" class="begin-btn">begin</button>
+    </div>
+  </div>
+
+  <!-- ============ HOME VIEW ============ -->
+  <div id="homeView" class="screen hidden">
+    <h2 class="screen-title">Your Shadows</h2>
+    <p class="screen-hint">Name what you hide. Then choose to embrace it.</p>
+
+    <div id="stats" class="stats"></div>
+
+    <div id="shadowGallery" class="shadow-gallery"></div>
+
+    <button id="addShadowBtn" class="add-btn">+ name a shadow</button>
+  </div>
+
+  <!-- ============ WRITE VIEW ============ -->
+  <div id="writeView" class="screen hidden">
+    <h2 class="screen-title">Name the Shadow</h2>
+    <p class="screen-hint">What part of yourself do you keep hidden?</p>
+
+    <div class="prompts" id="promptList"></div>
+
+    <input id="shadowInput" class="shadow-input" type="text" placeholder="I hide my…" maxlength="120">
+    <textarea id="shadowDetail" class="shadow-detail" placeholder="Why do you hide it? (optional)" rows="4"></textarea>
+
+    <div class="write-actions">
+      <button id="saveBtn" class="save-btn">keep this shadow</button>
+      <button id="cancelBtn" class="cancel-btn">go back</button>
+    </div>
+  </div>
+
+  <!-- ============ EMBRACE VIEW ============ -->
+  <div id="embraceView" class="screen hidden">
+    <div id="embraceCard" class="embrace-card">
+      <div class="embrace-silhouette" id="embraceSilhouette"></div>
+      <p class="embrace-name" id="embraceName"></p>
+      <p class="embrace-detail" id="embraceDetail"></p>
+    </div>
+    <p class="embrace-msg" id="embraceMsg"></p>
+    <div class="embrace-actions">
+      <button id="embraceBtn" class="embrace-btn">embrace this shadow</button>
+      <button id="embraceBack" class="cancel-btn">go back</button>
+    </div>
+  </div>
+
+  <!-- ============ NAV FLOAT ============ -->
+  <div id="navFloat" class="nav-float">
+    <button id="navAbout" class="nav-btn" aria-label="about this experience">?</button>
+  </div>
+
+  <!-- ============ ABOUT OVERLAY ============ -->
+  <div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-card">
+      <button id="aboutClose" class="about-close" aria-label="close">&times;</button>
+      <h2>About Chaaya</h2>
+      <p>
+        Shadow work is the practice of looking at the parts of yourself you
+        reject, hide, or feel ashamed of &mdash; and accepting them as part
+        of who you are.
+      </p>
+      <p>
+        You might hide your sensitivity, your anger, your sadness, your
+        need for attention, your fear of being alone. None of these are
+        wrong. They are human.
+      </p>
+      <p>
+        When you embrace a shadow, it doesn&rsquo;t disappear. It becomes
+        something you carry with awareness instead of shame.
+      </p>
+      <p class="about-note">
+        Part of <strong>Yatra</strong> &mdash; a journey of 58 experiences.
+      </p>
+    </div>
+  </div>
+
+  <script src="chaaya.js"></script>
+</body>
+</html>

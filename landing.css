@@ -442,6 +442,14 @@ body {
 .card-rangoli::before { background: #c87850; }
 .card-rangoli .card-enter { color: #c87850; }
 
+.card-chaaya:hover { border-color: #c8a848; }
+.card-chaaya::before { background: #c8a848; }
+.card-chaaya .card-enter { color: #c8a848; }
+
+.card-sutra:hover { border-color: #b88850; }
+.card-sutra::before { background: #b88850; }
+.card-sutra .card-enter { color: #b88850; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
