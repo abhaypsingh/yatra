@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodhi — the awakening</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x094B;&#x0927;&#x093F;</div>
+      <h1 class="title">Bodhi</h1>
+      <p class="subtitle">the awakening</p>
+      <p class="intro">Sometimes understanding arrives<br>like dawn &mdash; slow, then all at once.<br>Collect those moments here.</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- moments list -->
+    <div class="moments" id="moments">
+      <div class="moments-empty" id="momentsEmpty">
+        <p>No moments recorded yet.</p>
+        <p class="moments-empty-sub">Tap + when something clicks.</p>
+      </div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="add an aha moment">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you suddenly understand?</p>
+        <textarea class="write-input" id="writeInput" rows="4" maxlength="400" placeholder="I realized that..."></textarea>
+        <p class="context-label">What sparked it? <span class="context-hint">(optional)</span></p>
+        <input class="context-input" id="contextInput" type="text" maxlength="120" placeholder="a conversation, a book, a quiet moment...">
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">save moment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="moment-detail hidden" id="momentDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-glow"></div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-context" id="detailContext"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Bodhi">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Bodhi</h2>
+      <p>Bodhi is the Sanskrit word for awakening &mdash; the moment the Buddha understood the nature of suffering under the Bodhi tree.</p>
+      <p>Your awakenings don&rsquo;t have to be that grand. Maybe you suddenly understood why your friend was upset. Maybe fractions finally made sense. Maybe you realized something about yourself that you couldn&rsquo;t see before.</p>
+      <p>These small moments of clarity are how you grow. Write them down so you never forget that you are always learning.</p>
+      <p class="about-note">Your moments are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="bodhi.js"></script>
+</body>
+</html>

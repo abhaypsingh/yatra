@@ -95,7 +95,9 @@
         ['Chaaya', 'Ch\u0101y\u0101', 'the shadow'],
         ['Sutra', 'S\u016Btra', 'the thread'],
         ['Jugnu', 'Jugnu', 'the firefly jar'],
-        ['Sapna', 'Sapna', 'the dream journal']
+        ['Sapna', 'Sapna', 'the dream journal'],
+        ['Kalpana', 'Kalpan\u0101', 'the imagination'],
+        ['Bodhi', 'Bodhi', 'the awakening']
       ]
     }
   ];

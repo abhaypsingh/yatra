@@ -458,6 +458,14 @@ body {
 .card-sapna::before { background: #8878c8; }
 .card-sapna .card-enter { color: #8878c8; }
 
+.card-kalpana:hover { border-color: #d868a8; }
+.card-kalpana::before { background: #d868a8; }
+.card-kalpana .card-enter { color: #d868a8; }
+
+.card-bodhi:hover { border-color: #d0a030; }
+.card-bodhi::before { background: #d0a030; }
+.card-bodhi .card-enter { color: #d0a030; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

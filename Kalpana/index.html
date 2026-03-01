@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalpan&#x101; — the imagination</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0932;&#x094D;&#x092A;&#x0928;&#x093E;</div>
+      <h1 class="title">Kalpan&#x101;</h1>
+      <p class="subtitle">the imagination</p>
+      <p class="intro">What if the impossible were easy?<br>Your imagination is not childish &mdash;<br>it is your most powerful instrument.</p>
+      <button class="begin-btn" id="beginBtn">wonder</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- seed prompts -->
+    <div class="seeds" id="seeds"></div>
+    <button class="own-btn" id="ownBtn">ask your own what-if</button>
+
+    <!-- gallery -->
+    <div class="gallery" id="gallery">
+      <div class="gallery-empty" id="galleryEmpty">
+        <p>No visions yet.</p>
+        <p class="gallery-empty-sub">Choose a question above, or ask your own.</p>
+      </div>
+    </div>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-question" id="writeQuestion"></p>
+        <textarea class="write-input" id="writeInput" rows="5" maxlength="500" placeholder="Let your mind run free..."></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">save vision</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- custom question view -->
+    <div class="custom-view hidden" id="customView">
+      <div class="write-card">
+        <p class="write-prompt">Write your own &ldquo;what if&rdquo; question:</p>
+        <input class="custom-input" id="customInput" type="text" maxlength="120" placeholder="What if...">
+        <div class="write-actions">
+          <button class="write-cancel" id="customCancel">back</button>
+          <button class="write-save" id="customNext">next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="vision-detail hidden" id="visionDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <p class="detail-question" id="detailQuestion"></p>
+        <p class="detail-answer" id="detailAnswer"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Kalpan&#x101;">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Kalpan&#x101;</h2>
+      <p>Kalpan&#x101; means imagination &mdash; the power to see what isn&rsquo;t there yet. It is the same power that invented fire, music, and kindness.</p>
+      <p>The world will tell you to be realistic. This is your space to be unrealistic. Ask impossible questions. Give impossible answers. The wilder, the better.</p>
+      <p>Every great thing started as a &ldquo;what if&rdquo; in someone&rsquo;s mind.</p>
+      <p class="about-note">Your visions are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="kalpana.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* ============================================================
+   KALPANA — the imagination
+   Palette: deep purple-black + magenta-pink wonder
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --void:    #0a0810;
+  --deep:    #10081a;
+  --surface: #1a1228;
+  --text:    #d0c8d8;
+  --text-dim:#786888;
+  --accent:  #d868a8;
+}
+
+html, body {
+  height: 100%;
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  overflow-x: hidden;
+}
+
+/* ==================== OPENING ==================== */
+
+.opening {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--void);
+  transition: opacity 1.2s;
+}
+.opening.fade-out { opacity: 0; pointer-events: none; }
+.opening.hidden   { display: none; }
+
+.opening-content { text-align: center; padding: 2rem; }
+
+.deva {
+  font-size: 3rem; color: var(--accent);
+  margin-bottom: .5rem; opacity: .85;
+}
+.title {
+  font-size: 2rem; font-weight: 400;
+  letter-spacing: .15em; margin-bottom: .25rem;
+}
+.subtitle {
+  font-size: .95rem; color: var(--text-dim);
+  letter-spacing: .1em; margin-bottom: 2rem;
+}
+.intro {
+  font-size: .9rem; line-height: 1.7; color: var(--text-dim);
+  max-width: 280px; margin: 0 auto 2.5rem;
+}
+.begin-btn {
+  background: none; border: 1px solid var(--accent);
+  color: var(--accent); padding: .6rem 2rem;
+  border-radius: 999px; font: inherit; font-size: .85rem;
+  letter-spacing: .08em; cursor: pointer;
+  transition: background .3s, color .3s;
+}
+.begin-btn:hover { background: var(--accent); color: var(--void); }
+
+/* ==================== MAIN ==================== */
+
+.main {
+  min-height: 100vh; position: relative;
+  padding: 2rem 1rem 8rem;
+  max-width: 480px; margin: 0 auto;
+}
+.hidden { display: none !important; }
+
+/* ==================== SEEDS ==================== */
+
+.seeds {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.seed {
+  background: var(--deep);
+  border: 1px solid rgba(216, 104, 168, 0.15);
+  border-radius: 999px; padding: .45rem 1rem;
+  font: inherit; font-size: .8rem; color: var(--text-dim);
+  cursor: pointer; transition: all .3s;
+  max-width: 100%;
+}
+.seed:hover {
+  border-color: var(--accent); color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.own-btn {
+  display: block; margin: 0 auto 2rem;
+  background: none; border: 1px solid rgba(216, 104, 168, 0.2);
+  color: var(--text-dim); padding: .4rem 1.2rem;
+  border-radius: 999px; font: inherit; font-size: .78rem;
+  letter-spacing: .03em; cursor: pointer;
+  transition: all .3s;
+}
+.own-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ==================== GALLERY ==================== */
+
+.gallery {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+
+.gallery-empty {
+  text-align: center; padding: 3rem 2rem; color: var(--text-dim);
+}
+.gallery-empty p { margin-bottom: .5rem; font-size: .9rem; }
+.gallery-empty-sub { font-size: .8rem; opacity: .6; }
+
+/* ==================== VISION CARD ==================== */
+
+.vision-card {
+  background: var(--deep);
+  border: 1px solid rgba(216, 104, 168, 0.1);
+  border-radius: 16px; padding: 1.25rem;
+  cursor: pointer;
+  transition: border-color .3s, transform .3s;
+  animation: vfade .5s ease-out;
+}
+.vision-card:hover {
+  border-color: rgba(216, 104, 168, 0.25);
+  transform: translateY(-2px);
+}
+
+@keyframes vfade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.vision-q {
+  font-size: .82rem; color: var(--accent);
+  margin-bottom: .5rem; font-style: italic;
+}
+.vision-a {
+  font-size: .88rem; line-height: 1.6; color: var(--text);
+  display: -webkit-box; -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; overflow: hidden;
+  margin-bottom: .5rem;
+}
+.vision-date {
+  font-size: .72rem; color: var(--text-dim);
+}
+
+/* ==================== WRITE VIEW ==================== */
+
+.write-view, .custom-view {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(10, 8, 16, 0.9);
+}
+.write-card {
+  background: var(--deep); border: 1px solid rgba(216, 104, 168, 0.12);
+  border-radius: 16px; padding: 2rem;
+  width: 90%; max-width: 400px;
+}
+.write-question {
+  font-size: 1rem; color: var(--accent);
+  margin-bottom: 1.25rem; line-height: 1.5;
+  font-style: italic;
+}
+.write-prompt {
+  font-size: .95rem; color: var(--text);
+  margin-bottom: 1rem;
+}
+.write-input {
+  width: 100%; background: var(--surface);
+  border: 1px solid rgba(216, 104, 168, 0.12);
+  border-radius: 8px; padding: .75rem;
+  color: var(--text); font: inherit; font-size: .85rem;
+  resize: none; outline: none;
+}
+.write-input:focus { border-color: var(--accent); }
+.write-input::placeholder { color: var(--text-dim); }
+
+.custom-input {
+  width: 100%; background: var(--surface);
+  border: 1px solid rgba(216, 104, 168, 0.12);
+  border-radius: 8px; padding: .75rem;
+  color: var(--text); font: inherit; font-size: .85rem;
+  outline: none;
+}
+.custom-input:focus { border-color: var(--accent); }
+.custom-input::placeholder { color: var(--text-dim); }
+
+.write-actions {
+  display: flex; justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.write-cancel, .write-save {
+  background: none; border: 1px solid var(--text-dim);
+  color: var(--text-dim); padding: .45rem 1.2rem;
+  border-radius: 999px; font: inherit; font-size: .8rem;
+  cursor: pointer; transition: all .3s;
+}
+.write-save { border-color: var(--accent); color: var(--accent); }
+.write-save:hover { background: var(--accent); color: var(--void); }
+.write-cancel:hover { border-color: var(--text); color: var(--text); }
+
+/* ==================== DETAIL ==================== */
+
+.vision-detail {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(10, 8, 16, 0.9);
+}
+.detail-card {
+  background: var(--deep); border: 1px solid rgba(216, 104, 168, 0.12);
+  border-radius: 16px; padding: 2rem;
+  width: 90%; max-width: 380px; position: relative;
+}
+.detail-question {
+  font-size: .95rem; color: var(--accent);
+  margin-bottom: 1rem; font-style: italic; line-height: 1.5;
+}
+.detail-answer {
+  font-size: .95rem; line-height: 1.7; color: var(--text);
+  margin-bottom: 1rem; white-space: pre-wrap;
+}
+.detail-date { font-size: .75rem; color: var(--text-dim); }
+.detail-close {
+  position: absolute; top: .75rem; right: 1rem;
+  background: none; border: none; color: var(--text-dim);
+  font-size: 1.1rem; cursor: pointer;
+}
+
+/* ==================== NAV ==================== */
+
+.nav-float {
+  position: fixed; bottom: 2rem; right: 2rem;
+  display: flex; gap: .5rem; z-index: 90;
+  opacity: 0; transition: opacity .6s;
+}
+.nav-float.visible { opacity: 1; }
+
+.nav-btn {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--surface); border: 1px solid rgba(216, 104, 168, 0.15);
+  color: var(--text-dim); font-size: .85rem;
+  cursor: pointer; transition: border-color .3s, color .3s;
+}
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ==================== ABOUT ==================== */
+
+.about-overlay {
+  position: fixed; inset: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(10, 8, 16, 0);
+  transition: background .4s; pointer-events: none;
+}
+.about-overlay.visible {
+  background: rgba(10, 8, 16, 0.88); pointer-events: auto;
+}
+.about-card {
+  background: var(--deep); border: 1px solid rgba(216, 104, 168, 0.1);
+  border-radius: 16px; padding: 2rem;
+  width: 90%; max-width: 380px;
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .4s, transform .4s; position: relative;
+}
+.about-overlay.visible .about-card { opacity: 1; transform: translateY(0); }
+
+.about-card h2 { font-size: 1.2rem; font-weight: 400; margin-bottom: 1rem; color: var(--accent); }
+.about-card p  { font-size: .85rem; line-height: 1.6; color: var(--text-dim); margin-bottom: .75rem; }
+.about-note    { font-size: .75rem; opacity: .5; margin-top: 1rem; }
+
+.about-close {
+  position: absolute; top: .75rem; right: 1rem;
+  background: none; border: none; color: var(--text-dim);
+  font-size: 1.1rem; cursor: pointer;
+}
