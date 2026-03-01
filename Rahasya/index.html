@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahasya — the secret</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0939;&#x0938;&#x094D;&#x092F;</div>
+      <h1 class="title">Rahasya</h1>
+      <p class="subtitle">the secret</p>
+      <p class="intro">Some truths are too tender for the world.<br>They need a safe place to exist &mdash;<br>even if no one else ever reads them.</p>
+      <button class="begin-btn" id="beginBtn">open the vault</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <div class="vault" id="vault">
+      <div class="vault-empty" id="vaultEmpty">
+        <p>The vault is empty.</p>
+        <p class="vault-empty-sub">Tap + to seal your first secret.</p>
+      </div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="add a secret">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is something true that you cannot say out loud?</p>
+        <textarea class="write-input" id="writeInput" rows="4" maxlength="400" placeholder="The truth is..."></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">seal it</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="secret-detail hidden" id="secretDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-seal"></div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Rahasya">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Rahasya</h2>
+      <p>Rahasya means secret &mdash; not the kind you keep from others to deceive, but the kind you keep because the truth is still too raw, too fragile, too yours.</p>
+      <p>&ldquo;I miss who I used to be.&rdquo; &ldquo;I&rsquo;m afraid I&rsquo;m not enough.&rdquo; &ldquo;I love someone who doesn&rsquo;t know.&rdquo;</p>
+      <p>Writing a secret down does not betray it. It gives it a safe place to breathe. And sometimes, just writing it is enough to set it free.</p>
+      <p class="about-note">Your secrets are saved only on this device. No one can see them but you.</p>
+    </div>
+  </div>
+
+  <script src="rahasya.js"></script>
+</body>
+</html>

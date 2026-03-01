@@ -466,6 +466,14 @@ body {
 .card-bodhi::before { background: #d0a030; }
 .card-bodhi .card-enter { color: #d0a030; }
 
+.card-rahasya:hover { border-color: #c08870; }
+.card-rahasya::before { background: #c08870; }
+.card-rahasya .card-enter { color: #c08870; }
+
+.card-prashna:hover { border-color: #50b0a0; }
+.card-prashna::before { background: #50b0a0; }
+.card-prashna .card-enter { color: #50b0a0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashna — the question</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x094D;&#x0930;&#x0936;&#x094D;&#x0928;</div>
+      <h1 class="title">Prashna</h1>
+      <p class="subtitle">the question</p>
+      <p class="intro">The best questions are the ones<br>without easy answers.<br>Keep asking.</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <div class="questions" id="questions">
+      <div class="questions-empty" id="questionsEmpty">
+        <p>No questions yet.</p>
+        <p class="questions-empty-sub">Tap + when something makes you wonder.</p>
+      </div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="ask a question">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What are you wondering about?</p>
+        <textarea class="write-input" id="writeInput" rows="3" maxlength="300" placeholder="Why do...? What if...? How does...?"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">ask</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="question-detail hidden" id="questionDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-mark" id="detailMark">?</div>
+        <p class="detail-text" id="detailText"></p>
+        <div class="detail-insight-wrap" id="detailInsightWrap">
+          <p class="detail-insight-label">your insight so far:</p>
+          <p class="detail-insight" id="detailInsight"></p>
+        </div>
+        <p class="detail-date" id="detailDate"></p>
+        <div class="detail-actions">
+          <button class="detail-add-insight" id="detailAddInsight">add insight</button>
+          <button class="detail-resolve" id="detailResolve">mark as understood</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- insight view -->
+    <div class="insight-view hidden" id="insightView">
+      <div class="write-card">
+        <p class="write-prompt">What have you learned or noticed about this question?</p>
+        <textarea class="write-input" id="insightInput" rows="3" maxlength="300" placeholder="I think maybe..."></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="insightCancel">back</button>
+          <button class="write-save" id="insightSave">save insight</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Prashna">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Prashna</h2>
+      <p>Prashna means question. In ancient Indian philosophy, the right question was considered more valuable than any answer.</p>
+      <p>This is a journal for the questions that keep you up at night. &ldquo;Why do people change?&rdquo; &ldquo;What makes something beautiful?&rdquo; &ldquo;Is it possible to truly know someone?&rdquo;</p>
+      <p>Some questions you will answer over time. Add your insights as they come. Others will stay open forever &mdash; and those are often the most important ones.</p>
+      <p class="about-note">Your questions are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="prashna.js"></script>
+</body>
+</html>

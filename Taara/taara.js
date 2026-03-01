@@ -97,7 +97,9 @@
         ['Jugnu', 'Jugnu', 'the firefly jar'],
         ['Sapna', 'Sapna', 'the dream journal'],
         ['Kalpana', 'Kalpan\u0101', 'the imagination'],
-        ['Bodhi', 'Bodhi', 'the awakening']
+        ['Bodhi', 'Bodhi', 'the awakening'],
+        ['Rahasya', 'Rahasya', 'the secret'],
+        ['Prashna', 'Prashna', 'the question']
       ]
     }
   ];
