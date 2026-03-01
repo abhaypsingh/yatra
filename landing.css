@@ -474,6 +474,14 @@ body {
 .card-prashna::before { background: #50b0a0; }
 .card-prashna .card-enter { color: #50b0a0; }
 
+.card-chitta:hover { border-color: #a090c0; }
+.card-chitta::before { background: #a090c0; }
+.card-chitta .card-enter { color: #a090c0; }
+
+.card-udaan:hover { border-color: #6898d0; }
+.card-udaan::before { background: #6898d0; }
+.card-udaan .card-enter { color: #6898d0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

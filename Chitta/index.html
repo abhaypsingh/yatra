@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitta — the mind-canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0924;&#x094D;&#x0924;</div>
+      <h1 class="title">Chitta</h1>
+      <p class="subtitle">the mind-canvas</p>
+      <p class="intro">One word. One color. That&rsquo;s all.<br>How do you feel today?<br>Over time, a painting emerges.</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- mosaic -->
+    <div class="mosaic-wrap">
+      <div class="mosaic" id="mosaic"></div>
+      <p class="mosaic-count" id="mosaicCount"></p>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="add today's tile">+</button>
+
+    <!-- add view -->
+    <div class="add-view hidden" id="addView">
+      <div class="add-card">
+        <p class="add-prompt">Pick a color for how you feel:</p>
+        <div class="color-grid" id="colorGrid">
+          <button class="color-btn" data-color="#f0c840" style="background:#f0c840" aria-label="joy"></button>
+          <button class="color-btn" data-color="#48a8c8" style="background:#48a8c8" aria-label="calm"></button>
+          <button class="color-btn" data-color="#e87848" style="background:#e87848" aria-label="energy"></button>
+          <button class="color-btn" data-color="#4860a8" style="background:#4860a8" aria-label="sadness"></button>
+          <button class="color-btn" data-color="#d05878" style="background:#d05878" aria-label="love"></button>
+          <button class="color-btn" data-color="#58b878" style="background:#58b878" aria-label="peace"></button>
+          <button class="color-btn" data-color="#9868b0" style="background:#9868b0" aria-label="confusion"></button>
+          <button class="color-btn" data-color="#c84040" style="background:#c84040" aria-label="anger"></button>
+        </div>
+        <p class="add-word-label">Now, one word:</p>
+        <input class="add-word" id="addWord" type="text" maxlength="20" placeholder="tired, alive, electric, lost...">
+        <div class="add-actions">
+          <button class="add-cancel" id="addCancel">back</button>
+          <button class="add-save" id="addSave">place tile</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- tile detail -->
+    <div class="tile-detail hidden" id="tileDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-swatch" id="detailSwatch"></div>
+        <p class="detail-word" id="detailWord"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Chitta">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Chitta</h2>
+      <p>Chitta is the Sanskrit word for consciousness &mdash; the canvas on which all your thoughts, moods, and feelings appear.</p>
+      <p>This is the simplest experience in the entire journey. One color. One word. No explanation needed. Over days and weeks, your tiles build into something beautiful &mdash; an abstract painting of your inner weather.</p>
+      <p>There are no wrong colors and no wrong words. Whatever you feel is real, and it belongs here.</p>
+      <p class="about-note">Your tiles are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chitta.js"></script>
+</body>
+</html>

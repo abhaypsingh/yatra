@@ -99,7 +99,9 @@
         ['Kalpana', 'Kalpan\u0101', 'the imagination'],
         ['Bodhi', 'Bodhi', 'the awakening'],
         ['Rahasya', 'Rahasya', 'the secret'],
-        ['Prashna', 'Prashna', 'the question']
+        ['Prashna', 'Prashna', 'the question'],
+        ['Chitta', 'Chitta', 'the mind-canvas'],
+        ['Udaan', 'Ud\u0101n', 'the flight']
       ]
     }
   ];

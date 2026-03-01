@@ -100,7 +100,9 @@
         ['Kalpana', 'Kalpan\u0101', 'the imagination'],
         ['Bodhi', 'Bodhi', 'the awakening'],
         ['Rahasya', 'Rahasya', 'the secret'],
-        ['Prashna', 'Prashna', 'the question']
+        ['Prashna', 'Prashna', 'the question'],
+        ['Chitta', 'Chitta', 'the mind-canvas'],
+        ['Udaan', 'Ud\u0101n', 'the flight']
       ]
     }
   ];
@@ -167,7 +169,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 64 experiences';
+    sub.textContent = 'the journey \u2014 66 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

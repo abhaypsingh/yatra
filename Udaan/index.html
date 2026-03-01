@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ud&#x101;n — the flight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x0921;&#x093C;&#x093E;&#x0928;</div>
+      <h1 class="title">Ud&#x101;n</h1>
+      <p class="subtitle">the flight</p>
+      <p class="intro">What do you want to do, become, or try?<br>Each dream starts on a wire.<br>When it&rsquo;s done, it flies.</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- on the wire -->
+    <div class="section-block" id="wireSection">
+      <h2 class="section-title">on the wire</h2>
+      <div class="wire"></div>
+      <div class="goal-list" id="wireList">
+        <p class="list-empty" id="wireEmpty">No dreams yet. Tap + to add one.</p>
+      </div>
+    </div>
+
+    <!-- in flight -->
+    <div class="section-block" id="flightSection">
+      <h2 class="section-title">in flight</h2>
+      <div class="goal-list" id="flightList">
+        <p class="list-empty" id="flightEmpty">Nothing has taken flight yet.</p>
+      </div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="add a dream">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What do you want to do, become, or try?</p>
+        <textarea class="write-input" id="writeInput" rows="2" maxlength="200" placeholder="Learn to cook one perfect meal..."></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">place on wire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="goal-detail hidden" id="goalDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-icon" id="detailIcon"></div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+        <div class="detail-actions" id="detailActions">
+          <button class="detail-fly" id="detailFly">set free</button>
+          <button class="detail-ground" id="detailGround">back to wire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Ud&#x101;n">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Ud&#x101;n</h2>
+      <p>Ud&#x101;n means flight &mdash; the act of rising. In Hindi, it carries the sense of a dream taking wing.</p>
+      <p>Write down what you want to do, become, or try. It can be huge (&ldquo;travel the world&rdquo;) or small (&ldquo;wake up early for a week&rdquo;). Both matter equally.</p>
+      <p>When you achieve a dream, set it free. Watch it move from the wire to the sky. Over time, your sky fills &mdash; and you see just how much you&rsquo;re capable of.</p>
+      <p class="about-note">Your dreams are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="udaan.js"></script>
+</body>
+</html>
