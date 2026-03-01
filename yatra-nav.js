@@ -94,7 +94,9 @@
         ['Kavya', 'K\u0101vya', 'the poem within'],
         ['Rangoli', 'Rangoli', 'sacred patterns'],
         ['Chaaya', 'Ch\u0101y\u0101', 'the shadow'],
-        ['Sutra', 'S\u016Btra', 'the thread']
+        ['Sutra', 'S\u016Btra', 'the thread'],
+        ['Jugnu', 'Jugnu', 'the firefly jar'],
+        ['Sapna', 'Sapna', 'the dream journal']
       ]
     }
   ];
@@ -161,7 +163,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 58 experiences';
+    sub.textContent = 'the journey \u2014 60 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

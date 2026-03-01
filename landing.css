@@ -450,6 +450,14 @@ body {
 .card-sutra::before { background: #b88850; }
 .card-sutra .card-enter { color: #b88850; }
 
+.card-jugnu:hover { border-color: #b8e040; }
+.card-jugnu::before { background: #b8e040; }
+.card-jugnu .card-enter { color: #b8e040; }
+
+.card-sapna:hover { border-color: #8878c8; }
+.card-sapna::before { background: #8878c8; }
+.card-sapna .card-enter { color: #8878c8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapna — the dream journal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x092A;&#x0928;&#x093E;</div>
+      <h1 class="title">Sapna</h1>
+      <p class="subtitle">the dream journal</p>
+      <p class="intro">Your sleeping mind paints worlds.<br>Some dreams whisper, some dreams shout.<br>All of them are yours.</p>
+      <button class="begin-btn" id="beginBtn">enter the dreamscape</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- dream gallery -->
+    <div class="dream-sky" id="dreamSky">
+      <div class="dream-empty" id="dreamEmpty">
+        <p>No dreams recorded yet.</p>
+        <p class="dream-empty-sub">Tap + to capture a dream before it fades.</p>
+      </div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="record a dream">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you dream?</p>
+        <textarea class="write-input" id="writeInput" rows="5" maxlength="500" placeholder="I was flying over a city made of glass..."></textarea>
+        <div class="mood-select">
+          <p class="mood-label">How did it feel?</p>
+          <div class="mood-options" id="moodOptions">
+            <button class="mood-btn" data-mood="vivid">vivid</button>
+            <button class="mood-btn" data-mood="peaceful">peaceful</button>
+            <button class="mood-btn" data-mood="strange">strange</button>
+            <button class="mood-btn" data-mood="funny">funny</button>
+            <button class="mood-btn" data-mood="scary">scary</button>
+            <button class="mood-btn" data-mood="recurring">recurring</button>
+          </div>
+        </div>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">save dream</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- expanded dream -->
+    <div class="dream-detail hidden" id="dreamDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-mood" id="detailMood"></div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Sapna">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Sapna</h2>
+      <p>In Hindi, sapna means &ldquo;dream&rdquo; &mdash; both the sleeping kind and the waking kind. This space is for the first.</p>
+      <p>Dreams are strange, beautiful, sometimes frightening messengers. They remix your day, your fears, your hopes into stories only you can tell.</p>
+      <p>Write them down before they fade. Over time, you may notice patterns &mdash; recurring places, feelings, people. Your dreaming mind knows things your waking mind forgets.</p>
+      <p class="about-note">Your dreams are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="sapna.js"></script>
+</body>
+</html>

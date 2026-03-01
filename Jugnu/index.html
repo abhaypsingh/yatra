@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jugnu — the firefly jar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x0941;&#x0917;&#x0928;&#x0942;</div>
+      <h1 class="title">Jugnu</h1>
+      <p class="subtitle">the firefly jar</p>
+      <p class="intro">Even in darkness, you carry light.<br>Each gratitude is a firefly &mdash;<br>small, but it glows.</p>
+      <button class="begin-btn" id="beginBtn">open the jar</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <div class="jar-wrap">
+      <div class="jar">
+        <div class="jar-lid"></div>
+        <div class="jar-glass">
+          <div class="jar-fireflies" id="jarFireflies"></div>
+        </div>
+      </div>
+      <div class="jar-stats" id="jarStats"></div>
+    </div>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn" aria-label="add a firefly">+</button>
+
+    <!-- add form -->
+    <div class="add-form hidden" id="addForm">
+      <div class="add-card">
+        <p class="add-prompt">What is one small thing you're grateful for right now?</p>
+        <textarea class="add-input" id="addInput" rows="3" maxlength="200" placeholder="a warm blanket, a friend's laugh, the smell of rain..."></textarea>
+        <div class="add-actions">
+          <button class="add-cancel" id="addCancel">back</button>
+          <button class="add-save" id="addSave">release firefly</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- expanded firefly detail -->
+    <div class="firefly-detail hidden" id="fireflyDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Jugnu">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Jugnu</h2>
+      <p>The firefly &mdash; jugnu &mdash; is a tiny creature that carries its own light. In Hindi, calling someone &ldquo;jugnu&rdquo; means they bring brightness wherever they go.</p>
+      <p>This jar holds your gratitudes. Each one is small &mdash; maybe just a sentence &mdash; but together they glow.</p>
+      <p>On hard days, come back and watch your fireflies. You have always had light inside you.</p>
+      <p class="about-note">Your fireflies are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="jugnu.js"></script>
+</body>
+</html>

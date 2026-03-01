@@ -93,7 +93,9 @@
         ['Kavya', 'K\u0101vya', 'the poem within'],
         ['Rangoli', 'Rangoli', 'sacred patterns'],
         ['Chaaya', 'Ch\u0101y\u0101', 'the shadow'],
-        ['Sutra', 'S\u016Btra', 'the thread']
+        ['Sutra', 'S\u016Btra', 'the thread'],
+        ['Jugnu', 'Jugnu', 'the firefly jar'],
+        ['Sapna', 'Sapna', 'the dream journal']
       ]
     }
   ];
