@@ -101,7 +101,9 @@
         ['Rahasya', 'Rahasya', 'the secret'],
         ['Prashna', 'Prashna', 'the question'],
         ['Chitta', 'Chitta', 'the mind-canvas'],
-        ['Udaan', 'Ud\u0101n', 'the flight']
+        ['Udaan', 'Ud\u0101n', 'the flight'],
+        ['Hasya', 'Hasya', 'the laugh'],
+        ['Ghar', 'Ghar', 'home']
       ]
     }
   ];

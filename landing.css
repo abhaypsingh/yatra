@@ -482,6 +482,14 @@ body {
 .card-udaan::before { background: #6898d0; }
 .card-udaan .card-enter { color: #6898d0; }
 
+.card-hasya:hover { border-color: #e89040; }
+.card-hasya::before { background: #e89040; }
+.card-hasya .card-enter { color: #e89040; }
+
+.card-ghar:hover { border-color: #c07848; }
+.card-ghar::before { background: #c07848; }
+.card-ghar .card-enter { color: #c07848; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

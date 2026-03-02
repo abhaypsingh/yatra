@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasya — the laugh</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093E;&#x0938;&#x094D;&#x092F;</div>
+      <h1 class="title">Hasya</h1>
+      <p class="subtitle">the laugh</p>
+      <p class="intro">Laughter is revolution against sadness.<br>Record what makes you laugh &mdash;<br>the absurd, the punny, the ridiculous.</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <div class="laughs" id="laughs">
+      <div class="laughs-empty" id="laughsEmpty">
+        <p>No laughs yet.</p>
+        <p class="laughs-empty-sub">Tap + when something makes you smile.</p>
+      </div>
+    </div>
+
+    <button class="add-btn" id="addBtn" aria-label="add a laugh">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What made you laugh?</p>
+        <textarea class="write-input" id="writeInput" rows="3" maxlength="300" placeholder="My friend tried to wink and blinked with both eyes..."></textarea>
+        <div class="tag-select">
+          <p class="tag-label">What kind?</p>
+          <div class="tag-options" id="tagOptions">
+            <button class="tag-btn" data-tag="moment">moment</button>
+            <button class="tag-btn" data-tag="joke">joke</button>
+            <button class="tag-btn" data-tag="person">person</button>
+            <button class="tag-btn" data-tag="absurd">absurd</button>
+            <button class="tag-btn" data-tag="pun">pun</button>
+          </div>
+        </div>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">save laugh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div class="laugh-detail hidden" id="laughDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <div class="detail-tag" id="detailTag"></div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Hasya">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Hasya</h2>
+      <p>Hasya is one of the nine rasas &mdash; the essential emotion of humor and joy. In classical Indian aesthetics, it is considered sacred.</p>
+      <p>This is a journal for the things that make you laugh. A friend&rsquo;s terrible pun. A cat falling off a table. The time you said something so wrong it became legendary.</p>
+      <p>On hard days, come back here. Read your laughs. Remember: if you can laugh, you can survive anything.</p>
+      <p class="about-note">Your laughs are saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="hasya.js"></script>
+</body>
+</html>

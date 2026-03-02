@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghar — home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- opening -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0918;&#x0930;</div>
+      <h1 class="title">Ghar</h1>
+      <p class="subtitle">home</p>
+      <p class="intro">Home is not the building.<br>It&rsquo;s the feeling.<br>What does yours feel like?</p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main hidden" id="main">
+    <!-- sense prompts -->
+    <div class="senses" id="senses">
+      <button class="sense-btn" data-sense="sound">
+        <span class="sense-icon">&#x1F442;</span>
+        <span class="sense-label">sound</span>
+      </button>
+      <button class="sense-btn" data-sense="smell">
+        <span class="sense-icon">&#x1F490;</span>
+        <span class="sense-label">smell</span>
+      </button>
+      <button class="sense-btn" data-sense="sight">
+        <span class="sense-icon">&#x1F441;</span>
+        <span class="sense-label">sight</span>
+      </button>
+      <button class="sense-btn" data-sense="touch">
+        <span class="sense-icon">&#x270B;</span>
+        <span class="sense-label">touch</span>
+      </button>
+      <button class="sense-btn" data-sense="taste">
+        <span class="sense-icon">&#x2615;</span>
+        <span class="sense-label">taste</span>
+      </button>
+    </div>
+
+    <!-- memories -->
+    <div class="memories-wrap">
+      <h2 class="mem-title">pieces of home</h2>
+      <div class="memories" id="memories">
+        <p class="mem-empty" id="memEmpty">Choose a sense above, or tap + for a free memory.</p>
+      </div>
+    </div>
+
+    <button class="add-btn" id="addBtn" aria-label="add a home memory">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt" id="writePrompt">What does home feel like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" maxlength="300" placeholder="The sound of chai being poured..."></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div class="mem-detail hidden" id="memDetail">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&#x2715;</button>
+        <p class="detail-sense" id="detailSense"></p>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <div class="nav-float hidden" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about Ghar">?</button>
+  </div>
+
+  <!-- about -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&#x2715;</button>
+      <h2>Ghar</h2>
+      <p>Ghar means home &mdash; not the address, but the feeling. The sound of a particular door closing. The smell of a kitchen at 6pm. The corner where you sit when you&rsquo;re sad.</p>
+      <p>Build a sensory portrait of home. Write what you hear, smell, see, touch, taste. Add free memories &mdash; objects, corners, moments, people.</p>
+      <p>Wherever you go in life, this portrait travels with you. Home is not a place you leave. It&rsquo;s a feeling you carry.</p>
+      <p class="about-note">Your portrait is saved only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ghar.js"></script>
+</body>
+</html>
