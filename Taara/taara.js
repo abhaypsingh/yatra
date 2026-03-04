@@ -103,7 +103,9 @@
         ['Chitta', 'Chitta', 'the mind-canvas'],
         ['Udaan', 'Ud\u0101n', 'the flight'],
         ['Hasya', 'Hasya', 'the laugh'],
-        ['Ghar', 'Ghar', 'home']
+        ['Ghar', 'Ghar', 'home'],
+        ['Ankur', 'Ankur', 'the sprout'],
+        ['Shloka', 'Shloka', 'the verse']
       ]
     }
   ];

@@ -104,7 +104,9 @@
         ['Chitta', 'Chitta', 'the mind-canvas'],
         ['Udaan', 'Ud\u0101n', 'the flight'],
         ['Hasya', 'Hasya', 'the laugh'],
-        ['Ghar', 'Ghar', 'home']
+        ['Ghar', 'Ghar', 'home'],
+        ['Ankur', 'Ankur', 'the sprout'],
+        ['Shloka', 'Shloka', 'the verse']
       ]
     }
   ];
@@ -171,7 +173,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 68 experiences';
+    sub.textContent = 'the journey \u2014 70 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

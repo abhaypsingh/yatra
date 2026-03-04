@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shloka — the verse</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">श्लोक</div>
+      <h1 class="title">Shloka</h1>
+      <p class="subtitle">the verse</p>
+      <p class="intro">
+        Some words find you and never leave.
+        Gather the lines that moved you — from books, songs,
+        conversations, anywhere.
+      </p>
+      <button class="begin-btn" id="beginBtn">gather</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="verses" id="verses"></div>
+    <p class="verses-empty" id="versesEmpty">
+      No verses yet. Tap + to save words that moved you.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What are the words?</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="the words that found you…"></textarea>
+        <p class="write-source-label">Where did you find them?</p>
+        <input class="write-source" id="writeSource" type="text" placeholder="a book, a song, a person… (optional)">
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-mark">&ldquo;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-source" id="detailSource"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Shloka</h2>
+      <p>
+        A shloka is a verse — a couplet of meaning passed down through time.
+      </p>
+      <p>
+        This is your personal anthology. Collect the lines that stopped you
+        mid-breath — from a novel, a lyric, something your grandmother said,
+        a sentence overheard on a bus.
+      </p>
+      <p>
+        Words have a way of finding the people who need them.
+      </p>
+      <p class="about-note">Your collection is stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="shloka.js"></script>
+</body>
+</html>

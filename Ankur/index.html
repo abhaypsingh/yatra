@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankur — the sprout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">अंकुर</div>
+      <h1 class="title">Ankur</h1>
+      <p class="subtitle">the sprout</p>
+      <p class="intro">
+        Every new thing you try begins as a tiny seed.
+        Plant your firsts here and watch them grow.
+      </p>
+      <button class="begin-btn" id="beginBtn">plant</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="garden" id="garden"></div>
+    <p class="garden-empty" id="gardenEmpty">
+      No seeds yet. Tap + to plant your first beginning.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- plant view -->
+    <div class="plant-view hidden" id="plantView">
+      <div class="plant-card">
+        <p class="plant-prompt" id="plantPrompt">What are you trying for the first time?</p>
+        <textarea class="plant-input" id="plantInput" rows="3" placeholder="my first…"></textarea>
+        <div class="plant-actions">
+          <button class="plant-cancel" id="plantCancel">back</button>
+          <button class="plant-save" id="plantSave">plant</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- water view (add update) -->
+    <div class="water-view hidden" id="waterView">
+      <div class="water-card">
+        <p class="water-title" id="waterTitle"></p>
+        <p class="water-stage" id="waterStage"></p>
+        <div class="water-updates" id="waterUpdates"></div>
+        <textarea class="water-input" id="waterInput" rows="2" placeholder="how is it growing?"></textarea>
+        <div class="water-actions">
+          <button class="water-close" id="waterClose">close</button>
+          <button class="water-save" id="waterSave">water</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ankur</h2>
+      <p>
+        Every expert was once a beginner. Every tree was once a seed.
+      </p>
+      <p>
+        Plant the things you are trying for the first time.
+        Come back and water them with updates.
+        Watch them grow from seed to sprout to sapling to bloom.
+      </p>
+      <p class="about-note">Your garden is stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ankur.js"></script>
+</body>
+</html>

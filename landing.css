@@ -490,6 +490,14 @@ body {
 .card-ghar::before { background: #c07848; }
 .card-ghar .card-enter { color: #c07848; }
 
+.card-ankur:hover { border-color: #68b848; }
+.card-ankur::before { background: #68b848; }
+.card-ankur .card-enter { color: #68b848; }
+
+.card-shloka:hover { border-color: #c8a050; }
+.card-shloka::before { background: #c8a050; }
+.card-shloka .card-enter { color: #c8a050; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
