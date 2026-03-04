@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niti — the rule you live by</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">नीति</div>
+      <h1 class="title">Niti</h1>
+      <p class="subtitle">the rule you live by</p>
+      <p class="intro">
+        Everyone has rules they didn&rsquo;t learn in a classroom.
+        Rules you made for yourself after something happened.
+        Write them down. They are your personal code.
+      </p>
+      <button class="begin-btn" id="beginBtn">write</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="rules" id="rules"></div>
+    <p class="rules-empty" id="rulesEmpty">
+      No rules yet. Tap + to write a rule you live by.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is a rule you live by?</p>
+        <textarea class="write-input" id="writeInput" rows="2" placeholder="the rule, in your own words…"></textarea>
+        <p class="write-prompt-2">Where did it come from?</p>
+        <textarea class="write-origin" id="writeOrigin" rows="2" placeholder="what happened that made you believe this… (optional)"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carve</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-num" id="detailNum"></div>
+        <p class="detail-rule" id="detailRule"></p>
+        <p class="detail-origin" id="detailOrigin"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Niti</h2>
+      <p>
+        <em>Niti</em> means policy, principle, a personal rule of conduct.
+        Not the rules adults give you &mdash; the rules you give yourself.
+      </p>
+      <p>
+        &ldquo;Never make fun of someone for trying.&rdquo;
+        &ldquo;If someone eats alone, sit with them.&rdquo;
+        &ldquo;Say the hard thing before it gets harder.&rdquo;
+      </p>
+      <p>
+        These come from experience. Something happened, and you decided:
+        <em>I will always</em> or <em>I will never</em>. That is your niti.
+        Write it in stone.
+      </p>
+      <p class="about-note">Your rules are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="niti.js"></script>
+</body>
+</html>

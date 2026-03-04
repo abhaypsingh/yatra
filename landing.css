@@ -522,6 +522,14 @@ body {
 .card-chhap::before { background: #b85848; }
 .card-chhap .card-enter { color: #b85848; }
 
+.card-niti:hover { border-color: #8898a8; }
+.card-niti::before { background: #8898a8; }
+.card-niti .card-enter { color: #8898a8; }
+
+.card-pratidaan:hover { border-color: #d0a040; }
+.card-pratidaan::before { background: #d0a040; }
+.card-pratidaan .card-enter { color: #d0a040; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

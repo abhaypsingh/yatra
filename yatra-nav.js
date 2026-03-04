@@ -112,7 +112,9 @@
         ['Parva', 'Parva', 'the chapter'],
         ['Sahaj', 'Sahaj', 'the natural'],
         ['Samvad', 'Samv\u0101d', 'the conversation'],
-        ['Chhap', 'Chhap', 'the imprint']
+        ['Chhap', 'Chhap', 'the imprint'],
+        ['Niti', 'Niti', 'the rule you live by'],
+        ['Pratidaan', 'Pratid\u0101n', 'the gift returned']
       ]
     }
   ];
@@ -179,7 +181,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 76 experiences';
+    sub.textContent = 'the journey \u2014 78 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

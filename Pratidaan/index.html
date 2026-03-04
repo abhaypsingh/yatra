@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratidaan — the gift returned</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">प्रतिदान</div>
+      <h1 class="title">Pratid&#x0101;n</h1>
+      <p class="subtitle">the gift returned</p>
+      <p class="intro">
+        Every day, someone gives you something without asking.
+        What can you give back?
+        Not tomorrow. Today.
+      </p>
+      <button class="begin-btn" id="beginBtn">give</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <p class="streak" id="streak"></p>
+
+    <div class="gifts" id="gifts"></div>
+    <p class="gifts-empty" id="giftsEmpty">
+      No gifts given yet. Tap + to record something you gave back today.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you give today?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="a compliment, your time, patience, a smile, help with something…"></textarea>
+        <p class="write-prompt-2">Who was it for?</p>
+        <input class="write-for" id="writeFor" type="text" placeholder="a name, or just 'someone'… (optional)">
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">give</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-icon">&#x2764;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-for" id="detailFor"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pratid&#x0101;n</h2>
+      <p>
+        <em>Pratid&#x0101;n</em> means a return gift &mdash; something given back
+        out of love, not obligation.
+      </p>
+      <p>
+        You receive so much every day without noticing.
+        This is a practice of giving something back &mdash; small things.
+        A compliment you meant. Helping without being asked.
+        Listening when someone needed it. Making someone laugh.
+        Choosing patience when you could have chosen anger.
+      </p>
+      <p>
+        The gift doesn&rsquo;t have to be big. It just has to be real.
+      </p>
+      <p class="about-note">Your gifts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pratidaan.js"></script>
+</body>
+</html>

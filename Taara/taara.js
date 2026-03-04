@@ -111,7 +111,9 @@
         ['Parva', 'Parva', 'the chapter'],
         ['Sahaj', 'Sahaj', 'the natural'],
         ['Samvad', 'Samv\u0101d', 'the conversation'],
-        ['Chhap', 'Chhap', 'the imprint']
+        ['Chhap', 'Chhap', 'the imprint'],
+        ['Niti', 'Niti', 'the rule you live by'],
+        ['Pratidaan', 'Pratid\u0101n', 'the gift returned']
       ]
     }
   ];
