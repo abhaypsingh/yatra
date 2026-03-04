@@ -109,7 +109,9 @@
         ['Rina', 'Rina', 'the debt of love'],
         ['Vismaya', 'Vismaya', 'wonder'],
         ['Parva', 'Parva', 'the chapter'],
-        ['Sahaj', 'Sahaj', 'the natural']
+        ['Sahaj', 'Sahaj', 'the natural'],
+        ['Samvad', 'Samv\u0101d', 'the conversation'],
+        ['Chhap', 'Chhap', 'the imprint']
       ]
     }
   ];

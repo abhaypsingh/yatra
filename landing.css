@@ -514,6 +514,14 @@ body {
 .card-sahaj::before { background: #88b870; }
 .card-sahaj .card-enter { color: #88b870; }
 
+.card-samvad:hover { border-color: #c89060; }
+.card-samvad::before { background: #c89060; }
+.card-samvad .card-enter { color: #c89060; }
+
+.card-chhap:hover { border-color: #b85848; }
+.card-chhap::before { background: #b85848; }
+.card-chhap .card-enter { color: #b85848; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

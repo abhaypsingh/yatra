@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samvad — the conversation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">संवाद</div>
+      <h1 class="title">Samvad</h1>
+      <p class="subtitle">the conversation</p>
+      <p class="intro">
+        Some conversations change something inside you.
+        You may not realize it until later.
+        Keep them here, so you don&rsquo;t forget.
+      </p>
+      <button class="begin-btn" id="beginBtn">remember</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="convos" id="convos"></div>
+    <p class="convos-empty" id="convosEmpty">
+      No conversations yet. Tap + to capture one that mattered.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Who were you talking with?</p>
+        <input class="write-who" id="writeWho" type="text" placeholder="a name, a relationship…">
+        <p class="write-prompt-2">What did they say — or what did you say?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the words, or the gist of them…"></textarea>
+        <p class="write-prompt-2">Why did it matter?</p>
+        <textarea class="write-why" id="writeWhy" rows="2" placeholder="what it changed or unlocked… (optional)"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <p class="detail-who" id="detailWho"></p>
+        <div class="detail-quote">
+          <span class="detail-mark">&ldquo;</span>
+          <p class="detail-words" id="detailWords"></p>
+        </div>
+        <p class="detail-why" id="detailWhy"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Samvad</h2>
+      <p>
+        <em>Samvad</em> means dialogue — the meeting of two voices.
+      </p>
+      <p>
+        Most of what shapes us doesn&rsquo;t happen in books or classrooms.
+        It happens in conversations. A question your father asked at dinner.
+        Something a friend said on a walk home.
+        An argument that hurt but taught you something you needed to learn.
+      </p>
+      <p>
+        You don&rsquo;t need to remember every word.
+        Just the ones that mattered.
+      </p>
+      <p class="about-note">Your conversations are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="samvad.js"></script>
+</body>
+</html>

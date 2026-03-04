@@ -110,7 +110,9 @@
         ['Rina', 'Rina', 'the debt of love'],
         ['Vismaya', 'Vismaya', 'wonder'],
         ['Parva', 'Parva', 'the chapter'],
-        ['Sahaj', 'Sahaj', 'the natural']
+        ['Sahaj', 'Sahaj', 'the natural'],
+        ['Samvad', 'Samv\u0101d', 'the conversation'],
+        ['Chhap', 'Chhap', 'the imprint']
       ]
     }
   ];
@@ -177,7 +179,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 74 experiences';
+    sub.textContent = 'the journey \u2014 76 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 
