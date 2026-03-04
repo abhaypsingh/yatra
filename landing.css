@@ -530,6 +530,14 @@ body {
 .card-pratidaan::before { background: #d0a040; }
 .card-pratidaan .card-enter { color: #d0a040; }
 
+.card-pariksha:hover { border-color: #b89048; }
+.card-pariksha::before { background: #b89048; }
+.card-pariksha .card-enter { color: #b89048; }
+
+.card-sthan:hover { border-color: #c8a060; }
+.card-sthan::before { background: #c8a060; }
+.card-sthan .card-enter { color: #c8a060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

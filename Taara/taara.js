@@ -113,7 +113,9 @@
         ['Samvad', 'Samv\u0101d', 'the conversation'],
         ['Chhap', 'Chhap', 'the imprint'],
         ['Niti', 'Niti', 'the rule you live by'],
-        ['Pratidaan', 'Pratid\u0101n', 'the gift returned']
+        ['Pratidaan', 'Pratid\u0101n', 'the gift returned'],
+        ['Pariksha', 'Par\u012Bksh\u0101', 'the real test'],
+        ['Sthan', 'Sth\u0101n', 'the place']
       ]
     }
   ];

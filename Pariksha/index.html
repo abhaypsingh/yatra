@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pariksha — the real test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">परीक्षा</div>
+      <h1 class="title">Par&#x012B;ksh&#x0101;</h1>
+      <p class="subtitle">the real test</p>
+      <p class="intro">
+        The real tests don&rsquo;t happen in classrooms.
+        They happen when no one is watching.
+        When you choose between what is easy and what is right.
+      </p>
+      <button class="begin-btn" id="beginBtn">face it</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="tests" id="tests"></div>
+    <p class="tests-empty" id="testsEmpty">
+      No tests recorded yet. Tap + to remember a moment that tested you.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What was the test?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the moment where you had to choose…"></textarea>
+        <p class="write-prompt-2">What did you choose?</p>
+        <textarea class="write-choice" id="writeChoice" rows="2" placeholder="what you did — and why…"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">record</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <p class="detail-label">the test</p>
+        <p class="detail-test" id="detailTest"></p>
+        <p class="detail-label-2">the choice</p>
+        <p class="detail-choice" id="detailChoice"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Par&#x012B;ksh&#x0101;</h2>
+      <p>
+        <em>Par&#x012B;ksh&#x0101;</em> means test, trial, examination.
+        But the tests that matter most have no grade and no teacher.
+      </p>
+      <p>
+        You could have lied, but you told the truth.
+        You could have stayed silent, but you spoke up.
+        You could have followed the crowd, but you walked away.
+        You could have been cruel, but you chose kindness.
+      </p>
+      <p>
+        These are the tests that build who you are.
+        Record them. Not to boast &mdash; to remember what you&rsquo;re made of.
+      </p>
+      <p class="about-note">Your tests are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pariksha.js"></script>
+</body>
+</html>
