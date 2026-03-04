@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ṛtu — the season within</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">ऋतु</div>
+      <h1 class="title">Ṛtu</h1>
+      <p class="subtitle">the season within</p>
+      <p class="intro">
+        Your heart has seasons too — times of blossoming, times of warmth,
+        times of letting go, and times of quiet rest.<br><br>
+        Name the season you are in right now.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <div class="entries" id="entries"></div>
+    <p class="entries-empty" id="entriesEmpty">
+      What season is your heart in today?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">What season are you in?</p>
+      <div class="season-picker" id="seasonPicker">
+        <button class="season-btn" data-season="spring" type="button">&#x1F331;<span>Spring</span></button>
+        <button class="season-btn" data-season="summer" type="button">&#x2600;&#xFE0F;<span>Summer</span></button>
+        <button class="season-btn" data-season="autumn" type="button">&#x1F342;<span>Autumn</span></button>
+        <button class="season-btn" data-season="winter" type="button">&#x2744;&#xFE0F;<span>Winter</span></button>
+      </div>
+      <p class="write-prompt-2">Why does it feel this way?</p>
+      <textarea class="write-input" id="writeInput" rows="4" placeholder="describe your inner weather&#8230;"></textarea>
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DETAIL ========== -->
+  <div class="detail-view hidden" id="detailView">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-icon" id="detailIcon"></div>
+      <div class="detail-season" id="detailSeason"></div>
+      <p class="detail-text" id="detailText"></p>
+      <p class="detail-date" id="detailDate"></p>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E5A;tu</h2>
+      <p>
+        Just as the earth moves through seasons, so does your heart. Sometimes
+        you are growing and blooming. Sometimes you are resting and still.
+      </p>
+      <p>
+        There is no wrong season to be in. Each one carries its own <em>gift</em>.
+        Spring brings new beginnings. Summer brings fullness. Autumn teaches
+        letting go. Winter offers deep rest.
+      </p>
+      <p>
+        Track your inner seasons here. Over time you will see &mdash; you are always
+        changing, and that is exactly right.
+      </p>
+      <p class="about-note">Your seasons are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ritu.js"></script>
+</body>
+</html>

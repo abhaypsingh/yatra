@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icch&#x0101; — the wish</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x091A;&#x094D;&#x091B;&#x093E;</div>
+      <h1 class="title">Icch&#x0101;</h1>
+      <p class="subtitle">the wish</p>
+      <p class="intro">
+        Some wishes are loud and some are quiet. Some come true and
+        some simply change shape.<br><br>
+        Drop your wishes here, like stones into a well.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <div class="wishes" id="wishes"></div>
+    <p class="wishes-empty" id="wishesEmpty">
+      What do you wish for?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">Drop a wish into the well&#8230;</p>
+      <textarea class="write-input" id="writeInput" rows="3" placeholder="I wish&#8230;"></textarea>
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">wish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DETAIL ========== -->
+  <div class="detail-view hidden" id="detailView">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-star">&#x2726;</div>
+      <p class="detail-text" id="detailText"></p>
+      <p class="detail-date" id="detailDate"></p>
+      <div class="detail-actions" id="detailActions">
+        <button class="status-btn granted-btn" id="grantedBtn">&#x2726; granted</button>
+        <button class="status-btn released-btn" id="releasedBtn">&#x2197; released</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Icch&#x0101;</h2>
+      <p>
+        A wish is a conversation with the future. It says: <em>this is what
+        I hope for</em>. It says: <em>this matters to me</em>.
+      </p>
+      <p>
+        Some wishes will come true &mdash; mark them <em>granted</em>.
+        Some you will outgrow &mdash; mark them <em>released</em>.
+        And some will simply wait, patient as starlight.
+      </p>
+      <p>
+        Over time, your wishes become a map of who you were becoming.
+      </p>
+      <p class="about-note">Your wishes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ichha.js"></script>
+</body>
+</html>

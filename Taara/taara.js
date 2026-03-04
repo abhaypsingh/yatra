@@ -115,7 +115,9 @@
         ['Niti', 'Niti', 'the rule you live by'],
         ['Pratidaan', 'Pratid\u0101n', 'the gift returned'],
         ['Pariksha', 'Par\u012Bksh\u0101', 'the real test'],
-        ['Sthan', 'Sth\u0101n', 'the place']
+        ['Sthan', 'Sth\u0101n', 'the place'],
+        ['Ritu', '\u1E5Atu', 'the season within'],
+        ['Ichha', 'Icch\u0101', 'the wish']
       ]
     }
   ];

@@ -538,6 +538,14 @@ body {
 .card-sthan::before { background: #c8a060; }
 .card-sthan .card-enter { color: #c8a060; }
 
+.card-ritu:hover { border-color: #c89838; }
+.card-ritu::before { background: #c89838; }
+.card-ritu .card-enter { color: #c89838; }
+
+.card-ichha:hover { border-color: #a890d0; }
+.card-ichha::before { background: #a890d0; }
+.card-ichha .card-enter { color: #a890d0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
