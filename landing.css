@@ -498,6 +498,14 @@ body {
 .card-shloka::before { background: #c8a050; }
 .card-shloka .card-enter { color: #c8a050; }
 
+.card-rina:hover { border-color: #c86888; }
+.card-rina::before { background: #c86888; }
+.card-rina .card-enter { color: #c86888; }
+
+.card-vismaya:hover { border-color: #a0b8d8; }
+.card-vismaya::before { background: #a0b8d8; }
+.card-vismaya .card-enter { color: #a0b8d8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

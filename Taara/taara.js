@@ -105,7 +105,9 @@
         ['Hasya', 'Hasya', 'the laugh'],
         ['Ghar', 'Ghar', 'home'],
         ['Ankur', 'Ankur', 'the sprout'],
-        ['Shloka', 'Shloka', 'the verse']
+        ['Shloka', 'Shloka', 'the verse'],
+        ['Rina', 'Rina', 'the debt of love'],
+        ['Vismaya', 'Vismaya', 'wonder']
       ]
     }
   ];

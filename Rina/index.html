@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rina — the debt of love</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">ऋण</div>
+      <h1 class="title">Rina</h1>
+      <p class="subtitle">the debt of love</p>
+      <p class="intro">
+        There are kindnesses you can never repay.
+        Not the grand ones — the quiet ones.
+        The ones that happen before you even notice.
+      </p>
+      <button class="begin-btn" id="beginBtn">notice</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="ledger" id="ledger"></div>
+    <p class="ledger-empty" id="ledgerEmpty">
+      No debts noticed yet. Tap + to acknowledge a quiet kindness.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Who did something kind?</p>
+        <input class="write-who" id="writeWho" type="text" placeholder="a name, a role, a stranger…">
+        <p class="write-prompt-2">What did they do?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the quiet thing that mattered…"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-coin">&#x267E;</div>
+        <p class="detail-who" id="detailWho"></p>
+        <p class="detail-what" id="detailWhat"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rina</h2>
+      <p>
+        In Sanskrit, <em>rina</em> means a debt — but not the kind you repay with money.
+        It is the debt of love, of kindness given freely, of care that asks nothing in return.
+      </p>
+      <p>
+        This is a ledger for the invisible things people do for you.
+        Dad making chai before you wake. A friend who texts just to check in.
+        A stranger holding a door. A teacher who believed in you.
+      </p>
+      <p>
+        You cannot repay these debts. But you can notice them.
+      </p>
+      <p class="about-note">Your ledger is stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="rina.js"></script>
+</body>
+</html>

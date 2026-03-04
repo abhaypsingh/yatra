@@ -106,7 +106,9 @@
         ['Hasya', 'Hasya', 'the laugh'],
         ['Ghar', 'Ghar', 'home'],
         ['Ankur', 'Ankur', 'the sprout'],
-        ['Shloka', 'Shloka', 'the verse']
+        ['Shloka', 'Shloka', 'the verse'],
+        ['Rina', 'Rina', 'the debt of love'],
+        ['Vismaya', 'Vismaya', 'wonder']
       ]
     }
   ];
@@ -173,7 +175,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 70 experiences';
+    sub.textContent = 'the journey \u2014 72 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

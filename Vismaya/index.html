@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vismaya — wonder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">विस्मय</div>
+      <h1 class="title">Vismaya</h1>
+      <p class="subtitle">wonder</p>
+      <p class="intro">
+        The world is full of things that deserve a longer look.
+        Collect the moments that made you stop and stare.
+      </p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="wonders" id="wonders"></div>
+    <p class="wonders-empty" id="wondersEmpty">
+      No wonders yet. Tap + to capture something that amazed you.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What amazed you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the thing that made you stop…"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-star">&#x2729;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Vismaya</h2>
+      <p>
+        Vismaya is the Sanskrit word for wonder — that sharp inhale
+        when something catches you off guard with its beauty or strangeness.
+      </p>
+      <p>
+        A spider&rsquo;s web jeweled with dew. The way a flock of birds turns
+        all at once. Light doing something unexpected with water.
+        The first star appearing while the sky is still blue.
+      </p>
+      <p>
+        Most people stop noticing these things as they grow older.
+        This is your way of not letting that happen.
+      </p>
+      <p class="about-note">Your wonders are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="vismaya.js"></script>
+</body>
+</html>
