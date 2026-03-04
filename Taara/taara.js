@@ -107,7 +107,9 @@
         ['Ankur', 'Ankur', 'the sprout'],
         ['Shloka', 'Shloka', 'the verse'],
         ['Rina', 'Rina', 'the debt of love'],
-        ['Vismaya', 'Vismaya', 'wonder']
+        ['Vismaya', 'Vismaya', 'wonder'],
+        ['Parva', 'Parva', 'the chapter'],
+        ['Sahaj', 'Sahaj', 'the natural']
       ]
     }
   ];

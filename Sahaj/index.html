@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahaj — the natural</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">सहज</div>
+      <h1 class="title">Sahaj</h1>
+      <p class="subtitle">the natural</p>
+      <p class="intro">
+        Some things come to you without effort.
+        You may not even think of them as gifts.
+        But they are.
+      </p>
+      <button class="begin-btn" id="beginBtn">see</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <p class="main-hint">things that come naturally to you</p>
+
+    <div class="gifts" id="gifts"></div>
+    <p class="gifts-empty" id="giftsEmpty">
+      No gifts noticed yet. Tap + to name something that comes easily.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What comes naturally to you?</p>
+        <input class="write-gift" id="writeGift" type="text" placeholder="the thing you do without trying…">
+        <p class="write-prompt-2">How did you notice?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="someone told you, or you just realized… (optional)"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-leaf">&#x2E19;</div>
+        <h3 class="detail-gift" id="detailGift"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sahaj</h2>
+      <p>
+        <em>Sahaj</em> means natural, effortless, innate.
+        It is the opposite of struggle.
+      </p>
+      <p>
+        Everyone has things that flow through them without friction &mdash;
+        making people laugh, sensing when someone is upset,
+        drawing without thinking, finding the rhythm in things,
+        remembering song lyrics after hearing them once.
+      </p>
+      <p>
+        These are not achievements. They are not on any test.
+        But they are your gifts. Name them, so you can see them.
+      </p>
+      <p class="about-note">Your gifts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="sahaj.js"></script>
+</body>
+</html>

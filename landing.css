@@ -506,6 +506,14 @@ body {
 .card-vismaya::before { background: #a0b8d8; }
 .card-vismaya .card-enter { color: #a0b8d8; }
 
+.card-parva:hover { border-color: #d8a848; }
+.card-parva::before { background: #d8a848; }
+.card-parva .card-enter { color: #d8a848; }
+
+.card-sahaj:hover { border-color: #88b870; }
+.card-sahaj::before { background: #88b870; }
+.card-sahaj .card-enter { color: #88b870; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

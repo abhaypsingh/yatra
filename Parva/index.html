@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parva — the chapter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">पर्व</div>
+      <h1 class="title">Parva</h1>
+      <p class="subtitle">the chapter</p>
+      <p class="intro">
+        Your life is a story being written one chapter at a time.
+        Some chapters end quietly. Some begin before you notice.
+        Mark them here.
+      </p>
+      <button class="begin-btn" id="beginBtn">begin</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="chapters" id="chapters"></div>
+    <p class="chapters-empty" id="chaptersEmpty">
+      No chapters yet. Tap + to mark the beginning of one.
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What would you call this chapter?</p>
+        <input class="write-title-input" id="writeTitleInput" type="text" placeholder="a name for this time…">
+        <p class="write-prompt-2">What changed — or what is changing?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the shift you felt…"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <p class="detail-number" id="detailNumber"></p>
+        <h3 class="detail-title" id="detailTitle"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Parva</h2>
+      <p>
+        In the Mahabharata, a <em>parva</em> is a book — a chapter in the
+        great epic. Your life is an epic too.
+      </p>
+      <p>
+        Some chapters begin with a bang: a new school, a new city,
+        a loss. Others begin so quietly you only notice them looking back.
+        A friendship that deepened. A fear you outgrew.
+        A question that changed how you see the world.
+      </p>
+      <p>
+        Mark the chapters as you live them.
+        One day you will look back and see the shape of your story.
+      </p>
+      <p class="about-note">Your chapters are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="parva.js"></script>
+</body>
+</html>
