@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gandha — the scent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0928;&#x094D;&#x0927;</div>
+      <h1 class="title">Gandha</h1>
+      <p class="subtitle">the scent</p>
+      <p class="intro">
+        A scent can unlock a whole world. Rain on dry earth. Grandma&rsquo;s
+        kitchen. Pages of an old book.<br><br>
+        Collect the fragrances that carry your memories.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <div class="scents" id="scents"></div>
+    <p class="scents-empty" id="scentsEmpty">
+      What scent takes you somewhere else?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">Name the scent</p>
+      <input class="write-name" id="writeName" type="text" placeholder="rain on dry earth&hellip;" maxlength="80">
+      <p class="write-prompt-2">What does it unlock?</p>
+      <textarea class="write-input" id="writeInput" rows="4" placeholder="the memory it carries&hellip;"></textarea>
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DETAIL ========== -->
+  <div class="detail-view hidden" id="detailView">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-icon">&#x223C;</div>
+      <h3 class="detail-name" id="detailName"></h3>
+      <p class="detail-text" id="detailText"></p>
+      <p class="detail-date" id="detailDate"></p>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gandha</h2>
+      <p>
+        Of all the senses, scent is the one most tangled with memory. A single
+        breath can carry you across years &mdash; to a kitchen, a garden, a
+        person&rsquo;s arms.
+      </p>
+      <p>
+        Collect the fragrances that matter to you. The smell of <em>petrichor</em>
+        after the first rain. Sandalwood at the temple. Fresh pages. Birthday cake.
+      </p>
+      <p>
+        Name them before you forget what they unlock.
+      </p>
+      <p class="about-note">Your scents are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="gandha.js"></script>
+</body>
+</html>

@@ -117,7 +117,9 @@
         ['Pariksha', 'Par\u012Bksh\u0101', 'the real test'],
         ['Sthan', 'Sth\u0101n', 'the place'],
         ['Ritu', '\u1E5Atu', 'the season within'],
-        ['Ichha', 'Icch\u0101', 'the wish']
+        ['Ichha', 'Icch\u0101', 'the wish'],
+        ['Gandha', 'Gandha', 'the scent'],
+        ['Aabhaar', '\u0100abh\u0101r', 'gratitude']
       ]
     }
   ];

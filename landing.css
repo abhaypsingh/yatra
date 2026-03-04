@@ -546,6 +546,14 @@ body {
 .card-ichha::before { background: #a890d0; }
 .card-ichha .card-enter { color: #a890d0; }
 
+.card-gandha:hover { border-color: #b89870; }
+.card-gandha::before { background: #b89870; }
+.card-gandha .card-enter { color: #b89870; }
+
+.card-aabhaar:hover { border-color: #d09060; }
+.card-aabhaar::before { background: #d09060; }
+.card-aabhaar .card-enter { color: #d09060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

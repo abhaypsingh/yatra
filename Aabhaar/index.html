@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;abh&#x0101;r — gratitude</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x092D;&#x093E;&#x0930;</div>
+      <h1 class="title">&#x0100;abh&#x0101;r</h1>
+      <p class="subtitle">gratitude</p>
+      <p class="intro">
+        Every day holds at least three things worth thanking.
+        Some are enormous. Most are tiny.<br><br>
+        Name three. Watch them accumulate into something vast.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <p class="count" id="count"></p>
+    <div class="days" id="days"></div>
+    <p class="days-empty" id="daysEmpty">
+      What are you grateful for today?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">Three things you are grateful for today:</p>
+      <input class="write-item" id="writeItem1" type="text" placeholder="1." maxlength="120">
+      <input class="write-item" id="writeItem2" type="text" placeholder="2." maxlength="120">
+      <input class="write-item" id="writeItem3" type="text" placeholder="3." maxlength="120">
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">thank</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;abh&#x0101;r</h2>
+      <p>
+        Gratitude is a muscle. The more you use it, the stronger it gets.
+        And the stronger it gets, the more you <em>see</em>.
+      </p>
+      <p>
+        Three things a day. That&rsquo;s all. Some days it will be easy &mdash;
+        sunlight through the window, a friend&rsquo;s laugh, warm food.
+        Some days you will have to look harder. That&rsquo;s when it matters most.
+      </p>
+      <p>
+        Over a year, you will have named a thousand gifts. Imagine looking
+        back at <em>all of them</em>.
+      </p>
+      <p class="about-note">Your gratitudes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="aabhaar.js"></script>
+</body>
+</html>
