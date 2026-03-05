@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ehs&#x0101;s — the unnamed feeling</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x090F;&#x0939;&#x0938;&#x093E;&#x0938;</div>
+      <h1 class="title">Ehs&#x0101;s</h1>
+      <p class="subtitle">the unnamed feeling</p>
+      <p class="intro">
+        Some feelings don&rsquo;t have names. Not happy, not sad &mdash;
+        something in between that only you understand.
+        Describe them here, even if no word exists.
+      </p>
+      <button class="begin-btn" id="beginBtn">feel</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What are you feeling that has no name?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Describe the feeling</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="like standing at a door you haven&rsquo;t opened yet&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold it</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2022;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ehs&#x0101;s</h2>
+      <p>
+        There are more feelings than there are words for them. That strange ache
+        on a Sunday evening. The lightness after a good cry. The warmth of being
+        understood without explaining.
+      </p>
+      <p>
+        Most feelings go unnamed and therefore unremembered. But they are real.
+        They are the texture of being alive.
+      </p>
+      <p>
+        Write your unnamed feelings here. You don&rsquo;t need a word &mdash;
+        a description is enough.
+      </p>
+      <p class="about-note">Your feelings are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ehsaas.js"></script>
+</body>
+</html>

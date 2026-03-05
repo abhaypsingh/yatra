@@ -642,6 +642,14 @@ body {
 .card-khoj::before { background: #a8b078; }
 .card-khoj .card-enter { color: #a8b078; }
 
+.card-ehsaas:hover { border-color: #c87888; }
+.card-ehsaas::before { background: #c87888; }
+.card-ehsaas .card-enter { color: #c87888; }
+
+.card-pehchaan:hover { border-color: #b88860; }
+.card-pehchaan::before { background: #b88860; }
+.card-pehchaan .card-enter { color: #b88860; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

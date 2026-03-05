@@ -142,7 +142,9 @@
         ['Kala', 'Kal\u0101', 'the art'],
         ['Virah', 'Virah', 'the longing'],
         ['Chitra', 'Chitra', 'the picture'],
-        ['Khoj', 'Khoj', 'the discovery']
+        ['Khoj', 'Khoj', 'the discovery'],
+        ['Ehsaas', 'Ehs\u0101s', 'the unnamed feeling'],
+        ['Pehchaan', 'Pehch\u0101n', 'the identity']
       ]
     }
   ];
@@ -209,7 +211,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 106 experiences';
+    sub.textContent = 'the journey \u2014 108 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

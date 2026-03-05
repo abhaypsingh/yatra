@@ -141,7 +141,9 @@
         ['Kala', 'Kal\u0101', 'the art'],
         ['Virah', 'Virah', 'the longing'],
         ['Chitra', 'Chitra', 'the picture'],
-        ['Khoj', 'Khoj', 'the discovery']
+        ['Khoj', 'Khoj', 'the discovery'],
+        ['Ehsaas', 'Ehs\u0101s', 'the unnamed feeling'],
+        ['Pehchaan', 'Pehch\u0101n', 'the identity']
       ]
     }
   ];
