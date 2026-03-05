@@ -678,6 +678,10 @@ body {
 .card-parchhaayi::before { background: #a088b8; }
 .card-parchhaayi .card-enter { color: #a088b8; }
 
+.card-antaraal:hover { border-color: #7898a0; }
+.card-antaraal::before { background: #7898a0; }
+.card-antaraal .card-enter { color: #7898a0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

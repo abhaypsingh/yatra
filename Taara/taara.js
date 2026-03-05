@@ -150,7 +150,8 @@
         ['Pankh', 'Pankh', 'the wing'],
         ['Silsila', 'Silsil\u0101', 'the chain'],
         ['Keelak', 'K\u012Blak', 'the anchor'],
-        ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others']
+        ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others'],
+        ['Antaraal', 'Antar\u0101l', 'the space between']
       ]
     }
   ];

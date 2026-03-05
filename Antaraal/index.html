@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antar&#x0101;l — the space between</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0902;&#x0924;&#x0930;&#x093E;&#x0932;</div>
+      <h1 class="title">Antar&#x0101;l</h1>
+      <p class="subtitle">the space between</p>
+      <p class="intro">
+        Between two breaths there is a pause. Between two chapters of your life
+        there is a gap. These in-between moments &mdash; neither here nor there
+        &mdash; are where the quiet growth happens.
+      </p>
+      <button class="begin-btn" id="beginBtn">pause</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What space between are you standing in right now?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the in-between?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="between school and summer, between anger and calm&hellip;">
+        <p class="write-prompt-2">What does this space feel like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you notice in the pause&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25C7;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Antar&#x0101;l</h2>
+      <p>
+        Life is not only the moments that happen. It is also the spaces
+        between them &mdash; the pause after a goodbye, the quiet before
+        a new beginning, the breath you hold without knowing why.
+      </p>
+      <p>
+        These gaps are not empty. They are where you recalibrate, where
+        you become ready for what comes next. The in-between is not
+        nothing &mdash; it is <em>everything</em>.
+      </p>
+      <p>
+        Name the spaces you find yourself in. The ones that feel like
+        waiting, like floating, like standing on a threshold.
+      </p>
+      <p class="about-note">Your spaces are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="antaraal.js"></script>
+</body>
+</html>
