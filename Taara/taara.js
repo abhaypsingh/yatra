@@ -143,7 +143,12 @@
         ['Chitra', 'Chitra', 'the picture'],
         ['Khoj', 'Khoj', 'the discovery'],
         ['Ehsaas', 'Ehs\u0101s', 'the unnamed feeling'],
-        ['Pehchaan', 'Pehch\u0101n', 'the identity']
+        ['Pehchaan', 'Pehch\u0101n', 'the identity'],
+        ['Dwar', 'Dw\u0101r', 'the door'],
+        ['Awaaz', '\u0100w\u0101z', 'the voice'],
+        ['Gehrai', 'Gehr\u0101\u012B', 'the depth'],
+        ['Pankh', 'Pankh', 'the wing'],
+        ['Silsila', 'Silsil\u0101', 'the chain']
       ]
     }
   ];

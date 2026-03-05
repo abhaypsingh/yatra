@@ -650,6 +650,26 @@ body {
 .card-pehchaan::before { background: #b88860; }
 .card-pehchaan .card-enter { color: #b88860; }
 
+.card-dwar:hover { border-color: #a0a090; }
+.card-dwar::before { background: #a0a090; }
+.card-dwar .card-enter { color: #a0a090; }
+
+.card-awaaz:hover { border-color: #78a8a0; }
+.card-awaaz::before { background: #78a8a0; }
+.card-awaaz .card-enter { color: #78a8a0; }
+
+.card-gehrai:hover { border-color: #8080a8; }
+.card-gehrai::before { background: #8080a8; }
+.card-gehrai .card-enter { color: #8080a8; }
+
+.card-pankh:hover { border-color: #7898c0; }
+.card-pankh::before { background: #7898c0; }
+.card-pankh .card-enter { color: #7898c0; }
+
+.card-silsila:hover { border-color: #c0a060; }
+.card-silsila::before { background: #c0a060; }
+.card-silsila .card-enter { color: #c0a060; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

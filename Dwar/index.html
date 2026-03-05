@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dw&#x0101;r — the door</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x094D;&#x0935;&#x093E;&#x0930;</div>
+      <h1 class="title">Dw&#x0101;r</h1>
+      <p class="subtitle">the door</p>
+      <p class="intro">
+        Every turning point is a door. The moment you chose a different path, said yes to something terrifying, or walked away from what was easy. Name the doors you have walked through.
+      </p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Which door changed everything?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What was the door?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a choice, a moment, a turning point&hellip;">
+        <p class="write-prompt-2">What was on the other side?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what changed after you walked through&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">open</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25A1;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dw&#x0101;r</h2>
+      <p>
+        A dwar is not just a physical door. It is any moment where life splits into before and after. A conversation. A decision. A loss.
+      </p>
+      <p>
+        Most doors do not look like doors when you are standing in front of them. You only recognise them when you look back.
+      </p>
+      <p>
+        Name the doors you have walked through. You will see the shape of your life in the pattern.
+      </p>
+      <p class="about-note">Your doors are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="dwar.js"></script>
+</body>
+</html>

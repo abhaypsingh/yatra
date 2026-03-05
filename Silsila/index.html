@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silsil&#x0101; — the chain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0932;&#x0938;&#x093F;&#x0932;&#x093E;</div>
+      <h1 class="title">Silsil&#x0101;</h1>
+      <p class="subtitle">the chain</p>
+      <p class="intro">
+        Some things are connected across time. The song your mother sang that her mother sang too. The habit you picked up from a friend who moved away. Trace the invisible threads.
+      </p>
+      <button class="begin-btn" id="beginBtn">trace</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What thread connects you to someone across time?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the link?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a song, a phrase, a habit, a recipe&hellip;">
+        <p class="write-prompt-2">Who does it connect you to?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the person, the time, the story behind the thread&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">weave</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x221E;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Silsil&#x0101;</h2>
+      <p>
+        A silsila is a chain &mdash; an unbroken line connecting one moment to the next, one person to another, across years and distances.
+      </p>
+      <p>
+        You are full of borrowed things. The way you laugh might be your father&rsquo;s. The way you stir your tea might be your grandmother&rsquo;s. These are not coincidences. They are silsilas.
+      </p>
+      <p>
+        Trace the threads. Every chain you find is proof that you are not alone in time.
+      </p>
+      <p class="about-note">Your chains are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="silsila.js"></script>
+</body>
+</html>
