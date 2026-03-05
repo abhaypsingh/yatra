@@ -151,7 +151,8 @@
         ['Silsila', 'Silsil\u0101', 'the chain'],
         ['Keelak', 'K\u012Blak', 'the anchor'],
         ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others'],
-        ['Antaraal', 'Antar\u0101l', 'the space between']
+        ['Antaraal', 'Antar\u0101l', 'the space between'],
+        ['Chhaap', 'Chh\u0101p', 'the imprint']
       ]
     }
   ];

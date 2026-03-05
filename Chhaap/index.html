@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chh&#x0101;p — the imprint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x093E;&#x092A;</div>
+      <h1 class="title">Chh&#x0101;p</h1>
+      <p class="subtitle">the imprint</p>
+      <p class="intro">
+        Some people press a mark into your life that never fades. A teacher
+        who changed how you see. A friend whose laugh still echoes. A stranger
+        who was kind on the worst day. Name the imprints you carry.
+      </p>
+      <button class="begin-btn" id="beginBtn">remember</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Who has left a mark on you that you still carry?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Who left the imprint?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a teacher, a grandmother, a stranger on a bus&hellip;">
+        <p class="write-prompt-2">What mark did they leave?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what they changed in you, what stays&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">press</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25C8;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chh&#x0101;p</h2>
+      <p>
+        You are not made only of yourself. You are made of every person
+        who ever touched your life &mdash; their words pressed into you
+        like a seal into warm wax.
+      </p>
+      <p>
+        Some imprints are gentle: the way your mother hums while cooking.
+        Some are sharp: the one sentence a teacher said that rearranged
+        everything. Some come from people you barely knew.
+      </p>
+      <p>
+        Write them down. The people who shaped you deserve to be named,
+        even if they never know it.
+      </p>
+      <p class="about-note">Your imprints are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chhaap.js"></script>
+</body>
+</html>

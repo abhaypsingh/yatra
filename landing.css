@@ -682,6 +682,10 @@ body {
 .card-antaraal::before { background: #7898a0; }
 .card-antaraal .card-enter { color: #7898a0; }
 
+.card-chhaap:hover { border-color: #b09070; }
+.card-chhaap::before { background: #b09070; }
+.card-chhaap .card-enter { color: #b09070; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
