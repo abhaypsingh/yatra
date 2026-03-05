@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&#x0101;g — the melody</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x093E;&#x0917;</div>
+      <h1 class="title">R&#x0101;g</h1>
+      <p class="subtitle">the melody</p>
+      <p class="intro">
+        Some songs are not just songs. They are doors &mdash; to a car ride,
+        a rainy afternoon, a person&rsquo;s voice.<br><br>
+        Collect the melodies that carry your life.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <div class="songs" id="songs"></div>
+    <p class="songs-empty" id="songsEmpty">
+      Which song takes you somewhere?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">Name the song</p>
+      <input class="write-name" id="writeName" type="text" placeholder="the song title&hellip;" maxlength="100">
+      <p class="write-prompt-2">By whom?</p>
+      <input class="write-artist" id="writeArtist" type="text" placeholder="artist (optional)" maxlength="80">
+      <p class="write-prompt-2">What moment does it carry?</p>
+      <textarea class="write-input" id="writeInput" rows="3" placeholder="the memory, the feeling, the person&hellip;"></textarea>
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DETAIL ========== -->
+  <div class="detail-view hidden" id="detailView">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-note">&#x266A;</div>
+      <h3 class="detail-name" id="detailName"></h3>
+      <p class="detail-artist" id="detailArtist"></p>
+      <p class="detail-text" id="detailText"></p>
+      <p class="detail-date" id="detailDate"></p>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>R&#x0101;g</h2>
+      <p>
+        A r&#x0101;g is more than a melody &mdash; it is a mood, a colour,
+        a time of day. In Indian music, each r&#x0101;g carries an <em>emotion</em>.
+      </p>
+      <p>
+        Your life has a soundtrack too. Songs that belong to road trips, to
+        heartbreaks, to kitchen mornings, to the person who always hummed them.
+      </p>
+      <p>
+        Name the songs. Write the moments they hold. Before the playlist
+        shuffles and you forget which song belonged to <em>which feeling</em>.
+      </p>
+      <p class="about-note">Your melodies are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="raag.js"></script>
+</body>
+</html>

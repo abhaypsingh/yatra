@@ -119,7 +119,9 @@
         ['Ritu', '\u1E5Atu', 'the season within'],
         ['Ichha', 'Icch\u0101', 'the wish'],
         ['Gandha', 'Gandha', 'the scent'],
-        ['Aabhaar', '\u0100abh\u0101r', 'gratitude']
+        ['Aabhaar', '\u0100abh\u0101r', 'gratitude'],
+        ['Raag', 'R\u0101g', 'the melody'],
+        ['Pratham', 'Pratham', 'the first time']
       ]
     }
   ];

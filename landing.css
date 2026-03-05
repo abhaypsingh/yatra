@@ -554,6 +554,14 @@ body {
 .card-aabhaar::before { background: #d09060; }
 .card-aabhaar .card-enter { color: #d09060; }
 
+.card-raag:hover { border-color: #b078c0; }
+.card-raag::before { background: #b078c0; }
+.card-raag .card-enter { color: #b078c0; }
+
+.card-pratham:hover { border-color: #d8b050; }
+.card-pratham::before { background: #d8b050; }
+.card-pratham .card-enter { color: #d8b050; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

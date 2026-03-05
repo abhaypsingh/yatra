@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratham — the first time</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x094D;&#x0930;&#x0925;&#x092E;</div>
+      <h1 class="title">Pratham</h1>
+      <p class="subtitle">the first time</p>
+      <p class="intro">
+        Every first time changes you a little. The first bike ride.
+        The first time you cooked alone. The first time you said no.<br><br>
+        Collect your firsts before they blur.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+    <div class="firsts" id="firsts"></div>
+    <p class="firsts-empty" id="firstsEmpty">
+      What was a first time you remember?
+    </p>
+  </div>
+
+  <!-- ========== WRITE ========== -->
+  <div class="write-view hidden" id="writeView">
+    <div class="write-card">
+      <p class="write-prompt">The first time I&hellip;</p>
+      <input class="write-name" id="writeName" type="text" placeholder="rode a bicycle alone&hellip;" maxlength="100">
+      <p class="write-prompt-2">How did it feel?</p>
+      <textarea class="write-input" id="writeInput" rows="4" placeholder="the nerves, the wonder, the after&hellip;"></textarea>
+      <div class="write-actions">
+        <button class="write-cancel" id="writeCancel">cancel</button>
+        <button class="write-save" id="writeSave">save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DETAIL ========== -->
+  <div class="detail-view hidden" id="detailView">
+    <div class="detail-card">
+      <button class="detail-close" id="detailClose">&times;</button>
+      <div class="detail-marker">1</div>
+      <h3 class="detail-name" id="detailName"></h3>
+      <p class="detail-text" id="detailText"></p>
+      <p class="detail-date" id="detailDate"></p>
+    </div>
+  </div>
+
+  <!-- ========== ADD BUTTON ========== -->
+  <button class="add-btn" id="addBtn">+</button>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about" title="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pratham</h2>
+      <p>
+        Every life is made of firsts. The first time you held a pen. The first
+        time you swam without touching the bottom. The first time you felt
+        your heart race and didn&rsquo;t know why.
+      </p>
+      <p>
+        Firsts are <em>thresholds</em>. On one side is who you were. On the
+        other is who you became. You cross them once, and there is no going back.
+      </p>
+      <p>
+        Write them down. You are standing at the edge of so many more.
+      </p>
+      <p class="about-note">Your firsts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pratham.js"></script>
+</body>
+</html>
