@@ -148,7 +148,9 @@
         ['Awaaz', '\u0100w\u0101z', 'the voice'],
         ['Gehrai', 'Gehr\u0101\u012B', 'the depth'],
         ['Pankh', 'Pankh', 'the wing'],
-        ['Silsila', 'Silsil\u0101', 'the chain']
+        ['Silsila', 'Silsil\u0101', 'the chain'],
+        ['Keelak', 'K\u012Blak', 'the anchor'],
+        ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others']
       ]
     }
   ];

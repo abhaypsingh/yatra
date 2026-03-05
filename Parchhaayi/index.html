@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parchh&#x0101;y&#x012B; — the reflection in others</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0930;&#x091B;&#x093E;&#x0908;</div>
+      <h1 class="title">Parchh&#x0101;y&#x012B;</h1>
+      <p class="subtitle">the reflection in others</p>
+      <p class="intro">
+        The qualities you notice in other people are often the ones you carry
+        yourself. When you admire someone&rsquo;s courage, it is because you
+        recognise it. When someone&rsquo;s selfishness bothers you &mdash;
+        look closer.
+      </p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What do you see in someone else that is really about you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you notice in someone?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="their patience, their anger, their joy&hellip;">
+        <p class="write-prompt-2">What does it say about you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it mirrors, what it reveals&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">see</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25D0;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Parchh&#x0101;y&#x012B;</h2>
+      <p>
+        Other people are mirrors. What you love in them is often what you
+        value in yourself. What irritates you is often what you have not
+        made peace with in yourself.
+      </p>
+      <p>
+        This is not always comfortable. But it is always useful. The people
+        who trigger you the most have the most to teach you.
+      </p>
+      <p>
+        Write what you see in others. Then ask: is this about them,
+        or about me?
+      </p>
+      <p class="about-note">Your reflections are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="parchhaayi.js"></script>
+</body>
+</html>

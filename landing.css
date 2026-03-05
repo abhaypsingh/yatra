@@ -670,6 +670,14 @@ body {
 .card-silsila::before { background: #c0a060; }
 .card-silsila .card-enter { color: #c0a060; }
 
+.card-keelak:hover { border-color: #9890a0; }
+.card-keelak::before { background: #9890a0; }
+.card-keelak .card-enter { color: #9890a0; }
+
+.card-parchhaayi:hover { border-color: #a088b8; }
+.card-parchhaayi::before { background: #a088b8; }
+.card-parchhaayi .card-enter { color: #a088b8; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
