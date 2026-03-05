@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G&#x016B;nj — the echo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0942;&#x0901;&#x091C;</div>
+      <h1 class="title">G&#x016B;nj</h1>
+      <p class="subtitle">the echo</p>
+      <p class="intro">
+        Some words keep ringing long after they were spoken. A sentence your
+        father said that you only understood years later. A line from a book
+        that follows you everywhere. Collect the words that echo.
+      </p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What words are still echoing inside you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What are the words?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the sentence, the line, the thing someone said&hellip;">
+        <p class="write-prompt-2">Why do they keep echoing?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who said it, when it comes back to you, what it means now&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">))</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>G&#x016B;nj</h2>
+      <p>
+        Words have weight. Some land softly and disappear. Others hit a wall
+        inside you and bounce back &mdash; again and again &mdash; for years.
+      </p>
+      <p>
+        The echo might be beautiful: a compliment that made you believe in
+        yourself. Or it might be painful: a careless sentence that planted a
+        doubt you still carry. Either way, the echo is telling you something
+        about what matters to you.
+      </p>
+      <p>
+        Write down the words that still ring. Sometimes naming the echo is
+        the first step to understanding it &mdash; or finally letting it go.
+      </p>
+      <p class="about-note">Your echoes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="gunja.js"></script>
+</body>
+</html>

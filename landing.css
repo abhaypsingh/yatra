@@ -686,6 +686,10 @@ body {
 .card-chhaap::before { background: #b09070; }
 .card-chhaap .card-enter { color: #b09070; }
 
+.card-gunja:hover { border-color: #9878b0; }
+.card-gunja::before { background: #9878b0; }
+.card-gunja .card-enter { color: #9878b0; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;
