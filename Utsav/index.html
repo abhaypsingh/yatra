@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utsav &#x2014; the celebration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x0924;&#x094D;&#x0938;&#x0935;</div>
+      <h1 class="title">Utsav</h1>
+      <p class="subtitle">the celebration</p>
+      <p class="intro">
+        Not every celebration needs a reason. Sometimes the rain is enough.
+        Sometimes Tuesday is enough. Name the moments worth celebrating.
+      </p>
+      <button class="begin-btn" id="beginBtn">rejoice</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What moment is worth celebrating?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What are you celebrating?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a birthday, a small win, a rainy day&#x2026;">
+        <p class="write-prompt-2">How did you celebrate?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the joy, the people, the feeling&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark it</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2728;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Utsav</h2>
+      <p>
+        Life gives us occasions &mdash; birthdays, festivals, milestones.
+        But the best celebrations are the ones you invent yourself.
+      </p>
+      <p>
+        Celebrating is a form of gratitude. It says: this moment is enough.
+        This is worth noticing.
+      </p>
+      <p>
+        Track your celebrations &mdash; the grand ones and the quiet ones.
+        You will discover you have more reasons to celebrate than you thought.
+      </p>
+      <p class="about-note">Your celebrations are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="utsav.js"></script>
+</body>
+</html>

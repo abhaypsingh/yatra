@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru — the teacher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0930;&#x0941;</div>
+      <h1 class="title">Guru</h1>
+      <p class="subtitle">the teacher</p>
+      <p class="intro">
+        Not all teachers stand at a blackboard. Some teach by example. Some teach with a single sentence.
+        Some teach by leaving. Name the ones who changed what you know.
+      </p>
+      <button class="begin-btn" id="beginBtn">honour</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Who taught you something that changed you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Who was the teacher?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a name, a title, a role&hellip;">
+        <p class="write-prompt-2">What did they change in you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the lesson that stayed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">honour</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F4DA;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Guru</h2>
+      <p>
+        A guru is anyone who shifts your understanding &mdash; a school teacher, a grandparent,
+        a stranger on a train, even a book.
+      </p>
+      <p>
+        The best teachers do not just give you answers. They change the questions you ask.
+      </p>
+      <p>
+        Who changed how you think? Write their names before you forget what they gave you.
+      </p>
+      <p class="about-note">Your entries are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="guru.js"></script>
+</body>
+</html>

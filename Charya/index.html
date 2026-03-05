@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charya &#x2014; the ritual</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x0930;&#x094D;&#x092F;&#x093E;</div>
+      <h1 class="title">Chary&#x0101;</h1>
+      <p class="subtitle">the ritual</p>
+      <p class="intro">
+        A ritual is a small act repeated with meaning. Morning tea. Evening walk.
+        The way you arrange your books. These tiny anchors hold your days together.
+      </p>
+      <button class="begin-btn" id="beginBtn">tend</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What small ritual anchors your day?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name the ritual</p>
+        <input class="write-name" id="writeName" type="text" placeholder="morning chai, bedtime reading&#x2026;">
+        <p class="write-prompt-2">Why does it matter?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it gives you, why you keep it&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25CB;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chary&#x0101;</h2>
+      <p>
+        A charya is different from a habit. A habit is automatic. A ritual is intentional.
+        You choose it. You protect it. It becomes sacred through repetition.
+      </p>
+      <p>
+        Your rituals say more about you than your achievements.
+        They are the scaffolding of your inner life.
+      </p>
+      <p>
+        Name your rituals. Honour the small things that hold you together.
+      </p>
+      <p class="about-note">Your rituals are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="charya.js"></script>
+</body>
+</html>

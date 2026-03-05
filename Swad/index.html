@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sw&#x0101;d — the taste</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x094D;&#x0935;&#x093E;&#x0926;</div>
+      <h1 class="title">Sw&#x0101;d</h1>
+      <p class="subtitle">the taste</p>
+      <p class="intro">
+        Some flavours are time machines. One bite and you are six years old again,
+        sitting at a table that no longer exists. Name the tastes that carry your memories.
+      </p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What taste takes you somewhere else?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name the flavour or dish</p>
+        <input class="write-name" id="writeName" type="text" placeholder="chai on a rainy day&hellip;">
+        <p class="write-prompt-2">What memory does it carry?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who made it, where you were&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">savour</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F375;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sw&#x0101;d</h2>
+      <p>
+        Taste is memory&rsquo;s secret twin. A flavour can bring back a whole afternoon.
+      </p>
+      <p>
+        Your grandmother&rsquo;s kitchen smelled a certain way. Your birthday cake tasted a certain way.
+        These things are disappearing.
+      </p>
+      <p>
+        Write them down. The flavour. The memory. Before they dissolve.
+      </p>
+      <p class="about-note">Your entries are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="swad.js"></script>
+</body>
+</html>

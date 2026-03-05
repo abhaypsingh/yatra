@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitra — the picture</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0924;&#x094D;&#x0930;</div>
+      <h1 class="title">Chitra</h1>
+      <p class="subtitle">the picture</p>
+      <p class="intro">
+        Some pictures live in frames. Others live only in your mind &mdash;
+        the image of a moment frozen in time.
+        Describe the pictures you carry.
+      </p>
+      <button class="begin-btn" id="beginBtn">describe</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="pictures" id="pictures"></div>
+    <p class="pictures-empty" id="picturesEmpty">
+      What picture do you carry in your mind?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Describe the picture</p>
+        <input class="write-name" id="writeName" type="text" placeholder="who is in it, where, when&#x2026;">
+        <p class="write-prompt-2">What does it hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the story behind the image&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">frame</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F5BC;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chitra</h2>
+      <p>
+        A chitra is not just a photograph. It is any image burned into memory &mdash;
+        the way someone looked when they laughed, the view from a window,
+        a sunset you forgot to photograph.
+      </p>
+      <p>
+        We carry hundreds of pictures in our minds. Most will fade. The ones
+        you write down will not.
+      </p>
+      <p>
+        Describe your pictures. The ones in frames, and the ones only you can see.
+      </p>
+      <p class="about-note">Your pictures are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chitra.js"></script>
+</body>
+</html>

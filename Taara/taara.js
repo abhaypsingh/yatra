@@ -121,7 +121,27 @@
         ['Gandha', 'Gandha', 'the scent'],
         ['Aabhaar', '\u0100abh\u0101r', 'gratitude'],
         ['Raag', 'R\u0101g', 'the melody'],
-        ['Pratham', 'Pratham', 'the first time']
+        ['Pratham', 'Pratham', 'the first time'],
+        ['Sharira', 'Shar\u012Bra', 'the body'],
+        ['Swad', 'Sw\u0101d', 'the taste'],
+        ['Prani', 'Pr\u0101\u1E47\u012B', 'the creature'],
+        ['Guru', 'Guru', 'the teacher'],
+        ['Rekha', 'Rekh\u0101', 'the boundary'],
+        ['Rang', 'Rang', 'the colour'],
+        ['Sangraha', 'Sa\u1E45graha', 'the collection'],
+        ['Vachan', 'Vachan', 'the promise'],
+        ['Bhool', 'Bh\u016Bl', 'the mistake'],
+        ['Megha', 'Megha', 'the cloud'],
+        ['Nayak', 'N\u0101yak', 'the hero'],
+        ['Jeet', 'J\u012Bt', 'the victory'],
+        ['Charya', 'Chary\u0101', 'the ritual'],
+        ['Pakvan', 'Pakv\u0101n', 'the recipe'],
+        ['Utsav', 'Utsav', 'the celebration'],
+        ['Safar', 'Safar', 'the journey'],
+        ['Kala', 'Kal\u0101', 'the art'],
+        ['Virah', 'Virah', 'the longing'],
+        ['Chitra', 'Chitra', 'the picture'],
+        ['Khoj', 'Khoj', 'the discovery']
       ]
     }
   ];

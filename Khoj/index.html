@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khoj — the discovery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x094B;&#x091C;</div>
+      <h1 class="title">Khoj</h1>
+      <p class="subtitle">the discovery</p>
+      <p class="intro">
+        Every day holds a small discovery &mdash; a new word, a hidden path,
+        a fact that changes how you see. The world is full of things
+        waiting to be found.
+      </p>
+      <button class="begin-btn" id="beginBtn">explore</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="discoveries" id="discoveries"></div>
+    <p class="discoveries-empty" id="discoveriesEmpty">
+      What have you discovered?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you discover?</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="something new about the world, or about yourself&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">note</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F50D;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khoj</h2>
+      <p>
+        A khoj does not have to be enormous. It can be a new word. A shortcut
+        through the park. The fact that your father was once afraid of the dark.
+      </p>
+      <p>
+        The best discoverers are not the ones who travel farthest &mdash; they
+        are the ones who pay the most attention.
+      </p>
+      <p>
+        Write your discoveries. Small ones, big ones. They are proof that you
+        are paying attention.
+      </p>
+      <p class="about-note">Your discoveries are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="khoj.js"></script>
+</body>
+</html>

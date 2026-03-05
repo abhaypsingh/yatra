@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalā — the art</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0932;&#x093E;</div>
+      <h1 class="title">Kal&#x0101;</h1>
+      <p class="subtitle">the art</p>
+      <p class="intro">
+        A painting that stopped you. A song that broke you open.
+        A film that changed how you see. Art is how humans speak
+        to each other across time.
+      </p>
+      <button class="begin-btn" id="beginBtn">collect</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="works" id="works"></div>
+    <p class="works-empty" id="worksEmpty">
+      Which work of art moved you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name the work</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a painting, a song, a book, a film&#x2026;">
+        <p class="write-prompt-2">What did it stir?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the feeling, the thought, the change&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2728;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kal&#x0101;</h2>
+      <p>
+        Art is what humans make to outlast themselves &mdash; to send a message
+        across the years.
+      </p>
+      <p>
+        The art that moves you reveals who you are. Your favourite song, your
+        favourite book &mdash; they are mirrors.
+      </p>
+      <p>
+        Collect the art that has touched you. Write why. This is your
+        aesthetic autobiography.
+      </p>
+      <p class="about-note">Your collection is stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="kala.js"></script>
+</body>
+</html>

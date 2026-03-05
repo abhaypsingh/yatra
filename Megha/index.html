@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megha — the cloud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0947;&#x0918;</div>
+      <h1 class="title">Megha</h1>
+      <p class="subtitle">the cloud</p>
+      <p class="intro">
+        Clouds come and go. So do thoughts. Some are dark, some are light, some carry rain. Write the thoughts that pass through you &mdash; and let them drift.
+      </p>
+      <button class="begin-btn" id="beginBtn">drift</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What thought is drifting through you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is passing through your mind?</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="a thought, a worry, a wonder&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">release</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2601;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Megha</h2>
+      <p>
+        A megha is a cloud &mdash; it comes, it passes, it changes shape. Your thoughts are the same. They feel permanent, but they are not.
+      </p>
+      <p>
+        Writing a thought down is like watching a cloud from below. You see it clearly for the first time. And then, slowly, it moves on.
+      </p>
+      <p>
+        Let your thoughts drift here. You do not have to hold them. Just notice them.
+      </p>
+      <p class="about-note">Your thoughts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="megha.js"></script>
+</body>
+</html>

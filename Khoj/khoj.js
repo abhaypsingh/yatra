@@ -1,0 +1,141 @@
+/* ============================================================
+   KHOJ — the discovery
+   A record of the things you have found
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  /* ==================== DOM ==================== */
+  var opening        = document.getElementById('opening');
+  var beginBtn       = document.getElementById('beginBtn');
+  var main           = document.getElementById('main');
+  var discoveriesEl  = document.getElementById('discoveries');
+  var discoveriesEmpty = document.getElementById('discoveriesEmpty');
+  var addBtn         = document.getElementById('addBtn');
+  var writeView      = document.getElementById('writeView');
+  var writeInput     = document.getElementById('writeInput');
+  var writeCancel    = document.getElementById('writeCancel');
+  var writeSave      = document.getElementById('writeSave');
+  var detailView     = document.getElementById('detailView');
+  var detailText     = document.getElementById('detailText');
+  var detailDate     = document.getElementById('detailDate');
+  var detailClose    = document.getElementById('detailClose');
+  var navFloat       = document.getElementById('navFloat');
+  var navAbout       = document.getElementById('navAbout');
+  var aboutOverlay   = document.getElementById('aboutOverlay');
+  var aboutClose     = document.getElementById('aboutClose');
+
+  /* ==================== STATE ==================== */
+  var STORE_KEY = 'yatra-khoj-discoveries';
+  var items = [];
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(STORE_KEY);
+      if (raw) items = JSON.parse(raw);
+    } catch (e) {}
+  }
+
+  function save() {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(items)); }
+    catch (e) {}
+  }
+
+  /* ==================== RENDER ==================== */
+  function render() {
+    discoveriesEl.innerHTML = '';
+
+    if (items.length === 0) {
+      discoveriesEmpty.classList.remove('hidden');
+      return;
+    }
+
+    discoveriesEmpty.classList.add('hidden');
+
+    items.forEach(function (p) {
+      var card = document.createElement('div');
+      card.className = 'discovery-card';
+
+      var pin = document.createElement('div');
+      pin.className = 'discovery-pin';
+      pin.textContent = '\uD83D\uDD0D';
+      card.appendChild(pin);
+
+      var text = document.createElement('p');
+      text.className = 'discovery-text';
+      text.textContent = p.text;
+      card.appendChild(text);
+
+      card.addEventListener('click', function () { showDetail(p); });
+      discoveriesEl.appendChild(card);
+    });
+  }
+
+  /* ==================== DETAIL ==================== */
+  function showDetail(p) {
+    detailText.textContent = p.text;
+    var d = new Date(p.timestamp);
+    detailDate.textContent = 'discovered ' + d.toLocaleDateString(undefined, {
+      day: 'numeric', month: 'long', year: 'numeric'
+    });
+    detailView.classList.remove('hidden');
+  }
+
+  function hideDetail() { detailView.classList.add('hidden'); }
+
+  /* ==================== WRITE ==================== */
+  function openWrite() {
+    writeInput.value = '';
+    writeView.classList.remove('hidden');
+    setTimeout(function () { writeInput.focus(); }, 100);
+  }
+
+  function closeWrite() { writeView.classList.add('hidden'); }
+
+  function saveItem() {
+    var text = writeInput.value.trim();
+    if (!text) return;
+    items.push({ text: text, timestamp: Date.now() });
+    save();
+    closeWrite();
+    render();
+  }
+
+  /* ==================== ABOUT ==================== */
+  function openAbout() {
+    aboutOverlay.classList.remove('hidden');
+    void aboutOverlay.offsetWidth;
+    aboutOverlay.classList.add('visible');
+  }
+  function closeAbout() {
+    aboutOverlay.classList.remove('visible');
+    setTimeout(function () { aboutOverlay.classList.add('hidden'); }, 400);
+  }
+
+  /* ==================== EVENTS ==================== */
+  beginBtn.addEventListener('click', function () {
+    opening.classList.add('fade-out');
+    setTimeout(function () {
+      opening.classList.add('hidden');
+      main.classList.remove('hidden');
+      navFloat.classList.add('visible');
+      load(); render();
+    }, 1200);
+  });
+
+  addBtn.addEventListener('click', openWrite);
+  writeCancel.addEventListener('click', closeWrite);
+  writeSave.addEventListener('click', saveItem);
+  writeInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); saveItem(); }
+  });
+
+  detailClose.addEventListener('click', hideDetail);
+  detailView.addEventListener('click', function (e) { if (e.target === detailView) hideDetail(); });
+
+  navAbout.addEventListener('click', openAbout);
+  aboutClose.addEventListener('click', closeAbout);
+  aboutOverlay.addEventListener('click', function (e) { if (e.target === aboutOverlay) closeAbout(); });
+
+})();

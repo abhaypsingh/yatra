@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakvan &#x2014; the recipe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0915;&#x0935;&#x093E;&#x0928;</div>
+      <h1 class="title">Pakv&#x0101;n</h1>
+      <p class="subtitle">the recipe</p>
+      <p class="intro">
+        Every family dish carries more than flavour &mdash; it carries hands, voices,
+        kitchens that no longer exist. Name the recipes that hold your family together.
+      </p>
+      <button class="begin-btn" id="beginBtn">write</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Which dish carries your family&rsquo;s love?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name the dish</p>
+        <input class="write-name" id="writeName" type="text" placeholder="nani ki dal, birthday cake&#x2026;">
+        <p class="write-prompt-2">The recipe or the story</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how it is made, or what it means&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">preserve</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F372;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pakv&#x0101;n</h2>
+      <p>
+        A pakvan is not just food. It is love, measured in teaspoons and handfuls.
+        Every family recipe carries the fingerprint of the person who first made it.
+      </p>
+      <p>
+        Some recipes are written down. Most live only in someone&rsquo;s hands,
+        in the way they stir, the way they taste.
+      </p>
+      <p>
+        Write them here &mdash; the dish, the method, the person.
+        Before the recipe leaves with the cook.
+      </p>
+      <p class="about-note">Your recipes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pakvan.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safar — the journey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x092B;&#x0930;</div>
+      <h1 class="title">Safar</h1>
+      <p class="subtitle">the journey</p>
+      <p class="intro">
+        Every journey changes you &mdash; even if you come back to the same place,
+        you return as someone slightly different. Name the travels that left a mark.
+      </p>
+      <button class="begin-btn" id="beginBtn">travel</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="journeys" id="journeys"></div>
+    <p class="journeys-empty" id="journeysEmpty">
+      Which journey changed you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Where did you go?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a city, a mountain, a relative&#x2019;s house&#x2026;">
+        <p class="write-prompt-2">What did the journey leave in you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what changed, what you noticed&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">record</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F9ED;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Safar</h2>
+      <p>
+        A safar is not about the destination. It is about the distance between
+        who you were when you left and who you were when you returned.
+      </p>
+      <p>
+        Some journeys are across oceans. Some are across the street. The length
+        does not matter &mdash; the change does.
+      </p>
+      <p>
+        Write your journeys here. The ones that took you somewhere new inside.
+      </p>
+      <p class="about-note">Your journeys are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="safar.js"></script>
+</body>
+</html>

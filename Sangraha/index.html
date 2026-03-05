@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sa&#x1E45;graha — the collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0902;&#x0917;&#x094D;&#x0930;&#x0939;</div>
+      <h1 class="title">Sa&#x1E45;graha</h1>
+      <p class="subtitle">the collection</p>
+      <p class="intro">
+        Everyone collects something &mdash; seashells, stamps,
+        words, bottle caps, moments.
+        What you gather says something about who you are.
+      </p>
+      <button class="begin-btn" id="beginBtn">gather</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What do you gather?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What do you collect?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="seashells, stickers, quotes&hellip;">
+        <p class="write-prompt-2">Why does it draw you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it means to you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25C6;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sa&#x1E45;graha</h2>
+      <p>
+        A collection is a portrait drawn in objects. Each thing you choose
+        to keep tells a story about what catches your eye, what sparks your wonder.
+      </p>
+      <p>
+        Some people collect rare things. Some collect ordinary things
+        that are extraordinary to them.
+      </p>
+      <p>
+        What do you gather? Name your collections and why they matter.
+      </p>
+      <p class="about-note">Your collections are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="sangraha.js"></script>
+</body>
+</html>

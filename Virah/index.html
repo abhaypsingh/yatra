@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virah — the longing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x093F;&#x0930;&#x0939;</div>
+      <h1 class="title">Virah</h1>
+      <p class="subtitle">the longing</p>
+      <p class="intro">
+        Some things are gone but not forgotten &mdash; a person, a place, a time.
+        Virah is the ache of missing. It hurts because it mattered.
+      </p>
+      <button class="begin-btn" id="beginBtn">remember</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="longings" id="longings"></div>
+    <p class="longings-empty" id="longingsEmpty">
+      What do you miss?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What do you miss?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a person, a place, a feeling&#x2026;">
+        <p class="write-prompt-2">The shape of the missing</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the ache feels like&#x2026;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x1F311;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Virah</h2>
+      <p>
+        Virah is one of the most beautiful words in any language. It is the
+        pain of separation &mdash; but it is also proof of love.
+      </p>
+      <p>
+        You can only miss what once made you whole. The ache is the echo
+        of something precious.
+      </p>
+      <p>
+        Write your longings here. Not to hold on, but to honour what they were.
+      </p>
+      <p class="about-note">Your longings are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="virah.js"></script>
+</body>
+</html>
