@@ -690,6 +690,10 @@ body {
 .card-gunja::before { background: #9878b0; }
 .card-gunja .card-enter { color: #9878b0; }
 
+.card-dehleez:hover { border-color: #b8a068; }
+.card-dehleez::before { background: #b8a068; }
+.card-dehleez .card-enter { color: #b8a068; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

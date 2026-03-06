@@ -153,7 +153,8 @@
         ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others'],
         ['Antaraal', 'Antar\u0101l', 'the space between'],
         ['Chhaap', 'Chh\u0101p', 'the imprint'],
-        ['Gunja', 'G\u016Bnj', 'the echo']
+        ['Gunja', 'G\u016Bnj', 'the echo'],
+        ['Dehleez', 'Dehl\u012Bz', 'the threshold']
       ]
     }
   ];

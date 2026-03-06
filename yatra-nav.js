@@ -154,7 +154,8 @@
         ['Parchhaayi', 'Parchh\u0101y\u012B', 'the reflection in others'],
         ['Antaraal', 'Antar\u0101l', 'the space between'],
         ['Chhaap', 'Chh\u0101p', 'the imprint'],
-        ['Gunja', 'G\u016Bnj', 'the echo']
+        ['Gunja', 'G\u016Bnj', 'the echo'],
+        ['Dehleez', 'Dehl\u012Bz', 'the threshold']
       ]
     }
   ];
@@ -221,7 +222,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 118 experiences';
+    sub.textContent = 'the journey \u2014 119 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 
