@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jh&#x012B;l — the lake</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x0940;&#x0932;</div>
+      <h1 class="title">Jh&#x012B;l</h1>
+      <p class="subtitle">the lake</p>
+      <p class="intro">
+        Somewhere inside you there is a still place where everything settles.
+        The noise quiets. The worry sinks to the bottom. The surface becomes
+        clear. You have been there before, even if only for a moment. Name
+        what takes you to your lake.
+      </p>
+      <button class="begin-btn" id="beginBtn">still</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What brings you to the still place inside?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What takes you to stillness?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a walk alone, sitting with a pet, watching rain&hellip;">
+        <p class="write-prompt-2">What does it feel like when you arrive?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what quiets, what clears, what you can finally see&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rest</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25E0;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jh&#x012B;l</h2>
+      <p>
+        A lake is not empty. It holds everything &mdash; fish, stones, old
+        leaves, reflections of clouds. But the surface is still. And in that
+        stillness, you can see all the way to the bottom.
+      </p>
+      <p>
+        You have a lake inside you too. It is the place you reach when the
+        noise finally stops &mdash; when the worrying quiets and the performing
+        stops and you are just yourself, breathing, present, clear.
+      </p>
+      <p>
+        Name the things that take you there. A certain song, a certain place,
+        a certain person. Your lake is always waiting.
+      </p>
+      <p class="about-note">Your stillness is stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="jheel.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lehren — the waves</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x0939;&#x0930;&#x0947;&#x0902;</div>
+      <h1 class="title">Lehren</h1>
+      <p class="subtitle">the waves</p>
+      <p class="intro">
+        Feelings come and go like waves. Happiness arrives, crests, and
+        retreats. Sadness rolls in, heavy and slow, and eventually pulls
+        back. You cannot stop the waves, but you can learn to notice
+        them &mdash; their shape, their rhythm, their return.
+      </p>
+      <button class="begin-btn" id="beginBtn">notice</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What feeling is washing over you right now?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Describe the wave you feel&hellip;</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="what is rising, what is falling, what keeps coming back&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">let go</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x223F;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lehren</h2>
+      <p>
+        You cannot choose your feelings. They arrive like waves &mdash;
+        sometimes gentle, sometimes crashing, always moving. The mistake
+        is thinking you should be able to stop them.
+      </p>
+      <p>
+        The wave of anger after an unfair moment. The wave of joy when a
+        friend says exactly the right thing. The slow, heavy wave of
+        missing someone. None of these are wrong. They are the ocean
+        inside you, doing what oceans do.
+      </p>
+      <p>
+        Write what you feel as it moves through you. Not to fix it &mdash;
+        just to witness it.
+      </p>
+      <p class="about-note">Your waves are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="lehren.js"></script>
+</body>
+</html>

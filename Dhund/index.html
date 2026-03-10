@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhund — the fog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x0941;&#x0902;&#x0927;</div>
+      <h1 class="title">Dhund</h1>
+      <p class="subtitle">the fog</p>
+      <p class="intro">
+        Sometimes you cannot see where you are going. The path disappears.
+        The answers stop making sense. You walk anyway. That walk through
+        fog &mdash; uncertain, slow, trusting your feet &mdash; is not
+        failure. It is courage.
+      </p>
+      <button class="begin-btn" id="beginBtn">walk</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When have you had to walk without seeing the way?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Describe the fog you are in or have walked through&hellip;</p>
+        <textarea class="write-input" id="writeInput" rows="4" placeholder="what is unclear, what you cannot see, how you keep walking&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">step</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x224B;</div>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhund</h2>
+      <p>
+        Fog is not darkness. In darkness, you know something is missing. In
+        fog, the world is still there &mdash; you just cannot see it clearly.
+        Everything is shapes and guesses and trust.
+      </p>
+      <p>
+        Some of the most important stretches of life happen in fog. You do
+        not know what you want. You do not know who you are becoming. You
+        cannot see the next step until you take it. And yet &mdash; you
+        keep walking.
+      </p>
+      <p>
+        Write about your fog. Not to clear it, but to honour the courage
+        it takes to move through it.
+      </p>
+      <p class="about-note">Your fogs are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="dhund.js"></script>
+</body>
+</html>

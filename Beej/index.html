@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x012B;j — the seed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0940;&#x091C;</div>
+      <h1 class="title">B&#x012B;j</h1>
+      <p class="subtitle">the seed</p>
+      <p class="intro">
+        Some ideas are planted in you long before they grow. A sentence
+        from a book. A question a teacher asked that you still think about.
+        A dream that has no shape yet but will not leave. Name the seeds
+        &mdash; the things planted in you that have not bloomed yet.
+      </p>
+      <button class="begin-btn" id="beginBtn">plant</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What idea is planted in you that has not grown yet?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the seed?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a question you keep returning to, a dream without a shape&hellip;">
+        <p class="write-prompt-2">Where was it planted?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who said it, when it arrived, why it stays&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bury</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2299;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x012B;j</h2>
+      <p>
+        A seed does not look like what it will become. It is small, dark,
+        unremarkable. But inside it is a blueprint for something enormous
+        &mdash; a tree, a flower, a forest.
+      </p>
+      <p>
+        You carry seeds too. Ideas that were planted years ago by a
+        conversation, a book, a moment of wonder. They sit in the soil of
+        you, waiting for the right season. Some will bloom soon. Some will
+        take years. Some may never grow &mdash; but they are still part of
+        your inner landscape.
+      </p>
+      <p>
+        Name the seeds you carry. Even the ones you cannot yet imagine
+        blooming.
+      </p>
+      <p class="about-note">Your seeds are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="beej.js"></script>
+</body>
+</html>

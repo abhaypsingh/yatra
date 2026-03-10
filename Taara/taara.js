@@ -154,7 +154,26 @@
         ['Antaraal', 'Antar\u0101l', 'the space between'],
         ['Chhaap', 'Chh\u0101p', 'the imprint'],
         ['Gunja', 'G\u016Bnj', 'the echo'],
-        ['Dehleez', 'Dehl\u012Bz', 'the threshold']
+        ['Dehleez', 'Dehl\u012Bz', 'the threshold'],
+        ['Neev', 'N\u012Bv', 'the foundation'],
+        ['Mod', 'Mo\u1E5B', 'the turn'],
+        ['Seedhi', 'S\u012Bdh\u012B', 'the staircase'],
+        ['Trishna', 'Trishn\u0101', 'the thirst'],
+        ['Pehlu', 'Pehl\u016B', 'the facet'],
+        ['Gathri', 'Ga\u1E6Dhr\u012B', 'the bundle'],
+        ['Dhund', 'Dhund', 'the fog'],
+        ['Jheel', 'Jh\u012Bl', 'the lake'],
+        ['Angaara', 'Ang\u0101r\u0101', 'the ember'],
+        ['Rishta', 'Risht\u0101', 'the bond'],
+        ['Baans', 'B\u0101ns', 'the bamboo'],
+        ['Raasta', 'R\u0101st\u0101', 'the path'],
+        ['Tanha', 'Tanh\u0101', 'the solitude'],
+        ['Gilhari', 'Gilhar\u012B', 'the squirrel'],
+        ['Lehren', 'Lehren', 'the waves'],
+        ['Beej', 'B\u012Bj', 'the seed'],
+        ['Panaah', 'Pan\u0101h', 'the refuge'],
+        ['Aahat', '\u0100hat', 'the footstep'],
+        ['Titli', 'Titl\u012B', 'the butterfly']
       ]
     }
   ];

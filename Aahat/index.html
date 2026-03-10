@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;hat — the footstep</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0939;&#x091F;</div>
+      <h1 class="title">&#x0100;hat</h1>
+      <p class="subtitle">the footstep</p>
+      <p class="intro">
+        Before anything arrives, there is a sign. A feeling in your chest
+        that something is about to change. A conversation that hints at
+        what is coming. The air before a storm. Name the footsteps you
+        hear &mdash; the signs that something is approaching.
+      </p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What signs have you noticed that something is about to change?
+    </p>
+
+    <button class="add-btn" id="addBtn">+</button>
+
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is approaching?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a change, a goodbye, a new beginning, a feeling&hellip;">
+        <p class="write-prompt-2">How did you hear it coming?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the signs, the feelings, what told you something was near&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">note</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&hellip;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;hat</h2>
+      <p>
+        Change does not arrive without warning. There are always footsteps
+        &mdash; small signs that something is shifting. A friend who starts
+        calling less. A feeling of restlessness that will not go away. A new
+        interest that keeps pulling at you.
+      </p>
+      <p>
+        Most people ignore the footsteps. They are busy, distracted, or
+        afraid of what is coming. But if you learn to listen &mdash; really
+        listen &mdash; you can hear the future approaching. Not to stop it,
+        but to be ready.
+      </p>
+      <p>
+        Write down the footsteps you hear. The signs that something in your
+        life is about to change.
+      </p>
+      <p class="about-note">Your signs are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="aahat.js"></script>
+</body>
+</html>

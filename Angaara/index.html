@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ang&#x0101;r&#x0101; — the ember</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0902;&#x0917;&#x093E;&#x0930;&#x093E;</div>
+      <h1 class="title">Ang&#x0101;r&#x0101;</h1>
+      <p class="subtitle">the ember</p>
+      <p class="intro">
+        Some passions do not roar like a fire. They glow quietly &mdash; a warm
+        spot in your chest that never goes cold. The thing you always come back
+        to, the subject you never tire of, the dream that refuses to die. Name
+        your embers.
+      </p>
+      <button class="begin-btn" id="beginBtn">glow</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What glows quietly inside you and refuses to go out?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the ember?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a dream, a subject you love, a quiet obsession&hellip;">
+        <p class="write-prompt-2">How does it glow?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how long it has been burning, what keeps it alive&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tend</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25C6;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ang&#x0101;r&#x0101;</h2>
+      <p>
+        An ember is what remains after the fire dies down. It looks like
+        nothing &mdash; grey ash, a faint warmth. But blow on it gently and it
+        will light again. Your passions are the same.
+      </p>
+      <p>
+        The world will try to put your embers out. People will tell you to be
+        practical, to move on, to grow up. But the things that glow inside
+        you &mdash; the curiosity, the care, the stubborn fascination &mdash;
+        those are not childish. They are the truest parts of you.
+      </p>
+      <p>
+        Name them. Tend them. An ember only dies when it is forgotten.
+      </p>
+      <p class="about-note">Your embers are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="angaara.js"></script>
+</body>
+</html>

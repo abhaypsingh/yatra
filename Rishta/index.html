@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risht&#x0101; — the bond</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x093F;&#x0936;&#x094D;&#x0924;&#x093E;</div>
+      <h1 class="title">Risht&#x0101;</h1>
+      <p class="subtitle">the bond</p>
+      <p class="intro">
+        Some connections are chosen. Others arrive without asking &mdash; a
+        sibling, a neighbour, a cousin you see once a year. You did not pick
+        them, but they shaped you. And now you cannot imagine the story of your
+        life without them.
+      </p>
+      <button class="begin-btn" id="beginBtn">weave</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What bond shaped you that you never chose?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Who is the bond with?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a sibling, a grandparent, a neighbour, a cousin&hellip;">
+        <p class="write-prompt-2">How did it shape you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what they gave you, what you learned, what holds you together&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tie</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x221E;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Risht&#x0101;</h2>
+      <p>
+        You chose your friends. But you did not choose your family, your
+        neighbours, the child who sat next to you on the first day of school.
+        These unchosen bonds are some of the most powerful forces in your life.
+      </p>
+      <p>
+        A bond is not always comfortable. Sometimes it stretches. Sometimes it
+        tangles. But it holds &mdash; through distance, through silence, through
+        years of not quite understanding each other. That endurance is its own
+        kind of love.
+      </p>
+      <p>
+        Name the bonds you carry. The ones you were given, not the ones you picked.
+      </p>
+      <p class="about-note">Your bonds are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="rishta.js"></script>
+</body>
+</html>

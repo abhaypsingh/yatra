@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&#x012B;&#x1E0D;h&#x012B; — the staircase</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0940;&#x0922;&#x093C;&#x0940;</div>
+      <h1 class="title">S&#x012B;&#x1E0D;h&#x012B;</h1>
+      <p class="subtitle">the staircase</p>
+      <p class="intro">
+        Some things cannot be understood all at once. They must be climbed
+        &mdash; one step, then another, then another. Learning to ride a
+        bicycle. Learning to trust. Learning that your parents are also just
+        people. Name the staircases you are climbing.
+      </p>
+      <button class="begin-btn" id="beginBtn">climb</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What are you learning one step at a time?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the staircase?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="learning patience, learning to cook, understanding a friend&hellip;">
+        <p class="write-prompt-2">What step are you on?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you have learned so far, what is still ahead&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">step</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25B3;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>S&#x012B;&#x1E0D;h&#x012B;</h2>
+      <p>
+        Nobody learns courage in a single day. Nobody masters kindness in one
+        conversation. The important things in life are staircases &mdash; you
+        climb them slowly, and sometimes you slip back a step or two.
+      </p>
+      <p>
+        The staircase is not a failure. It is the design. Some understanding
+        can only arrive gradually, through repetition and patience and the
+        willingness to keep climbing even when you cannot see the top.
+      </p>
+      <p>
+        Name what you are learning. Honour the step you are on, even if it
+        is not the last one.
+      </p>
+      <p class="about-note">Your staircases are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="seedhi.js"></script>
+</body>
+</html>

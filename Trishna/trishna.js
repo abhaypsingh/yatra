@@ -1,6 +1,6 @@
 /* ============================================================
-   JUGNU — the firefly
-   A record of unexpected flashes of joy
+   TRISHNA — the thirst
+   A record of nameless longings
    ============================================================ */
 
 (function () {
@@ -14,12 +14,10 @@
   var placesEmpty  = document.getElementById('placesEmpty');
   var addBtn       = document.getElementById('addBtn');
   var writeView    = document.getElementById('writeView');
-  var writeName    = document.getElementById('writeName');
   var writeInput   = document.getElementById('writeInput');
   var writeCancel  = document.getElementById('writeCancel');
   var writeSave    = document.getElementById('writeSave');
   var detailView   = document.getElementById('detailView');
-  var detailName   = document.getElementById('detailName');
   var detailText   = document.getElementById('detailText');
   var detailDate   = document.getElementById('detailDate');
   var detailClose  = document.getElementById('detailClose');
@@ -29,7 +27,7 @@
   var aboutClose   = document.getElementById('aboutClose');
 
   /* ==================== STATE ==================== */
-  var STORE_KEY = 'yatra-jugnu-fireflies';
+  var STORE_KEY = 'yatra-trishna-thirsts';
   var items = [];
 
   function load() {
@@ -61,20 +59,13 @@
 
       var pin = document.createElement('div');
       pin.className = 'place-pin';
-      pin.textContent = '\u2727';
+      pin.textContent = '\u25CE';
       card.appendChild(pin);
 
-      var name = document.createElement('p');
-      name.className = 'place-name';
-      name.textContent = p.what;
-      card.appendChild(name);
-
-      if (p.feeling) {
-        var text = document.createElement('p');
-        text.className = 'place-text';
-        text.textContent = p.feeling;
-        card.appendChild(text);
-      }
+      var text = document.createElement('p');
+      text.className = 'place-text';
+      text.textContent = p.text;
+      card.appendChild(text);
 
       card.addEventListener('click', function () { showDetail(p); });
       placesEl.appendChild(card);
@@ -83,10 +74,9 @@
 
   /* ==================== DETAIL ==================== */
   function showDetail(p) {
-    detailName.textContent = p.what;
-    detailText.textContent = p.feeling || '';
+    detailText.textContent = p.text;
     var d = new Date(p.timestamp);
-    detailDate.textContent = 'caught ' + d.toLocaleDateString(undefined, {
+    detailDate.textContent = 'felt ' + d.toLocaleDateString(undefined, {
       day: 'numeric', month: 'long', year: 'numeric'
     });
     detailView.classList.remove('hidden');
@@ -96,19 +86,17 @@
 
   /* ==================== WRITE ==================== */
   function openWrite() {
-    writeName.value = '';
     writeInput.value = '';
     writeView.classList.remove('hidden');
-    setTimeout(function () { writeName.focus(); }, 100);
+    setTimeout(function () { writeInput.focus(); }, 100);
   }
 
   function closeWrite() { writeView.classList.add('hidden'); }
 
   function saveItem() {
-    var what = writeName.value.trim();
-    if (!what) return;
-    var feeling = writeInput.value.trim();
-    items.push({ what: what, feeling: feeling, timestamp: Date.now() });
+    var text = writeInput.value.trim();
+    if (!text) return;
+    items.push({ text: text, timestamp: Date.now() });
     save();
     closeWrite();
     render();

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanh&#x0101; — the solitude</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0928;&#x094D;&#x0939;&#x093E;</div>
+      <h1 class="title">Tanh&#x0101;</h1>
+      <p class="subtitle">the solitude</p>
+      <p class="intro">
+        There is a difference between loneliness and solitude. Loneliness is an
+        ache. Solitude is a choice &mdash; a quiet room where you can hear
+        yourself think. Name the moments of aloneness that taught you something
+        you could not have learned in a crowd.
+      </p>
+      <button class="begin-btn" id="beginBtn">sit</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did being alone teach you something?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What was the moment of solitude?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a long walk, a quiet evening, a day without screens&hellip;">
+        <p class="write-prompt-2">What did it teach you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you heard in the silence, what you understood&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25CB;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Tanh&#x0101;</h2>
+      <p>
+        The world is loud. It tells you to connect, to share, to never be
+        alone. But some things can only be heard in silence. Some truths only
+        arrive when there is no one else in the room.
+      </p>
+      <p>
+        Solitude is not loneliness. Loneliness is the absence of others.
+        Solitude is the presence of yourself. It is the quiet that lets you
+        listen to the voice underneath all the noise &mdash; your own.
+      </p>
+      <p>
+        Name the moments when being alone was not empty, but full. When the
+        silence taught you something the noise never could.
+      </p>
+      <p class="about-note">Your solitudes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="tanha.js"></script>
+</body>
+</html>

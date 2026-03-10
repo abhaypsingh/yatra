@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pan&#x0101;h — the refuge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0928;&#x093E;&#x0939;</div>
+      <h1 class="title">Pan&#x0101;h</h1>
+      <p class="subtitle">the refuge</p>
+      <p class="intro">
+        When the world is too loud or too hard, where do you go? A corner
+        of your room. A person who never judges. A book that feels like
+        home. Everyone needs a refuge &mdash; a place where the noise
+        stops and you can just breathe.
+      </p>
+      <button class="begin-btn" id="beginBtn">rest</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Where do you go when the world is too much?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the refuge?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a corner, a person, a book, a song&hellip;">
+        <p class="write-prompt-2">What does it give you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what quiets down, what you find there, why it is safe&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">shelter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2302;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pan&#x0101;h</h2>
+      <p>
+        A refuge is not an escape. Escape is running away. Refuge is
+        running toward &mdash; toward safety, toward quiet, toward the
+        version of the world where you do not have to perform or explain
+        yourself.
+      </p>
+      <p>
+        Your refuge might be a physical place &mdash; a bedroom, a library,
+        a tree you climb. It might be a person whose presence alone is
+        enough to calm you. It might be a song, a book, a ritual. It does
+        not matter what form it takes. What matters is that it exists.
+      </p>
+      <p>
+        Name your refuges. Knowing where they are is knowing how to take
+        care of yourself.
+      </p>
+      <p class="about-note">Your refuges are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="panaah.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /* ============================================================
-   JUGNU — the firefly
-   A record of unexpected flashes of joy
+   GILHARI — the squirrel
+   A record of the small efforts that matter more than you think
    ============================================================ */
 
 (function () {
@@ -29,7 +29,7 @@
   var aboutClose   = document.getElementById('aboutClose');
 
   /* ==================== STATE ==================== */
-  var STORE_KEY = 'yatra-jugnu-fireflies';
+  var STORE_KEY = 'yatra-gilhari-efforts';
   var items = [];
 
   function load() {
@@ -61,7 +61,7 @@
 
       var pin = document.createElement('div');
       pin.className = 'place-pin';
-      pin.textContent = '\u2727';
+      pin.textContent = '\u2218';
       card.appendChild(pin);
 
       var name = document.createElement('p');
@@ -86,7 +86,7 @@
     detailName.textContent = p.what;
     detailText.textContent = p.feeling || '';
     var d = new Date(p.timestamp);
-    detailDate.textContent = 'caught ' + d.toLocaleDateString(undefined, {
+    detailDate.textContent = 'gathered ' + d.toLocaleDateString(undefined, {
       day: 'numeric', month: 'long', year: 'numeric'
     });
     detailView.classList.remove('hidden');

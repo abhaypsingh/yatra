@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titl&#x012B; — the butterfly</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093F;&#x0924;&#x0932;&#x0940;</div>
+      <h1 class="title">Titl&#x012B;</h1>
+      <p class="subtitle">the butterfly</p>
+      <p class="intro">
+        A caterpillar does not simply grow wings. It dissolves completely
+        &mdash; becomes liquid &mdash; and rebuilds itself into something
+        new. You have done this too. Every time you outgrew a fear, a habit,
+        a version of yourself, you transformed. Name your metamorphoses.
+      </p>
+      <button class="begin-btn" id="beginBtn">emerge</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What transformation have you lived through?
+    </p>
+
+    <button class="add-btn" id="addBtn">+</button>
+
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you transform from?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the shy kid, the one who was afraid of the dark, the old habit&hellip;">
+        <p class="write-prompt-2">What did you become?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who you are now, what changed, what the new wings feel like&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fly</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2726;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Titl&#x012B;</h2>
+      <p>
+        Transformation is not gentle. The caterpillar does not simply sprout
+        wings &mdash; it dissolves inside the cocoon. Everything it was breaks
+        down into raw material, and from that material, something entirely
+        new is built.
+      </p>
+      <p>
+        You know this feeling. The version of you that was afraid of speaking
+        up &mdash; where did it go? The version that needed a night light?
+        The version that did not know how to be a friend? They dissolved,
+        and you emerged. Different. Still you, but <em>new</em>.
+      </p>
+      <p>
+        Name the transformations you have lived through. They are proof
+        that you are capable of becoming.
+      </p>
+      <p class="about-note">Your transformations are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="titli.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /* ============================================================
-   JUGNU — the firefly
-   A record of unexpected flashes of joy
+   RISHTA — the bond
+   A record of the bonds that shaped you without your choosing
    ============================================================ */
 
 (function () {
@@ -29,7 +29,7 @@
   var aboutClose   = document.getElementById('aboutClose');
 
   /* ==================== STATE ==================== */
-  var STORE_KEY = 'yatra-jugnu-fireflies';
+  var STORE_KEY = 'yatra-rishta-bonds';
   var items = [];
 
   function load() {
@@ -61,7 +61,7 @@
 
       var pin = document.createElement('div');
       pin.className = 'place-pin';
-      pin.textContent = '\u2727';
+      pin.textContent = '\u221E';
       card.appendChild(pin);
 
       var name = document.createElement('p');
@@ -86,7 +86,7 @@
     detailName.textContent = p.what;
     detailText.textContent = p.feeling || '';
     var d = new Date(p.timestamp);
-    detailDate.textContent = 'caught ' + d.toLocaleDateString(undefined, {
+    detailDate.textContent = 'woven ' + d.toLocaleDateString(undefined, {
       day: 'numeric', month: 'long', year: 'numeric'
     });
     detailView.classList.remove('hidden');
