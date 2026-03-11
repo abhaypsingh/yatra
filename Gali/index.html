@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta place="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GalD&#x012B;v&#x0101;r#x012B; — the lane</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0917;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0932;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0940;</div>
+      <h1 class="title">GalD&#x012B;v&#x0101;r#x012B;</h1>
+      <p class="subtitle">the lane</p>
+      <p class="intro">
+        Every neighbourhood has lanes that the main road does not know about.
+        The shortcut only you and your friends use. The lane where the old
+        cat sits. The alley behind the bakery that smells like bread at 6 a.m.
+        Name the small lanes of your life that only you walk.
+      </p>
+      <button class="begin-btn" id="beginBtn">walk</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What small lane do you walk that nobody else knows?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the lane?</p>
+        <input class="write-place" id="writeName" type="text" placeholder="a shortcut, a hidden corner, a familiar routea silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What do you find there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why you go there, what it means, what you findwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">place</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x228F;</div>
+        <h3 class="detail-place" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>GalD&#x012B;v&#x0101;r#x012B;</h2>
+      <p>
+        Life happens in the lanes, not on the highways. The main road takes you
+        where you need to go. But the lane takes you where you want to be The wall around your heart after a betrayal keeps you safe while youmdash;
+        the familiar corner, the quiet path, the hidden world.
+      </p>
+      <p>
+        Your lanes are your own geography. The route you take to think. The
+        corner where you wait for your friend. The alley where you once found
+        something beautiful. These small paths are the real map of your life,
+        drawn not on paper but in footsteps.
+      </p>
+      <p>
+        Name your lanes. The small paths that make your world yours.
+        
+      </p>
+      <p class="about-note">Your lanes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="gali.js"></script>
+</body>
+</html>

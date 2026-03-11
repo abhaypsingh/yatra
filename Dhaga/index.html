@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dh&#x0101;g&#x0101; — the thread</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x093E;&#x0917;&#x093E;</div>
+      <h1 class="title">Dh&#x0101;g&#x0101;</h1>
+      <p class="subtitle">the thread</p>
+      <p class="intro">
+        Relationships are not held together by grand gestures. They are held by
+        threads &mdash; a message sent for no reason, remembering what someone
+        likes, showing up when it rains. Name the thin, strong threads that hold
+        your connections together.
+      </p>
+      <button class="begin-btn" id="beginBtn">weave</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What thin thread holds an important relationship together?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the thread?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a weekly call, a shared joke, always saying goodnight&hellip;">
+        <p class="write-prompt-2">Which relationship does it hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who it connects you to, how long it has lasted&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tie</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">~</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dh&#x0101;g&#x0101;</h2>
+      <p>
+        A thread is almost nothing. You could snap it with two fingers. But a
+        thousand threads woven together can hold anything. That is how relationships
+        work &mdash; not through one big thing, but through ten thousand small ones.
+      </p>
+      <p>
+        The inside joke. The goodnight text. Remembering that your friend does not
+        like loud places. Saving the last piece for your sibling. These threads are
+        invisible to everyone else, but they are the strongest material in the world.
+      </p>
+      <p>
+        Name your threads. The tiny habits of love that hold your people close.
+      </p>
+      <p class="about-note">Your threads are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="dhaga.js"></script>
+</body>
+</html>

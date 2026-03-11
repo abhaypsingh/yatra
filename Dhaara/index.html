@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dh&#x0101;r&#x0101; — the stream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x093E;&#x0930;&#x093E;</div>
+      <h1 class="title">Dh&#x0101;r&#x0101;</h1>
+      <p class="subtitle">the stream</p>
+      <p class="intro">
+        Some things in life do not stay still. They flow &mdash; through you,
+        past you, around you. Time. Conversations with friends. The way your
+        interests change from year to year. Name the streams that move through
+        your life.
+      </p>
+      <button class="begin-btn" id="beginBtn">flow</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What flows through your life like a stream?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the stream?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="time, friendships that shift, your changing interests&hellip;">
+        <p class="write-prompt-2">Where is it flowing?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how it moves, where it has been, where it might be going&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&asymp;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dh&#x0101;r&#x0101;</h2>
+      <p>
+        A stream does not stop. It cannot. It moves around rocks, under
+        bridges, through seasons. It is never the same water twice, but it
+        is always the same stream.
+      </p>
+      <p>
+        Your life has streams too. The friendships that keep evolving. The
+        way your taste in music changes. The conversation with a parent that
+        has been going on your entire life, one sentence at a time. These
+        are not events &mdash; they are flows. Ongoing, shifting, alive.
+      </p>
+      <p>
+        Name the streams. The things that are always moving, always changing,
+        always there.
+      </p>
+      <p class="about-note">Your streams are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="dhaara.js"></script>
+</body>
+</html>

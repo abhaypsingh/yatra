@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darr — the fear</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0921;&#x0930;</div>
+      <h1 class="title">Darr</h1>
+      <p class="subtitle">the fear</p>
+      <p class="intro">
+        Everyone is afraid of something. The dark. Being alone. Losing
+        someone. Being laughed at. Fear is not a flaw &mdash; it is
+        information. It tells you what matters to you. Name your fears.
+        The ones you have faced and the ones you still carry.
+      </p>
+      <button class="begin-btn" id="beginBtn">face</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What fear do you carry or have you faced?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the fear?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the dark, losing someone, being laughed at, failing&hellip;">
+        <p class="write-prompt-2">What does it tell you about what matters?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why this fear exists, what it protects, what it costs you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25BC;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Darr</h2>
+      <p>
+        Fear is not the opposite of courage. Courage is what happens when
+        you feel the fear and move anyway. Every brave thing you have ever
+        done started with being afraid.
+      </p>
+      <p>
+        Some fears protect you &mdash; the fear of fire keeps your hand from
+        the flame. Some fears limit you &mdash; the fear of embarrassment
+        keeps your hand down in class. The trick is not to eliminate fear,
+        but to know it well enough to tell the difference.
+      </p>
+      <p>
+        Name your fears. Not to defeat them, but to understand them. A fear
+        that is named loses some of its power.
+      </p>
+      <p class="about-note">Your fears are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="darr.js"></script>
+</body>
+</html>

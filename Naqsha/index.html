@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naqsh&#x0101; — the map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x0915;&#x093C;&#x094D;&#x0936;&#x093E;</div>
+      <h1 class="title">Naqsh&#x0101;</h1>
+      <p class="subtitle">the map</p>
+      <p class="intro">
+        Everyone carries a map in their head. Not of streets &mdash; of feelings.
+        The place where you feel safest. The corner of school you avoid. The route
+        you take when you need to think. Your inner map is not drawn on paper, but
+        it is real. Name the places on it.
+      </p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What places live on your inner map?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the place?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a corner of school, the route you walk to think, a room&hellip;">
+        <p class="write-prompt-2">What does it mean to you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why you go there, what it holds, how it feels&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">place</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25A2;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Naqsh&#x0101;</h2>
+      <p>
+        Your map is not the same as anyone else's. The park that feels magical
+        to you might be ordinary to your friend. The street corner where something
+        happened &mdash; good or bad &mdash; is marked on your map forever,
+        invisible to everyone else.
+      </p>
+      <p>
+        This is the geography of your inner world. The safe places, the scary
+        places, the places where important things happened. Drawing this map is
+        a way of understanding where you have been and where you feel at home.
+      </p>
+      <p>
+        Name the places. They are more real than any atlas.
+      </p>
+      <p class="about-note">Your maps are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="naqsha.js"></script>
+</body>
+</html>

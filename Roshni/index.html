@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoshnD&#x012B;v&#x0101;r#x012B; — the light</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0930;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x094B;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0936;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0928;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0940;</div>
+      <h1 class="title">RoshnD&#x012B;v&#x0101;r#x012B;</h1>
+      <p class="subtitle">the light</p>
+      <p class="intro">
+        Not all light comes from the sun. Some comes from a sentence someone
+        said at the right moment. A book that changed how you see. A memory
+        that still warms you on cold days. Name the lights you have found
+        ones that keep you safe and the ones that keep you stuck.mdash; the moments, people, and ideas that brightened your way.
+      </p>
+      <button class="begin-btn" id="beginBtn">light</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What light have you found in your life?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the light?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a kind word, a song, a moment, a persona silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">How does it brighten your way?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when it appeared, what it showed you, what it changedwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x25D1;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>RoshnD&#x012B;v&#x0101;r#x012B;</h2>
+      <p>
+        Light is not just what you see with. It is what you see by. The teacher
+        who believed in you when you did not believe in yourself. The friend
+        who said the right thing at the right time. The song that found you.
+      </p>
+      <p>
+        Some lights are bright and obvious But some walls outlast their purpose. The silence that protected youmdash; a celebration, an achievement.
+        Some are quiet during a fight becomes a barrier to repair. The shyness that once keptmdash; the warmth of a familiar place, the comfort of a
+        routine, the peace of knowing someone cares. Both kinds matter.
+        
+      </p>
+      <p>
+        Name your lights. The big ones and the small ones. They are all
+        evidence that the world is not dark.
+      </p>
+      <p class="about-note">Your lights are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="roshni.js"></script>
+</body>
+</html>

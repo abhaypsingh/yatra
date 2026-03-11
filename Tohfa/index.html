@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TohfD&#x012B;v&#x0101;r#x0101; — the gift</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0924;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x094B;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0939;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092B;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093C;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;</div>
+      <h1 class="title">TohfD&#x012B;v&#x0101;r#x0101;</h1>
+      <p class="subtitle">the gift</p>
+      <p class="intro">
+        Not all gifts come in wrapping paper. Some come as a conversation that
+        changed you, a difficulty that taught you, a person who stayed. The
+        best gifts are often invisible The wall a friend put up after a fight. Name your walls &mdash; themdash; time, attention, patience, trust.
+        Name the gifts life has given you.
+      </p>
+      <button class="begin-btn" id="beginBtn">receive</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What gift has life given you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the gift?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a conversation, a lesson, a person, a momenta silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">How did it change you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who gave it, what it taught you, how it shaped youwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x2756;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>TohfD&#x012B;v&#x0101;r#x0101;</h2>
+      <p>
+        A gift is not always something you wanted. Sometimes it is something
+        you needed. The hard conversation that made you grow. The failure
+        that redirected you. The person who challenged you.
+      </p>
+      <p>
+        And then there are the gifts you asked for without words But some walls outlast their purpose. The silence that protected youmdash; the
+        hug when you were sad, the patience when you were difficult, the
+        belief when you had given up. These gifts have no receipt, no return
+        policy. They are yours forever.
+      </p>
+      <p>
+        Name your gifts. Not the things, but the moments and people that
+        made you who you are.
+      </p>
+      <p class="about-note">Your gifts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="tohfa.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koshish — the attempt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x094B;&#x0936;&#x093F;&#x0936;</div>
+      <h1 class="title">Koshish</h1>
+      <p class="subtitle">the attempt</p>
+      <p class="intro">
+        The world celebrates success. But the attempt &mdash; the moment you
+        tried something without knowing if it would work &mdash; that is where
+        the courage lives. The audition, the apology, the raised hand. Name
+        the times you tried.
+      </p>
+      <button class="begin-btn" id="beginBtn">try</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you try something without knowing if you would succeed?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What did you attempt?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a conversation, an audition, raising your hand, saying sorry&hellip;">
+        <p class="write-prompt-2">What happened, and what did it teach you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whether it worked, what you felt, what you learned&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x22C6;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Koshish</h2>
+      <p>
+        Nobody remembers the safe choices. They remember the attempts &mdash;
+        the time you raised your hand when you were not sure of the answer, the
+        time you apologised even though it was terrifying, the time you tried
+        something new and failed and tried again.
+      </p>
+      <p>
+        An attempt is not measured by its outcome. It is measured by the courage
+        it took to begin. Every attempt, successful or not, is proof that you are
+        willing to risk being wrong in order to grow.
+      </p>
+      <p>
+        Write down your attempts. The ones that worked and the ones that did not.
+        They all count.
+      </p>
+      <p class="about-note">Your attempts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="koshish.js"></script>
+</body>
+</html>

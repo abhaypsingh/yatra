@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;sm&#x0101;n — the sky</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0938;&#x092E;&#x093E;&#x0928;</div>
+      <h1 class="title">&#x0100;sm&#x0101;n</h1>
+      <p class="subtitle">the sky</p>
+      <p class="intro">
+        Some things feel limitless. The love of a parent. Your curiosity about
+        the world. The number of stories left to tell. Not everything in life
+        has edges. Name the things that feel as wide and open as the sky.
+      </p>
+      <button class="begin-btn" id="beginBtn">gaze</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What in your life feels as open as the sky?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What feels limitless?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="your curiosity, a parent&rsquo;s love, the stories you could tell&hellip;">
+        <p class="write-prompt-2">Why does it feel infinite?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what makes it feel unbounded, how it stretches&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x2227;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;sm&#x0101;n</h2>
+      <p>
+        The sky has no walls. It does not end &mdash; it just keeps going, past
+        the clouds, past the blue, past everything you can see. Some things in
+        your life are like that.
+      </p>
+      <p>
+        A parent&rsquo;s love that never runs out no matter what you do. Your
+        curiosity about the world that only grows the more you learn. The number
+        of books you could write, songs you could sing, lives you could touch.
+        Not everything in life is limited. Some things are sky.
+      </p>
+      <p>
+        Name what feels limitless. In a life full of boundaries, these are the
+        spaces where you can breathe.
+      </p>
+      <p class="about-note">Your skies are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="aasman.js"></script>
+</body>
+</html>

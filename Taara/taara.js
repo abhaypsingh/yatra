@@ -173,7 +173,18 @@
         ['Beej', 'B\u012Bj', 'the seed'],
         ['Panaah', 'Pan\u0101h', 'the refuge'],
         ['Aahat', '\u0100hat', 'the footstep'],
-        ['Titli', 'Titl\u012B', 'the butterfly']
+        ['Titli', 'Titl\u012B', 'the butterfly'],
+        ['Naqsha', 'Naqsh\u0101', 'the map'],
+        ['Koshish', 'Koshish', 'the attempt'],
+        ['Dhaga', 'Dh\u0101g\u0101', 'the thread'],
+        ['Thakan', 'Thak\u0101n', 'the tiredness'],
+        ['Deewar', 'D\u012Bv\u0101r', 'the wall'],
+        ['Aasman', '\u0100sm\u0101n', 'the sky'],
+        ['Gali', 'Gal\u012B', 'the lane'],
+        ['Roshni', 'Roshn\u012B', 'the light'],
+        ['Dhaara', 'Dh\u0101r\u0101', 'the stream'],
+        ['Darr', 'Darr', 'the fear'],
+        ['Tohfa', 'Tohf\u0101', 'the gift']
       ]
     }
   ];
