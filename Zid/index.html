@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zid — the stubbornness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x095B;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093F;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0926;</div>
+      <h1 class="title">Zid</h1>
+      <p class="subtitle">the stubbornness</p>
+      <p class="intro">
+        Stubbornness gets a bad name. But sometimes refusing to give in is the
+        bravest thing you can do. The child who insists on fairness. The friend
+        who will not abandon you. The part of you that says no when everyone
+        says yes. Name the times you held on, for better or worse.
+      </p>
+      <button class="begin-btn" id="beginBtn">hold</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you refuse to let go?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the stubbornness?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a belief, a friendship, a principle, a dreama silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">Was it worth it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gained, what it cost you, whether you would do it againwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x25AA;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Zid</h2>
+      <p>
+        Stubbornness and determination are the same thing, seen from different
+        angles. When you refuse to give up on a friend, they call it loyalty.
+        When you refuse to give up on yourself, they call it courage.
+      </p>
+      <p>
+        Sometimes your stubbornness will cost you. You will hold on to something
+        too long, or fight a battle that was not worth fighting. But even then,
+        the refusal to surrender is a kind of fire. It means you care enough
+        to burn.
+      </p>
+      <p>
+        Name the times you refused to let go. The beautiful stubbornness
+        and the costly kind. They are both part of who you are.
+      </p>
+      <p class="about-note">Your resolves are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="zid.js"></script>
+</body>
+</html>

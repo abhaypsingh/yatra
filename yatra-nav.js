@@ -185,7 +185,15 @@
         ['Roshni', 'Roshn\u012B', 'the light'],
         ['Dhaara', 'Dh\u0101r\u0101', 'the stream'],
         ['Darr', 'Darr', 'the fear'],
-        ['Tohfa', 'Tohf\u0101', 'the gift']
+        ['Tohfa', 'Tohf\u0101', 'the gift'],
+        ['Zid', 'Zid', 'the stubbornness'],
+        ['Gehraai', 'Gehr\u0101\u012B', 'the depth'],
+        ['Lamha', 'Lamh\u0101', 'the moment'],
+        ['Umeed', 'Um\u012Bd', 'the hope'],
+        ['Chaabi', 'Ch\u0101b\u012B', 'the key'],
+        ['Parcham', 'Parcham', 'the flag'],
+        ['Baadal', 'B\u0101dal', 'the cloud'],
+        ['Chingaari', 'Ching\u0101r\u012B', 'the spark']
       ]
     }
   ];
@@ -252,7 +260,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 149 experiences';
+    sub.textContent = 'the journey \u2014 157 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

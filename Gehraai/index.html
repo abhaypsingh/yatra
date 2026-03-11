@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GehrD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x012B; — the depth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0917;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0939;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0930;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0908;</div>
+      <h1 class="title">GehrD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x012B;</h1>
+      <p class="subtitle">the depth</p>
+      <p class="intro">
+        Everyone has depths they do not show. The sadness you carry quietly.
+        The thoughts you think but never say. The feelings that run deeper
+        than anyone around you suspects. These depths are not weakness The wall a friend put up after a fight. Name your walls &mdash; themdash;
+        they are where your truest self lives.
+      </p>
+      <button class="begin-btn" id="beginBtn">dive</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What depth do you carry that others do not see?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the depth?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a feeling, a thought, a secret understandinga silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">Why do you keep it hidden?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who you might share it with, what it would feel like to say itwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x2307;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>GehrD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x012B;</h2>
+      <p>
+        The surface of the ocean tells you nothing about what lives beneath.
+        People see your smile, your grades, your social media. They do not see
+        the midnight thoughts, the quiet fears, the private joys.
+      </p>
+      <p>
+        Your depths are not a burden. They are proof that you feel more than
+        the world asks of you. The people who seem simple are often the
+        deepest you safe becomes a prison that keeps everyone out. The trick is knowingmdash; they have just learned to carry it quietly.
+        
+      </p>
+      <p>
+        Name your depths. Not to expose them, but to acknowledge them.
+        You are allowed to be deeper than you seem.
+      </p>
+      <p class="about-note">Your depths are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="gehraai.js"></script>
+</body>
+</html>

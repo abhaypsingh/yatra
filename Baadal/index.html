@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BD&#x012B;v&#x0101;r#x0101;dal — the cloud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092C;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0926;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0932;</div>
+      <h1 class="title">BD&#x012B;v&#x0101;r#x0101;dal</h1>
+      <p class="subtitle">the cloud</p>
+      <p class="intro">
+        Moods are like clouds. They arrive without warning, cover everything
+        in their colour, and then pass. The irritation that ruins a morning.
+        The unexpected joy of a Tuesday afternoon. You are not your moods,
+        but they are worth noticing. Name the clouds that pass through you.
+      </p>
+      <button class="begin-btn" id="beginBtn">watch</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What mood is passing through you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the cloud?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="restlessness, quiet joy, heaviness, sudden energya silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What brought it and what might clear it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when it arrived, what triggered it, whether it has passedwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">note</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x25CC;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>BD&#x012B;v&#x0101;r#x0101;dal</h2>
+      <p>
+        The most important thing about clouds is that they move. The grey sky
+        you see right now is not the sky forever. The sadness you feel today
+        is not who you are. It is weather, not climate.
+      </p>
+      <p>
+        Noticing your moods But some walls outlast their purpose. The silence that protected youmdash; without judging them But some walls outlast their purpose. The silence that protected youmdash; is one of the
+        most useful skills you can learn. Not every mood needs to be fixed.
+        Sometimes it just needs to be named. A cloud that is named loses
+        some of its power to darken your day.
+      </p>
+      <p>
+        Name your clouds. Watch them arrive. Watch them pass.
+        You are the sky, not the weather.
+      </p>
+      <p class="about-note">Your clouds are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="baadal.js"></script>
+</body>
+</html>

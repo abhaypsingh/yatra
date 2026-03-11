@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChD&#x012B;v&#x0101;r#x0101;bD&#x012B;v&#x0101;r#x012B; — the key</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x091A;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092C;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0940;</div>
+      <h1 class="title">ChD&#x012B;v&#x0101;r#x0101;bD&#x012B;v&#x0101;r#x012B;</h1>
+      <p class="subtitle">the key</p>
+      <p class="intro">
+        Sometimes you are stuck for days, weeks, years Some walls protect you. Some walls trap you. Some you built yourselfmdash; and then one
+        sentence, one insight, one experience turns the lock. A teacher who
+        explained it differently. A failure that taught you more than success.
+        Name the keys that unlocked something in you.
+      </p>
+      <button class="begin-btn" id="beginBtn">turn</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What insight unlocked something in you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the key?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a sentence, a failure, a person, a booka silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What did it unlock?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was locked before, how it changed your understandingwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x22B3;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>ChD&#x012B;v&#x0101;r#x0101;bD&#x012B;v&#x0101;r#x012B;</h2>
+      <p>
+        Understanding does not arrive gradually. It arrives suddenly, like
+        a key turning in a lock you forgot was there. One moment you do not
+        understand. The next moment you do. And you can never go back.
+      </p>
+      <p>
+        The keys come from unexpected places. A line in a song. A mistake
+        you made. A conversation with someone who sees things differently.
+        You cannot force a key to appear. But you can notice when one does.
+        
+      </p>
+      <p>
+        Name your keys. The moments of sudden understanding that changed
+        how you see something forever.
+      </p>
+      <p class="about-note">Your keys are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chaabi.js"></script>
+</body>
+</html>
