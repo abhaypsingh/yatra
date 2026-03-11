@@ -192,7 +192,15 @@
         ['Chaabi', 'Ch\u0101b\u012B', 'the key'],
         ['Parcham', 'Parcham', 'the flag'],
         ['Baadal', 'B\u0101dal', 'the cloud'],
-        ['Chingaari', 'Ching\u0101r\u012B', 'the spark']
+        ['Chingaari', 'Ching\u0101r\u012B', 'the spark'],
+        ['Pehel', 'Pehel', 'the initiative'],
+        ['Jugaad', 'Jug\u0101\u1E0D', 'the improvisation'],
+        ['Saans', 'S\u0101ns', 'the breath'],
+        ['Bheed', 'Bh\u012B\u1E0D', 'the crowd'],
+        ['Phool', 'Ph\u016Bl', 'the flower'],
+        ['Sach', 'Sach', 'the truth'],
+        ['Aadat', '\u0100dat', 'the habit'],
+        ['Afsana', 'Afs\u0101n\u0101', 'the tale']
       ]
     }
   ];

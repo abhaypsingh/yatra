@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pehel — the initiative</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092A;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0939;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0932;</div>
+      <h1 class="title">Pehel</h1>
+      <p class="subtitle">the initiative</p>
+      <p class="intro">
+        Most people wait. They wait for permission, for someone else to go
+        first, for the perfect moment. But sometimes the bravest thing is
+        to begin without being asked. The first hello. The volunteer hand.
+        The apology nobody expected. Name the times you went first.
+      </p>
+      <button class="begin-btn" id="beginBtn">step</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you take the first step without being asked?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the initiative?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a first hello, a raised hand, an apology, an ideaa silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What happened because you went first?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it cost you, what it opened, whether you would do it againwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x2192;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pehel</h2>
+      <p>
+        The world moves because someone goes first. Every friendship started
+        because one person said hello. Every change started because one person
+        said this is not right. Initiative is not about being confident.
+      </p>
+      <p>
+        It is about moving before you feel ready. The hand you raise in class
+        when you are not sure of the answer. The door you knock on when you
+        do not know who will answer. Going first is always a risk. But it is
+        also always a beginning.
+      </p>
+      <p>
+        Name the times you went first. They are the moments that prove you
+        are braver than you think.
+      </p>
+      <p class="about-note">Your firsts are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pehel.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfsD&#x012B;v&#x0101;r#x0101;nD&#x012B;v&#x0101;r#x0101; — the tale</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0905;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092B;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093C;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0938;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0928;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;</div>
+      <h1 class="title">AfsD&#x012B;v&#x0101;r#x0101;nD&#x012B;v&#x0101;r#x0101;</h1>
+      <p class="subtitle">the tale</p>
+      <p class="intro">
+        You are always telling yourself a story. I am shy. I am not good at
+        maths. I am the funny one. I am not the kind of person who does that.
+        These stories shape your life more than any fact. Some are true. Some
+        were true once. Name the tales you tell yourself about who you are.
+      </p>
+      <button class="begin-btn" id="beginBtn">tell</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What story do you tell yourself about who you are?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the tale?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="I am shy, I am strong, I always fail, I never fit ina silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">Is it still true?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you started telling it, whether it helps or limits youwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tell</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x00A7;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>AfsD&#x012B;v&#x0101;r#x0101;nD&#x012B;v&#x0101;r#x0101;</h2>
+      <p>
+        The most powerful stories are not in books. They are the ones you
+        whisper to yourself every day. I am not brave enough. I am not smart
+        enough. I am the one people forget. These stories feel like facts.
+      </p>
+      <p>
+        But they are not facts. They are tales. And tales can be rewritten.
+        The story you told at eight does not have to be the story you tell
+        at eighteen. You are the author. You can cross out a line and write
+        a new one whenever you are ready.
+      </p>
+      <p>
+        Name your tales. The stories you live inside. Then ask: is this
+        the story I want to keep telling?
+      </p>
+      <p class="about-note">Your tales are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="afsana.js"></script>
+</body>
+</html>

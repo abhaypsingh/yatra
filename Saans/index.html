@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD&#x012B;v&#x0101;r#x0101;ns — the breath</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0938;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0902;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0938;</div>
+      <h1 class="title">SD&#x012B;v&#x0101;r#x0101;ns</h1>
+      <p class="subtitle">the breath</p>
+      <p class="intro">
+        You breathe twenty thousand times a day without noticing. But some
+        breaths are different. The deep breath before you speak. The exhale
+        after the exam is over. The breath you take when you need to reset.
+        Name the breaths that mattered.
+      </p>
+      <button class="begin-btn" id="beginBtn">breathe</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you pause to breathe?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the breath?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="before a conversation, after a storm, during a panica silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What did the pause give you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were feeling, what the breath changed, what came afterwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">note</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x25EF;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>SD&#x012B;v&#x0101;r#x0101;ns</h2>
+      <p>
+        Between what happens to you and how you respond, there is a space.
+        In that space is a breath. And in that breath is your freedom to
+        choose. Most of the time you skip the breath and react.
+      </p>
+      <p>
+        But the times you remember to pause But some walls outlast their purpose. The silence that protected youmdash; to take one slow breath
+        before you speak, before you act, before you decide during a fight becomes a barrier to repair. The shyness that once keptmdash; those
+        are the times you are most fully yourself. Not reacting. Choosing.
+        
+      </p>
+      <p>
+        Name the breaths that mattered. The pauses that changed what
+        happened next.
+      </p>
+      <p class="about-note">Your breaths are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="saans.js"></script>
+</body>
+</html>

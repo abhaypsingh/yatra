@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x012B;v&#x0101;r#x0100;dat — the habit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0906;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0926;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0924;</div>
+      <h1 class="title">D&#x012B;v&#x0101;r#x0100;dat</h1>
+      <p class="subtitle">the habit</p>
+      <p class="intro">
+        You are, more than anything, a collection of habits. The way you
+        start your morning. The thing you do when you are nervous. The route
+        you walk without thinking. Some habits build you up. Some hold you
+        back. Name the habits that have shaped who you are.
+      </p>
+      <button class="begin-btn" id="beginBtn">notice</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What habit has shaped who you are?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the habit?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a morning routine, a nervous tick, a way of speakinga silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">Does it build you up or hold you back?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when it started, what triggers it, whether you want to keep itwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">note</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x21BB;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x012B;v&#x0101;r#x0100;dat</h2>
+      <p>
+        A habit is an action that has become invisible. You do it without
+        deciding, without noticing, without effort. That is both the power
+        and the danger of habits.
+      </p>
+      <p>
+        The habit of reading before bed builds your mind while you rest.
+        The habit of checking your phone every three minutes fragments your
+        attention. You did not choose most of your habits. They chose you.
+        But you can choose which ones to keep.
+      </p>
+      <p>
+        Name your habits. The invisible architects of your daily life.
+        Which ones are building the person you want to be?
+      </p>
+      <p class="about-note">Your habits are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="aadat.js"></script>
+</body>
+</html>

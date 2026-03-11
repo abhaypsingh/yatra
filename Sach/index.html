@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sach — the truth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0938;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x091A;</div>
+      <h1 class="title">Sach</h1>
+      <p class="subtitle">the truth</p>
+      <p class="intro">
+        Truth is not always comfortable. Sometimes it is the thing you did
+        not want to hear. Sometimes it is the thing you did not want to say.
+        But truth has a weight that nothing else has. Name the truths you
+        have learned, spoken, or are still learning to accept.
+      </p>
+      <button class="begin-btn" id="beginBtn">speak</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What truth have you learned or spoken?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the truth?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="something you learned, something you said, something you accepteda silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What did it cost or give you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how you found it, what changed after, whether it was worth itwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">speak</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x25B8;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sach</h2>
+      <p>
+        There are truths you learn from others and truths you learn from
+        experience. The second kind is harder and more valuable. Nobody can
+        teach you what disappointment feels like. You have to learn it.
+      </p>
+      <p>
+        Then there are the truths you speak. Telling a friend something they
+        do not want to hear. Admitting you were wrong. Saying I do not know.
+        These truths are expensive. They cost you comfort. But they buy you
+        something better: integrity.
+      </p>
+      <p>
+        Name your truths. The ones you learned, the ones you spoke, and
+        the ones you are still working up the courage to say.
+      </p>
+      <p class="about-note">Your truths are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="sach.js"></script>
+</body>
+</html>

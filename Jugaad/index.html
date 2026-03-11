@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JugD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x1E0D; — the improvisation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x091C;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0941;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0917;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093E;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0921;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093C;</div>
+      <h1 class="title">JugD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x1E0D;</h1>
+      <p class="subtitle">the improvisation</p>
+      <p class="intro">
+        Not every problem has a textbook solution. Sometimes you have to
+        make do with what you have. The repaired thing that works better
+        than the original. The workaround that became the real way. Name
+        the times you improvised your way through.
+      </p>
+      <button class="begin-btn" id="beginBtn">fix</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you improvise a creative solution?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the improvisation?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a broken thing, a missing resource, an impossible deadlinea silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">What did you do with what you had?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you used, what you invented, how it turned outwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fix</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x2295;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>JugD&#x012B;v&#x0101;r#x0101;D&#x012B;v&#x0101;r#x1E0D;</h2>
+      <p>
+        Jugaad is an Indian word that has no exact English translation. It
+        means finding a way when there is no way. Making something work with
+        whatever you have. It is the opposite of giving up.
+      </p>
+      <p>
+        The best solutions are often not the expensive ones. They are the
+        clever ones. The paper clip that fixed the glasses. The shortcut
+        through the park. The way you explained something complicated using
+        only simple words.
+      </p>
+      <p>
+        Name your improvisations. The creative fixes that proved you are
+        more resourceful than you knew.
+      </p>
+      <p class="about-note">Your fixes are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="jugaad.js"></script>
+</body>
+</html>

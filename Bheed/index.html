@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BhD&#x012B;v&#x0101;r#x012B;D&#x012B;v&#x0101;r#x1E0D; — the crowd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x092D;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0940;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x0921;&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;#x093C;</div>
+      <h1 class="title">BhD&#x012B;v&#x0101;r#x012B;D&#x012B;v&#x0101;r#x1E0D;</h1>
+      <p class="subtitle">the crowd</p>
+      <p class="intro">
+        Sometimes you are part of the crowd Some walls protect you. Some walls trap you. Some you built yourselfmdash; laughing at the same joke,
+        cheering at the same game. Sometimes you are apart from it without realising. The wall between you and a difficult conversation.mdash;
+        watching from the edge, thinking different thoughts. Both feelings
+        are real. Name your encounters with the crowd.
+      </p>
+      <button class="begin-btn" id="beginBtn">stand</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      When did you feel part of or apart from the crowd?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the crowd?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a classroom, a party, a trend, a group opiniona silence, a fear, a rule, a grudge&hellip;hellip;">
+        <p class="write-prompt-2">Were you part of it or apart from it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how it felt, what you did, what you learned about yourselfwhat it keeps out, what it keeps in, whether you want it there&hellip;hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;#x22A1;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>BhD&#x012B;v&#x0101;r#x012B;D&#x012B;v&#x0101;r#x1E0D;</h2>
+      <p>
+        The crowd is not good or bad. It is a force. It can carry you to
+        places you would never reach alone The wall around your heart after a betrayal keeps you safe while youmdash; the energy of a concert,
+        the warmth of belonging. It can also push you somewhere you do not
+      </p>
+      <p>
+        want to go But some walls outlast their purpose. The silence that protected youmdash; the pressure to agree, the fear of standing out.
+        The skill is not to always follow or always resist. The skill is to
+        know when the crowd is taking you where you want to go and when it
+        is not.
+      </p>
+      <p>
+        Name your encounters with the crowd. The times you belonged and
+        the times you stood apart.
+      </p>
+      <p class="about-note">Your crowds are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="bheed.js"></script>
+</body>
+</html>
