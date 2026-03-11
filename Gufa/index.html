@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x012B;v&#x0101;r — the cave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0940;&#x0935;&#x093E;&#x0930;</div>
+      <h1 class="title">D&#x012B;v&#x0101;r</h1>
+      <p class="subtitle">the cave</p>
+      <p class="intro">
+        Some walls protect you. Some walls trap you. Some you built yourself
+        without realising. The wall between you and a difficult conversation.
+        The wall a friend put up after a fight. Name your walls &mdash; the
+        ones that keep you safe and the ones that keep you stuck.
+      </p>
+      <button class="begin-btn" id="beginBtn">face</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What wall stands in your way or around you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">What is the cave?</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a silence, a fear, a rule, a grudge&hellip;">
+        <p class="write-prompt-2">Does it protect you or trap you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it keeps out, what it keeps in, whether you want it there&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x012B;v&#x0101;r</h2>
+      <p>
+        Walls are not always bad. The wall around a garden keeps the deer out.
+        The wall around your heart after a betrayal keeps you safe while you
+        heal. Some walls are necessary.
+      </p>
+      <p>
+        But some walls outlast their purpose. The silence that protected you
+        during a fight becomes a barrier to repair. The shyness that once kept
+        you safe becomes a prison that keeps everyone out. The trick is knowing
+        which walls to keep and which to take down, brick by brick.
+      </p>
+      <p>
+        Name your walls. Ask each one: are you protecting me, or are you
+        trapping me?
+      </p>
+      <p class="about-note">Your walls are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="gufa.js"></script>
+</body>
+</html>

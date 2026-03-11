@@ -882,6 +882,18 @@ body {
 .card-afsana::before { background: #9880a8; }
 .card-afsana .card-enter { color: #9880a8; }
 
+.card-dhoop:hover { border-color: #c8a850; }
+.card-dhoop::before { background: #c8a850; }
+.card-dhoop .card-enter { color: #c8a850; }
+
+.card-chhat:hover { border-color: #8898a0; }
+.card-chhat::before { background: #8898a0; }
+.card-chhat .card-enter { color: #8898a0; }
+
+.card-gufa:hover { border-color: #907890; }
+.card-gufa::before { background: #907890; }
+.card-gufa .card-enter { color: #907890; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

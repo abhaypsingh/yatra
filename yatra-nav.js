@@ -201,7 +201,10 @@
         ['Phool', 'Ph\u016Bl', 'the flower'],
         ['Sach', 'Sach', 'the truth'],
         ['Aadat', '\u0100dat', 'the habit'],
-        ['Afsana', 'Afs\u0101n\u0101', 'the tale']
+        ['Afsana', 'Afs\u0101n\u0101', 'the tale'],
+        ['Dhoop', 'Dh\u016Bp', 'the sunlight'],
+        ['Chhat', 'Chhat', 'the roof'],
+        ['Gufa', 'Guf\u0101', 'the cave']
       ]
     }
   ];
@@ -268,7 +271,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 165 experiences';
+    sub.textContent = 'the journey \u2014 168 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 
