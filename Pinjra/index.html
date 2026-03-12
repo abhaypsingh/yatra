@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinjr&#x0101; — the cage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x093F;&#x0902;&#x091C;&#x0930;&#x093E;</div>
+      <h1 class="title">Pinjr&#x0101;</h1>
+      <p class="subtitle">the cage</p>
+      <p class="intro">
+        Some cages have visible bars &mdash; rules, expectations,
+        circumstances. But the most powerful cages are invisible. The
+        belief that you are not smart enough. The need to please everyone.
+        The fear of what people will say. <em>Pinjra</em> asks you to name
+        the cages you live in &mdash; the ones others built and the ones
+        you built yourself.
+      </p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What keeps you contained?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cage</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the need to please, a label others gave me&hellip;">
+        <p class="write-prompt-2">Who built it? Could you leave?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you first noticed the bars, what is on the other side&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pinjr&#x0101;</h2>
+      <p>
+        Not every cage is bad. The cage of discipline keeps you focused.
+        The cage of routine keeps you sane. Some cages are training
+        grounds, not prisons.
+      </p>
+      <p>
+        But the cages that shrink you &mdash; the ones that make you
+        smaller than you are &mdash; those deserve to be named. Because
+        you cannot leave a cage you refuse to see.
+      </p>
+      <p>
+        Ask yourself: is this cage protecting me, or is it shrinking me?
+        The answer will tell you whether to stay or step out.
+      </p>
+      <p class="about-note">Your cages are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pinjra.js"></script>
+</body>
+</html>

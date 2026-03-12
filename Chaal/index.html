@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;l — the move</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0932;</div>
+      <h1 class="title">Ch&#x0101;l</h1>
+      <p class="subtitle">the move</p>
+      <p class="intro">
+        Life is a game of moves. Some you plan. Some are forced. Some you
+        regret and some you replay in your mind with pride. Every decision
+        &mdash; big or small &mdash; changes the board. <em>Chaal</em>
+        asks you to name the moves you are making, the ones you are
+        considering, and the ones you wish you could take back.
+      </p>
+      <button class="begin-btn" id="beginBtn">move</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What is your next move?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this move</p>
+        <input class="write-name" id="writeName" type="text" placeholder="choosing science over art, speaking up in class&hellip;">
+        <p class="write-prompt-2">What are you risking? What might you gain?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what could go wrong, what could go right, why you are making it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">play</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;l</h2>
+      <p>
+        In chess, every move opens some paths and closes others. The same
+        is true in life. Choosing one friend group means spending less time
+        with another. Saying yes to one thing means saying no to something
+        else.
+      </p>
+      <p>
+        Not every move needs to be perfect. Some of the best moves are the
+        ones you make without overthinking &mdash; the spontaneous yes,
+        the brave no, the apology you almost did not give.
+      </p>
+      <p>
+        Name your moves. The ones you are proud of and the ones that haunt
+        you. Both are part of how you play.
+      </p>
+      <p class="about-note">Your moves are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chaal.js"></script>
+</body>
+</html>

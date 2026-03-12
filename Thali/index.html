@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Th&#x0101;l&#x012B; — the plate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0925;&#x093E;&#x0932;&#x0940;</div>
+      <h1 class="title">Th&#x0101;l&#x012B;</h1>
+      <p class="subtitle">the plate</p>
+      <p class="intro">
+        Life serves you a plate &mdash; and you do not get to choose
+        everything on it. The family you were born into. The body you were
+        given. The losses that arrived without warning. But also the
+        unexpected joys. <em>Thali</em> asks you to look at what has been
+        placed before you &mdash; the bitter and the sweet, the chosen and
+        the given.
+      </p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What has life placed before you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name what was served</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a difficult teacher, a move to a new city&hellip;">
+        <p class="write-prompt-2">How did it taste?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="bitter at first, nourishing later, still not sure&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">receive</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Th&#x0101;l&#x012B;</h2>
+      <p>
+        An Indian thali holds many things at once &mdash; sweet, sour,
+        bitter, salty. You do not eat them separately. They are all part
+        of one meal.
+      </p>
+      <p>
+        Your life is the same. The difficult teacher who made you tougher.
+        The heartbreak that taught you tenderness. The privilege you did
+        not earn and the struggle you did not deserve.
+      </p>
+      <p>
+        You did not choose everything on your plate. But you can choose
+        how you receive it. Name what has been served &mdash; and taste
+        it honestly.
+      </p>
+      <p class="about-note">Your plates are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="thali.js"></script>
+</body>
+</html>

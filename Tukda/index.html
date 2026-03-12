@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x1E6C;uk&#x1E0D;&#x0101; — the fragment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091F;&#x0941;&#x0915;&#x0921;&#x093C;&#x093E;</div>
+      <h1 class="title">&#x1E6C;uk&#x1E0D;&#x0101;</h1>
+      <p class="subtitle">the fragment</p>
+      <p class="intro">
+        Not everything in your life is whole. There are fragments &mdash;
+        half-finished conversations, friendships that ended too soon,
+        memories that come in flashes. You carry these pieces without
+        knowing why. <em>Tukda</em> asks you to name the fragments. The
+        things that are broken or incomplete but still matter. Not
+        everything needs to be whole to be important.
+      </p>
+      <button class="begin-btn" id="beginBtn">hold</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What pieces do you carry?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this fragment</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a half-remembered dream, a friendship that ended too soon&hellip;">
+        <p class="write-prompt-2">What was it part of? What does the piece still hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the whole it came from, why you kept this piece&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E6C;uk&#x1E0D;&#x0101;</h2>
+      <p>
+        We are taught to value completeness. Finish the task. Complete the
+        course. Reach the goal. But life is full of things that break, that
+        stop mid-sentence, that never get their ending.
+      </p>
+      <p>
+        A friendship that faded. A version of yourself you outgrew. A
+        place you left before you were ready. These fragments are not
+        failures. They are proof that you lived.
+      </p>
+      <p>
+        Hold them gently. Not every piece needs to be glued back together.
+        Sometimes a fragment is enough.
+      </p>
+      <p class="about-note">Your fragments are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="tukda.js"></script>
+</body>
+</html>

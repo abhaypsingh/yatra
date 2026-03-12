@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;&#x1E45;gan — the courtyard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0901;&#x0917;&#x0928;</div>
+      <h1 class="title">&#x0100;&#x1E45;gan</h1>
+      <p class="subtitle">the courtyard</p>
+      <p class="intro">
+        In old Indian homes, the aangan is the open courtyard at the
+        centre &mdash; where the sky meets the house, where family
+        gathers, where children play. Think of the spaces in your life
+        that feel like an aangan &mdash; the places where everything comes
+        together, where you feel most at home. They do not have to be
+        rooms. They can be moments, rituals, or people.
+      </p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What is at the centre of your life?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this courtyard</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the dinner table, the walk home from school&hellip;">
+        <p class="write-prompt-2">Who gathers there? What happens?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the people, the rituals, the unspoken comfort&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;&#x1E45;gan</h2>
+      <p>
+        The aangan is not a room. It is an opening. A place where the
+        inside of the home meets the open sky.
+      </p>
+      <p>
+        In your life, the aangan might be the dinner table where stories
+        are told. Or the car ride where you and your parent finally talk.
+        Or the group chat where your friends are just themselves.
+      </p>
+      <p>
+        Every life needs a courtyard &mdash; a space where you do not
+        perform, where you simply are. Name yours. Protect them.
+      </p>
+      <p class="about-note">Your courtyards are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="aangan.js"></script>
+</body>
+</html>

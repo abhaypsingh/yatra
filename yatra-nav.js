@@ -214,7 +214,17 @@
         ['Jharokha', 'Jharokh\u0101', 'the balcony'],
         ['Naav', 'N\u0101v', 'the boat'],
         ['Ghanti', 'Gha\u1E47\u1E6D\u012B', 'the bell'],
-        ['Daana', 'D\u0101n\u0101', 'the grain']
+        ['Daana', 'D\u0101n\u0101', 'the grain'],
+        ['Pehra', 'Pahr\u0101', 'the vigil'],
+        ['Girah', 'Girah', 'the knot'],
+        ['Thali', 'Th\u0101l\u012B', 'the plate'],
+        ['Diya', 'D\u012By\u0101', 'the lamp'],
+        ['Pinjra', 'Pinjr\u0101', 'the cage'],
+        ['Aangan', '\u0100\u1E45gan', 'the courtyard'],
+        ['Lorhi', 'Lor\u012B', 'the lullaby'],
+        ['Paani', 'P\u0101n\u012B', 'the water'],
+        ['Tukda', '\u1E6Cuk\u1E0D\u0101', 'the fragment'],
+        ['Chaal', 'Ch\u0101l', 'the move']
       ]
     }
   ];
@@ -281,7 +291,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 178 experiences';
+    sub.textContent = 'the journey \u2014 188 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

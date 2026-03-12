@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lor&#x012B; — the lullaby</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x094B;&#x0930;&#x0940;</div>
+      <h1 class="title">Lor&#x012B;</h1>
+      <p class="subtitle">the lullaby</p>
+      <p class="intro">
+        Before you had words, someone sang to you. A lullaby is not just a
+        song &mdash; it is the promise that someone will stay until the
+        dark passes. Think of the things that soothe you now &mdash; a
+        voice, a phrase, a routine, a place. The lullabies of your life
+        are not always melodies. Sometimes they are silences that feel
+        safe.
+      </p>
+      <button class="begin-btn" id="beginBtn">hum</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What soothes you when the world is loud?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lullaby</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a song my mother hums, a friend&rsquo;s reassurance&hellip;">
+        <p class="write-prompt-2">How does it quiet the noise?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the feeling it gives, the memory it holds&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sing</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lor&#x012B;</h2>
+      <p>
+        A lullaby does not solve anything. It does not fix the problem or
+        answer the question. It simply says: I am here. You can rest.
+      </p>
+      <p>
+        As you grow older, the lullabies change. Instead of a song, it
+        might be a friend who listens without giving advice. A cup of tea
+        made by someone who noticed you were tired. A familiar route you
+        walk when you need to think.
+      </p>
+      <p>
+        Name the things that calm your noise. They are more important than
+        you think.
+      </p>
+      <p class="about-note">Your lullabies are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="lorhi.js"></script>
+</body>
+</html>

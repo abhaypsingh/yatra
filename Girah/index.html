@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girah — the knot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093F;&#x0930;&#x0939;</div>
+      <h1 class="title">Girah</h1>
+      <p class="subtitle">the knot</p>
+      <p class="intro">
+        Some things inside you are tangled. A fight you never resolved. A
+        compliment you did not believe. A guilt you carry but cannot name.
+        These are your knots &mdash; emotions, memories, and thoughts
+        twisted together until you cannot tell which thread is which.
+        <em>Girah</em> asks you to name them. Not to fix them. Just to
+        find them.
+      </p>
+      <button class="begin-btn" id="beginBtn">untie</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What is knotted inside you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this knot</p>
+        <input class="write-name" id="writeName" type="text" placeholder="an unresolved argument, a guilt I carry&hellip;">
+        <p class="write-prompt-2">What is tangled together?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the feelings bound up in it, why it tightens&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">loosen</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Girah</h2>
+      <p>
+        A knot forms when two things get twisted together. Anger and love.
+        Pride and shame. The desire to be close and the fear of being hurt.
+      </p>
+      <p>
+        You cannot untie a knot you cannot see. And some knots are not
+        meant to be undone &mdash; they are what holds things together.
+      </p>
+      <p>
+        But the knots that hurt are the ones you ignore. Name them. Trace
+        the threads. Sometimes just naming a tangle is the first step to
+        loosening it.
+      </p>
+      <p class="about-note">Your knots are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="girah.js"></script>
+</body>
+</html>
