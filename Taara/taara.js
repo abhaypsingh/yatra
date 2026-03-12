@@ -203,7 +203,17 @@
         ['Afsana', 'Afs\u0101n\u0101', 'the tale'],
         ['Dhoop', 'Dh\u016Bp', 'the sunlight'],
         ['Chhat', 'Chhat', 'the roof'],
-        ['Gufa', 'Guf\u0101', 'the cave']
+        ['Gufa', 'Guf\u0101', 'the cave'],
+        ['Patang', 'Patang', 'the kite'],
+        ['Mitti', 'Mi\u1E6D\u1E6D\u012B', 'the soil'],
+        ['Khidki', 'Khi\u1E0Dk\u012B', 'the window'],
+        ['Pukaar', 'Puk\u0101r', 'the call'],
+        ['Chaand', 'Ch\u0101nd', 'the moon'],
+        ['Dhaal', '\u1E0Ch\u0101l', 'the shield'],
+        ['Jharokha', 'Jharokh\u0101', 'the balcony'],
+        ['Naav', 'N\u0101v', 'the boat'],
+        ['Ghanti', 'Gha\u1E47\u1E6D\u012B', 'the bell'],
+        ['Daana', 'D\u0101n\u0101', 'the grain']
       ]
     }
   ];

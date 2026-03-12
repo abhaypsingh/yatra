@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi&#x1E6D;&#x1E6D;&#x012B; — the soil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x093F;&#x091F;&#x094D;&#x091F;&#x0940;</div>
+      <h1 class="title">Mi&#x1E6D;&#x1E6D;&#x012B;</h1>
+      <p class="subtitle">the soil</p>
+      <p class="intro">
+        You are made of where you come from &mdash; the kitchen smells,
+        the neighbourhood sounds, the language your grandmother speaks.
+        The soil of your life is everything that shaped you before you
+        could choose. Some of it nourishes. Some you want to outgrow.
+        Name the ground beneath your feet.
+      </p>
+      <button class="begin-btn" id="beginBtn">dig</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What ground shaped you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this soil</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the dialect I speak at home, the food of my city&hellip;">
+        <p class="write-prompt-2">How did it shape you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it gave you, what it asked of you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">plant</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mi&#x1E6D;&#x1E6D;&#x012B;</h2>
+      <p>
+        Before you were you, there was soil &mdash; the place, the people,
+        the rituals that formed you. You did not choose your mother tongue,
+        your childhood meals, or the faith you were raised in. But they
+        live in you like minerals in the earth.
+      </p>
+      <p>
+        Some things you carry with pride. Some you question. Some you only
+        notice when you leave home and discover that not everyone speaks,
+        eats, or prays the way you do.
+      </p>
+      <p>
+        <em>Mi&#x1E6D;&#x1E6D;&#x012B;</em> asks you to notice the ground you
+        stand on. Not to judge it &mdash; just to know it.
+      </p>
+      <p class="about-note">Your soils are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="mitti.js"></script>
+</body>
+</html>

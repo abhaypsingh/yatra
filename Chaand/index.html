@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;nd — the moon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0901;&#x0926;</div>
+      <h1 class="title">Ch&#x0101;nd</h1>
+      <p class="subtitle">the moon</p>
+      <p class="intro">
+        The moon changes shape every night but never disappears. You are
+        like that too &mdash; some days full and bright, some days barely
+        visible, but always whole. <em>Chaand</em> asks you to notice your
+        phases. The days you shine and the days you hide. Neither is more
+        you than the other.
+      </p>
+      <button class="begin-btn" id="beginBtn">gaze</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What phase are you in?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this phase</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the quiet after exams, a week of self-doubt&hellip;">
+        <p class="write-prompt-2">What does this phase feel like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how full or empty you feel, what is waxing or waning&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;nd</h2>
+      <p>
+        We celebrate fullness and fear emptiness. But the moon teaches a
+        different lesson.
+      </p>
+      <p>
+        A crescent is not a broken full moon. It is its own kind of
+        beautiful. The new moon &mdash; invisible, dark &mdash; is not
+        gone. It is resting.
+      </p>
+      <p>
+        You will have weeks where you feel full of energy, ideas, and
+        confidence. And weeks where you feel like you are barely there.
+        Both are phases. Both pass. Name them so you can see the pattern
+        &mdash; and trust that after every dark, the light returns.
+      </p>
+      <p class="about-note">Your phases are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="chaand.js"></script>
+</body>
+</html>

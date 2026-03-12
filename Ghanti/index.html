@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gha&#x1E47;&#x1E6D;&#x012B; — the bell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0918;&#x0902;&#x091F;&#x0940;</div>
+      <h1 class="title">Gha&#x1E47;&#x1E6D;&#x012B;</h1>
+      <p class="subtitle">the bell</p>
+      <p class="intro">
+        Some sounds wake you up. A teacher&rsquo;s words that changed how
+        you see the world. A song lyric that said what you could not. A
+        remark that stung because it was true. <em>Ghanti</em> asks you to
+        name the moments that rang inside you &mdash; the ones you are
+        still hearing.
+      </p>
+      <button class="begin-btn" id="beginBtn">ring</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What rang inside you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bell</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a line from a book, something my friend said&hellip;">
+        <p class="write-prompt-2">What did it awaken?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you understood, what shifted inside you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">toll</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gha&#x1E47;&#x1E6D;&#x012B;</h2>
+      <p>
+        A bell does not ask you to listen. It simply rings, and you either
+        hear it or you do not.
+      </p>
+      <p>
+        The bells in your life are the moments of sudden clarity &mdash;
+        when something someone said made the world rearrange itself. When
+        a line in a film made you cry and you did not know why. When you
+        realised, mid-sentence, that you were wrong.
+      </p>
+      <p>
+        These moments are rare and precious. Write them down. Because bells
+        fade, but their echo can guide you if you remember the sound.
+      </p>
+      <p class="about-note">Your bells are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="ghanti.js"></script>
+</body>
+</html>

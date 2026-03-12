@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x0101;n&#x0101; — the grain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x093E;&#x0928;&#x093E;</div>
+      <h1 class="title">D&#x0101;n&#x0101;</h1>
+      <p class="subtitle">the grain</p>
+      <p class="intro">
+        The smallest things feed you. A compliment you received three years
+        ago that you still carry. A morning routine that keeps you steady.
+        The way your father says your name. <em>Daana</em> asks you to
+        notice the tiny, ordinary things that nourish your life &mdash;
+        the grains, not the feasts.
+      </p>
+      <button class="begin-btn" id="beginBtn">gather</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What small thing nourishes you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this grain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my morning chai, a friend&rsquo;s voice note&hellip;">
+        <p class="write-prompt-2">How does it feed you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why it matters, when you notice it most&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x0101;n&#x0101;</h2>
+      <p>
+        We celebrate the big moments &mdash; birthdays, achievements,
+        milestones. But life is mostly made of small things.
+      </p>
+      <p>
+        The way sunlight hits your desk at four in the afternoon. The smell
+        of rain on concrete. Your dog&rsquo;s greeting when you come home.
+        A teacher who remembers your name.
+      </p>
+      <p>
+        These are the grains that feed your days. They are easy to miss
+        because they are ordinary. But ordinary is not the same as
+        unimportant. The most nourishing things in life are often the
+        quietest. Gather them here.
+      </p>
+      <p class="about-note">Your grains are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="daana.js"></script>
+</body>
+</html>

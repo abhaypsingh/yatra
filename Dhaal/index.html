@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x1E0C;h&#x0101;l — the shield</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0922;&#x093E;&#x0932;</div>
+      <h1 class="title">&#x1E0C;h&#x0101;l</h1>
+      <p class="subtitle">the shield</p>
+      <p class="intro">
+        Everyone carries a shield. Humour. Silence. Anger. Perfection.
+        The thing you hold up so the world cannot reach the tender places
+        inside. Some shields you chose. Some chose you. <em>Dhaal</em>
+        asks you to name what you carry &mdash; and wonder what would
+        happen if you set it down.
+      </p>
+      <button class="begin-btn" id="beginBtn">lower</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What do you carry for protection?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shield</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my jokes, my grades, staying busy&hellip;">
+        <p class="write-prompt-2">What does it protect? What does it cost?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it keeps safe, what it keeps out&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">set down</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E0C;h&#x0101;l</h2>
+      <p>
+        A shield is not a weakness. It is proof that you have something
+        worth protecting.
+      </p>
+      <p>
+        But every shield has a cost. The humour that deflects pain also
+        deflects intimacy. The perfectionism that earns praise also earns
+        exhaustion. The anger that keeps people away also keeps love away.
+      </p>
+      <p>
+        You do not have to drop your shields. But you should know you are
+        carrying them. Because sometimes the bravest thing is not to fight
+        harder, but to stand unguarded and let someone see you.
+      </p>
+      <p class="about-note">Your shields are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="dhaal.js"></script>
+</body>
+</html>

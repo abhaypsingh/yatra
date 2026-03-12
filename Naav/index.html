@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N&#x0101;v — the boat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x093E;&#x0935;</div>
+      <h1 class="title">N&#x0101;v</h1>
+      <p class="subtitle">the boat</p>
+      <p class="intro">
+        Some crossings you must make &mdash; from childhood to growing up,
+        from one school to the next, from who you were to who you are
+        becoming. The boat carries you, but the water is yours to face.
+        <em>Naav</em> asks you to name the crossings in your life &mdash;
+        the rivers between one shore and another.
+      </p>
+      <button class="begin-btn" id="beginBtn">row</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What river are you crossing?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this crossing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="moving to a new school, learning to be alone&hellip;">
+        <p class="write-prompt-2">What is on the other shore?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you are leaving, what you hope to find&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">push off</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>N&#x0101;v</h2>
+      <p>
+        Every life has rivers &mdash; changes you did not choose and
+        changes you did. Some crossings are smooth. Some capsize you.
+      </p>
+      <p>
+        Moving cities. Losing a friend. Watching your parents change.
+        Choosing a stream in school that closes other doors.
+      </p>
+      <p>
+        The boat is not always sturdy and the water is not always calm.
+        But here is the truth about crossings: you only need to keep
+        rowing. You do not need to see the other shore to reach it.
+      </p>
+      <p class="about-note">Your crossings are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="naav.js"></script>
+</body>
+</html>

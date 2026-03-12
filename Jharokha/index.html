@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jharokh&#x0101; — the balcony</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x0930;&#x094B;&#x0916;&#x093E;</div>
+      <h1 class="title">Jharokh&#x0101;</h1>
+      <p class="subtitle">the balcony</p>
+      <p class="intro">
+        A jharokha is the carved balcony window of old Indian homes &mdash;
+        a place between inside and outside. You stand there to watch the
+        world without fully entering it. Think of the moments when you
+        hover on the edge &mdash; wanting to join but watching instead,
+        wanting to speak but staying quiet. Name the thresholds you
+        linger on.
+      </p>
+      <button class="begin-btn" id="beginBtn">step out</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      Where do you stand between inside and outside?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this threshold</p>
+        <input class="write-name" id="writeName" type="text" placeholder="watching friends laugh from across the room&hellip;">
+        <p class="write-prompt-2">What keeps you here, between?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what pulls you in, what holds you back&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stand</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jharokh&#x0101;</h2>
+      <p>
+        The jharokha was designed for seeing without being fully seen. For
+        listening to the street while staying in the safety of home.
+      </p>
+      <p>
+        There is nothing wrong with the threshold. Sometimes you need to
+        watch before you join. Sometimes observation is its own form of
+        participation.
+      </p>
+      <p>
+        But if you find yourself always on the balcony and never on the
+        street, it is worth asking &mdash; what am I afraid will happen
+        if I step down?
+      </p>
+      <p class="about-note">Your thresholds are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="jharokha.js"></script>
+</body>
+</html>

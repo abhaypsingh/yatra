@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khi&#x1E0D;k&#x012B; — the window</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x093F;&#x0921;&#x093C;&#x0915;&#x0940;</div>
+      <h1 class="title">Khi&#x1E0D;k&#x012B;</h1>
+      <p class="subtitle">the window</p>
+      <p class="intro">
+        Every window frames a different world. The window of your classroom
+        shows one sky, the window of your bedroom another. What you see
+        depends on where you stand. <em>Khidki</em> asks you to notice the
+        views you look through &mdash; and wonder what someone else sees
+        from theirs.
+      </p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What do you see from where you stand?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this window</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the view from the school bus, my phone screen at night&hellip;">
+        <p class="write-prompt-2">What do you see through it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the world it shows you, the world it hides&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">frame</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khi&#x1E0D;k&#x012B;</h2>
+      <p>
+        We all think we see the world as it is. But we see it through
+        windows &mdash; our circumstances, our mood, our memory.
+      </p>
+      <p>
+        The window of privilege shows a different street than the window of
+        struggle. The window of heartbreak colours the sunset differently
+        than the window of falling in love.
+      </p>
+      <p>
+        You cannot remove all windows. But you can notice which one you are
+        looking through. And sometimes, you can walk to a different one.
+      </p>
+      <p class="about-note">Your windows are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="khidki.js"></script>
+</body>
+</html>

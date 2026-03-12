@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puk&#x0101;r — the call</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0941;&#x0915;&#x093E;&#x0930;</div>
+      <h1 class="title">Puk&#x0101;r</h1>
+      <p class="subtitle">the call</p>
+      <p class="intro">
+        Sometimes something calls to you &mdash; a subject that fascinates
+        you, a cause that angers you, a person who needs you. You cannot
+        always explain it. The call is not always loud. Sometimes it is a
+        quiet pull, a persistent thought, a dream that returns. Name what
+        is calling you.
+      </p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What is calling you?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this call</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the urge to draw, the pull toward medicine&hellip;">
+        <p class="write-prompt-2">What does it sound like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you first heard it, why it will not go quiet&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">answer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Puk&#x0101;r</h2>
+      <p>
+        A calling is different from an ambition. Ambition is what you
+        decide. A calling is what decides you.
+      </p>
+      <p>
+        It shows up as a restlessness &mdash; why does this injustice
+        bother me so much? Why can I not stop thinking about the sea?
+        Why do I come alive when I teach a younger child?
+      </p>
+      <p>
+        You do not have to answer every call today. But you should name
+        them. Because ignoring a calling does not make it quiet. It just
+        makes it louder.
+      </p>
+      <p class="about-note">Your calls are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="pukaar.js"></script>
+</body>
+</html>
