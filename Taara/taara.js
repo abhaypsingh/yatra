@@ -223,7 +223,8 @@
         ['Lorhi', 'Lor\u012B', 'the lullaby'],
         ['Paani', 'P\u0101n\u012B', 'the water'],
         ['Tukda', '\u1E6Cuk\u1E0D\u0101', 'the fragment'],
-        ['Chaal', 'Ch\u0101l', 'the move']
+        ['Chaal', 'Ch\u0101l', 'the move'],
+        ['Seepi', 'S\u012Bp\u012B', 'the shell']
       ]
     }
   ];

@@ -974,6 +974,10 @@ body {
 .card-chaal::before { background: #808890; }
 .card-chaal .card-enter { color: #808890; }
 
+.card-seepi:hover { border-color: #b0a088; }
+.card-seepi::before { background: #b0a088; }
+.card-seepi .card-enter { color: #b0a088; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&#x012B;p&#x012B; — the shell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== OPENING ========== -->
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0940;&#x092A;&#x0940;</div>
+      <h1 class="title">S&#x012B;p&#x012B;</h1>
+      <p class="subtitle">the shell</p>
+      <p class="intro">
+        After every storm, the sea leaves something on the shore. A shell
+        &mdash; small, beautiful, formed by pressure and time. Your
+        difficult moments do the same. They leave behind something you did
+        not expect &mdash; a strength, a softness, a knowing.
+        <em>Seepi</em> asks you to find the shells. The small, beautiful
+        things that only exist because something hard happened first.
+      </p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main hidden" id="main">
+
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">
+      What beautiful thing did the hard times leave behind?
+    </p>
+
+    <!-- add button -->
+    <button class="add-btn" id="addBtn">+</button>
+
+    <!-- write view -->
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shell</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a strength I didn&rsquo;t know I had, a softness born from loss&hellip;">
+        <p class="write-prompt-2">What ocean made it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the difficulty that shaped it, the beauty it holds now&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail view -->
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>S&#x012B;p&#x012B;</h2>
+      <p>
+        A shell is not the storm. It is what the storm left behind. The
+        pearl inside the oyster did not form in calm waters. It formed
+        around a grain of sand that should not have been there &mdash; an
+        irritation, a wound, a thing that did not belong.
+      </p>
+      <p>
+        Your shells are the same. The empathy you have because you were
+        once lonely. The patience you learned from waiting for something
+        that never came. The quiet confidence that grew from failing and
+        trying again.
+      </p>
+      <p>
+        Not every hard thing leaves a shell. But if you look carefully at
+        the shore of your life, you will find them &mdash; small,
+        luminous, yours.
+      </p>
+      <p class="about-note">Your shells are stored only on this device.</p>
+    </div>
+  </div>
+
+  <script src="seepi.js"></script>
+</body>
+</html>

@@ -224,7 +224,8 @@
         ['Lorhi', 'Lor\u012B', 'the lullaby'],
         ['Paani', 'P\u0101n\u012B', 'the water'],
         ['Tukda', '\u1E6Cuk\u1E0D\u0101', 'the fragment'],
-        ['Chaal', 'Ch\u0101l', 'the move']
+        ['Chaal', 'Ch\u0101l', 'the move'],
+        ['Seepi', 'S\u012Bp\u012B', 'the shell']
       ]
     }
   ];
@@ -291,7 +292,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 188 experiences';
+    sub.textContent = 'the journey \u2014 189 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 
