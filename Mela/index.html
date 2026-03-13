@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mel&#x0101; — the fair</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0947;&#x0932;&#x093E;</div>
+      <h1 class="title">Mel&#x0101;</h1>
+      <p class="subtitle">the fair</p>
+      <p class="intro">Growing up is a mela &mdash; loud, colourful, overwhelming, thrilling. There are too many stalls, too many voices, too many things competing for your attention. You win some games and lose others. You eat something that makes you sick. You see something that fills you with wonder. <em>Mela</em> asks you to name the chaos and the joy of it all.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is your mela like?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this part of the fair</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the dizzying social media carousel, the exam season madness&hellip;">
+        <p class="write-prompt-2">Does it thrill you or overwhelm you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the noise, the colour, what you love and what exhausts you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wander</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mel&#x0101;</h2>
+      <p>A mela is magnificent and exhausting in equal measure. You cannot see everything, do everything, be everywhere. And that is the point.</p>
+      <p>Growing up is like walking through a fair that never closes. New attractions appear every year. Friends pull you toward one stall while your parents point to another. The noise is incredible. The colours are blinding. And sometimes, in the middle of all of it, you just want to sit on a bench and breathe.</p>
+      <p>That is okay. The fair will still be there when you stand up. Name the chaos. Name the wonder. They are the same thing.</p>
+      <p class="about-note">Your fairs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mela.js"></script>
+</body>
+</html>

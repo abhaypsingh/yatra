@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H&#x0101;th — the hand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093E;&#x0925;</div>
+      <h1 class="title">H&#x0101;th</h1>
+      <p class="subtitle">the hand</p>
+      <p class="intro">Think of the hands in your life. The one that held yours when you crossed the road. The one that slapped you and the one that wiped your tears. The one you reached for in the dark. The one you let go of. <em>Haath</em> asks you to name the hands that shaped you &mdash; the ones that held, guided, pushed, pulled, and released.</p>
+      <button class="begin-btn" id="beginBtn">reach</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose hands do you remember?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hand</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my father&rsquo;s hand on my shoulder, the hand I reached for and missed&hellip;">
+        <p class="write-prompt-2">What did this hand do for you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it held, what it gave, when it let go&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>H&#x0101;th</h2>
+      <p>A hand is the first thing you reached for when you came into the world. And hands have been the language of your life ever since.</p>
+      <p>Your mother&rsquo;s hands making rotis. Your teacher&rsquo;s hand pointing at the board. A friend&rsquo;s hand pulling you up after you fell. The hand you wanted to hold but could not. The hand that waved goodbye and did not come back.</p>
+      <p>One day your own hands will be the ones someone remembers. Name the hands that shaped you. They taught you everything about love, safety, and letting go.</p>
+      <p class="about-note">Your hands are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="haath.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kh&#x0101;mosh&#x012B; — the silence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x093C;&#x093E;&#x092E;&#x094B;&#x0936;&#x0940;</div>
+      <h1 class="title">Kh&#x0101;mosh&#x012B;</h1>
+      <p class="subtitle">the silence</p>
+      <p class="intro">Not all silences are the same. There is the silence of a car ride after a fight. The silence of sitting with a friend and needing no words. The silence of a house after someone leaves. The silence you choose and the silence forced upon you. <em>Khamoshi</em> asks you to name the silences in your life &mdash; and listen to what each one is saying.</p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What silences do you carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this silence</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the quiet after my parents argue, sitting with my friend saying nothing&hellip;">
+        <p class="write-prompt-2">What is this silence saying?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whether it heals or hurts, what it is protecting or hiding&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kh&#x0101;mosh&#x012B;</h2>
+      <p>Silence is never empty. It is always full of something &mdash; anger, love, grief, peace, or fear.</p>
+      <p>The silence between you and your father on the drive home may hold more words than a whole conversation. The silence of an empty room after a loved one leaves is deafening. The silence of two friends who understand each other is the loudest form of connection.</p>
+      <p>Learn the language of silence. It is spoken everywhere but taught nowhere. Name the silences. They have been talking to you all along.</p>
+      <p class="about-note">Your silences are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khamoshi.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morch&#x0101; — the stand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x094B;&#x0930;&#x094D;&#x091A;&#x093E;</div>
+      <h1 class="title">Morch&#x0101;</h1>
+      <p class="subtitle">the stand</p>
+      <p class="intro">There are moments when you stop going along with things. When something inside you says: no. Not this. Not anymore. It might be small &mdash; refusing to laugh at a cruel joke. It might be enormous &mdash; telling someone in authority they are wrong. <em>Morcha</em> asks you to name the times you stood your ground &mdash; and the times you wish you had.</p>
+      <button class="begin-btn" id="beginBtn">stand</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did you stand your ground?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stand</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the day I refused to cheat, when I defended my friend&hellip;">
+        <p class="write-prompt-2">What did it cost you? What did it give you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what happened after, whether you would do it again&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Morch&#x0101;</h2>
+      <p>Standing your ground is terrifying. Your voice shakes. Your hands tremble. Everyone is watching, and most of them want you to sit down.</p>
+      <p>But there are moments when sitting down is not an option. When the cost of silence is higher than the cost of speaking. These moments define you more than any achievement on your CV.</p>
+      <p>And the stands you did not take &mdash; those matter too. They teach you what you were not yet ready for. Name them all. The brave ones and the ones you wish you could redo.</p>
+      <p class="about-note">Your stands are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="morcha.js"></script>
+</body>
+</html>

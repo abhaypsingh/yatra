@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dh&#x016B;l — the dust</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x0942;&#x0932;</div>
+      <h1 class="title">Dh&#x016B;l</h1>
+      <p class="subtitle">the dust</p>
+      <p class="intro">After every upheaval, dust settles. After a move, a breakup, an argument, a result day &mdash; the storm passes and ordinary life returns, but everything is coated in a thin layer of what just happened. <em>Dhool</em> asks you to name what has settled in your life &mdash; the residue of events that changed the landscape without destroying it.</p>
+      <button class="begin-btn" id="beginBtn">settle</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dust has settled in your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this dust</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the awkwardness after a big fight, the quiet after results came&hellip;">
+        <p class="write-prompt-2">What changed underneath?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what looks the same but feels different, what the dust is covering&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">brush</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dh&#x016B;l</h2>
+      <p>Dust is what remains when movement stops. After a storm, after construction, after demolition &mdash; the dust settles and you see the new shape of things.</p>
+      <p>Your life has these moments too. The week after exam results, when everything looks the same but nothing feels like it did. The month after a friend moved away, when their absence has become ordinary.</p>
+      <p>Dust is not dramatic. It is quiet. It is the part of change that nobody talks about &mdash; the slow return to normal when normal is no longer what it was. Name the dust. It is telling you what has truly changed.</p>
+      <p class="about-note">Your dust is stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dhool.js"></script>
+</body>
+</html>

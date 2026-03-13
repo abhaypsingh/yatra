@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x1E6C;hik&#x0101;n&#x0101; — the address</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0920;&#x093F;&#x0915;&#x093E;&#x0928;&#x093E;</div>
+      <h1 class="title">&#x1E6C;hik&#x0101;n&#x0101;</h1>
+      <p class="subtitle">the address</p>
+      <p class="intro">Where do you truly belong? Not just your house number and pin code, but the places &mdash; physical, emotional, imaginary &mdash; where you feel most yourself. A corner of the library. Your grandmother&rsquo;s verandah. A song. A memory. <em>Thikana</em> asks you to name your real addresses &mdash; the ones no postman could find.</p>
+      <button class="begin-btn" id="beginBtn">locate</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where do you truly belong?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this address</p>
+        <input class="write-name" id="writeName" type="text" placeholder="nani&rsquo;s terrace, the back bench with my friends, that one song&hellip;">
+        <p class="write-prompt-2">What makes it feel like home?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why you feel safe there, what version of you exists in that place&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pin</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E6C;hik&#x0101;n&#x0101;</h2>
+      <p>An address is where people can find you. But your real address &mdash; the place where you can find yourself &mdash; is rarely a location on a map.</p>
+      <p>It might be the feeling of reading a book on a rainy afternoon. It might be your grandmother&rsquo;s lap when you were small. It might be a future place you have not found yet but can feel pulling you forward.</p>
+      <p>Belonging is not always about geography. Sometimes it is about a moment, a person, a state of mind. Name your true addresses. They are the coordinates of your soul.</p>
+      <p class="about-note">Your addresses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thikana.js"></script>
+</body>
+</html>

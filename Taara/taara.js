@@ -247,7 +247,25 @@
         ['Koyla', 'Koyl\u0101', 'the coal'],
         ['Samundar', 'Samundar', 'the ocean'],
         ['Chowk', 'Chowk', 'the crossroads'],
-        ['Chiriya', 'Chi\u1E5Biy\u0101', 'the bird']
+        ['Chiriya', 'Chi\u1E5Biy\u0101', 'the bird'],
+        ['Dastaan', 'D\u0101st\u0101n', 'the saga'],
+        ['Chauka', 'Chauk\u0101', 'the kitchen'],
+        ['Morcha', 'Morch\u0101', 'the stand'],
+        ['Khamoshi', 'Kh\u0101mosh\u012B', 'the silence'],
+        ['Angoothi', 'Ang\u016Bth\u012B', 'the ring'],
+        ['Seema', 'S\u012Bm\u0101', 'the border'],
+        ['Dhool', 'Dh\u016Bl', 'the dust'],
+        ['Chunaav', 'Chun\u0101v', 'the choice'],
+        ['Talaash', 'Tal\u0101sh', 'the search'],
+        ['Daud', 'Dau\u1E0D', 'the race'],
+        ['Thikana', '\u1E6Chik\u0101n\u0101', 'the address'],
+        ['Mela', 'Mel\u0101', 'the fair'],
+        ['Barish', 'B\u0101rish', 'the rain'],
+        ['Takiya', 'Takiy\u0101', 'the pillow'],
+        ['Haath', 'H\u0101th', 'the hand'],
+        ['Bijli', 'Bijl\u012B', 'the lightning'],
+        ['Ghungroo', 'Ghungr\u016B', 'the anklet bell'],
+        ['Basta', 'Bast\u0101', 'the school bag']
       ]
     }
   ];

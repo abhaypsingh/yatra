@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bast&#x0101; — the school bag</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0938;&#x094D;&#x0924;&#x093E;</div>
+      <h1 class="title">Bast&#x0101;</h1>
+      <p class="subtitle">the school bag</p>
+      <p class="intro">Every morning you packed a bag and walked into the world. Books, tiffin, water bottle &mdash; and invisible things too. Anxiety about a test. Excitement about seeing a friend. The leftover weight of something that happened at home. <em>Basta</em> asks you to name what you carry into the world each day &mdash; the visible and the invisible.</p>
+      <button class="begin-btn" id="beginBtn">pack</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What do you carry into the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name what you carry</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the anxiety before presentations, the weight of being the &lsquo;good&rsquo; student&hellip;">
+        <p class="write-prompt-2">Did you choose to pack it, or was it placed there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how heavy it is, what would happen if you left it at home&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bast&#x0101;</h2>
+      <p>A child&rsquo;s school bag is always heavier than it should be. This is true in both senses.</p>
+      <p>The books are heavy enough. But the invisible weight &mdash; the need to perform, the worry about fitting in, the unfinished argument from breakfast, the dread of a particular class &mdash; that is what really strains the shoulders.</p>
+      <p>No one checks the invisible contents of your bag. No one asks what you are carrying besides textbooks. Name what is in your basta. The first step to lightening the load is knowing what is in it.</p>
+      <p class="about-note">Your bags are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="basta.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takiy&#x0101; — the pillow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0915;&#x093F;&#x092F;&#x093E;</div>
+      <h1 class="title">Takiy&#x0101;</h1>
+      <p class="subtitle">the pillow</p>
+      <p class="intro">The pillow knows everything. It has caught your tears at midnight. It has heard the things you whisper to yourself when the house is dark. It holds the version of you that exists only when no one is watching. <em>Takiya</em> asks you to name the soft, private things &mdash; the comforts, the confessions, the quiet rituals that belong to you alone.</p>
+      <button class="begin-btn" id="beginBtn">rest</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What does your pillow know?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this private thing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the midnight worries, the thing I replay before sleep&hellip;">
+        <p class="write-prompt-2">Why does it come out only in the dark?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you think about when the world is quiet, what the pillow holds&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Takiy&#x0101;</h2>
+      <p>The pillow is the most honest piece of furniture in your house. It sees you when all the performances are done, when the phone is face-down, when the lights are off.</p>
+      <p>It knows about the tears you will not show anyone. The prayer you whisper even though you are not sure you believe. The replaying of a conversation where you wish you had said something different. The smile you allow yourself when you remember something good.</p>
+      <p>These private moments are not weakness. They are where your real life happens. Name what the pillow knows. It has been your most faithful confidante.</p>
+      <p class="about-note">Your pillows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="takiya.js"></script>
+</body>
+</html>

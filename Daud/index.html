@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dau&#x1E0D; — the race</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x094C;&#x0921;&#x093C;</div>
+      <h1 class="title">Dau&#x1E0D;</h1>
+      <p class="subtitle">the race</p>
+      <p class="intro">Everyone is running. For marks, for admission, for approval, for a future that keeps moving further away the faster you chase it. You were entered in this race before you could choose. <em>Daud</em> asks you to name the races you are running &mdash; and wonder: who set the finish line? Is it even yours?</p>
+      <button class="begin-btn" id="beginBtn">run</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What races are you running?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this race</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the marks race, keeping up with friends who seem ahead&hellip;">
+        <p class="write-prompt-2">Who set the finish line?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who you are running against, whether winning would satisfy you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pace</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dau&#x1E0D;</h2>
+      <p>The cruelest thing about the race is that nobody remembers entering it. One day you were a child playing. The next day you were a student with a rank, a percentile, a seat number.</p>
+      <p>Some races are worth running &mdash; the race to become kinder, the race to learn something that genuinely excites you. Others are just noise disguised as purpose.</p>
+      <p>You are allowed to slow down. You are allowed to stop and ask: where am I actually going? And if the only honest answer is &ldquo;where everyone else is going,&rdquo; then maybe it is time to find your own track.</p>
+      <p class="about-note">Your races are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daud.js"></script>
+</body>
+</html>

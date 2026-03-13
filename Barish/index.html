@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x0101;rish — the rain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0930;&#x093F;&#x0936;</div>
+      <h1 class="title">B&#x0101;rish</h1>
+      <p class="subtitle">the rain</p>
+      <p class="intro">Rain does not ask permission. It arrives, and the world changes. The dust settles. The heat breaks. Everything smells different. There are rains in your life too &mdash; tears that came without warning, relief that washed through you, moments that cleansed what needed cleansing. <em>Barish</em> asks you to name the rains &mdash; the times something washed over you and left the world renewed.</p>
+      <button class="begin-btn" id="beginBtn">pour</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What rains have washed through you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this rain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the cry that came from nowhere, the relief when the truth finally came out&hellip;">
+        <p class="write-prompt-2">What did it wash away? What did it water?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the world looked like before and after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rain</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x0101;rish</h2>
+      <p>In India, the monsoon is not weather. It is an event. The entire country waits for it. And when it arrives, everything changes in an hour.</p>
+      <p>You have your own monsoons. The conversation that broke the tension. The cry that came in the bathroom at school when no one was looking. The moment of forgiveness that washed months of anger away.</p>
+      <p>Rain is not always gentle. Sometimes it floods. But even floods recede, and the soil they leave behind is the richest kind. Name the rains in your life. They cleansed more than you knew at the time.</p>
+      <p class="about-note">Your rains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="barish.js"></script>
+</body>
+</html>

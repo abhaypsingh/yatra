@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&#x012B;m&#x0101; — the border</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0940;&#x092E;&#x093E;</div>
+      <h1 class="title">S&#x012B;m&#x0101;</h1>
+      <p class="subtitle">the border</p>
+      <p class="intro">You live in many countries at once. At home you are one person, at school another, online a third. The borders between these worlds are real even if invisible. Sometimes you cross smoothly. Sometimes the crossing changes you. <em>Seema</em> asks you to name the borders you cross every day &mdash; and what you leave behind or pick up at each one.</p>
+      <button class="begin-btn" id="beginBtn">cross</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What borders do you cross?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this border</p>
+        <input class="write-name" id="writeName" type="text" placeholder="between home-me and school-me, between who I am alone and in a group&hellip;">
+        <p class="write-prompt-2">What changes when you cross?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you put on or take off, which side feels more real&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>S&#x012B;m&#x0101;</h2>
+      <p>You are a citizen of many small countries &mdash; your family, your friend group, your classroom, your online world. Each has its own language, its own rules, its own version of you.</p>
+      <p>The border crossing happens a hundred times a day. You adjust your voice, your posture, your vocabulary. Most of the time you do not notice. But sometimes the crossing is hard &mdash; when the person your parents want you to be clashes with who your friends know.</p>
+      <p>There is nothing wrong with being different in different places. But name the borders. Know where one country ends and another begins. That knowledge is freedom.</p>
+      <p class="about-note">Your borders are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="seema.js"></script>
+</body>
+</html>
