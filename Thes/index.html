@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x1E6C;hes — the stumble</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0920;&#x0947;&#x0938;</div>
+      <h1 class="title">&#x1E6C;hes</h1>
+      <p class="subtitle">the stumble</p>
+      <p class="intro">A thes is not a fall. It is a stumble &mdash; your toe catches on something unexpected and for a moment you lose your balance. You might recover. You might not. But that instant of wobbling, of suddenly not being sure of the ground, is the thes. <em>Thes</em> asks you to name the stumbles &mdash; the unexpected trips that shook your certainty.</p>
+      <button class="begin-btn" id="beginBtn">steady</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What made you stumble?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stumble</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the question I couldn't answer, the moment my confidence wobbled&hellip;">
+        <p class="write-prompt-2">Did you recover?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what tripped you, how you wobbled, whether you caught yourself or fell&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stand</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E6C;hes</h2>
+      <p>A thes is life tapping you on the ankle. It is not trying to knock you down &mdash; just reminding you to watch where you are going. The embarrassment of a wrong answer in class. The moment you realized you misjudged someone. The unexpected rejection that made you question your path.</p>
+      <p>Stumbles are not failures. They are recalibrations. Your foot catches, your body adjusts, and you walk differently afterward &mdash; more carefully, more aware, more present.</p>
+      <p>Name the stumbles. They taught you more about the terrain than the smooth stretches ever did.</p>
+      <p class="about-note">Your stumbles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thes.js"></script>
+</body>
+</html>

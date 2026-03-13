@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J&#x0101;l&#x012B; — the lattice</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093E;&#x0932;&#x0940;</div>
+      <h1 class="title">J&#x0101;l&#x012B;</h1>
+      <p class="subtitle">the lattice</p>
+      <p class="intro">A jaali is a carved stone screen. It lets light and air through while keeping you hidden. You can see the world but the world cannot fully see you. <em>Jaali</em> asks you to name the lattices in your life &mdash; the partial barriers through which you observe, participate, and hide simultaneously.</p>
+      <button class="begin-btn" id="beginBtn">peer</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Through what lattice do you watch the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lattice</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the social media I watch but rarely post on, the group I observe but never join&hellip;">
+        <p class="write-prompt-2">What do you see through it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what light comes through, what you are hiding from, whether to step through or stay behind&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carve</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>J&#x0101;l&#x012B;</h2>
+      <p>The jaalis of Mughal architecture are masterpieces of geometry. They turn a solid wall into a breathing, seeing, beautiful boundary. Not open, not closed. Something in between.</p>
+      <p>You live behind jaalis every day. The persona you show online &mdash; partially revealing, partially concealing. The way you participate in a group &mdash; present but guarded. The way you let certain people see certain parts of you. Every relationship has a different jaali pattern.</p>
+      <p>Name the lattices. Some are beautiful and necessary. Some are keeping you from the light you need.</p>
+      <p class="about-note">Your lattices are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jaali.js"></script>
+</body>
+</html>

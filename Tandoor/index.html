@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tand&#x016B;r — the clay oven</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0902;&#x0926;&#x0942;&#x0930;</div>
+      <h1 class="title">Tand&#x016B;r</h1>
+      <p class="subtitle">the clay oven</p>
+      <p class="intro">A tandoor runs at extreme heat. Nothing survives inside it unchanged. Dough goes in soft and comes out as naan &mdash; charred, puffed, transformed. <em>Tandoor</em> asks you to name the crucibles in your life &mdash; the extreme situations that transformed you completely, where you entered as one thing and emerged as another.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What fire transformed you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this crucible</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the year everything changed, the crisis that remade me&hellip;">
+        <p class="write-prompt-2">What did you become?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the extreme heat was, how it changed you, what you were before and after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fire</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Tand&#x016B;r</h2>
+      <p>The tandoor does not ask permission. It does not care if the dough is ready. The heat is the heat. What enters must either transform or burn. There is no middle ground.</p>
+      <p>Life has tandoors. The death of someone you loved. A family crisis. A failure so complete that everything you believed about yourself had to be rebuilt from ash. You did not choose to enter. But you came out different. Harder on the outside. Softer within. Changed.</p>
+      <p>Name the tandoors. The fires you survived. You wear their marks. They are proof of transformation.</p>
+      <p class="about-note">Your ovens are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="tandoor.js"></script>
+</body>
+</html>

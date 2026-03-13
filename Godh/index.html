@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God — the lap</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x094B;&#x0926;</div>
+      <h1 class="title">God</h1>
+      <p class="subtitle">the lap</p>
+      <p class="intro">A godh is the first seat you ever knew. Before chairs, before cushions, there was someone&rsquo;s lap. It was warmth and safety and the sound of a heartbeat close to your ear. <em>Godh</em> asks you to name the laps &mdash; the people who held you, the safety you felt, and the laps you can no longer sit in because you grew up or they grew old.</p>
+      <button class="begin-btn" id="beginBtn">hold</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose lap held you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lap</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother's lap during thunderstorms, my grandmother's lap for stories&hellip;">
+        <p class="write-prompt-2">What did it hold besides you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whose lap it was, what you felt there, whether you can still return to it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rest</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>God</h2>
+      <p>The godh is where you learned what safety feels like. It is the original home &mdash; not a building, but a body. Your mother&rsquo;s lap when you were feverish. Your father&rsquo;s lap during a long car journey. Your grandparent&rsquo;s lap for stories that had no ending.</p>
+      <p>One of the quiet griefs of growing up is that you become too big for someone&rsquo;s lap. Or they become too frail to hold you. The lap is still there, but you cannot fit the way you used to. This is not tragedy. It is the bittersweet mathematics of love and time.</p>
+      <p>Name the laps. They are the geography of your earliest safety.</p>
+      <p class="about-note">Your laps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="godh.js"></script>
+</body>
+</html>

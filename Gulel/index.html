@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulel — the slingshot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0932;&#x0947;&#x0932;</div>
+      <h1 class="title">Gulel</h1>
+      <p class="subtitle">the slingshot</p>
+      <p class="intro">A gulel is a child&rsquo;s weapon. A forked stick and a rubber band. It is tiny, improvised, and surprisingly powerful. David brought down Goliath with one. <em>Gulel</em> asks you to name the small, makeshift things that hit larger targets &mdash; the tiny acts of courage that toppled something big.</p>
+      <button class="begin-btn" id="beginBtn">aim</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small thing hit a big target?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this slingshot</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the quiet word that changed a mind, the small stand that shifted everything&hellip;">
+        <p class="write-prompt-2">What giant did it strike?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what small act it was, what large thing it challenged, what happened after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">launch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gulel</h2>
+      <p>You do not need a cannon to make an impact. Sometimes a pebble in a slingshot is enough. The right word at the right time. A refusal to stay silent. A small kindness that ripples outward.</p>
+      <p>Children know this instinctively. They make weapons from sticks and rubber bands. They build forts from cushions. They challenge the world with nothing but imagination and nerve.</p>
+      <p>Name the slingshots. The tiny, improvised, unlikely things that struck something much larger than themselves.</p>
+      <p class="about-note">Your slingshots are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gulel.js"></script>
+</body>
+</html>

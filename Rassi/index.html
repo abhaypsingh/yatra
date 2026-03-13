@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rass&#x012B; — the rope</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0938;&#x094D;&#x0938;&#x0940;</div>
+      <h1 class="title">Rass&#x012B;</h1>
+      <p class="subtitle">the rope</p>
+      <p class="intro">A rope can pull you to safety or tie you down. It connects climbers on a mountain and prisoners to a post. The same object, entirely different purposes. <em>Rassi</em> asks you to name the ropes in your life &mdash; the bonds that held you, the ties that saved you, and the ones that need to be cut.</p>
+      <button class="begin-btn" id="beginBtn">pull</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What ropes hold you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this rope</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the obligation that ties me to home, the connection that keeps me grounded&hellip;">
+        <p class="write-prompt-2">Does it save or bind?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who holds the other end, whether it is a lifeline or a leash, whether to hold or let go&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tie</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rass&#x012B;</h2>
+      <p>In childhood, a rassi is joy &mdash; skipping rope, tug of war, the clothesline where your school uniform dries in the sun. In life, a rassi is more complicated. Family ties. Social obligations. Emotional bonds. Each one a rope that connects you to something or someone.</p>
+      <p>Some ropes are lifelines. The friend who throws you a rope when you are drowning. The tradition that anchors you when everything else is shifting. But some ropes are chains in disguise. The guilt that ties you to a relationship you have outgrown.</p>
+      <p>Name the ropes. Hold the ones that save you. Consider cutting the ones that bind.</p>
+      <p class="about-note">Your ropes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="rassi.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajr&#x0101; — the flower garland</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x091C;&#x0930;&#x093E;</div>
+      <h1 class="title">Gajr&#x0101;</h1>
+      <p class="subtitle">the flower garland</p>
+      <p class="intro">A gajra is a string of jasmine flowers woven into the hair. It fills the room with fragrance. It turns the ordinary into the special. But jasmine wilts by evening &mdash; the beauty is temporary by design. <em>Gajra</em> asks you to name the fleeting beauties &mdash; the things that were glorious precisely because they did not last.</p>
+      <button class="begin-btn" id="beginBtn">weave</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What beauty did not last?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this garland</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the summer friendship, the perfect afternoon that could not be repeated&hellip;">
+        <p class="write-prompt-2">Why was its brevity part of its beauty?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what made it beautiful, how long it lasted, what the fragrance left behind&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">string</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gajr&#x0101;</h2>
+      <p>The gajra vendor sits on the street corner in the evening. The flowers are fresh. By tomorrow they will be brown. This is not a flaw &mdash; it is the point. Jasmine gives everything in a few hours: all its beauty, all its fragrance, all its sweetness. Then it is done.</p>
+      <p>The best moments of your life are gajras. A festival night. A conversation that made everything clear. A hug from someone who is no longer here. They did not last. But the fragrance lingers in your memory long after the flowers have dried.</p>
+      <p>Name the gajras. They are proof that some things do not need to last forever to matter forever.</p>
+      <p class="about-note">Your garlands are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gajra.js"></script>
+</body>
+</html>

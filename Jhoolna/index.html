@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jh&#x016B;ln&#x0101; — the swing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x0942;&#x0932;&#x0928;&#x093E;</div>
+      <h1 class="title">Jh&#x016B;ln&#x0101;</h1>
+      <p class="subtitle">the swing</p>
+      <p class="intro">A swing takes you up, then brings you back. Up again, back again. It is the rhythm of hope and disappointment, excitement and return. On a swing you are briefly higher than everyone else, and then you are not. <em>Jhoolna</em> asks you to name the swings &mdash; the back-and-forth rhythms of your life, the highs that always came with a return to earth.</p>
+      <button class="begin-btn" id="beginBtn">swing</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What swings between high and low?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this swing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the mood that rises and falls, the confidence that comes and goes&hellip;">
+        <p class="write-prompt-2">What is the rhythm?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what pushes you up, what pulls you back, whether the arc is widening or narrowing&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">push</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jh&#x016B;ln&#x0101;</h2>
+      <p>Every Indian childhood has a swing. Tied to a tree, hung from a doorframe, set up during Teej. The jhoolna is where you learned that joy and gravity are partners. You go up because someone pushes you. You come down because the world pulls.</p>
+      <p>Life swings too. Good days followed by hard ones. Confidence followed by doubt. Love followed by fear. The trick is not to stop the swing but to learn its rhythm. To pump your legs at the right time. To enjoy the rise without dreading the fall.</p>
+      <p>Name the swings. They are the rhythm of being alive.</p>
+      <p class="about-note">Your swings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhoolna.js"></script>
+</body>
+</html>

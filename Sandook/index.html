@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sand&#x016B;q — the trunk</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0902;&#x0926;&#x0942;&#x0915;&#x093C;</div>
+      <h1 class="title">Sand&#x016B;q</h1>
+      <p class="subtitle">the trunk</p>
+      <p class="intro">Every family has a sandook. A heavy metal trunk pushed under a bed or placed on top of an almirah. Inside it: old sarees, documents, jewellery, letters, things too important to display and too precious to throw away. <em>Sandook</em> asks you to name the trunks &mdash; the things you have locked away because they matter too much.</p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What have you locked away?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this trunk</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the memory I keep locked, the dream I stored for later&hellip;">
+        <p class="write-prompt-2">Why is it locked away?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is inside, why you stored it, when you last opened it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">store</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sand&#x016B;q</h2>
+      <p>The sandook is the family vault. It smells of naphthalene and secrets. Your grandmother&rsquo;s wedding saree is in there. Your father&rsquo;s first pay slip. A photograph of someone no one talks about anymore.</p>
+      <p>You have sandooks too. Memories you have locked away. Dreams you stored &ldquo;for later.&rdquo; Feelings you packed tight and pushed under the bed of your consciousness. They are still there. They are waiting.</p>
+      <p>Name the trunks. Some need to stay locked. Some are ready to be opened.</p>
+      <p class="about-note">Your trunks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sandook.js"></script>
+</body>
+</html>

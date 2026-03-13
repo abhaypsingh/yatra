@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhakkan — the lid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0922;&#x0915;&#x094D;&#x0915;&#x0928;</div>
+      <h1 class="title">Dhakkan</h1>
+      <p class="subtitle">the lid</p>
+      <p class="intro">A lid keeps things in and keeps things out. It preserves, it seals, it hides. You put a lid on a boiling pot to control it. You put a lid on your emotions for the same reason. <em>Dhakkan</em> asks you to name the lids &mdash; the things you have sealed shut and the truths you have kept covered.</p>
+      <button class="begin-btn" id="beginBtn">lift</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What have you kept sealed?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lid</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the anger I keep contained, the secret I promised to keep&hellip;">
+        <p class="write-prompt-2">What happens if you lift it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is sealed inside, who put the lid on, whether it is time to open it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">seal</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhakkan</h2>
+      <p>A pressure cooker without a lid is just a pot. The lid is what builds pressure, what transforms things faster, what makes the whistle blow. But a lid that is sealed too tight can explode.</p>
+      <p>You have been putting lids on things your whole life. On your frustration in class. On your tears in public. On the questions you are afraid to ask. Some of these lids are wise &mdash; not everything needs to boil over. But some have been on too long and the pressure is building.</p>
+      <p>Name the lids. Decide which ones to keep and which ones to gently lift before they blow.</p>
+      <p class="about-note">Your lids are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dhakkan.js"></script>
+</body>
+</html>

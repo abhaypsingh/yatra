@@ -302,7 +302,25 @@
         ['Jhalar', 'Jh\u0101lar', 'the fringe'],
         ['Matka', 'Ma\u1E6Dk\u0101', 'the earthen pot'],
         ['Chulha', 'Ch\u016Blh\u0101', 'the hearth'],
-        ['Haandi', 'H\u0101n\u1E0D\u012B', 'the cooking pot']
+        ['Haandi', 'H\u0101n\u1E0D\u012B', 'the cooking pot'],
+        ['Gulel', 'Gulel', 'the slingshot'],
+        ['Sandook', 'Sand\u016Bq', 'the trunk'],
+        ['Chaadar', 'Ch\u0101dar', 'the bedsheet'],
+        ['Kaanta', 'K\u0101n\u1E6D\u0101', 'the thorn'],
+        ['Galicha', 'Gal\u012Bch\u0101', 'the carpet'],
+        ['Dhakkan', 'Dhakkan', 'the lid'],
+        ['Godh', 'God', 'the lap'],
+        ['Rassi', 'Rass\u012B', 'the rope'],
+        ['Tandoor', 'Tand\u016Br', 'the clay oven'],
+        ['Gajra', 'Gajr\u0101', 'the flower garland'],
+        ['Jhoolna', 'Jh\u016Bln\u0101', 'the swing'],
+        ['Dukaan', 'Duk\u0101n', 'the shop'],
+        ['Thes', '\u1E6Ches', 'the stumble'],
+        ['Paayal', 'P\u0101yal', 'the anklet'],
+        ['Sulag', 'Sulag', 'the smoulder'],
+        ['Jaali', 'J\u0101l\u012B', 'the lattice'],
+        ['Supna', 'Supn\u0101', 'the dream'],
+        ['Kambal', 'Kambal', 'the blanket']
       ]
     }
   ];
@@ -369,7 +387,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 266 experiences';
+    sub.textContent = 'the journey \u2014 284 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

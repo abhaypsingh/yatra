@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K&#x0101;n&#x1E6D;&#x0101; — the thorn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093E;&#x0901;&#x091F;&#x093E;</div>
+      <h1 class="title">K&#x0101;n&#x1E6D;&#x0101;</h1>
+      <p class="subtitle">the thorn</p>
+      <p class="intro">Every rose has thorns. Every beautiful thing has something sharp guarding it. A thorn is nature&rsquo;s way of saying: this beauty has a price. <em>Kaanta</em> asks you to name the thorns &mdash; the sharp things that came with something beautiful, and the pricks that reminded you to be careful.</p>
+      <button class="begin-btn" id="beginBtn">touch</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What thorn came with the rose?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this thorn</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the cost of a friendship, the pain that came with a dream&hellip;">
+        <p class="write-prompt-2">What was it guarding?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what beautiful thing the thorn protected, whether the prick was worth it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pluck</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>K&#x0101;n&#x1E6D;&#x0101;</h2>
+      <p>A kaanta in the foot stops you in your tracks. Everything pauses while you pull it out. That is what thorns do &mdash; they make you stop, pay attention, be present. Pain is a form of attention.</p>
+      <p>The thorns in your life are not random. The jealousy that comes with love. The loneliness that comes with independence. The criticism that comes with creating. Every beautiful thing you reach for has something sharp attached.</p>
+      <p>Name the thorns. They are not the enemy. They are the price of reaching for roses.</p>
+      <p class="about-note">Your thorns are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kaanta.js"></script>
+</body>
+</html>

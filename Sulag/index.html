@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sulag — the smoulder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0941;&#x0932;&#x0917;</div>
+      <h1 class="title">Sulag</h1>
+      <p class="subtitle">the smoulder</p>
+      <p class="intro">Sulagna is to burn without flame. To glow red beneath the surface. Anger that does not explode but simmers. Desire that does not declare itself but burns quietly. <em>Sulag</em> asks you to name the things that smoulder inside you &mdash; the slow fires that no one can see but you can always feel.</p>
+      <button class="begin-btn" id="beginBtn">burn</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What burns slowly inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this smoulder</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the resentment I never expressed, the ambition that won't go out&hellip;">
+        <p class="write-prompt-2">How long has it been burning?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what lit it, why it has not gone out, whether it warms or destroys&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">glow</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sulag</h2>
+      <p>A smoulder is more dangerous than a flame. A flame is visible, dramatic, easily extinguished. A smoulder hides. It eats through wood from the inside. By the time you see the damage, the structure is already hollow.</p>
+      <p>But not all smoulders are destructive. The slow burn of determination. The quiet fire of a dream you refuse to abandon. The steady warmth of love that does not need grand gestures. Some smoulders keep you alive through the coldest nights.</p>
+      <p>Name the smoulders. The destructive ones need air &mdash; speak them, release them. The nourishing ones need fuel &mdash; feed them, protect them.</p>
+      <p class="about-note">Your smoulders are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sulag.js"></script>
+</body>
+</html>

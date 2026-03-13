@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P&#x0101;yal — the anklet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x093E;&#x092F;&#x0932;</div>
+      <h1 class="title">P&#x0101;yal</h1>
+      <p class="subtitle">the anklet</p>
+      <p class="intro">A paayal announces your arrival before you enter a room. Its soft jingling says: someone is coming. It is ornament and signal, beauty and presence. <em>Paayal</em> asks you to name the things that announced you &mdash; the sounds, habits, and qualities that entered a room before you did.</p>
+      <button class="begin-btn" id="beginBtn">jingle</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What announces your arrival?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this anklet</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my laugh that people recognize, the reputation that walks ahead of me&hellip;">
+        <p class="write-prompt-2">What does it announce?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what enters the room before you do, whether you chose this sound or inherited it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">chime</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>P&#x0101;yal</h2>
+      <p>In old Hindi films, you hear the paayal before you see the heroine. The sound is anticipation made musical. You know someone beautiful is about to appear because the anklet has already told you.</p>
+      <p>You have paayals too. Your reputation arrives before you do. Your energy enters a room before your body. The way people describe you when you are not there &mdash; that is your paayal.</p>
+      <p>Name the anklets. The sounds you make in the world. The ones you chose and the ones others hear whether you intend them or not.</p>
+      <p class="about-note">Your anklets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="paayal.js"></script>
+</body>
+</html>

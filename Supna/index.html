@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supn&#x0101; — the dream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0941;&#x092A;&#x0928;&#x093E;</div>
+      <h1 class="title">Supn&#x0101;</h1>
+      <p class="subtitle">the dream</p>
+      <p class="intro">A supna visits you when your guard is down. It speaks in symbols and feelings. Sometimes it shows you what you desire. Sometimes it shows you what you fear. Sometimes it shows you things you did not know you knew. <em>Supna</em> asks you to name the dreams &mdash; sleeping and waking &mdash; that shaped you.</p>
+      <button class="begin-btn" id="beginBtn">dream</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dreams have shaped you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this dream</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the recurring dream about flying, the vision of who I want to become&hellip;">
+        <p class="write-prompt-2">What was it telling you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whether it was a sleeping or waking dream, what it revealed, whether it came true&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">see</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Supn&#x0101;</h2>
+      <p>In Punjabi and Hindi, supna carries a tenderness that &ldquo;dream&rdquo; does not quite capture. A supna is fragile. It can shatter at the alarm clock. It can haunt you all day with a feeling you cannot name.</p>
+      <p>You have two kinds of supnas. The ones that come at night &mdash; strange, symbolic, sometimes terrifying. And the ones you carry during the day &mdash; the vision of who you could be, the life you imagine, the hope that pulls you forward.</p>
+      <p>Name them both. The night dreams teach you what your unconscious knows. The day dreams teach you what your heart wants.</p>
+      <p class="about-note">Your dreams are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="supna.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kambal — the blanket</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0902;&#x092C;&#x0932;</div>
+      <h1 class="title">Kambal</h1>
+      <p class="subtitle">the blanket</p>
+      <p class="intro">A kambal is rough, heavy, and warm. It is not elegant like a quilt. It does not have patterns or embroidery. But on a cold night, nothing else will do. <em>Kambal</em> asks you to name the blankets in your life &mdash; the rough, unglamorous things that kept you warm when it mattered most.</p>
+      <button class="begin-btn" id="beginBtn">wrap</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What unglamorous thing kept you warm?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this blanket</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend who isn't cool but always shows up, the boring routine that saved me&hellip;">
+        <p class="write-prompt-2">What cold did it shield you from?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was rough about it, what warmth it gave, why nothing else would have worked&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">shelter</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kambal</h2>
+      <p>The kambal is the opposite of luxury. It is utility. It is survival. On a winter night in a village, when the electricity is out and the wind is howling, the kambal does not care about aesthetics. It wraps around you and says: I will keep you alive until morning.</p>
+      <p>The most important people and things in your life might be kambals. Not glamorous. Not Instagram-worthy. Just reliably, stubbornly warm. The parent who is not cool but is always there. The habit that is not exciting but keeps you sane. The friend who will never be the life of the party but will drive you to the hospital at 3 a.m.</p>
+      <p>Name the blankets. They deserve more gratitude than they usually receive.</p>
+      <p class="about-note">Your blankets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kambal.js"></script>
+</body>
+</html>

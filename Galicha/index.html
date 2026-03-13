@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gal&#x012B;ch&#x0101; — the carpet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0932;&#x0940;&#x091A;&#x093E;</div>
+      <h1 class="title">Gal&#x012B;ch&#x0101;</h1>
+      <p class="subtitle">the carpet</p>
+      <p class="intro">A carpet is unrolled for guests. It covers the rough floor and makes it soft. It presents a beautiful surface over an imperfect one. <em>Galicha</em> asks you to name the carpets in your life &mdash; the beautiful surfaces laid over rough realities, and the softness you created for others even when the ground beneath was hard.</p>
+      <button class="begin-btn" id="beginBtn">unroll</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What beautiful surface covers a rough floor?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this carpet</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the composure I show when struggling, the hospitality that hides exhaustion&hellip;">
+        <p class="write-prompt-2">What is underneath?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what rough floor it covers, whether anyone knows what is underneath, who it is for&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">lay</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gal&#x012B;ch&#x0101;</h2>
+      <p>When guests come, the galicha comes out. The house is swept. The good crockery appears. A version of your family is presented that is smoother, softer, more beautiful than the everyday. This is not dishonesty. It is care. It is the wish to make others comfortable.</p>
+      <p>But you do this to yourself too. You carpet over your pain for job interviews. You carpet over your doubts for your parents. You present a smooth surface when underneath the floor is cracked and cold.</p>
+      <p>Name the carpets. Honour the care they represent. But also check whether you have forgotten what the floor actually looks like.</p>
+      <p class="about-note">Your carpets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="galicha.js"></script>
+</body>
+</html>

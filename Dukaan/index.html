@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duk&#x0101;n — the shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0941;&#x0915;&#x093E;&#x0928;</div>
+      <h1 class="title">Duk&#x0101;n</h1>
+      <p class="subtitle">the shop</p>
+      <p class="intro">Every neighbourhood has a dukaan that is more than a shop. The kirana store where the owner knows your family. The stationery shop before exams. The sweet shop during festivals. <em>Dukaan</em> asks you to name the shops that shaped your world &mdash; the places where transactions carried trust, memory, and belonging.</p>
+      <button class="begin-btn" id="beginBtn">visit</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which shops shaped your world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shop</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the bookshop that opened a world, the kirana uncle who gave credit on trust&hellip;">
+        <p class="write-prompt-2">What did it really sell?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you bought, what you received beyond the purchase, who ran it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">enter</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Duk&#x0101;n</h2>
+      <p>A dukaan is not a supermarket. It has a face. It has a name. It remembers what you bought last time. The kirana store uncle writes your purchases in a bahi khata and settles at month-end because trust is worth more than cash.</p>
+      <p>The bookshop where you discovered your first novel. The chai stall where you sat after school. The medical store at midnight during a family emergency. These are not retail transactions. They are relationships. They are community.</p>
+      <p>Name the shops. They are the small economies of love and trust that hold neighbourhoods together.</p>
+      <p class="about-note">Your shops are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dukaan.js"></script>
+</body>
+</html>
