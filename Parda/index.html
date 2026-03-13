@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pard&#x0101; — the curtain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0930;&#x094D;&#x0926;&#x093E;</div>
+      <h1 class="title">Pard&#x0101;</h1>
+      <p class="subtitle">the curtain</p>
+      <p class="intro">You know what you show the world and what you hide behind the curtain. The curated photo. The brave face. The &ldquo;I&rsquo;m fine&rdquo; that hides everything. Sometimes the curtain protects you. Sometimes it isolates you. <em>Parda</em> asks you to name the curtains you draw &mdash; and ask whether they are sheltering you or trapping you.</p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What curtains do you draw?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this curtain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my social media persona, the &lsquo;I&rsquo;m fine&rsquo; I tell everyone&hellip;">
+        <p class="write-prompt-2">What does the curtain hide? What does it protect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is behind it, who you would be if the curtain fell&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">veil</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pard&#x0101;</h2>
+      <p>A curtain is not a wall. A wall blocks everything. A curtain can be drawn open or closed. You have that choice &mdash; even if it does not always feel like it.</p>
+      <p>Some curtains you draw to survive &mdash; hiding your tears from a younger sibling who needs you to be strong. Some you draw out of habit &mdash; the filter between who you are and who you present online.</p>
+      <p>There is no shame in having curtains. The question is whether you still remember what is behind them. Name the curtains. Not to tear them down, but to know where the real you is standing.</p>
+      <p class="about-note">Your curtains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="parda.js"></script>
+</body>
+</html>

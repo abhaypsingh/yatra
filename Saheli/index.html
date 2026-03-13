@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahel&#x012B; — the confidante</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0939;&#x0947;&#x0932;&#x0940;</div>
+      <h1 class="title">Sahel&#x012B;</h1>
+      <p class="subtitle">the confidante</p>
+      <p class="intro">There is someone &mdash; or something &mdash; you tell everything to. A best friend. A journal. A grandparent. A pet who listens without judging. Maybe a voice memo you never send. <em>Saheli</em> asks you to name these keepers of your secrets &mdash; the ones who hold your unfiltered self.</p>
+      <button class="begin-btn" id="beginBtn">confide</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who holds your unfiltered truth?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this confidante</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my best friend, the notebook under my bed&hellip;">
+        <p class="write-prompt-2">What can you say to them that you say nowhere else?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you trust them with, why they are safe&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">trust</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sahel&#x012B;</h2>
+      <p>Everyone needs a witness. Someone who sees you without the performance, without the filters, without the careful editing.</p>
+      <p>A confidante is not always a person. It might be a journal that never judges. A long walk where you talk to yourself. A voice note recorded at 2 a.m. that you delete by morning but needed to say out loud.</p>
+      <p>The point is not who or what it is. The point is that you have a place where you can be completely honest. Name that place. Honour it. It is keeping you whole.</p>
+      <p class="about-note">Your confidantes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="saheli.js"></script>
+</body>
+</html>

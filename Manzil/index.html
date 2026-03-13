@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manzil — the destination</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0902;&#x095B;&#x093F;&#x0932;</div>
+      <h1 class="title">Manzil</h1>
+      <p class="subtitle">the destination</p>
+      <p class="intro">Everyone has a destination in mind for you. Your parents, your teachers, society, the algorithm. But whose map are you following? And does the place you are heading feel like somewhere you actually want to arrive? <em>Manzil</em> asks you to name your destinations &mdash; the inherited ones and the ones you would choose if the road were truly yours.</p>
+      <button class="begin-btn" id="beginBtn">walk</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where are you headed?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this destination</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the career my parents chose, the life I imagine for myself&hellip;">
+        <p class="write-prompt-2">Whose map put it there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who decided this was the goal, does it still feel right&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">aim</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Manzil</h2>
+      <p>A destination is not just a place. It is a promise someone made about your future &mdash; sometimes without asking you.</p>
+      <p>Some destinations are given with love: a parent who wants you safe, a teacher who sees potential. Some are imposed: society&rsquo;s definition of success, the algorithm&rsquo;s version of a good life.</p>
+      <p>You are allowed to question the map. You are allowed to say: this road does not feel like mine. You are even allowed to stop and stand still while you figure it out. Name where you are headed. Then ask: is it where I want to go?</p>
+      <p class="about-note">Your destinations are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="manzil.js"></script>
+</body>
+</html>

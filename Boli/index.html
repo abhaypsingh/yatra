@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bol&#x012B; — the tongue</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x094B;&#x0932;&#x0940;</div>
+      <h1 class="title">Bol&#x012B;</h1>
+      <p class="subtitle">the tongue</p>
+      <p class="intro">You do not speak the same way everywhere. With your grandmother it is one language, with friends another, online a third. Inside jokes, family slang, the half-sentences that carry whole conversations. <em>Boli</em> asks you to name the secret languages you carry &mdash; the ones that make you belong.</p>
+      <button class="begin-btn" id="beginBtn">speak</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What secret languages do you carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this tongue</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the way my family says &lsquo;I love you&rsquo; without saying it, the slang only my group uses&hellip;">
+        <p class="write-prompt-2">Who understands it? Who doesn&rsquo;t?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it lives, what it says that no other language can&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">say</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bol&#x012B;</h2>
+      <p>Language is not just words. It is belonging. Every group you are part of has its own tongue &mdash; its own shortcuts, its own silences that mean something.</p>
+      <p>Your mother&rsquo;s raised eyebrow that replaces an entire lecture. The one word between you and your best friend that makes you both laugh. The dialect your grandparents speak that you understand but cannot quite reply in.</p>
+      <p>These are not just communication. They are identity. Every tongue you carry is a world you belong to. Name them. They are more yours than any language a school can teach you.</p>
+      <p class="about-note">Your tongues are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="boli.js"></script>
+</body>
+</html>

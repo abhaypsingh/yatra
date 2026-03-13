@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patthar — the stone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0924;&#x094D;&#x0925;&#x0930;</div>
+      <h1 class="title">Patthar</h1>
+      <p class="subtitle">the stone</p>
+      <p class="intro">Some things you carry are heavy as stone. A grudge you cannot release. A responsibility placed on your shoulders too young. A regret that sits in your chest. But stones can also build &mdash; foundations, walls, bridges. <em>Patthar</em> asks: what stones do you carry, and are they weighing you down or building you up?</p>
+      <button class="begin-btn" id="beginBtn">lift</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What stones do you carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stone</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the grudge against my old friend, the weight of being the eldest&hellip;">
+        <p class="write-prompt-2">Does it weigh you down or build you up?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how long you have carried it, what would happen if you set it down&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Patthar</h2>
+      <p>A stone is the most honest thing in the world. It does not pretend to be light. It does not apologise for its weight.</p>
+      <p>Some stones you carry by choice &mdash; the responsibility of caring for a sibling, the discipline of practice. These are building stones. They make you stronger.</p>
+      <p>Other stones were placed on you without permission &mdash; a grudge, a guilt, a grief that no one helped you process. These stones are not building anything. They are just heavy. Name your stones. Then decide which ones to build with and which ones to set down.</p>
+      <p class="about-note">Your stones are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="patthar.js"></script>
+</body>
+</html>

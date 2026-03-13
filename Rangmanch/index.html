@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rangmanch — the stage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0902;&#x0917;&#x092E;&#x0902;&#x091A;</div>
+      <h1 class="title">Rangmanch</h1>
+      <p class="subtitle">the stage</p>
+      <p class="intro">Every day you step on stage. At home you play the responsible one. At school the easygoing one. With friends the funny one. Online the confident one. None of these are lies &mdash; but none are the whole truth. <em>Rangmanch</em> asks you to name the roles you perform &mdash; and wonder who you are when the curtain falls and no one is watching.</p>
+      <button class="begin-btn" id="beginBtn">perform</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What roles do you perform?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this role</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the peacekeeper at home, the clown with friends&hellip;">
+        <p class="write-prompt-2">Who wrote this part for you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you started playing it, what happens if you stop&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stage</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rangmanch</h2>
+      <p>Shakespeare said the world is a stage. He was right &mdash; but he forgot to mention how tiring it is to perform all day.</p>
+      <p>The dutiful child. The unbothered friend. The student who has it all figured out. These roles protect you, but they also imprison you. Every role you play is a small agreement to hide some part of yourself.</p>
+      <p>You do not need to quit the stage. But you deserve to know which roles you chose and which were cast upon you. Name them. The audience cannot free you &mdash; only you can.</p>
+      <p class="about-note">Your roles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="rangmanch.js"></script>
+</body>
+</html>

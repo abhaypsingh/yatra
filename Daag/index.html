@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x0101;g — the stain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x093E;&#x0917;</div>
+      <h1 class="title">D&#x0101;g</h1>
+      <p class="subtitle">the stain</p>
+      <p class="intro">Some things don&rsquo;t wash off. A lie you told. A moment of cruelty you cannot take back. A failure that still colours how you see yourself. These stains are not punishments &mdash; they are part of the fabric. <em>Daag</em> asks you to name what stains you carry &mdash; not to scrub them away, but to see the full cloth.</p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What stains do you carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a lie that got someone in trouble, a promise I broke&hellip;">
+        <p class="write-prompt-2">Does it define you or just mark you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what happened, how it changed you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x0101;g</h2>
+      <p>A stain is not the same as a wound. A wound heals. A stain stays &mdash; not as pain, but as a permanent mark on who you are.</p>
+      <p>The time you were unkind and saw the hurt in someone&rsquo;s eyes. The exam you cheated on. The friend you abandoned when they needed you. These stains do not make you bad. They make you human and aware.</p>
+      <p>The cloth is not ruined because it is stained. Some of the most beautiful fabrics in the world are dyed unevenly, imperfectly. Name your stains. They are proof that you lived, stumbled, and kept going.</p>
+      <p class="about-note">Your stains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daag.js"></script>
+</body>
+</html>

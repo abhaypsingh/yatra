@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potl&#x012B; — the pouch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x094B;&#x091F;&#x0932;&#x0940;</div>
+      <h1 class="title">Potl&#x012B;</h1>
+      <p class="subtitle">the pouch</p>
+      <p class="intro">Everyone carries an invisible pouch. Inside it are the things no one sees &mdash; a worry you never mention, a dream you are embarrassed to say aloud, a memory you take everywhere. The pouch gets heavier the longer you carry it alone. Name what is inside yours.</p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What do you carry that no one sees?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name what is in the pouch</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a worry I never share, a hope I keep hidden&hellip;">
+        <p class="write-prompt-2">Why do you carry it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how long it has been there, what would happen if you set it down&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tuck in</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Potl&#x012B;</h2>
+      <p>The potli is a small cloth bundle tied with a string. In old stories, travellers carried everything they needed in one.</p>
+      <p>Your potli holds what is precious and what is heavy &mdash; often the same things. The secret ambition. The unsaid apology. The fear you have carried so long it feels like a part of you.</p>
+      <p>Opening the potli does not mean throwing things away. It means looking at what you carry and asking: do I still need this? Does it still serve me?</p>
+      <p class="about-note">Your pouches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="potli.js"></script>
+</body>
+</html>

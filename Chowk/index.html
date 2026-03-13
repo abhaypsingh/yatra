@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chowk — the crossroads</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x094C;&#x0915;</div>
+      <h1 class="title">Chowk</h1>
+      <p class="subtitle">the crossroads</p>
+      <p class="intro">A crossroads is where paths meet and decisions wait. Science or arts. This friend group or that one. Speaking up or staying quiet. You stand at crossroads more often than you realise. <em>Chowk</em> asks you to name the crossroads you are standing at &mdash; and remember that standing still is also a choice, and sometimes the wisest one.</p>
+      <button class="begin-btn" id="beginBtn">stand</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where are your crossroads?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this crossroads</p>
+        <input class="write-name" id="writeName" type="text" placeholder="choosing a stream, whether to forgive or walk away&hellip;">
+        <p class="write-prompt-2">What pulls you in each direction?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the paths you see, what you might lose or gain on each&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">choose</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chowk</h2>
+      <p>A crossroads is not a crisis. It is a privilege. It means you have more than one path. Many people never get that.</p>
+      <p>But it does not feel like a privilege when you are standing there, paralysed, afraid of choosing wrong. Everyone has advice. Everyone is sure. Except you.</p>
+      <p>Here is what no one tells you: you do not have to choose right now. You can stand at the crossroads and look. You can gather information. You can even sit down. The roads will wait. Name the crossroads. Choosing begins with seeing clearly.</p>
+      <p class="about-note">Your crossroads are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chowk.js"></script>
+</body>
+</html>

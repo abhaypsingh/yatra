@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pe&#x1E5B; — the tree</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0947;&#x0921;&#x093C;</div>
+      <h1 class="title">Pe&#x1E5B;</h1>
+      <p class="subtitle">the tree</p>
+      <p class="intro">Some things grow slowly &mdash; so slowly you do not notice until one day you look and there is a tree where there was once a seed. Patience. Self-trust. The ability to sit with discomfort. <em>Ped</em> asks you to name what is growing in you. The quiet, slow things that will one day hold the weight of your life.</p>
+      <button class="begin-btn" id="beginBtn">grow</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is growing slowly in you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this tree</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my patience, a belief in myself&hellip;">
+        <p class="write-prompt-2">What nourishes it? What threatens it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what helps it grow, what could uproot it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">root</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pe&#x1E5B;</h2>
+      <p>A tree does not rush. It does not compare its height to the trees around it. It simply grows &mdash; one ring at a time, one season at a time.</p>
+      <p>The things that matter most in you are growing the same way. Your understanding of right and wrong. Your ability to love without losing yourself. Your capacity to be alone without being lonely.</p>
+      <p>These trees need time. They need rain and sun and sometimes storms. Name what is growing. Trust the pace. The roots matter more than the height.</p>
+      <p class="about-note">Your trees are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ped.js"></script>
+</body>
+</html>

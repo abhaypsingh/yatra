@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koyl&#x0101; — the coal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x094B;&#x092F;&#x0932;&#x093E;</div>
+      <h1 class="title">Koyl&#x0101;</h1>
+      <p class="subtitle">the coal</p>
+      <p class="intro">Coal becomes diamond only under immense pressure. But coal can also crumble to dust under the same force. The difference is not the coal &mdash; it is the conditions. <em>Koyla</em> asks you to name the pressures in your life and honestly ask: is this pressure shaping me, or is it crushing me?</p>
+      <button class="begin-btn" id="beginBtn">press</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What pressure are you under?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pressure</p>
+        <input class="write-name" id="writeName" type="text" placeholder="entrance exam prep, being compared to a sibling&hellip;">
+        <p class="write-prompt-2">Is it shaping you or crushing you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where the pressure comes from, how it feels inside&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">endure</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Koyl&#x0101;</h2>
+      <p>People love the diamond story. Pressure creates beauty, they say. What they do not say is that most coal does not become diamond. Most coal just burns or breaks.</p>
+      <p>The question is not whether you can handle pressure. You can &mdash; you already do, every day. The question is whether the pressure you are under is the right kind, applied the right way, with the right support around you.</p>
+      <p>Pressure from someone who believes in you feels different from pressure applied by someone who just needs results. Name the pressures. Not all of them deserve your endurance.</p>
+      <p class="about-note">Your coals are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="koyla.js"></script>
+</body>
+</html>

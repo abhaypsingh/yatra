@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhu&#x1E6D;&#x1E6D;&#x012B; — the holiday</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x0941;&#x091F;&#x094D;&#x091F;&#x0940;</div>
+      <h1 class="title">Chhu&#x1E6D;&#x1E6D;&#x012B;</h1>
+      <p class="subtitle">the holiday</p>
+      <p class="intro">Not the calendar kind. The feeling kind. When time stretches. When you are not performing, not producing, not proving anything. A Sunday afternoon that lasts forever. A summer holiday when the days have no edges. <em>Chhutti</em> asks you to name the moments when time expanded &mdash; and you were simply alive.</p>
+      <button class="begin-btn" id="beginBtn">rest</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did time slow down for you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this holiday</p>
+        <input class="write-name" id="writeName" type="text" placeholder="that summer at nani&rsquo;s house, the long Sunday with nowhere to be&hellip;">
+        <p class="write-prompt-2">What made time expand?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you did or did not do, how it felt&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pause</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chhu&#x1E6D;&#x1E6D;&#x012B;</h2>
+      <p>A holiday is not a date on a calendar. It is a feeling. The feeling that right now, nothing is required of you.</p>
+      <p>You felt it as a child without knowing its name. Lying on the floor drawing. Watching rain from the balcony. The last day of exams when the afternoon stretched like an ocean.</p>
+      <p>You need these moments. Not as rewards for productivity, but as the breathing spaces that make you human. You are not a machine that runs until it breaks. Name the times you truly rested. They are teaching you what peace feels like.</p>
+      <p class="about-note">Your holidays are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chhutti.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jh&#x016B;l&#x0101; — the swing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x0942;&#x0932;&#x093E;</div>
+      <h1 class="title">Jh&#x016B;l&#x0101;</h1>
+      <p class="subtitle">the swing</p>
+      <p class="intro">Some feelings swing &mdash; joy to sadness, confidence to doubt, closeness to distance. You are up one moment and down the next, and the motion itself is exhausting. <em>Jhula</em> asks you to name the swings. Not to stop them, but to notice the rhythm &mdash; and find your balance in the middle.</p>
+      <button class="begin-btn" id="beginBtn">swing</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What swings you back and forth?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this swing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mood on exam days, the friendship that is on and off&hellip;">
+        <p class="write-prompt-2">What is on each side?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the high and the low, what pushes you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">push</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jh&#x016B;l&#x0101;</h2>
+      <p>A swing is not a pendulum. A pendulum is mechanical. A swing has a person on it &mdash; someone who feels the rush of rising and the drop of falling.</p>
+      <p>Your emotions swing. Your friendships swing. Your confidence swings. This is not a flaw. It is what it means to be alive and growing.</p>
+      <p>But if you can name the swing &mdash; if you can say &ldquo;I am on the upswing&rdquo; or &ldquo;I am dropping now&rdquo; &mdash; you gain something precious: the knowledge that it will swing back.</p>
+      <p class="about-note">Your swings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhula.js"></script>
+</body>
+</html>

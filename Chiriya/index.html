@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi&#x1E5B;iy&#x0101; — the bird</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0921;&#x093C;&#x093F;&#x092F;&#x093E;</div>
+      <h1 class="title">Chi&#x1E5B;iy&#x0101;</h1>
+      <p class="subtitle">the bird</p>
+      <p class="intro">There is something wild inside you. A part that does not fit the timetable, the plan, the careful life others have designed. It wants to fly &mdash; to create, to wander, to do the impractical beautiful thing. <em>Chiriya</em> asks you to name the wild bird inside you &mdash; the dreams, urges, and instincts that do not fit the cage of the expected life.</p>
+      <button class="begin-btn" id="beginBtn">fly</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What wild thing lives inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bird</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the urge to drop everything and travel, the dream no one takes seriously&hellip;">
+        <p class="write-prompt-2">What cage is it in? What would it do if freed?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what holds it back, where it would fly&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">free</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chi&#x1E5B;iy&#x0101;</h2>
+      <p>Every person has a bird inside them. A wild, restless thing that does not care about practicality or propriety or five-year plans.</p>
+      <p>Maybe yours wants to paint instead of study. Maybe it wants to travel with no itinerary. Maybe it wants to love someone the world says is wrong. Maybe it simply wants to sit in a field and do nothing at all.</p>
+      <p>You do not have to free every bird today. But you must know it is there. A caged bird that is forgotten stops singing. A caged bird that is acknowledged keeps its song alive until the door opens. Name the bird. Let it know you have not forgotten.</p>
+      <p class="about-note">Your birds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chiriya.js"></script>
+</body>
+</html>

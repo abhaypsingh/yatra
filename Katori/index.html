@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ka&#x1E6D;or&#x012B; — the bowl</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x091F;&#x094B;&#x0930;&#x0940;</div>
+      <h1 class="title">Ka&#x1E6D;or&#x012B;</h1>
+      <p class="subtitle">the bowl</p>
+      <p class="intro">A bowl can only hold so much. You are the same. You carry schoolwork, friendships, family expectations, your own dreams, worries about the future &mdash; and sometimes the bowl overflows. <em>Katori</em> asks you to look at what fills your bowl and ask: what deserves to be here? What can I pour out?</p>
+      <button class="begin-btn" id="beginBtn">fill</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">How much can you hold?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name what fills your bowl</p>
+        <input class="write-name" id="writeName" type="text" placeholder="everyone&rsquo;s expectations, my own ambitions&hellip;">
+        <p class="write-prompt-2">Is it overflowing? Is there room?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what takes the most space, what you wish you could pour out&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ka&#x1E6D;or&#x012B;</h2>
+      <p>Nobody teaches you that you have a limit. They just keep adding to your bowl until one day it spills.</p>
+      <p>The spilling is not your failure. It is the bowl&rsquo;s honest truth.</p>
+      <p>You are allowed to say: my bowl is full. You are allowed to pour out something that no longer nourishes you to make room for something that does. Name what is in your bowl. The first step to balance is knowing what you carry.</p>
+      <p class="about-note">Your bowls are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="katori.js"></script>
+</body>
+</html>

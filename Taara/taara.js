@@ -224,7 +224,30 @@
         ['Paani', 'P\u0101n\u012B', 'the water'],
         ['Tukda', '\u1E6Cuk\u1E0D\u0101', 'the fragment'],
         ['Chaal', 'Ch\u0101l', 'the move'],
-        ['Seepi', 'S\u012Bp\u012B', 'the shell']
+        ['Seepi', 'S\u012Bp\u012B', 'the shell'],
+        ['Duvidha', 'Duvidh\u0101', 'the dilemma'],
+        ['Nishaan', 'Nish\u0101n', 'the scar'],
+        ['Potli', 'Potl\u012B', 'the pouch'],
+        ['Shor', 'Shor', 'the noise'],
+        ['Jhula', 'Jh\u016Bl\u0101', 'the swing'],
+        ['Khilona', 'Khilaun\u0101', 'the toy'],
+        ['Ped', 'Pe\u1E5B', 'the tree'],
+        ['Katori', 'Ka\u1E6Dor\u012B', 'the bowl'],
+        ['Rangmanch', 'Rangmanch', 'the stage'],
+        ['Saheli', 'Sahel\u012B', 'the confidante'],
+        ['Chhutti', 'Chhu\u1E6D\u1E6D\u012B', 'the holiday'],
+        ['Boli', 'Bol\u012B', 'the tongue'],
+        ['Daag', 'D\u0101g', 'the stain'],
+        ['Ginti', 'Gint\u012B', 'the counting'],
+        ['Manzil', 'Manzil', 'the destination'],
+        ['Patthar', 'Patthar', 'the stone'],
+        ['Siyahi', 'Siy\u0101h\u012B', 'the ink'],
+        ['Parda', 'Pard\u0101', 'the curtain'],
+        ['Raakh', 'R\u0101kh', 'the ash'],
+        ['Koyla', 'Koyl\u0101', 'the coal'],
+        ['Samundar', 'Samundar', 'the ocean'],
+        ['Chowk', 'Chowk', 'the crossroads'],
+        ['Chiriya', 'Chi\u1E5Biy\u0101', 'the bird']
       ]
     }
   ];

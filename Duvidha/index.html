@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duvidh&#x0101; — the dilemma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0941;&#x0935;&#x093F;&#x0927;&#x093E;</div>
+      <h1 class="title">Duvidh&#x0101;</h1>
+      <p class="subtitle">the dilemma</p>
+      <p class="intro">Sometimes two paths stand before you and both feel right. Or both feel wrong. The dilemma is not about choosing the better option &mdash; it is about accepting that every yes carries a no inside it. Name the choices that split you open.</p>
+      <button class="begin-btn" id="beginBtn">choose</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is pulling you in two directions?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this dilemma</p>
+        <input class="write-name" id="writeName" type="text" placeholder="science or art, staying or leaving&hellip;">
+        <p class="write-prompt-2">What does each side offer? What does each cost?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gain, what you lose, why it hurts to choose&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">face</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat">
+    <button class="nav-btn" id="navAbout" aria-label="about">?</button>
+  </div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Duvidh&#x0101;</h2>
+      <p>A dilemma is not a problem to be solved. It is a tension to be held.</p>
+      <p>The choice between loyalty and honesty. Between safety and adventure. Between what your parents want and what your heart wants.</p>
+      <p>Sometimes there is no right answer. Sometimes both doors lead to something beautiful and something lost. Name your dilemmas &mdash; not to resolve them, but to respect them. The hardest choices deserve more than a coin toss.</p>
+      <p class="about-note">Your dilemmas are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="duvidha.js"></script>
+</body>
+</html>

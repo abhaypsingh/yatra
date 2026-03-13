@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samundar — the ocean</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x092E;&#x0941;&#x0902;&#x0926;&#x0930;</div>
+      <h1 class="title">Samundar</h1>
+      <p class="subtitle">the ocean</p>
+      <p class="intro">Some feelings have no bottom. Grief that goes deeper than you expected. Love that has no edge. Loneliness that stretches to the horizon. You are not shallow &mdash; you contain oceans. <em>Samundar</em> asks you to name the vast feelings inside you &mdash; the ones too big for ordinary words.</p>
+      <button class="begin-btn" id="beginBtn">dive</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What vastness lives inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this ocean</p>
+        <input class="write-name" id="writeName" type="text" placeholder="missing someone who moved away, the love I feel for my family&hellip;">
+        <p class="write-prompt-2">How deep does it go?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you first felt its depth, whether it frightens or holds you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fathom</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Samundar</h2>
+      <p>They will tell you to control your emotions. To keep them manageable, measured, small. But some feelings are not small. Some feelings are oceanic.</p>
+      <p>The grief of losing a grandparent who was your whole world. The love you feel that has no words in any language. The loneliness of being surrounded by people and still feeling unseen.</p>
+      <p>You do not need to drain the ocean. You need to learn to swim in it. Name the vastness. You are not drowning &mdash; you are discovering how deep you go.</p>
+      <p class="about-note">Your oceans are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="samundar.js"></script>
+</body>
+</html>

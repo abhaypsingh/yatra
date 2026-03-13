@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gint&#x012B; — the counting</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093F;&#x0928;&#x094D;&#x0924;&#x0940;</div>
+      <h1 class="title">Gint&#x012B;</h1>
+      <p class="subtitle">the counting</p>
+      <p class="intro">You are always counting. Marks. Followers. Likes. Rank. How many friends came to your birthday. How many times someone texted first. But the things that truly count &mdash; depth of friendship, moments of courage, quiet growth &mdash; those have no number. <em>Ginti</em> asks: what do you count, and what truly counts?</p>
+      <button class="begin-btn" id="beginBtn">count</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What do you count?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this counting</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my percentage, how many likes my post got&hellip;">
+        <p class="write-prompt-2">Does the number tell the whole story?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the number hides, what it cannot measure&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tally</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gint&#x012B;</h2>
+      <p>Numbers feel safe. They are clear, they compare, they rank. But numbers lie by omission.</p>
+      <p>Your mark does not count the nights you could not sleep. Your follower count does not count who would actually sit with you in a hospital. Your rank does not count the ideas you had that did not fit the exam format.</p>
+      <p>You are not wrong to count. Numbers are one kind of truth. But they are never the whole truth. Name what you count. Then ask what the numbers cannot see.</p>
+      <p class="about-note">Your counts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ginti.js"></script>
+</body>
+</html>
