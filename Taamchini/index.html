@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&#x0101;mch&#x012B;n&#x012B; — the enamelware</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093E;&#x092E;&#x094D;&#x091A;&#x0940;&#x0928;&#x0940;</div>
+      <h1 class="title">T&#x0101;mch&#x012B;n&#x012B;</h1>
+      <p class="subtitle">the enamelware</p>
+      <p class="intro">Taamchini is enamelware &mdash; the blue and white chipped cups and plates of every Indian kitchen. They dent but do not break. They chip but keep serving. They are not beautiful by design but beautiful by use. <em>Taamchini</em> asks you to name the chipped but cherished things &mdash; the imperfect vessels that have served you faithfully.</p>
+      <button class="begin-btn" id="beginBtn">hold</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What chipped thing still serves you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this enamelware</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the relationship that is dented but still holds, the belief that is chipped but still serves&hellip;">
+        <p class="write-prompt-2">What makes it worth keeping?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it is chipped, why you have not replaced it, what it holds that nothing else can&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>T&#x0101;mch&#x012B;n&#x012B;</h2>
+      <p>Every Indian home has that one taamchini cup. The enamel is chipped at the rim. The colour has faded. A newer, shinier cup sits right next to it. But the chai tastes right only in the old one.</p>
+      <p>The best things in your life might be taamchini. The friendship that has weathered fights &mdash; chipped but holding. The family that is dented by disagreements but still shows up. The self-belief that has been knocked around but refuses to shatter.</p>
+      <p>Name the enamelware. The chipped, dented, faded things that still hold your life together.</p>
+      <p class="about-note">Your enamels are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taamchini.js"></script>
+</body>
+</html>

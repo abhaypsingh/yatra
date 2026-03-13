@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okhl&#x012B; — the mortar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0913;&#x0916;&#x0932;&#x0940;</div>
+      <h1 class="title">Okhl&#x012B;</h1>
+      <p class="subtitle">the mortar</p>
+      <p class="intro">An okhli is a stone mortar where spices are ground by hand. The pestle comes down again and again, and what was whole becomes powder. What was hard becomes soft. What was hidden &mdash; the fragrance, the oil, the flavour &mdash; is released. <em>Okhli</em> asks you to name the grinding &mdash; the repetitive pressures that broke something open and released what was inside.</p>
+      <button class="begin-btn" id="beginBtn">grind</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What pressure released something hidden?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this grinding</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily practice that unlocked a skill, the hardship that revealed my strength&hellip;">
+        <p class="write-prompt-2">What was released?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was ground, what fragrance came out, whether the grinding was chosen or forced&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">crush</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Okhl&#x012B;</h2>
+      <p>A spice that is whole is closed. Its flavour is locked inside. Only when the pestle meets the mortar &mdash; again and again, with pressure and rhythm &mdash; does the spice surrender its essence. The kitchen fills with fragrance only after the grinding.</p>
+      <p>You have been ground too. By exams. By expectations. By the daily repetition of things you did not want to do. And slowly, through that grinding, something was released. Patience. Resilience. A skill you did not know you had. A fragrance that was always there but needed pressure to emerge.</p>
+      <p>Name the grindings. They hurt. But they made you aromatic.</p>
+      <p class="about-note">Your mortars are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="okhli.js"></script>
+</body>
+</html>

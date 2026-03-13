@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kachch&#x0101; — the unfinished</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x091A;&#x094D;&#x091A;&#x093E;</div>
+      <h1 class="title">Kachch&#x0101;</h1>
+      <p class="subtitle">the unfinished</p>
+      <p class="intro">Kachcha means raw, unfinished, unfired. A kachcha house is made of mud &mdash; not permanent but alive, breathing, connected to the earth. A kachcha road has no tar. A kachcha person has not yet hardened. <em>Kachcha</em> asks you to name the unfinished things &mdash; the parts of you and your life that are still raw, still becoming, still soft enough to reshape.</p>
+      <button class="begin-btn" id="beginBtn">shape</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is still raw and becoming?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this unfinished thing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the opinion I haven't fully formed, the skill I'm still learning&hellip;">
+        <p class="write-prompt-2">Is the rawness a weakness or a possibility?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is still kachcha, whether you want it to harden or stay soft, what shape it might take&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mould</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kachch&#x0101;</h2>
+      <p>The world wants you to be pakka &mdash; finished, solid, certain. But there is beauty in kachcha. A kachcha house breathes. A kachcha road absorbs rain. A kachcha person can still change.</p>
+      <p>You are kachcha in more ways than you admit. Your beliefs are still forming. Your skills are still developing. Your understanding of love, justice, and yourself is still raw clay on the wheel. This is not immaturity. This is possibility.</p>
+      <p>Name the kachcha things. Honour the rawness. Once fired, clay cannot be reshaped. While you are still kachcha, you can become anything.</p>
+      <p class="about-note">Your roughs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kachcha.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sind&#x016B;r — the vermillion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0902;&#x0926;&#x0942;&#x0930;</div>
+      <h1 class="title">Sind&#x016B;r</h1>
+      <p class="subtitle">the vermillion</p>
+      <p class="intro">Sindoor is a line of red in the parting of the hair. It declares: I belong to someone. I have been claimed. I have chosen. It is intimate and public at the same time. <em>Sindoor</em> asks you to name the marks of belonging &mdash; the visible and invisible signs that declare you are part of something larger than yourself.</p>
+      <button class="begin-btn" id="beginBtn">declare</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What marks your belonging?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this mark</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the school badge I wore, the family name I carry, the group that claims me&hellip;">
+        <p class="write-prompt-2">Is it chosen or given?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the mark declares, whether you chose it, what it costs to wear or remove&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sind&#x016B;r</h2>
+      <p>Sindoor is the colour of auspiciousness, of commitment, of fire. It sits in the most visible place &mdash; the parting of the hair &mdash; and announces to the world: I am not alone. I am connected. I have roots.</p>
+      <p>You wear sindoors even if you never touch the powder. The school uniform that said you belonged somewhere. The accent that reveals where you grew up. The values you carry that declare your family. Every identity is a sindoor &mdash; a mark of connection applied so visibly that the world reads it before hearing your name.</p>
+      <p>Name the marks. The ones you wear with pride and the ones you wish you could wash off.</p>
+      <p class="about-note">Your marks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sindoor.js"></script>
+</body>
+</html>

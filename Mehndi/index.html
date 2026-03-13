@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehndi — the henna</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0947;&#x0939;&#x0902;&#x0926;&#x0940;</div>
+      <h1 class="title">Mehndi</h1>
+      <p class="subtitle">the henna</p>
+      <p class="intro">Mehndi is art that lives on skin. It is applied as a dark paste, endured through hours of stillness, and slowly reveals its colour. The deeper the patience, the darker the stain. <em>Mehndi</em> asks you to name the things that required patience to reveal their true colour &mdash; the experiences that stained you beautifully but only over time.</p>
+      <button class="begin-btn" id="beginBtn">apply</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What revealed its colour slowly?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this henna</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the relationship that deepened with time, the lesson that coloured my thinking&hellip;">
+        <p class="write-prompt-2">How deep is the stain?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was applied, how long it took to reveal its colour, what the final pattern looks like&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wait</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mehndi</h2>
+      <p>Mehndi teaches you that beauty takes patience. You cannot rush it. You sit still while it is applied. You wait while it dries. You resist the urge to scratch. And slowly, over hours, the green paste flakes away and underneath is the most beautiful red &mdash; a colour that was always there but needed time to emerge.</p>
+      <p>There is a saying: the darker the mehndi, the deeper the love. This is true beyond henna. The things that colour you most deeply are the ones you sat with longest. The friendships that survived years. The truths that you resisted but slowly absorbed.</p>
+      <p>Name the hennas. The slow, beautiful stains that time painted on you.</p>
+      <p class="about-note">Your hennas are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mehndi.js"></script>
+</body>
+</html>

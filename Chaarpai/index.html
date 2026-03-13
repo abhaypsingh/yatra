@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;rp&#x0101;&#x012B; — the cot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0930;&#x092A;&#x093E;&#x0908;</div>
+      <h1 class="title">Ch&#x0101;rp&#x0101;&#x012B;</h1>
+      <p class="subtitle">the cot</p>
+      <p class="intro">A chaarpai is four legs and woven rope. It is where grandparents sat in the sun, where stories were told under the stars, where babies were rocked and the dying were laid. <em>Chaarpai</em> asks you to name the cots &mdash; the simple, low, honest places where life happened at its most unhurried.</p>
+      <button class="begin-btn" id="beginBtn">sit</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did life slow down?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cot</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the chaarpai at my grandparents' house, the rooftop cot under the stars&hellip;">
+        <p class="write-prompt-2">What happened there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who sat there, what stories were told, what the slow pace made possible&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">recline</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;rp&#x0101;&#x012B;</h2>
+      <p>The chaarpai is Indian furniture at its most democratic. It costs almost nothing. It can be carried anywhere. It breathes in summer and can be dragged into the sun in winter. On a chaarpai, there is no pretension. You sit or lie as you are.</p>
+      <p>The deepest conversations of your family probably happened on a chaarpai. Elders talking after dinner. Children falling asleep to the sound of grown-up voices. The creak of rope under shifting weight. Life at its most natural pace.</p>
+      <p>Name the cots. The places where no one was performing. Where life just happened.</p>
+      <p class="about-note">Your cots are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaarpai.js"></script>
+</body>
+</html>

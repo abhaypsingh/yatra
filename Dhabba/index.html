@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhabb&#x0101; — the stain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x092C;&#x094D;&#x092C;&#x093E;</div>
+      <h1 class="title">Dhabb&#x0101;</h1>
+      <p class="subtitle">the stain</p>
+      <p class="intro">A dhabba is a stain that will not wash out. Ink on a school shirt. Turmeric on white cloth. A mistake on an otherwise clean record. <em>Dhabba</em> asks you to name the stains &mdash; the marks that stayed no matter how hard you tried to erase them, and whether they ruined the cloth or gave it character.</p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What stain would not wash out?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the mistake everyone remembers, the incident that marked my reputation&hellip;">
+        <p class="write-prompt-2">Did it ruin or give character?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what caused the stain, whether it can be removed, whether it matters anymore&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">accept</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhabb&#x0101;</h2>
+      <p>We are taught that stains are bad. That clean is good. That a spotless record, a spotless reputation, a spotless shirt are what to strive for. But have you ever seen cloth that has been lived in? It has stains. And those stains are its history.</p>
+      <p>The dhabba of haldi from a wedding. The ink stain from the exam that changed your life. The grease mark from the first time you fixed something with your hands. Not all stains are shame. Some are evidence of a life fully lived.</p>
+      <p>Name the stains. Decide which are blemishes and which are badges.</p>
+      <p class="about-note">Your stains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dhabba.js"></script>
+</body>
+</html>

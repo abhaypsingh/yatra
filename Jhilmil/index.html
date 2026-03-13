@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhilmil — the shimmer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x093F;&#x0932;&#x092E;&#x093F;&#x0932;</div>
+      <h1 class="title">Jhilmil</h1>
+      <p class="subtitle">the shimmer</p>
+      <p class="intro">Jhilmil is the word for things that shimmer &mdash; not solid light, not darkness, but the flickering in between. Stars. Sequins on a dupatta. Sunlight through leaves. The uncertain glow of something almost beautiful. <em>Jhilmil</em> asks you to name the shimmers &mdash; the things that flickered between real and imagined, between hope and illusion.</p>
+      <button class="begin-btn" id="beginBtn">glimpse</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What shimmered between real and imagined?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shimmer</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the future I almost saw clearly, the happiness that flickered before fading&hellip;">
+        <p class="write-prompt-2">Was it real or illusion?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what shimmered, whether you could hold it or only see it, what it felt like between light and dark&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">catch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jhilmil</h2>
+      <p>A shimmer is honesty in motion. It does not pretend to be steady light. It says: I am here, then I am not, then I am here again. This is closer to truth than anything that claims to be constant.</p>
+      <p>Happiness shimmers. So does hope. So does love. They are not switch-on, switch-off. They flicker. And the flickering is not weakness &mdash; it is the nature of precious things. Even stars shimmer. Even the best days have moments of shadow.</p>
+      <p>Name the shimmers. They are the honest lights of your life.</p>
+      <p class="about-note">Your shimmers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhilmil.js"></script>
+</body>
+</html>

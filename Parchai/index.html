@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parch&#x0101;&#x012B; — the shadow-self</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0930;&#x091B;&#x093E;&#x0908;</div>
+      <h1 class="title">Parch&#x0101;&#x012B;</h1>
+      <p class="subtitle">the shadow-self</p>
+      <p class="intro">Your parchai follows you everywhere but you can never touch it. It stretches when the light is low and shrinks when the sun is overhead. It is you and not-you at the same time. <em>Parchai</em> asks you to name the shadow-selves &mdash; the versions of you that follow you, the ones others see that you cannot, the dark outlines of who you might have been.</p>
+      <button class="begin-btn" id="beginBtn">face</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What shadow follows you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shadow</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the person I almost became, the reputation that follows me unfairly&hellip;">
+        <p class="write-prompt-2">Is it you or not-you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what shadow follows you, whether it is accurate, what it reveals about the light source&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">see</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Parch&#x0101;&#x012B;</h2>
+      <p>In folklore, your parchai can be stolen, trapped, or separated from you. This is metaphorically true. Parts of you get left behind in places. The child you were still exists as a shadow behind the adult you became. The person others think you are walks ahead of you like a parchai you cannot catch.</p>
+      <p>Sometimes your shadow is larger than you &mdash; when others overestimate you. Sometimes it is smaller &mdash; when you are diminished by circumstance. The shadow is always a distortion. But it is always connected to something real.</p>
+      <p>Name the shadows. Understanding them is understanding the light that casts them.</p>
+      <p class="about-note">Your shadows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="parchai.js"></script>
+</body>
+</html>

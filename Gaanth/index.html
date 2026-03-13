@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G&#x0101;n&#x1E6D;h — the knot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093E;&#x0901;&#x0920;</div>
+      <h1 class="title">G&#x0101;n&#x1E6D;h</h1>
+      <p class="subtitle">the knot</p>
+      <p class="intro">A gaanth is tied to remember. In a dupatta, in a handkerchief, in a thread &mdash; a knot says: do not forget this. But knots also form in muscles, in stomachs, in relationships. <em>Gaanth</em> asks you to name the knots &mdash; the ones tied to remember, the ones that tighten with tension, and the ones that refuse to come undone.</p>
+      <button class="begin-btn" id="beginBtn">tie</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What knots are tied inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this knot</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the grudge I cannot let go, the promise I tied to myself&hellip;">
+        <p class="write-prompt-2">Can it be untied?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it holds together, what happens if it is untied, who tied it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bind</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>G&#x0101;n&#x1E6D;h</h2>
+      <p>In a wedding, the groom&rsquo;s scarf is tied to the bride&rsquo;s saree. In a promise, a thread is tied on the wrist. In memory, a knot is tied in the pallu. The gaanth is Indian culture&rsquo;s way of making the invisible physical.</p>
+      <p>But gaanths also form without permission. The knot in your stomach before results. The knot of resentment toward someone who hurt you. The knot of unresolved grief that tightens when a certain song plays. These knots carry information. They are your body&rsquo;s filing system.</p>
+      <p>Name the knots. Some need to be preserved. Some need to be patiently, carefully untied.</p>
+      <p class="about-note">Your knots are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gaanth.js"></script>
+</body>
+</html>

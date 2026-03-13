@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x0101;warch&#x012B; — the cook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0935;&#x0930;&#x094D;&#x091A;&#x0940;</div>
+      <h1 class="title">B&#x0101;warch&#x012B;</h1>
+      <p class="subtitle">the cook</p>
+      <p class="intro">A bawarchi does not just cook food. A bawarchi transforms raw things into nourishment through knowledge, patience, and care. Your mother, your grandmother, the street vendor &mdash; all bawarchis. <em>Bawarchi</em> asks you to name the cooks &mdash; the people who fed you with more than food, who nourished you in ways a plate cannot hold.</p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who fed you with more than food?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cook</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother who cooked love into every dal, the teacher who fed my curiosity&hellip;">
+        <p class="write-prompt-2">What did they really feed you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what they prepared, what invisible nourishment came with it, what you taste even now&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">honour</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x0101;warch&#x012B;</h2>
+      <p>The bawarchi is the most undervalued artist. Three times a day, they create something from nothing. They know how much salt a family needs &mdash; not by measurement but by love. They adjust the spice for the child and the elder differently from the same pot.</p>
+      <p>But bawarchis are not only in kitchens. The friend who always knows what to say when you are low. The mentor who gives you exactly the challenge you need. The stranger who offered kindness when you were starving for it. All bawarchis. All feeding you.</p>
+      <p>Name the cooks. They made you who you are, one meal at a time.</p>
+      <p class="about-note">Your cooks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bawarchi.js"></script>
+</body>
+</html>

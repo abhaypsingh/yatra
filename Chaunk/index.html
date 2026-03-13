@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaunk — the tempering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x094C;&#x0902;&#x0915;</div>
+      <h1 class="title">Chaunk</h1>
+      <p class="subtitle">the tempering</p>
+      <p class="intro">Chaunk is the sizzle of mustard seeds and cumin hitting hot oil. It is the final act of cooking dal &mdash; a small addition that transforms everything. Without chaunk, the dal is bland. With it, the whole pot comes alive. <em>Chaunk</em> asks you to name the small additions that transformed everything &mdash; the tiny interventions that changed the flavour of your whole life.</p>
+      <button class="begin-btn" id="beginBtn">sizzle</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small thing changed everything?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this tempering</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the one sentence that reframed everything, the small habit that changed my life&hellip;">
+        <p class="write-prompt-2">What did it transform?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the small addition was, what it was added to, how the whole pot changed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">add</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chaunk</h2>
+      <p>The chaunk happens in seconds. Hot oil. A few seeds. A dried chilli. The sizzle. Pour it over the dal. Done. But those seconds change everything. The dal goes from nutritious-but-boring to home-cooked-with-love.</p>
+      <p>Life has chaunk moments too. A teacher who said one sentence that changed your direction. A book you picked up randomly that rewired your thinking. A stranger&rsquo;s kindness on a terrible day. Small. Fast. Transformative.</p>
+      <p>Name the temperings. The small sizzles that changed the flavour of your entire pot.</p>
+      <p class="about-note">Your temperings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaunk.js"></script>
+</body>
+</html>

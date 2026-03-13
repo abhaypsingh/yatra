@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angi&#x1E6D;h&#x012B; — the brazier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0902;&#x0917;&#x0940;&#x0920;&#x0940;</div>
+      <h1 class="title">Angi&#x1E6D;h&#x012B;</h1>
+      <p class="subtitle">the brazier</p>
+      <p class="intro">An angithi is a small, open fire in a metal bowl. In winter, families huddle around it, warming their hands, roasting peanuts, talking. It is fire made domestic, made intimate. <em>Angithi</em> asks you to name the small fires that drew people together &mdash; the warmth that was shared, not hoarded.</p>
+      <button class="begin-btn" id="beginBtn">gather</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What fire drew people together?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this brazier</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the winter evenings huddled together, the crisis that brought family close&hellip;">
+        <p class="write-prompt-2">What warmth was shared?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who gathered around it, what the shared warmth made possible, what was said in its glow&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">warm</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Angi&#x1E6D;h&#x012B;</h2>
+      <p>The angithi is not grand. It is not a bonfire or a fireplace. It is a small clay or metal bowl with coals. But it is enough. Enough to warm four pairs of hands. Enough to roast a few peanuts. Enough to keep the cold at bay while stories are exchanged.</p>
+      <p>The best gatherings in life are angithis. Small. Intimate. Warm enough for the people present. Not a party but a huddle. Not entertainment but presence. The crises that brought your family closer. The late-night conversations that nobody planned.</p>
+      <p>Name the braziers. The small fires that gathered people who mattered.</p>
+      <p class="about-note">Your braziers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="angithi.js"></script>
+</body>
+</html>

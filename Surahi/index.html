@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sur&#x0101;h&#x012B; — the clay pitcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0941;&#x0930;&#x093E;&#x0939;&#x0940;</div>
+      <h1 class="title">Sur&#x0101;h&#x012B;</h1>
+      <p class="subtitle">the clay pitcher</p>
+      <p class="intro">A surahi has a narrow neck and a wide belly. It keeps water cool and pours slowly &mdash; you cannot rush it. Its shape teaches patience. <em>Surahi</em> asks you to name the vessels that held something precious and released it only slowly, drop by measured drop.</p>
+      <button class="begin-btn" id="beginBtn">pour</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What released itself only slowly?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pitcher</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the parent who showed love slowly, the understanding that came drop by drop&hellip;">
+        <p class="write-prompt-2">What was held inside?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it held, why it could not be poured all at once, what the patience produced&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tilt</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sur&#x0101;h&#x012B;</h2>
+      <p>The surahi is designed for restraint. Its narrow neck means you cannot gulp. You must tilt, wait, receive. This is not a flaw &mdash; it is philosophy. Some things should not be consumed quickly.</p>
+      <p>Your father&rsquo;s wisdom came like surahi water. Not in lectures but in small, cool sips over years. A grandmother&rsquo;s stories. A teacher&rsquo;s patience. Love that does not announce itself but simply keeps you cool when life is burning.</p>
+      <p>Name the surahis. The slow pourers. The patient givers. The ones whose narrow necks hid an ocean of kindness.</p>
+      <p class="about-note">Your pitchers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="surahi.js"></script>
+</body>
+</html>

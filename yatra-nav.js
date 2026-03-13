@@ -320,7 +320,25 @@
         ['Sulag', 'Sulag', 'the smoulder'],
         ['Jaali', 'J\u0101l\u012B', 'the lattice'],
         ['Supna', 'Supn\u0101', 'the dream'],
-        ['Kambal', 'Kambal', 'the blanket']
+        ['Kambal', 'Kambal', 'the blanket'],
+        ['Dastakhat', 'Dastakhat', 'the signature'],
+        ['Chaarpai', 'Ch\u0101rp\u0101\u012B', 'the cot'],
+        ['Angithi', 'Angi\u1E6Dh\u012B', 'the brazier'],
+        ['Surahi', 'Sur\u0101h\u012B', 'the clay pitcher'],
+        ['Okhli', 'Okhl\u012B', 'the mortar'],
+        ['Bawarchi', 'B\u0101warch\u012B', 'the cook'],
+        ['Jhilmil', 'Jhilmil', 'the shimmer'],
+        ['Parchai', 'Parch\u0101\u012B', 'the shadow-self'],
+        ['Dhabba', 'Dhabb\u0101', 'the stain'],
+        ['Sindoor', 'Sind\u016Br', 'the vermillion'],
+        ['Kachcha', 'Kachch\u0101', 'the unfinished'],
+        ['Gaanth', 'G\u0101n\u1E6Dh', 'the knot'],
+        ['Taamchini', 'T\u0101mch\u012Bn\u012B', 'the enamelware'],
+        ['Pallu', 'Pall\u016B', 'the saree end'],
+        ['Chaunk', 'Chaunk', 'the tempering'],
+        ['Mohalla', 'Mohall\u0101', 'the neighbourhood'],
+        ['Mehndi', 'Mehndi', 'the henna'],
+        ['Aalaa', '\u0100l\u0101', 'the shelf niche']
       ]
     }
   ];
@@ -387,7 +405,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 284 experiences';
+    sub.textContent = 'the journey \u2014 302 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

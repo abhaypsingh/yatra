@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;l&#x0101; — the shelf niche</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0932;&#x093E;</div>
+      <h1 class="title">&#x0100;l&#x0101;</h1>
+      <p class="subtitle">the shelf niche</p>
+      <p class="intro">An aalaa is a small niche built into a wall &mdash; a shelf that is part of the house itself. Before cupboards, every home had aalas. They held the diya, the matchbox, the photograph of a grandparent. Small spaces for small, sacred things. <em>Aalaa</em> asks you to name the niches &mdash; the small, built-in spaces in your life where you keep what matters most.</p>
+      <button class="begin-btn" id="beginBtn">place</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What occupies your sacred niches?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this niche</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the corner of my mind where I keep my father's advice, the habit that holds my sanity&hellip;">
+        <p class="write-prompt-2">What is placed there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you keep in this small space, why it is built into you and not stored elsewhere&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">set</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;l&#x0101;</h2>
+      <p>The aalaa is architecture&rsquo;s acknowledgment that we need places for precious things. Not big places &mdash; just a niche. A recess in the wall. Enough for a diya, a photo, a small idol. The aalaa says: this wall is not just structure. It has space carved into it for what matters.</p>
+      <p>Your personality has aalas too. Small, built-in spaces where you keep your core beliefs. Your non-negotiables. The memories you visit every day. The values so embedded they are part of your walls, not just placed on shelves.</p>
+      <p>Name the niches. They are the architecture of your inner house.</p>
+      <p class="about-note">Your niches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="aalaa.js"></script>
+</body>
+</html>

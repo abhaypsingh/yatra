@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pall&#x016B; — the saree end</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0932;&#x094D;&#x0932;&#x0942;</div>
+      <h1 class="title">Pall&#x016B;</h1>
+      <p class="subtitle">the saree end</p>
+      <p class="intro">The pallu is the loose end of a saree that drapes over the shoulder. It is the most expressive part &mdash; it covers the head in respect, wipes a child&rsquo;s face, carries small things, and flutters with every step. <em>Pallu</em> asks you to name the pallus &mdash; the flowing, graceful, multi-purpose gestures of care that the women in your life performed without thinking.</p>
+      <button class="begin-btn" id="beginBtn">drape</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What gesture of care flowed without thinking?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pallu</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother wiping my face with her pallu, the way she carried everything in its folds&hellip;">
+        <p class="write-prompt-2">What did it hold or do?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whose pallu it was, what it wiped or carried or covered, what grace it carried&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pall&#x016B;</h2>
+      <p>The pallu is the Swiss Army knife of Indian womanhood. With it, a mother covers her head before elders, fans herself in the heat, wraps sweets brought from a neighbour, wipes a tear &mdash; her child&rsquo;s or her own &mdash; and creates a makeshift cradle for a baby.</p>
+      <p>All of this without thinking. The pallu moves as naturally as breathing. It is care made fabric. It is love in the form of six yards of cloth that keeps finding new ways to be useful.</p>
+      <p>Name the pallus. The quiet, flowing gestures of care that no one notices until they are gone.</p>
+      <p class="about-note">Your pallus are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pallu.js"></script>
+</body>
+</html>
