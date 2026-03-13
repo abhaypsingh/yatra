@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasau&#x1E6D;&#x012B; — the touchstone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0938;&#x094C;&#x091F;&#x0940;</div>
+      <h1 class="title">Kasau&#x1E6D;&#x012B;</h1>
+      <p class="subtitle">the touchstone</p>
+      <p class="intro">A touchstone reveals what is real gold and what is fake. Life has touchstones too &mdash; moments that test what you are truly made of. Not exams. Not marks. The moment a friend needed you and you had to choose between convenience and loyalty. The time honesty was expensive and you had to decide if you could afford it. <em>Kasauti</em> asks you to name your real tests.</p>
+      <button class="begin-btn" id="beginBtn">test</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What truly tested your character?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this test</p>
+        <input class="write-name" id="writeName" type="text" placeholder="when everyone cheated and I had to decide, when my friend needed me at the worst time&hellip;">
+        <p class="write-prompt-2">What did it reveal about you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you discovered you were made of, whether you passed or failed your own standard&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">prove</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kasau&#x1E6D;&#x012B;</h2>
+      <p>The tests that matter have no syllabus and no marks. They arrive without warning and demand an answer right now.</p>
+      <p>Do you speak up when the group is bullying someone? Do you tell the truth when lying is easier? Do you show up for someone when showing up costs you something?</p>
+      <p>You have already taken some of these tests. You passed some. You failed some. Both are valuable. The failures taught you what to work on. The passes taught you what you are made of. Name them. They are your real report card.</p>
+      <p class="about-note">Your tests are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kasauti.js"></script>
+</body>
+</html>

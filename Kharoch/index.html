@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kharonch — the scratch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x0930;&#x094B;&#x0902;&#x091A;</div>
+      <h1 class="title">Kharonch</h1>
+      <p class="subtitle">the scratch</p>
+      <p class="intro">A scratch is not a wound. It is not deep enough to bleed much or leave a real scar. But scratches accumulate. A dismissive comment. Being overlooked. A small unfairness no one else noticed. Alone, each one is nothing. Together, they sting. <em>Kharoch</em> asks you to name the scratches &mdash; the small, daily hurts that add up to something bigger than any single one.</p>
+      <button class="begin-btn" id="beginBtn">notice</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small hurts have added up?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this scratch</p>
+        <input class="write-name" id="writeName" type="text" placeholder="being talked over every time, the small joke at my expense&hellip;">
+        <p class="write-prompt-2">How many have accumulated?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how often it happens, why no single one seems worth mentioning&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kharonch</h2>
+      <p>Nobody takes a scratch seriously. &ldquo;It is nothing,&rdquo; they say. &ldquo;Don&rsquo;t be so sensitive.&rdquo; But they do not live inside your skin. They do not know how many scratches are already there.</p>
+      <p>Being the last one picked. Being corrected in front of everyone. Being told your feelings are too much. Each one alone is survivable. But together they create a rawness that makes the next one unbearable.</p>
+      <p>You are not being dramatic. Scratches are real. Name them. When you see the collection, you will understand why you sometimes flinch at things others call small.</p>
+      <p class="about-note">Your scratches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kharoch.js"></script>
+</body>
+</html>

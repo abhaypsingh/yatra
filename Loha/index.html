@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loh&#x0101; — the iron</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x094B;&#x0939;&#x093E;</div>
+      <h1 class="title">Loh&#x0101;</h1>
+      <p class="subtitle">the iron</p>
+      <p class="intro">Iron can become a bridge or a prison bar. A plough or a sword. What makes you strong can also make you rigid, unbending, unable to adapt. <em>Loha</em> asks you to name the iron in you &mdash; the stubbornness that saves you and the stubbornness that traps you. What has been forged in you, and is it the right shape?</p>
+      <button class="begin-btn" id="beginBtn">forge</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What iron is forged in you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this iron</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my refusal to ask for help, the discipline that keeps me going&hellip;">
+        <p class="write-prompt-2">Does it protect you or imprison you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when it serves you, when it hurts you or others&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">temper</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Loh&#x0101;</h2>
+      <p>We praise iron. We say &ldquo;loha manna&rdquo; &mdash; to accept someone&rsquo;s iron, to acknowledge their strength. But iron unchecked becomes a cage.</p>
+      <p>The determination that got you through a hard time can become rigidity that prevents you from accepting help. The independence you are proud of can become loneliness you refuse to admit. The toughness that protected you as a child can make you unable to be soft as an adult.</p>
+      <p>Name your iron. Decide what shape you want it to take. A bridge is iron too.</p>
+      <p class="about-note">Your irons are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="loha.js"></script>
+</body>
+</html>

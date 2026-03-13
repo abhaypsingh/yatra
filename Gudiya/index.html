@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gu&#x1E0D;iy&#x0101; — the doll</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0921;&#x093C;&#x093F;&#x092F;&#x093E;</div>
+      <h1 class="title">Gu&#x1E0D;iy&#x0101;</h1>
+      <p class="subtitle">the doll</p>
+      <p class="intro">A doll is made by someone else&rsquo;s hands. Dressed how they choose. Posed how they like. Smiled when they want it to smile. Parts of you have been shaped the same way &mdash; by parents, by culture, by expectation. <em>Gudiya</em> asks you to name the parts of yourself that were designed by others &mdash; and the parts that are finally, unmistakably yours.</p>
+      <button class="begin-btn" id="beginBtn">unpose</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What parts of you were shaped by others?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shaping</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the career path chosen for me, the way I was taught to be polite&hellip;">
+        <p class="write-prompt-2">Was it a gift or a cage?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who shaped it, whether you want to keep it or reshape it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">claim</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gu&#x1E0D;iy&#x0101;</h2>
+      <p>Before you could speak, someone was already deciding who you would be. The good child. The smart one. The quiet one. The one who would fulfil a dream that was not yours to begin with.</p>
+      <p>Not all of this shaping was harmful. Some of it gave you structure, values, direction. But some of it dressed you in clothes that never fit.</p>
+      <p>Growing up is the slow, brave act of picking up the scissors and altering the outfit yourself. Name what was designed for you. Then decide what to keep, what to alter, and what to discard entirely.</p>
+      <p class="about-note">Your dolls are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gudiya.js"></script>
+</body>
+</html>

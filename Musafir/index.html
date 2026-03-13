@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mus&#x0101;fir — the traveller</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0941;&#x0938;&#x093E;&#x092B;&#x093C;&#x093F;&#x0930;</div>
+      <h1 class="title">Mus&#x0101;fir</h1>
+      <p class="subtitle">the traveller</p>
+      <p class="intro">You are always travelling. Between who you were yesterday and who you will be tomorrow. Between home and the world. Between certainty and doubt. You have never fully arrived anywhere, and that is not a failure &mdash; it is the nature of being alive and growing. <em>Musafir</em> asks you to name the journeys you are on &mdash; the ones with maps and the ones without.</p>
+      <button class="begin-btn" id="beginBtn">travel</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What journeys are you on?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this journey</p>
+        <input class="write-name" id="writeName" type="text" placeholder="learning to be independent, the slow journey toward self-acceptance&hellip;">
+        <p class="write-prompt-2">Are you travelling light or heavy?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how far you have come, whether you know where you are going&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">walk</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mus&#x0101;fir</h2>
+      <p>The old Hindi songs got it right. <em>Musafir hoon yaaron</em> &mdash; I am a traveller, friends. Not someone who has arrived. Not someone who knows the way. Just someone walking.</p>
+      <p>You are on journeys that have no guidebook. The journey from needing your parents to being your own person. The journey from following to leading. The journey from not knowing who you are to catching glimpses.</p>
+      <p>Honour the travel itself. The scenery along the way is as important as the destination. And some journeys are beautiful precisely because they have no end.</p>
+      <p class="about-note">Your travellers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="musafir.js"></script>
+</body>
+</html>

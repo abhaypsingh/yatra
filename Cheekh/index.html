@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x012B;kh — the scream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x0940;&#x0916;</div>
+      <h1 class="title">Ch&#x012B;kh</h1>
+      <p class="subtitle">the scream</p>
+      <p class="intro">There is a scream inside you. Maybe several. The frustration you swallowed. The anger you converted into a smile. The grief you compressed into &ldquo;I&rsquo;m fine.&rdquo; These screams do not disappear just because you muted them. <em>Cheekh</em> asks you to name the screams &mdash; the things you need to say out loud, even if only to yourself.</p>
+      <button class="begin-btn" id="beginBtn">release</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What screams are trapped inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this scream</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the unfairness I never protested, the sadness I was told to hide&hellip;">
+        <p class="write-prompt-2">Why was it silenced?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who or what silenced it, what would happen if you let it out&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">voice</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x012B;kh</h2>
+      <p>You have been trained to be quiet. To not make a scene. To adjust. To compromise. To swallow. And you have &mdash; you have swallowed so much that sometimes your chest aches with the weight of unspoken screams.</p>
+      <p>This is not healthy. Screams that are never released do not evaporate. They compress. They become headaches, sleeplessness, sudden tears at nothing, rage at everything.</p>
+      <p>You do not have to scream in public. But you need to name the scream. Write it down. Say it to your pillow. Let the words exist somewhere outside your body. That alone is a form of freedom.</p>
+      <p class="about-note">Your screams are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="cheekh.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamak — the shine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x092E;&#x0915;</div>
+      <h1 class="title">Chamak</h1>
+      <p class="subtitle">the shine</p>
+      <p class="intro">Not everything that shines is gold. Popularity shines. Wealth shines. A curated life on social media shines. But real things &mdash; kindness, integrity, quiet courage &mdash; often do not shine at all. They glow. <em>Chamak</em> asks you to name what dazzles you &mdash; and learn to tell the shine from the glow.</p>
+      <button class="begin-btn" id="beginBtn">look</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dazzles you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shine</p>
+        <input class="write-name" id="writeName" type="text" placeholder="a celebrity&rsquo;s lifestyle, the popular kid&rsquo;s effortless confidence&hellip;">
+        <p class="write-prompt-2">Is it real gold or just glitter?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what attracts you, whether you want the thing or just its shine&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">discern</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chamak</h2>
+      <p>Your generation lives in the most dazzling time in human history. Everything shines &mdash; screens, filters, success stories, influencer lives. The shine is engineered to attract you.</p>
+      <p>But the people who changed the world were rarely shiny. They were persistent, kind, stubborn, deeply ordinary in their habits and extraordinary in their commitment.</p>
+      <p>Learn to love the glow more than the shine. The glow is quieter, steadier, and real. Name what dazzles you. Then look for what glows.</p>
+      <p class="about-note">Your shines are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chamak.js"></script>
+</body>
+</html>

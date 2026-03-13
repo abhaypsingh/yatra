@@ -265,7 +265,25 @@
         ['Haath', 'H\u0101th', 'the hand'],
         ['Bijli', 'Bijl\u012B', 'the lightning'],
         ['Ghungroo', 'Ghungr\u016B', 'the anklet bell'],
-        ['Basta', 'Bast\u0101', 'the school bag']
+        ['Basta', 'Bast\u0101', 'the school bag'],
+        ['Chaukhat', 'Chaukha\u1E6D', 'the doorframe'],
+        ['Gudiya', 'Gu\u1E0Diy\u0101', 'the doll'],
+        ['Kanch', 'K\u0101nch', 'the glass'],
+        ['Thandak', '\u1E6Chan\u1E0Dak', 'the coolness'],
+        ['Kasauti', 'Kasau\u1E6D\u012B', 'the touchstone'],
+        ['Palkan', 'Palken', 'the eyelids'],
+        ['Musafir', 'Mus\u0101fir', 'the traveller'],
+        ['Loha', 'Loh\u0101', 'the iron'],
+        ['Teer', 'T\u012Br', 'the arrow'],
+        ['Dhuan', 'Dhu\u0101n', 'the smoke'],
+        ['Jaal', 'J\u0101l', 'the net'],
+        ['Chamak', 'Chamak', 'the shine'],
+        ['Boond', 'B\u016Bnd', 'the drop'],
+        ['Kharoch', 'Kharonch', 'the scratch'],
+        ['Maang', 'M\u0101ng', 'the demand'],
+        ['Cheekh', 'Ch\u012Bkh', 'the scream'],
+        ['Sannata', 'Sann\u0101\u1E6D\u0101', 'the stillness'],
+        ['Daayra', 'D\u0101yr\u0101', 'the circle']
       ]
     }
   ];

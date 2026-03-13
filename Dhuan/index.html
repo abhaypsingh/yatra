@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhu&#x0101;n — the smoke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x0941;&#x0906;&#x0901;</div>
+      <h1 class="title">Dhu&#x0101;n</h1>
+      <p class="subtitle">the smoke</p>
+      <p class="intro">Smoke clouds everything. It makes your eyes water and your lungs burn. Confusion does the same &mdash; too many opinions, too much information, too many people telling you who to be. You cannot see clearly through smoke. <em>Dhuan</em> asks you to name what is clouding your vision &mdash; and wait for it to clear before you decide which way to walk.</p>
+      <button class="begin-btn" id="beginBtn">clear</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is clouding your vision?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this smoke</p>
+        <input class="write-name" id="writeName" type="text" placeholder="everyone&rsquo;s contradicting advice, the noise of social media opinions&hellip;">
+        <p class="write-prompt-2">What can you not see clearly?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the smoke is hiding, where it is coming from&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wait</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhu&#x0101;n</h2>
+      <p>Smoke is not darkness. Darkness you can navigate by feel. Smoke actively deceives &mdash; it shows shapes that are not there and hides what is.</p>
+      <p>The smoke of other people&rsquo;s opinions. The smoke of your own anxiety making everything look like a threat. The smoke of comparison that makes your path invisible behind someone else&rsquo;s highlight reel.</p>
+      <p>The wisest thing you can do in smoke is stop moving. Wait. Let it thin. The landscape will reveal itself. Name what is clouding you. Naming the smoke is the first step to seeing through it.</p>
+      <p class="about-note">Your smoke is stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dhuan.js"></script>
+</body>
+</html>

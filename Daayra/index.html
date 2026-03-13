@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x0101;yr&#x0101; — the circle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x093E;&#x092F;&#x0930;&#x093E;</div>
+      <h1 class="title">D&#x0101;yr&#x0101;</h1>
+      <p class="subtitle">the circle</p>
+      <p class="intro">Your world has a radius. There are people inside your circle and people outside it. Beliefs you accept and beliefs you reject. Places that feel like yours and places that do not. The circle is always changing &mdash; expanding when you grow, shrinking when you are afraid. <em>Daayra</em> asks you to name the boundaries of your world &mdash; and notice who drew them.</p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is inside your circle?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this boundary</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friends I keep close, the ideas I refuse to consider&hellip;">
+        <p class="write-prompt-2">Who drew this circle?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is inside, what is outside, whether the circle should expand or contract&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">trace</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x0101;yr&#x0101;</h2>
+      <p>A circle can be a fortress or a prison. The same boundary that protects you also limits you.</p>
+      <p>Your daayra right now includes certain people, certain ideas, certain places you feel safe. Outside it are the unknown, the unfamiliar, the people who think differently. Growing up is the slow expansion of this circle &mdash; not by erasing the boundary, but by choosing to push it outward.</p>
+      <p>Some circles need to shrink &mdash; when someone inside is hurting you, they need to be outside. Some need to expand &mdash; when you are hiding from growth behind the safety of the familiar. Name your circles. They are the geography of your becoming.</p>
+      <p class="about-note">Your circles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daayra.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&#x0101;ng — the demand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x093E;&#x0901;&#x0917;</div>
+      <h1 class="title">M&#x0101;ng</h1>
+      <p class="subtitle">the demand</p>
+      <p class="intro">Everyone demands something from you. Your parents demand marks. Your friends demand loyalty. Teachers demand attention. Society demands conformity. And somewhere in the noise, you have demands of your own &mdash; for freedom, for understanding, for the right to be imperfect. <em>Maang</em> asks you to name the demands &mdash; and wonder which ones you actually owe.</p>
+      <button class="begin-btn" id="beginBtn">weigh</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is demanded of you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this demand</p>
+        <input class="write-name" id="writeName" type="text" placeholder="be the best in class, always be available for friends, never show weakness&hellip;">
+        <p class="write-prompt-2">Do you owe it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who is demanding, whether the demand is fair, what happens if you say no&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">answer</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>M&#x0101;ng</h2>
+      <p>A demand is different from a request. A request can be declined. A demand comes with consequences.</p>
+      <p>Some demands are fair &mdash; your parents demanding basic respect, your school demanding that you try. Some are unfair &mdash; the demand to always be happy, to never fail, to have your life figured out at seventeen.</p>
+      <p>And your own demands matter too. You demand to be heard. You demand space to make mistakes. You demand the right to grow at your own pace. Name all the demands. Then decide which ones to honour and which ones to quietly set aside.</p>
+      <p class="about-note">Your demands are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="maang.js"></script>
+</body>
+</html>

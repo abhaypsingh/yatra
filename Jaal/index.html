@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J&#x0101;l — the net</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093E;&#x0932;</div>
+      <h1 class="title">J&#x0101;l</h1>
+      <p class="subtitle">the net</p>
+      <p class="intro">A net can catch you or connect you. The net of family that holds you when you fall. The net of social media that traps you in comparison. The net of community that gives you belonging. The net of expectation that tangles your feet. <em>Jaal</em> asks you to name the nets in your life &mdash; and decide which ones are safety nets and which are traps.</p>
+      <button class="begin-btn" id="beginBtn">weave</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What nets surround you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this net</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the social media web I cannot escape, the family network that catches me&hellip;">
+        <p class="write-prompt-2">Does it catch you or connect you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it holds, what it traps, whether you can see through it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cast</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>J&#x0101;l</h2>
+      <p>The same word &mdash; jaal &mdash; means both a safety net and a trap. That is not a coincidence. The things that protect you can also confine you.</p>
+      <p>Your family is a net. It catches you when you fall, but it can also prevent you from flying. Your friend group is a net. It connects you, but it can also trap you in a version of yourself you have outgrown.</p>
+      <p>The internet itself is a jaal &mdash; connecting you to the world while catching you in loops of scrolling, comparing, and performing. Name the nets. Know which threads to keep and which to cut.</p>
+      <p class="about-note">Your nets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jaal.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palken — the eyelids</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0932;&#x0915;&#x0947;&#x0902;</div>
+      <h1 class="title">Palken</h1>
+      <p class="subtitle">the eyelids</p>
+      <p class="intro">Your eyelids are the only curtain you truly control. You can open them to see beauty, injustice, truth. You can close them to rest, to hide, to pretend you did not notice. <em>Palkan</em> asks you to name what you have chosen to see &mdash; and what you have chosen to close your eyes to. Both choices have shaped you.</p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What have you chosen to see or unsee?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name what you saw or looked away from</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the unfairness I pretended not to notice, the beauty I almost missed&hellip;">
+        <p class="write-prompt-2">Why did you open or close your eyes?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gained or lost by seeing, what was easier to unsee&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">blink</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Palken</h2>
+      <p>Seeing is a choice. Not in the optical sense, but in the moral one. You saw that classmate sitting alone and chose to notice or not. You saw your parent&rsquo;s exhaustion and chose to acknowledge it or look away.</p>
+      <p>Closing your eyes is not always cowardice. Sometimes it is self-preservation &mdash; you cannot look at everything all the time without breaking. But opening them at the right moment is the beginning of courage.</p>
+      <p>Name what you have seen and what you have turned away from. Both are part of your story. Both have consequences.</p>
+      <p class="about-note">Your eyelids are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="palkan.js"></script>
+</body>
+</html>

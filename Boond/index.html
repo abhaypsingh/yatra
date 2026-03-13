@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x016B;nd — the drop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0942;&#x0901;&#x0926;</div>
+      <h1 class="title">B&#x016B;nd</h1>
+      <p class="subtitle">the drop</p>
+      <p class="intro">A single drop creates ripples that reach the far edges of the pond. A small act of kindness. A single word of encouragement. A tiny cruelty. Nothing you do is too small to matter. <em>Boond</em> asks you to name the drops &mdash; the small acts, words, and moments that created ripples far beyond what you expected.</p>
+      <button class="begin-btn" id="beginBtn">drop</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small things created big ripples?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this drop</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the one compliment that changed my week, the small lie that grew&hellip;">
+        <p class="write-prompt-2">How far did the ripples go?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the small act caused, who was reached by the ripple&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">ripple</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x016B;nd</h2>
+      <p>You underestimate how much a single drop can do. A teacher who said &ldquo;you are good at this&rdquo; may have redirected your entire life. A friend who sat with you in silence on a bad day may have saved something inside you.</p>
+      <p>And the drops you create matter too. The time you included someone. The message you sent checking in. The moment you chose to be gentle when you could have been harsh.</p>
+      <p>You will never know how far your ripples travel. Name the drops that changed your water. Then go create some for others.</p>
+      <p class="about-note">Your drops are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="boond.js"></script>
+</body>
+</html>

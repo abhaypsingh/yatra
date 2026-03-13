@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x1E6C;han&#x1E0D;ak — the coolness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0920;&#x0902;&#x0921;&#x0915;</div>
+      <h1 class="title">&#x1E6C;han&#x1E0D;ak</h1>
+      <p class="subtitle">the coolness</p>
+      <p class="intro">After the fever breaks, there is coolness. After exams end. After a fight resolves. After crying until there are no tears left. The body goes quiet. The mind stops racing. Everything feels tender and new. <em>Thandak</em> asks you to name the moments of relief &mdash; the calm that arrived after something intense finally passed.</p>
+      <button class="begin-btn" id="beginBtn">breathe</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did the cool relief arrive?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this coolness</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the evening after the last exam, the morning after we finally talked&hellip;">
+        <p class="write-prompt-2">What storm did it follow?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the intensity was, how the coolness changed you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cool</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x1E6C;han&#x1E0D;ak</h2>
+      <p>Coolness is the reward the body gives itself after surviving heat. You know this feeling in your bones &mdash; the deep exhale after something terrible ends.</p>
+      <p>The cool side of the pillow after a fever. The first morning of summer holidays. The silence after a family argument resolves. The lightness when a secret is finally shared.</p>
+      <p>These moments are medicine. They remind you that every storm passes, every heat breaks, every difficulty has a doorway out. Name the coolness. It is proof that you have survived before and can survive again.</p>
+      <p class="about-note">Your coolnesses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thandak.js"></script>
+</body>
+</html>

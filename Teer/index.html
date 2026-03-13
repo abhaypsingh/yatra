@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&#x012B;r — the arrow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0940;&#x0930;</div>
+      <h1 class="title">T&#x012B;r</h1>
+      <p class="subtitle">the arrow</p>
+      <p class="intro">An arrow flies in only one direction. Once released, it cannot be called back. Words are like that. A comment that pierced your heart. A sentence you aimed at someone in anger. A truth someone shot at you that you were not ready to catch. <em>Teer</em> asks you to name the arrows &mdash; the ones that hit you, and the ones you fired.</p>
+      <button class="begin-btn" id="beginBtn">aim</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What arrows have flown in your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this arrow</p>
+        <input class="write-name" id="writeName" type="text" placeholder="what my teacher said that changed how I saw myself, the cruel thing I said in a fight&hellip;">
+        <p class="write-prompt-2">Where did it land?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who aimed it, who was hit, whether the wound has healed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">release</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>T&#x012B;r</h2>
+      <p>An arrow is precise. It does not bruise like a punch. It pierces. And some words are exactly like that &mdash; they pass through your defences and lodge somewhere deep.</p>
+      <p>&ldquo;You will never be as good as your sister.&rdquo; &ldquo;I expected more from you.&rdquo; &ldquo;You are just like your father.&rdquo; These arrows may have been shot years ago, and they are still in you.</p>
+      <p>But you have fired arrows too. Words aimed to hurt, truths used as weapons. Name them all. The ones you carry and the ones you sent. Arrows teach us the weight of words.</p>
+      <p class="about-note">Your arrows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="teer.js"></script>
+</body>
+</html>

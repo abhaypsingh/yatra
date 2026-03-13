@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaukha&#x1E6D; — the doorframe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x094C;&#x0916;&#x091F;</div>
+      <h1 class="title">Chaukha&#x1E6D;</h1>
+      <p class="subtitle">the doorframe</p>
+      <p class="intro">You are always standing in doorframes &mdash; between childhood and growing up, between who you were and who you are becoming, between a room you know and one you have never entered. The doorframe is not a place. It is a pause. <em>Chaukhat</em> asks you to name the thresholds you are standing at &mdash; and notice which way you are leaning.</p>
+      <button class="begin-btn" id="beginBtn">step</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What doorframes are you standing in?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this threshold</p>
+        <input class="write-name" id="writeName" type="text" placeholder="between school and whatever comes next, between the old friend group and the new&hellip;">
+        <p class="write-prompt-2">What is on each side?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you are leaving behind, what you might be stepping into&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cross</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chaukha&#x1E6D;</h2>
+      <p>A doorframe is the most underappreciated part of a house. It holds the weight of the wall. It marks the boundary between rooms. And every meaningful transition in your life passes through one.</p>
+      <p>You stand at doorframes constantly &mdash; between being a child and not being one anymore. Between the safety of what you know and the terror of what you might become. Between saying the thing and holding it in.</p>
+      <p>You do not have to rush through. Stand in the doorframe. Look both ways. The threshold is not wasted time &mdash; it is where courage gathers itself.</p>
+      <p class="about-note">Your doorframes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaukhat.js"></script>
+</body>
+</html>
