@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ang&#x1E0D;&#x0101;&#x012B; — the stretch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0902;&#x0917;&#x0921;&#x093C;&#x093E;&#x0908;</div>
+      <h1 class="title">Ang&#x1E0D;&#x0101;&#x012B;</h1>
+      <p class="subtitle">the stretch</p>
+      <p class="intro">When you wake up, sometimes your body stretches before your mind is ready. Arms reaching, back arching, a yawn that seems to come from somewhere deeper than sleep. <em>Angdaai</em> is the body remembering itself. It asks you to name the moments when you stretched &mdash; physically or otherwise &mdash; reaching for something just beyond your grasp.</p>
+      <button class="begin-btn" id="beginBtn">stretch</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did you stretch beyond yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stretch</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the morning I reached for a dream I thought was too big&hellip;">
+        <p class="write-prompt-2">What were you reaching for?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what your body or soul was reaching toward, what happened when you extended&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">reach</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ang&#x1E0D;&#x0101;&#x012B;</h2>
+      <p>The angdaai is your body&rsquo;s first act of courage each morning. Before you have decided anything, before you have checked your phone, your body reaches outward. It claims space. It says: I am here, I am alive, I need room.</p>
+      <p>You stretch in other ways too. When you try something new. When you say something honest. When you love someone even though it scares you. Every stretch is a small act of becoming larger than you were a moment ago.</p>
+      <p>Name the stretches. The ones that made you bigger. The ones that ached. The ones that felt like freedom.</p>
+      <p class="about-note">Your stretches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="angdaai.js"></script>
+</body>
+</html>

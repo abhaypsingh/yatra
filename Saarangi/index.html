@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&#x0101;rang&#x012B; — the instrument</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093E;&#x0930;&#x0902;&#x0917;&#x0940;</div>
+      <h1 class="title">S&#x0101;rang&#x012B;</h1>
+      <p class="subtitle">the instrument</p>
+      <p class="intro">The saarangi is said to be the instrument closest to the human voice. It weeps, it soars, it trembles. It can make a room full of people go silent. <em>Saarangi</em> asks you to name the melodies that moved something inside you &mdash; the songs, the sounds, the music that changed your frequency.</p>
+      <button class="begin-btn" id="beginBtn">play</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What music changed your frequency?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this melody</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the song my father used to hum, the lullaby that still calms me&hellip;">
+        <p class="write-prompt-2">What did it stir?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you first heard it, what it unlocked, why it still resonates&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sound</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>S&#x0101;rang&#x012B;</h2>
+      <p>Music enters where words cannot. A melody can make you cry without knowing why. A rhythm can make your body move before your mind has decided. Sound is the oldest language.</p>
+      <p>You have a personal soundtrack. The bhajan your grandmother sang. The film song that played during your first heartbreak. The anthem that made you feel powerful. The lullaby that still puts the child in you to sleep.</p>
+      <p>Name the melodies. They are the strings of your inner saarangi, and they vibrate every time life plays the right note.</p>
+      <p class="about-note">Your melodies are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="saarangi.js"></script>
+</body>
+</html>

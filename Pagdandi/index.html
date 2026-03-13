@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pag&#x1E0D;an&#x1E0D;&#x012B; — the trail</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0917;&#x0921;&#x0902;&#x0921;&#x0940;</div>
+      <h1 class="title">Pag&#x1E0D;an&#x1E0D;&#x012B;</h1>
+      <p class="subtitle">the trail</p>
+      <p class="intro">A pagdandi is not a road. It is a trail worn into existence by the feet of those who had no road. It is the path through the fields, the shortcut through the trees, the way you find when no one has built one for you. <em>Pagdandi</em> asks you to name the trails &mdash; the paths you made when there was no path.</p>
+      <button class="begin-btn" id="beginBtn">walk</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What paths did you make yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this trail</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the shortcut I took when the main road was blocked, the way I found alone&hellip;">
+        <p class="write-prompt-2">Where did it lead?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="why there was no road, what you found by walking off the path&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">forge</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pag&#x1E0D;an&#x1E0D;&#x012B;</h2>
+      <p>Roads are built by governments. Pagdandis are built by people who need to get somewhere. They are democratic, organic, honest. They go where the road does not bother to go.</p>
+      <p>You have walked pagdandis your whole life. The way you figured out maths that no one taught you properly. The friendship you built when you were the new kid. The career you are inventing because no one in your family has done it before.</p>
+      <p>Name the trails. They are proof that you do not need a paved road to reach where you are going.</p>
+      <p class="about-note">Your trails are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pagdandi.js"></script>
+</body>
+</html>

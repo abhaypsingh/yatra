@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thappa&#x1E0D; — the slap</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0925;&#x092A;&#x094D;&#x092A;&#x0921;&#x093C;</div>
+      <h1 class="title">Thappa&#x1E0D;</h1>
+      <p class="subtitle">the slap</p>
+      <p class="intro">A slap is a full sentence delivered in one second. It can say: I am angry. It can say: Wake up. It can say: I have no words left. A slap is never just physical &mdash; life slaps you with reality, with failure, with truths you did not want to hear. <em>Thappad</em> asks you to name the slaps &mdash; the ones that stung your face and the ones that stung your soul.</p>
+      <button class="begin-btn" id="beginBtn">face</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What slapped you awake?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this slap</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the reality check I needed, the failure that woke me up&hellip;">
+        <p class="write-prompt-2">What did it wake you to?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who or what delivered it, what you saw when the sting cleared&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wake</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Thappa&#x1E0D;</h2>
+      <p>We are not talking about violence. Violence is never justified. But life has its own slaps &mdash; the ones that come from reality hitting you across the face when you have been living in illusion.</p>
+      <p>The exam result that told you hard work is not optional. The friend who told you the truth when everyone else was being polite. The moment you saw yourself clearly for the first time and did not like what you saw.</p>
+      <p>These slaps hurt. But they are the beginning of honesty. Name them. They are the moments that turned you from who you were pretending to be into who you actually are.</p>
+      <p class="about-note">Your slaps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thappad.js"></script>
+</body>
+</html>

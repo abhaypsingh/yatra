@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N&#x012B;m — the neem tree</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x0940;&#x092E;</div>
+      <h1 class="title">N&#x012B;m</h1>
+      <p class="subtitle">the neem tree</p>
+      <p class="intro">The neem tree is bitter. Its leaves, its bark, its fruit &mdash; all bitter. And yet it heals. It purifies water, cures skin, cleans teeth, and guards homes. <em>Neem</em> asks you to name the bitter things in your life that turned out to be medicine &mdash; the hard truths, the difficult people, the painful experiences that healed you.</p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bitter thing healed you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this neem</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the strict teacher who made me better, the rejection that redirected me&hellip;">
+        <p class="write-prompt-2">How did the bitterness heal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was bitter about it, what it cured, when you realized it was medicine&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">accept</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>N&#x012B;m</h2>
+      <p>Your grandmother knew this. She made you chew neem leaves when you were sick. You hated the taste. But you got better. That is the paradox of neem &mdash; what is hardest to swallow is often what you need most.</p>
+      <p>The teacher who was too strict. The friend who told you an uncomfortable truth. The failure that forced you to try harder. The loneliness that taught you to be comfortable with yourself. All neem. All bitter. All healing.</p>
+      <p>Name the neem in your life. Thank the bitterness. It made you well.</p>
+      <p class="about-note">Your neems are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="neem.js"></script>
+</body>
+</html>

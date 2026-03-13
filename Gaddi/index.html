@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadd&#x012B; — the cushion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0926;&#x094D;&#x0926;&#x0940;</div>
+      <h1 class="title">Gadd&#x012B;</h1>
+      <p class="subtitle">the cushion</p>
+      <p class="intro">A gaddi is both a cushion and a throne. It is where you sit when you are comfortable and where a king sits when he rules. The same word for softness and for power. <em>Gaddi</em> asks you to name the seats you have occupied &mdash; the comfortable ones, the powerful ones, and the ones you were never allowed to sit on.</p>
+      <button class="begin-btn" id="beginBtn">sit</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What seats have you occupied?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this seat</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the seat at the head of the table, the cushion where I felt safest&hellip;">
+        <p class="write-prompt-2">What power or comfort did it hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who usually sat there, what sitting meant, whether it was comfort or authority&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">claim</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gadd&#x012B;</h2>
+      <p>In every family, there is an invisible seating arrangement. The eldest gets the best seat. The guest gets the cushion. The child sits on the floor. Where you sit tells you where you stand.</p>
+      <p>A gaddi can be a place of rest or a place of power. The same cushion that comforts a tired body also elevates the person who sits on it. Growing up is learning which seats are yours to claim and which thrones are not worth the weight of their crowns.</p>
+      <p>Name the seats. The ones that held you. The ones that excluded you. The ones you are still reaching for.</p>
+      <p class="about-note">Your cushions are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gaddi.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P&#x012B;&#x1E6D;h — the back</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0940;&#x0920;</div>
+      <h1 class="title">P&#x012B;&#x1E6D;h</h1>
+      <p class="subtitle">the back</p>
+      <p class="intro">The back is what you show when you leave. It is also what others show you. Someone turning away can mean abandonment or independence, betrayal or freedom. <em>Peeth</em> asks you to name the backs &mdash; the ones you turned and the ones that were turned to you.</p>
+      <button class="begin-btn" id="beginBtn">turn</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose back do you remember?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this back</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend who walked away without looking back, the day I turned from home&hellip;">
+        <p class="write-prompt-2">What did the turning mean?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whether it was leaving or being left, what the turned back said without words&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">face</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>P&#x012B;&#x1E6D;h</h2>
+      <p>You know someone&rsquo;s back as well as their face. Your mother&rsquo;s back as she cooked. Your father&rsquo;s back as he left for work. A friend&rsquo;s back as they walked away after a fight.</p>
+      <p>Turning your back is one of the most powerful things a body can do. It can mean: I am done. It can mean: I am protecting myself. It can mean: I trust you enough to be vulnerable. The same gesture, entirely different meanings.</p>
+      <p>Name the backs. The ones that hurt. The ones that freed you. The ones you still see when you close your eyes.</p>
+      <p class="about-note">Your backs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="peeth.js"></script>
+</body>
+</html>

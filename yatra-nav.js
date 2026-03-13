@@ -284,7 +284,25 @@
         ['Maang', 'M\u0101ng', 'the demand'],
         ['Cheekh', 'Ch\u012Bkh', 'the scream'],
         ['Sannata', 'Sann\u0101\u1E6D\u0101', 'the stillness'],
-        ['Daayra', 'D\u0101yr\u0101', 'the circle']
+        ['Daayra', 'D\u0101yr\u0101', 'the circle'],
+        ['Angdaai', 'Ang\u1E0D\u0101\u012B', 'the stretch'],
+        ['Peeth', 'P\u012B\u1E6Dh', 'the back'],
+        ['Sirhana', 'Sirh\u0101n\u0101', 'the headrest'],
+        ['Lakeer', 'Lak\u012Br', 'the line'],
+        ['Gaddi', 'Gadd\u012B', 'the cushion'],
+        ['Thaali', 'Th\u0101l\u012B', 'the plate'],
+        ['Bichhua', 'Bichhiy\u0101', 'the scorpion'],
+        ['Ghav', 'Gh\u0101v', 'the wound'],
+        ['Saarangi', 'S\u0101rang\u012B', 'the instrument'],
+        ['Pagdandi', 'Pag\u1E0Dan\u1E0D\u012B', 'the trail'],
+        ['Thappad', 'Thappa\u1E0D', 'the slap'],
+        ['Chunni', 'Chunn\u012B', 'the veil'],
+        ['Kangan', 'Kangan', 'the bangle'],
+        ['Neem', 'N\u012Bm', 'the neem tree'],
+        ['Jhalar', 'Jh\u0101lar', 'the fringe'],
+        ['Matka', 'Ma\u1E6Dk\u0101', 'the earthen pot'],
+        ['Chulha', 'Ch\u016Blh\u0101', 'the hearth'],
+        ['Haandi', 'H\u0101n\u1E0D\u012B', 'the cooking pot']
       ]
     }
   ];
@@ -351,7 +369,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 248 experiences';
+    sub.textContent = 'the journey \u2014 266 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

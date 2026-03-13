@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirh&#x0101;n&#x0101; — the headrest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0930;&#x0939;&#x093E;&#x0928;&#x093E;</div>
+      <h1 class="title">Sirh&#x0101;n&#x0101;</h1>
+      <p class="subtitle">the headrest</p>
+      <p class="intro">At the end of the day, you lay your head somewhere. A pillow, a mother&rsquo;s lap, your own folded arms on a desk. The sirhana is the place where you surrender the weight of your thoughts. <em>Sirhana</em> asks you to name the places where you rested your head &mdash; and what you were carrying when you did.</p>
+      <button class="begin-btn" id="beginBtn">rest</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where have you rested your head?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this headrest</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandmother's lap, the train window on long journeys&hellip;">
+        <p class="write-prompt-2">What weight did you put down?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were carrying, how the rest changed you, what you dreamed there&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">lay down</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sirh&#x0101;n&#x0101;</h2>
+      <p>The sirhana knows your secrets. It is the last thing you touch before sleep and the first thing you feel when you wake. It has absorbed your tears, your fever, your restless turning.</p>
+      <p>But a sirhana is not always a pillow. Sometimes it is a shoulder. Sometimes it is the ground. Sometimes it is the crook of your own arm when there is no one else. The quality of your rest tells you something about the quality of your life.</p>
+      <p>Name the headrests. The soft ones and the hard ones. The ones you chose and the ones that were all you had.</p>
+      <p class="about-note">Your headrests are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sirhana.js"></script>
+</body>
+</html>

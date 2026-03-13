@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kangan — the bangle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0902;&#x0917;&#x0928;</div>
+      <h1 class="title">Kangan</h1>
+      <p class="subtitle">the bangle</p>
+      <p class="intro">A bangle is a circle you wear on your wrist. It is decoration and tradition, beauty and identity. But a bangle is also a circle that does not open &mdash; you must squeeze your hand to put it on, enduring a moment of pain for the beauty that follows. <em>Kangan</em> asks you to name the bangles &mdash; the beautiful things that required pain to wear.</p>
+      <button class="begin-btn" id="beginBtn">wear</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What beauty required pain to wear?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bangle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the tradition I uphold even when it hurts, the identity I wear proudly&hellip;">
+        <p class="write-prompt-2">What was the squeeze?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what beauty it brings, what pain it cost, whether you chose to wear it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">adorn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kangan</h2>
+      <p>The sound of bangles is the sound of home. A mother cooking. A bride walking. A grandmother&rsquo;s hands clapping at a song. The kangan carries music in its very existence.</p>
+      <p>But think about what it means to wear a circle that does not open. Every tradition, every role, every identity is a bangle. Some jingle with joy. Some are too tight. Some you wish you could take off but cannot because they mean too much to someone you love.</p>
+      <p>Name the bangles. The ones that make music and the ones that leave marks on your wrist.</p>
+      <p class="about-note">Your bangles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kangan.js"></script>
+</body>
+</html>

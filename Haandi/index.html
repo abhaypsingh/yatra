@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H&#x0101;n&#x1E0D;&#x012B; — the cooking pot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093E;&#x0902;&#x0921;&#x0940;</div>
+      <h1 class="title">H&#x0101;n&#x1E0D;&#x012B;</h1>
+      <p class="subtitle">the cooking pot</p>
+      <p class="intro">A haandi cooks slowly. The lid stays on. The heat is low. Hours pass. And what emerges is something that quick cooking can never produce &mdash; depth, richness, flavour that has had time to become itself. <em>Haandi</em> asks you to name the slow-cooked things in your life &mdash; the relationships, skills, and understandings that needed time and patience to become what they are.</p>
+      <button class="begin-btn" id="beginBtn">simmer</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What needed slow cooking?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this slow-cooked thing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friendship that took years to deepen, the skill I'm still developing&hellip;">
+        <p class="write-prompt-2">What did the slow cooking produce?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how long it took, what the patience produced, why it could not have been rushed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wait</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>H&#x0101;n&#x1E0D;&#x012B;</h2>
+      <p>We live in the age of instant everything. Instant noodles, instant messages, instant gratification. But the best things in life are haandi things. They cannot be microwaved.</p>
+      <p>Trust takes years to build. Mastery takes a decade. Understanding your parents takes growing up. Forgiving someone takes as long as it takes. These are haandi processes &mdash; slow, covered, simmering, transforming.</p>
+      <p>Name the things that are still cooking. The ones that have already emerged rich and deep. Honour the time they needed. Not everything worthwhile is instant.</p>
+      <p class="about-note">Your pots are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="haandi.js"></script>
+</body>
+</html>

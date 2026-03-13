@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Th&#x0101;l&#x012B; — the plate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0925;&#x093E;&#x0932;&#x0940;</div>
+      <h1 class="title">Th&#x0101;l&#x012B;</h1>
+      <p class="subtitle">the plate</p>
+      <p class="intro">A thali is not just food on a plate. It is a mother&rsquo;s love portioned into katoris. It is a festival condensed into six flavours. It is the belief that a complete meal, like a complete life, requires sweet and bitter and sour and spicy. <em>Thaali</em> asks you to name the plates that fed you &mdash; the meals that were more than meals.</p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which meals were more than food?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this plate</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the last meal before leaving home, the thali at my grandparents' house&hellip;">
+        <p class="write-prompt-2">What was being served beyond food?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who made it, what it meant, what love or grief or celebration was on that plate&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">serve</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Th&#x0101;l&#x012B;</h2>
+      <p>In India, we do not just eat. We share a thali. Everything is there at once &mdash; the dal, the roti, the sabzi, the pickle, the sweet. Life on a plate. You eat with your hands because food is not just fuel, it is connection.</p>
+      <p>The thali your mother makes when you are sick is different from the one she makes for a guest. The thali at a wedding is different from the one at a funeral. Each plate tells a story. Each katori holds a feeling.</p>
+      <p>Name the plates. The ones that nourished your body and the ones that fed your soul.</p>
+      <p class="about-note">Your plates are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thaali.js"></script>
+</body>
+</html>

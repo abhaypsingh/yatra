@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma&#x1E6D;k&#x0101; — the earthen pot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x091F;&#x0915;&#x093E;</div>
+      <h1 class="title">Ma&#x1E6D;k&#x0101;</h1>
+      <p class="subtitle">the earthen pot</p>
+      <p class="intro">A matka is made of earth. It keeps water cool without electricity. It gives the water a taste that no steel vessel can. But a matka is fragile &mdash; one careless moment and it shatters. <em>Matka</em> asks you to name the earthen things in your life &mdash; the humble, fragile, irreplaceable things that kept you cool.</p>
+      <button class="begin-btn" id="beginBtn">fill</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What humble thing kept you cool?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this vessel</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the simple friendship that sustained me, the old habit that kept me grounded&hellip;">
+        <p class="write-prompt-2">How did it keep you cool?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what made it humble, what made it irreplaceable, whether it survived or broke&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pour</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ma&#x1E6D;k&#x0101;</h2>
+      <p>In a world of refrigerators and water purifiers, the matka seems old-fashioned. But nothing tastes like matka water on a hot day. The coolness comes not from machinery but from the earth itself &mdash; porous, patient, generous.</p>
+      <p>The best things in your life might be matkas. Simple. Unpolished. Made of common material. But they hold what matters and keep it cool when everything else is burning. A grandmother&rsquo;s advice. A friend who listens. A routine that steadies you.</p>
+      <p>Name the matkas. They are easily broken and impossible to replace.</p>
+      <p class="about-note">Your pots are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="matka.js"></script>
+</body>
+</html>

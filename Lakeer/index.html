@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lak&#x012B;r — the line</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x0915;&#x0940;&#x0930;</div>
+      <h1 class="title">Lak&#x012B;r</h1>
+      <p class="subtitle">the line</p>
+      <p class="intro">There is a saying: <em>lakeer ka fakeer</em> &mdash; one who blindly follows the line drawn by others. Lines divide, lines connect, lines mark where something ends and something else begins. <em>Lakeer</em> asks you to name the lines in your life &mdash; the ones drawn for you and the ones you chose to cross.</p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What lines have shaped your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this line</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the line between what I want and what is expected, the border I crossed&hellip;">
+        <p class="write-prompt-2">Who drew it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who decided the boundary, whether you followed or crossed it, what happened&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">trace</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lak&#x012B;r</h2>
+      <p>Before you could think for yourself, lines were drawn for you. This is acceptable, that is not. These people are ours, those are not. This is your future, that is someone else&rsquo;s.</p>
+      <p>Some lines protect you. The line between safety and danger. The line between kindness and cruelty. But some lines imprison you. The line between &ldquo;boys do this&rdquo; and &ldquo;girls do that.&rdquo; The line between your caste and theirs. The line between who you are and who they want you to be.</p>
+      <p>Name the lines. Then decide which ones to honour and which ones to erase.</p>
+      <p class="about-note">Your lines are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lakeer.js"></script>
+</body>
+</html>

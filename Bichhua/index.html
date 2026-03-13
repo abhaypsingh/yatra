@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bichhiy&#x0101; — the scorpion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093F;&#x091B;&#x093F;&#x092F;&#x093E;</div>
+      <h1 class="title">Bichhiy&#x0101;</h1>
+      <p class="subtitle">the scorpion</p>
+      <p class="intro">A scorpion stings not out of malice but out of nature. Some people are like that too &mdash; they hurt you not because they chose to, but because they do not know any other way. <em>Bichhua</em> asks you to name the stings &mdash; the sudden, sharp pains that came from places you did not expect.</p>
+      <button class="begin-btn" id="beginBtn">face</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What stung you without warning?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this sting</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the betrayal I did not see coming, the words that struck from behind&hellip;">
+        <p class="write-prompt-2">Was it nature or choice?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who stung you, whether they could help it, how the venom changed you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bichhiy&#x0101;</h2>
+      <p>There is a famous story about a monk who kept saving a scorpion from drowning, even though it stung him every time. &ldquo;It is the scorpion&rsquo;s nature to sting,&rdquo; he said. &ldquo;It is my nature to save.&rdquo;</p>
+      <p>But you are not a monk. You do not have to keep saving what stings you. Some people sting because they are in pain themselves. Some sting because they can. Knowing the difference is wisdom. Acting on that knowledge is strength.</p>
+      <p>Name the stings. Not to hold grudges, but to learn where to place your hands more carefully.</p>
+      <p class="about-note">Your stings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bichhua.js"></script>
+</body>
+</html>
