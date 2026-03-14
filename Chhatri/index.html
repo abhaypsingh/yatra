@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhatr&#x012B; — the umbrella</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x0924;&#x094D;&#x0930;&#x0940;</div>
+      <h1 class="title">Chhatr&#x012B;</h1>
+      <p class="subtitle">the umbrella</p>
+      <p class="intro">A chhatri is portable shelter &mdash; you carry it folded, and open it only when the storm comes. It does not stop the rain. It simply keeps you dry enough to keep walking. <em>Chhatr&#x012B;</em> asks you to name the portable shelters in your life &mdash; the resources, beliefs, or people you carry folded until you need them, that keep you moving through life&rsquo;s storms.</p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What portable shelters do you carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this umbrella</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the savings account that lets me breathe, the friend I call when everything falls apart&hellip;">
+        <p class="write-prompt-2">When did you last open it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what storm it sheltered you from, how you carry it, what walking in the rain feels like under it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chhatr&#x012B;</h2>
+      <p>The genius of the umbrella is not that it stops rain. It is that it is portable. You do not build a roof &mdash; you carry one. And when the sky clears, you fold it back and walk lighter. The umbrella is optimism disguised as preparation: you acknowledge the storm will come, and you prepare to walk through it anyway.</p>
+      <p>Your chhatris are the things you carry just in case. The emergency fund. The phone number of someone wise. The breathing technique. The prayer. They weigh almost nothing when folded, but they are everything when opened.</p>
+      <p>Name the umbrellas. They are how you walk through rain without stopping.</p>
+      <p class="about-note">Your umbrellas are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chhatri.js"></script>
+</body>
+</html>

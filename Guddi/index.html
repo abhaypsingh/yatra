@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gudd&#x012B; — the kite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0921;&#x094D;&#x0921;&#x0940;</div>
+      <h1 class="title">Gudd&#x012B;</h1>
+      <p class="subtitle">the kite</p>
+      <p class="intro">A guddi flies because of two opposing forces &mdash; the wind that lifts it and the string that holds it. Cut the string and the kite falls. Hold too tight and it cannot soar. The art is in the tension. <em>Gudd&#x012B;</em> asks you to name the things in your life that fly because you hold them with just the right tension &mdash; the freedoms that need a thread.</p>
+      <button class="begin-btn" id="beginBtn">fly</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What flies because you hold the string just right?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this kite</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my child's independence, the project I guide but don't control&hellip;">
+        <p class="write-prompt-2">What is the string? What is the wind?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what makes it soar, what holds it, the tension that keeps it aloft&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">soar</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gudd&#x012B;</h2>
+      <p>On rooftops across India, during Makar Sankranti, the sky fills with kites. Each one looks free. But look down and there is always a hand, always a string, always someone reading the wind and adjusting. The kite thinks it is flying. The flyer knows it is a partnership.</p>
+      <p>Your life has guddi moments. The relationships that soar because of the invisible string of commitment. The ambitions that fly because discipline holds them. The children who rise because you knew when to pull and when to let out more thread.</p>
+      <p>Name the kites. They are the beautiful tensions you manage every day.</p>
+      <p class="about-note">Your kites are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="guddi.js"></script>
+</body>
+</html>

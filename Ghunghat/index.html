@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghungha&#x1E6D; — the veil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0918;&#x0942;&#x0901;&#x0918;&#x091F;</div>
+      <h1 class="title">Ghungha&#x1E6D;</h1>
+      <p class="subtitle">the veil</p>
+      <p class="intro">A ghunghat is the edge of a saree or dupatta drawn over the face &mdash; not to hide, but to choose what is revealed and to whom. It is selective visibility. A woman behind a ghunghat sees everything; it is the world whose view is filtered. <em>Ghungha&#x1E6D;</em> asks you to name the veils you wear &mdash; the things you let the world see, and the things you keep behind the cloth.</p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What do you veil from the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this veil</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the competence I hide to avoid envy, the grief I shield from my children&hellip;">
+        <p class="write-prompt-2">What is hidden? What do you still see?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the veil covers, why you chose this concealment, what you observe from behind it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">veil</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ghungha&#x1E6D;</h2>
+      <p>The ghunghat is often misunderstood as oppression. Sometimes it is. But sometimes it is power &mdash; the power to decide who sees you fully. The woman behind the ghunghat is not absent. She is present and choosing. She sees clearly while others see only cloth.</p>
+      <p>You wear ghunghats every day. The professional composure that veils your exhaustion. The smile that covers your anxiety. The silence that hides your real opinion. These veils are not lies &mdash; they are choices about visibility.</p>
+      <p>Name the veils. Know what you hide, and know that you choose to.</p>
+      <p class="about-note">Your veils are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ghunghat.js"></script>
+</body>
+</html>

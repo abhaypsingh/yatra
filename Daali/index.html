@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&#x0101;l&#x012B; — the branch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0921;&#x093E;&#x0932;&#x0940;</div>
+      <h1 class="title">D&#x0101;l&#x012B;</h1>
+      <p class="subtitle">the branch</p>
+      <p class="intro">A daali is a branch &mdash; it grows from the trunk but reaches in its own direction. It carries its own leaves, its own fruit, its own weight. Yet it is never separate from the tree. Every branch is both departure and belonging. <em>D&#x0101;l&#x012B;</em> asks you to name the branches that grew from your trunk &mdash; the directions your life took that were uniquely yours but rooted in who raised you.</p>
+      <button class="begin-btn" id="beginBtn">grow</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What branches grew from your trunk?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this branch</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the career my parents never imagined, the belief I grew that my family didn't plant&hellip;">
+        <p class="write-prompt-2">How does it connect to the trunk?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it started, what direction it reached, how it stays connected to where you came from&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">reach</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>D&#x0101;l&#x012B;</h2>
+      <p>No two branches of a tree grow in the same direction. Each one finds its own path to the light. But cut any branch and you will find the same rings as the trunk &mdash; the same years, the same droughts, the same seasons of rain. A branch is independence and inheritance at once.</p>
+      <p>Your life has daalis &mdash; the parts of you that grew away from your family&rsquo;s expectations, your community&rsquo;s norms, your own earlier plans. Yet when you look closely, the grain is the same. You are your own branch, but you carry the tree&rsquo;s history.</p>
+      <p>Name the branches. They are how you reach for your own light.</p>
+      <p class="about-note">Your branches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daali.js"></script>
+</body>
+</html>

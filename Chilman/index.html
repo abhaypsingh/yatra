@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chilman — the curtain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0932;&#x092E;&#x0928;</div>
+      <h1 class="title">Chilman</h1>
+      <p class="subtitle">the curtain</p>
+      <p class="intro">A chilman is a curtain hung across a doorway &mdash; not a door, not a wall, but a soft boundary. You can hear through it, see shadows through it, push through it at any time. It divides without separating. <em>Chilman</em> asks you to name the soft boundaries in your life &mdash; the divisions that exist between you and others that are more fabric than brick, more suggestion than enforcement.</p>
+      <button class="begin-btn" id="beginBtn">part</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What soft boundaries exist in your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this curtain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the polite distance between me and my in-laws, the unspoken rule between old friends&hellip;">
+        <p class="write-prompt-2">What does it divide? What passes through?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it separates, what still passes through the fabric, why it is cloth and not brick&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hang</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chilman</h2>
+      <p>A chilman is the most honest kind of boundary. It says: I am here, but I am not a wall. You can cross me. But please acknowledge that I exist. In old Indian homes, rooms were not always separated by doors &mdash; a curtain was enough. It gave the illusion of privacy while maintaining the reality of connection.</p>
+      <p>Your relationships have chilmans. The topics you don&rsquo;t discuss but could. The emotions you sense through the fabric of someone&rsquo;s composure. The boundaries that are real but permeable &mdash; respected not because they are strong, but because they are agreed upon.</p>
+      <p>Name the curtains. They are the gentle architecture of your relationships.</p>
+      <p class="about-note">Your curtains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chilman.js"></script>
+</body>
+</html>

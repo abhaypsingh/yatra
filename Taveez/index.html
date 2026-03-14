@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tav&#x012B;z — the amulet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093E;&#x0935;&#x0940;&#x095B;</div>
+      <h1 class="title">Tav&#x012B;z</h1>
+      <p class="subtitle">the amulet</p>
+      <p class="intro">A taveez is a small metal locket worn around the neck or arm, containing a prayer, a verse, a folded blessing. You don&rsquo;t open it. You don&rsquo;t read what&rsquo;s inside. You simply trust that it protects. <em>Tav&#x012B;z</em> asks you to name the invisible protections you carry &mdash; the beliefs, habits, people, or words that guard you even though you can&rsquo;t see how.</p>
+      <button class="begin-btn" id="beginBtn">wear</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What protections do you carry close?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this amulet</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandmother's prayer, the phrase I repeat before sleep&hellip;">
+        <p class="write-prompt-2">What protection does it hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what is folded inside, why you trust it without reading it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">seal</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Tav&#x012B;z</h2>
+      <p>Nobody asks what&rsquo;s written inside a taveez. That would be like unwrapping trust to check if it&rsquo;s real. The whole point is faith &mdash; that something you cannot see is working on your behalf. A grandmother ties it around a child&rsquo;s arm and says: this will keep you safe. The child grows up and the thread frays, but the feeling of safety remains.</p>
+      <p>You carry amulets too. A mantra you repeat before something difficult. A person whose voice calms you. A memory you return to when the world feels unsafe. These are your taveez &mdash; invisible, folded, sealed.</p>
+      <p>Name them. Not to open them, but to honour that they protect.</p>
+      <p class="about-note">Your amulets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taveez.js"></script>
+</body>
+</html>

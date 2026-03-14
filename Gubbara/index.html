@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gubbar&#x0101; — the balloon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x092C;&#x094D;&#x092C;&#x093E;&#x0930;&#x093E;</div>
+      <h1 class="title">Gubbar&#x0101;</h1>
+      <p class="subtitle">the balloon</p>
+      <p class="intro">A gubbara is a child&rsquo;s first experience of joy and loss happening in the same breath. You hold the string, you watch it pull upward, and then &mdash; it slips or it bursts. Either way, the lightness was real while it lasted. <em>Gubbar&#x0101;</em> asks you to name the joys that were beautiful precisely because they were fragile &mdash; the things that floated and then were gone.</p>
+      <button class="begin-btn" id="beginBtn">release</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What joys floated and then were gone?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this balloon</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the summer that ended too soon, the friendship that drifted away&hellip;">
+        <p class="write-prompt-2">How did it float? How did it go?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the lightness you felt, the moment the string slipped, what the sky looked like after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">let go</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gubbar&#x0101;</h2>
+      <p>Every child at a mela holds a balloon like it is the most important thing in the world. And it is &mdash; for those minutes. The colour, the pull of the string, the way it bounces against the sky. Then the hand opens, or the balloon meets a thorn, and it is over. The child cries. But the joy was real.</p>
+      <p>You have had gubbara moments your whole life. Phases that felt like flying. People who made everything lighter. Plans that were perfect until they weren&rsquo;t. The fragility was not a flaw &mdash; it was the condition of the beauty.</p>
+      <p>Name the balloons. Honour the floating, not just the falling.</p>
+      <p class="about-note">Your balloons are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gubbara.js"></script>
+</body>
+</html>

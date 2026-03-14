@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kangh&#x012B; — the comb</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0902;&#x0918;&#x0940;</div>
+      <h1 class="title">Kangh&#x012B;</h1>
+      <p class="subtitle">the comb</p>
+      <p class="intro">A kanghi is a daily act of care. A mother combing a daughter&rsquo;s hair before school. The patient untangling of knots. It is not dramatic &mdash; it is ritual. The same motion, every morning, turning chaos into order. <em>Kangh&#x012B;</em> asks you to name the small, daily acts of untangling that keep you presentable to the world &mdash; the quiet disciplines nobody sees.</p>
+      <button class="begin-btn" id="beginBtn">untangle</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What tangles do you untangle daily?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this comb</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the morning routine that centres me, the conversation that smooths my worry&hellip;">
+        <p class="write-prompt-2">What does it untangle?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the knot it works through, how it feels to be untangled, what you look like after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">smooth</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kangh&#x012B;</h2>
+      <p>The kanghi knows every knot in your hair. It has met them all before &mdash; same tangles, different morning. And yet it does not complain. It does not say: why are you knotted again? It simply begins at the ends and works its way up, patient, persistent, gentle when it needs to be, firm when it must.</p>
+      <p>You have combings in your life too. The habits that sort your thoughts each morning. The people who untangle your anxieties without judgement. The rituals so ordinary you forget they are acts of love.</p>
+      <p>Name the combs. They are why you face the world looking whole.</p>
+      <p class="about-note">Your combs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kanghi.js"></script>
+</body>
+</html>

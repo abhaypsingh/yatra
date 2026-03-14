@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dul&#x0101;r — the tenderness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0941;&#x0932;&#x093E;&#x0930;</div>
+      <h1 class="title">Dul&#x0101;r</h1>
+      <p class="subtitle">the tenderness</p>
+      <p class="intro">Dulaar is tenderness that has no reason &mdash; the hand that strokes a child&rsquo;s head while passing, the extra spoon of ghee on your plate, the nickname only your grandmother used. It is love expressed through small, unrequested gestures. <em>Dul&#x0101;r</em> asks you to name the tender moments &mdash; the unsolicited gentleness that shaped you more than any grand gesture ever could.</p>
+      <button class="begin-btn" id="beginBtn">cherish</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What tender moments shaped you quietly?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this tenderness</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the way my father adjusted my collar without being asked, the extra blanket placed while I slept&hellip;">
+        <p class="write-prompt-2">How did it shape you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the gesture, who gave it, how it taught you what love looks like in small things&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dul&#x0101;r</h2>
+      <p>Dulaar cannot be demanded. That is what makes it sacred. It is the love that arrives without being asked &mdash; the hand that rests on your head during a conversation, the fruit saved for you from the market, the way someone says your name as if it is a song they enjoy singing.</p>
+      <p>The world teaches us to value grand gestures. But dulaar knows better. It knows that a child remembers the hand on the head longer than the birthday party. It knows that the extra roti, offered silently, says more than a speech.</p>
+      <p>Name the tendernesses. They are the smallest things, and they are everything.</p>
+      <p class="about-note">Your tendernesses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dulaar.js"></script>
+</body>
+</html>

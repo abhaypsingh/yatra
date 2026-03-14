@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lape&#x1E6D; — the wrap</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x092A;&#x0947;&#x091F;</div>
+      <h1 class="title">Lape&#x1E6D;</h1>
+      <p class="subtitle">the wrap</p>
+      <p class="intro">Lapet means to wrap &mdash; the way a mother wraps a newborn in cloth, the way a shopkeeper wraps fragile goods in newspaper, the way guilt wraps itself around a memory. To wrap is to enclose, to protect, to sometimes suffocate. <em>Lape&#x1E6D;</em> asks you to name what is wrapped around you &mdash; the things that enclose you in care or in constraint, that hold you together or hold you back.</p>
+      <button class="begin-btn" id="beginBtn">wrap</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What is wrapped around you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wrap</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the expectation that binds me, the tradition that holds me together&hellip;">
+        <p class="write-prompt-2">Does it protect or constrain?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what wraps around you, whether it holds you together or holds you down, the tightness of it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lape&#x1E6D;</h2>
+      <p>The same act &mdash; wrapping &mdash; can mean love or imprisonment. A shawl wrapped around your shoulders on a cold night is tenderness. A bandage wrapped around a wound is healing. But a secret wrapped in silence is suffocation. A lie wrapped in politeness is a cage. The lapet is neutral &mdash; what matters is what is being wrapped, and how tightly.</p>
+      <p>You are wrapped in many things. Family expectations. Cultural norms. Your own habits. Some of these wraps are the cloth that keeps you warm. Others are the bindings you need to cut. The wisdom is in knowing which is which.</p>
+      <p>Name the wraps. Know what encloses you, and whether it serves you.</p>
+      <p class="about-note">Your wraps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lapet.js"></script>
+</body>
+</html>

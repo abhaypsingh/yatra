@@ -337,7 +337,25 @@
         ['Chaunk', 'Chaunk', 'the tempering'],
         ['Mohalla', 'Mohall\u0101', 'the neighbourhood'],
         ['Mehndi', 'Mehndi', 'the henna'],
-        ['Aalaa', '\u0100l\u0101', 'the shelf niche']
+        ['Aalaa', '\u0100l\u0101', 'the shelf niche'],
+        ['Taveez', 'Tav\u012Bz', 'the amulet'],
+        ['Gubbara', 'Gubbar\u0101', 'the balloon'],
+        ['Kanghi', 'Kangh\u012B', 'the comb'],
+        ['Bhandaar', 'Bhand\u0101r', 'the storehouse'],
+        ['Jhulsa', 'Jhuls\u0101', 'the scorch'],
+        ['Guddi', 'Gudd\u012B', 'the kite'],
+        ['Ghunghat', 'Ghungha\u1E6D', 'the veil'],
+        ['Daali', 'D\u0101l\u012B', 'the branch'],
+        ['Aanchal', '\u0100nchal', 'the embrace'],
+        ['Basti', 'Bast\u012B', 'the settlement'],
+        ['Chhatri', 'Chhatr\u012B', 'the umbrella'],
+        ['Pathhar', 'Pathhar', 'the stone'],
+        ['Dulaar', 'Dul\u0101r', 'the tenderness'],
+        ['Takhti', 'Takht\u012B', 'the writing slate'],
+        ['Chilman', 'Chilman', 'the curtain'],
+        ['Poshak', 'Posh\u0101k', 'the garment'],
+        ['Lapet', 'Lape\u1E6D', 'the wrap'],
+        ['Katran', 'Katran', 'the clipping']
       ]
     }
   ];

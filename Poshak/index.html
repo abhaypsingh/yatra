@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posh&#x0101;k — the garment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x094B;&#x0936;&#x093E;&#x0915;</div>
+      <h1 class="title">Posh&#x0101;k</h1>
+      <p class="subtitle">the garment</p>
+      <p class="intro">A poshak is not just clothing &mdash; it is identity worn on the body. The uniform that makes you a soldier. The white kurta that makes you a mourner. The wedding red that makes you a bride. Clothes do not just cover &mdash; they declare. <em>Posh&#x0101;k</em> asks you to name the identities you have worn &mdash; the roles that fit like garments, some chosen, some inherited, some outgrown.</p>
+      <button class="begin-btn" id="beginBtn">wear</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What identities have you worn?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this garment</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the good-student identity, the responsible-eldest role, the confident mask&hellip;">
+        <p class="write-prompt-2">How did it fit? Do you still wear it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when you first wore it, how it felt on your skin, whether you chose it or it was chosen for you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">don</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Posh&#x0101;k</h2>
+      <p>In India, clothing is rarely just clothing. A white saree signals widowhood. Saffron signals renunciation. The school uniform says you belong somewhere. The poshak is the visible declaration of an invisible identity &mdash; and sometimes, the garment shapes the wearer more than the wearer shapes the garment.</p>
+      <p>You have worn many poshaks. The dutiful child. The rebellious teenager. The professional. The parent. Some fit perfectly. Some were tailored by someone else. Some you wore so long you forgot they were costumes.</p>
+      <p>Name the garments. Know which ones you chose and which ones chose you.</p>
+      <p class="about-note">Your garments are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="poshak.js"></script>
+</body>
+</html>

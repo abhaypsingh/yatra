@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathhar — the stone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0924;&#x094D;&#x0925;&#x0930;</div>
+      <h1 class="title">Pathhar</h1>
+      <p class="subtitle">the stone</p>
+      <p class="intro">A pathhar endures. Rain wears it slowly. Sun heats it and cold cracks it. Yet it remains. It does not complain, does not bend, does not explain itself. A stone is what it is &mdash; solid, patient, ancient. <em>Pathhar</em> asks you to name the stone-like parts of yourself &mdash; the convictions, endurances, or silences that have lasted through every season without breaking.</p>
+      <button class="begin-btn" id="beginBtn">endure</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What in you has endured every season?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stone</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the belief that survived every doubt, the loyalty that outlasted every betrayal&hellip;">
+        <p class="write-prompt-2">What has it weathered?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the rains it endured, the cracks it carries, why it still stands&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stand</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pathhar</h2>
+      <p>People say &ldquo;dil pathhar ka&rdquo; &mdash; heart of stone &mdash; as an insult. But consider the stone. It was here before you and will be here after. It has been walked on, sat upon, thrown, built into walls, worshipped as a god. Through all of this, it remained itself. That is not coldness. That is constancy.</p>
+      <p>You have stones inside you. The values you will not negotiate. The memories you refuse to let erode. The silences you maintain not because you have nothing to say, but because some things are too solid for words.</p>
+      <p>Name the stones. They are your geology &mdash; what you are made of beneath the soil.</p>
+      <p class="about-note">Your stones are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pathhar.js"></script>
+</body>
+</html>

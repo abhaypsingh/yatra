@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;nchal — the embrace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0901;&#x091A;&#x0932;</div>
+      <h1 class="title">&#x0100;nchal</h1>
+      <p class="subtitle">the embrace</p>
+      <p class="intro">Aanchal is the free end of a mother&rsquo;s saree &mdash; used to wipe a child&rsquo;s tears, to fan a sleeping face, to carry gathered fruit, to shield from sun. It is cloth that becomes care. <em>&#x0100;nchal</em> asks you to name the sheltering presences in your life &mdash; the people or spaces that wrapped around you like the soft end of a saree, protective without being possessive.</p>
+      <button class="begin-btn" id="beginBtn">shelter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What sheltered you like a mother's saree?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this embrace</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my aunt's kitchen, the friend who holds space without asking questions&hellip;">
+        <p class="write-prompt-2">How did it shelter you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it protected you from, how it felt to be wrapped in that care, what it carried for you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wrap</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;nchal</h2>
+      <p>The aanchal is not a blanket or a shawl. It is part of what a woman is already wearing. She does not reach for something extra to care for you &mdash; she uses what she has. The tears are wiped with the same cloth she wears. The shade is made from her own covering. This is what makes the aanchal sacred: it is care that costs the giver their own comfort.</p>
+      <p>You have known aanchals. People who gave you their shade while standing in the sun themselves. Spaces that wrapped you in safety without walls. Presences so gentle you forgot you were being held.</p>
+      <p>Name them. The aanchals that made the world softer.</p>
+      <p class="about-note">Your embraces are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="aanchal.js"></script>
+</body>
+</html>

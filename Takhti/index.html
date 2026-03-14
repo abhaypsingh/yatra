@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takht&#x012B; — the writing slate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0916;&#x094D;&#x0924;&#x0940;</div>
+      <h1 class="title">Takht&#x012B;</h1>
+      <p class="subtitle">the writing slate</p>
+      <p class="intro">A takhti is a wooden slate coated with chalk paste &mdash; the first writing surface for millions of children. You write on it, learn, and then wash it clean for the next lesson. Nothing is permanent. Every lesson makes way for the next. <em>Takht&#x012B;</em> asks you to name the things you learned and then let go of &mdash; the lessons that served their purpose and were washed away to make room for new understanding.</p>
+      <button class="begin-btn" id="beginBtn">write</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you learn and then release?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this slate</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the belief I outgrew, the skill that was a stepping stone to something else&hellip;">
+        <p class="write-prompt-2">What was written? What replaced it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the lesson it held, when you washed it clean, what was written next&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wash</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Takht&#x012B;</h2>
+      <p>The takhti teaches a beautiful paradox: writing is serious, but nothing written is forever. A child practices the same letter fifty times, and then washes the slate for tomorrow&rsquo;s letter. The learning stays in the hand, not on the board. The takhti is not storage &mdash; it is practice space.</p>
+      <p>Your life has takhti moments. The jobs that taught you skills you no longer use. The relationships that prepared you for the one that lasted. The beliefs you held fiercely until you were ready for better ones. None of it was wasted &mdash; it was practice.</p>
+      <p>Name the slates. They are the lessons you absorbed and released.</p>
+      <p class="about-note">Your slates are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="takhti.js"></script>
+</body>
+</html>

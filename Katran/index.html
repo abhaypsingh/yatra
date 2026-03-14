@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katran — the clipping</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0924;&#x0930;&#x0928;</div>
+      <h1 class="title">Katran</h1>
+      <p class="subtitle">the clipping</p>
+      <p class="intro">A katran is a small piece cut from something larger &mdash; a newspaper clipping saved in a drawer, a fabric scrap kept from a favourite shirt, a sentence copied into a notebook. It is a fragment preserved because it carries the essence of the whole. <em>Katran</em> asks you to name the clippings you have saved from life &mdash; the small fragments of larger experiences that you kept because they hold everything.</p>
+      <button class="begin-btn" id="beginBtn">save</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What fragments did you save from the whole?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this clipping</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the one sentence from a book that changed me, the photo from a trip that holds it all&hellip;">
+        <p class="write-prompt-2">What does this fragment hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was cut from what, why this piece carries the whole, where you keep it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">clip</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Katran</h2>
+      <p>Every Indian household has a drawer of katrans. Newspaper articles yellow with age. Fabric pieces from a wedding outfit long outgrown. Recipe cards in a grandmother&rsquo;s handwriting. These fragments are not the thing itself &mdash; they are the memory of the thing. And somehow the fragment is often more precious than the original, because it was chosen. Someone looked at the whole and said: this part. This is what I need to keep.</p>
+      <p>You have katrans too. A sentence from a conversation that you repeat to yourself. A moment from a year you otherwise can&rsquo;t recall. A gesture from a person you barely knew. Small clippings from a large life.</p>
+      <p>Name the clippings. They are the fragments that hold your whole story.</p>
+      <p class="about-note">Your clippings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="katran.js"></script>
+</body>
+</html>
