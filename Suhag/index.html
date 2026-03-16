@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suh&#x0101;g — the marital blessing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0941;&#x0939;&#x093E;&#x0917;</div>
+      <h1 class="title">Suh&#x0101;g</h1>
+      <p class="subtitle">the marital blessing</p>
+      <p class="intro">Suhag is the state of auspicious union &mdash; the bangle, the sindoor, the mangalsutra. But beyond ornaments, suhag is the promise that two lives will intertwine completely: in fortune and misfortune, in silence and speech, in the daily and the extraordinary. <em>Suh&#x0101;g</em> asks you to name the bonds you have honoured as sacred &mdash; not just marriages, but any union you treated as a vow rather than a convenience.</p>
+      <button class="begin-btn" id="beginBtn">honour</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bonds have you treated as sacred?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bond</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the marriage I fought to keep, the partnership I treated as a vow&hellip;">
+        <p class="write-prompt-2">What made it sacred? What did you honour?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the vow beneath the bond, how you honoured it in difficulty, what the union created that neither person could alone&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">vow</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Suh&#x0101;g</h2>
+      <p>Suhag is not happiness. It is commitment to something larger than happiness. The suhagan &mdash; the married woman &mdash; wears her bangles not because her life is easy, but because she has chosen to honour a bond regardless. The bangle may pinch. The sindoor may fade. But the commitment endures because it was never about comfort &mdash; it was about sacredness.</p>
+      <p>You have suhag bonds. The commitments you maintained when it was difficult. The partnerships you treated as holy ground even when the ground shook. The vows you kept not because they were easy but because you made them.</p>
+      <p>Name the bonds. They are the unions you chose to keep sacred.</p>
+      <p class="about-note">Your bonds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="suhag.js"></script>
+</body>
+</html>

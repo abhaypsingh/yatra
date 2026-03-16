@@ -1606,6 +1606,50 @@ body {
 .card-chaak::before { background: #a08868; }
 .card-chaak .card-enter { color: #a08868; }
 
+.card-gaddha:hover { border-color: #685848; }
+.card-gaddha::before { background: #685848; }
+.card-gaddha .card-enter { color: #685848; }
+
+.card-machaan:hover { border-color: #587848; }
+.card-machaan::before { background: #587848; }
+.card-machaan .card-enter { color: #587848; }
+
+.card-phuhaar:hover { border-color: #7898b0; }
+.card-phuhaar::before { background: #7898b0; }
+.card-phuhaar .card-enter { color: #7898b0; }
+
+.card-thaapi:hover { border-color: #c07840; }
+.card-thaapi::before { background: #c07840; }
+.card-thaapi .card-enter { color: #c07840; }
+
+.card-gobardhan:hover { border-color: #988848; }
+.card-gobardhan::before { background: #988848; }
+.card-gobardhan .card-enter { color: #988848; }
+
+.card-suhag:hover { border-color: #c04848; }
+.card-suhag::before { background: #c04848; }
+.card-suhag .card-enter { color: #c04848; }
+
+.card-khatal:hover { border-color: #907858; }
+.card-khatal::before { background: #907858; }
+.card-khatal .card-enter { color: #907858; }
+
+.card-dalaan:hover { border-color: #a09880; }
+.card-dalaan::before { background: #a09880; }
+.card-dalaan .card-enter { color: #a09880; }
+
+.card-sipahi:hover { border-color: #607080; }
+.card-sipahi::before { background: #607080; }
+.card-sipahi .card-enter { color: #607080; }
+
+.card-baansuri:hover { border-color: #a08860; }
+.card-baansuri::before { background: #a08860; }
+.card-baansuri .card-enter { color: #a08860; }
+
+.card-mandap:hover { border-color: #c08858; }
+.card-mandap::before { background: #c08858; }
+.card-mandap .card-enter { color: #c08858; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

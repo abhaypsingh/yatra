@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mach&#x0101;n — the watchtower platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x091A;&#x093E;&#x0928;</div>
+      <h1 class="title">Mach&#x0101;n</h1>
+      <p class="subtitle">the watchtower platform</p>
+      <p class="intro">A machaan is a raised bamboo platform built in a tree or on stilts &mdash; farmers sit on it at night to guard crops from wild animals. It is vigilance made into architecture. You sit alone, above the world, watching and waiting in the dark. <em>Mach&#x0101;n</em> asks you to name the times you kept watch over something precious &mdash; the lonely vigils where your attention was the only defence.</p>
+      <button class="begin-btn" id="beginBtn">guard</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you guard from your solitary perch?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this vigil</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the nights I stayed up with a sick child, the years I watched over a fading parent&hellip;">
+        <p class="write-prompt-2">What were you guarding? What came in the dark?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was precious, the loneliness of the watch, what threatened, how dawn felt when it finally came&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">watch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mach&#x0101;n</h2>
+      <p>The machaan is the loneliest structure in Indian agriculture. A farmer climbs up with a lantern and a stick, and sits there all night. Below, the crop he spent months growing. In the darkness, the animals that would eat it in minutes. His only weapon is wakefulness. His only strategy is presence.</p>
+      <p>You have sat on machaans. The vigils over a relationship that was under threat. The watchful years of early parenthood. The time you stayed alert while others slept because something precious depended on your attention.</p>
+      <p>Name the vigils. They are the lonely nights that protected the harvest.</p>
+      <p class="about-note">Your vigils are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="machaan.js"></script>
+</body>
+</html>

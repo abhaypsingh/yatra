@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaddh&#x0101; — the pit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0921;&#x094D;&#x0922;&#x093E;</div>
+      <h1 class="title">Gaddh&#x0101;</h1>
+      <p class="subtitle">the pit</p>
+      <p class="intro">A gaddha is a hole in the ground &mdash; sometimes dug on purpose, sometimes the earth simply gives way. You fall before you see it. The descent is sudden. The climb out is slow. <em>Gaddh&#x0101;</em> asks you to name the pits you have fallen into &mdash; the depressions, failures, or collapses that took you below ground level, and the slow work of climbing back to the surface.</p>
+      <button class="begin-btn" id="beginBtn">descend</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What pits did you fall into and climb out of?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pit</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the depression that swallowed six months, the financial hole I dug for myself&hellip;">
+        <p class="write-prompt-2">How deep was it? How did you climb out?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how you fell, what the bottom looked like, the first handhold on the way back up&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">climb</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gaddh&#x0101;</h2>
+      <p>Nobody plans to fall into a gaddha. That is the nature of pits &mdash; they appear where you expect solid ground. One step and the earth gives way. You find yourself below the surface, looking up at a world that continues without you. The sky seems very far from a pit.</p>
+      <p>But pits teach. They teach that the ground is not always trustworthy. They teach the strength in your arms when you must pull yourself up with no ladder. They teach that the view from ground level, after you have been below it, is more beautiful than before you fell.</p>
+      <p>Name the pits. They are where you learned the strength of your own climb.</p>
+      <p class="about-note">Your pits are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gaddha.js"></script>
+</body>
+</html>

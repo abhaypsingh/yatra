@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuh&#x0101;r — the drizzle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x0941;&#x0939;&#x093E;&#x0930;</div>
+      <h1 class="title">Phuh&#x0101;r</h1>
+      <p class="subtitle">the drizzle</p>
+      <p class="intro">Phuhaar is not rain. It is the lightest mist of water &mdash; barely visible, almost imagined. You walk through it and only realise you are wet when you touch your arm. It accumulates so gently that you never think to seek shelter. <em>Phuh&#x0101;r</em> asks you to name the gentle accumulations in your life &mdash; the influences so subtle you did not notice them until you were already soaked.</p>
+      <button class="begin-btn" id="beginBtn">walk</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What soaked you so gently you didn't notice?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this drizzle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily example my mother set without preaching, the culture that shaped me without my awareness&hellip;">
+        <p class="write-prompt-2">When did you realise you were already wet?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the subtle influence, how long it took to notice, the moment you touched your arm and found it soaked&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">feel</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Phuh&#x0101;r</h2>
+      <p>The phuhaar is the most deceptive form of rain. A downpour announces itself &mdash; you run, you find shelter, you wait it out. But the phuhaar never triggers urgency. It is so light you keep walking. And walking. And walking. Until your clothes are heavy, your hair is plastered to your head, and you are more drenched than any downpour would have left you. Because you never stopped to protect yourself.</p>
+      <p>The most profound influences in your life were phuhaars. Not the dramatic events but the daily exposures. The values you absorbed by watching, not by being taught. The habits that seeped in from proximity.</p>
+      <p>Name the drizzles. They are the gentlest forces that changed you the most.</p>
+      <p class="about-note">Your drizzles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="phuhaar.js"></script>
+</body>
+</html>

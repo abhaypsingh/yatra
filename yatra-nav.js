@@ -382,7 +382,18 @@
         ['Pahiya', 'Pahiy\u0101', 'the wheel'],
         ['Murabba', 'Murabb\u0101', 'the preserve'],
         ['Dehliz', 'Dehl\u012Bz', 'the corridor'],
-        ['Chaak', 'Ch\u0101k', 'the potter\'s wheel']
+        ['Chaak', 'Ch\u0101k', 'the potter\'s wheel'],
+        ['Gaddha', 'Gaddh\u0101', 'the pit'],
+        ['Machaan', 'Mach\u0101n', 'the watchtower platform'],
+        ['Phuhaar', 'Phuh\u0101r', 'the drizzle'],
+        ['Thaapi', 'Th\u0101p\u012B', 'the hand-stamp'],
+        ['Gobardhan', 'Gobardhan', 'the dung-cake mountain'],
+        ['Suhag', 'Suh\u0101g', 'the marital blessing'],
+        ['Khatal', 'Kha\u1E6Dal', 'the cattle shed'],
+        ['Dalaan', 'Dal\u0101n', 'the verandah'],
+        ['Sipahi', 'Sip\u0101h\u012B', 'the soldier'],
+        ['Baansuri', 'B\u0101nsur\u012B', 'the bamboo flute'],
+        ['Mandap', 'Ma\u1E47\u1E0Dap', 'the canopy']
       ]
     }
   ];
@@ -449,7 +460,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 346 experiences';
+    sub.textContent = 'the journey \u2014 357 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

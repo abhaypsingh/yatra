@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobardhan — the dung-cake mountain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x094B;&#x092C;&#x0930;&#x094D;&#x0927;&#x0928;</div>
+      <h1 class="title">Gobardhan</h1>
+      <p class="subtitle">the dung-cake mountain</p>
+      <p class="intro">Gobardhan is the mound of dung cakes stacked outside a village home &mdash; fuel for the winter, made by hand from the most humble material imaginable. It is wealth built from what others discard. <em>Gobardhan</em> asks you to name the things you built from humble materials &mdash; the achievements constructed from what was dismissed or discarded by others, the sacred made from the ordinary.</p>
+      <button class="begin-btn" id="beginBtn">build</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you build from what others discarded?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this mound</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the career I built from a rejected path, the strength I gathered from my failures&hellip;">
+        <p class="write-prompt-2">What was the humble material? What did you build?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what others dismissed, how you shaped it, the warmth it provided when winter came&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stack</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gobardhan</h2>
+      <p>The city person sees dung and looks away. The village woman sees fuel, insulation, building material, and sacred offering. On Govardhan Puja, the dung cake is worshipped &mdash; because it kept the family warm, it cooked their food, it was the difference between surviving winter and not. What is humble is not what lacks value &mdash; it is what is undervalued by those who do not know its use.</p>
+      <p>You have made gobardhans. The skills others dismissed that became your livelihood. The experiences that seemed like waste but became the fuel for your next chapter. The humble beginnings that built a mountain.</p>
+      <p>Name the mounds. They are the sacred wealth you built from what others threw away.</p>
+      <p class="about-note">Your mounds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gobardhan.js"></script>
+</body>
+</html>

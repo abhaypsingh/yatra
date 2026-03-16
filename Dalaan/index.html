@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dal&#x0101;n — the verandah</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x093E;&#x0932;&#x093E;&#x0928;</div>
+      <h1 class="title">Dal&#x0101;n</h1>
+      <p class="subtitle">the verandah</p>
+      <p class="intro">A dalaan is the covered verandah at the front of a house &mdash; roofed but open-sided, where inside and outside meet. Children do homework here. Elders nap here. Neighbours stop to chat without entering. The dalaan belongs to both the house and the street. <em>Dal&#x0101;n</em> asks you to name the threshold spaces in your life where your private self and public self coexist &mdash; the verandahs where you are both home and visible.</p>
+      <button class="begin-btn" id="beginBtn">sit</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where do your private and public selves coexist?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this verandah</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the social media presence where I'm real but curated, the coffee chats where I'm honest but careful&hellip;">
+        <p class="write-prompt-2">What meets here?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the inside brings to this space, what the outside sees, the comfort of being sheltered but not hidden&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rest</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dal&#x0101;n</h2>
+      <p>The dalaan is the most sociable part of an Indian home. It has a roof but no walls. You are sheltered from sun and rain but open to every passerby. The dalaan says: I live here, and I am available. Come, sit, talk. You don&rsquo;t need to enter my house to enter my company.</p>
+      <p>Your dalaans are the parts of yourself you make accessible without making yourself fully vulnerable. The warmth you offer without opening every room. The hospitality that has limits but not walls.</p>
+      <p>Name the verandahs. They are the gracious spaces between privacy and openness.</p>
+      <p class="about-note">Your verandahs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dalaan.js"></script>
+</body>
+</html>

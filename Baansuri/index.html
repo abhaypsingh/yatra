@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x0101;nsur&#x012B; — the bamboo flute</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0901;&#x0938;&#x0941;&#x0930;&#x0940;</div>
+      <h1 class="title">B&#x0101;nsur&#x012B;</h1>
+      <p class="subtitle">the bamboo flute</p>
+      <p class="intro">A baansuri is a hollow piece of bamboo with holes burned into it. It makes music only because it is empty &mdash; because the breath passes through the hollow, shaped by the holes. The flute that is solid makes no sound. <em>B&#x0101;nsur&#x012B;</em> asks you to name the music you have made from your emptiness &mdash; the beauty that emerged from your hollows, losses, and openings.</p>
+      <button class="begin-btn" id="beginBtn">play</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What music have you made from your emptiness?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this flute</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the compassion born from my own suffering, the art made from my grief&hellip;">
+        <p class="write-prompt-2">What was the hollow? What music did it make?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was empty, how the breath of life passed through, the song that the hollow made possible&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">breathe</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x0101;nsur&#x012B;</h2>
+      <p>Krishna&rsquo;s flute is the most beloved instrument in Indian mythology. But consider what it is: a stick of bamboo, hollowed out, with holes burned through it. Every hole is a wound. Every emptiness is a prerequisite. The baansuri teaches that music requires hollowness. A solid bamboo can be a staff or a weapon &mdash; but only the empty one can sing.</p>
+      <p>Your losses hollowed you. Your wounds burned holes into you. And through those hollows and holes, life&rsquo;s breath now makes music that a solid person could never produce. Your emptiness is not your weakness &mdash; it is your instrument.</p>
+      <p>Name the flutes. They are the music that only your particular emptiness could make.</p>
+      <p class="about-note">Your flutes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="baansuri.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma&#x1E47;&#x1E0D;ap — the canopy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0923;&#x094D;&#x0921;&#x092A;</div>
+      <h1 class="title">Ma&#x1E47;&#x1E0D;ap</h1>
+      <p class="subtitle">the canopy</p>
+      <p class="intro">A mandap is the temporary canopy erected for a wedding or ceremony &mdash; four pillars, a roof of flowers and cloth, and a sacred fire at the centre. It lasts only as long as the ceremony, then it is dismantled. But what happens beneath it lasts a lifetime. <em>Ma&#x1E47;&#x1E0D;ap</em> asks you to name the temporary sacred spaces in your life &mdash; the canopies under which permanent commitments were made.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Under what temporary canopies did you make permanent vows?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this canopy</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the hospital room where I held my newborn, the conversation that changed a relationship forever&hellip;">
+        <p class="write-prompt-2">What happened beneath it? What lasted after it was taken down?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the temporary space, the permanent thing created within it, the fire at the centre&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">vow</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ma&#x1E47;&#x1E0D;ap</h2>
+      <p>The mandap is a paradox: a temporary structure for a permanent act. It is built in hours and dismantled in minutes, yet the vows taken beneath it are meant to last seven lifetimes. The flowers wilt. The cloth is folded and returned. The fire is ashes by morning. But the couple who walked around that fire are bound beyond the structure&rsquo;s lifetime.</p>
+      <p>Your mandaps were the brief, sacred containers. The interview room where your career was decided. The hospital bed where your child was born. The park bench where a friendship became lifelong. Temporary spaces, permanent transformations.</p>
+      <p>Name the canopies. They are the brief shelters under which your life was permanently altered.</p>
+      <p class="about-note">Your canopies are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mandap.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sip&#x0101;h&#x012B; — the soldier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x092A;&#x093E;&#x0939;&#x0940;</div>
+      <h1 class="title">Sip&#x0101;h&#x012B;</h1>
+      <p class="subtitle">the soldier</p>
+      <p class="intro">A sipahi is not a general. He does not make the plan or give the order. He stands at the post he is assigned, holds the line he is given, and does not leave until relieved. The sipahi&rsquo;s virtue is not glory &mdash; it is reliability. <em>Sip&#x0101;h&#x012B;</em> asks you to name the posts where you stood guard without recognition &mdash; the duties you held not because they were heroic but because someone had to.</p>
+      <button class="begin-btn" id="beginBtn">stand</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did you stand guard without recognition?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this post</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years I held the family together, the role nobody thanked me for&hellip;">
+        <p class="write-prompt-2">What line did you hold? Who did you protect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the post you were assigned, how long you held it, what would have fallen without you standing there&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sip&#x0101;h&#x012B;</h2>
+      <p>History remembers generals. It does not remember the sipahi who stood at the gate through the night, who marched in the dust without knowing the strategy, who held a position simply because he was told to. Yet every victory belongs to the sipahi more than the general &mdash; because victory is built from a thousand small holdings, not one great command.</p>
+      <p>You have been a sipahi. The eldest child who held the family line. The employee who did the unglamorous work. The friend who showed up every time, not because it was exciting but because you were needed.</p>
+      <p>Name the posts. They are where your reliability saved what mattered.</p>
+      <p class="about-note">Your posts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sipahi.js"></script>
+</body>
+</html>

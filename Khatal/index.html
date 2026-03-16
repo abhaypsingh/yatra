@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kha&#x1E6D;al — the cattle shed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x091F;&#x093E;&#x0932;</div>
+      <h1 class="title">Kha&#x1E6D;al</h1>
+      <p class="subtitle">the cattle shed</p>
+      <p class="intro">A khatal is the low-roofed space where cattle rest &mdash; warm with animal breath, thick with the smell of hay and dung. It is unglamorous. But it is where the family&rsquo;s true wealth lives &mdash; the animals that give milk, pull ploughs, and sustain the household. <em>Kha&#x1E6D;al</em> asks you to name the unglamorous responsibilities you tend daily &mdash; the duties that sustain everything but receive no admiration.</p>
+      <button class="begin-btn" id="beginBtn">tend</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What unglamorous duties sustain your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shed</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the finances I manage quietly, the health routine nobody sees&hellip;">
+        <p class="write-prompt-2">What does it sustain? What would collapse without it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the duty you tend, why nobody notices, what it keeps alive, the smell of the work&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">feed</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kha&#x1E6D;al</h2>
+      <p>Nobody photographs the khatal. Nobody writes poems about it. It smells. The work is repetitive: feed, water, clean, repeat. But take away the khatal and the household collapses. No milk for the children. No dung for fuel. No ox for the field. The glamorous harvest depends entirely on the unglamorous shed.</p>
+      <p>Your khatals are the invisible responsibilities. The bills you pay on time. The groceries you restock. The emotional labour of checking in on everyone. Work that nobody applauds because nobody notices until it stops.</p>
+      <p>Name the sheds. They are the unglamorous foundations of everything that matters.</p>
+      <p class="about-note">Your sheds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khatal.js"></script>
+</body>
+</html>
