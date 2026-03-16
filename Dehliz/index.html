@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dehl&#x012B;z — the corridor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0947;&#x0939;&#x0932;&#x0940;&#x095B;</div>
+      <h1 class="title">Dehl&#x012B;z</h1>
+      <p class="subtitle">the corridor</p>
+      <p class="intro">A dehliz is the narrow passage between one room and another &mdash; not a room itself, but the space between rooms. You do not live in a dehliz; you pass through it. Yet it connects everything. Without the corridor, rooms are just isolated boxes. <em>Dehl&#x012B;z</em> asks you to name the passages in your life &mdash; the transitional spaces between one phase and the next, where you were neither here nor there but moving.</p>
+      <button class="begin-btn" id="beginBtn">pass</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What corridors connected the rooms of your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this corridor</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the gap year between school and purpose, the months between a breakup and healing&hellip;">
+        <p class="write-prompt-2">What rooms did it connect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were leaving, what you were approaching, how long the corridor was, what you learned while passing through&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">walk</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dehl&#x012B;z</h2>
+      <p>Nobody decorates the dehliz. It is the forgotten architecture of a house &mdash; the narrow space everyone passes through but no one claims. And yet it is the most important part of the house. Without it, you cannot get from the kitchen to the bedroom, from the public room to the private one. The corridor is what makes a house liveable.</p>
+      <p>Your dehlizes are the transition periods. The months between jobs. The years between who you were and who you became. The conversations that moved you from one understanding to another. They were uncomfortable &mdash; narrow, dim, purposeless-seeming. But they connected everything.</p>
+      <p>Name the corridors. They are how you got from room to room.</p>
+      <p class="about-note">Your corridors are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dehliz.js"></script>
+</body>
+</html>

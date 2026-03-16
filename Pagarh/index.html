@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paga&#x1E5B;h — the turban</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0917;&#x095C;</div>
+      <h1 class="title">Paga&#x1E5B;h</h1>
+      <p class="subtitle">the turban</p>
+      <p class="intro">A pagarh is not just cloth wound around the head &mdash; it is honour made visible. In Rajasthan, a man&rsquo;s turban is his self-respect. To remove it is to surrender. To tie it on another is to crown them. The way it is wound, its colour, its height &mdash; each tells a story. <em>Paga&#x1E5B;h</em> asks you to name the dignities you wear &mdash; the standards you visibly maintain that tell the world who you are and what you will not compromise.</p>
+      <button class="begin-btn" id="beginBtn">wind</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dignities do you visibly wear?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this turban</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the standard I maintain in public, the dignity I refuse to lay down&hellip;">
+        <p class="write-prompt-2">How do you wear it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it declares, who recognises it, the moment you first wound it around yourself&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">crown</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Paga&#x1E5B;h</h2>
+      <p>In Rajasthan, they say: &ldquo;Pagdi rakh, maan rakh&rdquo; &mdash; keep the turban, keep the honour. The turban is not vanity. It is a public commitment to a standard. When you tie a turban, you are saying: I will behave in a way worthy of this cloth. It is a promise you make to yourself, worn where the world can see it.</p>
+      <p>You wear turbans. The professional standard you refuse to lower. The moral boundary you maintain visibly. The self-respect that is wound around you every morning, layer by layer, before you step outside.</p>
+      <p>Name the turbans. They are the dignities you choose to wear in public.</p>
+      <p class="about-note">Your turbans are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pagarh.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bair&#x0101;g&#x012B; — the renunciant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0948;&#x0930;&#x093E;&#x0917;&#x0940;</div>
+      <h1 class="title">Bair&#x0101;g&#x012B;</h1>
+      <p class="subtitle">the renunciant</p>
+      <p class="intro">A bairagi is one who has let go &mdash; not from weakness, but from understanding. They leave behind what others cling to, not because it has no value, but because holding it prevents something larger. <em>Bair&#x0101;g&#x012B;</em> asks you to name what you have consciously renounced &mdash; the ambitions, attachments, or identities you walked away from so that your hands would be free for something else.</p>
+      <button class="begin-btn" id="beginBtn">release</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you walk away from so your hands would be free?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this renunciation</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the career I left for my family, the grudge I put down after carrying it for years&hellip;">
+        <p class="write-prompt-2">What did letting go make room for?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you released, the moment of letting go, what rushed in to fill the empty hands&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">let go</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bair&#x0101;g&#x012B;</h2>
+      <p>The bairagi is often pitied by the householder: look at what they gave up. But the bairagi sees it differently: look at what I gained by having empty hands. Renunciation is not loss. It is strategic emptiness. It is the understanding that you cannot hold the new until you release the old.</p>
+      <p>You have been a bairagi. The promotion you declined because it would cost your evenings. The opinion you stopped defending because peace was worth more than being right. The identity you shed because it no longer fit who you were becoming.</p>
+      <p>Name the renunciations. They are the things you put down so you could pick up something better.</p>
+      <p class="about-note">Your renunciations are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bairagi.js"></script>
+</body>
+</html>

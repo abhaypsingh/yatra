@@ -364,7 +364,25 @@
         ['Peepli', 'P\u012Bpl\u012B', 'the sacred fig leaf'],
         ['Chhajja', 'Chhajj\u0101', 'the overhang'],
         ['Mohur', 'Mohur', 'the gold coin'],
-        ['Baithak', 'Bai\u1E6Dhak', 'the sitting room']
+        ['Baithak', 'Bai\u1E6Dhak', 'the sitting room'],
+        ['Chaunka', 'Chaunk\u0101', 'the kitchen hearth'],
+        ['Phulkari', 'Phulk\u0101r\u012B', 'the flower work'],
+        ['Attari', 'A\u1E6D\u1E6D\u0101r\u012B', 'the watchtower'],
+        ['Gokhra', 'Gokhr\u0101', 'the ventilation grate'],
+        ['Lehar', 'Lehar', 'the wave'],
+        ['Pagarh', 'Paga\u1E5Bh', 'the turban'],
+        ['Bandhej', 'Bandhej', 'the tie-dye'],
+        ['Silaai', 'Sil\u0101\u012B', 'the stitching'],
+        ['Kamaan', 'Kam\u0101n', 'the bow'],
+        ['Bairagi', 'Bair\u0101g\u012B', 'the renunciant'],
+        ['Chiragh', 'Chir\u0101gh', 'the oil lamp'],
+        ['Gauna', 'Gaun\u0101', 'the departure'],
+        ['Kathal', 'Kathal', 'the jackfruit'],
+        ['Moongphali', 'M\u016Bngphal\u012B', 'the peanut'],
+        ['Pahiya', 'Pahiy\u0101', 'the wheel'],
+        ['Murabba', 'Murabb\u0101', 'the preserve'],
+        ['Dehliz', 'Dehl\u012Bz', 'the corridor'],
+        ['Chaak', 'Ch\u0101k', 'the potter\'s wheel']
       ]
     }
   ];
@@ -431,7 +449,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 328 experiences';
+    sub.textContent = 'the journey \u2014 346 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

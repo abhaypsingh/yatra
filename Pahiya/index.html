@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pahiy&#x0101; — the wheel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0939;&#x093F;&#x092F;&#x093E;</div>
+      <h1 class="title">Pahiy&#x0101;</h1>
+      <p class="subtitle">the wheel</p>
+      <p class="intro">A pahiya turns. That is all it does. But in that turning, it carries the weight of the entire cart forward. It meets the same ground again and again, yet each revolution covers new distance. <em>Pahiy&#x0101;</em> asks you to name the cycles in your life that moved you forward &mdash; the repetitions that felt like going in circles but were actually carrying you somewhere.</p>
+      <button class="begin-btn" id="beginBtn">turn</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What cycles carried you forward?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wheel</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily practice that built mastery over years, the seasonal rhythm that anchored my family&hellip;">
+        <p class="write-prompt-2">What weight did it carry? Where did the turning take you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the repetition, the weight borne, the distance covered that you only see looking back&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">roll</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pahiy&#x0101;</h2>
+      <p>The wheel is the oldest metaphor for progress hidden inside repetition. Every point on the rim passes through the same position again and again. If you watch a single spot on the wheel, it seems to go nowhere. But if you watch the cart, it has crossed a continent. The spot was never going in circles &mdash; it was drawing a cycloid, moving forward with every turn.</p>
+      <p>Your daily routines are pahiyas. The same morning, the same commute, the same bedtime ritual. It feels repetitive. But the cart &mdash; your life &mdash; has moved enormous distances because of those turns.</p>
+      <p>Name the wheels. They are the faithful cycles that carried everything forward.</p>
+      <p class="about-note">Your wheels are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pahiya.js"></script>
+</body>
+</html>

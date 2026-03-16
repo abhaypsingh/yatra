@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phulk&#x0101;r&#x012B; — the flower work</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x0941;&#x0932;&#x0915;&#x093E;&#x0930;&#x0940;</div>
+      <h1 class="title">Phulk&#x0101;r&#x012B;</h1>
+      <p class="subtitle">the flower work</p>
+      <p class="intro">Phulkari is the Punjabi art of embroidering flowers onto fabric &mdash; bright threads on a dark base, turning plain cloth into a garden. Mothers and grandmothers stitched phulkari over months, one thread at a time, transforming the ordinary into something radiant. <em>Phulk&#x0101;r&#x012B;</em> asks you to name the beauty you have stitched into the ordinary fabric of your life &mdash; the patient work that turned plain days into something worth wearing.</p>
+      <button class="begin-btn" id="beginBtn">stitch</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What beauty have you stitched into ordinary cloth?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this embroidery</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the garden I built over years, the home I made beautiful one corner at a time&hellip;">
+        <p class="write-prompt-2">What was the plain cloth? What flowers did you stitch?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the ordinary thing you beautified, the patience it took, the pattern that emerged&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bloom</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Phulk&#x0101;r&#x012B;</h2>
+      <p>Phulkari is worked from the back of the fabric. The embroiderer cannot see the flowers forming on the front. She works by feel, by count, by faith &mdash; trusting that the pattern she cannot see is emerging beautifully. This is the deepest metaphor: the most beautiful things in life are built while looking at the plain side.</p>
+      <p>You have done phulkari. The years of parenting whose pattern you cannot yet see. The daily practice whose mastery will only show later. The kindness stitched in, thread by thread, whose design will be visible only when turned over.</p>
+      <p>Name the flower work. Trust the pattern you cannot yet see.</p>
+      <p class="about-note">Your embroideries are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="phulkari.js"></script>
+</body>
+</html>

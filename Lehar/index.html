@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lehar — the wave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x0939;&#x0930;</div>
+      <h1 class="title">Lehar</h1>
+      <p class="subtitle">the wave</p>
+      <p class="intro">A lehar rises from depth, travels a great distance, touches the shore, and returns. It does not stay. It cannot be held. Yet it shapes the coastline over lifetimes. <em>Lehar</em> asks you to name the waves in your life &mdash; the forces that arrived from somewhere deep, touched you powerfully, and then receded, leaving you permanently reshaped.</p>
+      <button class="begin-btn" id="beginBtn">ride</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What waves reshaped your shore?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wave</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the grief that washed over me and receded, the inspiration that surged and then ebbed&hellip;">
+        <p class="write-prompt-2">What did it reshape?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it came from, how high it rose, what the shore looked like after it receded&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">crest</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lehar</h2>
+      <p>A wave is not water moving forward &mdash; it is energy passing through water. The water stays roughly where it is. The wave travels. This means that what touched you was not the thing itself but the force moving through it. The person who changed your life may not have intended to. The event that reshaped you may have been incidental. But the wave was real.</p>
+      <p>Your lehars are the surges of emotion, insight, or change that rose, crested, and fell back. They did not stay &mdash; but your coastline is different because they came.</p>
+      <p>Name the waves. They are the invisible forces that shaped your visible shore.</p>
+      <p class="about-note">Your waves are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lehar.js"></script>
+</body>
+</html>

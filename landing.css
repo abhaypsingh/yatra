@@ -1534,6 +1534,78 @@ body {
 .card-baithak::before { background: #907868; }
 .card-baithak .card-enter { color: #907868; }
 
+.card-chaunka:hover { border-color: #b08048; }
+.card-chaunka::before { background: #b08048; }
+.card-chaunka .card-enter { color: #b08048; }
+
+.card-phulkari:hover { border-color: #c85880; }
+.card-phulkari::before { background: #c85880; }
+.card-phulkari .card-enter { color: #c85880; }
+
+.card-attari:hover { border-color: #687080; }
+.card-attari::before { background: #687080; }
+.card-attari .card-enter { color: #687080; }
+
+.card-gokhra:hover { border-color: #889088; }
+.card-gokhra::before { background: #889088; }
+.card-gokhra .card-enter { color: #889088; }
+
+.card-lehar:hover { border-color: #4888b0; }
+.card-lehar::before { background: #4888b0; }
+.card-lehar .card-enter { color: #4888b0; }
+
+.card-pagarh:hover { border-color: #c09048; }
+.card-pagarh::before { background: #c09048; }
+.card-pagarh .card-enter { color: #c09048; }
+
+.card-bandhej:hover { border-color: #c04868; }
+.card-bandhej::before { background: #c04868; }
+.card-bandhej .card-enter { color: #c04868; }
+
+.card-silaai:hover { border-color: #907060; }
+.card-silaai::before { background: #907060; }
+.card-silaai .card-enter { color: #907060; }
+
+.card-kamaan:hover { border-color: #886048; }
+.card-kamaan::before { background: #886048; }
+.card-kamaan .card-enter { color: #886048; }
+
+.card-bairagi:hover { border-color: #687068; }
+.card-bairagi::before { background: #687068; }
+.card-bairagi .card-enter { color: #687068; }
+
+.card-chiragh:hover { border-color: #c0a040; }
+.card-chiragh::before { background: #c0a040; }
+.card-chiragh .card-enter { color: #c0a040; }
+
+.card-gauna:hover { border-color: #a07888; }
+.card-gauna::before { background: #a07888; }
+.card-gauna .card-enter { color: #a07888; }
+
+.card-kathal:hover { border-color: #88a048; }
+.card-kathal::before { background: #88a048; }
+.card-kathal .card-enter { color: #88a048; }
+
+.card-moongphali:hover { border-color: #b09868; }
+.card-moongphali::before { background: #b09868; }
+.card-moongphali .card-enter { color: #b09868; }
+
+.card-pahiya:hover { border-color: #808890; }
+.card-pahiya::before { background: #808890; }
+.card-pahiya .card-enter { color: #808890; }
+
+.card-murabba:hover { border-color: #c07838; }
+.card-murabba::before { background: #c07838; }
+.card-murabba .card-enter { color: #c07838; }
+
+.card-dehliz:hover { border-color: #787080; }
+.card-dehliz::before { background: #787080; }
+.card-dehliz .card-enter { color: #787080; }
+
+.card-chaak:hover { border-color: #a08868; }
+.card-chaak::before { background: #a08868; }
+.card-chaak .card-enter { color: #a08868; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

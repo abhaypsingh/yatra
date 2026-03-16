@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;k — the potter's wheel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0915;</div>
+      <h1 class="title">Ch&#x0101;k</h1>
+      <p class="subtitle">the potter&rsquo;s wheel</p>
+      <p class="intro">A chaak spins, and the potter&rsquo;s hands shape the spinning clay into form. Too much pressure and the pot collapses. Too little and it stays a shapeless lump. The vessel is born from the balance between centrifugal force and human touch. <em>Ch&#x0101;k</em> asks you to name the spinning forces in your life that shaped you into form &mdash; the pressures that, balanced with care, turned raw material into something that could hold water.</p>
+      <button class="begin-btn" id="beginBtn">shape</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What spinning forces shaped you into form?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wheel</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the discipline that shaped my character, the pressure of early career that formed my skills&hellip;">
+        <p class="write-prompt-2">What was the clay? What form emerged?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the raw material, the spinning force, the hands that shaped you, the vessel you became&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">form</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;k</h2>
+      <p>The chaak is ancient and simple: a spinning disc, a lump of clay, two hands. But from this simplicity comes infinite form. The same wheel can produce a water pot, a lamp, a cup, a vase. The wheel does not decide the form &mdash; the hands do. And the hands must be both firm and gentle, knowing when to press and when to let the spin do the work.</p>
+      <p>Your life has been a chaak. The circumstances spun, and someone&rsquo;s hands &mdash; a parent&rsquo;s, a teacher&rsquo;s, your own &mdash; applied just enough pressure to give you shape. You are the vessel that emerged from that balance of force and tenderness.</p>
+      <p>Name the wheels. They are where you were shaped from clay into form.</p>
+      <p class="about-note">Your wheels are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaak.js"></script>
+</body>
+</html>

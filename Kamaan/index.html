@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kam&#x0101;n — the bow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x092E;&#x093E;&#x0928;</div>
+      <h1 class="title">Kam&#x0101;n</h1>
+      <p class="subtitle">the bow</p>
+      <p class="intro">A kamaan works through tension. The more you pull it back, the farther the arrow flies. Without resistance, there is no release. Without the backward pull, there is no forward launch. <em>Kam&#x0101;n</em> asks you to name the tensions you have drawn in your life &mdash; the moments of pulling back that preceded your farthest launches, the resistances that were preparation, not failure.</p>
+      <button class="begin-btn" id="beginBtn">draw</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What tensions preceded your farthest launches?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bow</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the setback that launched my best work, the resistance that made me stronger&hellip;">
+        <p class="write-prompt-2">How far back were you pulled? How far did you fly?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the tension, the target, the moment of release, how far the arrow travelled&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">release</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kam&#x0101;n</h2>
+      <p>The bow teaches: going backward is part of going forward. The arrow must be drawn back before it can fly. The string must be pulled away from the target before it can propel towards it. In the moment of maximum tension, everything feels wrong &mdash; you are pointed at the ground, pulled away from where you want to go. But that is the moment of greatest potential.</p>
+      <p>Your kamaan moments were the times life pulled you back. The failures that stored energy. The waiting that built capacity. The tensions that, when released, launched you farther than you could have gone from a standing start.</p>
+      <p>Name the bows. They are the tensions that became trajectories.</p>
+      <p class="about-note">Your bows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kamaan.js"></script>
+</body>
+</html>

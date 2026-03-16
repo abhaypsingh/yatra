@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sil&#x0101;&#x012B; — the stitching</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0932;&#x093E;&#x0908;</div>
+      <h1 class="title">Sil&#x0101;&#x012B;</h1>
+      <p class="subtitle">the stitching</p>
+      <p class="intro">Silaai is the act of stitching &mdash; joining what was separate, mending what was torn. A needle enters, a thread follows, and two pieces of cloth become one. The stitch is the smallest unit of repair. <em>Sil&#x0101;&#x012B;</em> asks you to name the things you have mended with patience &mdash; the relationships, beliefs, or parts of yourself that were torn and stitched back together, seam by seam.</p>
+      <button class="begin-btn" id="beginBtn">mend</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What have you mended stitch by stitch?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stitching</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friendship I repaired after the fight, the confidence I sewed back after failure&hellip;">
+        <p class="write-prompt-2">Where was the tear? Does the seam show?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was torn, how you stitched it, whether the mend is visible or hidden, if it is stronger at the seam&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sew</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sil&#x0101;&#x012B;</h2>
+      <p>The Japanese have kintsugi &mdash; mending pottery with gold. Indians have silaai &mdash; mending cloth with thread. It is humbler. The thread matches the fabric. The stitch tries to be invisible. This is a different philosophy of repair: not celebrating the break, but quietly restoring wholeness. The garment is meant to be worn again, not displayed.</p>
+      <p>Your mending is like this. Quiet. Persistent. Stitch by stitch. The apology that took weeks to offer. The trust rebuilt one honest act at a time. The self-belief sewn back together with small daily proofs.</p>
+      <p>Name the stitchings. They are the quiet labour of making things whole again.</p>
+      <p class="about-note">Your stitches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="silaai.js"></script>
+</body>
+</html>

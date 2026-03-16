@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokhr&#x0101; — the ventilation grate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x094B;&#x0916;&#x0930;&#x093E;</div>
+      <h1 class="title">Gokhr&#x0101;</h1>
+      <p class="subtitle">the ventilation grate</p>
+      <p class="intro">A gokhra is a decorative ventilation opening in old Indian walls &mdash; carved stone or cement that lets air pass through without letting the eye see clearly. It is privacy and breath at once. Light enters in patterns. Air circulates. But the wall remains a wall. <em>Gokhr&#x0101;</em> asks you to name the small openings in your boundaries that let you breathe &mdash; the places where you are closed but not sealed.</p>
+      <button class="begin-btn" id="beginBtn">breathe</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where are the small openings that let you breathe?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this grate</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the journal where I admit what I hide from others, the one friend who knows the unfiltered truth&hellip;">
+        <p class="write-prompt-2">What air passes through?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what this opening lets in, how it keeps you from suffocating, what pattern the light makes&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">open</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gokhr&#x0101;</h2>
+      <p>The gokhra is brilliant architecture: a wall that breathes. It understands that being enclosed does not mean being sealed. That privacy does not require suffocation. That a boundary can have porosity without losing its purpose. The gokhra filters &mdash; it lets air through in delicate patterns while keeping the world at the right distance.</p>
+      <p>You need gokhras. The emotional walls you build need ventilation. The professional boundaries you maintain need small openings for honesty. Without gokhras, your walls become prisons. With them, they become homes.</p>
+      <p>Name the grates. They are how your boundaries breathe.</p>
+      <p class="about-note">Your grates are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gokhra.js"></script>
+</body>
+</html>

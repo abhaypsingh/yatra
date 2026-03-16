@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaun&#x0101; — the departure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x094C;&#x0928;&#x093E;</div>
+      <h1 class="title">Gaun&#x0101;</h1>
+      <p class="subtitle">the departure</p>
+      <p class="intro">Gauna is the ceremony when a bride leaves her parents&rsquo; home for the last time &mdash; the threshold she crosses that divides before and after. The whole family weeps. The doli is lifted. The daughter looks back, and then forward. <em>Gaun&#x0101;</em> asks you to name the departures in your life that divided time into before and after &mdash; the thresholds you crossed knowing you could not return as you were.</p>
+      <button class="begin-btn" id="beginBtn">depart</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What departures divided your life into before and after?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this departure</p>
+        <input class="write-name" id="writeName" type="text" placeholder="leaving home for college, the day I became a parent, the move to a new country&hellip;">
+        <p class="write-prompt-2">What was left behind? What waited ahead?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the threshold crossed, who wept, what you looked back at one last time, who you became on the other side&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cross</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gaun&#x0101;</h2>
+      <p>The gauna is the most honest ritual in Indian life. It does not pretend that leaving is painless. The tears are expected. The grief is public. Everyone acknowledges: something is ending so something else can begin. The bride does not sneak away &mdash; she leaves in full ceremony, with the weight of the moment honoured.</p>
+      <p>Your gaunas may not have had ceremony, but they had the same weight. The last day at a job. The last night in a childhood home. The moment you became responsible for another life. Each one crossed a line you could not uncross.</p>
+      <p>Name the departures. They are where your life turned its most important corners.</p>
+      <p class="about-note">Your departures are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gauna.js"></script>
+</body>
+</html>

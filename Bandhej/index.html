@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandhej — the tie-dye</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0902;&#x0927;&#x0947;&#x091C;</div>
+      <h1 class="title">Bandhej</h1>
+      <p class="subtitle">the tie-dye</p>
+      <p class="intro">Bandhej is the art of tying thousands of tiny knots in fabric before submerging it in dye. Where the knots are, the dye cannot reach. The pattern emerges from resistance &mdash; beauty created by what was protected from colour. <em>Bandhej</em> asks you to name the patterns in your life that emerged from resistance &mdash; the beauty that came from the places you tied tight and refused to let the world colour.</p>
+      <button class="begin-btn" id="beginBtn">tie</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What patterns emerged from your resistance?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pattern</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the part of me I protected from cynicism, the innocence I knotted tight against the world&hellip;">
+        <p class="write-prompt-2">What did the knot protect? What pattern emerged?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you refused to let be coloured, how the resistance created beauty, the pattern visible only after untying&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">dye</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bandhej</h2>
+      <p>The magic of bandhej is that the beauty comes from what was NOT dyed. The artisan does not paint the pattern &mdash; she protects it. Each tiny knot is a refusal: this spot will not take the colour. And when all the knots are untied, the protected spots form a constellation of dots that is more beautiful than the dye itself.</p>
+      <p>Your life has bandhej patterns. The parts of you that refused to be coloured by bitterness. The values that stayed white when the world tried to dye them. The resistance that, when released, revealed something beautiful.</p>
+      <p>Name the patterns. They are the beauty of your refusals.</p>
+      <p class="about-note">Your patterns are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bandhej.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaunk&#x0101; — the kitchen hearth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x094C;&#x0902;&#x0915;&#x093E;</div>
+      <h1 class="title">Chaunk&#x0101;</h1>
+      <p class="subtitle">the kitchen hearth</p>
+      <p class="intro">A chaunka is the sacred kitchen space &mdash; the platform where food is prepared, where the floor is washed clean before cooking begins. In traditional homes, you remove your shoes before entering the chaunka. Food is not just cooked here &mdash; it is offered. <em>Chaunk&#x0101;</em> asks you to name the fires around which your family nourished itself &mdash; the rituals of feeding that were also rituals of love.</p>
+      <button class="begin-btn" id="beginBtn">cook</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What fires nourished your family?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hearth</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the Sunday breakfast ritual, the kitchen where my grandmother hummed while cooking&hellip;">
+        <p class="write-prompt-2">What was fed beyond hunger?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was cooked, who gathered, what was nourished beyond the body&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">serve</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chaunk&#x0101;</h2>
+      <p>The chaunka is not a stove. It is the entire sacred space of food preparation. The floor is wiped with a wet cloth. Hands are washed. The first roti goes to the fire, to the cow, to the guest &mdash; never to oneself. This is the Indian kitchen&rsquo;s deepest teaching: that cooking is service, not just survival.</p>
+      <p>Your chaunkas are the rituals of nourishment that fed more than bodies. The family dinners that fed belonging. The lunchbox packed with love that fed a child&rsquo;s confidence. The meal shared with a stranger that fed your own humanity.</p>
+      <p>Name the hearths. They are where love was served warm.</p>
+      <p class="about-note">Your hearths are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaunka.js"></script>
+</body>
+</html>

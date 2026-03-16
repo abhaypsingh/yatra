@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chir&#x0101;gh — the oil lamp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0930;&#x093E;&#x0917;&#x093C;</div>
+      <h1 class="title">Chir&#x0101;gh</h1>
+      <p class="subtitle">the oil lamp</p>
+      <p class="intro">A chiragh burns by consuming itself. The oil is drawn up the wick, and the wick burns slowly, turning fuel into light. It illuminates the room by diminishing itself. Yet it is never pitied &mdash; it is honoured, lit at thresholds and altars. <em>Chir&#x0101;gh</em> asks you to name the lights you have lit in your life by consuming your own resources &mdash; the generosities that cost you something and illuminated others.</p>
+      <button class="begin-btn" id="beginBtn">light</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you illuminate by consuming yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lamp</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years I gave to raising my children, the energy spent mentoring others&hellip;">
+        <p class="write-prompt-2">What did your burning illuminate?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you consumed of yourself, what room it lit, who found their way by your light&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">burn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chir&#x0101;gh</h2>
+      <p>The chiragh does not resent its burning. It was made for this. Oil without a wick is just oil in a dish. A wick without flame is just thread. But together, burning, they become light. The chiragh teaches that purpose and cost are the same thing. To give light, something must be consumed.</p>
+      <p>You have been a chiragh. The sleepless nights that gave your child security. The effort that gave your team success. The patience that gave your partner peace. You burned &mdash; and the room was brighter because you did.</p>
+      <p>Name the lamps. They are the gifts that cost you something real.</p>
+      <p class="about-note">Your lamps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chiragh.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A&#x1E6D;&#x1E6D;&#x0101;r&#x012B; — the watchtower</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x091F;&#x094D;&#x091F;&#x093E;&#x0930;&#x0940;</div>
+      <h1 class="title">A&#x1E6D;&#x1E6D;&#x0101;r&#x012B;</h1>
+      <p class="subtitle">the watchtower</p>
+      <p class="intro">An attari is the highest room in a traditional Indian home &mdash; a small chamber on the terrace, used to watch for arrivals, to scan the horizon, to keep vigil. From the attari, you see farther than anyone in the house. <em>A&#x1E6D;&#x1E6D;&#x0101;r&#x012B;</em> asks you to name the high places in your life where you kept watch &mdash; the vantage points from which you saw what was coming before anyone else.</p>
+      <button class="begin-btn" id="beginBtn">watch</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">From what high places did you keep watch?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this watchtower</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the perspective gained after crisis, the clarity that comes from stepping back&hellip;">
+        <p class="write-prompt-2">What did you see from there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was visible only from that height, who you watched for, what you saw coming&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">scan</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>A&#x1E6D;&#x1E6D;&#x0101;r&#x012B;</h2>
+      <p>The attari was the room of vigilance. In the old cities, a woman would climb to the attari to watch for her husband returning from travel. A mother would scan the lanes for her children at dusk. The attari offered no comfort &mdash; it was small, hot, exposed to wind &mdash; but it offered sight. And sight is its own comfort.</p>
+      <p>You have climbed to attaris. The moments of clarity after confusion. The perspective that comes only from elevation &mdash; from stepping above the noise to see the full landscape. These high places are lonely, but they are where you see the truth.</p>
+      <p>Name the watchtowers. They are where you saw farthest.</p>
+      <p class="about-note">Your watchtowers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="attari.js"></script>
+</body>
+</html>
