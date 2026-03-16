@@ -356,7 +356,15 @@
         ['Chilman', 'Chilman', 'the curtain'],
         ['Poshak', 'Posh\u0101k', 'the garment'],
         ['Lapet', 'Lape\u1E6D', 'the wrap'],
-        ['Katran', 'Katran', 'the clipping']
+        ['Katran', 'Katran', 'the clipping'],
+        ['Chabutra', 'Chabutr\u0101', 'the platform'],
+        ['Gilauri', 'Gilaur\u012B', 'the betel fold'],
+        ['Angan', '\u0100ngan', 'the courtyard'],
+        ['Khurchan', 'Khurchan', 'the scraping'],
+        ['Peepli', 'P\u012Bpl\u012B', 'the sacred fig leaf'],
+        ['Chhajja', 'Chhajj\u0101', 'the overhang'],
+        ['Mohur', 'Mohur', 'the gold coin'],
+        ['Baithak', 'Bai\u1E6Dhak', 'the sitting room']
       ]
     }
   ];
@@ -423,7 +431,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 320 experiences';
+    sub.textContent = 'the journey \u2014 328 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

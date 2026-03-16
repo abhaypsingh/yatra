@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P&#x012B;pl&#x012B; — the sacred fig leaf</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0940;&#x092A;&#x0932;&#x0940;</div>
+      <h1 class="title">P&#x012B;pl&#x012B;</h1>
+      <p class="subtitle">the sacred fig leaf</p>
+      <p class="intro">The pipal leaf has a long tail that catches every breeze. Even when the air seems still, pipal leaves tremble. In Indian tradition, this tree is never cut &mdash; it is sacred, rooted at crossroads, home to spirits and shade. <em>P&#x012B;pl&#x012B;</em> asks you to name the things in your life that tremble even in stillness &mdash; the sensitivities that detect what others miss, the sacred things you refuse to cut down.</p>
+      <button class="begin-btn" id="beginBtn">listen</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What trembles in you even when the world seems still?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this leaf</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the intuition that senses trouble before it arrives, the grief that stirs at unexpected moments&hellip;">
+        <p class="write-prompt-2">What breeze does it catch?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it detects that others miss, why you refuse to silence it, the rustling it makes&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rustle</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>P&#x012B;pl&#x012B;</h2>
+      <p>Scientists say the pipal leaf trembles because of its flat stalk and aerodynamic shape. But the old stories say differently: the pipal trembles because it listens. It hears what the wind carries &mdash; prayers, sorrows, whispers from far away &mdash; and it cannot help but respond. That is why it is planted at crossroads, where all paths meet and all stories pass through.</p>
+      <p>You have pipal-leaf sensitivities. The part of you that feels the room shift before anyone speaks. The awareness that picks up on what is unsaid. The trembling that is not weakness but receptivity.</p>
+      <p>Name the leaves. They are your finest instruments of perception.</p>
+      <p class="about-note">Your leaves are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="peepli.js"></script>
+</body>
+</html>

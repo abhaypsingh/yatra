@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilaur&#x012B; — the betel fold</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093F;&#x0932;&#x094C;&#x0930;&#x0940;</div>
+      <h1 class="title">Gilaur&#x012B;</h1>
+      <p class="subtitle">the betel fold</p>
+      <p class="intro">A gilauri is a betel leaf folded into a precise triangle, filled with supari, lime paste, and cardamom &mdash; a tiny offering made with care. It is given after a meal, after a meeting, after a ceremony. It marks the sweetness of an ending. <em>Gilaur&#x012B;</em> asks you to name the small, precise offerings in your life &mdash; the gestures that sealed a moment with sweetness and care.</p>
+      <button class="begin-btn" id="beginBtn">offer</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small offerings sealed your moments?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this offering</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the thank-you note I wrote on real paper, the chai I made for a grieving friend&hellip;">
+        <p class="write-prompt-2">What did it seal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what moment it closed with sweetness, the care you folded into it, what it meant to give or receive&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gilaur&#x012B;</h2>
+      <p>Making a gilauri is an art. The leaf must be fresh. The fold must be tight. The filling must be balanced &mdash; not too much lime, not too little sweetness. It takes thirty seconds to make and thirty seconds to eat, but it carries the weight of a ritual. When a grandmother makes a gilauri for you, she is saying: this gathering was complete. You are honoured. Now carry the taste of this moment home.</p>
+      <p>You have made and received gilauris. The goodbye hug that lasted a beat longer. The carefully chosen last word. The small parting gift that said more than the visit.</p>
+      <p>Name the offerings. They are how you honour the endings.</p>
+      <p class="about-note">Your offerings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gilauri.js"></script>
+</body>
+</html>

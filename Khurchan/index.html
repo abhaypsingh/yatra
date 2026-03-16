@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khurchan — the scraping</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x0941;&#x0930;&#x091A;&#x0928;</div>
+      <h1 class="title">Khurchan</h1>
+      <p class="subtitle">the scraping</p>
+      <p class="intro">Khurchan is the caramelised residue scraped from the bottom of a pot after milk has been boiled down &mdash; the sweetest, richest part, the part that required the most patience. Only the person who stirred and waited gets to scrape it. <em>Khurchan</em> asks you to name the richest residues of your longest efforts &mdash; the concentrated sweetness that only patience can produce.</p>
+      <button class="begin-btn" id="beginBtn">scrape</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What sweetness did your patience produce?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this scraping</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the mastery that came after years of practice, the depth that only long friendships reach&hellip;">
+        <p class="write-prompt-2">What was the pot? How long did you stir?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you patiently reduced, how long it took, the concentrated sweetness at the bottom&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">taste</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khurchan</h2>
+      <p>You cannot rush khurchan. If you raise the flame, the milk burns instead of caramelising. If you stop stirring, it sticks and turns bitter. The only way to get khurchan is low heat and long patience &mdash; and then, at the very end, when others have lost interest, you take a spoon and scrape the bottom. That scraping is the reward for staying.</p>
+      <p>Your life has khurchan. The wisdom that only came after decades. The intimacy in a marriage that only the later years produce. The skill that went from competence to artistry because you never stopped practising.</p>
+      <p>Name the scrapings. They are the sweetest parts of your longest commitments.</p>
+      <p class="about-note">Your scrapings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khurchan.js"></script>
+</body>
+</html>

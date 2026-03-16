@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;ngan — the courtyard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0901;&#x0917;&#x0928;</div>
+      <h1 class="title">&#x0100;ngan</h1>
+      <p class="subtitle">the courtyard</p>
+      <p class="intro">An angan is the open centre of an Indian home &mdash; roofless, surrounded by rooms on all sides. The sky enters here. Rain falls here. Children play here. Weddings happen here. It is the heart of the house, and it is open to the heavens. <em>&#x0100;ngan</em> asks you to name the open centres of your life &mdash; the spaces in you or around you where sky meets ground, where the private and the infinite touch.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where does sky meet ground in your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this courtyard</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the vulnerability that lets light in, the openness at the centre of my family&hellip;">
+        <p class="write-prompt-2">What enters through the opening?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the sky brings in, what grows in this open centre, who gathers here&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">open</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;ngan</h2>
+      <p>The genius of the angan is that the house is built around emptiness. The most important part of the home is the part with no roof, no walls, no furniture &mdash; just open air. In the angan, you are inside your home and under the sky simultaneously. You are sheltered and exposed. Private and infinite.</p>
+      <p>You have angans within you. The openness you maintain despite the rooms of your life closing in. The vulnerability at the centre of your strength. The space you leave unbuilt because you know that the heart of anything must breathe.</p>
+      <p>Name the courtyards. They are where your life touches the sky.</p>
+      <p class="about-note">Your courtyards are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="angan.js"></script>
+</body>
+</html>

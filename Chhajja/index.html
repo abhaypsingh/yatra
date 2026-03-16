@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhajj&#x0101; — the overhang</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x091C;&#x094D;&#x091C;&#x093E;</div>
+      <h1 class="title">Chhajj&#x0101;</h1>
+      <p class="subtitle">the overhang</p>
+      <p class="intro">A chhajja is the stone or concrete overhang that juts out above windows and doors in Indian buildings. It does not keep the rain out completely &mdash; it just keeps it from hitting you directly. A small extension that makes a large difference. <em>Chhajj&#x0101;</em> asks you to name the small overhangs in your life &mdash; the modest protections that didn&rsquo;t solve the storm but made it survivable.</p>
+      <button class="begin-btn" id="beginBtn">shelter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small overhangs made your storms survivable?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this overhang</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the colleague who deflected criticism aimed at me, the small habit that kept depression at bay&hellip;">
+        <p class="write-prompt-2">What did it deflect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the storm it didn't stop but softened, how small it was compared to how much it helped, what reached you anyway&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">extend</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chhajj&#x0101;</h2>
+      <p>The chhajja is architecture&rsquo;s most modest hero. It does not enclose you. It does not promise you won&rsquo;t get wet. It simply extends itself &mdash; two feet of stone reaching out from the wall &mdash; and in that small extension, the difference between being drenched and being merely damp. Between the rain hitting your face and the rain hitting the ground before you.</p>
+      <p>Your life has chhajjas. The friend who didn&rsquo;t solve your problem but stood nearby. The small daily routine that didn&rsquo;t cure your anxiety but kept it from drowning you. The partial solution that was enough.</p>
+      <p>Name the overhangs. Sometimes two feet of shelter is all you need.</p>
+      <p class="about-note">Your overhangs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chhajja.js"></script>
+</body>
+</html>

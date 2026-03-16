@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bai&#x1E6D;hak — the sitting room</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0948;&#x0920;&#x0915;</div>
+      <h1 class="title">Bai&#x1E6D;hak</h1>
+      <p class="subtitle">the sitting room</p>
+      <p class="intro">A baithak is the front room of a traditional Indian home &mdash; the room where guests are received, where the family presents its best face. It is formal but warm. Cushions on the floor, a clean white sheet, framed photographs on the wall. The baithak is performance and hospitality at once. <em>Bai&#x1E6D;hak</em> asks you to name the sitting rooms in your life &mdash; the versions of yourself you present when the world comes calling.</p>
+      <button class="begin-btn" id="beginBtn">receive</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What version of yourself do you present to the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this sitting room</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the professional persona I maintain, the composure I show to relatives&hellip;">
+        <p class="write-prompt-2">What is on display? What is hidden in the back rooms?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the guest sees, what is polished for show, what lives in the rooms behind this one&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">present</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bai&#x1E6D;hak</h2>
+      <p>Every Indian home has a baithak, even if it doesn&rsquo;t call it that. The room that is always clean. The sofa no one sits on except when guests come. The cupboard with the good china. The baithak is not dishonest &mdash; it is hospitable. It says: we prepared for you. We thought you were worth the effort of our best presentation.</p>
+      <p>You have baithaks. The r&eacute;sum&eacute; version of yourself. The calm voice you use in meetings. The home you rush to tidy before someone visits. These front rooms are not lies &mdash; they are the effort you make for others. But the real life happens in the back rooms.</p>
+      <p>Name the sitting rooms. Know what you display, and what waits behind the curtain.</p>
+      <p class="about-note">Your sitting rooms are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="baithak.js"></script>
+</body>
+</html>

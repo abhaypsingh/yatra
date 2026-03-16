@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohur — the gold coin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x094B;&#x0939;&#x0930;</div>
+      <h1 class="title">Mohur</h1>
+      <p class="subtitle">the gold coin</p>
+      <p class="intro">A mohur was a gold coin of the Mughal era &mdash; rare, heavy, stamped with authority. Families kept mohurs hidden, never spending them, passing them down through generations. The mohur was not currency &mdash; it was legacy. <em>Mohur</em> asks you to name the rare treasures in your life that you refuse to spend &mdash; the values, memories, or gifts so precious that you hold them not for use but for meaning.</p>
+      <button class="begin-btn" id="beginBtn">treasure</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What treasures do you refuse to spend?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gold coin</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the promise I made to my father, the principle I will never trade away&hellip;">
+        <p class="write-prompt-2">Why do you refuse to spend it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what makes it too precious for use, who gave it to you, what you will pass it down as&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mohur</h2>
+      <p>The mohur was gold, but its value was never in the gold. It was in the keeping. A family that held a mohur for five generations was not rich because of one coin &mdash; it was rich because it had something it refused to sell. In a world that prices everything, the mohur was priceless precisely because it was never traded.</p>
+      <p>You have mohurs. The integrity you maintained when it would have been profitable to compromise. The relationship you protected when it was easier to let go. The standard you held when everyone around you had lowered theirs.</p>
+      <p>Name the gold coins. They are the things you are wealthy in because you refuse to spend them.</p>
+      <p class="about-note">Your coins are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mohur.js"></script>
+</body>
+</html>
