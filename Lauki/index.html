@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauk&#x012B; — the gourd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x094C;&#x0915;&#x0940;</div>
+      <h1 class="title">Lauk&#x012B;</h1>
+      <p class="subtitle">the gourd</p>
+      <p class="intro">Lauk&#x012B; is the bottle gourd &mdash; the most unglamorous vegetable in the Indian kitchen. No child asks for it. No restaurant features it. It is watery, bland, and perpetually prescribed by doctors and grandmothers for anyone who is unwell. And yet &mdash; lauk&#x012B; heals. It cools the body, settles the stomach, and nourishes without demanding gratitude. <em>Lauk&#x012B;</em> asks you to name the bland nourishments that healed you &mdash; the unglamorous, unexciting remedies that worked precisely because they demanded nothing from you in return.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bland nourishments healed you without being asked?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gourd</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the boring routine that saved my mental health, the simple advice I resisted but that turned out to be right&hellip;">
+        <p class="write-prompt-2">Why did you resist it? How did it heal you anyway?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the bland remedy, your resistance to it, the quiet healing it accomplished despite being unwanted&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cook</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lauk&#x012B;</h2>
+      <p>Lauk&#x012B; is the vegetable of convalescence. When you are too sick for spice, too weak for richness, too fragile for flavour, lauk&#x012B; is what you are given. It does not excite the palate; it heals the body. And that is its quiet genius: it nourishes without requiring appetite. You do not need to want it for it to work. You only need to accept it.</p>
+      <p>Your gourds were the unexciting remedies. The early bedtime. The long walk. The apology you did not want to make. The therapy session that felt like chewing something flavourless. The forgiveness that tasted like nothing but slowly healed everything. You did not enjoy these things. You endured them. And they healed you anyway.</p>
+      <p>Name the gourds. The cures that worked best were often the ones you wanted least.</p>
+      <p class="about-note">Your gourds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lauki.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jh&#x0101;lar — the fringe of light</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x093E;&#x0932;&#x0930;</div>
+      <h1 class="title">Jh&#x0101;lar</h1>
+      <p class="subtitle">the fringe of light</p>
+      <p class="intro">Jh&#x0101;lar is the string of decorative lights &mdash; the fringe of tiny bulbs strung along rooftops and doorways during festivals. Each bulb is small and ordinary alone, but strung together they transform the outline of a house into a thing of wonder. The jh&#x0101;lar does not illuminate; it celebrates. It traces the shape of something and says: this matters, this is worth decorating. <em>Jh&#x0101;lar</em> asks you to name the fringes of light in your life &mdash; the small, strung-together joys that outlined something ordinary and made it feel like a festival.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small lights, strung together, made your ordinary life feel festive?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this string of lights</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the series of small rituals that made evenings special, the chain of kindnesses that lit up a hard year&hellip;">
+        <p class="write-prompt-2">What ordinary shape did they outline? How did stringing them together change it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the small lights, what they traced the outline of, the celebration they created from the ordinary&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">string</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jh&#x0101;lar</h2>
+      <p>A single bulb is just a point of light. But string fifty of them along a roofline and suddenly the house has a crown. The jh&#x0101;lar&rsquo;s magic is in the accumulation: each light is trivial, but the series is magnificent. This is how celebration often works &mdash; not through one grand gesture but through many small ones arranged with intention.</p>
+      <p>Your jh&#x0101;lars were the accumulated small joys. The nightly cup of tea that made every evening a small festival. The series of letters from a friend. The chain of tiny traditions &mdash; the Sunday walk, the birthday song, the bedtime story &mdash; that strung together to outline the shape of a whole childhood, a whole marriage, a whole life.</p>
+      <p>Name the fringes. The shape of your life is best seen by the lights strung along its edges.</p>
+      <p class="about-note">Your fringes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhaalar.js"></script>
+</body>
+</html>

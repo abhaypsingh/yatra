@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K&#x0101;gaz — the paper</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093E;&#x0917;&#x091C;&#x093C;</div>
+      <h1 class="title">K&#x0101;gaz</h1>
+      <p class="subtitle">the paper</p>
+      <p class="intro">K&#x0101;gaz is paper &mdash; the humble surface that receives ink, carries words across time, and turns thought into something that can be held, folded, posted, and preserved. A letter on k&#x0101;gaz travels farther than a voice. A promise written on k&#x0101;gaz outlasts the hand that wrote it. <em>K&#x0101;gaz</em> asks you to name the pages that mattered &mdash; the letters, documents, notes, and written words that carried weight in your life, that said something worth keeping on a surface that could be kept.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What pages carried words worth keeping?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this page</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the letter my grandfather wrote before he died, the note my child slipped under my door&hellip;">
+        <p class="write-prompt-2">What was written on it? Why has it lasted?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the words, who wrote them, why this particular paper still matters to you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">write</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>K&#x0101;gaz</h2>
+      <p>Paper is patient. It accepts whatever is placed upon it &mdash; love letters and legal notices, poems and prescriptions, grocery lists and last wills. It does not judge the words; it simply holds them. And unlike spoken words that dissolve into air, words on paper persist. They can be returned to. They can be read by someone who was not in the room when they were written, someone who may not yet be born.</p>
+      <p>Your pages were the written records. The letter you found in a drawer years later. The note someone left on your desk. The document that changed your legal status, your name, your citizenship. The diary entry that proved you once felt something you had since forgotten. Paper remembers what voices forget.</p>
+      <p>Name the pages. Some of the most important things said to you were said on paper.</p>
+      <p class="about-note">Your pages are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kaagaz.js"></script>
+</body>
+</html>

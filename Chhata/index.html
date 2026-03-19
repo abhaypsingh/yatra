@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhat&#x0101; — the umbrella</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x093E;&#x0924;&#x093E;</div>
+      <h1 class="title">Chhat&#x0101;</h1>
+      <p class="subtitle">the umbrella</p>
+      <p class="intro">A chhat&#x0101; is an umbrella &mdash; the portable roof you carry for the rain you expect or the rain that surprises you. It does not stop the storm; it simply creates a small circle of dryness around one person. Shared, it creates intimacy: two people huddled under one chhat&#x0101;, shoulders touching, walking in step to stay dry together. <em>Chhat&#x0101;</em> asks you to name the umbrellas of your life &mdash; the portable shelters that kept the worst of the storm off your head, and the people you shared them with.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What portable shelters kept the storm off your head?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this umbrella</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily phone call that shielded me during a hard year, the habit that kept me dry in emotional storms&hellip;">
+        <p class="write-prompt-2">What storm was it for? Who shared this shelter with you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the rain, the small circle of dryness, who was under the umbrella with you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">shelter</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chhat&#x0101;</h2>
+      <p>The umbrella is an honest technology. It does not pretend to stop the rain. It acknowledges that rain will fall and simply offers a small canopy of protection. You will still get wet at the edges. Your shoes will still be soaked. But your head stays dry, and that is often enough to keep walking.</p>
+      <p>Your umbrellas were the modest protections. The friend who could not solve your problem but walked through it with you. The faith that did not remove suffering but made it bearable. The routine that did not eliminate anxiety but created a small circle of calm within it. None of them stopped the storm. All of them kept you moving through it.</p>
+      <p>Name the umbrellas. They did not end the rain. They made the rain survivable.</p>
+      <p class="about-note">Your umbrellas are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chhata.js"></script>
+</body>
+</html>

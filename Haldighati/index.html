@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hald&#x012B;gh&#x0101;&#x1E6D;&#x012B; — the turmeric pass</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x0932;&#x094D;&#x0926;&#x0940;&#x0918;&#x093E;&#x091F;&#x0940;</div>
+      <h1 class="title">Hald&#x012B;gh&#x0101;&#x1E6D;&#x012B;</h1>
+      <p class="subtitle">the turmeric pass</p>
+      <p class="intro">Haldighati is the narrow mountain pass stained yellow by turmeric-coloured soil, where Maharana Pratap fought his most famous battle against impossible odds. The pass is tight &mdash; no room to retreat, no space to manoeuvre, no option but to face what is ahead. Every life has its Haldighatis: the narrow passages where you had no choice but to fight, no room to flee, and the colour of the ground was determined by what had been spilled there before you arrived. <em>Hald&#x012B;gh&#x0101;&#x1E6D;&#x012B;</em> asks you to name your narrow passes &mdash; the battles fought in tight spaces with no option for retreat.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What narrow passes did you march through with no room to retreat?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pass</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the year I had no choice but to keep going, the confrontation I could not avoid&hellip;">
+        <p class="write-prompt-2">What made the pass narrow? What did you fight there?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the tight space, what forced you forward, the battle fought with no room for retreat&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">march</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Hald&#x012B;gh&#x0101;&#x1E6D;&#x012B;</h2>
+      <p>At Haldighati, there was no clever strategy available. The pass was too narrow for flanking. The enemy was too large for retreat. The only option was to ride forward. Maharana Pratap did not win that day, but he was not destroyed either. He emerged on the other side, diminished but alive, and continued fighting for twenty more years. Sometimes surviving the pass is the victory.</p>
+      <p>Your Haldighatis were the non-negotiable passages. The diagnosis that left no room for denial. The financial crisis that eliminated every option except the hardest one. The conversation that had to happen, in a room that felt too small for the words that needed to be said. You could not avoid the pass. You could only go through it.</p>
+      <p>Name the passes. The soil is stained with what was spilled there, but you came through the other side.</p>
+      <p class="about-note">Your passes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="haldighati.js"></script>
+</body>
+</html>

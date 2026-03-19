@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakh&#x0101;vaj — the drum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0916;&#x093E;&#x0935;&#x091C;</div>
+      <h1 class="title">Pakh&#x0101;vaj</h1>
+      <p class="subtitle">the drum</p>
+      <p class="intro">The pakh&#x0101;vaj is the ancient barrel drum &mdash; the ancestor of the tabla, deeper in tone, more primal in rhythm. It does not merely keep time; it creates time. The drummer&rsquo;s hands on the pakh&#x0101;vaj set the heartbeat of the performance. Without it, the melody floats; with it, the melody breathes. <em>Pakh&#x0101;vaj</em> asks you to name the rhythms that held your life in tempo &mdash; the steady beats, the repeating patterns, the drumbeats that gave your days their structure and your years their pulse.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What rhythms held your life in tempo?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this rhythm</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the weekly family dinner that structured my childhood, the morning routine that anchored chaotic years&hellip;">
+        <p class="write-prompt-2">What was the beat? How did it give your life its tempo?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the repeating pattern, how it structured your time, what happened when the rhythm was broken or changed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">play</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pakh&#x0101;vaj</h2>
+      <p>Rhythm is invisible architecture. You do not see it, but everything is built upon it. A song without rhythm is just a series of notes. A life without rhythm is just a series of events. The pakh&#x0101;vaj provides what melody cannot: structure, repetition, the assurance that the next beat will come where the last beat promised it would. This predictability is not monotony; it is the foundation that allows improvisation to happen.</p>
+      <p>Your drums were the rhythms that ordered your days. The alarm clock. The school bell. The meal times. The bedtime story. The Sunday phone call to your parents. The annual visit. These beats were so steady you stopped noticing them &mdash; until they stopped, and you realised the silence was not freedom but freefall.</p>
+      <p>Name the rhythms. They were the heartbeat beneath the melody of your life.</p>
+      <p class="about-note">Your drums are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pakhaawaj.js"></script>
+</body>
+</html>

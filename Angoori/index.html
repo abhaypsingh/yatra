@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ang&#x016B;r&#x012B; — the grape</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0902;&#x0917;&#x0942;&#x0930;&#x0940;</div>
+      <h1 class="title">Ang&#x016B;r&#x012B;</h1>
+      <p class="subtitle">the grape</p>
+      <p class="intro">Ang&#x016B;r&#x012B; means grape-like &mdash; small, clustered, sweet, and always arriving in bunches rather than alone. Grapes are never singular; they hang together on a vine, each one a tiny sphere of sweetness connected to the same stem. Pull one and the whole cluster shifts. <em>Ang&#x016B;r&#x012B;</em> asks you to name the clusters &mdash; the joys, friendships, and blessings that arrived not one at a time but in bunches, each connected to the same vine.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What sweetnesses arrived in clusters, connected to the same vine?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cluster</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the group of friends who all arrived in the same year, the season when everything good happened at once&hellip;">
+        <p class="write-prompt-2">What was the vine that connected them? Why did they come in bunches?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the cluster of good things, the vine that held them together, the sweetness of having many at once&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">taste</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ang&#x016B;r&#x012B;</h2>
+      <p>Grapes teach a lesson about abundance: good things often travel in clusters. One friendship leads to three more. One opportunity opens a door that reveals four others. One season of growth brings multiple harvests. The vine does not produce one grape at a time; it produces bunches, because that is the nature of vines &mdash; generosity comes in clusters.</p>
+      <p>Your clusters were the seasons of concentrated sweetness. The year when you found your people. The chapter when love, work, and health all aligned. The period when every risk paid off and every seed you had planted seemed to fruit at once. These clusters feel like luck, but they grow from vines you planted long before.</p>
+      <p>Name the grapes. Sweetness is rarely singular. When it comes, it comes in bunches.</p>
+      <p class="about-note">Your grapes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="angoori.js"></script>
+</body>
+</html>

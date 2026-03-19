@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khomch&#x0101; — the street vendor's cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x094B;&#x092E;&#x091A;&#x093E;</div>
+      <h1 class="title">Khomch&#x0101;</h1>
+      <p class="subtitle">the street vendor&rsquo;s cart</p>
+      <p class="intro">A khomch&#x0101; is the small wheeled cart or shoulder-slung tray of the street vendor &mdash; the man who sells roasted peanuts at the park gate, chaat at the bus stand, or bangles at the temple steps. He comes to you. He does not wait for you to enter his shop; he has no shop. His entire livelihood is balanced on two wheels or on his shoulders. <em>Khomch&#x0101;</em> asks you to name the things that came to you &mdash; the nourishments, lessons, and joys that arrived at your doorstep without you having to seek them out.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What arrived at your doorstep without being sought?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this vendor&rsquo;s cart</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the neighbour who brought food when we were grieving, the opportunity that appeared unsought&hellip;">
+        <p class="write-prompt-2">What did it bring to you? Why did you not have to go looking?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what arrived, who brought it, why receiving it where you stood was exactly what you needed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">receive</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khomch&#x0101;</h2>
+      <p>The khomch&#x0101; vendor is the economy of proximity. He studies the rhythms of the street: when schoolchildren emerge hungry, when office workers need tea, when evening walkers want roasted corn. He does not advertise. He simply appears at the right place, at the right time, with exactly what is wanted. The transaction takes thirty seconds. Both parties walk away satisfied.</p>
+      <p>Your khomch&#x0101;s were the arrivals. The friend who called on exactly the right day. The book that fell into your hands at exactly the right moment. The word of encouragement that rolled up to your doorstep just when you were about to quit. You did not search for these things. They found you.</p>
+      <p>Name the carts. Some of the most important provisions of your life were delivered, not sought.</p>
+      <p class="about-note">Your carts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khomcha.js"></script>
+</body>
+</html>

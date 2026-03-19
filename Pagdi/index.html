@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagd&#x012B; — the turban</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0917;&#x0921;&#x093C;&#x0940;</div>
+      <h1 class="title">Pagd&#x012B;</h1>
+      <p class="subtitle">the turban</p>
+      <p class="intro">A pagd&#x012B; is a turban &mdash; the cloth wound around the head that signifies honour, responsibility, and social standing. To place a pagd&#x012B; on someone&rsquo;s head is to invest them with authority. To remove it publicly is the deepest insult. The pagd&#x012B; is not merely worn; it is earned, inherited, or bestowed. It says: this person carries the weight of a family, a community, a promise. <em>Pagd&#x012B;</em> asks you to name the honours that were placed on your head &mdash; the responsibilities you carry, the roles you were given, and the weight of being the one others count on.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What honours have been placed upon your head?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this turban</p>
+        <input class="write-name" id="writeName" type="text" placeholder="becoming the eldest after my father passed, the responsibility given to me that I could not refuse&hellip;">
+        <p class="write-prompt-2">Who placed it on your head? What weight does it carry?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the honour or responsibility, who bestowed it, the weight of wearing it every day&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pagd&#x012B;</h2>
+      <p>In Rajasthani and Marwari culture, the pagd&#x012B; ceremony is one of the most solemn rituals. When a patriarch dies, the eldest son sits before the community and has the turban placed on his head. In that moment, every debt, every promise, every obligation of the previous generation transfers to him. The turban is not a crown &mdash; it is a yoke disguised as an honour.</p>
+      <p>Your pagd&#x012B;s were the roles placed upon you. Becoming a parent. Becoming the breadwinner. Becoming the one everyone calls in a crisis. Becoming the keeper of a family&rsquo;s story. These were not always chosen; sometimes the turban was simply placed on your head, and you were expected to wear it. The honour and the burden arrived as one.</p>
+      <p>Name the turbans. They sit on your head whether or not anyone sees them, and their weight is real.</p>
+      <p class="about-note">Your turbans are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="pagdi.js"></script>
+</body>
+</html>

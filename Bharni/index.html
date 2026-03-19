@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharn&#x012B; — the filling</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092D;&#x0930;&#x0928;&#x0940;</div>
+      <h1 class="title">Bharn&#x012B;</h1>
+      <p class="subtitle">the filling</p>
+      <p class="intro">Bharn&#x012B; means filling &mdash; the act of pouring into an empty vessel until it is full. Filling a matka with water from the well. Filling a jar with pickled mangoes for the year. Filling a child&rsquo;s plate before your own. The act of bharn&#x012B; is always an act of provision: someone sees an emptiness and decides to fill it. <em>Bharn&#x012B;</em> asks you to name the fillings &mdash; the times when someone (or something) saw what was empty in you and filled it, or when you did the same for another.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What acts of filling made your empty vessels whole?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this filling</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years my mother filled our house with warmth, the mentor who filled my confidence when it was empty&hellip;">
+        <p class="write-prompt-2">What was empty? What filled it? Who saw the emptiness?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the emptiness, what was poured in, who did the filling, and how full the vessel became&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fill</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bharn&#x012B;</h2>
+      <p>Filling requires two things: an empty vessel and someone who notices. The vessel cannot fill itself. And the one who fills must first see the emptiness, then choose to act. A grandmother who fills your plate sees your hunger before you admit it. A friend who fills your silence with presence sees your loneliness before you name it. The act of filling is an act of seeing.</p>
+      <p>Your fillings were the provisions made by those who paid attention. The words that filled a silence you didn&rsquo;t know how to break. The love that filled a gap left by loss. The purpose that filled the years after a chapter ended. In each case, something empty was made whole &mdash; not by force, but by someone pouring gently.</p>
+      <p>Name the fillings. Every vessel you carry was filled by someone who saw it was empty.</p>
+      <p class="about-note">Your fillings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bharni.js"></script>
+</body>
+</html>

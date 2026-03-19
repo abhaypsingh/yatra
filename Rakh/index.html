@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&#x0101;kh — the ash</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x093E;&#x0916;</div>
+      <h1 class="title">R&#x0101;kh</h1>
+      <p class="subtitle">the ash</p>
+      <p class="intro">R&#x0101;kh is what remains after fire has consumed everything it can. It is neither the wood nor the flame &mdash; it is the residue of transformation. In Hinduism, ash is sacred: the vibhuti smeared on the forehead is a reminder that everything returns to ash, and that ash itself is not nothing. It is the final, irreducible truth of what was burned. <em>R&#x0101;kh</em> asks you to name the ashes &mdash; what remained after something in your life burned completely. What was the residue? What did the fire leave behind that could not burn further?</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What remained after the fire had done its work?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this ash</p>
+        <input class="write-name" id="writeName" type="text" placeholder="what remained after a relationship ended, the lesson left behind by a failure that burned everything down&hellip;">
+        <p class="write-prompt-2">What burned? What was the ash that could not burn further?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the fire, what it consumed, and the irreducible residue that remained when the flames died&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sift</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>R&#x0101;kh</h2>
+      <p>Ash is the great simplifier. Fire takes a complex thing &mdash; a log with its rings and bark and sap &mdash; and reduces it to a fine, grey powder. Everything ornamental is burned away. What remains is elemental: calcium, potassium, carbon. Ash is what a thing truly is, stripped of everything it merely appeared to be.</p>
+      <p>Your ashes were the residues of transformation. After the anger burned out, what remained was hurt. After the ambition burned out, what remained was a quiet love of the craft. After the grief burned out, what remained was gratitude for having had something worth grieving. The fire was terrifying while it lasted, but the ash it left was honest.</p>
+      <p>Name the ashes. They are the truest record of what the fire revealed.</p>
+      <p class="about-note">Your ashes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="rakh.js"></script>
+</body>
+</html>

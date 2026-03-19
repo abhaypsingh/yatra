@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ko&#x1E6D;hr&#x012B; — the small room</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x094B;&#x0920;&#x0930;&#x0940;</div>
+      <h1 class="title">Ko&#x1E6D;hr&#x012B;</h1>
+      <p class="subtitle">the small room</p>
+      <p class="intro">A ko&#x1E6D;hr&#x012B; is the smallest room in the house &mdash; sometimes a storeroom, sometimes a prayer room, sometimes the room where valuables are locked away. It is not meant for living in; it is meant for keeping. Every house has a ko&#x1E6D;hr&#x012B; where the most important things are stored behind a closed door. <em>Ko&#x1E6D;hr&#x012B;</em> asks you to name the small, private rooms of your inner life &mdash; the locked spaces where you kept the things too precious or too fragile for the open rooms of daily living.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small rooms held your most private hours?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this small room</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the memory I keep locked away and rarely visit, the part of myself I share with no one&hellip;">
+        <p class="write-prompt-2">What is kept in this room? Why does it need a door?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the precious or fragile thing stored there, why it needs privacy, when you last opened the door&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">lock</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ko&#x1E6D;hr&#x012B;</h2>
+      <p>The ko&#x1E6D;hr&#x012B; is the opposite of the courtyard. The courtyard is open, shared, public. The ko&#x1E6D;hr&#x012B; is closed, private, and small enough to hold only what truly matters. In old havelis, the ko&#x1E6D;hr&#x012B; held the family jewels, the important documents, the sacred texts. The key was kept by the eldest woman. Not everyone was allowed in.</p>
+      <p>Your ko&#x1E6D;hr&#x012B;s were the inner rooms. The memory you protect from casual conversation. The dream too fragile for public scrutiny. The grief too private for communal mourning. The joy too personal to share without diluting it. These rooms are not secrets born of shame; they are treasuries born of discernment. Not everything belongs in the open.</p>
+      <p>Name the rooms. The smallest spaces in your inner house hold the most valuable things.</p>
+      <p class="about-note">Your rooms are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kothri.js"></script>
+</body>
+</html>

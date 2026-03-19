@@ -400,7 +400,25 @@
         ['Bajra', 'Bajr\u0101', 'the millet'],
         ['Sandli', 'Sandl\u012B', 'the low stool'],
         ['Taamjhaam', 'T\u0101mjh\u0101m', 'the grand display'],
-        ['Parchoon', 'Parch\u016Bn', 'the provisions shop']
+        ['Parchoon', 'Parch\u016Bn', 'the provisions shop'],
+        ['Chaandni', 'Ch\u0101\u0303dn\u012B', 'the moonlight'],
+        ['Khomcha', 'Khomch\u0101', 'the street vendor\u2019s cart'],
+        ['Katora', 'Kator\u0101', 'the bowl'],
+        ['Angoori', 'Ang\u016Br\u012B', 'the grape'],
+        ['Rakh', 'R\u0101kh', 'the ash'],
+        ['Kaagaz', 'K\u0101gaz', 'the paper'],
+        ['Ghoonghat', 'Gh\u016B\u0303gha\u1E6D', 'the drawn veil'],
+        ['Jhaalar', 'Jh\u0101lar', 'the fringe of light'],
+        ['Jhopdi', 'Jhop\u1E0D\u012B', 'the hut'],
+        ['Chameli', 'Chamel\u012B', 'the jasmine'],
+        ['Bharni', 'Bharn\u012B', 'the filling'],
+        ['Gothri', 'Go\u1E6Dhr\u012B', 'the bundle'],
+        ['Chhata', 'Chhat\u0101', 'the umbrella'],
+        ['Haldighati', 'Hald\u012Bgh\u0101\u1E6D\u012B', 'the turmeric pass'],
+        ['Lauki', 'Lauk\u012B', 'the gourd'],
+        ['Kothri', 'Ko\u1E6Dhr\u012B', 'the small room'],
+        ['Pakhaawaj', 'Pakh\u0101vaj', 'the drum'],
+        ['Pagdi', 'Pagd\u012B', 'the turban']
       ]
     }
   ];

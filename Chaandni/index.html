@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;&#x0303;dn&#x012B; — the moonlight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0901;&#x0926;&#x0928;&#x0940;</div>
+      <h1 class="title">Ch&#x0101;&#x0303;dn&#x012B;</h1>
+      <p class="subtitle">the moonlight</p>
+      <p class="intro">Ch&#x0101;&#x0303;dn&#x012B; is moonlight &mdash; the silver wash that falls on rooftops and courtyards when everyone else is asleep. It does not illuminate like the sun; it reveals differently. Under moonlight, edges soften, colours disappear, and things you ignored by day become suddenly beautiful. The crack in the wall becomes a silver line. The ordinary courtyard becomes a stage. <em>Ch&#x0101;&#x0303;dn&#x012B;</em> asks you to name the moments of moonlit seeing &mdash; the times when a gentler, stranger light showed you truths that daylight had hidden.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did moonlight reveal that daylight had hidden?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this moonlit moment</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the quiet conversation after everyone slept, the beauty of an ordinary place seen in a different mood&hellip;">
+        <p class="write-prompt-2">What did the softer light reveal? What had the harsh day hidden?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the gentler seeing, the truth that emerged in the silver light, the beauty that daylight had missed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">illuminate</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;&#x0303;dn&#x012B;</h2>
+      <p>Moonlight is borrowed light. The moon has no fire of its own; it reflects the sun. And yet moonlight feels entirely different from sunlight &mdash; cooler, kinder, more forgiving. Under moonlight, you see fewer details but more atmosphere. The world becomes a watercolour instead of a photograph. This is sometimes exactly the kind of seeing you need.</p>
+      <p>Your moonlit moments were the times when a different quality of attention revealed something new. The late-night realisation. The quiet after a crisis, when the dust settled and you could finally see clearly. The softened perspective that came with time, distance, or simply exhaustion that dissolved your defences.</p>
+      <p>Name the moonlight. Not every truth is found under the glare of noon. Some truths come only in silver.</p>
+      <p class="about-note">Your moonlit moments are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaandni.js"></script>
+</body>
+</html>

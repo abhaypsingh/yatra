@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go&#x1E6D;hr&#x012B; — the bundle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x094B;&#x0920;&#x0930;&#x0940;</div>
+      <h1 class="title">Go&#x1E6D;hr&#x012B;</h1>
+      <p class="subtitle">the bundle</p>
+      <p class="intro">A go&#x1E6D;hr&#x012B; is a cloth bundle &mdash; the kind tied at four corners and carried on the head or shoulder when moving from one place to another. It holds everything you chose to take and nothing you chose to leave behind. The go&#x1E6D;hr&#x012B; is edited life: not everything you own, but everything you decided was worth carrying. <em>Go&#x1E6D;hr&#x012B;</em> asks you to name the bundles you have tied &mdash; the curated collections of things, memories, values, and habits that you carried from one chapter of life to the next.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bundles have you tied and carried between chapters?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bundle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the habits I carried from childhood into adulthood, the values I packed when I left home&hellip;">
+        <p class="write-prompt-2">What did you tie into this bundle? What did you leave behind?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you chose to carry, what you chose to leave, the transition between chapters&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tie</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Go&#x1E6D;hr&#x012B;</h2>
+      <p>The go&#x1E6D;hr&#x012B; is the original suitcase &mdash; a cloth spread flat, possessions placed in the centre, corners gathered and knotted. It carries no more than what one person can lift. This limitation is its wisdom: it forces you to choose. You cannot bring everything. You must decide what is essential and what is merely familiar.</p>
+      <p>Your bundles were the curated packages of identity you carried through transitions. Leaving home: what did you pack? Leaving a relationship: what did you take with you? Leaving a career: which skills, which lessons, which scars did you tie into the cloth and hoist onto your shoulder? The bundle reveals your values better than any statement of purpose.</p>
+      <p>Name the bundles. What you chose to carry tells the truest story of who you are.</p>
+      <p class="about-note">Your bundles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gothri.js"></script>
+</body>
+</html>

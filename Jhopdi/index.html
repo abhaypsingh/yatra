@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhop&#x1E0D;&#x012B; — the hut</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x094B;&#x092A;&#x0921;&#x093C;&#x0940;</div>
+      <h1 class="title">Jhop&#x1E0D;&#x012B;</h1>
+      <p class="subtitle">the hut</p>
+      <p class="intro">A jhop&#x1E0D;&#x012B; is a small, makeshift hut &mdash; walls of tin or thatch, a roof that leaks in heavy rain, a doorway you must duck to enter. It is not built to impress; it is built to survive. And yet &mdash; inside the jhop&#x1E0D;&#x012B;, children are raised, meals are cooked, songs are sung, and love fills every inch because there are so few inches to fill. <em>Jhop&#x1E0D;&#x012B;</em> asks you to name the small shelters that held large lives &mdash; the cramped, humble, makeshift spaces where your most important living happened.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small shelters held your largest living?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hut</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the tiny first apartment where we were happiest, the shared room where my best friendships were forged&hellip;">
+        <p class="write-prompt-2">What large life did this small space hold? What made the smallness an advantage?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the cramped space, the life that filled it, how closeness became intimacy rather than confinement&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">shelter</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jhop&#x1E0D;&#x012B;</h2>
+      <p>The jhop&#x1E0D;&#x012B; has no spare room for pretence. When the space is this small, you cannot hide from each other. You eat together because there is only one floor. You sleep close because there is only one mat. The smallness that looks like poverty from the outside can feel like closeness from the inside. Not always &mdash; but often enough to remember.</p>
+      <p>Your huts were the humble containers. The first apartment that was barely a room. The temporary arrangement that lasted years. The small circle of people that was your entire world for a season. These spaces were not grand, but they were full. Every corner was used. Every inch was lived in.</p>
+      <p>Name the huts. The size of the shelter never determined the size of the life it held.</p>
+      <p class="about-note">Your huts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhopdi.js"></script>
+</body>
+</html>
