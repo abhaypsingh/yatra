@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bajrā — the millet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x091C;&#x0930;&#x093E;</div>
+      <h1 class="title">Bajrā</h1>
+      <p class="subtitle">the millet</p>
+      <p class="intro">Bajrā is pearl millet &mdash; the grain that grows where wheat and rice cannot. It survives drought, poor soil, and scorching heat. It asks for almost nothing and gives solid, sustaining nourishment in return. In Rajasthan, bajrā roti with ghee and red chilli is the food that built generations of endurance. It is not glamorous. It is not refined. It simply keeps you alive when nothing else will. <em>Bajrā</em> asks you to name the humble, unglamorous things that sustained you through your droughts &mdash; the plain nourishments that kept you going when finer things were unavailable.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What humble grains sustained you through drought?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this grain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily walk that kept me sane, the one friend who answered every call&hellip;">
+        <p class="write-prompt-2">What drought was it sustaining you through? Why was this humble thing enough?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the hard season, the plain nourishment, how it kept you standing when nothing else could&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">harvest</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bajrā</h2>
+      <p>Bajrā does not advertise itself. It does not appear on restaurant menus or in food magazines. It is the grain of the poor, the rural, the enduring. And yet &mdash; it is one of the oldest cultivated grains on earth, tougher and more resilient than any of the grains that replaced it in modern kitchens. When the soil is too dry for rice and the heat too fierce for wheat, bajrā grows anyway. Quietly. Without complaint.</p>
+      <p>Your bajrā was the sustenance that no one celebrated but that kept you alive. The routine that held your days together. The small act of discipline that prevented collapse. The person who wasn&rsquo;t exciting but was unfailingly present. Not the feast &mdash; the daily bread. Not the cure &mdash; the thing that kept you going until a cure arrived.</p>
+      <p>Name the millets. The glamorous grains get the credit, but it was the humble ones that saw you through.</p>
+      <p class="about-note">Your grains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bajra.js"></script>
+</body>
+</html>

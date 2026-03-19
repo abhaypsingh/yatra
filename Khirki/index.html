@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khirkī — the window</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x093F;&#x0930;&#x0915;&#x0940;</div>
+      <h1 class="title">Khirkī</h1>
+      <p class="subtitle">the window</p>
+      <p class="intro">A khirkī is a window &mdash; a rectangle cut into a wall so that light and air may enter, and so that those inside may see the world without stepping into it. The window decides what you see: frame it one way and you see the garden, frame it another and you see the rubbish heap. The same room, the same life, but the view depends on where the opening is cut. <em>Khirkī</em> asks you to name the frames through which you have seen the world &mdash; and to notice how the frame shaped what you believed was out there.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Through what frames have you seen the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this window</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the classroom that showed me only one version of history, the balcony that opened onto a wider sky&hellip;">
+        <p class="write-prompt-2">What did you see through it? What was outside the frame?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the view it gave you, the view it hid, the moment you noticed the frame itself&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">frame</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khirkī</h2>
+      <p>Every window is an editor. It decides what portion of the infinite outside world you get to see from your particular inside. The carved jharokha of a haveli frames the street like a painting. The barred window of a cell frames the sky like a promise. The kitchen window frames the backyard where children play while you cook. Each window is a decision about what matters enough to be visible.</p>
+      <p>Your windows were the perspectives you lived inside. The family that taught you what was normal. The school that taught you what was possible. The friend who showed you a life you hadn&rsquo;t imagined. The book that reframed everything. Each was a rectangle of light cut into the wall of your understanding.</p>
+      <p>Name the frames. The world was always larger than what any single window could show you.</p>
+      <p class="about-note">Your windows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khirki.js"></script>
+</body>
+</html>

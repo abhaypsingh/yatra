@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pāras — the philosopher's stone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x093E;&#x0930;&#x0938;</div>
+      <h1 class="title">Pāras</h1>
+      <p class="subtitle">the philosopher's stone</p>
+      <p class="intro">Pāras is the mythical philosopher&rsquo;s stone of Indian alchemy &mdash; the substance that, by mere touch, turns iron into gold. It does not melt or reshape; it transforms by contact alone. The iron does not know it is about to become gold. The pāras does not labour over the conversion. Touch, and it is done. <em>Pāras</em> asks you to name the touches &mdash; people, moments, words &mdash; that turned something ordinary in you into something precious, simply by making contact.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose touch turned your iron into gold?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this philosopher's stone</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the teacher who believed in me before I did, the stranger whose one sentence changed my direction&hellip;">
+        <p class="write-prompt-2">What did it touch in you? What was iron before, and gold after?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the ordinary thing in you, the contact that changed it, the gold that remains&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">touch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pāras</h2>
+      <p>The legend says that pāras does not discriminate. It does not choose worthy iron and reject unworthy iron. Whatever iron touches it becomes gold. The transformation is not earned; it is received. This is the mystery of certain encounters: you did nothing to deserve them, yet they changed everything. A grandmother&rsquo;s patience. A mentor&rsquo;s single question. A book opened at random to the exact page you needed.</p>
+      <p>Your philosopher&rsquo;s stones were the contacts that transmuted you. Before the touch, you were one substance. After it, another. You may not have noticed the moment of conversion &mdash; iron rarely watches itself becoming gold. But looking back, the difference is unmistakable.</p>
+      <p>Name the touches. They did not make you something you were not &mdash; they revealed the gold that was always latent in the iron.</p>
+      <p class="about-note">Your stones are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="paaras.js"></script>
+</body>
+</html>

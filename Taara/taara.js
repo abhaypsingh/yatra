@@ -392,7 +392,15 @@
         ['Dalaan', 'Dal\u0101n', 'the verandah'],
         ['Sipahi', 'Sip\u0101h\u012B', 'the soldier'],
         ['Baansuri', 'B\u0101nsur\u012B', 'the bamboo flute'],
-        ['Mandap', 'Ma\u1E47\u1E0Dap', 'the canopy']
+        ['Mandap', 'Ma\u1E47\u1E0Dap', 'the canopy'],
+        ['Khirki', 'Khirk\u012B', 'the window'],
+        ['Paaras', 'P\u0101ras', 'the philosopher\u2019s stone'],
+        ['Thandai', 'Thanda\u012B', 'the cool drink'],
+        ['Khappar', 'Khappar', 'the begging bowl'],
+        ['Bajra', 'Bajr\u0101', 'the millet'],
+        ['Sandli', 'Sandl\u012B', 'the low stool'],
+        ['Taamjhaam', 'T\u0101mjh\u0101m', 'the grand display'],
+        ['Parchoon', 'Parch\u016Bn', 'the provisions shop']
       ]
     }
   ];

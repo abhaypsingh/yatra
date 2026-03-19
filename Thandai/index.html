@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thandaī — the cool drink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0920;&#x0902;&#x0921;&#x093E;&#x0908;</div>
+      <h1 class="title">Thandaī</h1>
+      <p class="subtitle">the cool drink</p>
+      <p class="intro">Thandaī is the spiced, sweetened milk drink served in the burning heat of Holi &mdash; cardamom, almonds, saffron, rose petals, all ground and stirred into cold milk. It is not water; water merely quenches. Thandaī restores. It is the drink offered after exertion, after colour has been smeared on your face and you are exhausted and laughing. <em>Thandaī</em> asks you to name the refreshments that restored you when the heat of life was at its worst &mdash; not the things that merely quenched, but those that truly cooled and nourished.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What refreshments truly restored you in the heat?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cool drink</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the week at my grandmother's house after a hard year, the friendship that appeared during burnout&hellip;">
+        <p class="write-prompt-2">What heat was it cooling? How did it restore you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the exhaustion you carried, the ingredients of this relief, the coolness that spread through you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sip</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Thandaī</h2>
+      <p>Thandaī is not plain water. It is crafted relief &mdash; someone took the time to grind almonds and cardamom, to dissolve saffron threads, to chill the milk, to pour it into a glass and bring it to you. The heat of Holi is joyful but fierce. The colours sting your eyes. The sun is relentless. Into that happy exhaustion comes a glass of something cold and complex, and your body remembers what rest feels like.</p>
+      <p>Your thandaīs were the restorations that came with care and specificity. Not generic comfort, but comfort that knew exactly what you needed. A conversation that addressed the precise ache. A place that soothed the exact fatigue. A person who brought not just presence but the right kind of presence.</p>
+      <p>Name the cool drinks. The heat will come again, and it helps to remember what has restored you before.</p>
+      <p class="about-note">Your drinks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="thandai.js"></script>
+</body>
+</html>

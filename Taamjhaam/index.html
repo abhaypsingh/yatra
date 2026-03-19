@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tāmjhām — the grand display</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093E;&#x092E;&#x091D;&#x093E;&#x092E;</div>
+      <h1 class="title">Tāmjhām</h1>
+      <p class="subtitle">the grand display</p>
+      <p class="intro">Tāmjhām means pomp and show &mdash; the elaborate arrangements made to impress, the grand spectacle put on for an audience. A wedding with a thousand guests. A welcome with flower garlands and a brass band. The word carries both admiration and gentle irony: all this tāmjhām, and for what? <em>Tāmjhām</em> asks you to name the grand displays you have witnessed or created &mdash; and to look honestly at what lay behind the spectacle. Was there substance beneath the show, or was the show itself the substance?</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What spectacles have you witnessed or created?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this spectacle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the elaborate birthday I threw to prove everything was fine, the grand gesture that masked a simple truth&hellip;">
+        <p class="write-prompt-2">What was the show for? What was behind the curtain?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the spectacle itself, who it was meant to impress, the truth that the grandness was covering or celebrating&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">witness</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Tāmjhām</h2>
+      <p>Tāmjhām is neither purely positive nor purely negative. Sometimes the grand display is genuine celebration &mdash; the community coming together to honour a moment that deserves all the flowers and music. Sometimes it is armour &mdash; the louder the spectacle, the deeper the insecurity it conceals. And sometimes it is love expressed in the only language available: my grandmother could not say &ldquo;I love you,&rdquo; but she could cook for forty people and lay out silver plates.</p>
+      <p>Your tāmjhāms were the grand productions of your life. The events you over-planned. The gestures that were larger than necessary. The displays others put on that dazzled or overwhelmed you. In each case, the question is the same: what was the show really about?</p>
+      <p>Name the spectacles. Behind every grand display is a human being who wanted something badly enough to build a stage for it.</p>
+      <p class="about-note">Your displays are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taamjhaam.js"></script>
+</body>
+</html>

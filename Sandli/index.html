@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandlī — the low stool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0902;&#x0921;&#x0932;&#x0940;</div>
+      <h1 class="title">Sandlī</h1>
+      <p class="subtitle">the low stool</p>
+      <p class="intro">A sandlī is the small, low wooden stool found in every Indian kitchen and courtyard. It stands barely a hand&rsquo;s height off the ground. You sit on it to chop vegetables, to wash clothes, to feed a child, to tend the fire. It brings you close to the earth, close to the work, close to the ground where real life happens. <em>Sandlī</em> asks you to name the low seats you have taken &mdash; the positions of humility, closeness, and grounded presence where you did the work that mattered most.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where have you sat close to the ground to do what matters?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this low seat</p>
+        <input class="write-name" id="writeName" type="text" placeholder="kneeling to tie my child's shoes every morning, sitting on the floor to listen to my elder&hellip;">
+        <p class="write-prompt-2">What work did you do from this low position? What did closeness to the ground teach you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the humble posture, the work done from there, what you saw from that height that you couldn't see standing&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sit</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sandlī</h2>
+      <p>The sandlī is the opposite of a throne. A throne elevates you above others. A sandlī brings you down to the level of the work, the child, the fire. In every Indian household, the most important work &mdash; cooking, cleaning, feeding, mending &mdash; is done from this low seat. The person on the sandlī is not diminished by the low position; they are made essential. The meal cannot be cooked from a chair. The child cannot be bathed from a standing height.</p>
+      <p>Your sandlīs were the humble positions you chose. The times you got low, got close, got your hands in the work. The conversations where you listened from below rather than spoke from above. The tasks that required you to kneel, to bend, to come down to earth.</p>
+      <p>Name the low stools. The most important work in your life was probably done from the lowest seat.</p>
+      <p class="about-note">Your stools are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sandli.js"></script>
+</body>
+</html>

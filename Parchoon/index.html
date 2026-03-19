@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parchūn — the provisions shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0930;&#x091A;&#x0942;&#x0928;</div>
+      <h1 class="title">Parchūn</h1>
+      <p class="subtitle">the provisions shop</p>
+      <p class="intro">A parchūn kī dukān is the neighbourhood provisions shop &mdash; the small store that stocks everything from lentils to soap, matchboxes to hair oil, all in one cramped, overflowing space. The shopkeeper knows every family by name, extends credit without paperwork, and always has exactly what you need buried somewhere behind the counter. <em>Parchūn</em> asks you to name the small, reliable sources that stocked everything you needed &mdash; the people, places, and habits that were your daily provisions, always available, never glamorous, endlessly essential.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small shops stocked everything you needed?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this provisions shop</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother's kitchen that always had what I needed, the friend who had advice for every situation&hellip;">
+        <p class="write-prompt-2">What provisions did it stock? What did you go there for most?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the variety it held, the thing you reached for most often, how it always seemed to have exactly what was needed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stock</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Parchūn</h2>
+      <p>The parchūn shop is the opposite of a supermarket. It has no aisles, no labels, no self-checkout. Everything is behind the counter, and the shopkeeper is the index. Ask for anything and he reaches into the chaos and produces it. He knows that your family buys a particular brand of tea, that your mother prefers a specific soap, that your father always forgets to buy matchboxes. The shop is small, but its knowledge of you is vast.</p>
+      <p>Your parchūn shops were the reliable, unglamorous sources of daily provision. The parent who always had the right word. The colleague who always had a spare charger. The habit that always produced calm. The shelf in your mind where you kept the things you reached for most: patience, humour, a prayer, a deep breath.</p>
+      <p>Name the shops. They were small and cluttered and essential, and life would have been impossible without them.</p>
+      <p class="about-note">Your shops are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="parchoon.js"></script>
+</body>
+</html>
