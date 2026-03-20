@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daulat &mdash; the wealth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x094C;&#x0932;&#x0924;</div>
+      <h1 class="title">Daulat</h1>
+      <p class="subtitle">the wealth</p>
+      <p class="intro">Wealth beyond money &mdash; the riches of experience, love, and wisdom that no theft can diminish. The inheritance that has no will, no court, no dispute. <em>Daulat</em> invites you to count the true riches of your life &mdash; the ones no bank statement can reflect and no market crash can erase.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What riches do you hold that cannot be stolen?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wealth</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years spent with my father, the language I was given&hellip;">
+        <p class="write-prompt-2">How did you come to possess it, and what does it yield?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how it was earned or received, what it gives you daily&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">count</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Daulat</h2>
+      <p>The word daulat once meant fortune in its widest sense &mdash; not just coins and land, but the total endowment of a life. A person rich in daulat might have little money but vast stores of knowledge, deep relationships, hard-won peace. The poorest-looking elder in the village might hold the greatest daulat of all.</p>
+      <p>We have narrowed wealth to numbers. But you know better. You know that some of your richest moments cost nothing, and some of your most expensive purchases left you poorer in spirit. Daulat is the accounting that matters &mdash; the ledger of what truly sustains you.</p>
+      <p>Take inventory. Count what you have that compound interest cannot touch and inflation cannot erode.</p>
+      <p class="about-note">Your riches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daulat.js"></script>
+</body>
+</html>

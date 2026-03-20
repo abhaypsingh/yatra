@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himmat &mdash; the courage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093F;&#x092E;&#x094D;&#x092E;&#x0924;</div>
+      <h1 class="title">Himmat</h1>
+      <p class="subtitle">the courage</p>
+      <p class="intro">Himmat is not the absence of fear &mdash; it is the decision to move while fear is still screaming. It is the hand that reaches for the door, the voice that speaks when the room is hostile, the body that gets up one more morning when getting up feels impossible. <em>Himmat</em> asks you to name the moments when you gathered courage &mdash; not because fear had passed, but because something mattered more than the fear.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did you act despite every reason not to?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this courage</p>
+        <input class="write-name" id="writeName" type="text" placeholder="leaving what was familiar, speaking when silence was expected&hellip;">
+        <p class="write-prompt-2">What did the courage cost, and what did it make possible?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the fear you overrode, the action you took, what opened on the other side&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">gather</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Himmat</h2>
+      <p>Courage is almost always invisible to the person performing it. In the moment, it does not feel heroic. It feels like nausea, like shaking hands, like a voice that wobbles. You do the difficult thing not because you feel brave but because the alternative &mdash; the regret of inaction &mdash; has become more frightening than the action itself.</p>
+      <p>The world celebrates grand courage: the soldier, the activist, the rescuer. But most himmat is domestic and undocumented. The first day at a new school in a new city. The conversation where you finally said what had been eating you alive. The morning you got out of bed after weeks of not wanting to. No one gave you a medal. No one even noticed. But you know what it cost.</p>
+      <p>Gather your courages here. They deserve to be named, because each one was a moment where you chose the harder path and discovered you could walk it.</p>
+      <p class="about-note">Your courages are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="himmat.js"></script>
+</body>
+</html>

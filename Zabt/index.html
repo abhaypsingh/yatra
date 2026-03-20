@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabt &mdash; the restraint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093C;&#x092C;&#x094D;&#x0924;</div>
+      <h1 class="title">Zabt</h1>
+      <p class="subtitle">the restraint</p>
+      <p class="intro">Restraint &mdash; the strength in holding back, the discipline of not saying, not doing, not reacting. Zabt is the invisible act that no one applauds because no one sees it. <em>Zabt</em> honours the moments when you chose silence over retort, stillness over impulse, patience over fury &mdash; and the quiet power that grew from that choice.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When has holding back required your greatest strength?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this restraint</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the words I swallowed at the funeral, the anger I chose not to unleash&hellip;">
+        <p class="write-prompt-2">What did you hold back, and what did that restraint protect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you wanted to say or do, why you stopped, what was preserved&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">practise</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Zabt</h2>
+      <p>The world celebrates action. It rewards the bold gesture, the decisive move, the person who speaks first and loudest. But zabt is the opposite art &mdash; the art of not acting, not speaking, not retaliating when every nerve demands it. It is the fist that unclenches, the sentence that is composed but never sent, the exit made without slamming the door.</p>
+      <p>Zabt is not weakness dressed as virtue. It is the hardest kind of strength because it happens in private, with no audience to admire it. You swallow the devastating response. You let the accusation stand unanswered. You walk away from a fight you could have won. And nobody knows what it cost you &mdash; except you.</p>
+      <p>Record your restraints. They are the invisible architecture of your character &mdash; the things you did not do that made you who you are.</p>
+      <p class="about-note">Your restraints are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="zabt.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nazar &mdash; the gaze</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x091C;&#x093C;&#x0930;</div>
+      <h1 class="title">Nazar</h1>
+      <p class="subtitle">the gaze</p>
+      <p class="intro">The gaze &mdash; a look that carries meaning heavier than language, that sees through and into. A nazar can bless or wound, protect or expose. It is the unspoken verdict delivered by the eyes alone. <em>Nazar</em> asks you to recall the gazes that altered you &mdash; the looks of love, judgement, recognition, or dismissal that needed no words.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose gaze changed how you saw yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gaze</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother's look of knowing, the stranger who truly saw me&hellip;">
+        <p class="write-prompt-2">What did those eyes say that words could not?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who looked, what their eyes held, what it did to you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">fix</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Nazar</h2>
+      <p>Before language, there was the gaze. A mother looks at her newborn and something is transmitted that no sentence could carry. A teacher glances at a student and the student knows, without a word, whether they are believed in or written off. The nazar is the oldest and most honest form of communication &mdash; because the eyes have not yet learned the sophisticated lies that the tongue has mastered.</p>
+      <p>Some gazes land on you and you grow taller. Others land and you shrink. A lover&rsquo;s nazar can make you feel like the only person in a crowded room. A parent&rsquo;s disappointed nazar can make you feel alone in your own home. These gazes shape your sense of self more profoundly than any lecture or praise.</p>
+      <p>Remember the eyes that saw you. Record the gazes that you still feel on your skin years later.</p>
+      <p class="about-note">Your gazes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="nazar.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saud&#x0101;gar &mdash; the merchant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x094C;&#x0926;&#x093E;&#x0917;&#x0930;</div>
+      <h1 class="title">Saud&#x0101;gar</h1>
+      <p class="subtitle">the merchant</p>
+      <p class="intro">The merchant &mdash; one who trades not just goods but trust, reputation, and relationships across distances. Every life involves commerce of some kind: the exchange of time for security, silence for peace, honesty for acceptance. <em>Saud&#x0101;gar</em> asks you to examine the trades you have made &mdash; the bargains struck, the prices paid, the deals that shaped your life&rsquo;s direction.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bargains have you struck with life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this trade</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the freedom I traded for stability, the truth I exchanged for peace&hellip;">
+        <p class="write-prompt-2">Was the exchange fair, and would you make it again?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gave, what you received, whether the ledger balanced&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">broker</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Saud&#x0101;gar</h2>
+      <p>The saudaagar of the old bazaars understood something that modern economics has forgotten: every transaction is a relationship. A merchant who cheated once lost a customer for life and a reputation in the community. The real currency was not gold &mdash; it was trust. The handshake meant more than the contract.</p>
+      <p>You are a merchant too, though you may not call yourself one. You trade your hours for a salary. You trade your silence for a relationship&rsquo;s survival. You trade your ambitions for your children&rsquo;s comfort. Some of these trades were wise. Some left you bankrupt in ways that only you can see. The saudaagar&rsquo;s art is knowing the true cost of what is exchanged.</p>
+      <p>Audit your trades. Name what you gave and what you got, and decide whether the books balance.</p>
+      <p class="about-note">Your trades are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="saudaagar.js"></script>
+</body>
+</html>

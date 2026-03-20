@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurrat &mdash; the audacity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x0941;&#x0930;&#x094D;&#x0930;&#x0924;</div>
+      <h1 class="title">Jurrat</h1>
+      <p class="subtitle">the audacity</p>
+      <p class="intro">Jurrat is not bravery. Bravery is measured and considered. Jurrat is the wild leap &mdash; the moment you acted when every reasonable voice said don&rsquo;t, when the odds were absurd and you moved anyway. <em>Jurrat</em> asks you to name the moments when your audacity shocked even you &mdash; the times you dared to speak, to leave, to begin, to refuse, knowing full well the cost.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did you dare what seemed impossible?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this audacity</p>
+        <input class="write-name" id="writeName" type="text" placeholder="quitting without a plan, saying no to the patriarch&hellip;">
+        <p class="write-prompt-2">What made you dare, and what did it cost?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the voice inside that said go, the aftermath of your boldness&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">dare</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jurrat</h2>
+      <p>Audacity terrifies the person who possesses it as much as the people who witness it. It is not the absence of fear but the overriding of fear by something more urgent &mdash; a refusal to accept what everyone else has already accepted. The audacious person does not calculate odds. They calculate the cost of staying still, and find it unbearable.</p>
+      <p>You have had jurrat. The day you told the truth when silence was safer. The moment you walked away from security toward uncertainty because the security was slowly killing you. The time you raised your hand, your voice, your objection, in a room full of people who had already agreed to be quiet.</p>
+      <p>Name those moments. They are the hinges on which your life turned &mdash; the dares that made you who you became.</p>
+      <p class="about-note">Your audacities are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jurrat.js"></script>
+</body>
+</html>

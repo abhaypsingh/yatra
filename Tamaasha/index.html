@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tam&#x0101;sh&#x0101; &mdash; the spectacle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x092E;&#x093E;&#x0936;&#x093E;</div>
+      <h1 class="title">Tam&#x0101;sh&#x0101;</h1>
+      <p class="subtitle">the spectacle</p>
+      <p class="intro">The spectacle &mdash; events so dramatic they drew a crowd, whether joyous celebration or public unraveling. A tamaasha can be a wedding procession that stops traffic or an argument that spills into the street. <em>Tam&#x0101;sh&#x0101;</em> asks you to recall the scenes of your life that were larger than life &mdash; the moments so vivid they became stories told and retold.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What scenes from your life could not be contained?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this spectacle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the festival that erupted in colour, the confrontation everyone witnessed&hellip;">
+        <p class="write-prompt-2">Were you part of the spectacle, or watching from the edge?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what happened, who saw it, how it became a story&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">watch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Tam&#x0101;sh&#x0101;</h2>
+      <p>Life mostly happens in private. But occasionally, something bursts through the walls and becomes public &mdash; a tamaasha. It can be glorious: a wedding baraat dancing through the streets, a cricket match won in the last over, a child&rsquo;s first performance on stage. Or it can be searing: a family feud erupting at a gathering, a public humiliation, a loss so great it cannot be contained by decorum.</p>
+      <p>The tamaasha is the moment when life becomes theatre without anyone writing a script. You are simultaneously living it and watching it, feeling it and narrating it. These are the memories that come with a crowd attached &mdash; because a tamaasha, by definition, has witnesses.</p>
+      <p>Name the spectacles. Both the ones that made you proud to be seen and the ones you wished no one had witnessed.</p>
+      <p class="about-note">Your spectacles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="tamaasha.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamatk&#x0101;r &mdash; the miracle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x092E;&#x0924;&#x094D;&#x0915;&#x093E;&#x0930;</div>
+      <h1 class="title">Chamatk&#x0101;r</h1>
+      <p class="subtitle">the miracle</p>
+      <p class="intro">Events that defied logic &mdash; the impossible becoming real before your eyes. Not the miracles of scripture but the personal ones: the phone call that came at the exact right moment, the door that opened when every other had closed. <em>Chamatk&#x0101;r</em> holds space for the events you still cannot rationally explain.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What happened that you still cannot explain?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this miracle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the recovery no one expected, the stranger who appeared&hellip;">
+        <p class="write-prompt-2">What made it impossible, and how did it happen anyway?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what logic said, what actually happened, what you felt&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">witness</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chamatk&#x0101;r</h2>
+      <p>We live in an age that distrusts miracles. Everything must have a cause, a mechanism, a peer-reviewed explanation. And yet &mdash; there are events in your life that refuse to be explained. The timing that was too perfect to be coincidence. The survival that defied every medical prediction. The connection that materialized from nowhere exactly when you needed it.</p>
+      <p>A chamatkaar does not require you to abandon reason. It only asks you to acknowledge that some things happened which your understanding cannot contain. The miracle is not in the supernatural &mdash; it is in the gap between what should have been and what was.</p>
+      <p>Record what defied your expectations. Let the inexplicable remain inexplicable, and honour it anyway.</p>
+      <p class="about-note">Your miracles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chamatkaar.js"></script>
+</body>
+</html>

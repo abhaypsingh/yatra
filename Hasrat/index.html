@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasrat &mdash; the longing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x0938;&#x0930;&#x0924;</div>
+      <h1 class="title">Hasrat</h1>
+      <p class="subtitle">the longing</p>
+      <p class="intro">Hasrat is not simple wanting. It is wanting laced with the knowledge that what you want may never come &mdash; or that it already passed and you missed it. It lives in the space between desire and regret, in the ache for a life you almost lived. <em>Hasrat</em> asks you to name the longings you carry &mdash; the paths not taken, the words not spoken, the futures that dissolved before they could begin.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What do you still long for, even now?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this longing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the city I never moved to, the conversation I never started&hellip;">
+        <p class="write-prompt-2">What makes this longing still alive?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you wanted, what stopped you, why it still pulls&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Hasrat</h2>
+      <p>Longing is different from loss. Loss means something was yours and was taken. Longing means something was almost yours &mdash; close enough to imagine, never close enough to hold. It is the phantom limb of possibility, an ache for a version of life that existed only in the space between intention and action.</p>
+      <p>You carry hasrat for the person you did not approach, the offer you turned down, the forgiveness you delayed until it was too late. These longings do not fade with time. They crystallize. They become part of the architecture of who you are &mdash; rooms in your house that you furnished but never lived in.</p>
+      <p>Name them here. Not to torment yourself, but to honour the wanting &mdash; because what you longed for reveals what you truly valued.</p>
+      <p class="about-note">Your longings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="hasrat.js"></script>
+</body>
+</html>

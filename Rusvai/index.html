@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rusv&#x0101;&#x012B; &mdash; the humiliation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0941;&#x0938;&#x0935;&#x093E;&#x0908;</div>
+      <h1 class="title">Rusv&#x0101;&#x012B;</h1>
+      <p class="subtitle">the humiliation</p>
+      <p class="intro">Rusvai is not embarrassment. Embarrassment fades. Rusvai brands. It is the public stripping of dignity &mdash; the moment when shame was inflicted before witnesses, when the ground opened and you had nowhere to hide. <em>Rusv&#x0101;&#x012B;</em> asks you to face the humiliations that reshaped you &mdash; the scenes you still replay, the wounds that taught you what dignity costs and what it means to rebuild it from nothing.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What humiliation do you still carry in your body?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this humiliation</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the teacher who mocked me, the rejection spoken in front of everyone&hellip;">
+        <p class="write-prompt-2">What did it take from you, and what did you build after?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the scene you still replay, how you carried yourself afterward&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">endure</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rusv&#x0101;&#x012B;</h2>
+      <p>Humiliation is shame made public. It requires an audience &mdash; or the feeling of one. The boss who berated you in front of colleagues. The partner who belittled you at a dinner table. The system that made you wait in line, prove your worth, beg for what should have been given freely. These moments burn into memory with a clarity that happy moments rarely achieve.</p>
+      <p>But the story does not end with the burning. After rusvai comes the slow, invisible work of reconstruction. You gathered the pieces of your dignity in private. You decided what kind of person you would become in the aftermath &mdash; bitter or resolved, smaller or more determined. That reconstruction is as much a part of the rusvai as the wound itself.</p>
+      <p>Name what humiliated you. Not to re-open the wound, but to honour the person who stood back up.</p>
+      <p class="about-note">Your humiliations are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="rusvai.js"></script>
+</body>
+</html>

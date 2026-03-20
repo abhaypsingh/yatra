@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jud&#x0101;&#x012B; &mdash; the separation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x0941;&#x0926;&#x093E;&#x0908;</div>
+      <h1 class="title">Jud&#x0101;&#x012B;</h1>
+      <p class="subtitle">the separation</p>
+      <p class="intro">Judai is the space that opens when what you love is taken away &mdash; by distance, by death, by a decision that could not be undone. It is not the same as loss. Loss has finality. Judai has longing &mdash; because sometimes the separated thing still exists, somewhere, just not with you. <em>Jud&#x0101;&#x012B;</em> asks you to name the separations that carved hollows in your life &mdash; the partings that were chosen and the ones that were forced upon you.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What separation still echoes in the space it left behind?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this separation</p>
+        <input class="write-name" id="writeName" type="text" placeholder="leaving home at eighteen, the friend who moved to another country&hellip;">
+        <p class="write-prompt-2">What was it like in the first days of being apart?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the emptiness, the habits that suddenly had no purpose, how you adapted&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">weather</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jud&#x0101;&#x012B;</h2>
+      <p>Separation is felt first in the body. The hand reaches for someone who is not there. The ears strain for a voice that used to fill the room. The routines built for two collapse into rituals of one &mdash; cooking less food, sleeping on one side of the bed, forgetting, for a moment, and then remembering. The remembering is the worst part.</p>
+      <p>Some judai is imposed: a parent sent away for work, a child who leaves for a life elsewhere, a loved one claimed by illness or geography. Other separations are chosen &mdash; the necessary leaving that breaks your heart but preserves your survival. In both cases, what remains is the outline of presence, like the shadow on a wall after the picture has been removed.</p>
+      <p>Name the separations you have weathered. Each one is proof that you loved something enough for its absence to reshape you.</p>
+      <p class="about-note">Your separations are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="judai.js"></script>
+</body>
+</html>

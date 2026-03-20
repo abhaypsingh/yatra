@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jun&#x016B;n &mdash; the obsession</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x0941;&#x0928;&#x0942;&#x0928;</div>
+      <h1 class="title">Jun&#x016B;n</h1>
+      <p class="subtitle">the obsession</p>
+      <p class="intro">The magnificent madness that makes artists paint and lovers wait &mdash; obsession that consumes but also creates. Junoon is not mild interest. It is the thing that keeps you awake, that rearranges your priorities, that others call excessive but you call necessary. <em>Jun&#x016B;n</em> is your record of the obsessions that defined your seasons.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What has consumed you completely?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this obsession</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the project I could not abandon, the person I could not forget&hellip;">
+        <p class="write-prompt-2">What did this obsession create, and what did it destroy?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how it seized you, what it produced, what it cost&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">surrender</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jun&#x016B;n</h2>
+      <p>Junoon is the word for a madness that is also a gift. The Sufis used it to describe the divine intoxication of the seeker who abandons everything for the beloved. But junoon lives in ordinary life too &mdash; the entrepreneur who cannot stop building, the musician who plays until their fingers bleed, the mother who fights systems that everyone else has accepted.</p>
+      <p>Society fears junoon because it cannot be controlled or scheduled. It disrupts routines, ignores boundaries, refuses moderation. But almost everything worth remembering was created by someone in the grip of junoon. The question is not whether obsession is dangerous &mdash; it always is &mdash; but whether what it produces justifies what it burns.</p>
+      <p>Name your obsessions without apology. They are the truest map of what you are.</p>
+      <p class="about-note">Your obsessions are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="junoon.js"></script>
+</body>
+</html>

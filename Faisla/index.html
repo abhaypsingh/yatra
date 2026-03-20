@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faisl&#x0101; &mdash; the verdict</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x093C;&#x0948;&#x0938;&#x0932;&#x093E;</div>
+      <h1 class="title">Faisl&#x0101;</h1>
+      <p class="subtitle">the verdict</p>
+      <p class="intro">The verdict &mdash; final judgements that closed one chapter and forced open another. A faisla is not an opinion; it is a conclusion that carries consequences. <em>Faisl&#x0101;</em> asks you to recall the decisive moments &mdash; the judgements passed on you by others, the verdicts you delivered upon yourself, and the final decisions from which there was no appeal.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What verdicts have defined the chapters of your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this verdict</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the day I decided to leave, the judgement that closed a door forever&hellip;">
+        <p class="write-prompt-2">Who delivered this verdict, and what did it seal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the decision, who made it, what ended and what began because of it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">accept</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Faisl&#x0101;</h2>
+      <p>Life is punctuated by faislas &mdash; verdicts that arrive from outside or from within and divide time into before and after. A doctor delivers a diagnosis. A court issues a ruling. A parent says &ldquo;enough.&rdquo; You look in the mirror one morning and decide you cannot continue as you have been. Each faisla closes a door with a sound that echoes long after.</p>
+      <p>The hardest faislas are the ones you deliver on yourself. To declare that a relationship is over, that a dream must be abandoned, that a version of yourself has expired &mdash; these self-verdicts require a brutal honesty that no external judge can match. They are also the most freeing, because no one can appeal a judgement you pass on your own life.</p>
+      <p>Name the verdicts. The ones that were delivered upon you and the ones you had the courage to deliver yourself. They are the hinges on which your life turned.</p>
+      <p class="about-note">Your verdicts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="faisla.js"></script>
+</body>
+</html>

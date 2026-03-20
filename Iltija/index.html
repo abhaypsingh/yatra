@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iltij&#x0101; &mdash; the supplication</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x0932;&#x094D;&#x0924;&#x093F;&#x091C;&#x093E;</div>
+      <h1 class="title">Iltij&#x0101;</h1>
+      <p class="subtitle">the supplication</p>
+      <p class="intro">An iltija is not a casual prayer. It is the prayer that comes when everything else has failed &mdash; when medicine, money, logic, and effort have all been exhausted and all that remains is the raw act of asking. <em>Iltij&#x0101;</em> asks you to recall those moments when you had nothing left but words aimed at something larger than yourself &mdash; desperate, honest, stripped of pretence.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did you have nothing left but prayer?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this supplication</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the night before surgery, the phone call that wouldn&rsquo;t come&hellip;">
+        <p class="write-prompt-2">What did you ask for, and to whom?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the words you whispered, whether they were answered&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">whisper</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Iltij&#x0101;</h2>
+      <p>There is a kind of prayer that comes before faith and survives after faith leaves. It does not require a god or a temple. It requires only the admission that you are powerless &mdash; that the situation has outgrown your ability to control it, and the only thing left is to ask. The asking itself is the prayer. The honesty of the desperation is what makes it sacred.</p>
+      <p>You have made such supplications. At hospital bedsides, in examination halls, on roads at night when the car would not start and no one was coming. You spoke to the ceiling, to the sky, to the silence &mdash; and something in you meant every syllable more deeply than any words you had ever spoken.</p>
+      <p>Record those moments. Whether they were answered or not, they were the truest things you ever said.</p>
+      <p class="about-note">Your supplications are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="iltija.js"></script>
+</body>
+</html>

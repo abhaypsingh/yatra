@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulfat &mdash; the affection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x0932;&#x094D;&#x092B;&#x093C;&#x0924;</div>
+      <h1 class="title">Ulfat</h1>
+      <p class="subtitle">the affection</p>
+      <p class="intro">Ulfat is not the grand declaration of love. It is the quiet warmth that lives in small acts &mdash; a hand adjusting your collar, a plate kept warm for your late arrival, a name spoken softly when you are half asleep. <em>Ulfat</em> asks you to notice the affections you have received and given &mdash; the gentle, undramatic tenderness that held your life together without ever asking to be noticed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where has quiet affection held you without words?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this affection</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my aunt braiding my hair, the way he always saved me the last piece&hellip;">
+        <p class="write-prompt-2">How did this tenderness show itself?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the gesture, the consistency, what it felt like to be held without being grabbed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">feel</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ulfat</h2>
+      <p>The most sustaining love is often the least dramatic. It is the parent who checked your blanket every night without waking you. The friend who always texted back, even when the conversation was trivial. The neighbour who left fruit at your door during the months you could not afford it, and never mentioned it, and never will.</p>
+      <p>Ulfat does not perform. It does not need to be witnessed or reciprocated to exist. It is the affection that operates below the threshold of notice &mdash; steady, undemanding, and so reliable that you only recognise its enormity when it is gone. It is the warmth you took for granted because it was always there, like the sun.</p>
+      <p>Name the affections that sustained you. They are the evidence that you were loved in the way that matters most &mdash; consistently, quietly, without condition.</p>
+      <p class="about-note">Your affections are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ulfat.js"></script>
+</body>
+</html>

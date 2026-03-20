@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghazab &mdash; the wrath</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093C;&#x091C;&#x093C;&#x092C;</div>
+      <h1 class="title">Ghazab</h1>
+      <p class="subtitle">the wrath</p>
+      <p class="intro">Ghazab is anger that has outgrown its container. It is not irritation or frustration &mdash; it is the fury that burned through every layer of restraint and emerged as something almost elemental. Sometimes righteous, sometimes ruinous, always unforgettable. <em>Ghazab</em> asks you to name the wraths you have felt or witnessed &mdash; the moments when rage broke its banks and flooded everything in its path.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did your anger become something you could not contain?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wrath</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the day I finally erupted, the injustice I could not swallow&hellip;">
+        <p class="write-prompt-2">Was it righteous or destructive &mdash; or both?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what provoked it, what it destroyed or defended, how you felt after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">unleash</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ghazab</h2>
+      <p>We are taught to fear anger, to suppress it, to apologise for it. But some wraths are necessary. The anger of the oppressed is not a character flaw &mdash; it is a survival mechanism. The fury of a mother protecting her child is not irrational &mdash; it is the most rational force in existence. Ghazab, in its righteous form, is the fire that burns down what should never have been built.</p>
+      <p>But ghazab also destroys indiscriminately. The rage that made you say the one thing that could never be taken back. The fury that turned you into a version of yourself you did not recognise &mdash; shaking, shouting, breaking something that could not be repaired. Afterward, the silence was worse than the noise.</p>
+      <p>Name your wraths. Examine whether they served justice or fed destruction. Both are yours to claim, and both shaped who you became in their aftermath.</p>
+      <p class="about-note">Your wraths are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ghazab.js"></script>
+</body>
+</html>

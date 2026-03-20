@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kafan &mdash; the shroud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x092B;&#x093C;&#x0928;</div>
+      <h1 class="title">Kafan</h1>
+      <p class="subtitle">the shroud</p>
+      <p class="intro">Kafan is the white cloth that wraps the body for its final journey. It is the same for everyone &mdash; no pockets, no ornament, no distinction. It is the last garment, and it says: this is over. <em>Kafan</em> asks you to sit with the endings you have witnessed &mdash; the deaths, the farewells to bodies, the moments when finality became undeniable and you stood in the presence of something that could not be reversed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What ending forced you to understand that some things do not return?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shroud</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandmother&rsquo;s funeral, the day the house was sold forever&hellip;">
+        <p class="write-prompt-2">What did finality teach you that nothing else could?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the moment it became real, what you understood about life from standing near its end&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">drape</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kafan</h2>
+      <p>The kafan teaches the one lesson no living person wants to learn: that the body you loved &mdash; the hands that fed you, the face that smiled at you across rooms, the chest where you rested your head &mdash; was always temporary. The cloth is simple and unadorned because decoration has lost its meaning. What remains is the shape beneath it, and even that will change.</p>
+      <p>You have stood near this finality. Perhaps you washed the body or watched others do it. Perhaps you placed flowers or earth. Perhaps you simply stood and felt the weight of a silence that no words could fill. These encounters with death are not morbid &mdash; they are the most honest moments of a life, the instants when pretence becomes impossible and grief strips you down to your truest self.</p>
+      <p>Name the endings you have witnessed. Not to dwell in sorrow, but to honour the dead by remembering that you were there &mdash; that they were not alone when the shroud was draped.</p>
+      <p class="about-note">Your shrouds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kafan.js"></script>
+</body>
+</html>

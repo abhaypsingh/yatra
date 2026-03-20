@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intez&#x0101;r &mdash; the wait</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x0902;&#x0924;&#x0947;&#x091C;&#x093C;&#x093E;&#x0930;</div>
+      <h1 class="title">Intez&#x0101;r</h1>
+      <p class="subtitle">the wait</p>
+      <p class="intro">Intezaar is not patience. Patience is chosen. Intezaar is inflicted &mdash; the agonising suspension between hope and outcome, when the clock moves and the answer does not come. A letter. A diagnosis. A return. A sign. <em>Intez&#x0101;r</em> asks you to name the waits that stretched your endurance &mdash; the hours, weeks, or years spent suspended between possibility and resolution, when all you could do was hold on.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What wait changed the shape of your days?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this wait</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the weeks before the test results, the years waiting for a visa&hellip;">
+        <p class="write-prompt-2">What were you waiting for, and what did the waiting do to you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the hope that kept you going, how the suspension changed your days&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wait</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Intez&#x0101;r</h2>
+      <p>The worst part of waiting is not the duration. It is the uncertainty. If someone told you the answer would come in exactly forty-seven days, you could mark a calendar and endure. But intezaar offers no calendar. It offers only the present moment, stretched and thinned until each hour feels like a week, and every sound might be the one that ends the suspension.</p>
+      <p>You waited for someone to come back &mdash; from a journey, from anger, from the operating theatre. You waited for an envelope that would determine your future. You waited for the phone to ring with news that could be salvation or devastation. And during all that waiting, life did not pause. You still ate, still worked, still pretended to be present while your real self lived entirely in the future, in the moment the wait would end.</p>
+      <p>Name the waits that shaped you. The waiting was not empty time &mdash; it was the time when hope and dread coexisted, and you learned what you were made of.</p>
+      <p class="about-note">Your waits are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="intezaar.js"></script>
+</body>
+</html>

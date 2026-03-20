@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taub&#x0101; &mdash; the repentance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x094C;&#x092C;&#x093E;</div>
+      <h1 class="title">Taub&#x0101;</h1>
+      <p class="subtitle">the repentance</p>
+      <p class="intro">The turning away from what was wrong &mdash; repentance that is not shame but the beginning of a new direction. Taubah is not guilt that paralyzes; it is the pivot that frees. <em>Taub&#x0101;</em> holds space for the moments you recognized your wrongs and chose, deliberately, to walk a different way &mdash; not because you were caught, but because you could no longer continue.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">From what have you turned away?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this repentance</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the habit I finally broke, the harm I stopped repeating&hellip;">
+        <p class="write-prompt-2">What made you turn, and what did the new direction look like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were doing, the moment of reckoning, the path you chose instead&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">repent</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Taub&#x0101;</h2>
+      <p>The Arabic root of taubah means &ldquo;to return&rdquo; &mdash; not to go backward, but to return to your true self. Repentance in this tradition is not punishment; it is homecoming. You strayed, you recognized the straying, and you came back. The act of return is honoured, not the act of having been perfect all along.</p>
+      <p>Real taubah happens in private. It is the 3 a.m. reckoning with yourself when the excuse you&rsquo;ve been using finally crumbles. It is the morning you wake up and simply cannot continue the pattern. Not dramatic, not theatrical &mdash; just the quiet, enormous decision to stop. The world may never notice, but you are fundamentally reoriented.</p>
+      <p>Name your turnings. They are not evidence of failure &mdash; they are evidence that you are still awake to your own life.</p>
+      <p class="about-note">Your repentances are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taubah.js"></script>
+</body>
+</html>

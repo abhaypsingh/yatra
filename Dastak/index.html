@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dastak &mdash; the knock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0938;&#x094D;&#x0924;&#x0915;</div>
+      <h1 class="title">Dastak</h1>
+      <p class="subtitle">the knock</p>
+      <p class="intro">A dastak is the sound that divides time into before and after. A knock at the door &mdash; sometimes it brings opportunity, sometimes catastrophe, sometimes a person you never expected to see again. The knock itself is neutral; what follows changes everything. <em>Dastak</em> asks you to recall the knocks in your life &mdash; the unexpected arrivals, the news at the threshold, the moments when fate announced itself with a simple sound.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What knock divided your life into before and after?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this knock</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the late-night phone call, the stranger at the hospital door&hellip;">
+        <p class="write-prompt-2">What arrived when you opened the door?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who or what was on the other side, how it changed your day or your life&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dastak</h2>
+      <p>You were sitting in an ordinary evening. The tea was getting cold. The television was on. Then: a knock. And in the pause between hearing it and opening the door, your entire life hung in suspension &mdash; because you did not yet know whether what waited on the other side was a gift or a reckoning.</p>
+      <p>Some knocks brought people back from the dead &mdash; the friend who appeared after years of silence, the parent who returned after leaving. Others brought the dead closer &mdash; the officer at the door, the doctor in the hallway, the neighbour who could not meet your eyes. And some knocks were subtler: an idea that arrived uninvited, a chance encounter that rerouted your entire trajectory.</p>
+      <p>Record the knocks that mattered. Each one was an interruption that proved your life was never entirely under your control &mdash; and that sometimes, that was the point.</p>
+      <p class="about-note">Your knocks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dastak.js"></script>
+</body>
+</html>

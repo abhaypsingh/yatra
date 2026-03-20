@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehfil &mdash; the gathering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0939;&#x092B;&#x093C;&#x093F;&#x0932;</div>
+      <h1 class="title">Mehfil</h1>
+      <p class="subtitle">the gathering</p>
+      <p class="intro">An intimate gathering of music, poetry, and conversation &mdash; where souls meet beyond social pretense. A mehfil is not a party; it is a communion. The room shrinks, the masks fall, and something real passes between people. <em>Mehfil</em> invites you to recall the gatherings that were more than events &mdash; the ones where presence itself was the gift.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which gatherings left their mark on your soul?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gathering</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the night we sang until dawn, the dinner where everyone wept&hellip;">
+        <p class="write-prompt-2">What made this gathering transcend the ordinary?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who was there, what happened, why the air felt different&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">host</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mehfil</h2>
+      <p>A mehfil cannot be scheduled the way a meeting can. You can arrange the room, invite the people, pour the chai &mdash; but the mehfil itself either descends or it does not. It is the moment when conversation stops being an exchange of information and becomes an exchange of truth. When the singer&rsquo;s voice cracks and the audience feels it in their own throat. When someone tells a story and the room forgets time.</p>
+      <p>You have attended gatherings that were merely gatherings, and you have attended a few that were mehfils. The difference is unmistakable. In a mehfil, you leave lighter than you arrived. Something was shared that could not have been shared in any other configuration of people, in any other moment.</p>
+      <p>Remember the mehfils. They are proof that presence &mdash; real, unhurried, unguarded presence &mdash; is the rarest and most valuable thing humans offer each other.</p>
+      <p class="about-note">Your gatherings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mehfil.js"></script>
+</body>
+</html>

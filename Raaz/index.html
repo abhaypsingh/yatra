@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&#x0101;z &mdash; the secret</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x093E;&#x091C;&#x093C;</div>
+      <h1 class="title">R&#x0101;z</h1>
+      <p class="subtitle">the secret</p>
+      <p class="intro">Secrets guarded and secrets discovered &mdash; truths that lived in darkness by choice or necessity. A raaz is not merely hidden information; it is a truth that carries weight precisely because it is concealed. <em>R&#x0101;z</em> is the place for the secrets that shaped you &mdash; the ones you kept, the ones kept from you, and the ones you finally uncovered.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What truths have lived in the dark?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this secret</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the truth I carried alone, the discovery that changed everything&hellip;">
+        <p class="write-prompt-2">What did keeping or finding this secret cost you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was hidden, why it stayed hidden, what shifted when light reached it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">keep</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>R&#x0101;z</h2>
+      <p>Every family has a raaz. Every person carries at least one. The secret is a strange organism &mdash; it grows heavier the longer it is held, yet the thought of releasing it feels more dangerous than the weight. Some secrets protect the innocent. Others protect the guilty. Most protect a version of reality that everyone has agreed to believe.</p>
+      <p>Then there are the secrets discovered &mdash; the letter found in a drawer after someone dies, the conversation overheard that reframes an entire childhood, the confession that arrives decades too late. These discoveries do not just add new information; they rearrange everything you thought you knew.</p>
+      <p>You do not need to reveal your secrets here. Simply name them &mdash; acknowledge their existence and their weight. Even the act of writing &ldquo;this exists&rdquo; can lighten the load.</p>
+      <p class="about-note">Your secrets are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="raaz.js"></script>
+</body>
+</html>

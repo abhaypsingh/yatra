@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khauf &mdash; the fear</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x093C;&#x094C;&#x092B;&#x093C;</div>
+      <h1 class="title">Khauf</h1>
+      <p class="subtitle">the fear</p>
+      <p class="intro">Khauf is the fear that lives in the body before the mind can name it &mdash; the cold that arrives in the chest, the legs that refuse to move, the voice that disappears. It can save your life or steal it. <em>Khauf</em> asks you to name the fears that have shaped you &mdash; the ones that paralysed, the ones that protected, and the ones you invented in the dark that vanished at dawn.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What fears have governed your choices?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this fear</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the dark hallway at age seven, the fear of failing publicly&hellip;">
+        <p class="write-prompt-2">What did this fear prevent or protect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it stopped you from doing, or what it saved you from&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">face</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khauf</h2>
+      <p>Fear is the oldest part of you. It lived in your body before language, before memory, before the self that calls itself &ldquo;I.&rdquo; It made your ancestors climb trees and avoid shadows and survive long enough to create you. But fear did not stop evolving. It learned to attach itself to rejection, to failure, to the imagined judgement of others &mdash; threats that carry no teeth but feel mortal.</p>
+      <p>Some of your fears kept you alive. The instinct that told you not to trust a certain person. The unease that made you check the lock twice. But others kept you small &mdash; the terror of being seen, the paralysis before a difficult conversation, the dread that made you choose the safe and familiar over the uncertain and necessary.</p>
+      <p>Map your fears here. Name them so they become objects you can examine, not shadows that govern you in silence.</p>
+      <p class="about-note">Your fears are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khauf.js"></script>
+</body>
+</html>

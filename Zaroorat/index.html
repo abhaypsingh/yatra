@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zar&#x016B;rat &mdash; the necessity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093C;&#x0930;&#x0942;&#x0930;&#x0924;</div>
+      <h1 class="title">Zar&#x016B;rat</h1>
+      <p class="subtitle">the necessity</p>
+      <p class="intro">Zaroorat is the force that strips you to essentials. When necessity arrives, every luxury falls away and what remains is the irreducible truth of what you need to survive &mdash; a meal, a roof, a single person who answers the phone. <em>Zar&#x016B;rat</em> asks you to recall the times when necessity taught you what was essential &mdash; when want was removed and only need remained, and you discovered what you could and could not live without.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did necessity reveal what truly mattered?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this necessity</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the month we rationed everything, the day I needed one honest friend&hellip;">
+        <p class="write-prompt-2">What did you discover was truly essential?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you thought you needed versus what you actually needed to survive&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">answer</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Zar&#x016B;rat</h2>
+      <p>Necessity is the great editor. It takes the sprawling manuscript of your desires and cuts it down to a single sentence: what do you need right now to survive? In that brutal editing, profound clarity emerges. The things you thought you needed &mdash; the status, the comfort, the approval &mdash; fall away like dead leaves, and what remains is the trunk: food, shelter, one person who cares, the will to continue.</p>
+      <p>You have been edited by zaroorat. The time money ran out and you learned who your real friends were. The crisis that revealed which relationship was load-bearing and which was decorative. The illness that taught you the difference between wanting to live and choosing to live &mdash; actively, deliberately, one morning at a time.</p>
+      <p>Record the necessities that clarified your life. They were harsh teachers, but they showed you a truth that comfort never could.</p>
+      <p class="about-note">Your necessities are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="zaroorat.js"></script>
+</body>
+</html>

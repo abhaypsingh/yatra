@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dast&#x016B;r &mdash; the custom</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0938;&#x094D;&#x0924;&#x0942;&#x0930;</div>
+      <h1 class="title">Dast&#x016B;r</h1>
+      <p class="subtitle">the custom</p>
+      <p class="intro">The inherited custom &mdash; rituals and rules passed down that you followed, questioned, or broke. A dastoor is not merely a habit; it is a tradition with the weight of generations behind it. <em>Dast&#x016B;r</em> invites you to examine the customs that shaped your life &mdash; the ones you carried forward with pride and the ones you set down with difficulty.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which inherited customs have governed your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this custom</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the way we greet elders, the rule about eating together&hellip;">
+        <p class="write-prompt-2">Did you honour this custom, change it, or leave it behind?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it came from, what it meant, how you carried or abandoned it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">follow</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dast&#x016B;r</h2>
+      <p>A dastoor arrives before you do. By the time you are old enough to question it, it has already been practised for so long that questioning feels like rebellion. Take off your shoes before entering the house. Touch the feet of your elders. Do not eat before the oldest person at the table has begun. These customs carry the compressed wisdom &mdash; and sometimes the compressed prejudice &mdash; of generations.</p>
+      <p>The relationship with dastoor is never simple. Some customs you follow gladly because you feel their truth in your bones. Others you follow reluctantly, out of respect or fear of conflict. And some you eventually break &mdash; not easily, not without guilt, but because the custom no longer serves the life you are building. Each choice reveals something about who you are becoming.</p>
+      <p>Record your customs &mdash; the kept and the broken alike. They are the clearest map of where tradition and self-determination meet in your life.</p>
+      <p class="about-note">Your customs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dastoor.js"></script>
+</body>
+</html>

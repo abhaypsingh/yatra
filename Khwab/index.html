@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khw&#x0101;b &mdash; the dream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0916;&#x093C;&#x094D;&#x0935;&#x093E;&#x092C;</div>
+      <h1 class="title">Khw&#x0101;b</h1>
+      <p class="subtitle">the dream</p>
+      <p class="intro">Dreams visited in sleep and built while awake &mdash; visions of what could be that pulled you forward. A khwab is the picture your mind paints when reality is not looking, the life imagined before it is lived. <em>Khw&#x0101;b</em> holds space for the dreams that guided you, haunted you, or still wait quietly for their turn.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dreams have shaped you, sleeping or waking?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this dream</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the house I imagined as a child, the life I once planned&hellip;">
+        <p class="write-prompt-2">Did you chase this dream, abandon it, or does it still wait?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you saw, how it pulled you, where it led or where it faded&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">dream</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Khw&#x0101;b</h2>
+      <p>A khwab operates in two realms. There is the dream that visits at night &mdash; unbidden, strange, sometimes prophetic. And there is the dream you construct with open eyes &mdash; the ambition, the vision, the imagined future that makes the difficult present bearable. Both are real. Both shape your actions even when you forget them by morning.</p>
+      <p>Some dreams are fulfilled and feel smaller than imagined. Others are never realized but remain the most important stories of your inner life. Your abandoned dreams tell as much about you as your achieved ones &mdash; perhaps more, because they reveal what you wanted before the world told you what to want.</p>
+      <p>Record your dreams &mdash; the nocturnal visitations and the waking blueprints alike. They are the architecture of your longing.</p>
+      <p class="about-note">Your dreams are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="khwab.js"></script>
+</body>
+</html>

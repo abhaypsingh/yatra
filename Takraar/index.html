@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takr&#x0101;r &mdash; the argument</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0915;&#x0930;&#x093E;&#x0930;</div>
+      <h1 class="title">Takr&#x0101;r</h1>
+      <p class="subtitle">the argument</p>
+      <p class="intro">A takraar is not a polite disagreement. It is the argument that shook the walls &mdash; voices raised, truths weaponised, silences deployed like fists. Some arguments cleared the air like a monsoon. Others poisoned the well for years. <em>Takr&#x0101;r</em> asks you to name the confrontations that mattered &mdash; the fights that were necessary, the ones that were destructive, and the ones where what was said could never be unsaid.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which argument still echoes in the room where it happened?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this argument</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the fight about money, the night I finally said enough&hellip;">
+        <p class="write-prompt-2">Was it necessary or destructive &mdash; and what did it settle?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who said what, what broke or healed, the silence that followed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">have</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Takr&#x0101;r</h2>
+      <p>Every family has its arguments that are remembered like historical events &mdash; dated, located, recounted differently by each witness. The fight at the dining table in 1998. The phone call that ended in hanging up. The door that slammed so hard the frame cracked. Arguments are the earthquakes of relationships, and their aftershocks can last for decades.</p>
+      <p>But not all arguments destroy. Some are the only way truth gets spoken in families and friendships where politeness has become a prison. The daughter who finally told her father he was wrong. The friend who said what everyone was thinking. The couple who fought through to the other side and found, in the wreckage, a honesty they had never reached before.</p>
+      <p>Name the arguments that shaped your relationships. Each one, whether it healed or harmed, revealed what you and the other person truly needed to say.</p>
+      <p class="about-note">Your arguments are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="takraar.js"></script>
+</body>
+</html>

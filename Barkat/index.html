@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barkat &mdash; the abundance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0930;&#x0915;&#x0924;</div>
+      <h1 class="title">Barkat</h1>
+      <p class="subtitle">the abundance</p>
+      <p class="intro">Barkat is abundance that arrives as blessing &mdash; more than earned, it is grace that overflows the vessel. A small meal that feeds everyone. A modest income that somehow stretches. <em>Barkat</em> is the space where you record the inexplicable abundances &mdash; the times when what you had became more than enough.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where has abundance found you unasked?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this blessing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the kitchen that never ran empty, a friendship that multiplied&hellip;">
+        <p class="write-prompt-2">How did scarcity become abundance?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you had, what it became, the grace you cannot explain&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">receive</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Barkat</h2>
+      <p>There is a kind of abundance that defies arithmetic. Your grandmother cooked for four but fed twelve. Your father&rsquo;s salary was modest but the house never felt poor. This is barkat &mdash; not wealth, but the strange multiplication that happens when something is given with sincerity and received with gratitude.</p>
+      <p>Barkat cannot be manufactured. It is not profit or surplus. It is the feeling that life has given you more than the numbers suggest. A single conversation that nourishes for weeks. A small act of kindness that ripples outward beyond anyone&rsquo;s accounting.</p>
+      <p>Name the blessings that exceeded their container. Honour the abundance that arrived without an invoice.</p>
+      <p class="about-note">Your blessings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="barkat.js"></script>
+</body>
+</html>

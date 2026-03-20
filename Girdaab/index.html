@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gird&#x0101;b &mdash; the whirlpool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093F;&#x0930;&#x094D;&#x0926;&#x093E;&#x092C;</div>
+      <h1 class="title">Gird&#x0101;b</h1>
+      <p class="subtitle">the whirlpool</p>
+      <p class="intro">A girdaab does not announce itself. The water looks calm, and then you are inside it &mdash; spinning, breathless, pulled toward a centre you cannot see. Every attempt to swim out only tightens the circle. <em>Gird&#x0101;b</em> asks you to name the situations that pulled you under &mdash; the spiralling crises, the relationships that spun faster and faster, the moments when escape felt impossible and the only option was to stop fighting the current and find a different way through.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What has pulled you into its spiral?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this vortex</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the debt that compounded, the argument that kept circling&hellip;">
+        <p class="write-prompt-2">How did the spinning begin, and how did it end?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what pulled you in, what it took to break free or what it cost to stay&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">escape</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gird&#x0101;b</h2>
+      <p>A whirlpool is not an enemy you can face. It has no body, no intention &mdash; only motion. It is a pattern that feeds on itself, drawing everything nearby into tighter and tighter circles. The harder you fight it directly, the more energy it takes from you. This is what makes certain life situations so devastating: they do not attack, they absorb.</p>
+      <p>Debt spirals. Grief cycles. Arguments that restart with the same words every time. Addictions that promise relief and deliver deeper need. These are girdaab &mdash; whirlpools that look like stillness from the outside but are violent underneath.</p>
+      <p>Name the ones that caught you. Not to relive the spinning, but to mark the moment you found your way out &mdash; or to acknowledge you are still searching for the edge.</p>
+      <p class="about-note">Your vortexes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="girdaab.js"></script>
+</body>
+</html>

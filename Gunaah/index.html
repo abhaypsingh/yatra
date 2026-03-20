@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gun&#x0101;h &mdash; the sin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0928;&#x093E;&#x0939;</div>
+      <h1 class="title">Gun&#x0101;h</h1>
+      <p class="subtitle">the sin</p>
+      <p class="intro">Gunaah is the weight you carry for what you did &mdash; not what was done to you, but what you chose to do knowing it was wrong. Some sins were confessed and forgiven. Others remain sealed in rooms you have locked inside yourself. <em>Gun&#x0101;h</em> asks you to acknowledge the wrongs that live on your conscience &mdash; the actions, words, or silences that harmed others, and the burden of knowing you were the cause.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What wrong do you carry that has not yet been set down?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this sin</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the promise I broke, the person I did not defend&hellip;">
+        <p class="write-prompt-2">What did you do, and what does carrying it feel like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the action or silence, who was harmed, whether it has been confessed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">confess</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gun&#x0101;h</h2>
+      <p>The sins that weigh most are not the dramatic transgressions. They are the quiet ones &mdash; the time you stayed silent when someone needed you to speak, the lie that was easier than the truth, the person you let down not through malice but through negligence. These gunaah do not make headlines, but they inhabit the hours before sleep when the mind replays its debts.</p>
+      <p>Some sins can be repaired. The apology made years later, the debt repaid, the effort to become someone who would not repeat the same wrong. But some cannot. The person is gone. The moment has passed. The damage is permanent. And you must find a way to carry that knowledge without letting it crush you &mdash; not by forgetting, but by letting the weight teach you to walk differently.</p>
+      <p>Name what weighs on you. This is not a court &mdash; there is no sentence. There is only the relief of admitting what you already know to be true.</p>
+      <p class="about-note">Your sins are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gunaah.js"></script>
+</body>
+</html>

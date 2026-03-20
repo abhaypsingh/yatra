@@ -519,7 +519,57 @@
         ['Zeher', 'Zeher', 'the poison'],
         ['Aasra', '\u0100sr\u0101', 'the refuge'],
         ['Bandhan', 'Bandhan', 'the bond'],
-        ['Chhaaon', 'Chh\u0101\u0303o\u1E47', 'the shade']
+        ['Chhaaon', 'Chh\u0101\u0303o\u1E47', 'the shade'],
+        ['Aaghaz', '\u0100gh\u0101z', 'the beginning'],
+        ['Barkat', 'Barkat', 'the abundance'],
+        ['Chamatkaar', 'Chamatk\u0101r', 'the miracle'],
+        ['Daulat', 'Daulat', 'the wealth'],
+        ['Fakeer', 'Faq\u012Br', 'the ascetic'],
+        ['Gumaan', 'Gum\u0101n', 'the pride'],
+        ['Haasil', 'H\u0101sil', 'the gain'],
+        ['Ibaarat', 'Ib\u0101rat', 'the expression'],
+        ['Junoon', 'Jun\u016Bn', 'the obsession'],
+        ['Khwab', 'Khw\u0101b', 'the dream'],
+        ['Qaafila', 'Q\u0101fil\u0101', 'the caravan'],
+        ['Mehfil', 'Mehfil', 'the gathering'],
+        ['Nazar', 'Nazar', 'the gaze'],
+        ['Tamaasha', 'Tam\u0101sh\u0101', 'the spectacle'],
+        ['Raaz', 'R\u0101z', 'the secret'],
+        ['Saudaagar', 'Saud\u0101gar', 'the merchant'],
+        ['Taubah', 'Taub\u0101', 'the repentance'],
+        ['Umang', 'Umang', 'the enthusiasm'],
+        ['Waqt', 'Waqt', 'the time'],
+        ['Zabt', 'Zabt', 'the restraint'],
+        ['Alfaaz', 'Alf\u0101z', 'the words'],
+        ['Bewafai', 'Bewaf\u0101\u012B', 'the betrayal'],
+        ['Chiraag', 'Chir\u0101g', 'the lamp'],
+        ['Dastoor', 'Dast\u016Br', 'the custom'],
+        ['Faisla', 'Faisl\u0101', 'the verdict'],
+        ['Girdaab', 'Gird\u0101b', 'the whirlpool'],
+        ['Hasrat', 'Hasrat', 'the longing'],
+        ['Iltija', 'Iltij\u0101', 'the supplication'],
+        ['Jurrat', 'Jurrat', 'the audacity'],
+        ['Khauf', 'Khauf', 'the fear'],
+        ['Libaas', 'Lib\u0101s', 'the garment'],
+        ['Miraas', 'Mir\u0101s', 'the inheritance'],
+        ['Nishaani', 'Nish\u0101n\u012B', 'the token'],
+        ['Paigaam', 'Paig\u0101m', 'the message'],
+        ['Rusvai', 'Rusv\u0101\u012B', 'the humiliation'],
+        ['Sitam', 'Sitam', 'the cruelty'],
+        ['Takraar', 'Takr\u0101r', 'the argument'],
+        ['Ulfat', 'Ulfat', 'the affection'],
+        ['Viraana', 'V\u012Br\u0101n\u0101', 'the desolation'],
+        ['Zaroorat', 'Zar\u016Brat', 'the necessity'],
+        ['Aaftaab', '\u0100ft\u0101b', 'the sun'],
+        ['Begaani', 'Beg\u0101n\u012B', 'the estrangement'],
+        ['Ghazab', 'Ghazab', 'the wrath'],
+        ['Dastak', 'Dastak', 'the knock'],
+        ['Fareb', 'Fareb', 'the deception'],
+        ['Gunaah', 'Gun\u0101h', 'the sin'],
+        ['Himmat', 'Himmat', 'the courage'],
+        ['Intezaar', 'Intez\u0101r', 'the wait'],
+        ['Judai', 'Jud\u0101\u012B', 'the separation'],
+        ['Kafan', 'Kafan', 'the shroud']
       ]
     }
   ];
@@ -586,7 +636,7 @@
     header.appendChild(h2);
     var sub = document.createElement('p');
     sub.className = 'yatra-nav-sub';
-    sub.textContent = 'the journey \u2014 483 experiences';
+    sub.textContent = 'the journey \u2014 533 experiences';
     header.appendChild(sub);
     card.appendChild(header);
 

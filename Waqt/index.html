@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waqt &mdash; the time</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x0915;&#x093C;&#x094D;&#x0924;</div>
+      <h1 class="title">Waqt</h1>
+      <p class="subtitle">the time</p>
+      <p class="intro">Time &mdash; the one resource that cannot be earned back. The hours that defined and the hours that were wasted. Waqt is not the clock on the wall but the weight of moments lived and lost. <em>Waqt</em> asks you to look at time not as a schedule but as a substance &mdash; thick with meaning in some seasons, thin and empty in others.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">How have you spent the hours you were given?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hour</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the decade I gave to a career, the afternoon that changed everything&hellip;">
+        <p class="write-prompt-2">Was this time well spent, or do you grieve its passing?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you did with the time, what it gave or took, what you understand now&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">spend</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Waqt</h2>
+      <p>Waqt is the great equalizer. No one, regardless of wealth or power, receives more than twenty-four hours in a day. And yet, some hours contain entire lifetimes &mdash; the hour your child was born, the hour you received a diagnosis, the hour you sat beside someone as they left this world. Other hours vanish without a trace, consumed by routine, distraction, or the slow erosion of waiting.</p>
+      <p>The cruelty of waqt is that you only understand its value after it has passed. The years spent in a job you hated reveal their cost only in retrospect. The summers with your parents that felt ordinary become priceless when those summers end. Waqt teaches through absence &mdash; you learn what an hour was worth only when you can never have it back.</p>
+      <p>Account for your time. Not to punish yourself for what was wasted, but to honour what was well spent and to spend what remains with open eyes.</p>
+      <p class="about-note">Your hours are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="waqt.js"></script>
+</body>
+</html>

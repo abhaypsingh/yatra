@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mir&#x0101;s &mdash; the inheritance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x093F;&#x0930;&#x093E;&#x0938;</div>
+      <h1 class="title">Mir&#x0101;s</h1>
+      <p class="subtitle">the inheritance</p>
+      <p class="intro">Miraas is what the dead leave for the living &mdash; not just land or money, but the shape of a temper, the pattern of a fear, the echo of a talent nobody taught you. You inherited more than you know. <em>Mir&#x0101;s</em> asks you to trace what was passed down &mdash; the gifts you did not ask for, the burdens you did not choose, and the quiet legacy that lives in your hands, your voice, your habits.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you inherit that no document records?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this inheritance</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandfather&rsquo;s stubbornness, my mother&rsquo;s way of humming while cooking&hellip;">
+        <p class="write-prompt-2">How does this inheritance live in you today?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where you see it surface, whether it serves or burdens you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">inherit</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mir&#x0101;s</h2>
+      <p>The most significant inheritances are never written in wills. They travel through blood, through repetition, through the silent curriculum of watching your parents live. You inherited your father&rsquo;s way of going quiet when he was hurt. You inherited your mother&rsquo;s instinct to feed anyone who walked through the door. You inherited traumas that happened before your birth &mdash; fears carried in the body like heirlooms nobody wanted.</p>
+      <p>But you also inherited resilience. A grandmother&rsquo;s refusal to give up. An uncle&rsquo;s dark humour that made unbearable things survivable. The ability to cook a meal from almost nothing &mdash; passed down through kitchens you never saw, by women whose names you may not know.</p>
+      <p>Catalogue your inheritance &mdash; the beautiful and the burdensome. Understanding what was passed down is the first step in choosing what to pass on.</p>
+      <p class="about-note">Your inheritances are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="miraas.js"></script>
+</body>
+</html>

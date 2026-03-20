@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paig&#x0101;m &mdash; the message</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0948;&#x0917;&#x093C;&#x093E;&#x092E;</div>
+      <h1 class="title">Paig&#x0101;m</h1>
+      <p class="subtitle">the message</p>
+      <p class="intro">A paigaam travels across distance and arrives at a moment when it is most needed &mdash; or most devastating. It is the letter that changed a life, the text that arrived at midnight, the words someone sent across silence when they could have stayed quiet. <em>Paig&#x0101;m</em> asks you to recall the messages that altered your course &mdash; words that crossed a gap and, upon landing, rearranged everything.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What message arrived and changed everything?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this message</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the letter from my father, the acceptance email at dawn&hellip;">
+        <p class="write-prompt-2">What did it say, and what did it change?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the words that mattered, the before and after of receiving them&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">deliver</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Paig&#x0101;m</h2>
+      <p>Before the message arrives, you are one person. After, you are another. The telegram that brought news of a death. The handwritten note slipped under a door that said I forgive you. The phone call where three words &mdash; it is benign &mdash; turned dread into euphoria. Messages are the hinges of life, the precise instants where the story pivots.</p>
+      <p>Some messages you sent. The apology you laboured over for hours, choosing each word as though it were a brick in a bridge. The confession you typed and deleted six times before finally pressing send. The goodbye you could only manage in writing because your voice would have broken.</p>
+      <p>Collect the messages that mattered. Received or sent, they are the words that proved language can change the shape of a life.</p>
+      <p class="about-note">Your messages are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="paigaam.js"></script>
+</body>
+</html>

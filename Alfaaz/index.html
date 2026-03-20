@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alf&#x0101;z &mdash; the words</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0932;&#x094D;&#x092B;&#x093C;&#x093E;&#x091C;&#x093C;</div>
+      <h1 class="title">Alf&#x0101;z</h1>
+      <p class="subtitle">the words</p>
+      <p class="intro">Words chosen carefully or hurled carelessly &mdash; the utterances that built bridges or burned them. Alfaaz are not just vocabulary; they are acts. A single word can end a marriage, start a revolution, or save a life. <em>Alf&#x0101;z</em> is your record of the specific words that mattered &mdash; the ones you said, the ones said to you, and the ones that still echo.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which words have left their mark on you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this utterance</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the three words that broke me, the sentence that rebuilt me&hellip;">
+        <p class="write-prompt-2">Who spoke them, and what did they build or destroy?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the exact words, who said them, the moment they landed, what changed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">choose</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Alf&#x0101;z</h2>
+      <p>You have spoken millions of words in your lifetime. Most dissolved instantly, carrying no more weight than breath. But a handful of them landed with the force of a hammer &mdash; on someone else, or on you. &ldquo;I&rsquo;m proud of you.&rdquo; &ldquo;We need to talk.&rdquo; &ldquo;I don&rsquo;t love you anymore.&rdquo; &ldquo;You were right.&rdquo; These alfaaz did not merely communicate &mdash; they acted. They rearranged reality.</p>
+      <p>Words spoken to you in childhood may still govern your adult behaviour. A teacher&rsquo;s offhand remark can shape a career. A parent&rsquo;s repeated phrase becomes the voice inside your head. Alfaaz are not ephemeral &mdash; they are the most durable material in human experience, outlasting stone and steel in the architecture of a person&rsquo;s inner life.</p>
+      <p>Collect the words that mattered. The ones you wish you could take back and the ones you wish you had said sooner.</p>
+      <p class="about-note">Your utterances are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="alfaaz.js"></script>
+</body>
+</html>

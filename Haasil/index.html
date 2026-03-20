@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H&#x0101;sil &mdash; the gain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093E;&#x0938;&#x093F;&#x0932;</div>
+      <h1 class="title">H&#x0101;sil</h1>
+      <p class="subtitle">the gain</p>
+      <p class="intro">What you actually gained after all the effort &mdash; the harvest that justified the planting. Not what you aimed for, but what you actually received. Sometimes the haasil matches the intention; sometimes it is something entirely unexpected. <em>H&#x0101;sil</em> is the reckoning after the struggle &mdash; the honest account of what remained in your hands.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did your efforts actually yield?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the patience I earned through waiting, the skill built from failure&hellip;">
+        <p class="write-prompt-2">Was this the gain you sought, or something you did not expect?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you worked for, what you actually received, the difference between the two&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">earn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>H&#x0101;sil</h2>
+      <p>At the end of any effort, there is a moment of accounting. You set out to achieve something &mdash; a degree, a reconciliation, a sum of money, a transformation. The haasil is what you actually hold when the dust settles. It is rarely exactly what you imagined. Sometimes it is less. Sometimes, strangely, it is more &mdash; but in a form you did not anticipate.</p>
+      <p>The most important haasil is often invisible. You went through a difficult year and gained no promotion, no accolade, no visible reward &mdash; but you gained the knowledge that you can survive. That survival itself becomes a kind of wealth that funds every future risk.</p>
+      <p>Be honest about your gains. Not what you told others you achieved, but what you know, quietly, you actually received.</p>
+      <p class="about-note">Your gains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="haasil.js"></script>
+</body>
+</html>

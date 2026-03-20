@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&#x0101;fil&#x0101; &mdash; the caravan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093C;&#x093E;&#x092B;&#x093C;&#x093F;&#x0932;&#x093E;</div>
+      <h1 class="title">Q&#x0101;fil&#x0101;</h1>
+      <p class="subtitle">the caravan</p>
+      <p class="intro">A caravan &mdash; the group that travels together, sharing the burden and the beauty of the road. Not a single journey but a fellowship of journeys, where strangers become companions and the path is walked collectively. <em>Q&#x0101;fil&#x0101;</em> asks you to name the groups that carried you through difficult passages &mdash; the people who walked alongside you when the road was long.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who have you travelled alongside?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this caravan</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my college friends, the team that built something together&hellip;">
+        <p class="write-prompt-2">What road did you share, and what did the company mean?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where you were headed, who walked with you, what the fellowship gave you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">travel</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Q&#x0101;fil&#x0101;</h2>
+      <p>In the old trade routes, no merchant travelled alone. The desert was too vast, the bandits too many, the nights too cold. So they formed qaafilas &mdash; caravans of shared purpose. Each person carried their own load, but the caravan carried everyone. If one camel fell, the others waited. If one traveller fell ill, the group slowed.</p>
+      <p>Your life has had qaafilas. The cohort you graduated with. The colleagues who survived a difficult year together. The friends who all became parents at the same time and stumbled through it in parallel. These temporary fellowships shaped you as much as any individual relationship &mdash; because a qaafila teaches you that the journey matters more than the destination.</p>
+      <p>Name the caravans you have belonged to. Honour the roads you did not walk alone.</p>
+      <p class="about-note">Your caravans are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="qaafila.js"></script>
+</body>
+</html>

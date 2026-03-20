@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;ft&#x0101;b &mdash; the sun</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x092B;&#x093C;&#x0924;&#x093E;&#x092C;</div>
+      <h1 class="title">&#x0100;ft&#x0101;b</h1>
+      <p class="subtitle">the sun</p>
+      <p class="intro">Aaftaab is not just the sun &mdash; it is the sun as proof that darkness ends. It is the first light after a night you were not sure you would survive, the warmth on your face that said: you are still here. <em>&#x0100;ft&#x0101;b</em> asks you to name the dawns in your life &mdash; the moments when light returned after a darkness so complete you had forgotten it existed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did the light return after you had given up on it?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this sun</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the morning after the diagnosis cleared, the first laugh after months of grief&hellip;">
+        <p class="write-prompt-2">What did the returning light feel like?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how the darkness had felt endless, what the first warmth meant&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rise with</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;ft&#x0101;b</h2>
+      <p>In the middle of the worst night of your life, someone could have told you that dawn was coming and you would not have believed them. Darkness, when it is total, feels permanent. It rewrites the rules of the universe &mdash; convincing you that light was the anomaly and this blackness is the truth. And then, without permission, without negotiation, the sky begins to lighten at the edges.</p>
+      <p>The aaftaab does not arrive because you earned it or prayed hard enough. It arrives because it always does. And the relief is not just that the darkness is over &mdash; it is the discovery that you survived it. That you are still here, blinking, breathing, squinting into a brightness that feels like forgiveness.</p>
+      <p>Name the suns that rose in your life. Each one is evidence that the night, no matter how long, was never the final chapter.</p>
+      <p class="about-note">Your suns are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="aaftaab.js"></script>
+</body>
+</html>

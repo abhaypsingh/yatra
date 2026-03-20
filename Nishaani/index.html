@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nish&#x0101;n&#x012B; &mdash; the token</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x093F;&#x0936;&#x093E;&#x0928;&#x0940;</div>
+      <h1 class="title">Nish&#x0101;n&#x012B;</h1>
+      <p class="subtitle">the token</p>
+      <p class="intro">A nishaani is a small proof of a large truth &mdash; a movie ticket stub, a faded photograph, a stone from a riverbed. It proves that something happened, that someone existed, that a moment was real. <em>Nish&#x0101;n&#x012B;</em> asks you to name the tokens you keep &mdash; the objects that carry meaning far beyond their material worth, the evidence of a life lived that no one else would understand.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small objects carry your largest memories?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this token</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the bus ticket from that day, the dried flower from her book&hellip;">
+        <p class="write-prompt-2">What truth does this small object hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the moment it represents, why you have never thrown it away&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">treasure</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Nish&#x0101;n&#x012B;</h2>
+      <p>To anyone else, it is junk. A crumpled receipt. A button from a shirt that no longer exists. A pebble that looks like every other pebble. But to you, it is a portal &mdash; holding it transports you to the exact moment when the receipt was handed over, when the button popped off during laughter, when the pebble was picked up on a beach where something unspoken finally became clear.</p>
+      <p>We keep nishaaniyan because memory is unreliable but objects are stubborn. They do not change their story. The ticket stub will always say the same date, the same seat number, and your heart will always fill in the rest &mdash; who sat beside you, what was said in the dark of the theatre, why that ordinary evening became extraordinary.</p>
+      <p>Gather your tokens here. Let them testify to the moments that made your life yours.</p>
+      <p class="about-note">Your tokens are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="nishaani.js"></script>
+</body>
+</html>

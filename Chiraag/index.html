@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chir&#x0101;g &mdash; the lamp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093F;&#x0930;&#x093E;&#x0917;&#x093C;</div>
+      <h1 class="title">Chir&#x0101;g</h1>
+      <p class="subtitle">the lamp</p>
+      <p class="intro">An oil lamp &mdash; the small flame that holds darkness at bay, the first light in a dark room. A chiraag does not illuminate everything; it illuminates enough. <em>Chir&#x0101;g</em> asks you to name the people, ideas, and moments that served as lamps in your life &mdash; the small steady lights that guided you when the way was unclear.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What small lights guided you through darkness?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lamp</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the mentor who showed me the way, the book that lit a path&hellip;">
+        <p class="write-prompt-2">What darkness did this light hold back, and how far did it let you see?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you could not see before, how the light arrived, what it revealed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">light</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chir&#x0101;g</h2>
+      <p>Before electricity, the chiraag was the centre of the home. Families gathered around its small circle of light to eat, to talk, to simply be together. The flame was modest &mdash; it could not light the whole room, let alone the street. But it was enough. It meant someone was home, someone was awake, someone had taken the trouble to light the wick.</p>
+      <p>Your life has had chiraags. A teacher who saw something in you that you could not see in yourself. A friend who called at the exact moment you were about to give up. A sentence in a book that suddenly made sense of years of confusion. These were not floodlights. They were small, warm, flickering &mdash; and they were enough to show you the next step.</p>
+      <p>Name your lamps. Honour the modest lights that saved you from stumbling in the dark.</p>
+      <p class="about-note">Your lamps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chiraag.js"></script>
+</body>
+</html>

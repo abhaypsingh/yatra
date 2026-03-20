@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V&#x012B;r&#x0101;n&#x0101; &mdash; the desolation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x0940;&#x0930;&#x093E;&#x0928;&#x093E;</div>
+      <h1 class="title">V&#x012B;r&#x0101;n&#x0101;</h1>
+      <p class="subtitle">the desolation</p>
+      <p class="intro">Viraana is the landscape after everything has left &mdash; a house emptied of people, a heart emptied of hope, a street where shops once thrived now standing with broken windows. Yet in desolation there is a strange, austere beauty. <em>V&#x012B;r&#x0101;n&#x0101;</em> asks you to walk through the ruins &mdash; the places and periods of emptiness in your life where you found, against all expectation, something worth seeing in the barrenness.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What desolate place or time revealed a beauty you did not expect?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this ruin</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the empty house after she left, the year nothing grew&hellip;">
+        <p class="write-prompt-2">What did you find in the emptiness?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the silence that taught you something, the beauty hidden in barrenness&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">walk through</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>V&#x012B;r&#x0101;n&#x0101;</h2>
+      <p>There is a phase in every loss where the grief subsides enough for you to look around and see where you are. The landscape is empty. The people who filled it are gone. The activities that gave it meaning have ceased. You are standing in a viraana &mdash; a ruin. And the first instinct is to flee, to fill the emptiness with noise, to rebuild immediately.</p>
+      <p>But those who stay in the desolation for a while discover something unexpected. In the absence of everything familiar, the self becomes visible. Without the clutter of routine and relationship, you hear your own thoughts for the first time. The ruin becomes a mirror &mdash; stark, unflattering, and more honest than any room full of furniture and people.</p>
+      <p>Name the desolate places you have walked through. They were not just endings &mdash; they were clearings where new growth became possible.</p>
+      <p class="about-note">Your ruins are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="viraana.js"></script>
+</body>
+</html>

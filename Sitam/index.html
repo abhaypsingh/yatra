@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitam &mdash; the cruelty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0924;&#x092E;</div>
+      <h1 class="title">Sitam</h1>
+      <p class="subtitle">the cruelty</p>
+      <p class="intro">Sitam is cruelty with intention &mdash; not an accident, not collateral damage, but the deliberate choice to cause pain. It arrives from those you trusted or from strangers who wielded power without mercy. <em>Sitam</em> asks you to name the cruelties inflicted upon you &mdash; the acts that tested your belief in human goodness and left marks that required more than time to heal.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What cruelty did you endure that still demands to be named?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cruelty</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the betrayal by a friend, the punishment that was not deserved&hellip;">
+        <p class="write-prompt-2">What did it break, and what survived?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the pain inflicted, the part of you that refused to be destroyed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">suffer</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sitam</h2>
+      <p>The worst thing about cruelty is not the pain. Pain passes. The worst thing is the question it leaves behind: how could someone choose to do this? Sitam shatters the assumption that people are fundamentally kind. It introduces a darker knowledge &mdash; that some people are capable of inflicting suffering deliberately, and that sometimes those people are the ones who were supposed to protect you.</p>
+      <p>A parent who used silence as a weapon. A teacher who singled out the weakest child. An institution that ground its poorest members into dust while rewarding compliance. These sitam leave a residue that no apology fully dissolves &mdash; not because forgiveness is impossible, but because the knowledge cannot be unlearned.</p>
+      <p>Name the cruelties you survived. You are not defined by what was done to you, but what you did with the wound deserves to be witnessed.</p>
+      <p class="about-note">Your cruelties are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sitam.js"></script>
+</body>
+</html>

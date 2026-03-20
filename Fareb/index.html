@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fareb &mdash; the deception</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x093C;&#x0930;&#x0947;&#x092C;</div>
+      <h1 class="title">Fareb</h1>
+      <p class="subtitle">the deception</p>
+      <p class="intro">Fareb is the moment the mask slips &mdash; when what was hidden becomes visible and the ground you stood on reveals itself as hollow. It is the discovery that someone lied, that a promise was empty, that the face you trusted was a performance. <em>Fareb</em> asks you to name the deceptions you uncovered &mdash; the lies that collapsed, the betrayals that surfaced, and the shattering clarity that followed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What deception, once revealed, changed how you see the world?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this deception</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the lie I believed for years, the friend who was not a friend&hellip;">
+        <p class="write-prompt-2">How did the truth finally surface?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the moment you knew, what unravelled, what you did with the knowledge&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">uncover</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Fareb</h2>
+      <p>The cruelest part of deception is not the lie itself. It is the realisation that your own perception failed you &mdash; that you looked at something false and saw it as true, that you trusted your judgement and your judgement was wrong. Fareb does not just damage the relationship with the deceiver; it damages the relationship with yourself. You begin to doubt your ability to read the world.</p>
+      <p>But in the wreckage of every unmasked deception lies a harder, more useful kind of sight. You learn to notice what you previously ignored &mdash; the inconsistency that should have alarmed you, the explanation that was too smooth, the generosity that was strategic rather than genuine. The scar tissue of fareb becomes a new organ of perception.</p>
+      <p>Name the deceptions that educated you. They cost you trust, but they gave you discernment &mdash; and discernment, once earned, is never lost.</p>
+      <p class="about-note">Your deceptions are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="fareb.js"></script>
+</body>
+</html>

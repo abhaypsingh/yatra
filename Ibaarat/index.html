@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ib&#x0101;rat &mdash; the expression</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x092C;&#x093E;&#x0930;&#x0924;</div>
+      <h1 class="title">Ib&#x0101;rat</h1>
+      <p class="subtitle">the expression</p>
+      <p class="intro">The crafted expression &mdash; words arranged with precision to capture what ordinary speech cannot hold. An ibaarat is language elevated to art, where every word carries weight and every pause is intentional. <em>Ib&#x0101;rat</em> asks you to preserve the phrases, sentences, and expressions that struck you with their truth or beauty.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which words have stayed with you long after they were spoken?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this expression</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my teacher's farewell, the line from a letter I cannot forget&hellip;">
+        <p class="write-prompt-2">Why did these particular words pierce through everything else?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where you heard it, what it captured, why it endures&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">write</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ib&#x0101;rat</h2>
+      <p>Most words pass through us like water. We hear thousands every day and retain almost none. But occasionally, an expression arrives that lodges itself permanently &mdash; a sentence from a book, a line from a conversation, a phrase overheard at a funeral. The ibaarat is language that transcends communication and becomes something closer to revelation.</p>
+      <p>These expressions survive because they said something you already knew but could not articulate. They gave shape to the shapeless. A master calligrapher does not invent the alphabet &mdash; they reveal what was always possible within the letters. An ibaarat does the same with meaning.</p>
+      <p>Collect the expressions that changed how you see. They are a library of your deepest recognitions.</p>
+      <p class="about-note">Your expressions are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ibaarat.js"></script>
+</body>
+</html>

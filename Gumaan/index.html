@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gum&#x0101;n &mdash; the pride</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x092E;&#x093E;&#x0928;</div>
+      <h1 class="title">Gum&#x0101;n</h1>
+      <p class="subtitle">the pride</p>
+      <p class="intro">Pride that lifts and blinds &mdash; the conviction of being right that is both your strength and your blindspot. Gumaan is the quiet certainty that you know better, that you deserve more, that your way is the way. <em>Gum&#x0101;n</em> asks you to examine the prides that served you and the ones that cost you dearly.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where has pride shaped your path?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pride</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the refusal to apologize, the standard I would not lower&hellip;">
+        <p class="write-prompt-2">Did this pride protect you or isolate you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were certain about, what it cost, what it preserved&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gum&#x0101;n</h2>
+      <p>Gumaan is a double-edged inheritance. It is the pride that made your grandfather walk tall when the world told him to bow. It is also the pride that made him refuse help when he desperately needed it. Gumaan gives you spine, but it can also make you rigid. It gives you standards, but it can also make you lonely.</p>
+      <p>The hardest question about pride is not whether you have it &mdash; everyone does &mdash; but whether you can see it clearly. The gumaan that you are always right prevents you from learning. The gumaan that you deserve dignity keeps you from accepting cruelty. Same word, vastly different consequences.</p>
+      <p>Look at your prides honestly. Name the ones that carried you and the ones that kept you from being carried when you needed it.</p>
+      <p class="about-note">Your prides are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gumaan.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lib&#x0101;s &mdash; the garment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x093F;&#x092C;&#x093E;&#x0938;</div>
+      <h1 class="title">Lib&#x0101;s</h1>
+      <p class="subtitle">the garment</p>
+      <p class="intro">A libaas is more than fabric. It is the self you show to the world &mdash; the costume you chose, the uniform forced upon you, the outfit that made you feel invincible or invisible. <em>Lib&#x0101;s</em> asks you to recall the garments that mattered &mdash; clothes that disguised who you were, revealed who you wished to become, or carried the memory of an occasion so deeply that the fabric still holds the feeling.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What garment changed how you felt in your own skin?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this garment</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my mother&rsquo;s sari at the wedding, the suit I could not afford&hellip;">
+        <p class="write-prompt-2">What did wearing it reveal or conceal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who you became inside it, what it hid or announced&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">wear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lib&#x0101;s</h2>
+      <p>We pretend clothes are trivial &mdash; surface, decoration, vanity. But the garment is the first language others read. A school uniform teaches obedience. A borrowed dress teaches humility. The outfit chosen for a first interview carries the entire weight of how you wish to be perceived by strangers who hold your future in their hands.</p>
+      <p>Some garments imprison. The clothing prescribed by convention &mdash; what a woman must wear, what a man must not. Others liberate. The first time you wore something that felt like the real you, the fabric became permission. And some garments outlive their wearers &mdash; a father&rsquo;s coat hanging in a closet, still smelling of him, still holding the shape of his shoulders.</p>
+      <p>Remember the garments that mattered. Each one is a chapter of your body&rsquo;s autobiography.</p>
+      <p class="about-note">Your garments are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="libaas.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umang &mdash; the enthusiasm</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x092E;&#x0902;&#x0917;</div>
+      <h1 class="title">Umang</h1>
+      <p class="subtitle">the enthusiasm</p>
+      <p class="intro">Pure enthusiasm &mdash; the surge of excitement that makes the body lighter and the future brighter. Umang is the feeling before the festival, the morning of a journey, the night before something wonderful. <em>Umang</em> is your archive of the moments when joy arrived not as memory but as anticipation &mdash; the electric certainty that something good is coming.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When has excitement made you feel truly alive?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this joy</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the eve of my first trip abroad, the day I received the news&hellip;">
+        <p class="write-prompt-2">What were you anticipating, and did the reality match the excitement?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was coming, how the anticipation felt in your body, whether the event lived up&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">feel</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Umang</h2>
+      <p>Umang is joy in its most forward-looking form. It is not the satisfaction of having received something but the thrill of knowing something is coming. Children feel it most purely &mdash; the night before Eid, the morning of a birthday, the hour before guests arrive. Adults feel it less often, and this scarcity makes it precious.</p>
+      <p>As you age, umang becomes rarer because experience teaches you that anticipation often exceeds reality. But this is precisely why umang is worth honouring &mdash; because the feeling itself, regardless of what follows, is one of the purest forms of being alive. Your heart racing, your plans forming, your smile arriving before the event does.</p>
+      <p>Recall the moments of umang. Let yourself feel, even in memory, that electric lightness of something wonderful approaching.</p>
+      <p class="about-note">Your joys are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="umang.js"></script>
+</body>
+</html>
