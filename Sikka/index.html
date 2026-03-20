@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sikk&#x0101; &mdash; the coin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093F;&#x0915;&#x094D;&#x0915;&#x093E;</div>
+      <h1 class="title">Sikk&#x0101;</h1>
+      <p class="subtitle">the coin</p>
+      <p class="intro">A sikka has two faces &mdash; value depends on which side you see. It is the smallest unit of exchange, yet it carries the full weight of a transaction. Every relationship, every choice, every moment has two sides, and you never see both at once. <em>Sikk&#x0101;</em> asks you to name the currencies exchanged between people &mdash; the trades of time, attention, sacrifice, and loyalty that define your bonds.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What currencies have been exchanged between you and others?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this coin</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years traded for stability, the silence exchanged for peace&hellip;">
+        <p class="write-prompt-2">What was on each side?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was given, what was received, whether the exchange was fair&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">exchange</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sikk&#x0101;</h2>
+      <p>In bazaars across India, the sikka passes from hand to hand &mdash; warm from one palm, cool in the next. The coin itself is neutral, but what it buys is never neutral. A coin given to a beggar is charity. The same coin given to a child is a game. The same coin placed in a temple is prayer. The sikka is the medium; the meaning comes from the exchange.</p>
+      <p>Between people, the currencies are more complex. You pay in attention and receive in loyalty. You spend years and earn trust. You invest patience and sometimes get nothing in return. Not every exchange is fair, but every exchange teaches you the true price of things.</p>
+      <p>Name the coins. See both sides of what was traded.</p>
+      <p class="about-note">Your coins are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sikka.js"></script>
+</body>
+</html>

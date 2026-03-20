@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qaid &mdash; the imprisonment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093C;&#x0948;&#x0926;</div>
+      <h1 class="title">Qaid</h1>
+      <p class="subtitle">the imprisonment</p>
+      <p class="intro">Prison is not always a cell &mdash; it can be a job, a relationship, a belief, a body, an expectation. Qaid is any confinement where the walls are real even if they are invisible. <em>Qaid</em> asks you to name the imprisonments you have known and what you did with the time inside.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What imprisoned you, and what did you do with the time inside?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cell</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years in the wrong career, the silence I could not break&hellip;">
+        <p class="write-prompt-2">What did you do with the time inside?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the walls that held you, how long you stayed, what you built or became inside the confinement&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">endure</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Qaid</h2>
+      <p>Some of the greatest literature in Urdu and Hindi was written in prison &mdash; because confinement, paradoxically, can concentrate the mind. When the body cannot move, the spirit sometimes travels farther than it ever did in freedom. The qaid is not just the walls. It is also what happens inside them.</p>
+      <p>Your imprisonments may not have had iron bars, but they were real. A marriage you could not leave. A debt you could not escape. A grief you could not move past. Inside each confinement, you did something &mdash; you endured, you thought, you planned, you grew, or you simply survived. That is not nothing.</p>
+      <p>Name the cells. And name what you built inside them.</p>
+      <p class="about-note">Your cells are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="qaid.js"></script>
+</body>
+</html>

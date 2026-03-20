@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pahel&#x012B; &mdash; the riddle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0939;&#x0947;&#x0932;&#x0940;</div>
+      <h1 class="title">Pahel&#x012B;</h1>
+      <p class="subtitle">the riddle</p>
+      <p class="intro">Life is full of questions that have no clean answer &mdash; why this happened, what would have been, whether you chose rightly. A paheli is a riddle you carry, a question wrapped in layers that refuses to resolve into certainty. <em>Pahel&#x012B;</em> asks you to name the unsolved riddles of your life &mdash; the questions you have learned to live inside rather than answer.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What questions have you carried without ever finding an answer?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this riddle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="why my parents stayed together, what I would have become if I had stayed&hellip;">
+        <p class="write-prompt-2">What makes this question unanswerable?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the riddle itself, how long you have carried it, what living inside the question has taught you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">ponder</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Pahel&#x012B;</h2>
+      <p>Children in India grow up with pahelis &mdash; riddles told by grandparents on verandas, puzzles that delight because the answer is always hiding in plain sight. But as you grow older, the riddles become less playful. They become the questions that sit at the centre of your life and refuse to move. Why did they leave? Was it my fault? What would have happened if I had said yes instead of no?</p>
+      <p>The wisdom is not in solving these riddles but in learning to carry them. Some questions are not meant to be answered. They are meant to be lived with &mdash; turned over in the hand like a smooth stone, examined from every angle, and eventually accepted as part of the landscape of being human.</p>
+      <p>Name the riddles. Not to solve them, but to honour the weight of not knowing.</p>
+      <p class="about-note">Your riddles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="paheli.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jam&#x0101;n&#x0101; &mdash; the age</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x092E;&#x093E;&#x0928;&#x093E;</div>
+      <h1 class="title">Jam&#x0101;n&#x0101;</h1>
+      <p class="subtitle">the age</p>
+      <p class="intro">A jamaana is a whole era &mdash; the world as it was in a particular time that no longer exists. It is not just a date on a calendar but an entire atmosphere: the music, the prices, the way people spoke to each other, the things that were possible. Every person carries several jamaanas inside them. <em>Jam&#x0101;n&#x0101;</em> asks you to name the ages you lived through &mdash; the worlds that existed and then vanished.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which ages do you carry inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this age</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the era before mobile phones, the years when the neighbourhood was whole&hellip;">
+        <p class="write-prompt-2">What world existed then that no longer does?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what made that time its own era, what vanished when it ended, what you miss most&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">remember</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jam&#x0101;n&#x0101;</h2>
+      <p>Elders say &ldquo;hamaare jamaane mein&rdquo; &mdash; in our time &mdash; and what follows is not just nostalgia but the description of an entire world that has ceased to exist. The jamaana of handwritten letters. The jamaana of joint families. The jamaana of walking to school through fields. Each jamaana has its own light, its own speed, its own rules about what mattered.</p>
+      <p>You have lived through jamaanas too, even if you are young. The world before a loss. The world before a move. The era when a particular group of friends were inseparable. These are not just memories &mdash; they are entire civilisations that rose and fell within your single lifetime.</p>
+      <p>Name the ages. Bear witness to the worlds that lived and died inside you.</p>
+      <p class="about-note">Your ages are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jamaana.js"></script>
+</body>
+</html>

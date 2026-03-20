@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohar &mdash; the seal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x094B;&#x0939;&#x0930;</div>
+      <h1 class="title">Mohar</h1>
+      <p class="subtitle">the seal</p>
+      <p class="intro">A mohar is a royal seal &mdash; the stamp pressed into wax or ink that declares a thing authentic, final, and beyond dispute. It is the mark of authority, the signature that turns a piece of paper into a decree. Once the mohar is pressed, the matter is closed. <em>Mohar</em> asks you to name the moments that bore the seal of finality &mdash; the events, decisions, or declarations that certified something in your life as real, official, and irreversible.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which moments stamped something in your life as final?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this seal</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the signature on the divorce papers, the handshake that closed the deal forever&hellip;">
+        <p class="write-prompt-2">What did it make official?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was sealed, who held the authority, how finality felt in that moment&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stamp</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Mohar</h2>
+      <p>There are moments that happen and moments that are decreed. A mohar belongs to the latter &mdash; the instant when ambiguity ends and something becomes law. The doctor's diagnosis. The judge's verdict. The elder's blessing that transforms a couple into a family. Before the mohar, things are still negotiable, still soft, still possible to reverse. After it, the wax has hardened and the document is sealed.</p>
+      <p>The power of a mohar is not always held by the powerful. Sometimes a child seals a fate with a single sentence: &ldquo;I do not want to go back.&rdquo; Sometimes the body stamps its own decree &mdash; the knee that will never bend again, the heart that has decided to stop. Finality does not require a throne. It only requires a moment that refuses to be undone.</p>
+      <p>Name the seals. Acknowledge the moments that closed the book on what came before.</p>
+      <p class="about-note">Your seals are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="mohar.js"></script>
+</body>
+</html>

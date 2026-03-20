@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fariy&#x0101;d &mdash; the plea</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x093C;&#x0930;&#x093F;&#x092F;&#x093E;&#x0926;</div>
+      <h1 class="title">Fariy&#x0101;d</h1>
+      <p class="subtitle">the plea</p>
+      <p class="intro">A fariyaad is a cry made when pride has been exhausted &mdash; not a demand but a surrender to need. It is the moment when you stop pretending you can manage alone and let the words come out raw and unguarded. <em>Fariy&#x0101;d</em> asks you to name the pleas you made when you could no longer stand alone.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What pleas did you make when pride ran out?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this plea</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the night I asked for help, the prayer I whispered without believing&hellip;">
+        <p class="write-prompt-2">Who did you plead to? Were you heard?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what brought you to your knees, the words you used, whether the plea was answered&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">plead</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Fariy&#x0101;d</h2>
+      <p>A fariyaad is not the same as a request. A request still has composure. A fariyaad has none. It is the voice that breaks in a courtroom, the cry at a shrine when medicine has failed, the phone call at three in the morning when silence has become unbearable. It comes from the place where self-sufficiency ends and raw human need begins.</p>
+      <p>There is no shame in a fariyaad, though it often feels like shame. To plead is to admit that you are not enough on your own &mdash; and that admission is not weakness. It is the most honest thing a person can do.</p>
+      <p>Name the pleas. Honour the moments you chose honesty over pride.</p>
+      <p class="about-note">Your pleas are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="fariyaad.js"></script>
+</body>
+</html>

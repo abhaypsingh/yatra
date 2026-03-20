@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandhan &mdash; the bond</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0902;&#x0927;&#x0928;</div>
+      <h1 class="title">Bandhan</h1>
+      <p class="subtitle">the bond</p>
+      <p class="intro">A bond can be a blessing or a burden &mdash; the thread tied around a wrist in love, or the chain that will not let you leave. Every significant relationship is a bandhan: something that ties two lives together, for better or for worse, through choice or through circumstance. <em>Bandhan</em> asks you to name the bonds that have shaped your life &mdash; the ties that held firm and the ones that finally broke.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bonds have held your life together &mdash; or held it back?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bond</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the promise I made to my sister, the duty that kept me from leaving&hellip;">
+        <p class="write-prompt-2">What did this bond hold together &mdash; or apart?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who was tied to whom, what the bond was made of, whether it strengthened or strained over time&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">tie</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bandhan</h2>
+      <p>On Raksha Bandhan, a sister ties a thread around her brother&rsquo;s wrist. It is thin enough to snap with one pull, yet it represents a bond that is supposed to outlast everything. That is the paradox of bandhan &mdash; the strongest bonds are often made of the most fragile material. A promise. A shared memory. A wordless understanding. They hold not because they are unbreakable, but because both people choose not to break them.</p>
+      <p>Your life is a web of bandhans. The bond with a parent that shifted as you grew &mdash; from dependence to distance to something harder to name. The friendship forged in a difficult season that became the most honest relationship you have. The obligation you resented but fulfilled because the bond was older than your objection. Some of these threads still hold. Some have frayed. Some were cut.</p>
+      <p>Name the bonds. They are the invisible threads that give your life its shape.</p>
+      <p class="about-note">Your bonds are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bandhan.js"></script>
+</body>
+</html>

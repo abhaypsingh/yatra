@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gul&#x0101;b &mdash; the rose</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x0932;&#x093E;&#x092C;</div>
+      <h1 class="title">Gul&#x0101;b</h1>
+      <p class="subtitle">the rose</p>
+      <p class="intro">A gulaab is beauty that comes with thorns &mdash; you cannot hold it without risking a prick. The fragrance draws you close, the petals reward you, but the stem reminds you that beauty has terms and conditions. Nothing exquisite comes without cost. <em>Gul&#x0101;b</em> asks you to name the beauties that demanded a price &mdash; the things you reached for knowing they could draw blood.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which beauties came with thorns?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this rose</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the talent that cost me peace, the love that was worth its pain&hellip;">
+        <p class="write-prompt-2">What was the beauty and what was the thorn?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what drew you in, where it pricked, whether you would reach for it again&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gul&#x0101;b</h2>
+      <p>The gulaab holds a central place in South Asian culture &mdash; in gardens, in poetry, in the water sprinkled at gatherings. Gulaab jal, rose water, is distilled beauty. But the rose bush itself is unforgiving. Anyone who has tended one knows: you bleed for the blooms. The plant does not apologise for its thorns. They are not a flaw &mdash; they are the price of the flower.</p>
+      <p>You have reached for roses. A relationship that was magnificent and painful in equal measure. An ambition that demanded everything. A truth that was beautiful to know and terrible to carry. The thorns did not stop you. Perhaps they should not have.</p>
+      <p>Name the roses. Honour both the bloom and the blood.</p>
+      <p class="about-note">Your roses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gulaab.js"></script>
+</body>
+</html>

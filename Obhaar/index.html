@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubh&#x0101;r &mdash; the swell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x092D;&#x093E;&#x0930;</div>
+      <h1 class="title">Ubh&#x0101;r</h1>
+      <p class="subtitle">the swell</p>
+      <p class="intro">An ubhaar is a swell that begins deep beneath the surface before it becomes a wave anyone can see. It is the slow gathering of force &mdash; ambition, grief, resolve &mdash; that builds invisibly until it breaks through. <em>Ubh&#x0101;r</em> asks you to name the risings that began inside you before the world noticed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What rose inside you before the world could see it?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this swell</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the anger that built for years, the dream that grew in silence&hellip;">
+        <p class="write-prompt-2">When did it break the surface?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was gathering beneath, the moment it became visible, what the world saw when it finally surfaced&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rise</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ubh&#x0101;r</h2>
+      <p>A swell in the ocean is invisible from shore. It moves through deep water, gathering mass and momentum, and only when it reaches the shallows does it rise into a wave that everyone can see. The swell was always there &mdash; the wave is just its announcement.</p>
+      <p>Your life has had swells. A dissatisfaction that grew quietly for years before you finally left. A talent that practised in private before it performed in public. A grief that you held underwater until it refused to stay down. These risings were not sudden &mdash; they only appeared sudden to those who were not paying attention.</p>
+      <p>Name the swells. Honour the invisible force that preceded every visible change.</p>
+      <p class="about-note">Your swells are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="obhaar.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odhn&#x012B; &mdash; the shawl</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0913;&#x0922;&#x0928;&#x0940;</div>
+      <h1 class="title">Odhn&#x012B;</h1>
+      <p class="subtitle">the shawl</p>
+      <p class="intro">An odhni is a light shawl &mdash; not armour, not disguise, but something softer. It drapes across the shoulders or the head, offering modesty or grace without the weight of concealment. It covers just enough to leave something to the imagination, just enough to feel held. <em>Odhn&#x012B;</em> asks you to name the things you wrapped around yourself &mdash; not walls but veils, the soft protections that let you move through the world without being fully exposed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you drape around yourself for protection or grace?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shawl</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the persona I wore in public, the gentleness I wrapped around my anger&hellip;">
+        <p class="write-prompt-2">What did it cover?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were shielding, what it felt like to wear, when you finally let it slip&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">drape</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Odhn&#x012B;</h2>
+      <p>There is a difference between hiding and choosing what to reveal. An odhni does not build walls &mdash; it offers a translucence, a softness between you and the world. It is the habit you cultivated to seem calm, the politeness that shielded your grief, the composure that let you survive rooms full of people who did not know what you were carrying.</p>
+      <p>An odhni can be beautiful. The way it catches wind, the way it frames a face. But it can also be a weight disguised as lightness &mdash; something you wore so long you forgot what you looked like without it. Grace, too, can become a cage when it is never allowed to fall.</p>
+      <p>Name the shawls. Honour both their beauty and their burden.</p>
+      <p class="about-note">Your shawls are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="odhni.js"></script>
+</body>
+</html>

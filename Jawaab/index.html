@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaw&#x0101;b &mdash; the answer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x0935;&#x093E;&#x092C;</div>
+      <h1 class="title">Jaw&#x0101;b</h1>
+      <p class="subtitle">the answer</p>
+      <p class="intro">Some answers arrive years after the question was asked &mdash; not in a flash of insight but in the slow accumulation of living. The question sits inside you unanswered, and one day, without announcement, the answer is simply there. <em>Jaw&#x0101;b</em> asks you to name the answers that came late but came.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What answers arrived late?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this answer</p>
+        <input class="write-name" id="writeName" type="text" placeholder="why my father was silent, what that failure was preparing me for&hellip;">
+        <p class="write-prompt-2">What was the question, and how long did the answer take?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the question that haunted you, how the answer finally arrived, what changed when it did&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">receive</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jaw&#x0101;b</h2>
+      <p>We ask questions and expect answers to come in the same conversation, the same year, the same decade. But life is not a classroom. The deepest questions &mdash; why did this happen to me, why did they leave, what am I meant to do &mdash; have answers that arrive on their own schedule, often when you have stopped asking.</p>
+      <p>You have received late answers. The reason behind a parent&rsquo;s harshness, understood only after becoming a parent yourself. The purpose of a suffering, visible only from the far side of it. These answers did not come through thinking. They came through living.</p>
+      <p>Name the answers. They are proof that meaning arrives, even when it is not on time.</p>
+      <p class="about-note">Your answers are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jawaab.js"></script>
+</body>
+</html>

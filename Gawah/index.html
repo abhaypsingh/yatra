@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaw&#x0101;h &mdash; the witness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0935;&#x093E;&#x0939;</div>
+      <h1 class="title">Gaw&#x0101;h</h1>
+      <p class="subtitle">the witness</p>
+      <p class="intro">To witness is to be present at something without being its protagonist &mdash; yet witnessing changes you. You carry what you saw even though it was not your story to tell. <em>Gaw&#x0101;h</em> asks you to name the moments you witnessed that weren&rsquo;t your story but changed you nonetheless.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you witness that was not your story?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this testimony</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the argument I overheard as a child, the stranger&rsquo;s grief I saw on the train&hellip;">
+        <p class="write-prompt-2">How did witnessing it change you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you saw, why it stayed with you, what it taught you about life&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">witness</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gaw&#x0101;h</h2>
+      <p>A gawah in a courtroom swears to tell the truth about what they saw. But outside the courtroom, most witnessing goes unsworn. You see a parent sacrifice silently. You watch a friend lose everything with dignity. You observe a stranger&rsquo;s small act of kindness that no one else noticed. These moments were not yours, yet they entered you and rearranged something inside.</p>
+      <p>The witness carries a peculiar burden &mdash; the weight of someone else&rsquo;s story lodged in your memory. You cannot tell it as your own, but you cannot forget it either. It sits inside you, shaping how you see the world.</p>
+      <p>Name what you witnessed. Let the testimony live somewhere outside your silence.</p>
+      <p class="about-note">Your testimonies are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gawah.js"></script>
+</body>
+</html>

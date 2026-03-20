@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ins&#x0101;f &mdash; the justice</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x0902;&#x0938;&#x093E;&#x092B;&#x093C;</div>
+      <h1 class="title">Ins&#x0101;f</h1>
+      <p class="subtitle">the justice</p>
+      <p class="intro">Insaaf is justice &mdash; but justice sought and justice received are rarely the same thing. The verdict you wanted and the verdict you got often wear different faces. Sometimes justice arrives late, disguised as consequence; sometimes it never arrives at all. <em>Ins&#x0101;f</em> asks you to name the justices you sought and the forms in which they arrived &mdash; or the silence where they should have been.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did you seek justice, and what did you find?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this justice</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the apology that never came, the truth that finally surfaced&hellip;">
+        <p class="write-prompt-2">What form did the verdict take?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what wrong was done, what justice you expected, what actually arrived in its place&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">seek</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ins&#x0101;f</h2>
+      <p>The cry of &ldquo;insaaf&rdquo; echoes through Indian courts, streets, and homes alike. It is one of the most ancient human demands &mdash; that the wrong be made right, that the scales be balanced, that someone, somewhere, acknowledge what happened. But insaaf in life is rarely the clean verdict of a courtroom. It is messy, partial, delayed, or entirely absent.</p>
+      <p>You have sought insaaf. For a childhood unfairness. For a betrayal in love. For a professional injustice. Some of those cases were settled by time, some by forgiveness, some by the quiet realisation that justice and peace are not always the same thing. And some remain open, the verdict still pending.</p>
+      <p>Name the verdicts &mdash; delivered and undelivered. The seeking itself is a form of honour.</p>
+      <p class="about-note">Your verdicts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="insaaf.js"></script>
+</body>
+</html>

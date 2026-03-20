@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guftag&#x016B; &mdash; the conversation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x092B;&#x093C;&#x094D;&#x0924;&#x0917;&#x0942;</div>
+      <h1 class="title">Guftag&#x016B;</h1>
+      <p class="subtitle">the conversation</p>
+      <p class="intro">Most words pass through us and leave no trace. But sometimes a conversation becomes a turning point &mdash; a late-night exchange that rearranges everything you thought you knew, a few sentences spoken at the right moment that alter the direction of a life. <em>Guftag&#x016B;</em> asks you to name the conversations that mattered &mdash; the dialogues that left you different from how they found you.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which conversations changed the direction of your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this conversation</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the night my mother told me the truth, the words a stranger said on a train&hellip;">
+        <p class="write-prompt-2">What shifted because of these words?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who spoke, what was said, what you understood differently after the conversation ended&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">speak</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Guftag&#x016B;</h2>
+      <p>Guftagu is not chit-chat. It is the Urdu word for a conversation that has depth &mdash; the kind that happens when two people stop performing and start speaking from the place where their truths live. It often happens late at night, or during a long walk, or in a crisis when there is no energy left for pretence. The masks come off. The real voices emerge.</p>
+      <p>You remember these conversations even if you have forgotten thousands of others. The one where someone finally told you what they had been carrying. The one where you said the thing you had been afraid to say. The one that ended a chapter or began one. Words are usually disposable &mdash; but some become permanent.</p>
+      <p>Name the conversations. They are the moments when language did what it was always meant to do.</p>
+      <p class="about-note">Your talks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="guftagu.js"></script>
+</body>
+</html>

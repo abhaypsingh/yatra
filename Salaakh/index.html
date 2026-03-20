@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sal&#x0101;kh &mdash; the iron bar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x0932;&#x093E;&#x0916;</div>
+      <h1 class="title">Sal&#x0101;kh</h1>
+      <p class="subtitle">the iron bar</p>
+      <p class="intro">A salaakh is an iron bar set into a window &mdash; a single rod that can mean safety or captivity depending on which side of the glass you stand. It keeps danger out and keeps you in, and sometimes you cannot tell the difference between those two functions. <em>Sal&#x0101;kh</em> asks you to name the structures in your life that were built as protection but became confinement &mdash; the rules, the walls, the arrangements that saved you and trapped you in the same gesture.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which bars kept you safe and kept you trapped?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this iron bar</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the curfew that kept me from danger and from living, the family rule I outgrew&hellip;">
+        <p class="write-prompt-2">How did it protect and imprison?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what it shielded you from, what it cost you, when you noticed the bars&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">forge</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sal&#x0101;kh</h2>
+      <p>Every family has its iron bars. The restrictions dressed as love, the boundaries drawn by people who were themselves once caged. A salaakh does not explain itself &mdash; it simply stands between you and the open air, cold and certain, asking no permission. You grow up pressing your face to the gaps, watching the world move freely on the other side.</p>
+      <p>The cruelest thing about a salaakh is that it often exists because someone was once genuinely afraid for you. The bar was placed with trembling hands, not iron ones. To forgive the cage you must sometimes understand the fear that built it &mdash; and to free yourself you must accept that safety and freedom have never been the same thing.</p>
+      <p>Name the bars. See them clearly, from both sides of the window.</p>
+      <p class="about-note">Your bars are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="salaakh.js"></script>
+</body>
+</html>

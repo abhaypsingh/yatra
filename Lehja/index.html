@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lehj&#x0101; &mdash; the accent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x0939;&#x091C;&#x093E;</div>
+      <h1 class="title">Lehj&#x0101;</h1>
+      <p class="subtitle">the accent</p>
+      <p class="intro">The way someone speaks reveals where they truly come from &mdash; not geography alone but the terrain of their experience. A lehja is the accent beneath the words, the tone that betrays the truth the sentence tries to hide. <em>Lehj&#x0101;</em> asks you to name the accents and tones that revealed the truth beneath the words.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What tone revealed the truth beneath the words?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this accent</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the tremor in my mother&rsquo;s voice, the false cheer in a goodbye&hellip;">
+        <p class="write-prompt-2">What did the tone reveal that the words hid?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the voice you remember, what it was saying beneath the surface, what you heard that others missed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lehj&#x0101;</h2>
+      <p>Words can be chosen carefully, rehearsed, polished. But the lehja &mdash; the accent, the tone, the way the voice bends around a syllable &mdash; cannot be faked for long. It is the body&rsquo;s truth leaking through the mouth&rsquo;s composure. A person says &ldquo;I&rsquo;m fine&rdquo; and the lehja says they are not. A person says &ldquo;it doesn&rsquo;t matter&rdquo; and the lehja says it is the only thing that matters.</p>
+      <p>You have heard these tones. The accent of grief disguised as anger. The tone of love disguised as scolding. The careful flatness of someone who has rehearsed their calm. And you have your own lehja &mdash; the accent of your experience that colours every word you speak.</p>
+      <p>Name the tones. Listen again to what was really being said.</p>
+      <p class="about-note">Your accents are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lehja.js"></script>
+</body>
+</html>

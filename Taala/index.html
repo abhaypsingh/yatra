@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&#x0101;l&#x0101; &mdash; the lock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093E;&#x0932;&#x093E;</div>
+      <h1 class="title">T&#x0101;l&#x0101;</h1>
+      <p class="subtitle">the lock</p>
+      <p class="intro">A taala keeps things safe or keeps people out &mdash; the same mechanism serves protection and exclusion. The lock does not judge; it simply holds. What matters is who has the key and what they choose to do with it. <em>T&#x0101;l&#x0101;</em> asks you to name the locks of your life &mdash; the things that were sealed away, whether for safekeeping or for silence.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you lock away, and what locked you out?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lock</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the room no one was allowed to enter, the conversation that was sealed shut&hellip;">
+        <p class="write-prompt-2">What did it protect or prevent?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was behind the lock, who held the key, whether it was protection or exclusion&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">turn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>T&#x0101;l&#x0101;</h2>
+      <p>A lock on a trunk holds a grandmother&rsquo;s jewellery safe. A lock on a diary holds a teenager&rsquo;s secrets. A lock on a door holds a family apart. The mechanism is identical in each case &mdash; a bolt, a key, a click. But the meaning changes entirely depending on which side of the lock you stand.</p>
+      <p>You have locked things away &mdash; memories you didn&rsquo;t want to revisit, truths you weren&rsquo;t ready to speak, parts of yourself you hid for safekeeping. And you have stood outside locked doors, wanting in, lacking the key. Both are the taala.</p>
+      <p>Name the locks. Decide which ones still need to hold, and which ones you are ready to open.</p>
+      <p class="about-note">Your locks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taala.js"></script>
+</body>
+</html>

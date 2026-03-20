@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabaq &mdash; the lesson</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x092C;&#x0915;&#x093C;</div>
+      <h1 class="title">Sabaq</h1>
+      <p class="subtitle">the lesson</p>
+      <p class="intro">The truest lessons are never found in textbooks. They arrive through loss, through failure, through the quiet aftermath of a mistake you cannot undo. A sabaq is knowledge that enters through the skin, not the mind &mdash; earned in the living, not the studying. <em>Sabaq</em> asks you to name the teachings life delivered when no classroom was in sight.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did life teach you that no teacher could?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lesson</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the cost of saying yes too easily, the truth my first failure taught me&hellip;">
+        <p class="write-prompt-2">How did this lesson arrive?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what happened, what you understood only afterward, how the knowledge changed the way you move through the world&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">learn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Sabaq</h2>
+      <p>In the old tradition, a sabaq was the daily portion of the Quran a student would memorise. But the word has grown beyond the madrasa. It now means any lesson life presses into you &mdash; the kind you cannot forget because it was written not on paper but on experience. A burnt hand teaches more about fire than any warning ever could.</p>
+      <p>Your sabaq came at unexpected moments. The friendship that ended and taught you what loyalty actually costs. The job you lost and the self-worth you found underneath the title. The illness that reorganised every priority you thought was fixed. These lessons did not ask permission. They arrived, and you were changed.</p>
+      <p>Name the lessons. They are the curriculum no one designed but everyone receives.</p>
+      <p class="about-note">Your lessons are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="sabaq.js"></script>
+</body>
+</html>

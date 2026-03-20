@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N&#x0101;r&#x0101; &mdash; the war cry</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x093E;&#x0930;&#x093E;</div>
+      <h1 class="title">N&#x0101;r&#x0101;</h1>
+      <p class="subtitle">the war cry</p>
+      <p class="intro">A naara is a war cry &mdash; words hurled skyward with the full force of a body that has had enough. It is the slogan that gathers strangers into a single fist, the shout that cracks the silence before the silence cracks you. Every revolution began with someone deciding their voice was louder than their fear. <em>N&#x0101;r&#x0101;</em> asks you to name the cries that rose from your chest when standing still was no longer an option &mdash; the words you shouted to rally yourself or a world that had stopped listening.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which cries broke through your silence?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this war cry</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the slogan that became my spine, the shout before the march&hellip;">
+        <p class="write-prompt-2">What did it rally?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were fighting for, what silence it shattered, who joined the cry&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">shout</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>N&#x0101;r&#x0101;</h2>
+      <p>There are words meant to be spoken and words meant to be thrown. A naara is the latter &mdash; language stripped of politeness and loaded with conviction. It is the chant on the street corner, the refusal distilled into a phrase short enough to be repeated by thousands. Some naaras topple empires. Some simply give a single person the courage to walk out a door they have been standing behind for years.</p>
+      <p>The power of a naara is not in its volume but in the moment it erupts. Something has been endured long enough. The throat that has swallowed injustice finally opens. The cry is not eloquent &mdash; it does not need to be. It only needs to be louder than the fear that kept it locked inside.</p>
+      <p>Name the war cries. Remember what finally made you refuse to be quiet.</p>
+      <p class="about-note">Your cries are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="naara.js"></script>
+</body>
+</html>

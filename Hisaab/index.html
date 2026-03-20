@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>His&#x0101;b &mdash; the account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093F;&#x0938;&#x093E;&#x092C;</div>
+      <h1 class="title">His&#x0101;b</h1>
+      <p class="subtitle">the account</p>
+      <p class="intro">Hisaab is the running ledger between people who love each other &mdash; favours given, slights received, sacrifices made, words left unsaid. It is the account that is never meant to balance but is always being tallied. Everyone keeps a hisaab, even those who say they don&rsquo;t. <em>His&#x0101;b</em> asks you to name the accounts between you and those you love &mdash; the invisible arithmetic of your closest relationships.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What accounts do you keep with the people you love?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this account</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the sibling who always gave more, the friend who remembers every slight&hellip;">
+        <p class="write-prompt-2">What does the ledger hold?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what has been given, what has been taken, whether the account can ever balance&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">settle</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>His&#x0101;b</h2>
+      <p>Every shopkeeper in India keeps a hisaab &mdash; a notebook with columns of credit and debit, names and amounts, promises and payments. But the most complex hisaab is not in any shop. It is between parent and child, between spouses, between old friends. Who sacrificed more. Who forgave less. Who showed up and who didn&rsquo;t. The entries are never written down but they are never forgotten.</p>
+      <p>The tragedy of hisaab is that both sides believe their version. The parent thinks the ledger shows years of selflessness. The child thinks it shows years of control. Both are reading the same account and seeing different numbers. Love does not eliminate hisaab &mdash; it makes the arithmetic more complicated.</p>
+      <p>Name the accounts. Look at what the ledger actually says, not what you wish it said.</p>
+      <p class="about-note">Your accounts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="hisaab.js"></script>
+</body>
+</html>

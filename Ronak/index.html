@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronak &mdash; the radiance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x094C;&#x0928;&#x0915;</div>
+      <h1 class="title">Ronak</h1>
+      <p class="subtitle">the radiance</p>
+      <p class="intro">Ronak is the brightness that fills a house when it is full of people and love &mdash; empty rooms have no ronak. It cannot be manufactured with lamps or paint; it only comes from presence, from laughter spilling out of kitchens, from voices overlapping in warmth. <em>Ronak</em> asks you to name the radiances that lit up your life &mdash; the presences that turned empty spaces into living ones.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What brought ronak into your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this radiance</p>
+        <input class="write-name" id="writeName" type="text" placeholder="Sunday mornings when everyone was home, the friend who made every room brighter&hellip;">
+        <p class="write-prompt-2">What did this presence illuminate?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who or what brought the light, what the space felt like before and after, where the ronak lives now&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">light</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ronak</h2>
+      <p>When guests arrive in an Indian home, someone will say &ldquo;ghar mein ronak aa gayi&rdquo; &mdash; the house has come alive. It is not a compliment to the guests alone; it is an acknowledgment that spaces are only as alive as the people in them. A palace without people is a monument. A small room full of laughter is a home.</p>
+      <p>You have known ronak. The festival when the whole family gathered. The friend whose arrival made everything lighter. The child whose voice filled rooms that had grown too quiet. And you have known its absence &mdash; the stillness after everyone leaves, the house that is clean and orderly and completely empty.</p>
+      <p>Name the radiances. Remember what made the empty rooms glow.</p>
+      <p class="about-note">Your lights are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ronak.js"></script>
+</body>
+</html>

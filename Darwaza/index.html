@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darw&#x0101;z&#x0101; &mdash; the door</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x0930;&#x0935;&#x093E;&#x091C;&#x093C;&#x093E;</div>
+      <h1 class="title">Darw&#x0101;z&#x0101;</h1>
+      <p class="subtitle">the door</p>
+      <p class="intro">A darwaza is both invitation and barrier &mdash; it depends which side you stand on. Every door is a threshold between one life and another, between the known and the unknown, between staying and leaving. To open a door is an act of faith; to close one is an act of finality. <em>Darw&#x0101;z&#x0101;</em> asks you to name the doors that opened or closed and changed everything.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which doors opened or closed and changed your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this door</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the acceptance letter, the conversation that ended a friendship&hellip;">
+        <p class="write-prompt-2">Did it open or close?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was on the other side, whether you walked through or were shut out, what changed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">open</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Darw&#x0101;z&#x0101;</h2>
+      <p>In old Indian homes, the darwaza is never just functional. It is carved, painted, adorned with marigolds and mango leaves during festivals. It is where shoes are removed and identities shift &mdash; the person you are outside becomes the person you are inside. The threshold is sacred because it marks the boundary between worlds.</p>
+      <p>Your life is a corridor of doors. Some you opened yourself &mdash; with courage, with naivety, with desperation. Some were opened for you by people who saw something you couldn&rsquo;t. And some were shut in your face, and that closing became the most important thing that ever happened to you, because it sent you somewhere else.</p>
+      <p>Name the doors. Honour the thresholds that made you cross into who you are.</p>
+      <p class="about-note">Your doors are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="darwaza.js"></script>
+</body>
+</html>

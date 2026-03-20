@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rukhsat &mdash; the farewell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0941;&#x0916;&#x093C;&#x0938;&#x0924;</div>
+      <h1 class="title">Rukhsat</h1>
+      <p class="subtitle">the farewell</p>
+      <p class="intro">Rukhsat is the formal farewell &mdash; the departure that is not sudden but ceremonial, witnessed by others, sanctioned by ritual. It is the bride leaving her father's house, the coffin lowered while prayers are recited, the last day at a home you will never return to. There is a terrible beauty in a goodbye that everyone agrees is final. <em>Rukhsat</em> asks you to name the farewells that were performed, not stolen &mdash; the departures where the world stopped to watch you leave or to watch someone leave you.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which farewells were witnessed and final?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this farewell</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the day I left home for the last time, the funeral where everyone gathered&hellip;">
+        <p class="write-prompt-2">What was the ceremony of leaving?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who was there, what rituals marked the departure, what you carried away&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">depart</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Rukhsat</h2>
+      <p>Most goodbyes happen without warning &mdash; a phone call, a silence that stretches into permanence, a door that simply does not open again. But a rukhsat is different. It is the farewell you see coming, the one that gathers people in a room and asks them to face the leaving together. There are tears, but they are expected. There are embraces, but they have an end.</p>
+      <p>The weight of rukhsat is that it asks you to be present for the exact moment something ends. You cannot look away. You cannot pretend it is temporary. The ritual insists that you feel the full measure of the departure &mdash; and in doing so, it gives the grief a shape, a beginning and an end, a frame within which sorrow is permitted to exist.</p>
+      <p>Name the farewells. Give the departures the gravity they earned.</p>
+      <p class="about-note">Your farewells are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="rukhsat.js"></script>
+</body>
+</html>

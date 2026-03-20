@@ -1954,6 +1954,157 @@ body {
 .card-hulchul::before { background: #d07858; }
 .card-hulchul .card-enter { color: #d07858; }
 
+.card-ahsaan:hover { border-color: #b09078; }
+.card-ahsaan::before { background: #b09078; }
+.card-ahsaan .card-enter { color: #b09078; }
+.card-baarish:hover { border-color: #6898b0; }
+.card-baarish::before { background: #6898b0; }
+.card-baarish .card-enter { color: #6898b0; }
+.card-taala:hover { border-color: #808080; }
+.card-taala::before { background: #808080; }
+.card-taala .card-enter { color: #808080; }
+.card-darwaza:hover { border-color: #a08060; }
+.card-darwaza::before { background: #a08060; }
+.card-darwaza .card-enter { color: #a08060; }
+.card-ronak:hover { border-color: #d0a848; }
+.card-ronak::before { background: #d0a848; }
+.card-ronak .card-enter { color: #d0a848; }
+.card-fitrat:hover { border-color: #78a078; }
+.card-fitrat::before { background: #78a078; }
+.card-fitrat .card-enter { color: #78a078; }
+.card-gulaab:hover { border-color: #c87088; }
+.card-gulaab::before { background: #c87088; }
+.card-gulaab .card-enter { color: #c87088; }
+.card-hisaab:hover { border-color: #889088; }
+.card-hisaab::before { background: #889088; }
+.card-hisaab .card-enter { color: #889088; }
+.card-insaaf:hover { border-color: #607890; }
+.card-insaaf::before { background: #607890; }
+.card-insaaf .card-enter { color: #607890; }
+.card-jamaana:hover { border-color: #a89078; }
+.card-jamaana::before { background: #a89078; }
+.card-jamaana .card-enter { color: #a89078; }
+.card-kasak:hover { border-color: #a06878; }
+.card-kasak::before { background: #a06878; }
+.card-kasak .card-enter { color: #a06878; }
+.card-sikka:hover { border-color: #c8b050; }
+.card-sikka::before { background: #c8b050; }
+.card-sikka .card-enter { color: #c8b050; }
+.card-morchha:hover { border-color: #787060; }
+.card-morchha::before { background: #787060; }
+.card-morchha .card-enter { color: #787060; }
+.card-naara:hover { border-color: #c86048; }
+.card-naara::before { background: #c86048; }
+.card-naara .card-enter { color: #c86048; }
+.card-odhni:hover { border-color: #c098b0; }
+.card-odhni::before { background: #c098b0; }
+.card-odhni .card-enter { color: #c098b0; }
+.card-salaakh:hover { border-color: #686868; }
+.card-salaakh::before { background: #686868; }
+.card-salaakh .card-enter { color: #686868; }
+.card-qarz:hover { border-color: #907858; }
+.card-qarz::before { background: #907858; }
+.card-qarz .card-enter { color: #907858; }
+.card-rukhsat:hover { border-color: #9080a0; }
+.card-rukhsat::before { background: #9080a0; }
+.card-rukhsat .card-enter { color: #9080a0; }
+.card-saaya:hover { border-color: #606870; }
+.card-saaya::before { background: #606870; }
+.card-saaya .card-enter { color: #606870; }
+.card-taqdeer:hover { border-color: #b0a070; }
+.card-taqdeer::before { background: #b0a070; }
+.card-taqdeer .card-enter { color: #b0a070; }
+.card-bisat:hover { border-color: #a09080; }
+.card-bisat::before { background: #a09080; }
+.card-bisat .card-enter { color: #a09080; }
+.card-vasiyat:hover { border-color: #887868; }
+.card-vasiyat::before { background: #887868; }
+.card-vasiyat .card-enter { color: #887868; }
+.card-wafaa:hover { border-color: #6888a0; }
+.card-wafaa::before { background: #6888a0; }
+.card-wafaa .card-enter { color: #6888a0; }
+.card-zubaan:hover { border-color: #c08858; }
+.card-zubaan::before { background: #c08858; }
+.card-zubaan .card-enter { color: #c08858; }
+.card-achaar:hover { border-color: #c89030; }
+.card-achaar::before { background: #c89030; }
+.card-achaar .card-enter { color: #c89030; }
+.card-badnaam:hover { border-color: #786868; }
+.card-badnaam::before { background: #786868; }
+.card-badnaam .card-enter { color: #786868; }
+.card-chashma:hover { border-color: #58a8b0; }
+.card-chashma::before { background: #58a8b0; }
+.card-chashma .card-enter { color: #58a8b0; }
+.card-dhuaan:hover { border-color: #909090; }
+.card-dhuaan::before { background: #909090; }
+.card-dhuaan .card-enter { color: #909090; }
+.card-fariyaad:hover { border-color: #8878a0; }
+.card-fariyaad::before { background: #8878a0; }
+.card-fariyaad .card-enter { color: #8878a0; }
+.card-gawah:hover { border-color: #708078; }
+.card-gawah::before { background: #708078; }
+.card-gawah .card-enter { color: #708078; }
+.card-hissa:hover { border-color: #a09050; }
+.card-hissa::before { background: #a09050; }
+.card-hissa .card-enter { color: #a09050; }
+.card-izzat:hover { border-color: #a87060; }
+.card-izzat::before { background: #a87060; }
+.card-izzat .card-enter { color: #a87060; }
+.card-jawaab:hover { border-color: #5880a0; }
+.card-jawaab::before { background: #5880a0; }
+.card-jawaab .card-enter { color: #5880a0; }
+.card-kashti:hover { border-color: #6090a0; }
+.card-kashti::before { background: #6090a0; }
+.card-kashti .card-enter { color: #6090a0; }
+.card-lehja:hover { border-color: #a89880; }
+.card-lehja::before { background: #a89880; }
+.card-lehja .card-enter { color: #a89880; }
+.card-mohar:hover { border-color: #c89848; }
+.card-mohar::before { background: #c89848; }
+.card-mohar .card-enter { color: #c89848; }
+.card-naqsh:hover { border-color: #907070; }
+.card-naqsh::before { background: #907070; }
+.card-naqsh .card-enter { color: #907070; }
+.card-obhaar:hover { border-color: #78a0a8; }
+.card-obhaar::before { background: #78a0a8; }
+.card-obhaar .card-enter { color: #78a0a8; }
+.card-mutthi:hover { border-color: #988070; }
+.card-mutthi::before { background: #988070; }
+.card-mutthi .card-enter { color: #988070; }
+.card-qaid:hover { border-color: #585858; }
+.card-qaid::before { background: #585858; }
+.card-qaid .card-enter { color: #585858; }
+.card-khaamooshi:hover { border-color: #a0a0a8; }
+.card-khaamooshi::before { background: #a0a0a8; }
+.card-khaamooshi .card-enter { color: #a0a0a8; }
+.card-sabaq:hover { border-color: #889068; }
+.card-sabaq::before { background: #889068; }
+.card-sabaq .card-enter { color: #889068; }
+.card-guftagu:hover { border-color: #9888a0; }
+.card-guftagu::before { background: #9888a0; }
+.card-guftagu .card-enter { color: #9888a0; }
+.card-ujala:hover { border-color: #d8c060; }
+.card-ujala::before { background: #d8c060; }
+.card-ujala .card-enter { color: #d8c060; }
+.card-paheli:hover { border-color: #a088b0; }
+.card-paheli::before { background: #a088b0; }
+.card-paheli .card-enter { color: #a088b0; }
+.card-watan:hover { border-color: #80a060; }
+.card-watan::before { background: #80a060; }
+.card-watan .card-enter { color: #80a060; }
+.card-zeher:hover { border-color: #688058; }
+.card-zeher::before { background: #688058; }
+.card-zeher .card-enter { color: #688058; }
+.card-aasra:hover { border-color: #b0a890; }
+.card-aasra::before { background: #b0a890; }
+.card-aasra .card-enter { color: #b0a890; }
+.card-bandhan:hover { border-color: #c08078; }
+.card-bandhan::before { background: #c08078; }
+.card-bandhan .card-enter { color: #c08078; }
+.card-chhaaon:hover { border-color: #709070; }
+.card-chhaaon::before { background: #709070; }
+.card-chhaaon .card-enter { color: #709070; }
+
 /* ==================== FOOTER ==================== */
 .footer {
   text-align: center;

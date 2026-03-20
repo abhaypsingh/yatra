@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taqd&#x012B;r &mdash; the destiny</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x0915;&#x093C;&#x0926;&#x0940;&#x0930;</div>
+      <h1 class="title">Taqd&#x012B;r</h1>
+      <p class="subtitle">the destiny</p>
+      <p class="intro">Taqdeer is destiny &mdash; the invisible script written before you drew your first breath. It is not the same as luck, which is random, or karma, which is earned. Taqdeer is the plot you walk into blind, the arrangement of events so precise and so unlikely that coincidence feels like an inadequate explanation. <em>Taqd&#x012B;r</em> asks you to name the moments where fate revealed its hand &mdash; the turns in your story that felt authored by something larger than chance.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did fate reveal a plan you could not have written?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this destiny</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the missed train that saved my life, the stranger who became everything&hellip;">
+        <p class="write-prompt-2">What did fate arrange?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what happened, why it felt written, what it changed forever&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">accept</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Taqd&#x012B;r</h2>
+      <p>People argue endlessly about whether life is written or improvised. Taqdeer does not settle the debate &mdash; it simply names the feeling. That uncanny recognition when a door closes and a window opens at the exact right moment. The meeting that could not have been engineered by any human plan. The loss that, years later, turns out to have been the only path to something essential.</p>
+      <p>Taqdeer is humbling. It suggests that your will, however fierce, operates within a larger design. This is not always comforting &mdash; destiny includes the tragedies, too. The illness that chose your family. The war that chose your country. To call something taqdeer is not to say it was good. It is to say it was inevitable, and that your life cannot be understood without it.</p>
+      <p>Name the fates. Trace the thread that was woven before you could hold the needle.</p>
+      <p class="about-note">Your fates are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taqdeer.js"></script>
+</body>
+</html>

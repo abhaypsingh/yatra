@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chashm&#x0101; &mdash; the spring</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x0936;&#x094D;&#x092E;&#x093E;</div>
+      <h1 class="title">Chashm&#x0101;</h1>
+      <p class="subtitle">the spring</p>
+      <p class="intro">A chashma is an underground water source that surfaces on its own &mdash; you don&rsquo;t dig for it, it finds its way up through rock and soil. It appears where the earth is cracked, where pressure has built for years. <em>Chashm&#x0101;</em> asks you to name the underground sources of strength that surfaced when you needed them most.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What strength surfaced from underground?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this spring</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the calm that appeared during crisis, the resolve I didn&rsquo;t know I had&hellip;">
+        <p class="write-prompt-2">How did it surface?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it came from, the moment it broke through, what it sustained&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">drink</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chashm&#x0101;</h2>
+      <p>In the mountains of Kashmir and the dry plains of Rajasthan alike, a chashma is sacred. Water that finds its own way to the surface &mdash; unbidden, unexpected &mdash; is considered a gift. Nobody built it. Nobody planned it. It simply appeared because the pressure beneath the ground had nowhere else to go.</p>
+      <p>You have springs inside you. Reserves of patience, courage, or clarity that you never knew existed until a crisis cracked you open. They surfaced not because you searched for them but because you had no choice &mdash; and suddenly, there they were.</p>
+      <p>Name the springs. Honour the strength that found its own way up.</p>
+      <p class="about-note">Your springs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chashma.js"></script>
+</body>
+</html>

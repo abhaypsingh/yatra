@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bis&#x0101;t &mdash; the chessboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093F;&#x0938;&#x093E;&#x0924;</div>
+      <h1 class="title">Bis&#x0101;t</h1>
+      <p class="subtitle">the chessboard</p>
+      <p class="intro">A bisat is a chessboard &mdash; a surface of alternating squares where every move has consequences three moves deep. It is not the game itself but the arena, the flat field that turns ordinary pieces into kings and pawns, that makes geography into strategy. Life sets its boards in offices, in families, in friendships where alliances shift. <em>Bis&#x0101;t</em> asks you to name the arenas where you had to think ahead &mdash; the situations that demanded calculation, sacrifice, and the patience to let a position develop.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">On which boards did you have to think many moves ahead?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this chessboard</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the office politics I had to navigate, the family dispute with no clean moves&hellip;">
+        <p class="write-prompt-2">What was the game being played?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who the players were, what was at stake, the move you made or the one you regret&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">place</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bis&#x0101;t</h2>
+      <p>Not every battle announces itself with drums. Some are fought on a bisat &mdash; silently, over weeks and months, with moves so subtle that bystanders see nothing at all. A promotion withheld. An inheritance disputed. A marriage where every conversation is a negotiation and every silence is a gambit. The board is always set; the only question is whether you are a player or a piece.</p>
+      <p>The hardest part of a bisat is the waiting. Chess rewards patience, and life punishes impatience even more severely. Sometimes the bravest move is no move at all &mdash; holding position while the opponent overextends, trusting that time will reveal the opening. But sometimes you sacrifice a piece you love to protect something you love more, and the board never looks the same again.</p>
+      <p>Name the boards. Map the games that shaped your strategy for living.</p>
+      <p class="about-note">Your boards are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bisat.js"></script>
+</body>
+</html>

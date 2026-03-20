@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naqsh &mdash; the imprint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x0915;&#x093C;&#x094D;&#x0936;</div>
+      <h1 class="title">Naqsh</h1>
+      <p class="subtitle">the imprint</p>
+      <p class="intro">Naqsh is an imprint &mdash; a pattern pressed into stone, metal, or memory with enough force to remain after the hand that made it is gone. It is the footprint in wet cement, the groove worn into a wooden step by decades of the same feet, the expression on a face that you see every time you close your eyes. <em>Naqsh</em> asks you to name the impressions that others pressed into you &mdash; the marks left by people, places, and moments that altered your surface permanently, that you carry whether you chose to or not.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose imprint do you still carry on yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this imprint</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my father's handwriting I accidentally copied, the city that shaped how I see beauty&hellip;">
+        <p class="write-prompt-2">What mark did it leave?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who or what pressed into you, where you carry the mark, how it changed your shape&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">press</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Naqsh</h2>
+      <p>You are not born blank. But you are born soft, and the world presses itself into you before you can consent. A parent's anxiety becomes your caution. A teacher's faith becomes your ambition. A city's rhythm becomes your heartbeat. These are naqsh &mdash; not lessons you were taught but patterns you absorbed, impressions made when you were still wet clay, hardening into the shape of whoever held you first.</p>
+      <p>Some naqsh are beautiful &mdash; the generosity you inherited without trying, the laugh that sounds exactly like someone who died before you were old enough to remember them. Others are wounds dressed as personality &mdash; the flinch, the distrust, the need to be perfect that was pressed into you by hands that did not know their own strength. To see your naqsh clearly is to understand that you are, in part, a collection of other people's fingerprints.</p>
+      <p>Name the imprints. Trace the patterns that were pressed into you before you could choose your own shape.</p>
+      <p class="about-note">Your imprints are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="naqsh.js"></script>
+</body>
+</html>

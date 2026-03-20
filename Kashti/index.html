@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasht&#x012B; &mdash; the boat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0936;&#x094D;&#x0924;&#x0940;</div>
+      <h1 class="title">Kasht&#x012B;</h1>
+      <p class="subtitle">the boat</p>
+      <p class="intro">A kashti carries you across water you cannot cross alone &mdash; a river of grief, a sea of uncertainty, a flood of change. The boat does not remove the water; it simply keeps you above it long enough to reach the other side. <em>Kasht&#x012B;</em> asks you to name the vessels &mdash; people, beliefs, circumstances &mdash; that carried you across.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What carried you across?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this boat</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend who held me steady, the job that kept me afloat&hellip;">
+        <p class="write-prompt-2">What water did it carry you across?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the crisis you could not cross alone, how this vessel found you, where it brought you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sail</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kasht&#x012B;</h2>
+      <p>The kashti appears in Urdu poetry as the fragile thing between you and the ocean &mdash; a few planks of wood between you and drowning. It is not grand. It leaks. It rocks. But it floats. And sometimes floating is all you need until the shore appears.</p>
+      <p>Your boats have taken many forms. A person who listened when you needed to speak. A routine that gave you structure when everything else was chaos. A belief that kept you moving when logic said to stop. None of them were perfect vessels. But they carried you.</p>
+      <p>Name the boats. Honour what kept you above the water.</p>
+      <p class="about-note">Your boats are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kashti.js"></script>
+</body>
+</html>

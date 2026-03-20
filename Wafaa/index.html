@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waf&#x0101; &mdash; the loyalty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x092B;&#x093C;&#x093E;</div>
+      <h1 class="title">Waf&#x0101;</h1>
+      <p class="subtitle">the loyalty</p>
+      <p class="intro">Wafaa is loyalty &mdash; not the easy kind that costs nothing, but the kind that endures after the reasons for staying have expired. It is the promise kept when breaking it would have been cheaper, simpler, and entirely forgivable. Wafaa is faithfulness tested by time, by distance, by the slow erosion of everything that once made the bond convenient. <em>Waf&#x0101;</em> asks you to name the loyalties that defined you &mdash; the bonds you honoured past the point of reason and the ones that were honoured for you.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which loyalties outlasted the reasons that created them?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this loyalty</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend who stayed when everyone left, the promise I kept for decades&hellip;">
+        <p class="write-prompt-2">What did it cost to remain faithful?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who was loyal, what it endured, the moment it was tested most severely&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">honour</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Waf&#x0101;</h2>
+      <p>Loyalty is simple when it is mutual and the weather is fair. Wafaa begins where simplicity ends &mdash; it is the loyalty that persists through betrayal, through silence, through years of unreturned calls. It is the mother who defends a child the world has given up on. It is the friend who shows up at the hospital when they were told not to come. Wafaa does not keep score. That is both its glory and its danger.</p>
+      <p>Not all wafaa is wise. Sometimes loyalty becomes a prison of its own &mdash; a refusal to abandon what has already abandoned you. The line between devotion and self-destruction is drawn by the person doing the staying, and they rarely draw it in time. But when wafaa is true and returned, it becomes the rarest thing in human life: a bond that time cannot degrade.</p>
+      <p>Name the loyalties. Remember what it meant to stay, and what it meant that someone stayed for you.</p>
+      <p class="about-note">Your loyalties are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="wafaa.js"></script>
+</body>
+</html>

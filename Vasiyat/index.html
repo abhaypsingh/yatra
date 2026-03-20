@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vas&#x012B;yat &mdash; the will</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x0938;&#x0940;&#x092F;&#x0924;</div>
+      <h1 class="title">Vas&#x012B;yat</h1>
+      <p class="subtitle">the will</p>
+      <p class="intro">Vasiyat is a will &mdash; the words someone composes for the living while contemplating their own absence. It is the final instruction, the last wish, the sentence spoken at the edge of departure that carries more weight than a lifetime of conversation. Not all vasiyats are legal documents; some are whispered on hospital beds, some are encoded in the way a house was kept. <em>Vas&#x012B;yat</em> asks you to name the inheritances that shaped you &mdash; the spoken and unspoken instructions the dead and the departing left behind.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What instructions did the departed leave for you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this will</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandmother's last request, the unspoken rule my father lived by&hellip;">
+        <p class="write-prompt-2">What was bequeathed to you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what they asked of you, what they left behind, how it shaped your living&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">inherit</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Vas&#x012B;yat</h2>
+      <p>The truest vasiyat is rarely found in a lawyer's office. It lives in the things a person repeated so often they became commandments &mdash; &ldquo;never borrow money,&rdquo; &ldquo;always feed whoever comes to the door,&rdquo; &ldquo;do not trust easily.&rdquo; These are the wills written in behaviour, etched into daily life long before anyone was dying. By the time the person is gone, the instructions are already embedded in your bones.</p>
+      <p>Some vasiyats are gifts; others are burdens disguised as wisdom. The dying do not always leave behind their best selves &mdash; sometimes they leave behind their fears, their grudges, their unfinished wars. To honour a vasiyat you must first decide which parts were meant for you and which parts were meant for a world that no longer exists.</p>
+      <p>Name the wills. Decide which inheritances you choose to carry forward.</p>
+      <p class="about-note">Your wills are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="vasiyat.js"></script>
+</body>
+</html>

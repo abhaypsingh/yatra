@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasak &mdash; the lingering ache</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x0938;&#x0915;</div>
+      <h1 class="title">Kasak</h1>
+      <p class="subtitle">the lingering ache</p>
+      <p class="intro">Kasak is an ache that remains long after the wound has healed &mdash; a phantom pain of the heart. The event is over, the person is gone, the situation has resolved, but something continues to pulse beneath the surface. It is not grief exactly; it is the residue of grief, the stain it leaves behind. <em>Kasak</em> asks you to name the aches that linger &mdash; the pains that outlived their cause.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which aches outlived the wounds that made them?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this ache</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the thing I said that I cannot unsay, the goodbye that still stings years later&hellip;">
+        <p class="write-prompt-2">Why does it still pulse?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the original wound was, how long ago it healed, what remains underneath&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">carry</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kasak</h2>
+      <p>A kasak is what remains after the story is over. The film has ended, the lights have come on, the theatre is empty &mdash; but something still sits in your chest. It is not the memory of the event but the feeling the event left behind, like the impression a heavy object leaves on a cushion long after it has been removed. The shape remains even when the weight is gone.</p>
+      <p>You carry kasaks. The sting of a rejection you have long since moved past. The ache of a friendship that faded without a fight. The pang when a song plays that belonged to a time you cannot return to. These are not open wounds &mdash; they are closed ones that still throb when the weather changes.</p>
+      <p>Name the aches. Acknowledging them is not reopening the wound &mdash; it is honouring the scar.</p>
+      <p class="about-note">Your aches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kasak.js"></script>
+</body>
+</html>

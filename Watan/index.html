@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watan &mdash; the homeland</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x0924;&#x0928;</div>
+      <h1 class="title">Watan</h1>
+      <p class="subtitle">the homeland</p>
+      <p class="intro">Homeland is not only geography. It is the smell of rain on a particular soil, the sound of a language spoken without thinking, the ache in the chest when a familiar song plays far from where you first heard it. Watan is wherever your roots still drink from, no matter how far the branches have spread. <em>Watan</em> asks you to name the homelands you carry inside you &mdash; the places that claim you even when you have left them behind.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What places still claim you as their own?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this homeland</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the village my grandparents left, the city that raised me, the kitchen that felt like a country&hellip;">
+        <p class="write-prompt-2">What do you carry from this place?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the land gave you, what you miss most, the part of it that lives inside you still&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">belong</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Watan</h2>
+      <p>The word watan carries a specific grief in Urdu &mdash; the grief of distance from the land you love. Millions have carried this word across oceans, on trains during Partition, in aeroplanes to countries where the soil smells different and the birds sing in unfamiliar keys. Watan is not just where you were born. It is where your body remembers being at peace.</p>
+      <p>Your homelands may be many. The town where your mother grew up and took you every summer. The neighbourhood you left when the family moved. The country your ancestors walked away from so that you could have a different life. Even a room can be a watan &mdash; a kitchen, a rooftop, a corner of a garden where you felt you belonged completely.</p>
+      <p>Name the homelands. They are the geographies of your belonging.</p>
+      <p class="about-note">Your homes are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="watan.js"></script>
+</body>
+</html>

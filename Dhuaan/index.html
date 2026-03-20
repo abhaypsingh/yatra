@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhu&#x0101;&#x0303; &mdash; the smoke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0927;&#x0941;&#x0906;&#x0901;</div>
+      <h1 class="title">Dhu&#x0101;&#x0303;</h1>
+      <p class="subtitle">the smoke</p>
+      <p class="intro">Smoke is the signal before the fire &mdash; where there is smoke, something is burning. It rises before the flame is visible, a warning written in the air for anyone willing to look up. <em>Dhu&#x0101;&#x0303;</em> asks you to name the warning signals you saw rising before the crisis &mdash; the smoke you noticed, the smoke you ignored, and the smoke you wish someone else had seen.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What warnings did you see rising?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this signal</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the silence before the argument, the small lie that preceded the big one&hellip;">
+        <p class="write-prompt-2">What was burning beneath it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the smoke warned of, whether you heeded it, what burned after&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">see</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dhu&#x0101;&#x0303;</h2>
+      <p>The village saying is simple: where there is smoke, there is fire. But in life the smoke often rises slowly &mdash; a change in someone&rsquo;s tone, a pattern of small withdrawals, a discomfort you cannot name. You see it and you tell yourself it is nothing. The smoke thickens. And then the fire arrives, and you realise the warning was there all along.</p>
+      <p>Looking back, the smoke was always visible. The signs before a relationship ended. The tension before a family fractured. The weariness before you broke. Not all smoke leads to catastrophe &mdash; sometimes you caught it in time. But every fire had its smoke.</p>
+      <p>Name the signals. Learn to read the air.</p>
+      <p class="about-note">Your signals are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dhuaan.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izzat &mdash; the respect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x091C;&#x093C;&#x094D;&#x091C;&#x093C;&#x0924;</div>
+      <h1 class="title">Izzat</h1>
+      <p class="subtitle">the respect</p>
+      <p class="intro">Izzat is respect &mdash; but two kinds live inside the word. There is the respect earned by living with integrity, and the respect demanded simply because of position or status. One is a garden tended daily; the other is a wall built to hide what&rsquo;s behind it. <em>Izzat</em> asks you to name the respects that were earned and the ones that were merely demanded.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which respects were earned and which were demanded?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this respect</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the elder who earned it silently, the title that demanded it loudly&hellip;">
+        <p class="write-prompt-2">Was it earned or demanded?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how this respect was built or imposed, what it cost, whether it was deserved&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">earn</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Izzat</h2>
+      <p>Izzat is the currency of South Asian life. Families are built on it, marriages are arranged around it, feuds are fought over it. But the word contains a deep contradiction: the izzat that comes from genuine character and the izzat that comes from fear or social standing look the same from the outside. Only those close enough can tell which is which.</p>
+      <p>You have known both kinds. People whose quiet dignity commanded respect without a single demand. And people whose position required you to bow, though nothing inside you agreed. You have also earned respect &mdash; and perhaps demanded it when you should have earned it instead.</p>
+      <p>Name the respects. Learn which ones stand on their own and which ones need a pedestal.</p>
+      <p class="about-note">Your respects are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="izzat.js"></script>
+</body>
+</html>

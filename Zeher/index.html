@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeher &mdash; the poison</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093C;&#x0947;&#x0939;&#x0930;</div>
+      <h1 class="title">Zeher</h1>
+      <p class="subtitle">the poison</p>
+      <p class="intro">Not all poison comes in bottles. Some arrives as words repeated until you believed them. Some as habits that felt like comfort but were slowly hollowing you out. Some as people whose presence eroded you so gradually you did not notice until the damage was done. <em>Zeher</em> asks you to name the poisons you have known &mdash; the things that harmed you from within, whether you chose them or they chose you.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What harmed you slowly from the inside?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this poison</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the voice that said I was not enough, the habit I mistook for medicine&hellip;">
+        <p class="write-prompt-2">How did it enter you, and what did it cost?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where the poison came from, how long before you noticed its effect, what it took from you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">name</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Zeher</h2>
+      <p>In the old stories, poison was always dramatic &mdash; a vial in a ring, a coated blade, a cup offered by a smiling enemy. But the real poisons of a life are quieter. They are the comparison that eats your contentment. The resentment you swallow every day at the same table. The belief planted in childhood that you are fundamentally flawed. These poisons do not kill quickly. They work over years, over decades, dissolving things you did not know you needed until they were gone.</p>
+      <p>Some poisons you chose. The substance, the relationship, the pattern you returned to knowing it would hurt. Others were administered without your consent &mdash; the cruelty of a parent, the culture that told you to shrink, the system that ground you down. Naming the poison is the first step toward finding the antidote.</p>
+      <p>Name what poisoned you. Not to dwell in it, but to finally see it clearly.</p>
+      <p class="about-note">Your doses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="zeher.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qarz &mdash; the debt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093C;&#x0930;&#x094D;&#x091C;&#x093C;</div>
+      <h1 class="title">Qarz</h1>
+      <p class="subtitle">the debt</p>
+      <p class="intro">Qarz is debt &mdash; not merely of money but of obligation, guilt, and unspoken expectation. It is what accumulates when someone sacrifices for you and the receipt is never presented but never forgotten. The ledger lives in glances, in silences, in the way a parent sighs when they think you are not listening. <em>Qarz</em> asks you to name the debts that shaped your life &mdash; the obligations, financial and emotional, that bent your trajectory and dictated choices you pretended were free.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which debts shaped the choices you thought were free?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this debt</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the tuition that was never discussed, the years my mother gave up for me&hellip;">
+        <p class="write-prompt-2">What did it cost you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was owed, who held the ledger, how it shaped your decisions&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">owe</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Qarz</h2>
+      <p>Some debts arrive with interest rates and due dates. Those are the simple ones. The debts that define a life are the ones that never appear on paper &mdash; the career your father abandoned so you could have one, the country your family left so you could have choices they never did, the meal someone skipped so you could eat. These debts have no repayment plan because they were never meant to be repaid. They were meant to be carried.</p>
+      <p>Qarz bends a person without breaking them. It is the invisible gravity that pulls you toward guilt when you choose yourself, that whispers you are selfish for wanting what was freely given. To name a debt is not to reject the gift &mdash; it is to finally see the weight you have been carrying and decide whether it is yours to hold.</p>
+      <p>Name the debts. Let the ledger finally be read aloud.</p>
+      <p class="about-note">Your debts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="qarz.js"></script>
+</body>
+</html>

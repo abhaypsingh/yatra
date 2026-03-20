@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahs&#x0101;n &mdash; the favour</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0905;&#x0939;&#x0938;&#x093E;&#x0928;</div>
+      <h1 class="title">Ahs&#x0101;n</h1>
+      <p class="subtitle">the favour</p>
+      <p class="intro">An ahsaan is a favour so large it can never be fully repaid &mdash; it creates a permanent asymmetry between giver and receiver, a tilt in the balance that no gesture can level. The weight of it is not burden but bond, a gravity that keeps two lives in orbit. <em>Ahs&#x0101;n</em> asks you to name the favours that left you permanently indebted &mdash; the acts of generosity so large they became part of your architecture.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which favours left you permanently indebted?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this favour</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the loan that was never mentioned again, the year someone carried my weight&hellip;">
+        <p class="write-prompt-2">What debt did it create?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who gave it, what it cost them, why it can never be repaid&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">owe</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ahs&#x0101;n</h2>
+      <p>In every life there are debts that no currency can settle. Someone took you in when you had nowhere to go. Someone believed in you when you had given up on yourself. Someone sacrificed years of their own life so yours could begin. These are not transactions &mdash; they are ahsaan, favours that reshape the topology of a relationship forever.</p>
+      <p>The weight of ahsaan is peculiar. It does not crush &mdash; it anchors. You carry it not as burden but as proof that someone once loved you more than the cost of loving you. The asymmetry is the point. It is not meant to balance.</p>
+      <p>Name the favours. Carry them with the gravity they deserve.</p>
+      <p class="about-note">Your favours are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ahsaan.js"></script>
+</body>
+</html>

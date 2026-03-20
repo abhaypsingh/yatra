@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badn&#x0101;m &mdash; the disgraced</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0926;&#x0928;&#x093E;&#x092E;</div>
+      <h1 class="title">Badn&#x0101;m</h1>
+      <p class="subtitle">the disgraced</p>
+      <p class="intro">When your name carries a stain &mdash; deserved or not &mdash; it becomes a weight you wear in every room you enter. Some disgrace is unjust, heaped on you by others&rsquo; fear or envy. Some is the price you paid for speaking a truth no one wanted to hear. <em>Badn&#x0101;m</em> asks you to name the stains on your name and what the stain could not hide.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What stains does your name carry?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this stain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the rumour that followed me, the failure everyone remembered&hellip;">
+        <p class="write-prompt-2">What could the stain not hide?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how the disgrace arrived, what it cost you, what it could not erase&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bear</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Badn&#x0101;m</h2>
+      <p>In every community there are names spoken in whispers &mdash; the disgraced ones. But disgrace is rarely simple. Sometimes a person is badnaam because they broke a rule that deserved to be broken. Sometimes because they were convenient to blame. The stain on the name tells you less about the person than about the world that stained them.</p>
+      <p>You carry stains too. Moments when your reputation was marked &mdash; by a mistake, a misunderstanding, a deliberate cruelty from someone else. And beneath each stain, something that refused to be erased: your intention, your courage, the truth of what actually happened.</p>
+      <p>Name the stains. See what survived beneath them.</p>
+      <p class="about-note">Your names are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="badnaam.js"></script>
+</body>
+</html>

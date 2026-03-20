@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morchh&#x0101; &mdash; the barricade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x094B;&#x0930;&#x094D;&#x091A;&#x093E;</div>
+      <h1 class="title">Morchh&#x0101;</h1>
+      <p class="subtitle">the barricade</p>
+      <p class="intro">A morchha is a defensive position held when retreat would have been easier &mdash; a stand taken not because victory is certain but because surrender is unacceptable. It is the barricade built from whatever is at hand: conviction, stubbornness, desperation, love. <em>Morchh&#x0101;</em> asks you to name the positions you held &mdash; the stands you took when the easier path was to walk away.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did you hold your ground when retreat was easier?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this barricade</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the principle I would not abandon, the person I refused to give up on&hellip;">
+        <p class="write-prompt-2">What held you in position?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were defending, what it cost you to stay, whether the stand was worth it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">hold</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Morchh&#x0101;</h2>
+      <p>The morchha is a term from battle &mdash; a fortified position, a line drawn in sand or stone. In Indian protest movements, a morchha is where people sit and refuse to move. They build no walls; their bodies are the barricade. The power of the morchha is not in weapons but in the willingness to endure discomfort for a cause.</p>
+      <p>You have built morchhas in your own life. The argument you refused to lose because the principle mattered more than peace. The relationship you fought for when everyone told you to let go. The boundary you enforced even when it made you unpopular. These stands cost you something. They always do.</p>
+      <p>Name the barricades. Know what you defended and what it cost you to hold the line.</p>
+      <p class="about-note">Your positions are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="morchha.js"></script>
+</body>
+</html>

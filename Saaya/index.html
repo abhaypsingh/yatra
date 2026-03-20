@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&#x0101;y&#x0101; &mdash; the shadow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x093E;&#x092F;&#x093E;</div>
+      <h1 class="title">S&#x0101;y&#x0101;</h1>
+      <p class="subtitle">the shadow</p>
+      <p class="intro">A saaya is a shadow &mdash; the dark shape that proves something is standing in the light. It can be the comforting presence of a protector walking beside you, or the haunting outline of someone who is gone but whose shape still falls across your days. A shadow asks nothing and explains nothing; it simply follows. <em>S&#x0101;y&#x0101;</em> asks you to name the shadows in your life &mdash; the presences, living or remembered, that moved when you moved and stayed when you stayed.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose shadow has followed you through your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shadow</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my grandfather's quiet presence, the version of myself I outgrew&hellip;">
+        <p class="write-prompt-2">How did it follow you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="whose shadow it was, whether it comforted or haunted, when you first noticed it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cast</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>S&#x0101;y&#x0101;</h2>
+      <p>When someone says &ldquo;their saaya was over me,&rdquo; they mean they were protected &mdash; shielded by a presence so constant it became invisible, like shade on a hot afternoon. You do not notice a shadow until it is gone. Then the sun hits you directly and you understand, for the first time, how much heat someone else had been absorbing on your behalf.</p>
+      <p>But shadows can also haunt. The outline of a parent in every authority figure you meet. The silhouette of a lost love in every doorway. Some shadows do not belong to the living at all &mdash; they belong to the dead, and they grow longer as the years pass, not shorter. To live with a saaya is to accept that you are never entirely alone, for better or for worse.</p>
+      <p>Name the shadows. Acknowledge who stood between you and the sun.</p>
+      <p class="about-note">Your shadows are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="saaya.js"></script>
+</body>
+</html>

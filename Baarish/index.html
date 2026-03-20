@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x0101;rish &mdash; the rain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0930;&#x093F;&#x0936;</div>
+      <h1 class="title">B&#x0101;rish</h1>
+      <p class="subtitle">the rain</p>
+      <p class="intro">The first monsoon rain on cracked earth is not gentle &mdash; it is violent, welcome, transformative. It arrives after months of waiting, turning dust into mud, silence into drumming, thirst into overflow. The ground does not absorb it gracefully; it resists, then yields, then drinks. <em>B&#x0101;rish</em> asks you to name the rains that arrived after long drought &mdash; the relief that came not softly but with force.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which rains arrived after your longest droughts?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this rain</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the phone call that ended years of silence, the job after the long search&hellip;">
+        <p class="write-prompt-2">What drought did it break?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how long you waited, what cracked inside you, how the rain felt when it finally came&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">stand in</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x0101;rish</h2>
+      <p>In India, rain is not weather &mdash; it is an event. The entire country waits for it. Farmers scan the sky. Children stand on rooftops. When it finally arrives, people do not run indoors &mdash; they run outside. The first baarish is celebrated because it is proof that the world has not forgotten you, that the cycle continues, that thirst is temporary.</p>
+      <p>Your life has had its droughts &mdash; stretches where nothing grew, where the ground inside you cracked and hardened. And then something came. A person, an opportunity, a word spoken at the right moment. It did not arrive gently. Relief rarely does. It poured.</p>
+      <p>Name the rains. Remember what it felt like to be soaked after being parched.</p>
+      <p class="about-note">Your rains are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="baarish.js"></script>
+</body>
+</html>

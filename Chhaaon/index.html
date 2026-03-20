@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chh&#x0101;&#x0303;o&#x1E47; &mdash; the shade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x093E;&#x0901;&#x0935;</div>
+      <h1 class="title">Chh&#x0101;&#x0303;o&#x1E47;</h1>
+      <p class="subtitle">the shade</p>
+      <p class="intro">In a land of fierce sun, shade is not a luxury &mdash; it is survival. It is the tree that a grandfather planted knowing he would never sit under it, the wall that blocks the heat, the person who stood between you and the harshness of the world. <em>Chh&#x0101;&#x0303;o&#x1E47;</em> asks you to name the shades that cooled your life &mdash; the quiet protections that sheltered you without asking for anything in return.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who or what stood between you and the harshness of the sun?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shade</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my uncle who shielded me from family fights, the routine that kept me steady&hellip;">
+        <p class="write-prompt-2">What heat did it protect you from?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the harshness it blocked, what the coolness felt like, what you owe to this quiet protection&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">rest</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chh&#x0101;&#x0303;o&#x1E47;</h2>
+      <p>There is a saying: the tree never eats its own fruit. It grows, it flowers, it offers shade to whoever stops beneath it, and it asks for nothing. The best protections in your life have worked the same way. A teacher who spent extra time with you and never mentioned it. A sibling who absorbed a parent&rsquo;s anger so it would not reach you. A tradition &mdash; a morning walk, a weekly phone call &mdash; that kept you cool when everything else was burning.</p>
+      <p>Shade is easy to forget because its whole purpose is to make the heat disappear. You notice the sun. You rarely notice what is blocking it. But without these protections, you would have been scorched &mdash; by grief, by cruelty, by the sheer relentlessness of a difficult life. Someone or something stood between you and the worst of it.</p>
+      <p>Name the shades. They are the unsung shelters that made your survival possible.</p>
+      <p class="about-note">Your shades are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chhaaon.js"></script>
+</body>
+</html>

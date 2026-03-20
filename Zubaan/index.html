@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zub&#x0101;n &mdash; the tongue</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093C;&#x0941;&#x092C;&#x093E;&#x0928;</div>
+      <h1 class="title">Zub&#x0101;n</h1>
+      <p class="subtitle">the tongue</p>
+      <p class="intro">Zubaan is the tongue &mdash; the organ of language and the organ of promise. When someone says &ldquo;meri zubaan&rdquo; they mean &ldquo;my word,&rdquo; and when it is broken, something more than a promise dies. The tongue builds entire worlds with its syllables and razes them with a single sentence. It is the smallest muscle that causes the largest wars. <em>Zub&#x0101;n</em> asks you to name the words that constructed or demolished your life &mdash; the sentences spoken to you or by you that altered everything that came after.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Which words built your world or brought it down?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name these words</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the sentence that ended the marriage, the promise that held a family together&hellip;">
+        <p class="write-prompt-2">What did the tongue create or destroy?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who said it, what it meant, the world it built or the one it demolished&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">speak</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Zub&#x0101;n</h2>
+      <p>You remember the exact words. Not the room, not the weather, not what anyone was wearing &mdash; but the words. The sentence a teacher said that made you believe you were intelligent. The thing a parent said in anger that you have been trying to disprove for thirty years. The confession that cracked open a friendship. The lie that sealed a fate. Words are not air. They are architecture.</p>
+      <p>Zubaan is also promise &mdash; the pledge made with nothing but breath and intention. In a culture where a person's word was their contract, a broken zubaan was not a legal matter but a moral collapse. To give your zubaan was to put your entire self behind a sentence. To break it was to break something inside the language itself.</p>
+      <p>Name the words. Let the tongue finally account for what it said.</p>
+      <p class="about-note">Your words are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="zubaan.js"></script>
+</body>
+</html>
