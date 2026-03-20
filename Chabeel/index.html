@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chab&#x012B;l — the sweet water stand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091B;&#x092C;&#x0940;&#x0932;</div>
+      <h1 class="title">Chab&#x012B;l</h1>
+      <p class="subtitle">the sweet water stand</p>
+      <p class="intro">A chabeel is a roadside stand offering free sweet water to passersby in summer heat &mdash; set up by ordinary people as an act of seva. No questions asked, no payment taken. <em>Chab&#x012B;l</em> asks you to name the free offerings given without condition &mdash; the acts of unconditional generosity you witnessed or received.</p>
+      <button class="begin-btn" id="beginBtn">offer</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What was offered to you without condition?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this offering</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the stranger who helped without being asked, the kindness given with no expectation of return&hellip;">
+        <p class="write-prompt-2">What made this offering unconditional?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who offered it, what it was, why it asked for nothing in return&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">offer</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chab&#x012B;l</h2>
+      <p>Unconditional generosity is the purest form of human expression. The chabeel stands at the roadside in the killing heat, and anyone may drink. Rich, poor, known, unknown &mdash; the sweet water does not discriminate. The person who sets it up does not ask your name. They do not expect gratitude. They offer because the heat is real and the water is sweet and that is enough.</p>
+      <p>You have tasted chabeel. The anonymous kindness of a stranger. The help given without a ledger. The love offered without terms and conditions. These offerings cooled you in ways that transactional kindness never could.</p>
+      <p>Name the offerings. They are the proof that generosity without condition still exists.</p>
+      <p class="about-note">Your offerings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chabeel.js"></script>
+</body>
+</html>

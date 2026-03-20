@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naukar &mdash; the servant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0928;&#x094C;&#x0915;&#x0930;</div>
+      <h1 class="title">Naukar</h1>
+      <p class="subtitle">the servant</p>
+      <p class="intro">Naukar means servant &mdash; but in its oldest sense, it simply means one who serves. Service is not degradation; it is a stance toward the world. The naukar who serves well transforms a task into a gift. <em>Naukar</em> asks you to name the acts of service &mdash; given or received &mdash; that were performed with such grace they became sacred.</p>
+      <button class="begin-btn" id="beginBtn">serve</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What acts of service were performed with such grace they became sacred?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this service</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the cook who made our meals for thirty years, my father pressing my school uniform&hellip;">
+        <p class="write-prompt-2">What made this service sacred?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who served, what was given, how the task became a gift&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">serve</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Naukar</h2>
+      <p>There is dignity in service that the modern world often forgets. The naukar who irons clothes with precision, who cooks with attention, who sweeps with care &mdash; these are not lesser acts. They are the invisible labour that holds the world together. Without the ones who serve, nothing functions. Nothing is clean, nothing is cooked, nothing is maintained.</p>
+      <p>Service, when performed with devotion, becomes indistinguishable from love. The mother who packs the tiffin, the father who drives through traffic, the teacher who stays after hours &mdash; they are all naukars of a kind. They serve not because they must, but because they have chosen to.</p>
+      <p>Name the services. Given and received, they are the quiet acts that hold everything in place.</p>
+      <p class="about-note">Your services are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="naukar.js"></script>
+</body>
+</html>

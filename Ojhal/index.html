@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ojhal — the hidden one</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0913;&#x091D;&#x0932;</div>
+      <h1 class="title">Ojhal</h1>
+      <p class="subtitle">the hidden one</p>
+      <p class="intro">Ojhal means out of sight &mdash; someone who was there and then was not. Not dead, just gone. Vanished from your daily life while remaining vivid in memory. <em>Ojhal</em> asks you to name those who vanished from sight but never from your inner world.</p>
+      <button class="begin-btn" id="beginBtn">remember</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who vanished from sight but never from memory?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hidden one</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend who moved away and never returned, the person who left without explanation&hellip;">
+        <p class="write-prompt-2">What remains of their presence?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when they vanished, what they left behind in you, why they remain vivid&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">remember</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ojhal</h2>
+      <p>Some people are more vivid after they leave. Presence in absence is the strangest form of company &mdash; the person who is not there occupies more space in your mind than the people who are. Ojhal is not loss. It is a different kind of presence &mdash; one that does not require a body, a voice, or a reply. It requires only memory and the refusal to forget.</p>
+      <p>You have ojhal people. The childhood friend you lost track of. The teacher who moved away. The relative who stopped coming to gatherings. They are gone from your days but not from your interior world, where they continue to speak, to gesture, to matter.</p>
+      <p>Name them. Not to bring them back, but to honour their continued presence in your absence.</p>
+      <p class="about-note">Your hidden ones are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ojhal.js"></script>
+</body>
+</html>

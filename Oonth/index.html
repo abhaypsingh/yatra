@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x016A;&#x1E47;&#x1E6D;h &mdash; the camel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0912;&#x0902;&#x091F;</div>
+      <h1 class="title">&#x016A;&#x1E47;&#x1E6D;h</h1>
+      <p class="subtitle">the camel</p>
+      <p class="intro">The oonth is the ship of the desert &mdash; it stores water within, walks steadily across sand that would break other animals, and carries loads without complaint. It does not need the journey to be easy. It only needs to know the direction. <em>&#x016A;&#x1E47;&#x1E6D;h</em> asks you to name the long crossings you made on stored reserves, the desert passages of patience and endurance.</p>
+      <button class="begin-btn" id="beginBtn">cross</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What long crossings did you make on stored reserves?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this crossing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the year I worked two jobs, the illness I endured alone&hellip;">
+        <p class="write-prompt-2">What reserves carried you through?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you stored within, how you kept walking, what the desert looked like&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cross</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x016A;&#x1E47;&#x1E6D;h</h2>
+      <p>The camel does not complain about the desert. It was built for the desert. Its body stores what it needs, its feet are made for sand, and its pace is steady rather than fast. The camel teaches that endurance is not about ignoring hardship &mdash; it is about being prepared for it, carrying your reserves within, and trusting the direction even when the landscape offers nothing.</p>
+      <p>You have crossed deserts too. Stretches of life where there was no shade, no oasis, no encouragement. You kept walking because something inside you &mdash; stored long before the journey began &mdash; sustained you. A parent&rsquo;s faith. A stubborn hope. A promise you made to yourself.</p>
+      <p>Name the crossings. They are the proof that you carried enough within you to survive what was barren outside.</p>
+      <p class="about-note">Your crossings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="oonth.js"></script>
+</body>
+</html>

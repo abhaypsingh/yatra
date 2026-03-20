@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;rs&#x012B; — the mirror ring</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0906;&#x0930;&#x0938;&#x0940;</div>
+      <h1 class="title">&#x0100;rs&#x012B;</h1>
+      <p class="subtitle">the mirror ring</p>
+      <p class="intro">An &#x0101;rs&#x012B; is a tiny mirror set into a ring, worn on the thumb by brides so they can glimpse their own face without turning to a looking glass. It is the smallest mirror in the world &mdash; just large enough to see one eye, one curve of cheek. You must look deliberately, at just the right angle, to catch your reflection. <em>&#x0100;rs&#x012B;</em> asks you to name the tiny, unexpected mirrors in which you caught a glimpse of your true self &mdash; a remark, a photograph, a child&rsquo;s imitation of you, a stranger&rsquo;s reaction.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">In what tiny mirrors did you catch a glimpse of yourself?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this mirror</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the way my child copied my gesture, a photograph I didn't know was being taken&hellip;">
+        <p class="write-prompt-2">What did you see? Was it what you expected?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the glimpse, the angle, whether the reflection surprised or confirmed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">glimpse</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;rs&#x012B;</h2>
+      <p>The &#x0101;rs&#x012B; is proof that you do not need a large mirror to see yourself. A fragment is enough &mdash; sometimes more honest than the full-length version. The bride wearing the &#x0101;rs&#x012B; sees herself in glimpses: a flash of kohl-lined eye, a curve of smile. She pieces herself together from fragments, and the portrait is truer for being incomplete.</p>
+      <p>Your mirror rings were the accidental reflections. The friend who said &ldquo;you always do that&rdquo; and suddenly you saw a habit you never noticed. The recording of your own voice that sounded nothing like what you hear inside your head. The child who played &ldquo;house&rdquo; and you recognised your own tone in their pretend scolding.</p>
+      <p>Name the mirrors. The truest self-portraits are painted by accident, in mirrors too small to lie.</p>
+      <p class="about-note">Your mirrors are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="aarsi.js"></script>
+</body>
+</html>

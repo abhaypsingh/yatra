@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lachh&#x012B; — the buttermilk</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x091B;&#x094D;&#x091B;&#x0940;</div>
+      <h1 class="title">Lachh&#x012B;</h1>
+      <p class="subtitle">the buttermilk</p>
+      <p class="intro">Buttermilk &mdash; what remains after the churning produces butter. The valuable thing is the butter, but the lachhi that is left behind is what actually cools and restores. <em>Lachh&#x012B;</em> asks you to name the things left behind after the churning &mdash; the by-products that turned out to be the real nourishment.</p>
+      <button class="begin-btn" id="beginBtn">sip</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What by-products turned out to be the real nourishment?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this residue</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the leftover from a great effort that nourished me more than the prize, the by-product that became the point&hellip;">
+        <p class="write-prompt-2">How did this by-product nourish you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was churned, what was left behind, why the residue mattered more&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">sip</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Lachh&#x012B;</h2>
+      <p>Everyone wants the butter. The prize, the goal, the thing you churned for. But the lachhi &mdash; the thin, sour liquid left behind &mdash; is what actually cools you on a hot afternoon, settles a troubled stomach, restores what the effort took. The residue is often more valuable than the intended product. The by-product is often the real gift.</p>
+      <p>You have lachhi in your life. The friendships formed while pursuing a career that didn&rsquo;t work out. The lessons learned from a project that failed. The person you became while chasing a goal you never reached. The churning produced something you didn&rsquo;t expect.</p>
+      <p>Name the by-products. They are the nourishment that the churning left behind.</p>
+      <p class="about-note">Your by-products are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="lachhi.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K&#x0101;r&#x012B;gar&#x012B; &mdash; the craftsmanship</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x093E;&#x0930;&#x0940;&#x0917;&#x0930;&#x0940;</div>
+      <h1 class="title">K&#x0101;r&#x012B;gar&#x012B;</h1>
+      <p class="subtitle">the craftsmanship</p>
+      <p class="intro">Kaarigari is craftsmanship &mdash; the visible evidence of care, patience, and mastery in a made thing. The jaali screen carved from a single slab of marble. The embroidered shawl with ten thousand stitches. <em>K&#x0101;r&#x012B;gar&#x012B;</em> asks you to name the works of careful craft that taught you what patience makes possible.</p>
+      <button class="begin-btn" id="beginBtn">marvel</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What works of craft taught you what patience makes possible?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this work</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the carved door at my grandparents&rsquo; house, a hand-stitched quilt&hellip;">
+        <p class="write-prompt-2">What did its craftsmanship teach you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what care was visible in it, how long it must have taken, what patience it revealed&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">marvel</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>K&#x0101;r&#x012B;gar&#x012B;</h2>
+      <p>Kaarigari is patience made visible. Every fine thing you have ever admired &mdash; a miniature painting, a pietra dura inlay, a perfectly joined wooden chest &mdash; is the record of someone sitting with a task far longer than convenience would allow. Craftsmanship is accumulated care. Each stitch, each chisel stroke, each brushstroke says: I was here, and I chose not to rush.</p>
+      <p>In a world that rewards speed, kaarigari is a quiet rebellion. The craftsman says: this will take as long as it takes. And the result carries that patience inside it, visible to anyone who looks closely enough.</p>
+      <p>Name the works that stopped you and made you look. They are the evidence that mastery is simply care repeated ten thousand times.</p>
+      <p class="about-note">Your works are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kaarigari.js"></script>
+</body>
+</html>

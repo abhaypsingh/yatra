@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palang — the cot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092A;&#x0932;&#x0902;&#x0917;</div>
+      <h1 class="title">Palang</h1>
+      <p class="subtitle">the cot</p>
+      <p class="intro">The bed where you lie awake at 3am &mdash; not sleeping but thinking the thoughts that define your life. The palang is where decisions are made in the dark, where you face yourself without distraction. <em>Palang</em> asks you to name the midnight hours when your real thinking happened.</p>
+      <button class="begin-btn" id="beginBtn">lie</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What truths came to you at 3am?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this midnight hour</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the night I decided to leave, the sleepless hours before a turning point&hellip;">
+        <p class="write-prompt-2">What did the darkness reveal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what kept you awake, what you understood in the dark, what you decided before dawn&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">lie</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Palang</h2>
+      <p>Insomnia is a form of honesty. The 3am self is the one who cannot lie, cannot distract, cannot scroll away from the truth. Lying on a palang in the dark, staring at the ceiling, you meet the person you actually are &mdash; not the one you perform during the day. The cot is a confessional. The darkness is the priest.</p>
+      <p>You have had those hours. The night before a decision. The night after a loss. The night when something you had been avoiding finally sat on the edge of your bed and refused to leave. Those were the hours when your real thinking happened &mdash; not in meetings, not in conversations, but alone on a palang in the dark.</p>
+      <p>Name those hours. They are the moments when you were most truthfully yourself.</p>
+      <p class="about-note">Your midnight hours are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="palang.js"></script>
+</body>
+</html>

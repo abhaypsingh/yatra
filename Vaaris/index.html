@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V&#x0101;ris — the heir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0935;&#x093E;&#x0930;&#x093F;&#x0938;</div>
+      <h1 class="title">V&#x0101;ris</h1>
+      <p class="subtitle">the heir</p>
+      <p class="intro">A vaaris is an heir &mdash; one who receives what was built by those who came before. But inheritance is not only wealth; it is habits, fears, hopes, and unfinished business. <em>V&#x0101;ris</em> asks you to name what you inherited and what you chose to pass on or leave behind.</p>
+      <button class="begin-btn" id="beginBtn">inherit</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you inherit beyond wealth?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this inheritance</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my father's stubbornness, my mother's hope, the unfinished business of a generation&hellip;">
+        <p class="write-prompt-2">What did you do with it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who left it to you, whether you kept it or let it go, what you chose to pass on&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">inherit</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>V&#x0101;ris</h2>
+      <p>The weight of inheritance is not only in what you receive but in what you must decide to keep. Every heir is also a curator &mdash; sorting through what was left behind, choosing what to carry forward and what to quietly set down. You inherit your father&rsquo;s pride and must decide if it serves you. You inherit your mother&rsquo;s anxiety and must decide if you will pass it on. The heir&rsquo;s real work is not receiving but choosing.</p>
+      <p>You are a vaaris. You received habits, beliefs, patterns, and stories from those who came before. Some you kept because they served you. Some you kept because you didn&rsquo;t know how to put them down. Some you left behind, and that leaving was its own form of courage.</p>
+      <p>Name the inheritances. They are the legacy you are still curating.</p>
+      <p class="about-note">Your inheritances are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="vaaris.js"></script>
+</body>
+</html>

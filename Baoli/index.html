@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&#x0101;ol&#x012B; &mdash; the stepwell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x093E;&#x0935;&#x0932;&#x0940;</div>
+      <h1 class="title">B&#x0101;ol&#x012B;</h1>
+      <p class="subtitle">the stepwell</p>
+      <p class="intro">A baoli is a stepwell &mdash; an inverted temple, descending into the earth to reach water. You must go down to find what sustains life. The deeper you descend, the cooler and darker it gets, until at the bottom you find the water that was always there, waiting. <em>B&#x0101;ol&#x012B;</em> asks you to name the descents you made to reach what was hidden.</p>
+      <button class="begin-btn" id="beginBtn">descend</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What descents did you make to reach what was hidden?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this descent</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the grief I finally let myself feel, the question I was afraid to ask&hellip;">
+        <p class="write-prompt-2">What did you find at the bottom?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="how deep you went, what darkness you passed through, what water waited at the bottom&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">descend</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>B&#x0101;ol&#x012B;</h2>
+      <p>The stepwell is an architecture of descent. While temples rise, the baoli goes down. Step by step, level by level, you leave the heat and noise of the surface and enter a cooler, quieter world. The light dims. The walls close in. And at the very bottom, you find the water &mdash; still, dark, and sustaining. It was always there. You simply had to be willing to go down to reach it.</p>
+      <p>The deepest truths of a life are found the same way. Not by climbing but by descending. Into grief, into memory, into the questions you avoided. The descent is uncomfortable, but the water at the bottom is what sustains.</p>
+      <p>Name the descents. What you found at the bottom was what you needed most.</p>
+      <p class="about-note">Your descents are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="baoli.js"></script>
+</body>
+</html>

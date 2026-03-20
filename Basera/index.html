@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baser&#x0101; — the roost</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0938;&#x0947;&#x0930;&#x093E;</div>
+      <h1 class="title">Baser&#x0101;</h1>
+      <p class="subtitle">the roost</p>
+      <p class="intro">A basera is where birds come to rest at dusk &mdash; not a permanent nest but a nightly refuge. It is chosen anew each evening. <em>Baser&#x0101;</em> asks you to name the roosts where you came to rest at the end of difficult days.</p>
+      <button class="begin-btn" id="beginBtn">roost</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did you come to rest at dusk?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this roost</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the friend's kitchen where I sat after hard days, the bench in the park where I caught my breath&hellip;">
+        <p class="write-prompt-2">What rest did it give you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it was, why you chose it, what kind of rest it offered&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">roost</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Baser&#x0101;</h2>
+      <p>There is wisdom in knowing where to land. The bird does not build a new nest every evening &mdash; it finds a branch, a ledge, a sheltered spot, and rests there until morning. The basera is not home. It is the temporary refuge that makes the next day possible. Chosen not for permanence but for the immediate need to be still.</p>
+      <p>You have had baseras. The person&rsquo;s house where you showed up uninvited and were always welcome. The quiet corner where you went to recover. The habit or ritual that settled you when nothing else could. These were not solutions. They were resting places.</p>
+      <p>Name the roosts. They are the refuges that gave you the rest to continue.</p>
+      <p class="about-note">Your roosts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="basera.js"></script>
+</body>
+</html>

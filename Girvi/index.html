@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girv&#x012B; &mdash; the pawn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x093F;&#x0930;&#x0935;&#x0940;</div>
+      <h1 class="title">Girv&#x012B;</h1>
+      <p class="subtitle">the pawn</p>
+      <p class="intro">Girvi is the act of pawning &mdash; pledging something valuable against a loan, with the hope of redeeming it later. You give up something precious in exchange for what you need now, trusting the future to return it. <em>Girv&#x012B;</em> asks you to name what you pledged against a future you hoped would come.</p>
+      <button class="begin-btn" id="beginBtn">pledge</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you pawn against a future you trusted?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this pledge</p>
+        <input class="write-name" id="writeName" type="text" placeholder="my youth spent working, the land sold to fund an education&hellip;">
+        <p class="write-prompt-2">What was exchanged, and was it redeemed?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gave up, what you received, whether the future returned what was pledged&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">pledge</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Girv&#x012B;</h2>
+      <p>Girvi is a temporary sacrifice &mdash; you hand over something precious because you believe the future will let you reclaim it. A mother pawns her jewellery so her son can take an exam in another city. A farmer pledges his land against a season&rsquo;s seed. The pawn shop holds your treasure while you go out to earn the right to take it back.</p>
+      <p>But not everything pawned is redeemed. Some pledges are never reclaimed. The jewellery stays in the shop. The land changes hands. And you learn that the future you trusted was not the future that arrived.</p>
+      <p>Name what you pawned. Whether you got it back or not, the act of pledging tells you what you believed was coming.</p>
+      <p class="about-note">Your pledges are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="girvi.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaq&#x012B;n — the belief</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092F;&#x0915;&#x0940;&#x0928;</div>
+      <h1 class="title">Yaq&#x012B;n</h1>
+      <p class="subtitle">the belief</p>
+      <p class="intro">Yakeen is belief &mdash; not the belief that comes from evidence but the belief that arrives despite its absence. It is trust before proof. <em>Yaq&#x012B;n</em> asks you to name the beliefs that held you when evidence alone could not.</p>
+      <button class="begin-btn" id="beginBtn">believe</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What beliefs held you when proof could not?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this belief</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the faith that carried me through darkness, the trust I held without evidence&hellip;">
+        <p class="write-prompt-2">How did this belief hold you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you believed despite doubt, why you trusted without proof, what the belief made possible&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">believe</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Yaq&#x012B;n</h2>
+      <p>Faith is a structural element. It is the invisible beam that holds up the visible house. You cannot see it, you cannot prove it, but without it the whole structure collapses. Yakeen is not naivety &mdash; it is the deliberate choice to trust when the evidence is incomplete, because some things can only be built on foundations that cannot be measured.</p>
+      <p>You have relied on yakeen. The belief that things would work out when nothing suggested they would. The trust in a person before they had earned it. The faith in yourself when your track record said otherwise. These beliefs were not rational. They were structural.</p>
+      <p>Name the beliefs. They are the invisible beams that held your life together.</p>
+      <p class="about-note">Your beliefs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="yakeen.js"></script>
+</body>
+</html>

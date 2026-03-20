@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&#x0101;sh &mdash; the playing cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0924;&#x093E;&#x0936;</div>
+      <h1 class="title">T&#x0101;sh</h1>
+      <p class="subtitle">the playing cards</p>
+      <p class="intro">Taash is a game of cards &mdash; you do not choose your hand, but you choose how to play it. The best players win not because they get the best cards but because they play poor cards well. <em>T&#x0101;sh</em> asks you to name the hands you were dealt and how you chose to play them.</p>
+      <button class="begin-btn" id="beginBtn">play</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What hands were you dealt, and how did you play them?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this hand</p>
+        <input class="write-name" id="writeName" type="text" placeholder="being born in a small town, the illness that changed everything&hellip;">
+        <p class="write-prompt-2">How did you play it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what cards you were given, what you made of them, what the game taught you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">play</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>T&#x0101;sh</h2>
+      <p>Nobody chooses their hand. You are dealt a family, a body, a country, a time in history, a set of circumstances you did not request. The game of taash begins not when the cards are shuffled but when you pick them up and decide what to do. Agency lives not in the deal but in the play.</p>
+      <p>Some hands look strong and are played weakly. Some hands look hopeless and are played with such skill that everyone at the table is stunned. The cards matter less than the player.</p>
+      <p>Name the hands. Not to complain about what you were given, but to honour how you chose to play.</p>
+      <p class="about-note">Your hands are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taash.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#x0100;&#x1E47;&#x1E6D; — the brick</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0908;&#x0902;&#x091F;</div>
+      <h1 class="title">&#x0100;&#x1E47;&#x1E6D;</h1>
+      <p class="subtitle">the brick</p>
+      <p class="intro">An eent is a single brick &mdash; clay shaped by hand, fired in a kiln, then laid alongside thousands of others to become a wall, a house, a temple. No one admires a single brick. But without each single brick, there is no structure. The brick is the unit of patience: one at a time, one on top of another, until something stands. <em>&#x0100;&#x1E47;&#x1E6D;</em> asks you to name the single bricks of your life &mdash; the individual acts, days, and decisions that, laid one atop another, built the structures you now inhabit.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What single bricks built the structures of your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this brick</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the daily practice that became a career, the small choice repeated a thousand times&hellip;">
+        <p class="write-prompt-2">What structure did it help build? How many times was it laid?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the single repeated act, the structure it built over time, when you first noticed the wall taking shape&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">lay</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>&#x0100;&#x1E47;&#x1E6D;</h2>
+      <p>The brick asks nothing of the architect. It does not need to understand the blueprint. It only needs to be placed well, with mortar, in its position. The mason lays one brick, then another, then another. The wall reveals itself only after hundreds of bricks. The structure becomes visible only after thousands. This is how most lives are built &mdash; not by grand gestures but by daily placements.</p>
+      <p>Your bricks were the repeated small acts. Getting up early every day. Saying &ldquo;I love you&rdquo; even when you were tired. Showing up to work. Practising when nobody was watching. Each brick was unremarkable. The structure they built was extraordinary.</p>
+      <p>Name the bricks. The most impressive structures in your life were built one unremarkable day at a time.</p>
+      <p class="about-note">Your bricks are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="eent.js"></script>
+</body>
+</html>

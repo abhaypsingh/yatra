@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iml&#x012B; — the tamarind</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0907;&#x092E;&#x0932;&#x0940;</div>
+      <h1 class="title">Iml&#x012B;</h1>
+      <p class="subtitle">the tamarind</p>
+      <p class="intro">The sour fruit that makes sweet things sweeter by contrast. No chaat is complete without imli &mdash; the tang that wakes the palate and makes every other flavour more vivid. <em>Iml&#x012B;</em> asks you to name the sour truths that made the sweet ones sweeter.</p>
+      <button class="begin-btn" id="beginBtn">taste</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What sour truths deepened your sweetness?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this sourness</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the hard lesson that made later joy sharper, the bitter season that flavoured everything after&hellip;">
+        <p class="write-prompt-2">How did it change the taste of what followed?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was sour, what it made sweeter, how the contrast changed you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">taste</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Iml&#x012B;</h2>
+      <p>Sourness is not the enemy of sweetness &mdash; it is its essential partner. The chaat vendor knows this: without the dark imli chutney, the sweet one has no meaning. Without the pucker, the tongue cannot appreciate the relief. Difficulty is the tamarind of life &mdash; the flavour you would never choose on its own but without which everything else tastes flat.</p>
+      <p>You have tasted imli. The failure that made the later success vivid. The loss that made the next hello ache with gratitude. The hard years that gave the easy ones their depth.</p>
+      <p>Name the sourness. It is the seasoning that made your life worth tasting.</p>
+      <p class="about-note">Your sournesses are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="imli.js"></script>
+</body>
+</html>

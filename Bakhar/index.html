@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakhar — the granary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092C;&#x0916;&#x093E;&#x0930;</div>
+      <h1 class="title">Bakhar</h1>
+      <p class="subtitle">the granary</p>
+      <p class="intro">A bakhar is a granary &mdash; the storehouse where grain is kept after the harvest, protected from rain, rats, and rot. The granary is built in the season of plenty for the season of want. It requires foresight: the discipline to store what you could eat today because you know tomorrow may bring drought. <em>Bakhar</em> asks you to name your granaries &mdash; the reserves you built, the wisdom you stored, the strengths you set aside in good times that sustained you when the lean seasons came.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did you store in good times that sustained you in lean ones?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this granary</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the savings of patience built over calm years, the friendships stored that I drew on during crisis&hellip;">
+        <p class="write-prompt-2">When was it stored? When was it needed?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the season of plenty when you stored it, the lean season when you opened it, what sustained you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">store</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Bakhar</h2>
+      <p>The bakhar is the architecture of prudence. It is built not when you are hungry but when you are full. The farmer who fills the granary after harvest is not hoarding; he is providing for the future self who will not have what the present self has. This is an act of imagination: seeing a version of yourself that does not yet exist and caring enough to feed them.</p>
+      <p>Your granaries were the reserves built in times of abundance. The emotional resilience built during peaceful years. The skills learned when there was no urgency. The relationships deepened when you did not need them. These stores sat quietly, unnoticed, until the drought came &mdash; and then they were everything.</p>
+      <p>Name the granaries. The season of want always reveals what the season of plenty stored.</p>
+      <p class="about-note">Your stores are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="bakhar.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haathkadh&#x012B; — the shackle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x093E;&#x0925;&#x0915;&#x0921;&#x093C;&#x0940;</div>
+      <h1 class="title">Haathkadh&#x012B;</h1>
+      <p class="subtitle">the shackle</p>
+      <p class="intro">Handcuffs are not always worn by prisoners. Sometimes they are worn by choice. Marriage is a shackle. Parenthood is a shackle. Every commitment is a willing binding &mdash; a hand offered to be clasped and held. <em>Haathkadh&#x012B;</em> asks you to name the shackles you wore willingly and the freedom you found inside them.</p>
+      <button class="begin-btn" id="beginBtn">bind</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bindings did you choose willingly?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this shackle</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the commitment that bound me but made me free, the responsibility I chose that shaped my life&hellip;">
+        <p class="write-prompt-2">What freedom did you find inside it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you gave up, what you gained, why the binding was worth it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bind</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Haathkadh&#x012B;</h2>
+      <p>There is a paradox at the heart of every chosen bond: the hand willingly shackled is the hand that builds. The person who says &ldquo;I will stay&rdquo; gives up a thousand possible departures, and in that surrender finds a freedom that the uncommitted never know. The shackle is not the opposite of liberty &mdash; it is the price of a deeper kind.</p>
+      <p>You have worn shackles too. A promise to a person. A duty to a calling. A vow to a place or a principle. Each one closed around your wrist and each one, paradoxically, opened a door that could not have been opened by a free hand.</p>
+      <p>Name the shackles. They are the bindings that made you whole.</p>
+      <p class="about-note">Your shackles are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="haathkadhi.js"></script>
+</body>
+</html>

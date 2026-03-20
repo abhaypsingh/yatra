@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L&#x0101;dl&#x012B; &mdash; the cherished one</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0932;&#x093E;&#x0921;&#x0932;&#x0940;</div>
+      <h1 class="title">L&#x0101;dl&#x012B;</h1>
+      <p class="subtitle">the cherished one</p>
+      <p class="intro">Laadli is the cherished one &mdash; the person loved not for what they do but simply for being. Every family has a laadli: the child who is spoiled not with things but with attention, the elder who is protected not from danger but from loneliness. <em>L&#x0101;dl&#x012B;</em> asks you to name the cherished ones &mdash; those loved beyond reason and the ones who cherished you that way.</p>
+      <button class="begin-btn" id="beginBtn">cherish</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who was loved beyond reason, and who loved you that way?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cherished one</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the youngest cousin everyone adored, my grandmother who was the centre of the house&hellip;">
+        <p class="write-prompt-2">How were they cherished?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what form the love took, why it needed no reason, how the cherishing felt&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">cherish</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>L&#x0101;dl&#x012B;</h2>
+      <p>Laadli is love without cause. The laadli of the family is not loved for achievement or obedience &mdash; they are loved because the family cannot help it. It is the irrational, disproportionate, unearned affection that every family pours into one person. The extra sweet saved for them. The seat kept empty until they arrive. The worry that is always slightly more for them than for anyone else.</p>
+      <p>To be someone&rsquo;s laadli is to know that your existence alone is enough. You don&rsquo;t have to perform, succeed, or even be good. You are cherished as you are.</p>
+      <p>Name the cherished ones. They are the proof that love does not need a reason.</p>
+      <p class="about-note">Your cherished ones are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="laadli.js"></script>
+</body>
+</html>

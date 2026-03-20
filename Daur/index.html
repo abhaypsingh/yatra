@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daur — the era</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0926;&#x094C;&#x0930;</div>
+      <h1 class="title">Daur</h1>
+      <p class="subtitle">the era</p>
+      <p class="intro">Every life is divided into daurs &mdash; eras that have their own character, their own rules. The daur of childhood. The daur of struggle. The daur of plenty. You only recognise a daur after it has passed. <em>Daur</em> asks you to name the eras of your life and what defined each one.</p>
+      <button class="begin-btn" id="beginBtn">mark</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What eras defined your life?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this era</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the years of building, the season of loss, the chapter of discovery&hellip;">
+        <p class="write-prompt-2">What defined this daur?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="when it began and ended, what its spirit was, what rules it lived by&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Daur</h2>
+      <p>Each era of a life has its own spirit. The daur of childhood has a different gravity than the daur of middle age. The daur of struggle has different rules than the daur of ease. You cannot see the spirit of an era while you are inside it &mdash; only from the outside, looking back, do you recognise its character. Temporal identity is real: who you were in one daur may be unrecognisable to who you are in the next.</p>
+      <p>You have lived through daurs. Chapters that had their own soundtracks, their own colours, their own logic. Some lasted years. Some lasted months but felt like decades. Each one ended not with a bang but with a slow realisation that the rules had changed.</p>
+      <p>Name the eras. They are the chapters that gave your life its structure.</p>
+      <p class="about-note">Your eras are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="daur.js"></script>
+</body>
+</html>

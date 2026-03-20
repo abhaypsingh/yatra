@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gh&#x0101;&#x1E6D; &mdash; the river steps</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0918;&#x093E;&#x091F;</div>
+      <h1 class="title">Gh&#x0101;&#x1E6D;</h1>
+      <p class="subtitle">the river steps</p>
+      <p class="intro">A ghaat is the stone steps descending to a river &mdash; where the city meets the water. At the ghaat, the living bathe, the dead are cremated, children play, and priests chant. It is where life meets what is larger than life. <em>Gh&#x0101;&#x1E6D;</em> asks you to name the descents to the water where you washed away what needed releasing.</p>
+      <button class="begin-btn" id="beginBtn">descend</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where did you descend to the water and release what needed releasing?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this descent</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the morning I stood at the river after the funeral, the swim that washed the year away&hellip;">
+        <p class="write-prompt-2">What did the water take from you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you carried to the water, what you released, what you felt walking back up the steps&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">descend</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Gh&#x0101;&#x1E6D;</h2>
+      <p>The ghaat is the threshold between the built world and the elemental. Above the steps: the city, with its streets and shops and noise. Below: the river, which was here before the city and will be here after. To descend the ghaat is to leave the human world and touch something older, something that does not care about your name or your troubles but will take them from you if you let it.</p>
+      <p>Water transforms. The living are cleansed, the dead are released, the grieving are consoled. The river does not judge what you bring to it. It simply receives, carries, and moves on. And you walk back up the steps lighter than when you came down.</p>
+      <p>Name the descents. The water remembers what you released, even if you have forgotten.</p>
+      <p class="about-note">Your steps are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ghaat.js"></script>
+</body>
+</html>

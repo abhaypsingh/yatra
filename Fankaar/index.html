@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fank&#x0101;r — the artist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x093C;&#x0928;&#x0915;&#x093E;&#x0930;</div>
+      <h1 class="title">Fank&#x0101;r</h1>
+      <p class="subtitle">the artist</p>
+      <p class="intro">A fankaar is not merely someone who makes art but someone whose entire being is devoted to their craft. The fankaar does not separate life from art. <em>Fank&#x0101;r</em> asks you to name the artists &mdash; in any medium &mdash; whose work rearranged something inside you.</p>
+      <button class="begin-btn" id="beginBtn">honour</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Whose art rearranged something inside you?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this artist</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the singer whose voice undid me, the writer who put words to what I could not say&hellip;">
+        <p class="write-prompt-2">What did their art rearrange in you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what they made, how it reached you, what shifted inside when it did&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">honour</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Fank&#x0101;r</h2>
+      <p>The artist is an alchemist. They take raw experience &mdash; pain, joy, longing, wonder &mdash; and transform it into something that changes others. The fankaar does not merely express themselves; they create a doorway through which you can enter and find your own feelings waiting on the other side. Their medium does not matter. What matters is the transformation: raw life into something transmissible.</p>
+      <p>You have been changed by fankaars. A musician whose melody became your inner soundtrack. A painter whose image rearranged your seeing. A writer whose sentence made you feel understood for the first time. These artists did not know you, yet they reached inside you and moved the furniture.</p>
+      <p>Name the artists. They are the alchemists who transformed your raw experience into understanding.</p>
+      <p class="about-note">Your artists are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="fankaar.js"></script>
+</body>
+</html>

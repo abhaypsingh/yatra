@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fasal — the harvest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092B;&#x093C;&#x0938;&#x0932;</div>
+      <h1 class="title">Fasal</h1>
+      <p class="subtitle">the harvest</p>
+      <p class="intro">Fasal is the harvest &mdash; the moment when what was planted months ago is finally reaped. Between sowing and harvest lies an entire season of waiting, watering, worrying, and trusting. The farmer cannot hurry the fasal. He can only prepare the soil, plant the seed, and wait. <em>Fasal</em> asks you to name your harvests &mdash; the results that arrived long after the effort was made, the rewards of seeds you had almost forgotten planting.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What harvests came from seeds you planted long ago?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this harvest</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the relationship that deepened years after the first meeting, the skill that paid off decades later&hellip;">
+        <p class="write-prompt-2">When was the seed planted? How long did you wait?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the planting, the season of waiting, the moment the harvest arrived&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">reap</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Fasal</h2>
+      <p>The harvest teaches time. In a world of instant results, the fasal insists on seasons. You cannot plant wheat today and eat bread tomorrow. Between seed and loaf lies soil, rain, sun, time, and the patience to let the process work. The farmer who digs up his seeds to check if they are growing will have no harvest at all.</p>
+      <p>Your fasals were the delayed returns. The education that did not pay off for a decade. The kindness shown to someone who repaid it twenty years later in a way you never imagined. The quiet years of parenting whose harvest is an adult child who calls you not out of duty but out of love.</p>
+      <p>Name the harvests. The best crops of your life were planted in seasons you barely remember.</p>
+      <p class="about-note">Your harvests are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="fasal.js"></script>
+</body>
+</html>

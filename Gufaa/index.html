@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guf&#x0101; — the cave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0917;&#x0941;&#x092B;&#x093E;</div>
+      <h1 class="title">Guf&#x0101;</h1>
+      <p class="subtitle">the cave</p>
+      <p class="intro">A guf&#x0101; is a cave &mdash; a space carved by water or earth that exists beneath the surface. Sages retreated to caves for meditation. Animals shelter in caves through winter. The cave is where you go when the surface world becomes too much and only darkness will do. <em>Guf&#x0101;</em> asks you to name the caves you entered &mdash; the retreats into solitude, silence, or darkness where you found something that could only be discovered by going below the surface.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What caves did you enter to find what only darkness could reveal?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this cave</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the months of solitude after a loss, the retreat into silence that changed everything&hellip;">
+        <p class="write-prompt-2">What drove you underground? What did you find in the dark?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the descent, the darkness, what you discovered that could not have been found in daylight&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">enter</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Guf&#x0101;</h2>
+      <p>The cave is the oldest shelter. Before there were houses, there were caves. And there is something the cave offers that no built structure can: total enclosure by the earth itself. In a cave, the world above disappears. Sound changes. Time changes. The darkness is complete and ancient. This is why sages chose caves &mdash; not as punishment but as the ideal conditions for encountering what lies deepest.</p>
+      <p>Your caves were the chosen or forced descents. The depression that took you underground. The period of withdrawal that others called isolation but you knew was excavation. The silence that, from outside, looked like emptiness but from inside was full of discovery. Not all caves are prisons. Some are mines.</p>
+      <p>Name the caves. What you brought back from the darkness could not have been found anywhere else.</p>
+      <p class="about-note">Your caves are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="gufaa.js"></script>
+</body>
+</html>

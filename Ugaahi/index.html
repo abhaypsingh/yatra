@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ug&#x0101;h&#x012B; — the collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0909;&#x0917;&#x093E;&#x0939;&#x0940;</div>
+      <h1 class="title">Ug&#x0101;h&#x012B;</h1>
+      <p class="subtitle">the collection</p>
+      <p class="intro">Ugaahi is the act of collecting what is owed &mdash; debts called in, dues recovered. Not all debts are financial. Life owes you nothing, yet sometimes it pays you back in ways you never expected. <em>Ug&#x0101;h&#x012B;</em> asks you to name the dues that life eventually settled.</p>
+      <button class="begin-btn" id="beginBtn">collect</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What dues did life eventually settle?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this collection</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the late reward for early effort, the unexpected repayment for a forgotten kindness&hellip;">
+        <p class="write-prompt-2">How did life settle this debt?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was owed, how long you waited, how the repayment arrived&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">collect</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ug&#x0101;h&#x012B;</h2>
+      <p>The cosmic accounts are kept in a ledger no one can read. You give without expecting return, you suffer without expecting compensation, and then &mdash; years later, in a form you never predicted &mdash; something arrives that settles a debt you had forgotten was owed. Karmic returns do not come in the currency you expect. The kindness you showed a stranger returns as a stranger&rsquo;s kindness to your child.</p>
+      <p>You have experienced ugaahi. The unexpected repayment for years of patience. The reward that arrived long after you stopped waiting. The cosmic settling of accounts that you had written off as losses.</p>
+      <p>Name the collections. They are the proof that the ledger, however mysterious, is not empty.</p>
+      <p class="about-note">Your collections are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="ugaahi.js"></script>
+</body>
+</html>

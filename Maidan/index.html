@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maid&#x0101;n &mdash; the open field</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x0948;&#x0926;&#x093E;&#x0928;</div>
+      <h1 class="title">Maid&#x0101;n</h1>
+      <p class="subtitle">the open field</p>
+      <p class="intro">A maidan is an open field &mdash; no walls, no fences, no marked paths. Children play cricket on it. Kites are flown there. Fairs set up and leave. It is the space of possibility: undefined, unowned, open to whatever arrives. <em>Maid&#x0101;n</em> asks you to name the open fields of your life &mdash; the unstructured spaces where anything could happen.</p>
+      <button class="begin-btn" id="beginBtn">run</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where were the open fields where anything could happen?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this field</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the summer before college, the empty lot behind our house&hellip;">
+        <p class="write-prompt-2">What happened in that open space?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what possibilities it held, what arrived there, why it mattered that it was undefined&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">run</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Maid&#x0101;n</h2>
+      <p>The maidan has no purpose &mdash; and that is its purpose. It is not a garden, not a park, not a playground. It is simply open ground. And because it is undefined, it can become anything. A cricket pitch in the morning, a kite-flying ground in the afternoon, a fair in the evening, and an empty stillness at night.</p>
+      <p>Life needs maidans &mdash; stretches of time or space with no agenda. The gap year. The unplanned afternoon. The friendship with no obligation. These open fields are where possibility lives, because nothing has been decided yet.</p>
+      <p>Name your maidans. They are the spaces where you discovered what you wanted before anyone told you what to want.</p>
+      <p class="about-note">Your fields are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="maidan.js"></script>
+</body>
+</html>

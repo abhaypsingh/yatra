@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z&#x0101;min &mdash; the guarantor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091C;&#x093C;&#x093E;&#x092E;&#x093F;&#x0928;</div>
+      <h1 class="title">Z&#x0101;min</h1>
+      <p class="subtitle">the guarantor</p>
+      <p class="intro">A zaamin is one who stands surety &mdash; who puts their own reputation on the line to vouch for another. The zaamin says: I believe in this person enough to stake my own honour. <em>Z&#x0101;min</em> asks you to name those who vouched for you, and those for whom you stood guarantor.</p>
+      <button class="begin-btn" id="beginBtn">vouch</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Who vouched for you, and for whom did you stand guarantor?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this guarantee</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the uncle who co-signed my loan, the teacher who wrote my recommendation&hellip;">
+        <p class="write-prompt-2">What was staked, and what came of it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who vouched, what honour was risked, whether the trust was honoured&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">vouch</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Z&#x0101;min</h2>
+      <p>To be a zaamin is to say: if this person fails, I will pay. It is the deepest form of trust, because it is trust with consequences. The guarantor stakes not just belief but reputation, honour, sometimes money. It is easy to say &ldquo;I believe in you.&rdquo; It is another thing entirely to sign your name beneath that belief.</p>
+      <p>You have had zaamin in your life &mdash; people who vouched for you when you had nothing to show. A parent who co-signed a loan. A mentor who recommended you for a job you were not yet qualified for. And perhaps you have been a zaamin too, putting your name on the line for someone who needed a chance.</p>
+      <p>Name the guarantors. Their signatures made your beginnings possible.</p>
+      <p class="about-note">Your guarantors are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="zaamin.js"></script>
+</body>
+</html>

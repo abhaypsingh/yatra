@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaukon&#x012B; — the square</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x094C;&#x0915;&#x094B;&#x0928;&#x0940;</div>
+      <h1 class="title">Chaukon&#x012B;</h1>
+      <p class="subtitle">the square</p>
+      <p class="intro">Chaukon&#x012B; means square &mdash; four equal sides, four right angles, everything measured and balanced. The square is the shape of stability: a room, a courtyard, a plot of land. It says: here are your boundaries, and within them, you are safe. <em>Chaukon&#x012B;</em> asks you to name the four-cornered boundaries of your life &mdash; the structures, rules, and frames that gave you shape when you might otherwise have spread formlessly in every direction.</p>
+      <button class="begin-btn" id="beginBtn">enter</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What boundaries gave your life its shape?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this square</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the discipline that structured my chaotic twenties, the non-negotiable rule that protected my family&hellip;">
+        <p class="write-prompt-2">What were the four walls? Did they feel like protection or prison?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the boundary, what it contained, whether it freed or constrained you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">draw</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Chaukon&#x012B;</h2>
+      <p>A square is the most democratic shape: all sides equal, all angles the same. It does not tilt or lean. Within a square, you know exactly where you stand because the boundaries are clear and consistent. This is why rooms are square, why plots are square, why the chessboard is a grid of squares &mdash; clarity requires edges.</p>
+      <p>Your squares were the structures that made life navigable. The schedule that gave chaos a frame. The values that said &ldquo;this far and no further.&rdquo; The commitment that made a hundred daily decisions unnecessary because one big decision had already been made. Not every boundary is a cage. Some are the reason the garden grows.</p>
+      <p>Name the squares. The shape of your freedom was often drawn by the walls you chose to keep.</p>
+      <p class="about-note">Your squares are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaukoni.js"></script>
+</body>
+</html>

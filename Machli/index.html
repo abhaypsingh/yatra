@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machhl&#x012B; — the fish</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x092E;&#x091B;&#x0932;&#x0940;</div>
+      <h1 class="title">Machhl&#x012B;</h1>
+      <p class="subtitle">the fish</p>
+      <p class="intro">The fish that lives in water and does not know what water is &mdash; it cannot see what it swims in. Only when pulled from the water does it understand what surrounded it all along. <em>Machhl&#x012B;</em> asks you to name the invisible mediums you swam in without knowing &mdash; the cultures, assumptions, and atmospheres that were so constant you could not see them.</p>
+      <button class="begin-btn" id="beginBtn">swim</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What invisible waters did you swim in?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this water</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the assumption I never questioned, the atmosphere so constant it was invisible&hellip;">
+        <p class="write-prompt-2">When did you first see it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what surrounded you, when you finally noticed it, what changed once you could see it&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">swim</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Machhl&#x012B;</h2>
+      <p>The fish-in-water paradox is the oldest trick of existence: what surrounds you completely becomes invisible. You cannot see the culture you were raised in while you are still inside it. You cannot feel the pressure of the atmosphere because you have never known its absence. Only distance &mdash; a move, a loss, a rupture &mdash; reveals what was always there.</p>
+      <p>You have been the fish. Swimming in assumptions about how families work, what success means, who deserves what. These waters shaped every movement you made, and you did not know they were there until something pulled you out.</p>
+      <p>Name the waters. They are the invisible mediums that made you who you are.</p>
+      <p class="about-note">Your waters are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="machli.js"></script>
+</body>
+</html>

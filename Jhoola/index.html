@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jh&#x016B;l&#x0101; — the swing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091D;&#x0942;&#x0932;&#x093E;</div>
+      <h1 class="title">Jh&#x016B;l&#x0101;</h1>
+      <p class="subtitle">the swing</p>
+      <p class="intro">The swing tied to a mango tree &mdash; the arc between fear and delight. At the apex you are weightless and terrified; at the bottom you are grounded and safe. Life is this arc, repeated. <em>Jh&#x016B;l&#x0101;</em> asks you to name the swings of your life &mdash; the arcs between fear and exhilaration.</p>
+      <button class="begin-btn" id="beginBtn">swing</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What arcs have you swung through?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this swing</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the leap that terrified and thrilled me, the season that swung between extremes&hellip;">
+        <p class="write-prompt-2">What was the arc?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the fear at the top, the safety at the bottom, the exhilaration in between&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">swing</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Jh&#x016B;l&#x0101;</h2>
+      <p>Oscillation is the natural rhythm of a well-lived life. The swing does not stay at the top or the bottom &mdash; it moves. The person who never swings never feels the wind. The person who tries to stop the motion only falls. The wisdom is in the surrender to the arc &mdash; knowing that the terror at the peak is the price of the joy on the way down.</p>
+      <p>You have swung. Between hope and despair, between certainty and doubt, between holding on and letting go. Each arc carved something in you that stillness never could.</p>
+      <p>Name the swings. They are the arcs that shaped your life.</p>
+      <p class="about-note">Your swings are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="jhoola.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&#x012B;t &mdash; the custom</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x0940;&#x0924;</div>
+      <h1 class="title">R&#x012B;t</h1>
+      <p class="subtitle">the custom</p>
+      <p class="intro">A reet is a custom &mdash; the way things are done because they have always been done that way. Some reets carry wisdom compressed by generations. Others carry prejudice preserved by habit. <em>R&#x012B;t</em> asks you to name the customs you followed and the ones you chose to break.</p>
+      <button class="begin-btn" id="beginBtn">follow</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What customs did you follow, and which did you choose to break?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this custom</p>
+        <input class="write-name" id="writeName" type="text" placeholder="touching elders&rsquo; feet, the way we celebrated harvest&hellip;">
+        <p class="write-prompt-2">Did you follow it or break it, and why?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="where it came from, what wisdom or burden it carried, what you decided&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">follow</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>R&#x012B;t</h2>
+      <p>Tradition is both treasure and trap. The reet that says &ldquo;we gather every Sunday for a meal&rdquo; carries the wisdom of belonging. The reet that says &ldquo;daughters do not inherit&rdquo; carries the poison of exclusion. And the difficulty is that both arrive in the same package &mdash; the way things have always been done &mdash; and you must discern which to keep and which to discard.</p>
+      <p>Breaking a reet takes courage, because custom has the weight of every ancestor behind it. But keeping a reet also takes courage, because the modern world will call you old-fashioned for honouring what your grandparents honoured.</p>
+      <p>Name the customs. Whether followed or broken, they shaped who you became.</p>
+      <p class="about-note">Your customs are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="reet.js"></script>
+</body>
+</html>

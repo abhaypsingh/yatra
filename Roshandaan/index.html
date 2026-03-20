@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshand&#x0101;n — the skylight</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0930;&#x094B;&#x0936;&#x0928;&#x0926;&#x093E;&#x0928;</div>
+      <h1 class="title">Roshand&#x0101;n</h1>
+      <p class="subtitle">the skylight</p>
+      <p class="intro">The small opening in the ceiling of old houses that lets in a shaft of light from directly above. Unlike a window, it shows only sky. No landscape, no neighbours, no world &mdash; just light falling straight down. <em>Roshand&#x0101;n</em> asks you to name the skylights &mdash; the moments when light fell on you from directly above.</p>
+      <button class="begin-btn" id="beginBtn">look up</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">When did light fall on you from above?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this skylight</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the moment of sudden clarity, the grace that arrived from an unexpected direction&hellip;">
+        <p class="write-prompt-2">What did this light reveal?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what you were doing when the light fell, what it illuminated, how it changed your seeing&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">look up</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Roshand&#x0101;n</h2>
+      <p>Vertical illumination is different from horizontal light. A window shows you the world. A roshandaan shows you the sky. It is light from an unexpected direction &mdash; not from the side, where you can see its source, but from above, where you cannot. This is what grace feels like: light that arrives without explanation, from a direction you were not watching.</p>
+      <p>You have stood in roshandaan light. Moments when clarity came unbidden. When understanding fell on you without effort. When something you had struggled to see was suddenly illuminated from above, and all you had to do was look up.</p>
+      <p>Name the skylights. They are the openings through which grace found you.</p>
+      <p class="about-note">Your skylights are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="roshandaan.js"></script>
+</body>
+</html>

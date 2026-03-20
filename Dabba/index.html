@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dabb&#x0101; &mdash; the lunchbox</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0921;&#x092C;&#x094D;&#x092C;&#x093E;</div>
+      <h1 class="title">Dabb&#x0101;</h1>
+      <p class="subtitle">the lunchbox</p>
+      <p class="intro">The dabba &mdash; the steel tiffin carried from home to school, from home to office. Inside it is not just food but a message: someone at home thought about what you would need at noon and packed it at dawn. <em>Dabb&#x0101;</em> asks you to name the packed provisions that carried love from one place to another.</p>
+      <button class="begin-btn" id="beginBtn">open</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What packed provisions carried love from one place to another?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this lunchbox</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the parathas my mother packed for the train, the tiffin that arrived at my office&hellip;">
+        <p class="write-prompt-2">What message was packed inside?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what was inside, who packed it, what love tasted like at noon&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">open</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Dabb&#x0101;</h2>
+      <p>The dabba is a love letter written in food. Someone woke before you, stood in the kitchen while you slept, and thought: what will they need today? The steel container that travels from home to school, from home to office, carries not just calories but care. It is nourishment packed in advance &mdash; love that travels.</p>
+      <p>Opening the dabba at noon is a small reunion with home. The smell of what was cooked at dawn reaches you hours later, in a different place, among different people. And for a moment, you are back in the kitchen where someone thought of you before you were even hungry.</p>
+      <p>Name the lunchboxes. They are the meals that carried a home inside them.</p>
+      <p class="about-note">Your lunches are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="dabba.js"></script>
+</body>
+</html>

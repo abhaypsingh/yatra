@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taksal — the mint</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091F;&#x0915;&#x0938;&#x093E;&#x0932;</div>
+      <h1 class="title">Taksal</h1>
+      <p class="subtitle">the mint</p>
+      <p class="intro">A taksal is where coins are minted &mdash; raw metal is stamped with value and given currency. Before the mint, it is just metal; after, it is money. <em>Taksal</em> asks you to name the mints of your life &mdash; the places and people that stamped you with value and gave your qualities currency.</p>
+      <button class="begin-btn" id="beginBtn">mint</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">Where were you stamped with value?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this mint</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the teacher who saw my worth, the place that gave my abilities currency&hellip;">
+        <p class="write-prompt-2">What value did it stamp on you?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what raw material you were before, what stamp was pressed, how it gave you currency&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">mint</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Taksal</h2>
+      <p>Value is conferred, not inherent. A piece of metal becomes a coin only when the taksal stamps it. Before that stamp, it has potential but no currency. So it is with people: your qualities exist as raw material until someone or something recognises them, names them, and gives them a form that the world can trade in. The mint does not create the metal &mdash; it shapes it into something that can circulate.</p>
+      <p>You have been through taksals. A school that shaped your thinking. A mentor who named your talent. A crisis that forged your character. Each one took raw material and stamped it with a value that the world could recognise.</p>
+      <p>Name the mints. They are the forges that gave your qualities their currency.</p>
+      <p class="about-note">Your mints are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="taksal.js"></script>
+</body>
+</html>

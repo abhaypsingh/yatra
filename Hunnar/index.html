@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunnar &mdash; the craft</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0939;&#x0941;&#x0928;&#x0930;</div>
+      <h1 class="title">Hunnar</h1>
+      <p class="subtitle">the craft</p>
+      <p class="intro">Hunnar is craft &mdash; the skill that lives in the hands rather than the head. It is learned not from books but from repetition. The potter&rsquo;s hands know the clay before the potter&rsquo;s mind does. <em>Hunnar</em> asks you to name the crafts your hands learned that your mind cannot forget.</p>
+      <button class="begin-btn" id="beginBtn">craft</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What did your hands learn that your mind cannot forget?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this craft</p>
+        <input class="write-name" id="writeName" type="text" placeholder="kneading dough, stitching a hem, tuning an engine&hellip;">
+        <p class="write-prompt-2">How did your hands learn it?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who taught you, how repetition became knowledge, what your hands remember&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">craft</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Hunnar</h2>
+      <p>Hunnar is embodied knowledge &mdash; the wisdom that bypasses the mind entirely and lives in the muscles, the fingertips, the wrists. A weaver&rsquo;s hands move the shuttle without thought. A cook salts the pot without measuring. The body remembers what the mind has long stopped paying attention to.</p>
+      <p>This is muscle memory at its deepest: not just a skill, but an identity. You are what your hands know how to do. The carpenter is not a person who happens to cut wood &mdash; he is a person whose hands think in wood.</p>
+      <p>Name the crafts your hands carry. They are the knowledge that cannot be unlearned.</p>
+      <p class="about-note">Your crafts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="hunnar.js"></script>
+</body>
+</html>

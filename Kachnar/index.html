@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kachnar — the orchid tree</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0915;&#x091A;&#x0928;&#x093E;&#x0930;</div>
+      <h1 class="title">Kachnar</h1>
+      <p class="subtitle">the orchid tree</p>
+      <p class="intro">The tree that blooms in winter when everything else is bare &mdash; purple-pink flowers on leafless branches. Beauty appearing in the most unlikely season. <em>Kachnar</em> asks you to name the unexpected blooms of your life &mdash; the beauty that arrived when the landscape was barren.</p>
+      <button class="begin-btn" id="beginBtn">bloom</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What bloomed when nothing else would?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this bloom</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the gift that came in the hardest season, the beauty that appeared when I expected none&hellip;">
+        <p class="write-prompt-2">What made this bloom unexpected?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="the barren season, the bare branches, the colour that appeared against all odds&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">bloom</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Kachnar</h2>
+      <p>Some beauty can only appear in barren seasons. The kachnar knows this &mdash; it waits for every other tree to shed its leaves, and only then does it open its flowers. As though colour requires emptiness. As though the bloom needs the bare branch to mean anything at all. There is a lesson in this: do not judge a season by its barrenness. It may be preparing to bloom.</p>
+      <p>You have seen kachnar moments. Times when nothing was growing, when life felt leafless and cold, and then &mdash; unexpectedly &mdash; something beautiful appeared. A person. An idea. A turning point that could only have arrived in that particular emptiness.</p>
+      <p>Name the blooms. They are proof that beauty has its own calendar.</p>
+      <p class="about-note">Your blooms are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="kachnar.js"></script>
+</body>
+</html>

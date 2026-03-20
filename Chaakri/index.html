@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch&#x0101;kr&#x012B; &mdash; the service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x091A;&#x093E;&#x0915;&#x0930;&#x0940;</div>
+      <h1 class="title">Ch&#x0101;kr&#x012B;</h1>
+      <p class="subtitle">the service</p>
+      <p class="intro">Chaakri is daily service &mdash; the dutiful work performed day after day, without glamour or recognition. It is showing up, punching in, doing the work, going home, and returning to do it again. <em>Ch&#x0101;kr&#x012B;</em> asks you to name the daily duties performed faithfully that no one noticed or thanked you for.</p>
+      <button class="begin-btn" id="beginBtn">serve</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What daily duties did you perform faithfully that no one noticed?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this duty</p>
+        <input class="write-name" id="writeName" type="text" placeholder="waking before everyone to heat water, the thirty-year commute&hellip;">
+        <p class="write-prompt-2">What kept you showing up?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="what the work was, how long you did it, what faithfulness felt like from the inside&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">serve</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Ch&#x0101;kr&#x012B;</h2>
+      <p>Chaakri is the unglamorous engine of the world. It is the father who takes the same train for thirty years. The mother who cooks three meals a day, seven days a week, for decades. The worker who opens the shop at dawn and closes it at dusk. There is no applause, no promotion ceremony, no recognition. There is only the next day, and the duty to show up again.</p>
+      <p>And yet, this faithful repetition is what holds families, businesses, and communities together. The world runs not on brilliance but on the quiet, stubborn reliability of people who do their chaakri without complaint.</p>
+      <p>Name the duties. They are the invisible foundation on which everything else was built.</p>
+      <p class="about-note">Your duties are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="chaakri.js"></script>
+</body>
+</html>

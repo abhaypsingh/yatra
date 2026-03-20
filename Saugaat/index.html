@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saug&#x0101;t — the gift</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../yatra-nav.css">
+  <script src="../yatra-nav.js" defer></script>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-content">
+      <div class="deva">&#x0938;&#x094C;&#x0917;&#x093E;&#x0924;</div>
+      <h1 class="title">Saug&#x0101;t</h1>
+      <p class="subtitle">the gift</p>
+      <p class="intro">A saugaat is a gift brought from a journey &mdash; not bought in a shop but carried across distance. Its value is not material but proof that someone thought of you while far away. <em>Saug&#x0101;t</em> asks you to name the gifts that carried meaning beyond their material worth.</p>
+      <button class="begin-btn" id="beginBtn">receive</button>
+    </div>
+  </div>
+  <div class="main hidden" id="main">
+    <div class="places" id="places"></div>
+    <p class="places-empty" id="placesEmpty">What gifts carried meaning beyond their material worth?</p>
+    <button class="add-btn" id="addBtn">+</button>
+    <div class="write-view hidden" id="writeView">
+      <div class="write-card">
+        <p class="write-prompt">Name this gift</p>
+        <input class="write-name" id="writeName" type="text" placeholder="the small thing brought from far away, the offering that proved someone remembered me&hellip;">
+        <p class="write-prompt-2">What made this gift more than its material?</p>
+        <textarea class="write-input" id="writeInput" rows="3" placeholder="who brought it, how far they carried it, what it proved about their thinking of you&hellip;"></textarea>
+        <div class="write-actions">
+          <button class="write-cancel" id="writeCancel">back</button>
+          <button class="write-save" id="writeSave">receive</button>
+        </div>
+      </div>
+    </div>
+    <div class="detail-view hidden" id="detailView">
+      <div class="detail-card">
+        <button class="detail-close" id="detailClose">&times;</button>
+        <div class="detail-pin">&#x25AE;</div>
+        <h3 class="detail-name" id="detailName"></h3>
+        <p class="detail-text" id="detailText"></p>
+        <p class="detail-date" id="detailDate"></p>
+      </div>
+    </div>
+  </div>
+  <div class="nav-float" id="navFloat"><button class="nav-btn" id="navAbout" aria-label="about">?</button></div>
+  <div class="about-overlay hidden" id="aboutOverlay">
+    <div class="about-card">
+      <button class="about-close" id="aboutClose">&times;</button>
+      <h2>Saug&#x0101;t</h2>
+      <p>A saugaat is evidence of remembering. Someone was far away &mdash; in another city, another country, another chapter of their life &mdash; and they saw something and thought of you. That is the real gift: not the object but the proof of distance crossed by thought. The trinket from a trip, the sweet from a hometown, the fabric from a market &mdash; each one says: I was there, and you were here, and I carried you with me.</p>
+      <p>You have received saugaat. Small things that meant everything because of the distance they travelled and the love they carried. Objects whose worth was not in rupees but in the fact that someone, somewhere far away, was thinking of you.</p>
+      <p>Name the gifts. They are the evidence that love travels.</p>
+      <p class="about-note">Your gifts are stored only on this device.</p>
+    </div>
+  </div>
+  <script src="saugaat.js"></script>
+</body>
+</html>
